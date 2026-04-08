@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-50: #f0f7ec;
+  --color-forest-100: #d8ebd0;
+  --color-forest-200: #b4d9a4;
+  --color-forest-300: #8bc34a;
+  --color-forest-400: #6fa030;
+  --color-forest-500: #4a7c23;
+  --color-forest-600: #3d6620;
+  --color-forest-700: #2d5016;
+  --color-forest-800: #1e3a0e;
+  --color-forest-900: #142808;
+  --color-forest-950: #0a1504;
+}
+
+body {
+  @apply bg-forest-950 text-forest-50;
+}

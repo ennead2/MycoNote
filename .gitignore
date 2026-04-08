@@ -12,6 +12,7 @@ coverage/
 .env
 .env.local
 .env.*.local
+.env*
 
 # OS
 .DS_Store
@@ -23,3 +24,7 @@ Thumbs.db
 
 # Superpowers brainstorm sessions
 .superpowers/
+
+# PWA generated files
+public/sw.js
+public/workbox-*.js
