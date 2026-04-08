@@ -23,14 +23,13 @@ export function RecordCard({ record }: RecordCardProps) {
   const [thumbUrl, setThumbUrl] = useState<string | null>(null);
 
   useEffect(() => {
-    if (record.photos.length === 0) return;
     getPhotosForRecord(record.id).then(async (photos) => {
       if (photos.length > 0) {
         const url = await blobToDataUrl(photos[0].blob);
         setThumbUrl(url);
       }
     });
-  }, [record.id, record.photos.length]);
+  }, [record.id]);
 
   return (
     <Link
@@ -39,18 +38,14 @@ export function RecordCard({ record }: RecordCardProps) {
     >
       <div className="flex items-start gap-3">
         {/* Thumbnail */}
-        {thumbUrl ? (
+        {thumbUrl && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={thumbUrl}
             alt=""
             className="w-14 h-14 rounded-lg object-cover shrink-0 bg-forest-700"
           />
-        ) : record.photos.length > 0 ? (
-          <div className="w-14 h-14 rounded-lg bg-forest-700 shrink-0 flex items-center justify-center text-forest-500 text-xs">
-            読込中
-          </div>
-        ) : null}
+        )}
 
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">

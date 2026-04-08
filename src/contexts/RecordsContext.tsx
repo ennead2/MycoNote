@@ -43,19 +43,26 @@ export function RecordsProvider({ children }: { children: ReactNode }) {
 
   const addNewRecord = useCallback(async (input: NewRecordInput, photoBlobs?: Blob[]): Promise<MushroomRecord> => {
     const now = new Date().toISOString();
+    const recordId = crypto.randomUUID();
+
+    // Save photos first, collect their IDs
+    const photoIds: string[] = [];
+    if (photoBlobs && photoBlobs.length > 0) {
+      for (const blob of photoBlobs) {
+        const photoId = await addPhoto(recordId, blob);
+        photoIds.push(photoId);
+      }
+    }
+
     const record: MushroomRecord = {
       ...input,
-      id: crypto.randomUUID(),
+      id: recordId,
+      photos: photoIds,
       created_at: now,
       updated_at: now,
     };
 
     await addRecord(record);
-
-    if (photoBlobs && photoBlobs.length > 0) {
-      await Promise.all(photoBlobs.map((blob) => addPhoto(record.id, blob)));
-    }
-
     setRecords((prev) => [record, ...prev]);
     return record;
   }, []);
