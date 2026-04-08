@@ -8,6 +8,7 @@ import { getPhotosForRecord } from '@/lib/db';
 import { blobToDataUrl } from '@/lib/photo';
 import { getMushroomById } from '@/data/mushrooms';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
+import { RecordForm, type RecordInput } from '@/components/records/RecordForm';
 import { Button } from '@/components/ui/Button';
 import PageHeader from '@/components/layout/PageHeader';
 import { UI_TEXT } from '@/constants/ui-text';
@@ -19,23 +20,22 @@ interface RecordDetailClientProps {
 
 export default function RecordDetailClient({ id }: RecordDetailClientProps) {
   const router = useRouter();
-  const { records, removeRecord } = useRecords();
+  const { records, removeRecord, editRecord } = useRecords();
   const record = records.find((r) => r.id === id);
 
   const [photoUrls, setPhotoUrls] = useState<string[]>([]);
   const [mushroom, setMushroom] = useState<Mushroom | undefined>(undefined);
+  const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
     if (!record) return;
 
-    // 写真を読み込む
     (async () => {
       const photos = await getPhotosForRecord(id);
       const urls = await Promise.all(photos.map((p) => blobToDataUrl(p.blob)));
       setPhotoUrls(urls);
     })();
 
-    // キノコデータを取得
     if (record.mushroom_id) {
       setMushroom(getMushroomById(record.mushroom_id));
     }
@@ -45,6 +45,18 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
     if (!window.confirm(UI_TEXT.records.deleteConfirm)) return;
     await removeRecord(id);
     router.push('/records');
+  };
+
+  const handleEdit = async (data: RecordInput) => {
+    if (!record) return;
+    await editRecord({
+      ...record,
+      ...data,
+      id: record.id,
+      created_at: record.created_at,
+      updated_at: new Date().toISOString(),
+    });
+    setIsEditing(false);
   };
 
   if (!record) {
@@ -68,6 +80,29 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
   });
 
   const displayName = mushroom?.names.ja ?? record.mushroom_name_ja ?? '（不明）';
+
+  if (isEditing) {
+    return (
+      <div>
+        <PageHeader title={UI_TEXT.records.editRecord} showBack />
+        <RecordForm
+          initialData={record}
+          onSubmit={async (data) => {
+            await handleEdit(data);
+          }}
+        />
+        <div className="px-4 pb-4">
+          <Button
+            variant="ghost"
+            className="w-full text-forest-400"
+            onClick={() => setIsEditing(false)}
+          >
+            キャンセル
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -154,8 +189,15 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
           )}
         </dl>
 
-        {/* 削除ボタン */}
-        <div className="pt-4 border-t border-forest-700">
+        {/* アクションボタン */}
+        <div className="space-y-2 pt-4 border-t border-forest-700">
+          <Button
+            variant="secondary"
+            className="w-full"
+            onClick={() => setIsEditing(true)}
+          >
+            {UI_TEXT.records.editRecord}
+          </Button>
           <Button
             variant="ghost"
             className="text-red-400 hover:text-red-300 hover:bg-red-950/30 w-full"

@@ -37,12 +37,19 @@ export function RecordMapInner({ records }: RecordMapInnerProps) {
         {validRecords.map((record) => (
           <Marker key={record.id} position={[record.location.lat, record.location.lng]} icon={defaultIcon}>
             <Popup>
-              <div className="text-sm">
-                <strong>{record.mushroom_name_ja || '不明'}</strong>
-                <br />
-                {record.location.description && <span>{record.location.description}<br /></span>}
-                {new Date(record.observed_at).toLocaleDateString('ja-JP')}
-              </div>
+              <a
+                href={`/records/detail?id=${record.id}`}
+                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+              >
+                <div style={{ fontSize: '14px', lineHeight: '1.4' }}>
+                  <strong>{record.mushroom_name_ja || '不明'}</strong>
+                  <br />
+                  {record.location.description && <span>{record.location.description}<br /></span>}
+                  <span style={{ color: '#666' }}>{new Date(record.observed_at).toLocaleDateString('ja-JP')}</span>
+                  <br />
+                  <span style={{ color: '#4a7c23', fontSize: '12px' }}>詳細を見る →</span>
+                </div>
+              </a>
             </Popup>
           </Marker>
         ))}
