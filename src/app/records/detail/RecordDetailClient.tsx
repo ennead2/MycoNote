@@ -111,18 +111,17 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
       <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
         {/* 写真ギャラリー */}
         {photoUrls.length > 0 && (
-          <div className="overflow-x-auto">
-            <div className="flex gap-2 pb-1">
-              {photoUrls.map((url, i) => (
-                // eslint-disable-next-line @next/next/no-img-element
+          <div className="space-y-3">
+            {photoUrls.map((url, i) => (
+              <div key={i} className="rounded-lg overflow-hidden border border-forest-700 bg-forest-800">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  key={i}
                   src={url}
                   alt={`写真 ${i + 1}`}
-                  className="w-32 h-32 object-cover rounded-lg shrink-0 border border-forest-700"
+                  className="w-full h-auto"
                 />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         )}
 
