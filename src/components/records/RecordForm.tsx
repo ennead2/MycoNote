@@ -103,7 +103,7 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
           lng: parseFloat(lng) || 0,
           description: locationDescription || undefined,
         },
-        photos: [],
+        photos: initialData?.photos ?? [],
         quantity: quantity || undefined,
         memo: memo || undefined,
         harvested,
