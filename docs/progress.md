@@ -15,13 +15,16 @@
 - [x] E2Eテスト (9シナリオ)
 - [x] デバッグ (ハイドレーション修正、レイアウト調整)
 
-## Phase 2: 記録機能 — 未着手
-- [ ] IndexedDB (Dexie.js) セットアップ
-- [ ] RecordsContext
-- [ ] 記録登録フォーム (GPS, 写真, メモ)
-- [ ] 記録一覧ページ
-- [ ] 地図表示 (React-Leaflet)
-- [ ] 図鑑連携
+## Phase 2: 記録機能 — 完了 (2026-04-08)
+- [x] IndexedDB (Dexie.js) セットアップ
+- [x] RecordsContext (CRUD + IndexedDB同期)
+- [x] GPS・写真ユーティリティ
+- [x] 記録登録フォーム (GPS, 写真, メモ, キノコ選択)
+- [x] 記録一覧ページ (リスト表示)
+- [x] 地図表示 (React-Leaflet)
+- [x] 記録詳細ページ (写真・削除)
+- [x] 図鑑連携 (詳細ページに自分の記録表示)
+- [x] E2Eテスト
 
 ## Phase 3: AI連携 — 未着手
 ## Phase 4: 識別強化 — 未着手
