@@ -24,7 +24,7 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
   }, []);
   return (
     <div className="w-full">
-      <table className="w-full border-collapse text-xs">
+      <table className="w-full table-fixed border-collapse text-xs">
         <thead>
           <tr>
             <th className="text-left text-forest-300 font-semibold px-1 py-1 w-[110px] max-w-[110px]">
