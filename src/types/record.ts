@@ -16,3 +16,10 @@ export interface MushroomRecord {
   created_at: string;
   updated_at: string;
 }
+
+export interface RecordPhoto {
+  id: string;
+  record_id: string;
+  blob: Blob;
+  created_at: string;
+}
