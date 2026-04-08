@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { MushroomRecord } from '@/types/record';
 import { mushrooms } from '@/data/mushrooms';
 import { getCurrentPosition } from '@/lib/geolocation';
+import { getPhotosForRecord } from '@/lib/db';
 import { UI_TEXT } from '@/constants/ui-text';
 import { PhotoPicker } from './PhotoPicker';
 import { Button } from '@/components/ui/Button';
@@ -53,6 +54,14 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
     initialData?.location.description ?? ''
   );
   const [photos, setPhotos] = useState<Blob[]>([]);
+
+  // Load existing photos when editing
+  useEffect(() => {
+    if (!initialData || initialData.photos.length === 0) return;
+    getPhotosForRecord(initialData.id).then((dbPhotos) => {
+      setPhotos(dbPhotos.map((p) => p.blob));
+    });
+  }, [initialData]);
   const [quantity, setQuantity] = useState(initialData?.quantity ?? '');
   const [memo, setMemo] = useState(initialData?.memo ?? '');
   const [harvested, setHarvested] = useState(initialData?.harvested ?? true);
