@@ -15,15 +15,12 @@ type AppAction =
   | { type: 'SET_REGIONS'; payload: string[] }
   | { type: 'SET_THEME'; payload: 'light' | 'dark' | 'system' };
 
-function getInitialState(): AppState {
-  const apiKey = typeof window !== 'undefined' ? localStorage.getItem('anthropic_api_key') : null;
-  return {
-    isOnline: typeof navigator !== 'undefined' ? navigator.onLine : true,
-    apiKey,
-    preferredRegions: [],
-    theme: 'system',
-  };
-}
+const DEFAULT_STATE: AppState = {
+  isOnline: true,
+  apiKey: null,
+  preferredRegions: [],
+  theme: 'system',
+};
 
 function appReducer(state: AppState, action: AppAction): AppState {
   switch (action.type) {
@@ -43,8 +40,16 @@ interface AppContextValue { state: AppState; dispatch: Dispatch<AppAction>; }
 const AppContext = createContext<AppContextValue | null>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(appReducer, undefined, getInitialState);
+  const [state, dispatch] = useReducer(appReducer, DEFAULT_STATE);
+
+  // Hydrate client-only values after mount
   useEffect(() => {
+    const savedKey = localStorage.getItem('anthropic_api_key');
+    if (savedKey) {
+      dispatch({ type: 'SET_API_KEY', payload: savedKey });
+    }
+    dispatch({ type: 'SET_ONLINE', payload: navigator.onLine });
+
     const handleOnline = () => dispatch({ type: 'SET_ONLINE', payload: true });
     const handleOffline = () => dispatch({ type: 'SET_ONLINE', payload: false });
     window.addEventListener('online', handleOnline);

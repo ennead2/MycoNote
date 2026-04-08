@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ToxicityBadge } from './ToxicityBadge';
 import type { Mushroom } from '@/types/mushroom';
@@ -14,9 +15,13 @@ function isMonthActive(month: number, startMonth: number, endMonth: number): boo
 }
 
 const MONTHS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const currentMonth = new Date().getMonth() + 1;
 
 export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
+  const [currentMonth, setCurrentMonth] = useState(0);
+
+  useEffect(() => {
+    setCurrentMonth(new Date().getMonth() + 1);
+  }, []);
   return (
     <div className="overflow-x-auto w-full">
       <table className="min-w-[600px] w-full border-collapse text-sm">
