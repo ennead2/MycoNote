@@ -29,7 +29,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <img
           src={mushroom.image_local}
           alt={mushroom.names.ja}
-          className="w-full h-full object-cover"
+          className="max-w-full max-h-full object-contain"
         />
       </div>
 
