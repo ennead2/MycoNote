@@ -23,7 +23,7 @@ describe('SeasonCalendar', () => {
 
   it('links mushroom names to detail pages', () => {
     render(<SeasonCalendar mushrooms={mushrooms} />);
-    const link = screen.getByRole('link', { name: 'マツタケ' });
+    const link = screen.getByRole('link', { name: /マツタケ/ });
     expect(link.getAttribute('href')).toBe('/zukan/matsutake');
   });
 });

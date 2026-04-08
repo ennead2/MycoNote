@@ -23,17 +23,17 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
     setCurrentMonth(new Date().getMonth() + 1);
   }, []);
   return (
-    <div className="overflow-x-auto w-full">
-      <table className="min-w-[600px] w-full border-collapse text-sm">
+    <div className="w-full">
+      <table className="w-full border-collapse text-xs">
         <thead>
           <tr>
-            <th className="sticky left-0 z-10 bg-forest-900 text-left text-forest-300 font-semibold px-3 py-2 min-w-[160px]">
+            <th className="text-left text-forest-300 font-semibold px-1 py-1 w-[110px] max-w-[110px]">
               種名
             </th>
             {MONTHS.map((m) => (
               <th
                 key={m}
-                className={`text-center font-normal px-1 py-2 w-8 ${
+                className={`text-center font-normal px-0 py-1 ${
                   m === currentMonth ? 'text-forest-200 font-bold' : 'text-forest-400'
                 }`}
               >
@@ -45,24 +45,24 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
         <tbody>
           {mushrooms.map((mushroom) => (
             <tr key={mushroom.id} className="border-t border-forest-800">
-              <td className="sticky left-0 z-10 bg-forest-900 px-3 py-2">
-                <div className="flex flex-col gap-1">
-                  <Link
-                    href={`/zukan/${mushroom.id}`}
-                    className="text-forest-100 hover:text-forest-300 font-medium leading-tight"
-                  >
+              <td className="px-1 py-1 w-[110px] max-w-[110px]">
+                <Link
+                  href={`/zukan/${mushroom.id}`}
+                  className="flex items-center gap-1 truncate"
+                >
+                  <span className="text-forest-100 hover:text-forest-300 font-medium truncate">
                     {mushroom.names.ja}
-                  </Link>
-                  <ToxicityBadge toxicity={mushroom.toxicity} />
-                </div>
+                  </span>
+                  <ToxicityBadge toxicity={mushroom.toxicity} compact />
+                </Link>
               </td>
               {MONTHS.map((m) => {
                 const active = isMonthActive(m, mushroom.season.start_month, mushroom.season.end_month);
                 const isCurrent = m === currentMonth;
                 return (
-                  <td key={m} className="px-0.5 py-2">
+                  <td key={m} className="px-px py-1">
                     <div
-                      className={`h-4 rounded-sm mx-0.5 ${
+                      className={`h-3 rounded-sm ${
                         active
                           ? isCurrent
                             ? 'bg-forest-300'
