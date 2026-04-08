@@ -83,6 +83,16 @@ describe('searchMushrooms', () => {
     const results = searchMushrooms({});
     expect(results.length).toBe(13);
   });
+
+  it('filters by hiragana query (matches katakana names)', () => {
+    const results = searchMushrooms({ query: 'まつたけ' });
+    expect(results.some((m) => m.id === 'matsutake')).toBe(true);
+  });
+
+  it('filters by mixed kana query', () => {
+    const results = searchMushrooms({ query: 'しいたけ' });
+    expect(results.some((m) => m.id === 'shiitake')).toBe(true);
+  });
 });
 
 describe('getMushroomsBySeason', () => {

@@ -9,16 +9,28 @@ export function getMushroomById(id: string): Mushroom | undefined {
   return mushroomIndex.get(id);
 }
 
+function toKatakana(str: string): string {
+  return str.replace(/[\u3041-\u3096]/g, (ch) =>
+    String.fromCharCode(ch.charCodeAt(0) + 0x60)
+  );
+}
+
+function matchesQuery(text: string, query: string): boolean {
+  const t = toKatakana(text.toLowerCase());
+  const q = toKatakana(query.toLowerCase());
+  return t.includes(q);
+}
+
 export function searchMushrooms(filters: FilterOptions): Mushroom[] {
   let results = [...mushrooms];
 
   if (filters.query) {
-    const q = filters.query.toLowerCase();
+    const q = filters.query;
     results = results.filter(
       (m) =>
-        m.names.ja.toLowerCase().includes(q) ||
-        m.names.scientific.toLowerCase().includes(q) ||
-        m.names.aliases?.some((a) => a.toLowerCase().includes(q))
+        matchesQuery(m.names.ja, q) ||
+        matchesQuery(m.names.scientific, q) ||
+        m.names.aliases?.some((a) => matchesQuery(a, q))
     );
   }
 
