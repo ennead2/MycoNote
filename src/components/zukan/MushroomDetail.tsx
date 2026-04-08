@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
@@ -22,9 +23,6 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   const similarSpecies = mushroom.similar_species
     .map((id) => getMushroomById(id))
     .filter((m): m is Mushroom => m !== undefined);
-
-  const { getRecordsByMushroomId } = useRecords();
-  const myRecords = getRecordsByMushroomId(mushroom.id);
 
   return (
     <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
@@ -157,38 +155,59 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       )}
 
       {/* 11. My records for this species */}
-      <div>
-        <SectionHeading>{UI_TEXT.zukan.myRecords}</SectionHeading>
-        {myRecords.length === 0 ? (
-          <p className="text-sm text-forest-400">{UI_TEXT.zukan.noRecords}</p>
-        ) : (
-          <div className="space-y-2">
-            {myRecords.map((record) => (
-              <Link
-                key={record.id}
-                href={`/records/detail?id=${record.id}`}
-                className="block rounded-lg bg-forest-800 p-3 hover:bg-forest-700 transition-colors"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="text-sm">
-                    <span className="text-forest-100">
-                      {new Date(record.observed_at).toLocaleDateString('ja-JP')}
-                    </span>
-                    {record.location.description && (
-                      <span className="text-forest-400 ml-2">{record.location.description}</span>
-                    )}
-                  </div>
-                  <span className={`text-[10px] rounded-full px-1.5 py-0.5 font-bold text-white ${
-                    record.harvested ? 'bg-forest-500' : 'bg-blue-600'
-                  }`}>
-                    {record.harvested ? '採取' : '観察'}
+      <MyRecordsSection mushroomId={mushroom.id} />
+    </div>
+  );
+}
+
+function MyRecordsSection({ mushroomId }: { mushroomId: string }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return <MyRecordsList mushroomId={mushroomId} />;
+}
+
+function MyRecordsList({ mushroomId }: { mushroomId: string }) {
+  const { getRecordsByMushroomId } = useRecords();
+  const myRecords = getRecordsByMushroomId(mushroomId);
+
+  return (
+    <div>
+      <SectionHeading>{UI_TEXT.zukan.myRecords}</SectionHeading>
+      {myRecords.length === 0 ? (
+        <p className="text-sm text-forest-400">{UI_TEXT.zukan.noRecords}</p>
+      ) : (
+        <div className="space-y-2">
+          {myRecords.map((record) => (
+            <Link
+              key={record.id}
+              href={`/records/detail?id=${record.id}`}
+              className="block rounded-lg bg-forest-800 p-3 hover:bg-forest-700 transition-colors"
+            >
+              <div className="flex items-center justify-between">
+                <div className="text-sm">
+                  <span className="text-forest-100">
+                    {new Date(record.observed_at).toLocaleDateString('ja-JP')}
                   </span>
+                  {record.location.description && (
+                    <span className="text-forest-400 ml-2">{record.location.description}</span>
+                  )}
                 </div>
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
+                <span className={`text-[10px] rounded-full px-1.5 py-0.5 font-bold text-white ${
+                  record.harvested ? 'bg-forest-500' : 'bg-blue-600'
+                }`}>
+                  {record.harvested ? '採取' : '観察'}
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
