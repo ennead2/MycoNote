@@ -34,6 +34,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <img
           src={mushroom.image_local}
           alt={mushroom.names.ja}
+          loading="eager"
           className="max-w-full max-h-full object-contain"
         />
       </div>

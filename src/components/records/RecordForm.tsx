@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MushroomRecord } from '@/types/record';
 import { mushrooms } from '@/data/mushrooms';
 import { getCurrentPosition } from '@/lib/geolocation';
@@ -35,8 +35,14 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
     initialData?.mushroom_name_ja ?? ''
   );
   const [observedAt, setObservedAt] = useState(
-    initialData ? toDatetimeLocal(initialData.observed_at) : nowDatetimeLocal()
+    initialData ? toDatetimeLocal(initialData.observed_at) : ''
   );
+
+  useEffect(() => {
+    if (!initialData) {
+      setObservedAt(nowDatetimeLocal());
+    }
+  }, [initialData]);
   const [lat, setLat] = useState(
     initialData?.location.lat != null ? String(initialData.location.lat) : ''
   );
