@@ -1,18 +1,19 @@
 # MycoNote 開発進捗
 
-## Phase 1: MVP — 完了
-- [x] プロジェクトセットアップ (Next.js, Tailwind, Vitest, PWA)
+## Phase 1: MVP — 完了 (2026-04-08)
+- [x] プロジェクトセットアップ (Next.js 16, Tailwind v4, Vitest, PWA)
 - [x] 型定義・定数
 - [x] サンプル図鑑データ (13種)
 - [x] AppContext (オンライン状態)
 - [x] UI基盤コンポーネント (ToxicityBadge, SeasonBar)
 - [x] レイアウト (BottomNav, OfflineBanner, PageHeader)
-- [x] 図鑑一覧ページ (検索・フィルター)
-- [x] 図鑑詳細ページ (毒性警告・類似種)
+- [x] 図鑑一覧ページ (検索・フィルター・ひらがな対応)
+- [x] 図鑑詳細ページ (毒性警告・類似種・色名ハイライト)
 - [x] シーズンカレンダー
 - [x] スタブページ・設定ページ
 - [x] PWA設定 (manifest, icons)
-- [x] E2Eテスト
+- [x] E2Eテスト (9シナリオ)
+- [x] デバッグ (ハイドレーション修正、レイアウト調整)
 
 ## Phase 2: 記録機能 — 未着手
 - [ ] IndexedDB (Dexie.js) セットアップ
