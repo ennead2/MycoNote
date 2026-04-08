@@ -7,6 +7,7 @@ import { RecordCard } from '@/components/records/RecordCard';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 import { useRecords } from '@/contexts/RecordsContext';
 import { UI_TEXT } from '@/constants/ui-text';
+import { RecordMap } from '@/components/records/RecordMap';
 
 type ViewMode = 'list' | 'map';
 
@@ -62,8 +63,15 @@ export default function RecordsPage() {
         {isLoading ? (
           <LoadingSpinner />
         ) : viewMode === 'map' ? (
-          <div className="flex items-center justify-center py-16 text-forest-400">
-            地図ビューは Task 7 で実装
+          <div className="px-4 pb-4">
+            {records.length === 0 ? (
+              <div className="py-16 text-center">
+                <span className="text-4xl block mb-4">🗺</span>
+                <p className="text-forest-400">{UI_TEXT.records.noRecords}</p>
+              </div>
+            ) : (
+              <RecordMap records={records} />
+            )}
           </div>
         ) : records.length === 0 ? (
           /* Empty state */
