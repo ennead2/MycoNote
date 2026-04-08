@@ -9,7 +9,7 @@ function isMonthActive(month: number, startMonth: number, endMonth: number): boo
 
 export function SeasonBar({ startMonth, endMonth }: SeasonBarProps) {
   return (
-    <table className="w-full" role="table">
+    <table className="w-full table-fixed" role="table">
       <thead><tr>
         {UI_TEXT.months.map((label, i) => (
           <th key={i} className="text-[10px] text-forest-400 font-normal px-0.5">{label.replace('月', '')}</th>
