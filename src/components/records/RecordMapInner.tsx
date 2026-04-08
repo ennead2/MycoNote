@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -21,6 +22,7 @@ interface RecordMapInnerProps {
 }
 
 export function RecordMapInner({ records }: RecordMapInnerProps) {
+  const router = useRouter();
   const validRecords = records.filter((r) => r.location.lat && r.location.lng);
 
   const center: [number, number] = validRecords.length > 0
@@ -37,19 +39,20 @@ export function RecordMapInner({ records }: RecordMapInnerProps) {
         {validRecords.map((record) => (
           <Marker key={record.id} position={[record.location.lat, record.location.lng]} icon={defaultIcon}>
             <Popup>
-              <a
-                href={`/records/detail?id=${record.id}`}
-                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => router.push(`/records/detail?id=${record.id}`)}
+                onKeyDown={(e) => { if (e.key === 'Enter') router.push(`/records/detail?id=${record.id}`); }}
+                style={{ cursor: 'pointer', fontSize: '14px', lineHeight: '1.4' }}
               >
-                <div style={{ fontSize: '14px', lineHeight: '1.4' }}>
-                  <strong>{record.mushroom_name_ja || '不明'}</strong>
-                  <br />
-                  {record.location.description && <span>{record.location.description}<br /></span>}
-                  <span style={{ color: '#666' }}>{new Date(record.observed_at).toLocaleDateString('ja-JP')}</span>
-                  <br />
-                  <span style={{ color: '#4a7c23', fontSize: '12px' }}>詳細を見る →</span>
-                </div>
-              </a>
+                <strong>{record.mushroom_name_ja || '不明'}</strong>
+                <br />
+                {record.location.description && <span>{record.location.description}<br /></span>}
+                <span style={{ color: '#666' }}>{new Date(record.observed_at).toLocaleDateString('ja-JP')}</span>
+                <br />
+                <span style={{ color: '#4a7c23', fontSize: '12px' }}>詳細を見る →</span>
+              </div>
             </Popup>
           </Marker>
         ))}
