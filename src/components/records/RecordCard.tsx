@@ -18,7 +18,7 @@ export function RecordCard({ record }: RecordCardProps) {
 
   return (
     <Link
-      href={`/records/${record.id}`}
+      href={`/records/detail?id=${record.id}`}
       className="block rounded-xl border border-forest-700 bg-forest-800 p-4 transition-colors hover:bg-forest-700"
     >
       <div className="flex items-start justify-between gap-2">

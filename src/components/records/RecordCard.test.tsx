@@ -40,7 +40,7 @@ describe('RecordCard', () => {
   it('links to /records/{id}', () => {
     render(<RecordCard record={mockRecord} />);
     const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', '/records/test-1');
+    expect(link).toHaveAttribute('href', '/records/detail?id=test-1');
   });
 
   it('shows "採取" badge when harvested=true', () => {

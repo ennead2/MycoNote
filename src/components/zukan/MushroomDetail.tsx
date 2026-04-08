@@ -166,7 +166,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
             {myRecords.map((record) => (
               <Link
                 key={record.id}
-                href={`/records/${record.id}`}
+                href={`/records/detail?id=${record.id}`}
                 className="block rounded-lg bg-forest-800 p-3 hover:bg-forest-700 transition-colors"
               >
                 <div className="flex items-center justify-between">
