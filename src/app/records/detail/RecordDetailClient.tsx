@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useRecords } from '@/contexts/RecordsContext';
-import { getPhotosForRecord } from '@/lib/db';
+import { getPhotosForRecord, deletePhotosForRecord, addPhoto } from '@/lib/db';
 import { blobToDataUrl } from '@/lib/photo';
 import { getMushroomById } from '@/data/mushrooms';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
@@ -47,15 +47,29 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
     router.push('/records');
   };
 
-  const handleEdit = async (data: RecordInput) => {
+  const handleEdit = async (data: RecordInput, photos: Blob[]) => {
     if (!record) return;
+
+    // Replace all photos: delete old, save new
+    await deletePhotosForRecord(record.id);
+    const newPhotoIds: string[] = [];
+    for (const blob of photos) {
+      const photoId = await addPhoto(record.id, blob);
+      newPhotoIds.push(photoId);
+    }
+
     await editRecord({
       ...record,
       ...data,
+      photos: newPhotoIds,
       id: record.id,
       created_at: record.created_at,
       updated_at: new Date().toISOString(),
     });
+
+    // Reload photo URLs for detail view
+    const urls = await Promise.all(photos.map((b) => blobToDataUrl(b)));
+    setPhotoUrls(urls);
     setIsEditing(false);
   };
 
@@ -87,8 +101,8 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
         <PageHeader title={UI_TEXT.records.editRecord} showBack />
         <RecordForm
           initialData={record}
-          onSubmit={async (data) => {
-            await handleEdit(data);
+          onSubmit={async (data, photos) => {
+            await handleEdit(data, photos);
           }}
         />
         <div className="px-4 pb-4">
