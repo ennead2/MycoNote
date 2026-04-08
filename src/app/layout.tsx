@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProvider } from "@/contexts/AppContext";
+import { RecordsProvider } from "@/contexts/RecordsContext";
 import OfflineBanner from "@/components/layout/OfflineBanner";
 import BottomNav from "@/components/layout/BottomNav";
 
@@ -19,11 +20,13 @@ export default function RootLayout({
     <html lang="ja" className="h-full">
       <body className="min-h-full flex flex-col">
         <AppProvider>
-          <OfflineBanner />
-          <main className="max-w-lg mx-auto w-full flex-1 pb-16">
-            {children}
-          </main>
-          <BottomNav />
+          <RecordsProvider>
+            <OfflineBanner />
+            <main className="max-w-lg mx-auto w-full flex-1 pb-16">
+              {children}
+            </main>
+            <BottomNav />
+          </RecordsProvider>
         </AppProvider>
       </body>
     </html>
