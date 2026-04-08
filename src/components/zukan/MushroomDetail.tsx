@@ -6,6 +6,7 @@ import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
 import { SeasonBar } from '@/components/zukan/SeasonBar';
 import { getMushroomById } from '@/data/mushrooms';
 import { UI_TEXT } from '@/constants/ui-text';
+import { renderColorText } from '@/lib/color-text';
 import type { Mushroom } from '@/types/mushroom';
 
 interface MushroomDetailProps {
@@ -52,20 +53,20 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
           className="border border-red-500 bg-red-950/50 rounded-lg p-4"
         >
           <h2 className="text-sm font-bold text-red-400 mb-2">⚠ 注意事項</h2>
-          <p className="text-sm text-red-200">{mushroom.caution}</p>
+          <p className="text-sm text-red-200">{renderColorText(mushroom.caution)}</p>
         </div>
       )}
 
       {/* 4. Description section */}
       <div>
         <SectionHeading>{UI_TEXT.zukan.description}</SectionHeading>
-        <p className="text-sm text-forest-200 leading-relaxed">{mushroom.description}</p>
+        <p className="text-sm text-forest-200 leading-relaxed">{renderColorText(mushroom.description)}</p>
       </div>
 
       {/* 5. Features section */}
       <div>
         <SectionHeading>{UI_TEXT.zukan.features}</SectionHeading>
-        <p className="text-sm text-forest-200 leading-relaxed">{mushroom.features}</p>
+        <p className="text-sm text-forest-200 leading-relaxed">{renderColorText(mushroom.features)}</p>
       </div>
 
       {/* 6. Season bar */}
