@@ -49,9 +49,9 @@ function matchTrait(
   if (traitData === undefined) return false;
 
   if (Array.isArray(traitData)) {
-    return traitData.includes(inputValue);
+    return (traitData as string[]).includes(inputValue);
   }
-  return traitData === inputValue;
+  return (traitData as string) === inputValue;
 }
 
 function calculateScore(input: IdentifyInput, mushroom: Mushroom, currentMonth: number): { score: number; matchedTraits: string[] } {
