@@ -95,6 +95,24 @@ describe('searchMushrooms', () => {
   });
 });
 
+describe('mushroom traits', () => {
+  it('all mushrooms have traits field', () => {
+    for (const m of mushrooms) {
+      expect(m.traits, `${m.id} is missing traits`).toBeDefined();
+    }
+  });
+
+  it('all traits have required fields', () => {
+    for (const m of mushrooms) {
+      if (!m.traits) continue;
+      expect(m.traits.gill_type.length, `${m.id} gill_type is empty`).toBeGreaterThan(0);
+      expect(m.traits.cap_color.length, `${m.id} cap_color is empty`).toBeGreaterThan(0);
+      expect(m.traits.cap_shape.length, `${m.id} cap_shape is empty`).toBeGreaterThan(0);
+      expect(m.traits.cap_size, `${m.id} cap_size is missing`).toBeDefined();
+    }
+  });
+});
+
 describe('getMushroomsBySeason', () => {
   it('returns mushrooms available in September', () => {
     const results = getMushroomsBySeason(9);

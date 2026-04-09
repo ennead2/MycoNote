@@ -16,7 +16,8 @@
     "features": "傘は淡褐色〜茶褐色で直径8〜20cm、初め丸みを帯び後に平開する。柄は太く白色〜淡褐色、部分ベールの跡が環状に残る。強い芳香が最大の特徴で、ひだは白色で密。",
     "similar_species": [],
     "tree_association": ["アカマツ", "クロマツ", "エゾマツ"],
-    "source_url": "https://www.naro.go.jp/collab/mushroom/matsutake/"
+    "source_url": "https://www.naro.go.jp/collab/mushroom/matsutake/",
+    "traits": {"gill_type":["gills"],"cap_color":["brown"],"cap_shape":["convex","flat"],"cap_size":"large","gill_attachment":["sinuate"],"stalk_color":["white","brown"],"stalk_features":["ring","fibrous"],"bruising":["none"],"substrate":["conifer"]}
   },
   {
     "id": "shiitake",
@@ -34,7 +35,8 @@
     "description": "シイ・クヌギ・ナラなどの枯死した広葉樹に発生する木材腐朽菌。世界で広く栽培される食用キノコで、うま味成分のグアニル酸を豊富に含む。春と秋の2シーズンに発生する。",
     "features": "傘は暗褐色〜茶褐色で直径5〜20cm、表面に白い綿毛状のかすり模様が入ることがある。ひだは白色〜クリーム色で密。柄は白色〜淡褐色で繊維状。特有の香りをもつ。",
     "similar_species": ["tsukiyo-take"],
-    "tree_association": ["シイ", "クヌギ", "コナラ", "クリ"]
+    "tree_association": ["シイ", "クヌギ", "コナラ", "クリ"],
+    "traits": {"gill_type":["gills"],"cap_color":["brown"],"cap_shape":["convex","flat"],"cap_size":"medium","gill_attachment":["free"],"stalk_color":["white","brown"],"stalk_features":["fibrous"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "enokitake",
@@ -52,7 +54,8 @@
     "description": "エノキ・ヤナギ・ケヤキなどの広葉樹の枯木に晩秋から春にかけて発生する寒さに強いキノコ。野生品は傘が茶褐色で柄が黒いが、栽培品は白く細長い。冬でも雪の中で発生する。",
     "features": "傘は茶褐色〜黄褐色で直径2〜8cm、ぬめりがある。ひだは白色〜クリーム色でやや疎。柄は細長く茶褐色〜黒褐色で細かい毛が密生する。群生することが多い。",
     "similar_species": ["nigakuri-take"],
-    "tree_association": ["エノキ", "ヤナギ", "ケヤキ", "ポプラ"]
+    "tree_association": ["エノキ", "ヤナギ", "ケヤキ", "ポプラ"],
+    "traits": {"gill_type":["gills"],"cap_color":["brown","yellow"],"cap_shape":["convex","flat"],"cap_size":"small","gill_attachment":["attached"],"stalk_color":["brown"],"stalk_features":["fibrous"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "nameko",
@@ -70,7 +73,8 @@
     "description": "ブナ・トチノキなどの広葉樹の枯木や倒木に群生する。表面のぬめりが特徴で、味噌汁の具や和え物として広く親しまれている。ぬめり成分のムチンは整腸作用をもつ。",
     "features": "傘は橙褐色〜黄褐色で直径2〜8cm、強いぬめりに覆われる。ひだは淡黄色〜錆褐色で密。柄は淡黄色〜茶褐色でぬめりがある。群生〜叢生し、環状の膜質のツバがある。",
     "similar_species": ["nigakuri-take"],
-    "tree_association": ["ブナ", "トチノキ", "クルミ"]
+    "tree_association": ["ブナ", "トチノキ", "クルミ"],
+    "traits": {"gill_type":["gills"],"cap_color":["brown","orange"],"cap_shape":["convex","hemisphere"],"cap_size":"small","gill_attachment":["attached"],"stalk_color":["brown"],"stalk_features":["ring"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "hiratake",
@@ -88,7 +92,8 @@
     "description": "各種広葉樹の枯木に発生する白色腐朽菌。スーパーで売られているエリンギの近縁種。扇形〜耳形の大きな傘が特徴で、クセがなく鍋物や炒め物に向く。晩秋〜春の低温期に多い。",
     "features": "傘は灰白色〜灰褐色で直径5〜20cm、扇形〜半円形。ひだは白色で密、傘の端まで垂生する。柄は短く白色、傘の端寄りに偏心して付く。肉は白色で柔軟、無臭に近い。",
     "similar_species": ["tsukiyo-take"],
-    "tree_association": ["コナラ", "クヌギ", "ブナ", "カキ"]
+    "tree_association": ["コナラ", "クヌギ", "ブナ", "カキ"],
+    "traits": {"gill_type":["gills"],"cap_color":["gray","brown"],"cap_shape":["funnel","flat"],"cap_size":"medium","gill_attachment":["decurrent"],"stalk_color":["white"],"stalk_features":["fibrous"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "tamago-tengu-take",
@@ -107,7 +112,8 @@
     "features": "傘は黄緑色〜オリーブ緑色で直径5〜12cm。ひだは白色。柄は白色〜淡緑色でツバとツボをもつ。卵形のツボ（袋）から発生する様子が特徴。全体的に食欲をそそる外観で危険。",
     "similar_species": [],
     "caution": "アマトキシン（アマニチン）を含む猛毒キノコ。摂取後6〜24時間は症状が現れないが、その後激しい嘔吐・下痢・腹痛が起こり、肝不全・腎不全で死亡することがある。治療法は限られ、肝移植が必要になる場合がある。絶対に食べてはいけない。",
-    "tree_association": ["コナラ", "ブナ", "シイ"]
+    "tree_association": ["コナラ", "ブナ", "シイ"],
+    "traits": {"gill_type":["gills"],"cap_color":["white","yellow"],"cap_shape":["convex","flat"],"cap_size":"medium","gill_attachment":["free"],"stalk_color":["white"],"stalk_features":["ring","volva"],"bruising":["none"],"substrate":["broadleaf"]}
   },
   {
     "id": "doku-tsuru-take",
@@ -126,7 +132,8 @@
     "features": "全体が純白で傘の直径は5〜12cm、円錐形〜平開。ひだは白色で密。柄は白色で細かい綿毛状の鱗片が付き、ツバとツボをもつ。ツボは白い袋状で地中に埋まっていることが多い。",
     "similar_species": [],
     "caution": "アマトキシン（アマニチン）を大量に含む猛毒キノコ。外観が純白で食用キノコと間違えやすい。摂取後の症状は遅発性で初期は回復したように見えるが、肝不全・腎不全が進行して死亡する。致死量はわずか0.1mg/kg体重。絶対に近づいてはいけない。",
-    "tree_association": ["スギ", "モミ", "ブナ", "コナラ"]
+    "tree_association": ["スギ", "モミ", "ブナ", "コナラ"],
+    "traits": {"gill_type":["gills"],"cap_color":["white"],"cap_shape":["convex","flat"],"cap_size":"medium","gill_attachment":["free"],"stalk_color":["white"],"stalk_features":["ring","volva"],"bruising":["none"],"substrate":["broadleaf","conifer"]}
   },
   {
     "id": "beni-tengu-take",
@@ -145,7 +152,8 @@
     "features": "傘は鮮紅色〜橙赤色で直径8〜20cm、表面に白色〜淡黄色のイボ（外皮の残片）が点在する。ひだは白色で密。柄は白色でツバとツボをもつ。全体的に鮮やかで目立つ外観。",
     "similar_species": [],
     "caution": "イボテン酸・ムシモールを含む神経毒性キノコ。摂取すると嘔吐・下痢・めまい・幻覚・興奮・昏睡などの症状が現れる。致死例は少ないが重篤な中毒症状を引き起こす。見た目が美しいため子供が誤食しやすい。",
-    "tree_association": ["シラカンバ", "エゾマツ", "トドマツ", "コナラ"]
+    "tree_association": ["シラカンバ", "エゾマツ", "トドマツ", "コナラ"],
+    "traits": {"gill_type":["gills"],"cap_color":["red","orange"],"cap_shape":["convex","hemisphere","flat"],"cap_size":"large","gill_attachment":["free"],"stalk_color":["white"],"stalk_features":["ring","volva"],"bruising":["none"],"substrate":["conifer","broadleaf"]}
   },
   {
     "id": "kaen-take",
@@ -164,7 +172,8 @@
     "features": "子実体は橙赤色〜朱赤色で、根棒状〜手指状に分岐する高さ3〜15cmの不規則な塊。キノコらしい形をしておらず、地面から炎のように突き出る。表面は滑らかで内部は充実。",
     "similar_species": [],
     "caution": "トリコテセン系マイコトキシンを含む猛毒菌。触れるだけで皮膚・粘膜に炎症を起こす。摂取すると嘔吐・下痢・腹痛・神経障害・多臓器不全が起こり、致死率が非常に高い。キノコに見えない形状なので誤って手で触れることもある。絶対に触れてはいけない。",
-    "tree_association": ["コナラ", "ミズナラ", "クヌギ"]
+    "tree_association": ["コナラ", "ミズナラ", "クヌギ"],
+    "traits": {"gill_type":["none"],"cap_color":["red","orange"],"cap_shape":["conical"],"cap_size":"small","stalk_color":["red"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "tsukiyo-take",
@@ -183,7 +192,8 @@
     "features": "傘は暗褐色〜黒褐色で直径10〜30cm、扇形〜半円形。ひだは黄色〜淡黄色（発光性）。柄は短く傘の端近くに偏心して付く。切断するとひだ・肉が青白く光る。複数が重なって発生。",
     "similar_species": ["shiitake", "hiratake"],
     "caution": "イルジンSなどの毒素を含む。摂取後1〜3時間で激しい嘔吐・下痢・腹痛が起こる。ひだを暗闇で確認すると青白く光るため見分けられるが、見た目はシイタケ・ヒラタケに非常に似ている。秋のキノコ採りで最も注意すべき毒キノコのひとつ。",
-    "tree_association": ["ブナ", "ミズナラ", "シイ"]
+    "tree_association": ["ブナ", "ミズナラ", "シイ"],
+    "traits": {"gill_type":["gills"],"cap_color":["brown","yellow"],"cap_shape":["funnel","flat"],"cap_size":"large","gill_attachment":["decurrent"],"stalk_color":["brown"],"stalk_features":["fibrous"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "sugi-hiratake",
@@ -202,7 +212,8 @@
     "features": "傘は白色で直径1〜5cm、扇形〜耳形でほぼ無柄。ひだは白色で密に垂生。肉は白色で薄い。小型で群生し、スギの枯木を白く覆うように密生する。表面は滑らか。",
     "similar_species": [],
     "caution": "2004年秋に東北・北陸地方で腎不全患者を中心に多数の死者が出た。原因物質は未特定だが腎機能低下者・高齢者は特に危険。健康な成人でも大量摂取は避けること。現在は食べないことを強く推奨する。",
-    "tree_association": ["スギ", "モミ", "トドマツ", "エゾマツ"]
+    "tree_association": ["スギ", "モミ", "トドマツ", "エゾマツ"],
+    "traits": {"gill_type":["gills"],"cap_color":["white"],"cap_shape":["funnel","flat"],"cap_size":"small","gill_attachment":["decurrent"],"stalk_color":["white"],"stalk_features":["fibrous"],"bruising":["none"],"substrate":["conifer"]}
   },
   {
     "id": "nigakuri-take",
@@ -220,7 +231,8 @@
     "description": "広葉樹・針葉樹の枯木に年間を通じて群生する毒キノコ。ナメコやエノキタケに似た外観で、栽培品と間違えて食べる事例がある。猛烈な苦みがあるが、毒素（ファシクロール）は加熱しても分解されない。",
     "features": "傘は硫黄黄色〜橙黄色で直径2〜7cm、中央部が橙褐色になることがある。ひだは黄色〜緑灰色で密。柄は黄色〜橙褐色で繊維状。群生〜叢生。生のままかじると強い苦みがある。",
     "similar_species": ["nameko", "enokitake"],
-    "caution": "ファシクロール類の毒素を含む。摂取すると嘔吐・下痢・腹痛・痙攣・呼吸困難などが起こり、重症では死亡することがある。苦みがあるが少量では気づかない場合もある。栽培キノコと間違えやすい環境で発生するため注意が必要。"
+    "caution": "ファシクロール類の毒素を含む。摂取すると嘔吐・下痢・腹痛・痙攣・呼吸困難などが起こり、重症では死亡することがある。苦みがあるが少量では気づかない場合もある。栽培キノコと間違えやすい環境で発生するため注意が必要。",
+    "traits": {"gill_type":["gills"],"cap_color":["yellow","orange"],"cap_shape":["convex","hemisphere"],"cap_size":"small","gill_attachment":["attached"],"stalk_color":["yellow","brown"],"stalk_features":["hollow"],"bruising":["none"],"substrate":["deadwood"]}
   },
   {
     "id": "kawara-take",
@@ -237,6 +249,7 @@
     "images_remote": [],
     "description": "広葉樹の枯木に年間を通じて発生する多年生の硬質菌。英名「ターキーテール（七面鳥の尾）」の通り、多彩な色帯が同心円状に並ぶ美しい外観をもつ。薬用研究（免疫活性化）が進んでいる。",
     "features": "子実体は半円形〜扇形で幅3〜10cm、表面に白〜灰〜青〜茶〜黒の多彩な色帯が同心円状に並ぶ。裏面は白色の細かい孔（管孔）で覆われる。肉質は革質〜コルク質で硬く、食用には不向き。",
-    "similar_species": []
+    "similar_species": [],
+    "traits": {"gill_type":["pores"],"cap_color":["brown","gray"],"cap_shape":["flat"],"cap_size":"small","stalk_color":["brown"],"bruising":["none"],"substrate":["deadwood"]}
   }
 ]
