@@ -43,6 +43,9 @@
 - [x] 採取計画ページ (フォーム→チャット→履歴統合)
 - [x] E2Eテスト (12シナリオ)
 - [x] ハイドレーション修正 (isHydratedフラグ追加)
+- [x] Markdownレンダリング (react-markdown + remark-gfm)
+- [x] 初回メッセージ自動送信修正
+- [x] ユーザーテスト・デバッグ完了
 
 ## Phase 4: 識別強化 — 未着手
 - [ ] TensorFlow.js オフライン識別
