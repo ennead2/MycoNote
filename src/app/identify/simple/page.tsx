@@ -63,7 +63,7 @@ export default function SimpleIdentifyPage() {
             {photoUrl ? (
               <div className="relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={photoUrl} alt={T.referencePhoto} className="w-full h-[180px] object-cover" />
+                <img src={photoUrl} alt={T.referencePhoto} className="w-full max-h-[240px] object-contain bg-black/20" />
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-2.5 bg-gradient-to-t from-black/50 to-transparent">
                   <span className="text-[10px] text-white/70">📷 {T.referencePhotoHint}</span>
                   <button
