@@ -63,12 +63,22 @@ export default function PlanPage() {
     }).join('\n');
   }, [records]);
 
+  const buildInitialMessage = (context: PlanContext): string => {
+    const parts: string[] = [];
+    if (context.date) parts.push(`予定日: ${context.date}`);
+    if (context.location) parts.push(`場所: ${context.location}`);
+    if (context.targetSpecies?.length) parts.push(`探したいキノコ: ${context.targetSpecies.join(', ')}`);
+    if (parts.length === 0) return '採取計画について相談したいです。アドバイスをお願いします。';
+    return `以下の条件で採取計画を立てたいです。アドバイスをお願いします。\n\n${parts.join('\n')}`;
+  };
+
   const handleFormSubmit = async (context: PlanContext) => {
     const fullContext: PlanContext = { ...context, recordsSummary: buildRecordsSummary() };
+    const initialUserMessage: ChatMessage = { role: 'user', content: buildInitialMessage(context) };
     const session: ChatSession = {
       id: crypto.randomUUID(),
       title: generateTitle(context),
-      messages: [],
+      messages: [initialUserMessage],
       context: fullContext,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
@@ -77,6 +87,47 @@ export default function PlanPage() {
     setCurrentSession(session);
     setSessions((prev) => [session, ...prev]);
     setView('chat');
+
+    // AIの初回応答を自動送信
+    setIsSending(true);
+    setStreamingText('');
+    try {
+      let fullResponse = '';
+      await streamPlanChat({
+        apiKey: state.apiKey!,
+        messages: [initialUserMessage],
+        context: fullContext,
+        onChunk: (chunk) => {
+          fullResponse += chunk;
+          setStreamingText(fullResponse);
+        },
+      });
+
+      const assistantMessage: ChatMessage = { role: 'assistant', content: fullResponse };
+      const finalSession: ChatSession = {
+        ...session,
+        messages: [initialUserMessage, assistantMessage],
+        updated_at: new Date().toISOString(),
+      };
+      setCurrentSession(finalSession);
+      await updateChatSession(finalSession);
+      setSessions((prev) => prev.map((s) => (s.id === finalSession.id ? finalSession : s)));
+    } catch (e) {
+      const errorMessage: ChatMessage = {
+        role: 'assistant',
+        content: `⚠ ${e instanceof Error ? e.message : UI_TEXT.common.error}`,
+      };
+      const errorSession: ChatSession = {
+        ...session,
+        messages: [initialUserMessage, errorMessage],
+        updated_at: new Date().toISOString(),
+      };
+      setCurrentSession(errorSession);
+      await updateChatSession(errorSession);
+    } finally {
+      setIsSending(false);
+      setStreamingText('');
+    }
   };
 
   const handleSend = async (text: string) => {
