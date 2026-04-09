@@ -1,10 +1,12 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { useApp } from '@/contexts/AppContext';
 import { testApiKey } from '@/lib/claude';
 import { UI_TEXT } from '@/constants/ui-text';
+import { buildExportData, downloadExportFile, parseImportFile, importData } from '@/lib/export-import';
+import type { ImportResult } from '@/types/export';
 
 type ConnectionStatus = 'idle' | 'testing' | 'connected' | 'failed';
 
@@ -13,6 +15,13 @@ export default function SettingsPage() {
   const [keyInput, setKeyInput] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState<ConnectionStatus>('idle');
+  const [includePhotos, setIncludePhotos] = useState(true);
+  const [isExporting, setIsExporting] = useState(false);
+  const [exportProgress, setExportProgress] = useState('');
+  const [isImporting, setIsImporting] = useState(false);
+  const [importResult, setImportResult] = useState<ImportResult | null>(null);
+  const [importError, setImportError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (state.apiKey) {
@@ -44,6 +53,55 @@ export default function SettingsPage() {
     setKeyInput('');
     setConnectionStatus('idle');
     setShowKey(false);
+  };
+
+  const handleExport = async () => {
+    setIsExporting(true);
+    setExportProgress(UI_TEXT.settings.exporting);
+    try {
+      const data = await buildExportData(includePhotos, (msg) => setExportProgress(msg));
+      downloadExportFile(data);
+      setExportProgress(UI_TEXT.settings.exportComplete);
+    } catch {
+      setExportProgress(UI_TEXT.common.error);
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
+  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    e.target.value = '';
+
+    setImportError(null);
+    setImportResult(null);
+
+    const text = await file.text();
+    const parsed = parseImportFile(text);
+
+    if (!parsed.valid) {
+      setImportError(parsed.error);
+      return;
+    }
+
+    const data = parsed.data;
+    const recordCount = data.records.length;
+    const chatCount = data.chatSessions.length;
+    const photoCount = data.photos?.length ?? 0;
+
+    const summary = `${UI_TEXT.settings.importRecords} ${recordCount}件・${UI_TEXT.settings.importChats} ${chatCount}件${photoCount > 0 ? `・${UI_TEXT.settings.importPhotos} ${photoCount}枚` : ''}${UI_TEXT.settings.importConfirm}`;
+    if (!confirm(summary)) return;
+
+    setIsImporting(true);
+    try {
+      const result = await importData(data);
+      setImportResult(result);
+    } catch {
+      setImportError(UI_TEXT.common.error);
+    } finally {
+      setIsImporting(false);
+    }
   };
 
   return (
@@ -105,6 +163,75 @@ export default function SettingsPage() {
           <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer" className="text-xs text-forest-400 underline hover:text-forest-300 mt-1 inline-block">
             {UI_TEXT.settings.apiKeyGetLink}
           </a>
+        </section>
+
+        {/* データ管理 */}
+        <section className="rounded-lg border border-forest-700 bg-forest-800 p-4">
+          <h2 className="mb-3 text-sm font-bold text-forest-300">{UI_TEXT.settings.dataSection}</h2>
+
+          {/* エクスポート */}
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-2">
+              <input
+                type="checkbox"
+                id="include-photos"
+                checked={includePhotos}
+                onChange={(e) => setIncludePhotos(e.target.checked)}
+                className="rounded border-forest-600 bg-forest-900 text-forest-500"
+              />
+              <label htmlFor="include-photos" className="text-xs text-forest-400">
+                {UI_TEXT.settings.exportIncludePhotos}
+              </label>
+            </div>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={handleExport}
+              disabled={isExporting}
+              className="w-full"
+            >
+              {isExporting ? exportProgress : UI_TEXT.settings.exportButton}
+            </Button>
+          </div>
+
+          {/* インポート */}
+          <div>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={isImporting}
+              className="w-full"
+            >
+              {isImporting ? UI_TEXT.settings.importing : UI_TEXT.settings.importButton}
+            </Button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json"
+              className="hidden"
+              onChange={handleImportFile}
+            />
+          </div>
+
+          {/* インポート結果 */}
+          {importResult && (
+            <div className="mt-3 rounded-md bg-forest-900 p-3 text-xs text-forest-300">
+              <p className="font-bold mb-1">{UI_TEXT.settings.importComplete}</p>
+              <p>{UI_TEXT.settings.importRecords}: {importResult.recordsAdded}{UI_TEXT.settings.importAdded}（{importResult.recordsSkipped}{UI_TEXT.settings.importSkipped}）</p>
+              <p>{UI_TEXT.settings.importChats}: {importResult.chatSessionsAdded}{UI_TEXT.settings.importAdded}（{importResult.chatSessionsSkipped}{UI_TEXT.settings.importSkipped}）</p>
+              {importResult.photosAdded > 0 && (
+                <p>{UI_TEXT.settings.importPhotos}: {importResult.photosAdded}{UI_TEXT.settings.importAdded}</p>
+              )}
+            </div>
+          )}
+
+          {/* インポートエラー */}
+          {importError && (
+            <div className="mt-3 rounded-md bg-red-900/30 border border-red-800 p-3 text-xs text-red-300">
+              {importError}
+            </div>
+          )}
         </section>
 
         {/* アプリ情報 */}
