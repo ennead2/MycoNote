@@ -1,15 +1,22 @@
 import Dexie, { type Table } from 'dexie';
 import { MushroomRecord, RecordPhoto } from '../types/record';
+import { ChatSession } from '../types/chat';
 
 class MycoNoteDB extends Dexie {
   records!: Table<MushroomRecord, string>;
   record_photos!: Table<RecordPhoto, string>;
+  chatSessions!: Table<ChatSession, string>;
 
   constructor() {
     super('MycoNoteDB');
     this.version(1).stores({
       records: 'id, mushroom_id, observed_at',
       record_photos: 'id, record_id',
+    });
+    this.version(2).stores({
+      records: 'id, mushroom_id, observed_at',
+      record_photos: 'id, record_id',
+      chatSessions: 'id, created_at, updated_at',
     });
   }
 }
