@@ -27,7 +27,8 @@ function generateTitle(context: PlanContext): string {
   if (location && date) return `${location} ${date}`;
   if (location) return `${location} の採取計画`;
   if (date) return `採取計画 ${date}`;
-  return `採取計画 ${new Date().toLocaleDateString('ja-JP')}`;
+  const now = new Date();
+  return `採取計画 ${now.getMonth() + 1}/${now.getDate()}`;
 }
 
 export default function PlanPage() {
