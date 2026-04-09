@@ -123,8 +123,11 @@ function SubstrateIcon({ type, active }: { type: string; active: boolean }) {
   const icons: Record<string, ReactNode> = {
     broadleaf: (
       <svg width={S} height={S} viewBox="0 0 24 24">
-        <path d="M12 20 L12 10" stroke={c} strokeWidth="1.5" />
-        <path d="M6 10 Q12 2 18 10 Q12 8 6 10Z" fill={c} opacity="0.7" />
+        <path d="M12 22 L12 13" stroke={c} strokeWidth="2" strokeLinecap="round" />
+        <circle cx="12" cy="9" r="5" fill={c} opacity="0.5" />
+        <circle cx="8" cy="7" r="3.5" fill={c} opacity="0.6" />
+        <circle cx="16" cy="7" r="3.5" fill={c} opacity="0.6" />
+        <circle cx="12" cy="5" r="3.5" fill={c} opacity="0.7" />
       </svg>
     ),
     conifer: (
