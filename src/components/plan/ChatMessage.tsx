@@ -1,6 +1,7 @@
 'use client';
 
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { ChatMessage } from '@/types/chat';
 
@@ -27,6 +28,7 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
           message.content
         ) : (
           <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             components={{
               h1: ({ children }) => <h1 className="text-base font-bold mb-1 mt-2 first:mt-0">{children}</h1>,
               h2: ({ children }) => <h2 className="text-sm font-bold mb-1 mt-2 first:mt-0">{children}</h2>,
