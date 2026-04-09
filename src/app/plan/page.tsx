@@ -8,7 +8,7 @@ export default function PlanPage() {
       <PageHeader title={UI_TEXT.plan.title} />
       <div className="flex flex-col items-center justify-center px-4 py-16">
         <span className="mb-4 text-5xl">🗺</span>
-        <p className="text-center text-forest-400">{UI_TEXT.plan.comingSoon}</p>
+        <p className="text-center text-forest-400">{UI_TEXT.plan.formDescription}</p>
       </div>
     </div>
   );
