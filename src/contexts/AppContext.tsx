@@ -7,19 +7,22 @@ interface AppState {
   apiKey: string | null;
   preferredRegions: string[];
   theme: 'light' | 'dark' | 'system';
+  isHydrated: boolean;
 }
 
 type AppAction =
   | { type: 'SET_ONLINE'; payload: boolean }
   | { type: 'SET_API_KEY'; payload: string | null }
   | { type: 'SET_REGIONS'; payload: string[] }
-  | { type: 'SET_THEME'; payload: 'light' | 'dark' | 'system' };
+  | { type: 'SET_THEME'; payload: 'light' | 'dark' | 'system' }
+  | { type: 'SET_HYDRATED' };
 
 const DEFAULT_STATE: AppState = {
   isOnline: true,
   apiKey: null,
   preferredRegions: [],
   theme: 'system',
+  isHydrated: false,
 };
 
 function appReducer(state: AppState, action: AppAction): AppState {
@@ -31,6 +34,7 @@ function appReducer(state: AppState, action: AppAction): AppState {
       return { ...state, apiKey: action.payload };
     case 'SET_REGIONS': return { ...state, preferredRegions: action.payload };
     case 'SET_THEME': return { ...state, theme: action.payload };
+    case 'SET_HYDRATED': return { ...state, isHydrated: true };
     default: return state;
   }
 }
@@ -48,6 +52,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (savedKey) {
       dispatch({ type: 'SET_API_KEY', payload: savedKey });
     }
+    dispatch({ type: 'SET_HYDRATED' });
     dispatch({ type: 'SET_ONLINE', payload: navigator.onLine });
 
     const handleOnline = () => dispatch({ type: 'SET_ONLINE', payload: true });

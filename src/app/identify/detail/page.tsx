@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
@@ -28,8 +28,13 @@ export default function IdentifyDetailPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  if (!state.apiKey) {
-    router.replace('/settings');
+  useEffect(() => {
+    if (state.isHydrated && !state.apiKey) {
+      router.replace('/settings');
+    }
+  }, [state.isHydrated, state.apiKey, router]);
+
+  if (!state.isHydrated || !state.apiKey) {
     return null;
   }
 

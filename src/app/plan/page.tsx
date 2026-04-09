@@ -150,6 +150,10 @@ export default function PlanPage() {
     }
   };
 
+  if (!state.isHydrated) {
+    return null;
+  }
+
   if (!hasApiKey) {
     return (
       <div>
