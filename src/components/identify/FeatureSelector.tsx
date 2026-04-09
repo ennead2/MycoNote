@@ -17,7 +17,7 @@ interface ChipOption {
 
 // --- SVG アイコン ---
 
-const S = 20; // icon size
+const S = 24; // icon size
 
 function CapShapeIcon({ shape, active }: { shape: string; active: boolean }) {
   const c = active ? '#fff' : '#6a8a60';
@@ -112,10 +112,43 @@ function ColorDot({ color, active }: { color: string; active: boolean }) {
   };
   return (
     <span
-      className={`inline-block w-3 h-3 rounded-full border ${active ? 'border-white' : 'border-forest-600'}`}
+      className={`inline-block w-3.5 h-3.5 rounded-full border ${active ? 'border-white' : 'border-forest-600'}`}
       style={{ backgroundColor: colors[color] ?? '#888' }}
     />
   );
+}
+
+function SubstrateIcon({ type, active }: { type: string; active: boolean }) {
+  const c = active ? '#fff' : '#6a8a60';
+  const icons: Record<string, ReactNode> = {
+    broadleaf: (
+      <svg width={S} height={S} viewBox="0 0 24 24">
+        <path d="M12 20 L12 10" stroke={c} strokeWidth="1.5" />
+        <path d="M6 10 Q12 2 18 10 Q12 8 6 10Z" fill={c} opacity="0.7" />
+      </svg>
+    ),
+    conifer: (
+      <svg width={S} height={S} viewBox="0 0 24 24">
+        <path d="M12 20 L12 14" stroke={c} strokeWidth="1.5" />
+        <path d="M12 3 L7 10 L9 10 L5 16 L19 16 L15 10 L17 10 Z" fill={c} opacity="0.7" />
+      </svg>
+    ),
+    grass: (
+      <svg width={S} height={S} viewBox="0 0 24 24">
+        <path d="M4 20 Q6 10 8 14 Q10 8 12 12 Q14 6 16 14 Q18 10 20 20" fill="none" stroke={c} strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+    deadwood: (
+      <svg width={S} height={S} viewBox="0 0 24 24">
+        <rect x="2" y="10" width="20" height="6" rx="3" fill={c} opacity="0.5" />
+        <line x1="6" y1="10" x2="6" y2="16" stroke={c} strokeWidth="0.8" />
+        <line x1="11" y1="10" x2="11" y2="16" stroke={c} strokeWidth="0.8" />
+        <line x1="17" y1="10" x2="17" y2="16" stroke={c} strokeWidth="0.8" />
+        <path d="M18 10 L21 7" stroke={c} strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  };
+  return <>{icons[type]}</>;
 }
 
 function StalkFeatureIcon({ type, active }: { type: string; active: boolean }) {
@@ -167,11 +200,11 @@ function ChipGroup({
   required?: boolean;
 }) {
   return (
-    <div className="mb-3">
-      <div className="text-[10px] font-bold text-forest-400 mb-1.5">
+    <div className="mb-4">
+      <div className="text-xs font-bold text-forest-400 mb-2">
         {icon} {label} {required && <span className="text-amber-500">*</span>}
       </div>
-      <div className="flex gap-1 flex-wrap">
+      <div className="flex gap-1.5 flex-wrap">
         {options.map(({ value, label: chipLabel, iconFn }) => {
           const isActive = selected === value;
           return (
@@ -179,7 +212,7 @@ function ChipGroup({
               key={value}
               type="button"
               onClick={() => onSelect(isActive ? undefined : value)}
-              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs border transition-colors ${
+              className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm border transition-colors ${
                 isActive
                   ? 'bg-forest-500 text-white border-forest-400'
                   : 'bg-forest-900 text-forest-400 border-forest-700 hover:border-forest-500'
@@ -279,10 +312,10 @@ const EXTRA_GROUPS: { key: keyof IdentifyInput; label: string; icon: string; opt
   {
     key: 'substrate', label: T.substrateLabel, icon: '🌲',
     options: [
-      { value: 'broadleaf', label: T.substrateBroadleaf },
-      { value: 'conifer', label: T.substrateConifer },
-      { value: 'grass', label: T.substrateGrass },
-      { value: 'deadwood', label: T.substrateDeadwood },
+      { value: 'broadleaf', label: T.substrateBroadleaf, iconFn: (a) => <SubstrateIcon type="broadleaf" active={a} /> },
+      { value: 'conifer', label: T.substrateConifer, iconFn: (a) => <SubstrateIcon type="conifer" active={a} /> },
+      { value: 'grass', label: T.substrateGrass, iconFn: (a) => <SubstrateIcon type="grass" active={a} /> },
+      { value: 'deadwood', label: T.substrateDeadwood, iconFn: (a) => <SubstrateIcon type="deadwood" active={a} /> },
     ],
   },
 ];
