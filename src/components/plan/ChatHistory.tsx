@@ -16,6 +16,18 @@ function formatDate(iso: string): string {
   return `${d.getMonth() + 1}月`;
 }
 
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/#{1,6}\s+/g, '')           // 見出し
+    .replace(/\*\*(.+?)\*\*/g, '$1')     // 太字
+    .replace(/\*(.+?)\*/g, '$1')         // 斜体
+    .replace(/\|/g, ' ')                 // テーブル区切り
+    .replace(/-{3,}/g, '')               // テーブル区切り線
+    .replace(/\[(.+?)\]\(.+?\)/g, '$1')  // リンク
+    .replace(/\s{2,}/g, ' ')             // 連続空白
+    .trim();
+}
+
 export function ChatHistoryList({ sessions, onSelect, onDelete, onNewSession }: ChatHistoryListProps) {
   return (
     <div className="px-4 py-4 space-y-3">
@@ -38,7 +50,7 @@ export function ChatHistoryList({ sessions, onSelect, onDelete, onNewSession }: 
                 {session.context.date && `📅 ${session.context.date.slice(5, 7)}月`}
               </div>
               {lastMessage && (
-                <p className="text-xs text-forest-300 truncate">{lastMessage.content}</p>
+                <p className="text-xs text-forest-300 truncate">{stripMarkdown(lastMessage.content)}</p>
               )}
             </button>
             <div className="flex items-center justify-between mt-2">
