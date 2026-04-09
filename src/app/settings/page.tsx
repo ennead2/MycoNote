@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { useApp } from '@/contexts/AppContext';
+import { useRecords } from '@/contexts/RecordsContext';
 import { testApiKey } from '@/lib/claude';
 import { UI_TEXT } from '@/constants/ui-text';
 import { buildExportData, downloadExportFile, parseImportFile, importData } from '@/lib/export-import';
@@ -12,6 +13,7 @@ type ConnectionStatus = 'idle' | 'testing' | 'connected' | 'failed';
 
 export default function SettingsPage() {
   const { state, dispatch } = useApp();
+  const { reload: reloadRecords } = useRecords();
   const [keyInput, setKeyInput] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState<ConnectionStatus>('idle');
@@ -97,6 +99,7 @@ export default function SettingsPage() {
     try {
       const result = await importData(data);
       setImportResult(result);
+      await reloadRecords();
     } catch {
       setImportError(UI_TEXT.common.error);
     } finally {

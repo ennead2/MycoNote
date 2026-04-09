@@ -19,6 +19,7 @@ interface RecordsContextValue {
   editRecord: (record: MushroomRecord) => Promise<void>;
   removeRecord: (id: string) => Promise<void>;
   getRecordsByMushroomId: (mushroomId: string) => MushroomRecord[];
+  reload: () => Promise<void>;
 }
 
 const RecordsContext = createContext<RecordsContextValue | null>(null);
@@ -85,8 +86,13 @@ export function RecordsProvider({ children }: { children: ReactNode }) {
     return records.filter((r) => r.mushroom_id === mushroomId);
   }, [records]);
 
+  const reload = useCallback(async () => {
+    const all = await getAllRecords();
+    setRecords(all);
+  }, []);
+
   return (
-    <RecordsContext.Provider value={{ records, isLoading, addNewRecord, editRecord, removeRecord, getRecordsByMushroomId }}>
+    <RecordsContext.Provider value={{ records, isLoading, addNewRecord, editRecord, removeRecord, getRecordsByMushroomId, reload }}>
       {children}
     </RecordsContext.Provider>
   );
