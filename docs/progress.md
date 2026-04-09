@@ -27,11 +27,22 @@
 - [x] E2Eテスト (4シナリオ)
 - [x] ユーザーテスト・デバッグ完了
 
-## Phase 3: AI連携 — 未着手
-- [ ] Claude APIクライアント
-- [ ] 詳細識別 (Claude Vision, コンパクト種リスト方式)
-- [ ] 採取計画チャット (ハイブリッド方式: ヒアリング→チャット)
-- [ ] APIキー設定UI
+## Phase 3: AI連携 — 完了 (2026-04-09)
+- [x] 型定義・UIテキスト定数
+- [x] システムプロンプト (識別・計画)
+- [x] IndexedDB chatSessionsテーブル
+- [x] Claude APIクライアント (fetch直接, ストリーミング対応)
+- [x] 設定画面 APIキー管理UI (接続テスト付き)
+- [x] 識別モード選択画面 (Phase 4簡易識別は無効表示)
+- [x] PhotoUploader (複数枚対応)
+- [x] IdentifyResultView (候補・毒キノコ警告・安全注意書き)
+- [x] 詳細識別ページ (Claude Vision統合)
+- [x] ChatMessage + ChatInput コンポーネント
+- [x] PlanForm (構造化ヒアリング)
+- [x] ChatHistoryList (セッション管理)
+- [x] 採取計画ページ (フォーム→チャット→履歴統合)
+- [x] E2Eテスト (12シナリオ)
+- [x] ハイドレーション修正 (isHydratedフラグ追加)
 
 ## Phase 4: 識別強化 — 未着手
 - [ ] TensorFlow.js オフライン識別
