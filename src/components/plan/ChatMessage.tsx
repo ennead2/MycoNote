@@ -39,6 +39,12 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
               em: ({ children }) => <em className="italic">{children}</em>,
               a: ({ href, children }) => <a href={href} className="underline text-forest-300 hover:text-forest-200" target="_blank" rel="noopener noreferrer">{children}</a>,
               hr: () => <hr className="border-forest-600 my-2" />,
+              table: ({ children }) => <table className="w-full border-collapse text-xs my-2">{children}</table>,
+              thead: ({ children }) => <thead className="border-b border-forest-600">{children}</thead>,
+              tbody: ({ children }) => <tbody>{children}</tbody>,
+              tr: ({ children }) => <tr className="border-b border-forest-700 last:border-b-0">{children}</tr>,
+              th: ({ children }) => <th className="text-left py-1 pr-3 font-semibold text-forest-300">{children}</th>,
+              td: ({ children }) => <td className="py-1 pr-3 text-forest-200">{children}</td>,
             }}
           >
             {message.content}
