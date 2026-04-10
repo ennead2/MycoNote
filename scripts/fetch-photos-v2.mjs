@@ -93,7 +93,7 @@ async function getWikipediaImage(jaName, scientificName) {
 
 // ─── iNaturalist ────────────────────────────────────
 
-const INAT_MAX_PHOTOS = 10;
+const INAT_MAX_PHOTOS = 9;
 const INAT_FETCH_COUNT = 30; // Fetch more to allow user-diverse selection
 
 /**
