@@ -27,9 +27,9 @@
     ],
     "image_local": "/images/mushrooms/matsutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c4/Fresh_matsutake.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ae/Sesame_oil_with_matsutake_mushrooms.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f9/Dried_matsutake_mushrooms.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115545849/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115545910/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115545929/medium.jpg"
     ],
     "description": "アカマツの根に共生する外生菌根菌。独特の芳香と歯ごたえが特徴で、日本では古くから珍重されてきた高級食材。近年は生育環境の悪化により発生量が大幅に減少している。",
     "features": "傘は淡褐色〜茶褐色で直径8〜20cm、初め丸みを帯び後に平開する。柄は太く白色〜淡褐色、部分ベールの跡が環状に残る。強い芳香が最大の特徴で、ひだは白色で密。",
@@ -39,7 +39,7 @@
       "クロマツ",
       "エゾマツ"
     ],
-    "source_url": "https://commons.wikimedia.org/wiki/File:Daxinganling_snow_mountain_matsutake_mushrooms.jpg",
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%82%BF%E3%82%B1",
     "traits": {
       "gill_type": [
         "gills"
@@ -101,9 +101,9 @@
     ],
     "image_local": "/images/mushrooms/shiitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b0/Xiitake_%28Lentinula_edodes%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/ce/Lentinula_edodes_shiitake.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Shiitake_%28Lentinula_edodes%29_secos_2014-07-09_14-43.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/587891241/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/587891271/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/263782428/medium.jpeg"
     ],
     "description": "シイ・クヌギ・ナラなどの枯死した広葉樹に発生する木材腐朽菌。世界で広く栽培される食用キノコで、うま味成分のグアニル酸を豊富に含む。春と秋の2シーズンに発生する。",
     "features": "傘は暗褐色〜茶褐色で直径5〜20cm、表面に白い綿毛状のかすり模様が入ることがある。ひだは白色〜クリーム色で密。柄は白色〜淡褐色で繊維状。特有の香りをもつ。",
@@ -146,7 +146,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Mushroom_at_Peng_Chau.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%A4%E3%82%BF%E3%82%B1"
   },
   {
     "id": "enokitake",
@@ -178,9 +178,9 @@
     ],
     "image_local": "/images/mushrooms/enokitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/ce/Fluweelpootje%2C_%28Flammulina_velutipes%29%2C_22-01-2026._%28d.j.b.%29._01.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Fluweelpootje%2C_%28Flammulina_velutipes%29%2C_%28d.j.b.%29_02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flammulina_velutipes.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/44406720/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/30127145/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/30127146/medium.jpg"
     ],
     "description": "エノキ・ヤナギ・ケヤキなどの広葉樹の枯木に晩秋から春にかけて発生する寒さに強いキノコ。野生品は傘が茶褐色で柄が黒いが、栽培品は白く細長い。冬でも雪の中で発生する。",
     "features": "傘は茶褐色〜黄褐色で直径2〜8cm、ぬめりがある。ひだは白色〜クリーム色でやや疎。柄は細長く茶褐色〜黒褐色で細かい毛が密生する。群生することが多い。",
@@ -223,7 +223,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Zwafelkop_(Hypholoma),_22-11-2023._(d.j.b).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B1"
   },
   {
     "id": "nameko",
@@ -254,9 +254,9 @@
     ],
     "image_local": "/images/mushrooms/nameko.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/28/2016-08-20_Vegetable_dish_Fried_Loofah_with_Pholiota_Nameko_Beijing_Restaurant_anagoria.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bowl_of_Nameko_by_frankenstoen.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nameko_yogya_DSC_0970-.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/179103865/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/179103871/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/179103873/medium.jpeg"
     ],
     "description": "ブナ・トチノキなどの広葉樹の枯木や倒木に群生する。表面のぬめりが特徴で、味噌汁の具や和え物として広く親しまれている。ぬめり成分のムチンは整腸作用をもつ。",
     "features": "傘は橙褐色〜黄褐色で直径2〜8cm、強いぬめりに覆われる。ひだは淡黄色〜錆褐色で密。柄は淡黄色〜茶褐色でぬめりがある。群生〜叢生し、環状の膜質のツバがある。",
@@ -297,7 +297,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Pilze_Unidentified_Pholiota_stack.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A1%E3%82%B3"
   },
   {
     "id": "hiratake",
@@ -328,9 +328,9 @@
     ],
     "image_local": "/images/mushrooms/hiratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/55/20210718_Pleurotus_ostreatus_116-138.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/33/20210719_Pleurotus_ostreatus_098-127.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/71/20210718_Pleurotus_ostreatus_21-35.jpg"
+      "https://static.inaturalist.org/photos/13125524/medium.jpeg",
+      "https://static.inaturalist.org/photos/13125526/medium.jpeg",
+      "https://static.inaturalist.org/photos/13125528/medium.jpeg"
     ],
     "description": "各種広葉樹の枯木に発生する白色腐朽菌。スーパーで売られているエリンギの近縁種。扇形〜耳形の大きな傘が特徴で、クセがなく鍋物や炒め物に向く。晩秋〜春の低温期に多い。",
     "features": "傘は灰白色〜灰褐色で直径5〜20cm、扇形〜半円形。ひだは白色で密、傘の端まで垂生する。柄は短く白色、傘の端寄りに偏心して付く。肉は白色で柔軟、無臭に近い。",
@@ -373,7 +373,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:20210719_Pleurotus_ostreatus_001-016.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "tamago-tengu-take",
@@ -402,9 +402,9 @@
     ],
     "image_local": "/images/mushrooms/tamago-tengu-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Gr%C3%BCner_Knollenbl%C3%A4tterpilz%28Amanita_phalloides%29Bruderwald_focus_stacking-20251017-RM-160322.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/69/Young_death_cap_mushroom_%28Amanita_phalloides%29_Heidelberg.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/48/Amanita_phalloides_%281467454085%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/281556457/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/281556481/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/281556504/medium.jpeg"
     ],
     "description": "世界で最も多くのキノコ中毒死者を出している猛毒キノコ。アマトキシン類を含み、摂取後6〜24時間は症状が出ないため治療が遅れやすい。肝臓・腎臓を破壊し、致死率が高い。",
     "features": "傘は黄緑色〜オリーブ緑色で直径5〜12cm。ひだは白色。柄は白色〜淡緑色でツバとツボをもつ。卵形のツボ（袋）から発生する様子が特徴。全体的に食欲をそそる外観で危険。",
@@ -449,7 +449,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_phalloides_group.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1"
   },
   {
     "id": "doku-tsuru-take",
@@ -479,9 +479,9 @@
     ],
     "image_local": "/images/mushrooms/doku-tsuru-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Amanita_virosa_qtl1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/6f/AMANITA_VAGINATA_%28Bull._Fr.%29_Vittadini_%285825615837%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/ce/AMANITA_VAGINATA_%28Bull._Fr.%29_Vittadini_%285826169280%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/149817438/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/149817451/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/149817459/medium.jpeg"
     ],
     "description": "「破壊の天使」とも呼ばれる世界最強クラスの猛毒キノコ。全体が純白で美しい外観だが、アマトキシン類を大量に含む。日本国内のキノコ中毒死の多くに関与している。",
     "features": "全体が純白で傘の直径は5〜12cm、円錐形〜平開。ひだは白色で密。柄は白色で細かい綿毛状の鱗片が付き、ツバとツボをもつ。ツボは白い袋状で地中に埋まっていることが多い。",
@@ -526,7 +526,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_phalloides_group.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1"
   },
   {
     "id": "beni-tengu-take",
@@ -556,9 +556,9 @@
     ],
     "image_local": "/images/mushrooms/beni-tengu-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/af/Rde%C4%8Da_mu%C5%A1nica_%28Amanita_muscaria%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Vliegenzwam_%28Amanita_muscaria%29._Locatie_De_Famberhorst._27-09-2020_%28d.j.b.%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Fliegenpilz_fly_agaric_Amanita_muscaria.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2937852/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2937847/medium.jpg",
+      "https://static.inaturalist.org/photos/26555709/medium.jpg"
     ],
     "description": "赤い傘に白いイボが点在する、童話でおなじみの毒キノコ。イボテン酸・ムシモールを含み、中枢神経に作用する。シベリアの一部地域では儀式に使われた歴史があるが、日本では食用不可。",
     "features": "傘は鮮紅色〜橙赤色で直径8〜20cm、表面に白色〜淡黄色のイボ（外皮の残片）が点在する。ひだは白色で密。柄は白色でツバとツボをもつ。全体的に鮮やかで目立つ外観。",
@@ -605,7 +605,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Fliegenpilz_(Amanita_muscaria)_-20191027-RM-120138.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kaen-take",
@@ -632,7 +632,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/kaen-take.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://static.inaturalist.org/photos/5672995/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/109621034/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111003476/medium.jpeg"
+    ],
     "description": "ナラ枯れ被害木の周辺に発生する橙赤色の猛毒菌。触れるだけで皮膚炎を起こし、微量を食べただけで死亡することがある。近年、ナラ枯れの拡大に伴い発生が増加している。",
     "features": "子実体は橙赤色〜朱赤色で、根棒状〜手指状に分岐する高さ3〜15cmの不規則な塊。キノコらしい形をしておらず、地面から炎のように突き出る。表面は滑らかで内部は充実。",
     "similar_species": [],
@@ -664,7 +668,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Kaentake.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%A8%E3%83%B3%E3%82%BF%E3%82%B1"
   },
   {
     "id": "tsukiyo-take",
@@ -694,7 +698,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/tsukiyo-take.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/440014973/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/440014990/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/440015010/medium.jpeg"
+    ],
     "description": "日本で最も中毒件数が多い毒キノコのひとつ。ヒラタケやシイタケと間違えて食べる事例が多発する。夜間に暗闇でひだが青白く発光する特徴があることから「月夜茸」と名付けられた。",
     "features": "傘は暗褐色〜黒褐色で直径10〜30cm、扇形〜半円形。ひだは黄色〜淡黄色（発光性）。柄は短く傘の端近くに偏心して付く。切断するとひだ・肉が青白く光る。複数が重なって発生。",
     "similar_species": [
@@ -738,7 +746,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Omphalotus_guepiniformis_Berk_Neda_02.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%82%AD%E3%83%A8%E3%82%BF%E3%82%B1"
   },
   {
     "id": "sugi-hiratake",
@@ -768,9 +776,9 @@
     ],
     "image_local": "/images/mushrooms/sugi-hiratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Pleurocybella_porrigens_176234.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/50/Pleurocybella_porrigens_176235.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pleurocybella_porrigens_175533.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4788157/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4788159/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4788160/medium.jpg"
     ],
     "description": "スギ・モミなどの針葉樹の枯木に群生する白色の小型キノコ。かつては食用とされていたが、2004年に腎不全患者や高齢者への致命的な中毒事例が多発したため、現在は食用を推奨しない。",
     "features": "傘は白色で直径1〜5cm、扇形〜耳形でほぼ無柄。ひだは白色で密に垂生。肉は白色で薄い。小型で群生し、スギの枯木を白く覆うように密生する。表面は滑らか。",
@@ -810,7 +818,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Angel_wing_mushroom_(Pleurocybella_porrigens).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AE%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "nigakuri-take",
@@ -840,9 +848,9 @@
     ],
     "image_local": "/images/mushrooms/nigakuri-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/34/Hypholoma_fasciculare%2C_Yellow_Sulphur_Tuft%2C_UK.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Gr%C3%BCnbl%C3%A4ttrige_Schwefelk%C3%B6pfe_%28Hypholoma_fasciculare%29-20201020-RM-110121.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fe/2025-10-15_D500-1025_Achim-Lammerts_Hypholoma-fasciculare.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83095902/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83095915/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83095894/medium.jpg"
     ],
     "description": "広葉樹・針葉樹の枯木に年間を通じて群生する毒キノコ。ナメコやエノキタケに似た外観で、栽培品と間違えて食べる事例がある。猛烈な苦みがあるが、毒素（ファシクロール）は加熱しても分解されない。",
     "features": "傘は硫黄黄色〜橙黄色で直径2〜7cm、中央部が橙褐色になることがある。ひだは黄色〜緑灰色で密。柄は黄色〜橙褐色で繊維状。群生〜叢生。生のままかじると強い苦みがある。",
@@ -882,7 +890,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2025-10-08_D500-0900_Achim-Lammerts_Hypholoma-fasciculare.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AC%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kawara-take",
@@ -914,9 +922,9 @@
     ],
     "image_local": "/images/mushrooms/kawara-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/70/Trametes_versicolor%2C_Sella_di_Vignola.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/93/Trametes_versicolor_2025_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/80/Gewoon_elfenbankje_%28Trametes_versicolor%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_02.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/27005174/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95491218/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/160331967/medium.jpg"
     ],
     "description": "広葉樹の枯木に年間を通じて発生する多年生の硬質菌。英名「ターキーテール（七面鳥の尾）」の通り、多彩な色帯が同心円状に並ぶ美しい外観をもつ。薬用研究（免疫活性化）が進んでいる。",
     "features": "子実体は半円形〜扇形で幅3〜10cm、表面に白〜灰〜青〜茶〜黒の多彩な色帯が同心円状に並ぶ。裏面は白色の細かい孔（管孔）で覆われる。肉質は革質〜コルク質で硬く、食用には不向き。",
@@ -943,7 +951,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Trametes_Versicolor-20191227-RM-145922.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AF%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "maitake",
@@ -971,9 +979,9 @@
     ],
     "image_local": "/images/mushrooms/maitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Grifola_frondosa_2014_G2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ae/Grifola_frondosa_2014_G3.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/13/Grifola_frondosa_03.jpg"
+      "https://static.inaturalist.org/photos/102095966/medium.jpg",
+      "https://static.inaturalist.org/photos/102095938/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/237749154/medium.jpg"
     ],
     "description": "ミズナラやクリなどの広葉樹の根元に発生する大型のキノコ。扇形の傘が重なり合って大きな株を形成し、重さが数kgに達することもある。香り高く、天ぷらや炊き込みご飯など和食に広く利用される。",
     "features": "傘は扇形〜ヘラ形で幅3〜8cm、灰褐色〜暗褐色。傘の裏面は白色の管孔で、柄に向かって垂生する。全体として多数の傘が重なり合い、株径20〜50cmの大きな塊状になる。肉は白色で弾力があり、香りが強い。",
@@ -1013,7 +1021,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Grifola_frondosa_2014_G1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%B1"
   },
   {
     "id": "bunashimeji",
@@ -1042,9 +1050,9 @@
     ],
     "image_local": "/images/mushrooms/bunashimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mushroom_soup_at_Korean_restaurant.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b8/Hypsizygus_marmoreus_%28Brown_shimeji%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/14/2012-08-27_Hypsizygus_marmoreus_%28Peck%29_H.E._Bigelow_320031.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331667480/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332023559/medium.jpg",
+      "https://static.inaturalist.org/photos/28156279/medium.jpg"
     ],
     "description": "ブナなどの広葉樹の枯木や倒木に束生する。傘に大理石状の模様が入るのが特徴で、栽培品が広く市販されている。歯切れがよく、煮物や炒め物など幅広い料理に使われる。",
     "features": "傘は径3〜8cm、半球形から饅頭形を経て平らに開く。表面は灰褐色〜褐色で、白い大理石模様が入る。ヒダは白色でやや密、柄に対して湾生〜直生する。柄は白色、長さ5〜10cm、中実でしっかりしている。",
@@ -1085,7 +1093,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Beech_mushrooms.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%8A%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "honshimeji",
@@ -1113,9 +1121,9 @@
     ],
     "image_local": "/images/mushrooms/honshimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/00/Shimeji_Tokyo_area_2020_5_11.jpeg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/87/Lyophyllum_shimeji_1999_1102_Niigata_%282%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/56/Lyophyllum_shimeji_112133.jpg"
+      "https://static.inaturalist.org/photos/89858402/medium.jpg",
+      "https://static.inaturalist.org/photos/89858441/medium.jpg",
+      "https://static.inaturalist.org/photos/89858413/medium.jpg"
     ],
     "description": "広葉樹林の地上に群生する菌根菌で、天然物は非常に珍しく高級食材として珍重される。「香り松茸、味しめじ」のしめじは本種を指す。近年栽培技術が確立され流通量が増えている。",
     "features": "傘は径3〜8cm、饅頭形から平らに開き、中央がやや盛り上がる。表面は灰褐色〜暗褐色で滑らか。ヒダは白色で密、柄に対して湾生する。柄は白色〜淡灰色、長さ3〜8cm、根元がやや膨らむ。肉は白色で緻密、味に優れる。",
@@ -1156,7 +1164,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lyophyllum_shimeji_cultiv%C3%A9s_Ky%C3%B4to.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "hatakeshimeji",
@@ -1187,9 +1195,9 @@
     ],
     "image_local": "/images/mushrooms/hatakeshimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/49/Lyophyllum_decastes_%2831511700208%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Lyophyllum_decastes_%2845387078451%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1d/Lyophyllum_decastes_%28Fr.%29_Singer_568306.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28599860/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28599857/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28599864/medium.jpg"
     ],
     "description": "畑や庭先、道端など人里近くの地上に大きな株状に群生する。名前の通り畑に出ることが多く、身近なキノコとして知られる。歯切れが良く、味噌汁や煮物などに向く。",
     "features": "傘は径3〜10cm、饅頭形から平らに開く。表面は灰褐色〜暗灰褐色で滑らか。ヒダは白色でやや密、柄に対して湾生〜直生する。柄は白色〜淡灰色、長さ5〜10cm。多数の個体が根元で癒合して大きな株になる。",
@@ -1228,7 +1236,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lyophyllum_decastes_(30446034047).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%BF%E3%82%B1%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "kikurage",
@@ -1258,9 +1266,9 @@
     ],
     "image_local": "/images/mushrooms/kikurage.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/53/Echt_judasoor_%28Auricularia_auricula-judae%29._20-11-2025._%28d.j.b.%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/35/Auricularia_auricula-judae_64485.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8b/Auricularia_auricula-judae_%28Bull.%29_Qu%C3%A9l_321006.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/189585427/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/189585449/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/189585467/medium.jpg"
     ],
     "description": "広葉樹の枯木や倒木に発生するゼラチン質のキノコ。耳のような形状で、乾燥させると保存が利く。中華料理をはじめ、炒め物やスープに広く利用される。",
     "features": "子実体は耳形〜不規則な椀形で、径3〜10cm。表面は暗褐色〜黒褐色で、ゼラチン質で半透明感がある。裏面はやや淡色で滑らか〜微細な脈状のしわがある。乾燥すると硬く縮み、水で戻すと元の形に復元する。",
@@ -1292,7 +1300,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Echt_judasoor_(Auricularia_auricula-judae)_op_een_stam_van_een_vlier._15-02-2024._(actm.)_15-02-2024._(actm.).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2"
   },
   {
     "id": "aragekikurage",
@@ -1321,8 +1329,9 @@
     ],
     "image_local": "/images/mushrooms/aragekikurage.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4d/2007-12-07_Auricularia_polytricha_%28Mont.%29_Sacc_9174.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/31/2007-10-17_Auricularia_polytricha_%28Mont.%29_Sacc_6978.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/505118756/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/505118807/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/505118777/medium.jpg"
     ],
     "description": "キクラゲに似るが、裏面に白い毛が密生するのが特徴。キクラゲよりも肉厚でコリコリとした食感が楽しめる。市販の乾燥キクラゲの多くは本種である。",
     "features": "子実体は耳形〜椀形で、径3〜12cm。表面は暗褐色でゼラチン質。裏面には灰白色〜白色の細かい毛が密生し、キクラゲとの区別点となる。キクラゲよりやや大型で肉厚になる傾向がある。",
@@ -1354,7 +1363,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Het_hu_nu_%E0%B9%80%E0%B8%AB%E0%B9%87%E0%B8%94%E0%B8%AB%E0%B8%B9%E0%B8%AB%E0%B8%99%E0%B8%B9_Auricularia_polytricha.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A9%E3%82%B2%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2"
   },
   {
     "id": "hanabiratake",
@@ -1383,9 +1392,9 @@
     ],
     "image_local": "/images/mushrooms/hanabiratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Grote_sponszwam_%28Sparassis_crispa%29._09-11-2023._%28d.j.b%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/16/Cauliflower_Mushroom_Sparassis_crispa%3F_%2814980304597%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Curly_asparagus%2C_sheep_mushroom%2C_mushroom_cabbage_%28Sparassis_crispa_Fr.%29_-_an_edible_mushroom_from_the_sparassidaceae_family_%28Sparassidaceae%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246682903/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/241462981/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/241463046/medium.jpg"
     ],
     "description": "針葉樹の根元に発生する大型のキノコで、花弁状のひだが重なり合ってカリフラワーのような形になる。βグルカンを豊富に含み、健康食品としても注目される。サラダや鍋料理に合う。",
     "features": "子実体は球形〜不定形で径10〜30cm、重さ数kgに達することもある。薄い花弁状〜波状のひだが密に重なり合い、全体としてカリフラワー状になる。色はクリーム白色〜淡黄白色。肉質は弾力があり、コリコリした食感。",
@@ -1414,7 +1423,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2025-08-29_D500-0564_Achim_Lammerts_Krause_Glucke_(Sparassis_crispa).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%83%93%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "yamabushitake",
@@ -1443,9 +1452,9 @@
     ],
     "image_local": "/images/mushrooms/yamabushitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hericium_erinaceus_101875852.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hericium_erinaceus_102695873.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/19/Hericium_erinaceus_111475715.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100706121/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/101093942/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100706112/medium.jpg"
     ],
     "description": "広葉樹の幹や枯木に発生する白い針状の垂れ下がった子実体が特徴的なキノコ。山伏が着る袈裟の飾りに似ることが名前の由来。ヘリセノンなどの成分が含まれ、機能性食品としても注目される。",
     "features": "子実体は球形〜不定形で径5〜20cm。表面から長さ1〜5cmの白色の針状突起が多数垂れ下がり、ハリネズミのような外観になる。新鮮なものは白色だが、古くなると黄褐色に変色する。肉は白色で柔らかい。",
@@ -1481,7 +1490,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Hericium_erinaceus_116231078.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%96%E3%82%B7%E3%82%BF%E3%82%B1"
   },
   {
     "id": "tamagotake",
@@ -1510,8 +1519,9 @@
     ],
     "image_local": "/images/mushrooms/tamagotake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/6/66/Amanita_caesareoides_275528.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/15/Amanita_caesareoides_Lj.N._Vassiljeva_275529.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/143307173/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/205593954/medium.jpg",
+      "https://static.inaturalist.org/photos/161824056/medium.jpeg"
     ],
     "description": "テングタケ属でありながら優れた食用菌として知られる。白い卵状のツボを破って鮮やかな赤橙色の傘が現れる様子が特徴的。ヨーロッパのセイヨウタマゴタケの近縁種で、味も良い。",
     "features": "傘は径5〜15cm、半球形から平らに開く。表面は鮮やかな赤橙色〜橙色で、周縁に条線がある。ヒダは黄色で密、離生する。柄は黄色で長さ8〜15cm、上部にだらりとした黄色のツバがある。根元には白色の膜質のツボがある。",
@@ -1555,7 +1565,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Mushroom_20210724_111502.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kuritake",
@@ -1584,9 +1594,9 @@
     ],
     "image_local": "/images/mushrooms/kuritake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d0/Hypholoma_lateritium_in_Pennsylvania.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/91/Liat_Portal_for_Foodie_Disorder_-_Cinnamon_Cap_Mushroom_%28Hypholoma_lateritium%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/04/Hypholoma_lateritium_%28Schaeffer%29_P._Kummer_467702.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/236845496/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/239156765/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/239156790/medium.jpeg"
     ],
     "description": "広葉樹の枯木や切り株に束生する秋の代表的な食用菌。傘が栗色であることが名前の由来。鍋物や煮物に向き、各地で親しまれてきた。猛毒のニガクリタケと混同に注意が必要。",
     "features": "傘は径3〜8cm、饅頭形から平らに開く。表面は赤褐色〜栗褐色で、周縁に白い繊維状の被膜の残片がつく。ヒダは初め淡黄色からのち暗紫褐色に変わる。柄は上部淡色、下部褐色で、長さ5〜10cm。束生する。",
@@ -1627,7 +1637,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2025-11-22_D500-1815_Achim-Lammerts_Hypholoma-lateritium.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1"
   },
   {
     "id": "mukitake",
@@ -1656,9 +1666,9 @@
     ],
     "image_local": "/images/mushrooms/mukitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/2011-10-30_Sarcomyxa_serotina_%28Pers.%29_P._Karst_178821.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sarcomyxa_serotina_%28Pers.%29_P._Karst_575374.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/2012-10-16_Sarcomyxa_serotina_%28Pers.%29_P._Karst_272414.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/124964357/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/124964376/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/124964388/medium.jpeg"
     ],
     "description": "晩秋にブナなどの広葉樹の枯木に重生する。傘の表皮が容易に剥けることが名前の由来。ゼラチン質を含みヌメリがあり、味噌汁や鍋物に適する。猛毒のツキヨタケと誤認される事故が多い。",
     "features": "傘は径3〜15cm、半円形〜腎臓形で、側着〜ほぼ無柄。表面はオリーブ褐色〜黄褐色でゼラチン質の粘性があり、表皮が容易に剥ける。ヒダは白色〜淡黄色で密。肉は白色でゼラチン質を含み、やや透明感がある。",
@@ -1700,7 +1710,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Sarcomyxa_serotina_(Pers.)_P._Karst_575373.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%82%AD%E3%82%BF%E3%82%B1"
   },
   {
     "id": "koutake",
@@ -1727,9 +1737,9 @@
     ],
     "image_local": "/images/mushrooms/koutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sarcodon_amygdaliolens_582998.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/52/Sarcodon_joeides_37404.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sarcodon_versipellis_311428.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2722127/medium.JPG",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/86965743/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/86965863/medium.jpeg"
     ],
     "description": "広葉樹林の地上に発生する菌根菌で、乾燥させると非常に強い芳香を放つ。松茸と並び称される高級キノコで、乾燥品はコウタケご飯として珍重される。近年発生量が減少し、希少性が増している。",
     "features": "傘は径5〜20cm、漏斗形〜浅い杯形。表面は暗褐色〜黒褐色で、大きなささくれ状の鱗片に覆われる。裏面は灰褐色の針状（歯状）。柄は太く短い。肉は褐色を帯び、乾燥すると独特の強い香りが出る。",
@@ -1796,9 +1806,9 @@
     ],
     "image_local": "/images/mushrooms/shougenji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/32/Cortinarius_caperatus_1421186.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cortinarius_caperatus_96497596.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/62/Cortinarius_caperatus_99388713.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/97547921/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/97547928/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/97547932/medium.jpg"
     ],
     "description": "針葉樹林や混交林の地上に群生する秋のキノコ。名前は「正源寺」という寺の名に由来するとされる。地方名「コムソウ」は虚無僧の笠に似た傘の形に由来する。味にクセがなく、和食全般に合う。",
     "features": "傘は径5〜12cm、鐘形〜饅頭形からやや平らに開く。表面は黄褐色〜褐色で、放射状のしわがあり、白い粉状の残片が散在する。ヒダは淡黄色からのち褐色に変わり、やや疎。柄は白色〜淡褐色で、上部に膜質のツバがある。",
@@ -1839,7 +1849,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Cortinarius_caperatus_2.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%B2%E3%83%B3%E3%82%B8"
   },
   {
     "id": "amitake",
@@ -1867,9 +1877,9 @@
     ],
     "image_local": "/images/mushrooms/amitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/38/Suillus_bovinus_317261.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Suillus_bovinus_187483.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/de/Suillus_bovinus_187484.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/533324085/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/533324327/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/533324330/medium.jpg"
     ],
     "description": "アカマツなどの松林地上に群生する菌根菌。傘の裏面が網目状の管孔になっているのが特徴で、名前の由来でもある。茹でると紫色に変色するが無害。味噌汁や大根おろし和えが定番。",
     "features": "傘は径3〜8cm、饅頭形から平らに開く。表面は黄褐色〜赤褐色で粘性がある。裏面は大きな多角形の管孔で、淡黄色〜オリーブ黄色、網目状に見える。柄は淡黄色〜褐色、長さ3〜6cm。肉は淡黄色で、茹でると紫色に変色する。",
@@ -1911,7 +1921,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2025-10-15_D500-1045_Achim-Lammerts_Suillus-bovinus.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%82%BF%E3%82%B1"
   },
   {
     "id": "chichitake",
@@ -1939,9 +1949,9 @@
     ],
     "image_local": "/images/mushrooms/chichitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Lactarius_volemus_119880.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Lactarius_volemus_119888.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ae/Lactarius_volemus_-_Lindsey_1a.jpg"
+      "https://static.inaturalist.org/photos/52737248/medium.jpg",
+      "https://static.inaturalist.org/photos/52737253/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/168846702/medium.jpeg"
     ],
     "description": "広葉樹林の地上に発生する菌根菌。傷をつけると白い乳液が大量に出ることが名前の由来。栃木県では「チタケ」と呼ばれ、チタケうどんとして郷土料理に欠かせないキノコ。出汁が非常に良い。",
     "features": "傘は径5〜12cm、饅頭形からやや漏斗形に開く。表面はビロード状で赤褐色〜橙褐色。ヒダは淡黄白色でやや密、傷つけると白い乳液が多量に出る。柄は傘と同色〜やや淡色、長さ5〜10cm。肉は白色で、傷つけると白い乳液が出て褐変する。",
@@ -1980,7 +1990,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lactarius_volemus_(Fr.)_Fr_244743.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%81%E3%82%BF%E3%82%B1"
   },
   {
     "id": "hatsutake",
@@ -2008,7 +2018,9 @@
     ],
     "image_local": "/images/mushrooms/hatsutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/43/Lactarius_akahatsu_Nobuj._Tanaka_665711.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444490183/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444489767/medium.jpeg",
+      "https://static.inaturalist.org/photos/26203336/medium.jpg"
     ],
     "description": "松林の地上に発生する菌根菌。秋に早くから出るため「初茸」の名がある。傷つけると緑青色に変色する乳液が出るのが大きな特徴。古くから日本で親しまれてきた食用菌で、焼き物や煮物に適する。",
     "features": "傘は径3〜10cm、饅頭形からやや漏斗形に開く。表面は淡赤褐色〜暗赤褐色で、同心円状の環紋がある。ヒダは橙色〜淡橙色で、傷つけると緑青色の乳液が出る。柄は淡橙色、長さ3〜6cm。肉は橙色を帯び、傷つけると緑青色に変色する。",
@@ -2048,7 +2060,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lactarius_akahatsu_Nobuj._Tanaka_665712.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1"
   },
   {
     "id": "murasakishimeji",
@@ -2077,9 +2089,9 @@
     ],
     "image_local": "/images/mushrooms/murasakishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Edible_fungi_in_basket_2022_G5.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/62/Paarse_schijnridderzwam_%28Lepista_nuda%29._14-12-2023._%28d.j.b%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lepista_nuda_LC0372.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/101150908/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/94850745/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/94850775/medium.jpeg"
     ],
     "description": "晩秋に広葉樹林の落葉の下や草地に発生する腐生菌。全体が美しい紫色を帯びるのが特徴で、フランスでも食用にされる。生食は消化不良を起こすため、必ず加熱して食べる必要がある。",
     "features": "傘は径5〜12cm、饅頭形から平らに開く。表面は紫色〜淡紫色で滑らか、老成すると褐色を帯びる。ヒダは紫色で密。柄は紫色で長さ5〜8cm、繊維状。肉は淡紫色で柔らかい。全体が鮮やかな紫色を呈するが、成長とともに退色する。",
@@ -2119,7 +2131,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lepista_nuda_2022_G1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "shimofurishimeji",
@@ -2148,9 +2160,9 @@
     ],
     "image_local": "/images/mushrooms/shimofurishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/6/65/Tricholoma_portentosum_var._lugdunense_%28Austria%29_02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Tricholoma_portentosum_var._lugdunense_%28Austria%29_01.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Tricholoma_portentosum_var._lugdunense_%28Austria%29_03.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/443865950/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/443866260/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/341347640/medium.jpeg"
     ],
     "description": "晩秋から初冬にかけて針葉樹林や混交林の地上に発生する菌根菌。松茸シーズンの終わりに出始め、霜が降りる頃に盛期を迎えるため「霜降」の名がある。味が良く、汁物や焼き物に向く。",
     "features": "傘は径5〜12cm、饅頭形から平らに開く。表面は灰褐色〜暗灰色で、黒い放射状の繊維紋がある。ヒダは白色でやや疎、湾生する。柄は白色で太く、長さ5〜10cm。肉は白色で厚く、加熱すると甘みが出る。",
@@ -2190,7 +2202,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Tricholoma_portentosum_181316.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A2%E3%83%95%E3%83%AA%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "usuhiratake",
@@ -2219,9 +2231,9 @@
     ],
     "image_local": "/images/mushrooms/usuhiratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pleurotus_pulmonarius_133642508.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Pleurotus_pulmonarius_134572309.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/58/Pleurotus_pulmonarius_134572257.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/46191492/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/46191483/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/312411710/medium.jpg"
     ],
     "description": "広葉樹の枯木や倒木に重なり合って発生する。ヒラタケに似るがより薄く繊細で、春から秋にかけて広い時期に見られる。柔らかく淡白な味わいで、さまざまな料理に使える万能キノコ。",
     "features": "傘は径3〜10cm、半円形〜扇形で薄い。表面は白色〜灰白色〜淡灰褐色で滑らか。ヒダは白色で密、柄に対して垂生する。柄は短く側生し、白色。ヒラタケよりも全体に薄く、色が淡い傾向がある。",
@@ -2263,7 +2275,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pleurotus_pulmonarius_134572137.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "tamogitake",
@@ -2333,7 +2345,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:20210718_Pleurotus_ostreatus_116-138.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%A2%E3%82%AE%E3%82%BF%E3%82%B1"
   },
   {
     "id": "numerisugi-take",
@@ -2362,9 +2374,9 @@
     ],
     "image_local": "/images/mushrooms/numerisugi-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pholiota_adiposa_Syn._Pholiota_aurivella_%28GB%3D_Golden_Scalycap%2C_D%3D_Goldfellsch%C3%BCppling%2C_F%3D_La_pholiote_dor%C3%A9e%2C_NL%3D_Goudvliesbundelzwam%29_brown_spores_and_causes_white_rot%2C_on_a_dead_Beech_at_Wolfheze_-_panoramio.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Pholiota_adiposa_Syn._Pholiota_aurivella_%28GB%3D_Golden_Scalycap%2C_D%3D_Goldfellsch%C3%BCppling%2C_F%3D_La_pholiote_dor%C3%A9e%2C_NL%3D_Goudvliesbundelzwam%29_brown_spores_and_causes_white_rot%2C_at_the_Beech_stump_along_the_Schelmseweg_Schaarsb_-_panoramio.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/51/Pholiota_adiposa_178010.jpg"
+      "https://static.inaturalist.org/photos/592708806/medium.jpg",
+      "https://static.inaturalist.org/photos/592708827/medium.jpg",
+      "https://static.inaturalist.org/photos/592708825/medium.jpg"
     ],
     "description": "広葉樹の枯木や生木の幹に束生する。傘表面に強い粘性があるのが特徴で、ナメコに似た食感が楽しめる。味噌汁や鍋物に向く。名前に「スギ」とあるが、実際には広葉樹に発生することが多い。",
     "features": "傘は径3〜10cm、饅頭形から平らに開く。表面は黄色〜黄褐色で、強い粘性があり、褐色の鱗片が散在する。ヒダは淡黄色〜褐色で密。柄は黄色〜褐色、上部に繊維状のツバの痕跡がある。表面に鱗片と粘性がある。",
@@ -2408,7 +2420,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pholiota_adiposa_Syn._Pholiota_aurivella_(GB%3D_Golden_Scalycap,_D%3D_Goldfellsch%C3%BCppling,_F%3D_La_pholiote_dor%C3%A9e,_NL%3D_Goudvliesbundelzwam)_brown_spores_and_causes_white_rot,_at_Oosterbeek_-_panoramio.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Pholiota%20adiposa"
   },
   {
     "id": "houkitake",
@@ -2437,9 +2449,9 @@
     ],
     "image_local": "/images/mushrooms/houkitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Ramaria_botrytis_190863.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/49/Ramaria_botrytis_299869.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Ramaria_botrytis_72329.jpg"
+      "https://static.inaturalist.org/photos/329241489/medium.jpg",
+      "https://static.inaturalist.org/photos/329241672/medium.jpg",
+      "https://static.inaturalist.org/photos/329241716/medium.jpg"
     ],
     "description": "広葉樹林の地上に発生するサンゴ状のキノコ。枝状に分岐する形が箒に似ることが名前の由来。先端が赤紫色を帯びるのが本種の特徴。食用になるが、似た種に下痢を起こすものがあるため注意が必要。",
     "features": "子実体は高さ8〜15cm、幅10〜20cmの珊瑚状〜箒状で、太い基部から多数の枝が分岐する。枝は白色〜淡黄色で、先端は赤紫色〜ワイン色を帯びる。肉は白色で脆く、断面は充実している。",
@@ -2469,7 +2481,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Ramaria_botrytis_702590.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1"
   },
   {
     "id": "masutake",
@@ -2498,9 +2510,9 @@
     ],
     "image_local": "/images/mushrooms/masutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/ff/Laetiporus_sulphureus_2023_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Laetiporus_sulphureus_2012_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Laetiporus_sulphureus_dish_2010_G1.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92273288/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92273322/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92273297/medium.jpg"
     ],
     "description": "広葉樹やまれに針葉樹の幹に半円形の棚状に重生する大型キノコ。鮮やかなオレンジ色〜サーモンピンク色で、鱒の身のような色合いから名付けられた。若い個体は柔らかく、フライや天ぷらにすると鶏肉のような食感になる。",
     "features": "子実体は半円形〜扇形の棚状で、幅10〜30cm。表面はオレンジ色〜黄橙色で滑らか〜やや起毛。裏面は硫黄色の微細な管孔。多数の棚が重なり合い、全体で50cm以上になることもある。肉は若い時は白色〜淡橙色で柔らかいが、老成すると硬くなる。",
@@ -2538,7 +2550,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Laetiporus_sulphureus_2019_G1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "yamadoritake-modoki",
@@ -2565,9 +2577,9 @@
     ],
     "image_local": "/images/mushrooms/yamadoritake-modoki.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/26/Edible_fungi_in_basket_2012_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0f/Boletus_reticulatus_2016_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e0/%28Gemeine_Steinpilz%29_Boletus_edulis.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115512758/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115512753/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/388508059/medium.jpg"
     ],
     "description": "広葉樹林の地上に発生する大型のイグチ科キノコ。ヨーロッパのポルチーニの近縁種で、日本の広葉樹林に適応した種。味がよく、イタリア料理のポルチーニの代用として使われる。パスタやリゾットに最適。",
     "features": "傘は径5〜20cm、半球形から饅頭形に開く。表面は淡褐色〜暗褐色でビロード状、乾燥するとひび割れが入る。管孔は白色から黄色〜オリーブ色に変わる。柄は太く、淡褐色〜褐色で表面に白い網目模様がある。肉は白色で変色しない。",
@@ -2606,7 +2618,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Boletus_reticulatus_2019_G01.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD"
   },
   {
     "id": "yamadoritake",
@@ -2634,9 +2646,9 @@
     ],
     "image_local": "/images/mushrooms/yamadoritake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8f/2025-10-11_D500-0940_Achim-Lammerts_Boletus-edulis-mit-Laccaria-amethystina.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/26/Edible_fungi_in_basket_2012_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bf/AD2009Sep13_Boletus_edulis_01.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2573715/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2573706/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2573703/medium.jpg"
     ],
     "description": "世界的に有名な食用菌ポルチーニの日本産。針葉樹林や広葉樹林の地上に発生する菌根菌。日本では北海道や本州の高原に分布し、比較的まれ。濃厚な風味で、乾燥させるとさらに香りが増す。",
     "features": "傘は径8〜25cm、半球形から饅頭形に開く。表面は褐色〜暗褐色で滑らか〜やや粘性がある。管孔は白色から黄色〜オリーブ色に変わる。柄は非常に太くがっしりしており、淡褐色で上部に白い網目模様がある。肉は白色で変色しない。",
@@ -2677,7 +2689,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Boletus_edulis_2020_G3.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1"
   },
   {
     "id": "akayamadori",
@@ -2704,9 +2716,9 @@
     ],
     "image_local": "/images/mushrooms/akayamadori.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Leccinum_manzanitae_126166.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Leccinum_holopus_101772.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Leccinum_rugosiceps_340888.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/429251395/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/429251434/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/429251463/medium.jpeg"
     ],
     "description": "広葉樹林の地上に発生する大型のイグチ科キノコ。傘が鮮やかな黄褐色〜橙褐色になる美しいキノコで、卵形の幼菌は特に見事。加熱するとトロリとした食感になり、スープやシチューに向く。",
     "features": "傘は径10〜25cm、半球形から饅頭形に開く。表面は鮮やかな黄褐色〜橙褐色で、フェルト状〜ビロード状。老成するとひび割れが入る。管孔は黄色〜オリーブ黄色。柄は太く、黄色の地に褐色の細かい鱗片がある。肉は黄色で、切断すると徐々に褐変する。",
@@ -2770,7 +2782,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/kurokawa.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/564529482/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/564529466/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/564529478/medium.jpg"
+    ],
     "description": "松林の地上に発生する菌根菌。傘の表面が黒っぽい色であることが名前の由来。やや苦味があるが、薄切りにして塩漬けや醤油漬けにすると美味。松茸と同じ環境に出るため、松茸山で見かけることが多い。",
     "features": "傘は径5〜20cm、饅頭形からやや平らに開く。表面は黒褐色〜暗灰褐色で、ビロード状〜細かい鱗片がある。裏面は白色の管孔で、傷つけると暗色に変色する。柄は太く短く、灰白色〜暗灰色。肉は白色で苦味がある。",
     "similar_species": [],
@@ -2809,7 +2825,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Nouvel_atlas_de_poche_des_champignons_comestibles_et_v%C3%A9n%C3%A9neux_(Pl._51)_(7831189596).jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Boletopsis%20leucomelaena"
   },
   {
     "id": "sakurashimeji",
@@ -2836,9 +2852,9 @@
     ],
     "image_local": "/images/mushrooms/sakurashimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/39/2011-10-09_Hygrophorus_russula_%28Schaeff.%29_Kauffman_175022.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/2011-10-09_Hygrophorus_russula_%28Schaeff.%29_Kauffman_175025.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f9/Nouvel_atlas_de_poche_des_champignons_comestibles_et_v%C3%A9n%C3%A9neux_%28Pl._17%29_%286459629619%29.jpg"
+      "https://static.inaturalist.org/photos/440169823/medium.jpeg",
+      "https://static.inaturalist.org/photos/440169840/medium.jpeg",
+      "https://static.inaturalist.org/photos/440169867/medium.jpeg"
     ],
     "description": "広葉樹林の地上に群生する菌根菌。傘が桜の花びらのような淡い紅色を帯びることが名前の由来。やや苦味があるが、塩漬けや煮物にすると苦味が和らぎ美味。各地で人気の食用菌。",
     "features": "傘は径5〜12cm、饅頭形から平らに開く。表面は白色の地に淡紅色〜ワイン色の斑点やしみが散在し、粘性がある。ヒダは白色でやや疎、直生〜やや垂生する。柄は白色で太く、長さ4〜8cm。肉は白色で緻密、やや苦味がある。",
@@ -2880,7 +2896,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2011-10-09_Hygrophorus_russula_(Schaeff.)_Kauffman_175024.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "urabenihoteishimeji",
@@ -2906,7 +2922,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/urabenihoteishimeji.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/448976457/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/448976466/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/448976479/medium.jpeg"
+    ],
     "description": "広葉樹林の地上に発生する菌根菌。ヒダが成熟するとピンク色になることが名前の由来。食用として人気が高いが、猛毒のクサウラベニタケと酷似しており、誤食事故が毎年のように発生する。経験者以外の採取は避けるべき。",
     "features": "傘は径5〜15cm、饅頭形から平らに開く。表面は灰褐色〜暗灰褐色で、絹糸状の光沢がある。ヒダは初め白色、成熟するとピンク色になる。柄は白色〜灰白色で太く長さ8〜15cm、ねじれたり曲がることがある。肉は白色で厚い。",
     "similar_species": [
@@ -2948,7 +2968,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2017-10-10_Entoloma_sarcopum_Nagas._%26_Hongo_797763.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%99%E3%83%8B%E3%83%9B%E3%83%86%E3%82%A4%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "hanaiguchi",
@@ -2976,9 +2996,9 @@
     ],
     "image_local": "/images/mushrooms/hanaiguchi.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Suillus_grevillei_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/cc/Suillus_grevillei_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Park_grzybowy_w_Pilce_%28Suillus_grevillei%29.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246877787/medium.jpg",
+      "https://static.inaturalist.org/photos/168351498/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169493048/medium.jpeg"
     ],
     "description": "カラマツ林に特異的に発生する菌根菌。カラマツの分布と一致し、長野県では「ジコボウ」、北海道では「ラクヨウ」の地方名で親しまれる。強いヌメリがあり、うどんや味噌汁の具として人気が高い。",
     "features": "傘は径3〜10cm、饅頭形から平らに開く。表面は赤褐色〜黄褐色で強い粘性がある。管孔は黄色〜オリーブ黄色で細かい。柄は黄色で、上部に膜質のツバがあり、ツバより上は黄色、下は褐色の粒点がある。肉は黄色で変色しない。",
@@ -3018,7 +3038,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2025-10-14_D500-0975_Achim-Lammerts_Suillus-grevillei.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%A4%E3%82%B0%E3%83%81"
   },
   {
     "id": "akamomitake",
@@ -3119,9 +3139,9 @@
     ],
     "image_local": "/images/mushrooms/anzutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8d/Cantharellus_cibarius_2009_G4.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Cantharellus_cibarius_2009_G2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Cantharellus_cibarius_2009_G3.jpg"
+      "https://static.inaturalist.org/photos/574601472/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/309948593/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/342437283/medium.jpg"
     ],
     "description": "広葉樹林や針葉樹林の地上に群生する菌根菌。ヨーロッパではシャントレルの名で最も人気のある食用菌の一つ。杏のような甘い芳香が名前の由来。フランス料理では卵料理やクリームソースに欠かせない食材。",
     "features": "傘は径2〜8cm、饅頭形から漏斗形に開く。表面は卵黄色〜鮮やかな黄色で滑らか。裏面にはヒダ状の脈が柄に向かって垂生し、しばしば分岐・連絡する。柄は傘と同色で下方に細まる。肉は淡黄色で杏のような芳香がある。",
@@ -3162,7 +3182,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Cantharellus_cibarius_2010_G1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%82%BA%E3%82%BF%E3%82%B1"
   },
   {
     "id": "yamaiguchi",
@@ -3188,9 +3208,9 @@
     ],
     "image_local": "/images/mushrooms/yamaiguchi.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Leccinum_scabrum_117467.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Leccinum_scabrum_-_horizontal_%28aka%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/37/Leccinum_scabrum_-_standing_%28aka%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/41341034/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10998024/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10998074/medium.jpg"
     ],
     "description": "シラカバやダケカンバの林に発生する菌根菌。シラカバとの共生関係が強く、シラカバの分布域に限られる。柄の表面に黒い鱗片があるのが特徴。味は淡白で、煮物やスープに向く。",
     "features": "傘は径5〜15cm、半球形から饅頭形に開く。表面は灰褐色〜暗褐色で滑らか〜やや粘性がある。管孔は白色〜灰白色で細かい。柄は白色の地に黒褐色の細かい鱗片が密生し、長さ8〜15cm。肉は白色で、切断すると徐々にピンク〜灰色に変色する。",
@@ -3227,7 +3247,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Leccinum_scabrum_in_hand.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%81"
   },
   {
     "id": "kanzoutake",
@@ -3256,9 +3276,9 @@
     ],
     "image_local": "/images/mushrooms/kanzoutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/e8/Beefsteak_Mushroom_-_Fistulina_hepatica_-_panoramio_-_Bj%C3%B6rn_S._%2821%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_126.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/11/Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_204.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/168986422/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/168986442/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/168986456/medium.jpg"
     ],
     "description": "シイやカシなどの広葉樹の幹に発生する。切断すると赤い肉汁が滴り、まるで生肉のような外観になることから「肝臓茸」の名がある。英名もBeefsteak fungus。酸味があり独特の味わいで、薄切りにしてサラダに使われることもある。",
     "features": "子実体は舌形〜半円形で、幅10〜25cm、厚さ3〜6cm。表面は赤褐色〜暗赤色で、湿った時に粘性がある。裏面は淡黄色〜淡赤色の細かい管孔で、管孔は互いに独立している。肉は赤色で、断面に赤い肉汁がにじむ。酸味のある味。",
@@ -3293,7 +3313,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Beefsteak_Mushroom_-_Fistulina_hepatica_-_panoramio.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%82%BE%E3%82%A6%E3%82%BF%E3%82%B1"
   },
   {
     "id": "numeriiguchi",
@@ -3321,9 +3341,9 @@
     ],
     "image_local": "/images/mushrooms/numeriiguchi.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/2025-10-15_D500-1030_Achim-Lammerts_Suillus-luteus.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Suillus_luteus_2010_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e3/Suillus_luteus_2010_G2.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12435226/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12435227/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12001096/medium.jpeg"
     ],
     "description": "アカマツやクロマツなどの松林に発生する菌根菌。傘の表面に非常に強いヌメリがあるのが最大の特徴。ヨーロッパでも広く食用にされる。表皮を剥いて調理するのが一般的で、味噌汁や煮物に向く。",
     "features": "傘は径4〜12cm、饅頭形から平らに開く。表面は暗褐色〜栗褐色で非常に強い粘性がある。管孔は黄色〜オリーブ黄色で細かい。柄は淡黄色で、上部に紫褐色の膜質の大きなツバがあり、ツバより上に粒点がある。肉は淡黄色で変色しない。",
@@ -3363,7 +3383,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Suillus_luteus_1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8C%E3%83%A1%E3%83%AA%E3%82%A4%E3%82%B0%E3%83%81"
   },
   {
     "id": "kusaurabenitake",
@@ -3393,9 +3413,9 @@
     ],
     "image_local": "/images/mushrooms/kusaurabenitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c3/2011-01-07_Entoloma_rhodopolium_group_2_61943.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Entoloma_rhodopolium_1645536.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Entoloma_rhodopolium_1645537.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/72070624/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/72070627/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/552445229/medium.jpg"
     ],
     "description": "日本で最も食中毒件数の多い毒キノコ。食用のウラベニホテイシメジに非常によく似ており、ベテランの採集者でも誤食する事例が多い。広葉樹林の地上に秋に群生する。",
     "features": "傘は灰白色〜灰褐色で直径3〜10cm、初め丸山形で後に平開する。ひだは初め白色で成熟するとピンク色になる。柄は白色〜灰白色で中空、繊維質。特有のやや不快な臭いがある。",
@@ -3438,7 +3458,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Entoloma_rhodopolium_947421.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%B5%E3%82%A6%E3%83%A9%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kakishimeji",
@@ -3467,9 +3487,9 @@
     ],
     "image_local": "/images/mushrooms/kakishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/19/Tricholoma_ustale_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tricholoma_ustale%26Pholiota_nameko_%28T.Ito%29_S.Ito_%26_Imai_%E3%82%AB%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8%26%E3%83%8A%E3%83%A1%E3%82%B3%EF%BC%88%E9%87%91%E6%B2%A2%E5%B8%82%E8%BF%91%E6%B1%9F%E7%94%BA%E5%B8%82%E5%A0%B4%EF%BC%89_PA091138.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Tricholoma.ustale3.-.lindsey.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/103448041/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/103448231/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/572743630/medium.jpg"
     ],
     "description": "広葉樹林の地上に秋に発生する中型の毒キノコ。名前の通り柿のような赤褐色の傘が特徴。ホンシメジやハタケシメジなど食用シメジ類と間違えやすく、毎年中毒事例が報告される。",
     "features": "傘は赤褐色〜栗褐色で直径3〜10cm、湿時にぬめりがある。ひだは白色〜淡黄色で密。柄は白色〜淡褐色で繊維質、上部にささくれがある。傷つけると褐色のシミが出る。",
@@ -3514,7 +3534,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Tricholoma_ustale.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "tengutake",
@@ -3544,9 +3564,9 @@
     ],
     "image_local": "/images/mushrooms/tengutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Panthercap_Mushroom_%28Amanita_pantherina%29_%2835227498411%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/78/Panthercap_Mushroom_%28Amanita_pantherina%29_%2834970179530%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Amanita_pantherina_%28panther_cap_mushroom%29.jpg"
+      "https://static.inaturalist.org/photos/454359839/medium.jpeg",
+      "https://static.inaturalist.org/photos/254698725/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235995059/medium.jpeg"
     ],
     "description": "広葉樹林や針葉樹林に夏〜秋に発生するテングタケ科の毒キノコ。イボテン酸・ムシモールを含み、ベニテングタケより毒性が強い。傘の表面に白いイボが散在する特徴的な外観をもつ。",
     "features": "傘は暗褐色〜灰褐色で直径5〜15cm、表面に白色の細かいイボが散在する。ひだは白色で密。柄は白色でツバとツボをもつ。ツボは基部に数段のリング状に残る。",
@@ -3592,7 +3612,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_pantherina_group.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1"
   },
   {
     "id": "ipponshimeji",
@@ -3620,9 +3640,9 @@
     ],
     "image_local": "/images/mushrooms/ipponshimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/6/6c/2013-11-02_Entoloma_sinuatum_%28Bull.%29_P._Kumm_393808.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d1/2013-11-02_Entoloma_sinuatum_%28Bull.%29_P._Kumm_393814.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a3/2013-11-02_Entoloma_sinuatum_%28Bull.%29_P._Kumm_393812.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111692094/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/244654460/medium.jpg",
+      "https://static.inaturalist.org/photos/442563454/medium.jpeg"
     ],
     "description": "広葉樹林の地上に秋に発生するイッポンシメジ科の中〜大型の毒キノコ。ヨーロッパでも中毒例が多い危険種で、食用キノコに似た外観をもつ。",
     "features": "傘は灰白色〜灰黄色で直径5〜15cm、初め饅頭形で後に平開し波打つ。ひだは初め白色で後にピンク色に変わる。柄は白色で太く充実、繊維質。やや粉臭がある。",
@@ -3666,7 +3686,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2013-11-02_Entoloma_sinuatum_(Bull.)_P._Kumm_393811.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%83%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "oowaraitake",
@@ -3696,9 +3716,9 @@
     ],
     "image_local": "/images/mushrooms/oowaraitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d0/Gymnopilus_junonius_Aberystwyth_gill.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Paddenstoelen_rond_de_restanten_van_boomstam_%28prachtvlamhoed_Gymnopilus_junonius%29._Locatie%2C_Historisch_Park_Heremastate.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/67/Prachtvlamhoed_%28Gymnopilus_junonius%29._09-10-2020._%28actm.%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/128364336/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/128364340/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/128364372/medium.jpeg"
     ],
     "description": "広葉樹の枯木や切り株に大きな群落を作る目立つ毒キノコ。名前の由来は、食べると笑いが止まらなくなる症状が出ることから。大型で鮮やかな橙黄色のため目につきやすい。",
     "features": "傘は橙黄色〜黄褐色で直径5〜20cm、初め饅頭形で後に平開する。表面は繊維状のささくれがある。ひだは黄色〜錆褐色で密。柄は黄色〜褐色で太く、繊維質でツバがある。",
@@ -3740,7 +3760,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Gymnopilus_junonius_Aberystwyth_cap.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%83%AF%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1"
   },
   {
     "id": "dokubenitake",
@@ -3770,9 +3790,9 @@
     ],
     "image_local": "/images/mushrooms/dokubenitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/07/Russula_emetica_61164.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Russula_emetica_-_Lindsey_3b.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Russula_emetica_-_Lindsey_4b.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/109349419/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/250544470/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/417912324/medium.jpg"
     ],
     "description": "鮮やかな赤色の傘をもつベニタケ科の毒キノコ。広葉樹林や針葉樹林に広く分布し、生食すると強い辛味とともに消化器症状を引き起こす。",
     "features": "傘は鮮赤色〜桃赤色で直径3〜8cm、初め半球形で後に平開しやや窪む。表面は湿時にぬめりがある。ひだは白色で疎。柄は白色で脆く折れやすい。肉は白色で強い辛味がある。",
@@ -3815,7 +3835,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Russula_emetica_at_Turkey_Creek_Water_Park.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1"
   },
   {
     "id": "dokusasako",
@@ -3887,7 +3907,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Omphalotus_olearius_443574536.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%B5%E3%82%B5%E3%82%B3"
   },
   {
     "id": "dokuyamadori",
@@ -3958,7 +3978,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Edible_fungi_in_basket_2012_G1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA"
   },
   {
     "id": "shiroonitake",
@@ -3986,9 +4006,9 @@
     ],
     "image_local": "/images/mushrooms/shiroonitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Amanita_muscaria_qtl4.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Fliegenpilz_fly_agaric_Amanita_muscaria.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Fly_Agaric_mushroom_04.jpg"
+      "https://static.inaturalist.org/photos/35723662/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249200800/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249200794/medium.jpeg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するテングタケ科の毒キノコ。全体が白色で、傘の表面に先が尖った大きなイボが散在する印象的な外観をもつ。",
     "features": "傘は白色で直径6〜15cm、表面に円錐形の大きなイボが多数散在する。ひだは白色で密。柄は白色で太く、ツバとツボをもつ。基部は球根状に膨らむ。",
@@ -4030,7 +4050,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:AD2009Sep20_Amanita_muscaria_02.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1"
   },
   {
     "id": "ooshirokarakasatake",
@@ -4061,9 +4081,9 @@
     ],
     "image_local": "/images/mushrooms/ooshirokarakasatake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/34/Green-spored_parasol_mushroom_%28Chlorophyllum_molybdites%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/32/Chlorophyllum_molybdites_young.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/5/59/Chlorophyllum_molybdites_younger.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4619027/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4619040/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4619082/medium.jpeg"
     ],
     "description": "芝生や公園など身近な場所に発生する大型の毒キノコ。温暖化の影響で分布が北上しており、近年は関東以南で発生が増加。大きく白い外観からカラカサタケと間違えやすい。",
     "features": "傘は白色で直径10〜30cm、表面に淡褐色の鱗片が散在する。ひだは初め白色で成熟すると灰緑色〜暗緑色になる。柄は白色で太く長い、可動性のツバがある。",
@@ -4100,7 +4120,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Chlorophyllum_molybdites_in_grass.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%B7%E3%83%AD%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kitsunenokarakasa",
@@ -4131,9 +4151,9 @@
     ],
     "image_local": "/images/mushrooms/kitsunenokarakasa.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/58/Lepiota_cristata_1254328.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/93/Lepiota_cristata_1254326.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/2010-07-24_Lepiota_cristata_%28Bolton%29_P._Kumm_96978.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/580244896/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311148435/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332235094/medium.jpg"
     ],
     "description": "草地や公園の芝生に夏〜秋に発生する小型のキノコ。カラカサタケに似るが遥かに小型。不快な臭いがある。毒成分の詳細は不明だが消化器系の中毒を起こす。",
     "features": "傘は白色で直径2〜5cm、中央に赤褐色の鱗片が集まり、周辺に向かって同心円状に鱗片が散在する。ひだは白色で密。柄は白色で細く華奢、小さなツバがあるがすぐ消失する。不快臭がある。",
@@ -4170,7 +4190,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:A_Lepiota_cristata.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Lepiota%20cristata"
   },
   {
     "id": "sugitake",
@@ -4200,9 +4220,9 @@
     ],
     "image_local": "/images/mushrooms/sugitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Scaly_Pholiota_Pholiota_squarrosa_%28Mushroom%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/34/Sparrige-Sch%C3%BCppling_%28Pholiota_squarrosa%29.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/2/21/Pholiota_squarrosa_1.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/7911607/medium.jpg",
+      "https://static.inaturalist.org/photos/25151355/medium.jpg",
+      "https://static.inaturalist.org/photos/25151337/medium.jpg"
     ],
     "description": "広葉樹の枯木や生木の根元に群生する中型キノコ。かつては食用とされていたが、消化器系の中毒例が報告されるようになり、現在は毒キノコとして扱われている。",
     "features": "傘は黄褐色〜褐色で直径3〜10cm、表面に反り返った褐色の鱗片が密生する。ひだは黄色〜錆褐色で密。柄は黄褐色で鱗片が密生し、ツバがある。ぬめりはない。",
@@ -4247,7 +4267,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Haltern_am_See,_Silbersee_III,_Pholiota_--_2020_--_3242.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1"
   },
   {
     "id": "nezumishimeji",
@@ -4277,9 +4297,9 @@
     ],
     "image_local": "/images/mushrooms/nezumishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Tricholoma_virgatum%2C_McCall_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7f/Tricholoma_virgatum%2C_McCall_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Tricholoma_virgatum%2C_McCall_2_crop.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161406097/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/595897216/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/595897245/medium.jpg"
     ],
     "description": "針葉樹林の地上に秋に発生するキシメジ科の毒キノコ。灰色の傘が鼠色であることが名前の由来。食用のシモフリシメジに似るが、強い苦味と辛味があり、消化器系の中毒を起こす。",
     "features": "傘は灰色〜暗灰色で直径3〜8cm、円錐形で中央が尖り、放射状の繊維模様がある。ひだは白色〜灰白色でやや疎。柄は白色〜灰白色で繊維質。肉は白色で強い苦味と辛味がある。",
@@ -4321,7 +4341,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Tricholoma_virgatum,_Pembroke.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%BA%E3%83%9F%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "gantake",
@@ -4351,9 +4371,9 @@
     ],
     "image_local": "/images/mushrooms/gantake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Amanita_rubescens_2022_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Amanita_rubescens_2011_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Amanita_rubescens_2010_G1.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2411680/medium.JPG",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2411681/medium.JPG",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/177279901/medium.jpg"
     ],
     "description": "広葉樹林や針葉樹林に夏〜秋に発生するテングタケ科のキノコ。一部地域では加熱して食用にされるが、生食では溶血性毒素をもち、中毒を起こす。テングタケに外観が似ている。",
     "features": "傘は赤褐色〜暗褐色で直径5〜15cm、表面に灰色〜淡紅色のイボが散在する。ひだは白色で密。柄は白色〜淡紅色で、傷つけると赤褐色に変色する。ツバとツボをもつ。",
@@ -4399,7 +4419,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_rubescens_group.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%B3%E3%82%BF%E3%82%B1"
   },
   {
     "id": "haetori-shimeji",
@@ -4427,9 +4447,8 @@
     ],
     "image_local": "/images/mushrooms/haetori-shimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lentinula_edodes_20101113_a.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lentinula_edodes_20101113_c.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/Shiitake_%28Lentinula_edodes%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946412/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946425/medium.jpg"
     ],
     "description": "広葉樹林の地上に秋に発生するキシメジ科の毒キノコ。ムスカリンを含み、食用のホンシメジと混同される危険がある。名前はハエ取り（殺虫）に使われたことに由来する。",
     "features": "傘は灰褐色〜淡褐色で直径3〜8cm、初め饅頭形で後に平開する。ひだは白色で密。柄は白色〜灰白色で繊維質。全体にホンシメジに類似した外観をもつが、やや小型。",
@@ -4502,9 +4521,9 @@
     ],
     "image_local": "/images/mushrooms/kishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a1/2011-11-21_Tricholoma_flavovirens_%28Pers.%29_S._Lundell_183941.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7d/Agaricus_equestris_%E2%80%94_Flora_Batava_%E2%80%94_Volume_v15.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Atlas_des_champignons_comestibles_et_v%C3%A9n%C3%A9neux_No18.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320790488/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320790506/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320790537/medium.jpeg"
     ],
     "description": "松林の地上に秋に発生する黄色い傘のシメジ類。かつては食用とされていたが、フランスで大量摂取による横紋筋融解症の死亡例が報告され、現在は毒キノコとして扱われている。",
     "features": "傘は黄色〜黄緑色で直径4〜10cm、初め饅頭形で後に平開する。中央部はやや暗色。ひだは黄色で密。柄は黄色〜淡黄色で繊維質。全体が鮮やかな黄色を帯びる。",
@@ -4544,7 +4563,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Nouvel_atlas_de_poche_des_champignons_comestibles_et_v%C3%A9n%C3%A9neux_(Pl._15)_(6459628459).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "kaburaasetake",
@@ -4574,9 +4593,9 @@
     ],
     "image_local": "/images/mushrooms/kaburaasetake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/01/Inocybe_whitei_275323.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Inocybe_tahquamenonensis_351697.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Inocybe_corydalina_246850.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451259117/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451259099/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451259131/medium.jpeg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するアセタケ科の小型毒キノコ。柄の基部がカブラのように膨らむことが名前の由来。ムスカリンを高濃度に含み、少量でも危険。",
     "features": "傘は褐色〜暗褐色で直径2〜5cm、円錐形〜饅頭形で表面に放射状の繊維がある。ひだは淡褐色〜錆褐色。柄は淡褐色で繊維質、基部が球根状に膨らむ。小型で地味な外観。",
@@ -4645,9 +4664,9 @@
     ],
     "image_local": "/images/mushrooms/mineshimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/30/Tricholoma_saponaceum_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/98/Tricholoma_saponaceum_squamosum_171005_w.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d3/Tricholoma_saponaceum_1125146.jpg"
+      "https://static.inaturalist.org/photos/451453979/medium.jpeg",
+      "https://static.inaturalist.org/photos/451453992/medium.jpeg",
+      "https://static.inaturalist.org/photos/451454005/medium.jpeg"
     ],
     "description": "針葉樹林や広葉樹林に秋に発生するキシメジ科のキノコ。特徴的な石鹸のような臭いがあり、食用のホンシメジと誤食されることがある。消化器系の中毒を起こす。",
     "features": "傘は灰緑色〜灰褐色で直径3〜10cm、初め饅頭形で後に平開し波打つ。表面は滑らかで乾燥。ひだは白色で疎。柄は白色〜灰色で太め。肉は白色で特有の石鹸臭がある。傷つけるとやや赤変する。",
@@ -4692,7 +4711,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:A_not_so_often_found_Tricholoma_saponaceum_(zeepzwam)_at_Arnhem_Waterberg_-_panoramio.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Tricholoma%20saponaceum"
   },
   {
     "id": "nisekurohatsu",
@@ -4720,9 +4739,9 @@
     ],
     "image_local": "/images/mushrooms/nisekurohatsu.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Russula_xerampelina-2-Cooke.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Russ.xeram.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Russula_xerampelina_%2823480902859%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586355489/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586356462/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/566181235/medium.jpg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するベニタケ科の猛毒キノコ。食用のクロハツに極めて似ており、外観での判別が非常に困難。横紋筋融解症を引き起こし、日本国内で複数の死亡例がある。",
     "features": "傘は暗褐色〜黒褐色で直径5〜12cm、初め饅頭形で後に平開しやや窪む。ひだは白色〜淡黄色で疎、傷つけると赤変した後に黒変する。柄は白色〜灰白色。肉は白色で傷つけると赤変する。",
@@ -4795,8 +4814,9 @@
     ],
     "image_local": "/images/mushrooms/shirotamagotengutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/ca/Amanita_verna_%28destroying_angel_mushroom%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Mushrooms_of_America_%28Plate_IX%29_%288597824676%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/120345698/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/120346378/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/120346382/medium.jpeg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するテングタケ科の猛毒キノコ。全体が純白でドクツルタケに似るが、傘の表面が滑らかな点が異なる。アマトキシンを含み、摂取すると肝臓・腎臓が壊死する。",
     "features": "全体が純白で傘の直径は5〜10cm、初め卵形で後に平開する。表面は滑らかで光沢がある。ひだは白色で密。柄は白色で平滑、ツバとツボをもつ。ツボは白い袋状。",
@@ -4839,7 +4859,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_phalloides_group.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1"
   },
   {
     "id": "koreratake",
@@ -4870,9 +4890,9 @@
     ],
     "image_local": "/images/mushrooms/koreratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/13/Galerina_marginata_03.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Galerina_marginata_01.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Galerina_marginata_%28Batsch%29_K%C3%BChner_274503.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/584244172/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/584244173/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/584244203/medium.jpg"
     ],
     "description": "枯木や倒木に群生する小型の猛毒キノコ。名前はコレラに似た激しい症状に由来する。ナラタケやエノキタケの野生品と間違えやすく、アマトキシンを含むため少量でも致命的。",
     "features": "傘は黄褐色〜茶褐色で直径1.5〜5cm、湿時にぬめりがあり周辺部が条線を表す。ひだは黄褐色〜錆褐色で密。柄は淡褐色〜暗褐色で繊維質、上部にツバの痕跡がある。小型で群生する。",
@@ -4917,7 +4937,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Galerina_marginata_02.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Galerina%20marginata"
   },
   {
     "id": "fukurotsuru-take",
@@ -4945,9 +4965,9 @@
     ],
     "image_local": "/images/mushrooms/fukurotsuru-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Amanita_muscaria_qtl4.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Fliegenpilz_fly_agaric_Amanita_muscaria.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Fly_Agaric_mushroom_04.jpg"
+      "https://static.inaturalist.org/photos/511040614/medium.jpg",
+      "https://static.inaturalist.org/photos/511040604/medium.jpg",
+      "https://static.inaturalist.org/photos/511040651/medium.jpg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するテングタケ科の猛毒キノコ。全体が白色で、柄の基部に大きな袋状のツボをもつことが名前の由来。アマトキシンを含み致死性が高い。",
     "features": "全体が白色〜灰白色で傘の直径は5〜10cm、初め半球形で後に平開する。表面は滑らか〜微粉状。ひだは白色で密。柄は白色でツバはないか不明瞭。基部に大きな袋状のツボをもつ。",
@@ -4989,7 +5009,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:AD2009Sep20_Amanita_muscaria_02.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%AF%E3%83%AD%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kotamagotengutake",
@@ -5018,9 +5038,9 @@
     ],
     "image_local": "/images/mushrooms/kotamagotengutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Amanita_muscaria_qtl4.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Fliegenpilz_fly_agaric_Amanita_muscaria.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Fly_Agaric_mushroom_04.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108219907/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108221009/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/36136905/medium.jpg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するテングタケ科の猛毒キノコ。食用のタマゴタケに似るが、傘の色がクリーム色〜淡黄色で、ひだとツバが白色である点が異なる。アマトキシンによる致死性中毒を起こす。",
     "features": "傘はクリーム色〜淡黄色で直径3〜8cm、初め卵形で後に平開する。ひだは白色で密。柄は白色〜淡黄色でツバとツボをもつ。ツボは白色の袋状。タマゴタケに似るが全体的に色が淡く、ひだが白色。",
@@ -5065,7 +5085,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:AD2009Sep20_Amanita_muscaria_02.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Amanita%20subjunquillea"
   },
   {
     "id": "kurotamagotengutake",
@@ -5093,7 +5113,9 @@
     ],
     "image_local": "/images/mushrooms/kurotamagotengutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Amanita_fuliginea_Hongo_803897.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/40321093/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/40321094/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/40321095/medium.jpeg"
     ],
     "description": "広葉樹林の地上に夏〜秋に発生するテングタケ科の猛毒キノコ。傘が暗灰色〜黒褐色でタマゴテングタケの暗色型とも呼ばれる。アマトキシンを大量に含み、致死率が非常に高い。",
     "features": "傘は暗灰色〜黒褐色で直径5〜10cm、初め卵形で後に平開する。表面は滑らか。ひだは白色で密。柄は白色〜灰色で繊維質の鱗片があり、ツバとツボをもつ。ツボは白色の袋状。",
@@ -5137,7 +5159,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_fuliginea_Hongo_803896.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1"
   },
   {
     "id": "dokufusentake",
@@ -5164,9 +5186,9 @@
     ],
     "image_local": "/images/mushrooms/dokufusentake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Cortinarius_infractus_67718.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/39/Cortinarius_smithii_292837.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cortinarius_xanthodryophilus_186396.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/421405490/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/421405512/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/421405534/medium.jpeg"
     ],
     "description": "針葉樹林の地上に晩夏〜秋に発生するフウセンタケ科の猛毒キノコ。オレラニンを含み、腎臓を不可逆的に破壊する。ヨーロッパで多数の死亡例がある。症状の発現が極めて遅いため治療が遅れやすい。",
     "features": "傘は赤褐色〜橙褐色で直径3〜8cm、円錐形〜饅頭形で表面は繊維状。ひだは黄褐色〜錆褐色。柄は淡橙色〜褐色で繊維質、若い時にクモの巣状の被膜がある。全体に赤褐色系統。",
@@ -5209,7 +5231,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Cortinarius_traganus_72952.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Cortinarius%20rubellus"
   },
   {
     "id": "naratake",
@@ -5239,9 +5261,9 @@
     ],
     "image_local": "/images/mushrooms/naratake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/cc/Armillaria_mellea_2014_G2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e7/Armillaria_mellea_2014_G3.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/07/Armillaria_mellea_2011_G1.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/107972527/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/107972534/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/43089713/medium.jpg"
     ],
     "description": "広葉樹の枯木や切り株に大量に束生するきのこ。傘は蜂蜜色で鱗片があり、柄にはツバがある。秋に大量発生し、各地で食用として親しまれている。",
     "features": "傘は径3〜15cmで蜂蜜色〜黄褐色、表面に暗褐色の鱗片が散在する。ひだは白色〜淡褐色でやや垂生。柄は上部にしっかりしたツバがあり、下部はやや褐色を帯びる。",
@@ -5286,7 +5308,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Armillaria_gallica_LO_(img1).jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A9%E3%82%BF%E3%82%B1"
   },
   {
     "id": "naratake-modoki",
@@ -5312,7 +5334,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/naratake-modoki.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108789159/medium.jpg",
+      "https://static.inaturalist.org/photos/9933000/medium.jpeg",
+      "https://static.inaturalist.org/photos/9933001/medium.jpeg"
+    ],
     "description": "ナラタケに似るが柄にツバがなく、夏から秋にかけて広葉樹の枯木に束生する。ナラタケより発生時期がやや早い。加熱すれば食用になるが、毒きのこのコレラタケとの混同に注意が必要。",
     "features": "傘は径3〜10cmで黄褐色〜淡褐色、表面に細かい鱗片がある。ひだは白色〜淡褐色でやや垂生。柄にはツバがなく、これがナラタケとの最大の相違点である。束生する。",
     "similar_species": [
@@ -5355,7 +5381,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Ringless_honey_mushrooms_September_2025.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A9%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD"
   },
   {
     "id": "karakasatake",
@@ -5384,9 +5410,9 @@
     ],
     "image_local": "/images/mushrooms/karakasatake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/7f/Macrolepiota_procera_2025_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Macrolepiota_procera_2013_G1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Macrolepiota-procera.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/242854934/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/242854945/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/242854956/medium.jpg"
     ],
     "description": "草地や林縁に発生する大型のきのこ。傘は開くと30cm以上になることもあり、美味な食用きのこだが、猛毒のオオシロカラカサタケと混同しやすいため注意が必要。",
     "features": "傘は径10〜30cmで卵形から平らに開き、表面に褐色の鱗片が同心円状に並ぶ。中央は褐色の突起状。ひだは白色で離生。柄は20〜30cmと長く、可動式のツバがある。",
@@ -5426,7 +5452,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Parasol_oder_Riesenschirmpilz,_Macrolepiota_procera_3.JPG"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1"
   },
   {
     "id": "shaguma-amigasatake",
@@ -5452,9 +5478,9 @@
     ],
     "image_local": "/images/mushrooms/shaguma-amigasatake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gyromitra_esculenta_%2851216640392%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/43/Gyromitra_esculenta_%28false_morel%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/53/GYROMITRA_ESCULENTA_%28Krombh.%29_Cooke_%285897314744%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164761933/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164761953/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/188875170/medium.jpg"
     ],
     "description": "春に針葉樹林の地上に発生する。脳状にしわくちゃな傘を持つ特徴的な外観。猛毒のジロミトリンを含むため、国内では食用にすべきではない。",
     "features": "傘は径5〜10cmで不規則な脳状のしわがあり、赤褐色〜暗褐色。柄は太く白色〜淡褐色で、中空。全体的に脳のような外観が特徴的。",
@@ -5490,7 +5516,7 @@
         "conifer"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2011-04-26_Gyromitra_esculenta_Spores_66581.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A3%E3%82%B0%E3%83%9E%E3%82%A2%E3%83%9F%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1"
   },
   {
     "id": "haiiroshimeji",
@@ -5518,9 +5544,9 @@
     ],
     "image_local": "/images/mushrooms/haiiroshimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/85/Nevelzwam_%28Clitocybe_nebularis%29_24-11-2020._%28actm.%29_01.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/74/Nevelzwam_%28Clitocybe_nebularis%29_05-11-2020_%28d.j.b.%29_02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/09/Misvormde_nevelzwam_%28Clitocybe_nebularis%29_02.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235787310/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235787397/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235787500/medium.jpeg"
     ],
     "description": "秋に広葉樹林の落葉上に群生する大型のきのこ。傘は灰色〜灰褐色で、独特の強い匂いがある。食用にする地域もあるが、体質により消化器系の不調を起こす場合がある。",
     "features": "傘は径8〜20cmで灰色〜灰褐色、表面は粉状でやや光沢がある。ひだは白色〜淡黄色で密、やや垂生。柄は太く白色〜灰色。肉は厚く白色で、独特の強い匂いを持つ。",
@@ -5560,7 +5586,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Nevelzwam_(Clitocybe_nebularis)_05-11-2020_(d.j.b.)_01.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%82%A4%E3%83%AD%E3%82%B7%E3%83%A1%E3%82%B8"
   },
   {
     "id": "hoteishimeji",
@@ -5588,8 +5614,9 @@
     ],
     "image_local": "/images/mushrooms/hoteishimeji.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/86/Clitocybe.clavipes2.-.lindsey.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Clitocybe.clavipes.-.lindsey.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/455609388/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/455609424/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/541250551/medium.jpg"
     ],
     "description": "秋に広葉樹林の地上に発生する。柄の基部が布袋様に膨らむのが名前の由来。単独では食べられるが、アルコールとの併用で中毒症状を引き起こす。",
     "features": "傘は径4〜8cmで灰褐色〜暗灰色、湿時やや粘性がある。ひだは白色〜淡黄色で垂生。柄は基部が布袋のように膨らみ、灰色〜灰褐色。肉は白色で柔らかい。",
@@ -5659,9 +5686,9 @@
     ],
     "image_local": "/images/mushrooms/hitoyotake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b0/Coprinopsis_atramentaria_36764.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Coprinopsis_atramentaria_36765.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Coprinopsis_atramentaria_36770.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161525979/medium.jpg",
+      "https://static.inaturalist.org/photos/93786223/medium.jpeg",
+      "https://static.inaturalist.org/photos/178027568/medium.jpeg"
     ],
     "description": "春から秋にかけて草地や畑地に群生する。成熟すると傘が黒いインク状に液化して一夜で溶けてしまうのが名前の由来。アルコールとの同時摂取で中毒を起こす。",
     "features": "傘は径3〜7cmで卵形から釣鐘形、灰色〜灰褐色で表面に細かい鱗片がある。成熟すると縁から黒いインク状に液化する。ひだは密で白色から黒色に変化。柄は白色で中空。",
@@ -5697,7 +5724,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Coprinopsis_atramentaria_114645.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1"
   },
   {
     "id": "tsurutake",
@@ -5771,7 +5798,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Amanita_vaginata_02.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1"
   },
   {
     "id": "chanametsumuratake",
@@ -5799,7 +5826,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/chanametsumuratake.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234860837/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234860835/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234860694/medium.jpg"
+    ],
     "description": "秋に広葉樹林の地上や埋もれ木に発生する。傘はぬめりがあり茶褐色。美味な食用きのこだが、猛毒のコレラタケに酷似するため、同定には細心の注意が必要。",
     "features": "傘は径3〜8cmで茶褐色〜黄褐色、湿時は強い粘性がある。表面に白い鱗片が散在することがある。ひだは淡黄色〜褐色でやや密。柄は上部に不明瞭なツバの痕跡があり、下部に白い鱗片がある。",
     "similar_species": [
@@ -5872,9 +5903,9 @@
     ],
     "image_local": "/images/mushrooms/mannentake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Ganoderma_lucidum_%2830861469876%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Ganoderma_lucidum_%2830265344614%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ganoderma_lucidum_%2830823562021%29.jpg"
+      "https://static.inaturalist.org/photos/11374593/medium.jpeg",
+      "https://static.inaturalist.org/photos/11374596/medium.jpeg",
+      "https://static.inaturalist.org/photos/11374597/medium.jpeg"
     ],
     "description": "広葉樹の枯木に発生する多孔菌類。表面は赤褐色で強い光沢があり、ニスを塗ったような外観。非常に硬い木質で食用には適さないが、漢方薬の「霊芝」として薬用に利用される。",
     "features": "傘は径5〜20cmで腎臓形〜半円形、表面は赤褐色〜暗赤褐色で強い光沢がある。管孔面は白色〜淡褐色。柄は側生〜偏心生で、傘と同様の光沢を持つ。肉は木質で非常に硬い。",
@@ -5913,7 +5944,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Ganoderma_lucidum_(28042790686).jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Ganoderma%20lucidum"
   },
   {
     "id": "kofuki-sarunokoshikake",
@@ -5941,9 +5972,9 @@
     ],
     "image_local": "/images/mushrooms/kofuki-sarunokoshikake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ganoderma_applanatum_Margone_02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/80/Ganoderma_applanatum_qtl1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/87/Ganoderma_applanatum_1259894.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108788741/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108788729/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108788718/medium.jpg"
     ],
     "description": "広葉樹の幹に多年生で発生する大型の多孔菌。表面は灰褐色で同心円状の溝があり、粉を吹いたような外観が名前の由来。非常に硬い木質で食用にはならない。",
     "features": "傘は径10〜50cmの半円形〜扇形で、表面は灰褐色〜暗褐色、同心円状の溝と段差がある。管孔面は白色で、傷つけると褐色に変色する。肉は褐色で木質、非常に硬い。多年生で年々成長する。",
@@ -5976,7 +6007,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Ganoderma_applanatum,_Polyporales,_mushroom_on_a_plane_tree,_%D0%BF%D0%B5%D1%87%D1%83%D1%80%D0%BA%D0%B0_%D0%BD%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%BD_%D0%B4%D1%80%D0%B2%D0%BE.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%95%E3%82%AD%E3%82%B5%E3%83%AB%E3%83%8E%E3%82%B3%E3%82%B7%E3%82%AB%E3%82%B1"
   },
   {
     "id": "tsuchiguri",
@@ -6005,9 +6036,9 @@
     ],
     "image_local": "/images/mushrooms/tsuchiguri.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c8/Astraeus_hygrometricus_%28Pers.%29_Morgan_561122.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b4/ASTRAEUS_HYGROMETRICUS_%28%3DGaestrum_hygrometricus%29%28Pers.%29_Morgan_%287972109010%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Astraeus_hygrometricus_113828.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70560730/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70560703/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70560746/medium.jpg"
     ],
     "description": "山地の土上に発生する。外皮が星形に開いて中の球形の袋を露出させる特徴的な形状を持つ。湿度に応じて外皮が開閉する吸湿運動を行うことで知られる。",
     "features": "外皮は径3〜8cmで、6〜10片に星形に裂開する。外皮の外面は灰褐色〜暗褐色で亀裂模様がある。内部の胞子嚢は球形で径1〜3cm、灰褐色。頂部の孔から胞子を放出する。乾燥すると外皮が閉じ、湿ると開く。",
@@ -6036,7 +6067,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Astraeus_hygrometricus_122239.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Astraeus%20hygrometricus"
   },
   {
     "id": "onifusube",
@@ -6064,7 +6095,11 @@
       "九州"
     ],
     "image_local": "/images/mushrooms/onifusube.webp",
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/441679141/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/441679148/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/441679145/medium.jpg"
+    ],
     "description": "夏に竹林や草地に突然出現する巨大なホコリタケの仲間。径20〜50cmにもなり、白いバレーボールのような外観で驚かれることが多い。成熟すると内部が紫褐色の胞子塊に変わる。",
     "features": "子実体は径20〜50cmの球形〜やや扁平な球形で、表面は白色〜淡褐色で平滑。成熟すると外皮が剥がれ、内部は紫褐色の綿状の胞子塊となる。無柄で地上に直接発生する。",
     "similar_species": [
@@ -6090,7 +6125,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Calvatia_Nipponica.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%8B%E3%83%95%E3%82%B9%E3%83%99"
   },
   {
     "id": "hokoritake",
@@ -6120,9 +6155,9 @@
     ],
     "image_local": "/images/mushrooms/hokoritake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/12/Lycoperdon_perlatum%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-14%2C_DD_334-396_FS.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ae/Lycoperdon_perlatum%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-12-01%2C_DD_245-299_FS.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/26/Flaschen-St%C3%A4ubling_%28Lycoperdon_perlatum%2C_syn._L._gemmatum%29-RM-20191014-01.jpg"
+      "https://static.inaturalist.org/photos/231421384/medium.jpg",
+      "https://static.inaturalist.org/photos/231421406/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/242500533/medium.jpg"
     ],
     "description": "夏から秋にかけて広葉樹林の地上や草地に群生する小型の腹菌類。若いときは白色で表面にイボ状の突起があり、成熟すると頂部に孔が開き、押すと煙のように胞子を放出する。",
     "features": "子実体は径2〜5cmの洋梨形〜球形で、表面は白色、細かいイボ状の突起に覆われる。成熟すると褐色に変わり、頂部に孔が開く。内部は若い時は白色で、成熟するとオリーブ褐色の胞子塊になる。",
@@ -6153,7 +6188,7 @@
         "grass"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Lycoperdon,_Hartelholz,_M%C3%BAnich,_Alemania,_2020-11-21,_DD_766-800_FS.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%B3%E3%83%AA%E3%82%BF%E3%82%B1"
   },
   {
     "id": "suppontake",
@@ -6182,9 +6217,9 @@
     ],
     "image_local": "/images/mushrooms/suppontake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Phallus_impudicus.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Phallus_impudicus_82630.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Stinkhorn_%28Phallus_impudicus%29_-_eggs_-_geograph.org.uk_-_544864.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586836048/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586836049/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586836065/medium.jpg"
     ],
     "description": "夏から秋に広葉樹林の地上に発生するスッポンタケ科の代表種。白い卵状の幼菌から急速に伸長し、頂部の暗緑色のグレバから強烈な悪臭を放ってハエを誘引し胞子を散布する。",
     "features": "成熟した子実体は高さ10〜25cmで、白色のスポンジ状の柄の頂部に暗緑色〜黒褐色の粘液状のグレバを被った鐘形の頭部がある。幼菌は径3〜5cmの白い卵形。強烈な腐敗臭を放つ。",
@@ -6221,7 +6256,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Phallus_Impudicus_Common_Stinkhorn.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%83%E3%83%9D%E3%83%B3%E3%82%BF%E3%82%B1"
   },
   {
     "id": "noutake",
@@ -6249,9 +6284,9 @@
     ],
     "image_local": "/images/mushrooms/noutake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/10/Calvatia_craniiformis_102452.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Calvatia_craniiformis_429869.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/19/Calvatia_craniiformis.JPG"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62778880/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62778885/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/71151462/medium.jpg"
     ],
     "description": "夏から秋に広葉樹林の地上に発生する。表面に脳のようなしわや凹凸があり、名前の由来となっている。若いうちは白色でホコリタケの仲間として腹菌類に分類される。",
     "features": "子実体は径5〜15cmの球形〜やや扁平で、表面に脳回状のしわや凹凸がある。若いうちは白色〜淡褐色、成熟すると褐色になり内部が胞子塊に変わる。柄は不明瞭で短い。",
@@ -6282,7 +6317,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Calvatia_craniiformis_308991.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%82%A6%E3%82%BF%E3%82%B1"
   },
   {
     "id": "kinugasatake",
@@ -6310,9 +6345,9 @@
     ],
     "image_local": "/images/mushrooms/kinugasatake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Phallus_indusiatus_from_Kerala%2C_India_-_20090824.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Bridal_Veil_Stinkhorn_%28Phallus_indusiatus%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0f/Phallus_indusiatus_%28869607729%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/57269107/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/182012487/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/182013130/medium.jpeg"
     ],
     "description": "夏に竹林などに発生する美しいきのこ。スッポンタケの仲間で、頭部から白いレース状のベールを広げる姿は「きのこの女王」と称される。中華料理では高級食材だが、天然ものは臭気が強い。",
     "features": "成熟した子実体は高さ15〜25cmで、白色の柄の頂部に暗緑色のグレバを被った頭部がある。頭部の下から白色のレース状の菌網が裾広がりに垂れ下がる。幼菌は白い卵形。",
@@ -6347,7 +6382,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:2013-05-08_Phallus_indusiatus_Vent_327076.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%8C%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1"
   },
   {
     "id": "samatsu-modoki",
@@ -6375,9 +6410,9 @@
     ],
     "image_local": "/images/mushrooms/samatsu-modoki.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Tricholomopsis_rutilans_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/00/Tricholomopsis_rutilans_-_Lindsey_1a.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tricholomopsis_rutilans_-_Lindsey_1b.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83480930/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83482354/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83482384/medium.jpg"
     ],
     "description": "夏から秋に針葉樹の枯木や切り株に発生する。傘は鮮やかな黄色地に赤紫色の細かい鱗片が密生し、非常に美しい配色のきのこ。苦味が強く食用には適さない。",
     "features": "傘は径5〜12cmで、黄色の地に赤紫色〜暗赤色の細かい鱗片が密生する。ひだは黄色で密。柄も黄色地に赤紫色の鱗片がある。肉は黄色で苦味がある。",
@@ -6417,7 +6452,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Tricholomopsis_rutilans_2.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Tricholomopsis%20rutilans"
   },
   {
     "id": "kurohatsu",
@@ -6445,9 +6480,9 @@
     ],
     "image_local": "/images/mushrooms/kurohatsu.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/9/99/Russula_nigricans_qtl2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/86/Russula_nigricans_qtl3.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/df/Russula_nigricans_-_Lindsey_3a.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/178348464/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/178348466/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/178348470/medium.jpeg"
     ],
     "description": "夏から秋に広葉樹林の地上に発生するベニタケ科のきのこ。傘は白色から徐々に黒褐色に変色する。猛毒のニセクロハツと混同されやすく、中毒死の事例があるため採取すべきでない。",
     "features": "傘は径8〜20cmで白色から灰褐色を経て黒褐色に変色する。ひだは疎で厚く、白色〜灰色。傷つけると赤変し、その後黒変する。柄は白色〜灰色で太く短い。肉は白色で硬く、切断面は赤変後に黒変する。",
@@ -6493,7 +6528,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Russula_nigricans_qtl1.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84"
   },
   {
     "id": "chawantake",
@@ -6523,9 +6558,9 @@
     ],
     "image_local": "/images/mushrooms/chawantake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Peziza_vesiculosa_%E2%80%94_Flora_Batava_%E2%80%94_Volume_v20.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/61/Coloured_Figures_of_English_Fungi_or_Mushrooms_-_t._4.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Blasiger_Becherling_%28PEZIZA_VESICULOSA%29-Aufnahme_und_Copyright_MEH_BERGMANN_%281%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/14200469/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/14200468/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/14200466/medium.jpg"
     ],
     "description": "春から秋にかけて腐葉土や堆肥上に群生する子嚢菌類。茶碗のようなカップ形が名前の由来で、内面は淡褐色で平滑。小型で肉が薄く食用価値はない。",
     "features": "子実体は径2〜8cmのカップ形〜皿形で、内面は淡褐色〜黄褐色で平滑、外面はやや粗く淡い色。縁はやや内側に巻く。肉は薄く脆い。柄はほとんどない。群生することが多い。",
@@ -6550,7 +6585,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Peziza_succosa_Berk_718203.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Peziza%20vesiculosa"
   },
   {
     "id": "tsuchikaburi",
@@ -6578,7 +6613,9 @@
     ],
     "image_local": "/images/mushrooms/tsuchikaburi.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/22/Nouvel_atlas_de_poche_des_champignons_comestibles_et_v%C3%A9n%C3%A9neux_%28Pl._25%29_%287831150666%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/413952007/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/413952011/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/153838691/medium.jpg"
     ],
     "description": "夏から秋に広葉樹林の地上に発生する大型のベニタケ科のきのこ。名前の通り土を被って発生することが多く、白色で漏斗形の傘が特徴。辛味があり食用には適さない。",
     "features": "傘は径8〜20cmで白色、表面に土が付着していることが多い。漏斗形に窪み、縁はやや内巻き。ひだは白色〜淡黄色で密、やや垂生。柄は白色で太く短い。肉は白色で硬く、乳液は白色で辛味がある。",
@@ -6619,7 +6656,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Edible_fungi_in_basket_2022_G4.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%82%AB%E3%83%96%E3%83%AA"
   },
   {
     "id": "shirohatsu",
@@ -6647,9 +6684,9 @@
     ],
     "image_local": "/images/mushrooms/shirohatsu.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Russula_xerampelina-2-Cooke.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Russ.xeram.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Russula_xerampelina_%2823480902859%29.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/300357142/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/300357173/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/300357194/medium.jpeg"
     ],
     "description": "夏から秋に広葉樹林の地上に発生する大型のベニタケ科のきのこ。全体が白色で漏斗形の傘が特徴。ツチカブリに似るが乳液を出さない点で区別できる。辛味があり食用には不向き。",
     "features": "傘は径8〜20cmで白色、漏斗形に窪み縁はやや波打つ。ひだは白色で密、やや垂生。柄は白色で太く短い。肉は白色で硬く、ベニタケ科特有のもろい質感。ツチカブリと異なり乳液を出さない。",
@@ -6690,7 +6727,7 @@
         "broadleaf"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Russula_xerampelina-Cooke.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%83%8F%E3%83%84"
   },
   {
     "id": "nikawaharitake",
@@ -6718,9 +6755,9 @@
     ],
     "image_local": "/images/mushrooms/nikawaharitake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4d/Pseudohydnum_gelatinosum_%2837516414602%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/22/Pseudohydnum_gelatinosum%2C_on_a_table.jpeg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/79/Eiszitterpilz_Pseudohydnum_gelatinosum.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55108415/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55108426/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55108376/medium.jpeg"
     ],
     "description": "秋に針葉樹の枯木に発生するゼラチン質のきのこ。半透明で裏面に針状の突起を持つのが特徴。キクラゲに似たゼラチン質だが、裏面の針状突起で容易に区別できる。",
     "features": "子実体は径2〜6cmの半円形〜舌形で、表面は灰白色〜灰褐色、半透明のゼラチン質。裏面には長さ2〜5mmの白色〜灰色の針状突起が密生する。柄は短く側生または無柄。全体が弾力のあるゼリー状。",
@@ -6755,7 +6792,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pseudohydnum_gelatinosum_(37289415960)_(2).jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Pseudohydnum%20gelatinosum"
   },
   {
     "id": "himekabairo-take",
@@ -6783,9 +6820,9 @@
     ],
     "image_local": "/images/mushrooms/himekabairo-take.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/9/94/2025-11-04_D500-1570_Achim-Lammerts_Pluteus-cervinus-agg.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bd/2025-11-04_D500-1576_Achim-Lammerts_Pluteus-cervinus-agg.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/2025-11-04_D500-1575_Achim-Lammerts_Pluteus-cervinus-agg.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/379277915/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/379277914/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/381506779/medium.jpg"
     ],
     "description": "春から秋にかけて広葉樹の枯木や朽木に発生する。傘は灰褐色〜暗褐色で、中央がやや濃い。ウラベニガサ科に属し、胞子紋はピンク色。小型で食用価値は低い。",
     "features": "傘は径3〜8cmで灰褐色〜暗褐色、表面は平滑で湿時やや粘性がある。中央部はやや色が濃い。ひだは白色から淡ピンク色に変わり、離生で密。柄は白色で細く、基部はやや膨らむ。",
@@ -6825,7 +6862,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pluteus_cervinus_Bruderwald_focus_stacking-20251017-RM-174243.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%AB%E3%83%90%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1"
   },
   {
     "id": "shuirotake",
@@ -6852,9 +6889,9 @@
     ],
     "image_local": "/images/mushrooms/shuirotake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Pycnoporus_coccineus_57080.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pycnoporus_coccineus_57081.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Pycnoporus_coccineus_62417.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/144355663/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/144355691/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/144355732/medium.jpeg"
     ],
     "description": "広葉樹の枯木や倒木に通年発生する多孔菌類。鮮やかな朱色〜オレンジ赤色が非常に目立つ。硬い革質で食用にはならないが、その美しい色彩から観察対象として人気がある。",
     "features": "傘は径3〜10cmの半円形〜扇形で、表面は鮮やかな朱赤色〜オレンジ赤色。管孔面も同色。肉は革質〜コルク質で硬い。無柄で基物に直接付着する。乾燥しても色が長く残る。",
@@ -6884,7 +6921,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pycnoporus_coccineus_57079.jpg"
+    "source_url": "https://en.wikipedia.org/wiki/Pycnoporus%20coccineus"
   },
   {
     "id": "suehirotake",
@@ -6912,9 +6949,9 @@
     ],
     "image_local": "/images/mushrooms/suehirotake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/MG_0582_Schizophyllum_commune-_Split-gill_Mushroom_34.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/dd/2025-10-30_D500-1400_Achim-Lammerts_Schizophyllum-commune.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Schizophyllum_commune_with_Pollenia_sp._male_on_Betula.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/356956710/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/356956707/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/356956706/medium.jpg"
     ],
     "description": "広葉樹の枯木や倒木に通年発生する世界的に広く分布するきのこ。小型で白色〜灰白色、扇形の傘が特徴。ひだが縦に裂ける独特の構造を持ち、乾燥に強い。まれにヒトの肺に感染する事例が報告されている。",
     "features": "傘は径1〜4cmの扇形〜貝殻形で、表面は白色〜灰白色、細かい毛で覆われる。ひだは白色〜灰色で、乾燥すると縦に裂けて反り返る独特の構造を持つ。無柄で基物に側着する。革質で乾燥に強い。",
@@ -6944,7 +6981,7 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Gemeiner_Spaltbl%C3%A4ttling,_Schizophyllum_commune-20191216-RM-152856.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%A8%E3%83%92%E3%83%AD%E3%82%BF%E3%82%B1"
   },
   {
     "id": "chishiotake",
@@ -6972,9 +7009,9 @@
     ],
     "image_local": "/images/mushrooms/chishiotake.webp",
     "images_remote": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Mycena_haematopus_19292.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9d/Mycena_haematopus_35406.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/7/75/Mycena_haematopus_56359.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/251787742/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/251787747/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/251787402/medium.jpeg"
     ],
     "description": "夏から秋に広葉樹の枯木や朽木に群生する小型のきのこ。折ったり傷つけたりすると暗赤色の液体を滲出するのが最大の特徴で、名前の由来にもなっている。",
     "features": "傘は径1〜3cmの釣鐘形〜円錐形で、淡赤褐色〜灰褐色、縁に細かい歯牙状のささくれがある。ひだは白色〜淡灰色で直生〜やや上生。柄は細く赤褐色〜暗褐色。折ると暗赤色の乳液を出す。",
@@ -7014,6 +7051,6 @@
         "deadwood"
       ]
     },
-    "source_url": "https://commons.wikimedia.org/wiki/File:Mycena_haematopus,_Burgundydrop_Bonnet.jpg"
+    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%B7%E3%82%AA%E3%82%BF%E3%82%B1"
   }
 ]
