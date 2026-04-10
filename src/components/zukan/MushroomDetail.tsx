@@ -22,6 +22,7 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const allPhotos = [mushroom.image_local, ...mushroom.images_remote];
+  const allCredits = ['', ...(mushroom.images_remote_credits || mushroom.images_remote.map(() => ''))];
   const similarSpecies = mushroom.similar_species
     .map((id) => getMushroomById(id))
     .filter((m): m is Mushroom => m !== undefined);
@@ -42,16 +43,17 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         />
       </div>
 
-      {/* Additional photos from iNaturalist */}
+      {/* Additional photos from iNaturalist — 3-column grid */}
       {mushroom.images_remote.length > 0 && (
         <div>
           <h2 className="text-xs font-bold text-forest-400 mb-2">{UI_TEXT.zukan.additionalPhotos}</h2>
-          <div className="flex gap-2 overflow-x-auto pb-2">
+          <div className="grid grid-cols-3 gap-2">
             {mushroom.images_remote.map((url, i) => (
               <RemotePhoto
                 key={i}
                 url={url}
                 alt={`${mushroom.names.ja} - ${i + 1}`}
+                credit={mushroom.images_remote_credits?.[i]}
                 onClick={() => setLightboxIndex(i + 1)}
               />
             ))}
@@ -75,6 +77,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       {lightboxIndex !== null && (
         <Lightbox
           photos={allPhotos}
+          credits={allCredits}
           currentIndex={lightboxIndex}
           alt={mushroom.names.ja}
           onClose={() => setLightboxIndex(null)}
@@ -219,12 +222,14 @@ function MyRecordsSection({ mushroomId }: { mushroomId: string }) {
 
 function Lightbox({
   photos,
+  credits,
   currentIndex,
   alt,
   onClose,
   onChangeIndex,
 }: {
   photos: string[];
+  credits: string[];
   currentIndex: number;
   alt: string;
   onClose: () => void;
@@ -317,6 +322,13 @@ function Lightbox({
         </button>
       )}
 
+      {/* Credit */}
+      {credits[currentIndex] && (
+        <div className="absolute bottom-14 text-white/50 text-xs text-center px-4 truncate max-w-full">
+          {credits[currentIndex]}
+        </div>
+      )}
+
       {/* Dot indicators */}
       <div className="absolute bottom-6 flex gap-2">
         {photos.map((_, i) => (
@@ -334,36 +346,41 @@ function Lightbox({
   );
 }
 
-function RemotePhoto({ url, alt, onClick }: { url: string; alt: string; onClick: () => void }) {
+function RemotePhoto({ url, alt, credit, onClick }: { url: string; alt: string; credit?: string; onClick: () => void }) {
   const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading');
 
   return (
-    <button
-      className="relative flex-shrink-0 w-24 h-24 rounded-md overflow-hidden bg-forest-800 cursor-pointer"
-      onClick={onClick}
-    >
-      {status !== 'error' && (
-        /* eslint-disable-next-line @next/next/no-img-element */
-        <img
-          src={url}
-          alt={alt}
-          loading="lazy"
-          className="w-full h-full object-cover"
-          onLoad={() => setStatus('loaded')}
-          onError={() => setStatus('error')}
-        />
+    <div className="flex flex-col">
+      <button
+        className="relative aspect-square w-full rounded-md overflow-hidden bg-forest-800 cursor-pointer"
+        onClick={onClick}
+      >
+        {status !== 'error' && (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={url}
+            alt={alt}
+            loading="lazy"
+            className="w-full h-full object-cover"
+            onLoad={() => setStatus('loaded')}
+            onError={() => setStatus('error')}
+          />
+        )}
+        {status === 'loading' && (
+          <div className="absolute inset-0 flex items-center justify-center bg-forest-800">
+            <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
+        {status === 'error' && (
+          <div className="w-full h-full flex items-center justify-center text-forest-500 text-xs">
+            読込失敗
+          </div>
+        )}
+      </button>
+      {credit && (
+        <p className="text-[10px] text-forest-500 truncate mt-0.5 px-0.5">{credit}</p>
       )}
-      {status === 'loading' && (
-        <div className="absolute inset-0 flex items-center justify-center bg-forest-800">
-          <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
-        </div>
-      )}
-      {status === 'error' && (
-        <div className="w-full h-full flex items-center justify-center text-forest-500 text-xs">
-          読込失敗
-        </div>
-      )}
-    </button>
+    </div>
   );
 }
 

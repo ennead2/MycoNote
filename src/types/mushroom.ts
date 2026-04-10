@@ -16,6 +16,7 @@ export interface Mushroom {
   regions: string[];
   image_local: string;
   images_remote: string[];
+  images_remote_credits?: string[];
   description: string;
   features: string;
   similar_species: string[];

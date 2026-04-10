@@ -93,10 +93,15 @@ async function getWikipediaImage(jaName, scientificName) {
 
 // ─── iNaturalist ────────────────────────────────────
 
+const INAT_MAX_PHOTOS = 10;
+const INAT_FETCH_COUNT = 30; // Fetch more to allow user-diverse selection
+
 /**
  * Get Research Grade photos from iNaturalist for additional field images.
+ * Returns up to INAT_MAX_PHOTOS photos, prioritizing different observers.
+ * Each entry is { url, attribution } for credit display.
  */
-async function getINaturalistPhotos(scientificName, maxPhotos = 3) {
+async function getINaturalistPhotos(scientificName, maxPhotos = INAT_MAX_PHOTOS) {
   // Step 1: Find taxon ID
   const taxonUrl = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&rank=species&per_page=1`;
   const taxonRes = await fetchWithRetry(taxonUrl);
@@ -108,21 +113,55 @@ async function getINaturalistPhotos(scientificName, maxPhotos = 3) {
 
   await sleep(1000); // iNaturalist rate limit
 
-  // Step 2: Get research grade observations with photos
-  const obsUrl = `https://api.inaturalist.org/v1/observations?taxon_id=${taxon.id}&quality_grade=research&photos=true&per_page=${maxPhotos}&order=desc&order_by=votes`;
+  // Step 2: Get research grade observations with photos (fetch extra for diversity)
+  const obsUrl = `https://api.inaturalist.org/v1/observations?taxon_id=${taxon.id}&quality_grade=research&photos=true&per_page=${INAT_FETCH_COUNT}&order=desc&order_by=votes`;
   const obsRes = await fetchWithRetry(obsUrl);
   if (!obsRes) return [];
 
   const obsData = await obsRes.json();
-  return (obsData.results || [])
-    .flatMap(obs => obs.photos || [])
-    .slice(0, maxPhotos)
-    .map(photo => {
-      // Convert square thumb to medium size
+  const observations = obsData.results || [];
+
+  // Step 3: Collect photos grouped by observer (user)
+  // Each photo carries: url, attribution (observer login), observation id
+  const photosByUser = new Map(); // userId -> [{ url, attribution }]
+
+  for (const obs of observations) {
+    const userId = obs.user?.id || 'unknown';
+    const userName = obs.user?.login || 'unknown';
+    if (!photosByUser.has(userId)) photosByUser.set(userId, []);
+
+    for (const photo of (obs.photos || [])) {
       const mediumUrl = photo.url?.replace(/\/square\./i, '/medium.');
-      return mediumUrl || photo.url;
-    })
-    .filter(Boolean);
+      if (!mediumUrl) continue;
+      photosByUser.get(userId).push({
+        url: mediumUrl,
+        attribution: photo.attribution || `© ${userName}`,
+      });
+    }
+  }
+
+  // Step 4: Round-robin selection across users for diversity
+  const selected = [];
+  const userQueues = [...photosByUser.values()].map(photos => ({ photos, idx: 0 }));
+
+  // Sort users by number of photos descending (so popular observers don't dominate)
+  // Actually, we want to spread evenly, so just cycle through users
+  let round = 0;
+  while (selected.length < maxPhotos) {
+    let addedThisRound = false;
+    for (const queue of userQueues) {
+      if (selected.length >= maxPhotos) break;
+      if (queue.idx < queue.photos.length) {
+        selected.push(queue.photos[queue.idx]);
+        queue.idx++;
+        addedThisRound = true;
+      }
+    }
+    if (!addedThisRound) break; // All queues exhausted
+    round++;
+  }
+
+  return selected;
 }
 
 // ─── Download & Convert ─────────────────────────────
@@ -194,8 +233,10 @@ async function main() {
       // ── Step 2: iNaturalist additional photos ──
       const inatPhotos = await getINaturalistPhotos(m.names.scientific);
       if (inatPhotos.length > 0) {
-        m.images_remote = inatPhotos;
-        console.log(`  + iNaturalist: ${inatPhotos.length} additional photos`);
+        m.images_remote = inatPhotos.map(p => p.url);
+        m.images_remote_credits = inatPhotos.map(p => p.attribution);
+        const uniqueUsers = new Set(inatPhotos.map(p => p.attribution)).size;
+        console.log(`  + iNaturalist: ${inatPhotos.length} photos from ${uniqueUsers} users`);
       }
 
       await sleep(1500);
