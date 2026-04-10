@@ -1,5 +1,11 @@
 export type Toxicity = 'edible' | 'edible_caution' | 'inedible' | 'toxic' | 'deadly_toxic';
 
+export interface MushroomTaxonomy {
+  order: string;       // 目 (例: Agaricales)
+  family: string;      // 科 (例: Tricholomataceae)
+  genus: string;       // 属 (例: Tricholoma)
+}
+
 export interface Mushroom {
   id: string;
   names: {
@@ -7,6 +13,7 @@ export interface Mushroom {
     scientific: string;
     aliases?: string[];
   };
+  taxonomy?: MushroomTaxonomy;
   toxicity: Toxicity;
   season: {
     start_month: number;
@@ -19,11 +26,14 @@ export interface Mushroom {
   images_remote_credits?: string[];
   description: string;
   features: string;
+  cooking_preservation?: string;   // 調理法・保存方法（食用・食用要注意種）
+  poisoning_first_aid?: string;    // 中毒事例・応急処置（毒・猛毒種）
   similar_species: string[];
   caution?: string;
   tree_association?: string[];
   source_url?: string;
   traits?: MushroomTraits;
+  verified?: boolean;              // 外部ソースで検証済みか
 }
 
 export interface FilterOptions {
