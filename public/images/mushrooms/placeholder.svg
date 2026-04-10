@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#1e3a0e" rx="8"/>
+  <text x="100" y="110" font-size="64" text-anchor="middle" dominant-baseline="middle">🍄</text>
+  <text x="100" y="160" font-size="16" text-anchor="middle" fill="#8bc34a" font-family="sans-serif">No Image</text>
+</svg>

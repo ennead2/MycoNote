@@ -1,0 +1,61 @@
+'use client';
+
+import { useState, useRef, useEffect } from 'react';
+import { UI_TEXT } from '@/constants/ui-text';
+
+interface ChatInputProps {
+  onSend: (text: string) => void;
+  disabled?: boolean;
+  disabledReason?: string;
+}
+
+export function ChatInput({ onSend, disabled = false, disabledReason }: ChatInputProps) {
+  const [text, setText] = useState('');
+  const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    if (!disabled) inputRef.current?.focus();
+  }, [disabled]);
+
+  const handleSend = () => {
+    const trimmed = text.trim();
+    if (!trimmed || disabled) return;
+    onSend(trimmed);
+    setText('');
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSend();
+    }
+  };
+
+  return (
+    <div className="border-t border-forest-700 bg-forest-800 px-3 py-2.5">
+      {disabledReason && (
+        <p className="text-xs text-amber-400 mb-2">{disabledReason}</p>
+      )}
+      <div className="flex items-end gap-2">
+        <textarea
+          ref={inputRef}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          onKeyDown={handleKeyDown}
+          placeholder={UI_TEXT.plan.inputPlaceholder}
+          disabled={disabled}
+          rows={1}
+          className="flex-1 bg-forest-900 border border-forest-600 rounded-2xl px-4 py-2 text-sm text-forest-100 placeholder-forest-500 resize-none focus:outline-none focus:ring-2 focus:ring-forest-400 disabled:opacity-50"
+        />
+        <button
+          onClick={handleSend}
+          disabled={disabled || !text.trim()}
+          className="w-8 h-8 rounded-full bg-forest-500 text-white flex items-center justify-center text-sm hover:bg-forest-400 disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
+          aria-label="送信"
+        >
+          ↑
+        </button>
+      </div>
+    </div>
+  );
+}
