@@ -8740,8 +8740,18 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
-    "images_remote": [],
+    "image_local": "/images/mushrooms/masshurumu.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/6464471/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/336905306/medium.png",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/32037713/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/32035035/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95987722/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/268823916/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/153059228/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/171596786/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/245887968/medium.jpg"
+    ],
     "description": "世界で最も広く栽培されている食用きのこ。野生ではヨーロッパの牧草地に発生し、堆肥や馬糞上を好む腐生菌。ホワイト種とブラウン種があり、生食からソテー、煮込みまで幅広く利用される。",
     "features": "傘は直径4〜10cmで白色〜褐色、半球形から饅頭形を経て平開する。ひだは初め淡桃色から成熟すると暗褐色〜黒褐色に変化し、離生する。柄は白色で太く短く、上部にしっかりしたつばをもつ。肉は白色で切断面がわずかに赤変することがある。",
     "similar_species": [],
@@ -8775,7 +8785,18 @@
       "substrate": [
         "grass"
       ]
-    }
+    },
+    "images_remote_credits": [
+      "(c) Alan Rockefeller, some rights reserved (CC BY)",
+      "(c) maricel patino, some rights reserved (CC BY-NC)",
+      "(c) Christian Schwarz, some rights reserved (CC BY-NC)",
+      "(c) Adam J. Searcy, some rights reserved (CC BY)",
+      "(c) John Plischke, some rights reserved (CC BY-NC)",
+      "(c) denaita, some rights reserved (CC BY-NC)",
+      "(c) tanyahh1, some rights reserved (CC BY-NC)",
+      "(c) wisegal, some rights reserved (CC BY-NC)",
+      "(c) dmartinez_, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "sasakurehitoyotake",
@@ -9296,7 +9317,7 @@
       "北海道",
       "本州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/kinumerigasa.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/56654992/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/103273034/medium.jpg",
@@ -9552,7 +9573,7 @@
       "北海道",
       "本州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/ootsuga-take.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/59422367/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/53175747/medium.jpg",
@@ -9639,7 +9660,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/shimokoshi.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/320790488/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/95415436/medium.jpg",
@@ -9812,7 +9833,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/ningyoutake.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/181351715/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/447753853/medium.jpeg",
@@ -10065,7 +10086,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/yanagimatsutake.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/259889162/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/332860484/medium.jpeg",
@@ -10401,7 +10422,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/akahatsu.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/239092252/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/160360972/medium.jpg",
@@ -10487,14 +10508,14 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/aishimeji.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/218982574/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/334186499/medium.png",
       "https://static.inaturalist.org/photos/297449748/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/606932727/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/387538599/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/118300787/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/606932727/medium.jpg",
       "https://static.inaturalist.org/photos/335311752/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/77208035/medium.jpg",
       "https://static.inaturalist.org/photos/247042273/medium.jpeg"
@@ -10536,9 +10557,9 @@
       "(c) Kurt Miller, some rights reserved (CC BY-NC)",
       "(c) maricel patino, some rights reserved (CC BY-NC)",
       "(c) Chance Brueggemann and Derek Zeller, all rights reserved",
-      "(c) Maria Clara Gil, some rights reserved (CC BY-NC)",
       "(c) Daniela Piedrahita, some rights reserved (CC BY-NC)",
       "(c) isantiago, some rights reserved (CC BY-NC)",
+      "(c) Maria Clara Gil, some rights reserved (CC BY-NC)",
       "(c) Helissa Gründemann, all rights reserved",
       "(c) Nicolás Zambrano, some rights reserved (CC BY-NC)",
       "(c) SummerWalker, all rights reserved"
@@ -10651,7 +10672,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/chanametsumuratake-modoki.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/234860837/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/566742709/medium.jpg",
@@ -10990,7 +11011,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/akajikou.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/430092056/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/298481247/medium.jpeg",
@@ -11588,7 +11609,7 @@
       "本州",
       "四国"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/bunaharitake.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/104331175/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/442806933/medium.jpeg",
@@ -11842,7 +11863,7 @@
       "本州",
       "四国"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/numeritsubatake.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/53270449/medium.jpg",
       "https://static.inaturalist.org/photos/341418009/medium.jpg",
@@ -12008,7 +12029,7 @@
       "四国",
       "九州"
     ],
-    "image_local": "",
+    "image_local": "/images/mushrooms/shakashimeji.webp",
     "images_remote": [
       "https://inaturalist-open-data.s3.amazonaws.com/photos/427421449/medium.jpeg",
       "https://static.inaturalist.org/photos/574488850/medium.jpg",
