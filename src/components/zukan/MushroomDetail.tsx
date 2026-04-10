@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
@@ -20,7 +20,8 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 );
 
 export function MushroomDetail({ mushroom }: MushroomDetailProps) {
-  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const allPhotos = [mushroom.image_local, ...mushroom.images_remote];
   const similarSpecies = mushroom.similar_species
     .map((id) => getMushroomById(id))
     .filter((m): m is Mushroom => m !== undefined);
@@ -30,7 +31,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       {/* 1. Hero image */}
       <div
         className="w-full h-48 rounded-lg overflow-hidden bg-forest-800 flex items-center justify-center cursor-pointer"
-        onClick={() => setLightboxUrl(mushroom.image_local)}
+        onClick={() => setLightboxIndex(0)}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -51,7 +52,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
                 key={i}
                 url={url}
                 alt={`${mushroom.names.ja} - ${i + 1}`}
-                onClick={() => setLightboxUrl(url)}
+                onClick={() => setLightboxIndex(i + 1)}
               />
             ))}
           </div>
@@ -70,27 +71,15 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <span className="text-xs">↗</span>
       </a>
 
-      {/* Lightbox modal */}
-      {lightboxUrl && (
-        <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-          onClick={() => setLightboxUrl(null)}
-        >
-          <button
-            className="absolute top-4 right-4 text-white text-3xl leading-none hover:text-forest-300"
-            onClick={() => setLightboxUrl(null)}
-            aria-label="閉じる"
-          >
-            ×
-          </button>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={lightboxUrl}
-            alt={mushroom.names.ja}
-            className="max-w-full max-h-full object-contain rounded-lg"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
+      {/* Lightbox modal with swipe */}
+      {lightboxIndex !== null && (
+        <Lightbox
+          photos={allPhotos}
+          currentIndex={lightboxIndex}
+          alt={mushroom.names.ja}
+          onClose={() => setLightboxIndex(null)}
+          onChangeIndex={setLightboxIndex}
+        />
       )}
 
       {/* 2. Name + ToxicityBadge + scientific name + aliases */}
@@ -226,6 +215,123 @@ function MyRecordsSection({ mushroomId }: { mushroomId: string }) {
   if (!mounted) return null;
 
   return <MyRecordsList mushroomId={mushroomId} />;
+}
+
+function Lightbox({
+  photos,
+  currentIndex,
+  alt,
+  onClose,
+  onChangeIndex,
+}: {
+  photos: string[];
+  currentIndex: number;
+  alt: string;
+  onClose: () => void;
+  onChangeIndex: (i: number) => void;
+}) {
+  const touchStartX = useRef(0);
+  const touchDeltaX = useRef(0);
+
+  const goPrev = () => onChangeIndex(Math.max(0, currentIndex - 1));
+  const goNext = () => onChangeIndex(Math.min(photos.length - 1, currentIndex + 1));
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') goPrev();
+      if (e.key === 'ArrowRight') goNext();
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  });
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  };
+
+  const handleTouchEnd = () => {
+    const SWIPE_THRESHOLD = 50;
+    if (touchDeltaX.current > SWIPE_THRESHOLD) goPrev();
+    else if (touchDeltaX.current < -SWIPE_THRESHOLD) goNext();
+    touchDeltaX.current = 0;
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center"
+      onClick={onClose}
+    >
+      {/* Close button */}
+      <button
+        className="absolute top-4 right-4 text-white text-3xl leading-none hover:text-forest-300 z-10"
+        onClick={onClose}
+        aria-label="閉じる"
+      >
+        ×
+      </button>
+
+      {/* Counter */}
+      <div className="absolute top-4 left-4 text-white/70 text-sm">
+        {currentIndex + 1} / {photos.length}
+      </div>
+
+      {/* Image area with swipe */}
+      <div
+        className="flex-1 flex items-center justify-center w-full px-12"
+        onClick={(e) => e.stopPropagation()}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={photos[currentIndex]}
+          alt={`${alt} - ${currentIndex + 1}`}
+          className="max-w-full max-h-full object-contain rounded-lg"
+        />
+      </div>
+
+      {/* Arrow buttons (desktop) */}
+      {currentIndex > 0 && (
+        <button
+          className="absolute left-2 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-4xl p-2"
+          onClick={(e) => { e.stopPropagation(); goPrev(); }}
+          aria-label="前の写真"
+        >
+          ‹
+        </button>
+      )}
+      {currentIndex < photos.length - 1 && (
+        <button
+          className="absolute right-2 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-4xl p-2"
+          onClick={(e) => { e.stopPropagation(); goNext(); }}
+          aria-label="次の写真"
+        >
+          ›
+        </button>
+      )}
+
+      {/* Dot indicators */}
+      <div className="absolute bottom-6 flex gap-2">
+        {photos.map((_, i) => (
+          <button
+            key={i}
+            className={`w-2 h-2 rounded-full transition-colors ${
+              i === currentIndex ? 'bg-white' : 'bg-white/30'
+            }`}
+            onClick={(e) => { e.stopPropagation(); onChangeIndex(i); }}
+            aria-label={`写真 ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 function RemotePhoto({ url, alt, onClick }: { url: string; alt: string; onClick: () => void }) {
