@@ -233,30 +233,29 @@ function RemotePhoto({ url, alt, onClick }: { url: string; alt: string; onClick:
 
   return (
     <button
-      className="flex-shrink-0 w-24 h-24 rounded-md overflow-hidden bg-forest-800 cursor-pointer"
+      className="relative flex-shrink-0 w-24 h-24 rounded-md overflow-hidden bg-forest-800 cursor-pointer"
       onClick={onClick}
     >
-      {status === 'error' ? (
+      {status !== 'error' && (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={url}
+          alt={alt}
+          loading="lazy"
+          className="w-full h-full object-cover"
+          onLoad={() => setStatus('loaded')}
+          onError={() => setStatus('error')}
+        />
+      )}
+      {status === 'loading' && (
+        <div className="absolute inset-0 flex items-center justify-center bg-forest-800">
+          <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
+        </div>
+      )}
+      {status === 'error' && (
         <div className="w-full h-full flex items-center justify-center text-forest-500 text-xs">
           読込失敗
         </div>
-      ) : (
-        <>
-          {status === 'loading' && (
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
-            </div>
-          )}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={url}
-            alt={alt}
-            loading="lazy"
-            className={`w-full h-full object-cover ${status === 'loading' ? 'hidden' : ''}`}
-            onLoad={() => setStatus('loaded')}
-            onError={() => setStatus('error')}
-          />
-        </>
       )}
     </button>
   );
