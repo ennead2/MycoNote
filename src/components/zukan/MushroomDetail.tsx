@@ -269,7 +269,7 @@ function Lightbox({
     >
       {/* Close button */}
       <button
-        className="absolute top-4 right-4 text-white text-3xl leading-none hover:text-forest-300 z-10"
+        className="absolute top-3 right-3 w-10 h-10 flex items-center justify-center text-white text-4xl leading-none hover:text-forest-300 bg-white/10 rounded-full z-10"
         onClick={onClose}
         aria-label="閉じる"
       >
