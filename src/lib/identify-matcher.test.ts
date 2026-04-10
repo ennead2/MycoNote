@@ -85,14 +85,14 @@ describe('matchMushrooms', () => {
     expect(results[0].mushroom.id).toBe('kawara-take');
   });
 
-  it('returns results even when no perfect match', () => {
+  it('matches teeth gill type correctly (yamabushitake, koutake)', () => {
     const input: IdentifyInput = {
       gill_type: 'teeth',
     };
     const results = matchMushrooms(input, 6);
     expect(results.length).toBeGreaterThan(0);
-    for (const r of results) {
-      expect(r.matchedTraits).not.toContain('gill_type');
-    }
+    const teethSpecies = results.filter((r) => r.matchedTraits.includes('gill_type'));
+    expect(teethSpecies.length).toBeGreaterThan(0);
+    expect(teethSpecies.some((r) => r.mushroom.id === 'yamabushitake' || r.mushroom.id === 'koutake')).toBe(true);
   });
 });

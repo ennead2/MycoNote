@@ -3,7 +3,7 @@ import { mushrooms, getMushroomById, searchMushrooms, getMushroomsBySeason } fro
 
 describe('mushrooms data', () => {
   it('loads all mushroom entries', () => {
-    expect(mushrooms.length).toBe(13);
+    expect(mushrooms.length).toBe(100);
   });
 
   it('every entry has required fields', () => {
@@ -63,13 +63,13 @@ describe('searchMushrooms', () => {
 
   it('filters by toxicity', () => {
     const results = searchMushrooms({ toxicity: ['deadly_toxic'] });
-    expect(results.length).toBe(3);
+    expect(results.length).toBe(10);
     expect(results.every((m) => m.toxicity === 'deadly_toxic')).toBe(true);
   });
 
   it('filters by multiple toxicity values', () => {
     const results = searchMushrooms({ toxicity: ['toxic', 'deadly_toxic'] });
-    expect(results.length).toBe(6);
+    expect(results.length).toBe(31);
     expect(results.every((m) => m.toxicity === 'toxic' || m.toxicity === 'deadly_toxic')).toBe(true);
   });
 
@@ -81,7 +81,7 @@ describe('searchMushrooms', () => {
 
   it('returns all mushrooms when no filters', () => {
     const results = searchMushrooms({});
-    expect(results.length).toBe(13);
+    expect(results.length).toBe(100);
   });
 
   it('filters by hiragana query (matches katakana names)', () => {
