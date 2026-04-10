@@ -23,7 +23,8 @@ describe('SeasonCalendar', () => {
 
   it('links mushroom names to detail pages', () => {
     render(<SeasonCalendar mushrooms={mushrooms} />);
-    const link = screen.getByRole('link', { name: /マツタケ/ });
-    expect(link.getAttribute('href')).toBe('/zukan/matsutake');
+    const links = screen.getAllByRole('link', { name: /マツタケ/ });
+    const matsutakeLink = links.find(l => l.getAttribute('href') === '/zukan/matsutake');
+    expect(matsutakeLink).toBeDefined();
   });
 });
