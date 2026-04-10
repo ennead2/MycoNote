@@ -91,4 +91,14 @@ describe('MushroomDetail', () => {
     expect(link).toBeInTheDocument();
     expect(link.getAttribute('href')).toBe('/zukan/shiitake');
   });
+
+  it('renders Google image search link with correct URL', () => {
+    render(<MushroomDetail mushroom={mockMushroom} />);
+    const link = screen.getByRole('link', { name: /Google で画像を検索/ });
+    expect(link).toBeInTheDocument();
+    expect(link.getAttribute('href')).toContain('google.com/search?tbm=isch');
+    expect(link.getAttribute('href')).toContain(encodeURIComponent('モックキノコ キノコ'));
+    expect(link.getAttribute('target')).toBe('_blank');
+    expect(link.getAttribute('rel')).toContain('noopener');
+  });
 });

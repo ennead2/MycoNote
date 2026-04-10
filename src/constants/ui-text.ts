@@ -7,6 +7,7 @@ export const UI_TEXT = {
     description: '概要', similarSpecies: '似ている種', caution: '注意事項',
     treeAssociation: '関連する樹種', seasonCalendarTitle: 'シーズンカレンダー',
     myRecords: '自分の採取記録', noRecords: 'この種の採取記録はありません',
+    googleImageSearch: 'Google で画像を検索',
   },
   identify: {
     title: '識別',

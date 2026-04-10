@@ -37,6 +37,18 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         />
       </div>
 
+      {/* Google image search link */}
+      <a
+        href={`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(mushroom.names.ja + ' キノコ')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1.5 text-sm text-forest-300 hover:text-forest-100 transition-colors"
+      >
+        <span>🔎</span>
+        <span>{UI_TEXT.zukan.googleImageSearch}</span>
+        <span className="text-xs">↗</span>
+      </a>
+
       {/* 2. Name + ToxicityBadge + scientific name + aliases */}
       <div>
         <div className="flex items-center gap-2 flex-wrap mb-1">
