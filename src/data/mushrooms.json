@@ -6383,7 +6383,10 @@
       "scientific": "Galerina marginata",
       "aliases": [
         "コレラ茸",
-        "これらたけ"
+        "これらたけ",
+        "ドクアジロガサ",
+        "毒網代笠",
+        "どくあじろがさ"
       ]
     },
     "toxicity": "deadly_toxic",
@@ -6578,10 +6581,11 @@
     "id": "kotamagotengutake",
     "names": {
       "ja": "コタマゴテングタケ",
-      "scientific": "Amanita subjunquillea",
+      "scientific": "Amanita citrina",
       "aliases": [
         "小卵天狗茸",
-        "こたまごてんぐたけ"
+        "こたまごてんぐたけ",
+        "Amanita subjunquillea"
       ]
     },
     "toxicity": "deadly_toxic",
@@ -8765,10 +8769,11 @@
     "id": "shirohatsu",
     "names": {
       "ja": "シロハツ",
-      "scientific": "Russula japonica",
+      "scientific": "Russula delica",
       "aliases": [
         "白初",
-        "しろはつ"
+        "しろはつ",
+        "Russula japonica"
       ]
     },
     "toxicity": "inedible",
@@ -8943,10 +8948,11 @@
     "id": "himekabairo-take",
     "names": {
       "ja": "ヒメカバイロタケ",
-      "scientific": "Pluteus cervinus",
+      "scientific": "Xeromphalina campanella",
       "aliases": [
         "姫樺色茸",
-        "ひめかばいろたけ"
+        "ひめかばいろたけ",
+        "Pluteus cervinus"
       ]
     },
     "toxicity": "inedible",
@@ -9040,7 +9046,10 @@
       "aliases": [
         "朱色茸",
         "しゅいろたけ",
-        "Pycnoporus coccineus"
+        "Pycnoporus coccineus",
+        "ヒイロタケ",
+        "緋色茸",
+        "ひいろたけ"
       ]
     },
     "toxicity": "inedible",
@@ -10193,10 +10202,11 @@
     "id": "numerisugitake-modoki",
     "names": {
       "ja": "ヌメリスギタケモドキ",
-      "scientific": "Pholiota adiposa",
+      "scientific": "Pholiota cerifera",
       "aliases": [
         "滑杉茸擬",
-        "ぬめりすぎたけもどき"
+        "ぬめりすぎたけもどき",
+        "Pholiota adiposa"
       ]
     },
     "toxicity": "edible",
@@ -10379,12 +10389,13 @@
     "id": "shimokoshi",
     "names": {
       "ja": "シモコシ",
-      "scientific": "Tricholoma equestre",
+      "scientific": "Tricholoma auratum",
       "aliases": [
         "霜越",
         "しもこし",
         "キンタケ",
-        "Tricholoma auratum"
+        "Tricholoma auratum",
+        "Tricholoma equestre"
       ]
     },
     "toxicity": "edible",
@@ -11475,95 +11486,6 @@
     "verified": true
   },
   {
-    "id": "chanametsumuratake-modoki",
-    "names": {
-      "ja": "チャナメツムタケモドキ",
-      "scientific": "Pholiota lubrica",
-      "aliases": [
-        "茶滑紡錘茸擬",
-        "ちゃなめつむたけもどき"
-      ]
-    },
-    "toxicity": "edible",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "広葉樹の倒木",
-      "針葉樹の倒木",
-      "切り株"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/chanametsumuratake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/234860837/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/566742709/medium.jpg",
-      "https://static.inaturalist.org/photos/331453680/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/352754077/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/236100429/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/365726323/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/417331677/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/49712615/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/575082221/medium.jpg"
-    ],
-    "description": "チャナメツムタケモドキはモエギタケ科の木材腐朽菌で、秋に広葉樹や針葉樹の腐朽木上に群生する。チャナメツムタケに似るが、柄の鱗片が少なく傘の粘性がより強い点で区別される。なめこに似たぬめりのある食感が特徴で、味噌汁や鍋物などの日本料理に好適な食用キノコである。発生量は多く、秋のキノコ狩りの対象として親しまれている。広葉樹・針葉樹いずれの枯木にも発生する適応力の広い種である。",
-    "features": "傘は直径3〜7cmで黄褐色〜茶褐色、表面に強い粘性があり湿時に光沢を帯びる。周縁部には被膜の残片が付着することがある。ひだは淡黄色で密、成熟すると褐色に変化する。柄は長さ3〜8cm、太さ0.5〜1cmで、上部は淡色、下部に褐色の繊維状鱗片がまばらにつく。つばは不明瞭または消失しやすい。肉は淡黄白色で柔らかく穏やかな味。胞子紋は褐色。",
-    "similar_species": [],
-    "tree_association": [],
-    "source_url": "",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "brown"
-      ],
-      "cap_shape": [
-        "convex"
-      ],
-      "cap_size": "small",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "brown"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Марина Горбунова-Ëлкина, some rights reserved (CC BY-NC)",
-      "(c) Leonid, some rights reserved (CC BY-NC)",
-      "(c) Vincent Fatton, all rights reserved",
-      "(c) Svetlana Nesterova, some rights reserved (CC BY-NC)",
-      "(c) Иван Матершев, some rights reserved (CC BY-NC)",
-      "(c) sergey-gashkov, some rights reserved (CC BY-NC)",
-      "(c) katipihlaja, some rights reserved (CC BY-NC)",
-      "(c) Alexey P. Seregin, some rights reserved (CC BY-NC)",
-      "(c) Marco Floriani, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Strophariaceae",
-      "genus": "Pholiota"
-    },
-    "cooking_preservation": "なめこに似たぬめりのある食感があり、味噌汁、鍋物、煮物、うどんの具に好適。傘のぬめりを活かした汁物調理が最も一般的。炒め物やホイル焼きにも利用できる。保存は冷蔵で2〜3日。ぬめりがあるため乾燥保存よりも塩漬けや冷凍保存が向いている。",
-    "verified": true
-  },
-  {
     "id": "koganetake",
     "names": {
       "ja": "コガネタケ",
@@ -12395,101 +12317,6 @@
     "verified": true
   },
   {
-    "id": "kurokawa-modoki",
-    "names": {
-      "ja": "クロカワモドキ",
-      "scientific": "Boletopsis leucomelaena",
-      "aliases": [
-        "黒皮擬",
-        "くろかわもどき"
-      ]
-    },
-    "toxicity": "edible",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "マツ林",
-      "針葉樹林",
-      "山地"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/kurokawa-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/564529482/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/310579437/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/250415784/medium.jpg",
-      "https://static.inaturalist.org/photos/304193081/medium.jpeg",
-      "https://static.inaturalist.org/photos/304434116/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/601772475/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/355812712/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/573369736/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/60128601/medium.jpeg"
-    ],
-    "description": "クロカワモドキはイボタケ目の外生菌根菌で、マツ林など針葉樹林の地上に秋に発生する。クロカワに似るが、管孔面が白色で顕著に垂生する点で区別される。管孔を持つ点でクロカワ（針状のひだ）とは子実層の構造が異なる。針葉樹との共生関係が強く、特にマツ林での発生が多い。やや苦味があるものの適切に調理すれば食用になり、佃煮などに利用されることがある。発生量はあまり多くない。",
-    "features": "傘は直径5〜15cmで黒褐色〜暗灰色、表面はビロード状でやや不整形になりやすい。管孔面は白色で孔口は微細、明瞭に柄に垂生する。柄は長さ3〜6cm、太さ2〜4cmで短く太い灰褐色、基部がやや膨らむ。肉は白色で空気に触れると灰色に変色する。やや硬い肉質を持つ。胞子紋は褐色。",
-    "similar_species": [],
-    "tree_association": [
-      "アカマツ",
-      "モミ",
-      "ツガ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Boletopsis%20leucomelaena",
-    "traits": {
-      "gill_type": [
-        "pores"
-      ],
-      "cap_color": [
-        "black",
-        "gray"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "decurrent"
-      ],
-      "stalk_color": [
-        "gray"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "conifer"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Nicolas Schwab, some rights reserved (CC BY-NC)",
-      "(c) huafang, some rights reserved (CC BY-NC)",
-      "(c) Filip Fuljer, some rights reserved (CC BY-NC)",
-      "(c) Michael Colosimo, all rights reserved",
-      "(c) Jess Starwood, all rights reserved",
-      "(c) Guinberteau Jacques, some rights reserved (CC BY-NC)",
-      "(c) Manuela Fiorini, some rights reserved (CC BY)",
-      "(c) bojanarko, some rights reserved (CC BY-NC)",
-      "(c) Felix Riegel, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Thelephorales",
-      "family": "Boletopsidaceae",
-      "genus": "Boletopsis"
-    },
-    "cooking_preservation": "やや苦味があるため、下処理として薄くスライスして塩水に浸けるか軽く下茹でしてから調理するとよい。佃煮、煮付け、炒め物などに利用される。クロカワ同様に独特の風味があり、日本酒のつまみとして好む人もいる。保存は冷蔵で2〜3日。塩漬けにして長期保存することも可能。",
-    "verified": true
-  },
-  {
     "id": "bunaharitake",
     "names": {
       "ja": "ブナハリタケ",
@@ -12674,11 +12501,12 @@
     "id": "karakasatake-modoki",
     "names": {
       "ja": "カラカサタケモドキ",
-      "scientific": "Macrolepiota procera",
+      "scientific": "Chlorophyllum rhacodes",
       "aliases": [
         "唐傘茸擬",
         "からかさたけもどき",
-        "パラソルマッシュルーム"
+        "パラソルマッシュルーム",
+        "Macrolepiota procera"
       ]
     },
     "toxicity": "edible",
@@ -13508,10 +13336,11 @@
     "id": "komurasakishimeji",
     "names": {
       "ja": "コムラサキシメジ",
-      "scientific": "Collybia nuda",
+      "scientific": "Lepista sordida",
       "aliases": [
         "小紫占地",
-        "Lepista nuda"
+        "Lepista nuda",
+        "Collybia nuda"
       ]
     },
     "toxicity": "edible",
@@ -14243,97 +14072,6 @@
     "verified": true
   },
   {
-    "id": "houkitake-modoki",
-    "names": {
-      "ja": "ホウキタケモドキ",
-      "scientific": "Ramaria botrytis",
-      "aliases": [
-        "箒茸擬"
-      ]
-    },
-    "toxicity": "edible",
-    "season": {
-      "start_month": 8,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹林",
-      "ブナ林"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/houkitake-modoki.webp",
-    "images_remote": [
-      "https://static.inaturalist.org/photos/329241489/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/419240263/medium.jpeg",
-      "https://static.inaturalist.org/photos/595977631/medium.jpg",
-      "https://static.inaturalist.org/photos/442232901/medium.jpeg",
-      "https://static.inaturalist.org/photos/246520103/medium.jpg",
-      "https://static.inaturalist.org/photos/55464140/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/162610607/medium.jpeg",
-      "https://static.inaturalist.org/photos/436450016/medium.jpeg",
-      "https://static.inaturalist.org/photos/236103022/medium.jpeg"
-    ],
-    "description": "夏から秋にかけてブナ林などの広葉樹林地上に発生するホウキタケ属の菌根菌。サンゴ状に多数分岐した子実体は見事で、枝先が赤紫色〜ワイン色を帯びるのが本種の識別ポイントとなる。ヨーロッパではCauliflower coral（カリフラワー珊瑚）とも呼ばれ、食用キノコとして利用される。ただしホウキタケ属には消化器症状を引き起こす種が含まれるため、正確な同定が重要である。日本でも秋のブナ林で見られるが発生量は多くない。",
-    "features": "子実体は高さ7〜15cm、幅も同程度の大きさで、基部の太い幹からサンゴ状に多数分岐する。基部は白色〜淡黄色で太く、枝は上方で細かく分岐し、先端は赤紫色〜ワイン色を帯びる。肉は白色で緻密、噛むとわずかに苦味がある。胞子紋は黄褐色。全体にずっしりとした重量感がある。",
-    "similar_species": [],
-    "tree_association": [
-      "ブナ",
-      "ミズナラ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Ramaria%20botrytis",
-    "traits": {
-      "gill_type": [
-        "none"
-      ],
-      "cap_color": [
-        "white",
-        "red"
-      ],
-      "cap_shape": [
-        "convex"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Mary McCallum, all rights reserved",
-      "(c) Yulia Kozina, some rights reserved (CC BY-NC)",
-      "(c) Elan Stopnitzky, all rights reserved",
-      "(c) Philippe Sem, all rights reserved",
-      "(c) SANTI SCIBILIA, all rights reserved",
-      "(c) Krista Van Vliet, all rights reserved",
-      "(c) Kélian Gautier, some rights reserved (CC BY-NC)",
-      "(c) ema jevšnik, all rights reserved",
-      "(c) Marko Doboš, all rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Gomphales",
-      "family": "Gomphaceae",
-      "genus": "Ramaria"
-    },
-    "cooking_preservation": "天ぷらやバターソテー、鍋物に適する。苦味がある場合はさっと茹でこぼしてから調理するとよい。歯切れのよい食感で、薄切りにして炒め物にも使える。日持ちしないため、採取後は早めに調理するか、冷凍・乾燥保存する。",
-    "verified": true
-  },
-  {
     "id": "oomomitake",
     "names": {
       "ja": "オオモミタケ",
@@ -14431,9 +14169,10 @@
     "id": "senbonshimeji",
     "names": {
       "ja": "センボンシメジ",
-      "scientific": "Lyophyllum decastes",
+      "scientific": "Lyophyllum fumosum",
       "aliases": [
-        "千本占地"
+        "千本占地",
+        "Lyophyllum decastes"
       ]
     },
     "toxicity": "edible",
@@ -14617,9 +14356,10 @@
     "id": "tsubaaburashimeji",
     "names": {
       "ja": "ツバアブラシメジ",
-      "scientific": "Cortinarius caperatus",
+      "scientific": "Cortinarius collinitus",
       "aliases": [
-        "鍔脂占地"
+        "鍔脂占地",
+        "Cortinarius caperatus"
       ]
     },
     "toxicity": "edible",
@@ -14710,9 +14450,10 @@
     "id": "himesakurashimeji",
     "names": {
       "ja": "ヒメサクラシメジ",
-      "scientific": "Entoloma quadratum",
+      "scientific": "Hygrophorus capreolarius",
       "aliases": [
-        "姫桜占地"
+        "姫桜占地",
+        "Entoloma quadratum"
       ]
     },
     "toxicity": "edible",
@@ -15740,7 +15481,8 @@
       "scientific": "Russula japonica",
       "aliases": [
         "白初擬き",
-        "しろはつもどき"
+        "しろはつもどき",
+        "Russula japonica"
       ]
     },
     "toxicity": "edible_caution",
@@ -16285,104 +16027,14 @@
     "verified": true
   },
   {
-    "id": "hitoyotake-modoki",
-    "names": {
-      "ja": "ヒトヨタケモドキ",
-      "scientific": "Coprinopsis atramentaria",
-      "aliases": [
-        "一夜茸擬き",
-        "ひとよたけもどき"
-      ]
-    },
-    "toxicity": "edible_caution",
-    "season": {
-      "start_month": 4,
-      "end_month": 11
-    },
-    "habitat": [
-      "草地",
-      "路傍",
-      "公園",
-      "庭"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/hitoyotake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/161525979/medium.jpg",
-      "https://static.inaturalist.org/photos/93786223/medium.jpeg",
-      "https://static.inaturalist.org/photos/178027568/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/74340354/medium.jpg",
-      "https://static.inaturalist.org/photos/64773406/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/71284138/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/4917248/medium.jpeg",
-      "https://static.inaturalist.org/photos/2019747/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/91421738/medium.jpeg"
-    ],
-    "description": "草地や路傍、庭園、埋もれた木材の周辺などに群生する中型のキノコ。成熟するとひだが黒いインク状に液化する特徴があり、ヒトヨタケ科に特有の現象（自己消化）が見られる。単独では食用可能とされるが、コプリン（ジスルフィラム様物質）を含み、アルコールと併用すると重篤な中毒症状を引き起こすため極めて危険である。英語圏ではCommon ink cap（普通のインクキャップ）やTippler's bane（酒飲みの厄）と呼ばれる。世界的に広く分布し、都市部でもよく見られる。",
-    "features": "傘は灰褐色〜暗灰色で径3〜7cm、初め卵形〜鐘形で、表面に縦の溝線がある。成熟するとひだが縁から黒色のインク状に液化して溶ける。ひだは白色から成熟すると黒色に変わる。柄は白色で長さ6〜12cm、太さ0.5〜1.5cm、中空で平滑。つばの痕跡が柄の下部に見られることがある。肉は薄く灰白色。胞子紋は黒色。",
-    "similar_species": [],
-    "caution": "コプリン（ジスルフィラム様物質）を含み、飲酒前後数日以内に摂取すると顔面紅潮・動悸・嘔吐・頭痛などの中毒症状（アンタビュース様反応）を起こす。アルコールとの併用は厳禁。飲酒習慣のある人は食べないこと。",
-    "tree_association": [],
-    "source_url": "https://en.wikipedia.org/wiki/Coprinopsis%20atramentaria",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "gray",
-        "brown"
-      ],
-      "cap_shape": [
-        "conical"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "hollow"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "grass"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) marktwixt, some rights reserved (CC BY-NC)",
-      "(c) Marika Piilonen, all rights reserved",
-      "(c) Aaron Zastrow, all rights reserved",
-      "(c) Suzaan Kritzinger-Klopper, some rights reserved (CC BY-NC)",
-      "(c) Jen Bays, all rights reserved",
-      "(c) Марина Горбунова-Ëлкина, some rights reserved (CC BY-NC)",
-      "(c) M. Goff, some rights reserved (CC BY-NC-SA)",
-      "(c) Damon Tighe, all rights reserved",
-      "(c) Kauko Paltta, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Psathyrellaceae",
-      "genus": "Coprinopsis"
-    },
-    "verified": true
-  },
-  {
     "id": "kisamatsu-modoki",
     "names": {
       "ja": "キサマツモドキ",
-      "scientific": "Tricholoma portentosum",
+      "scientific": "Tricholomopsis decora",
       "aliases": [
         "黄松擬き",
-        "きさまつもどき"
+        "きさまつもどき",
+        "Tricholoma portentosum"
       ]
     },
     "toxicity": "edible_caution",
@@ -16725,10 +16377,11 @@
     "id": "kusaurabenitake-modoki",
     "names": {
       "ja": "クサウラベニタケモドキ",
-      "scientific": "Entoloma sinuatum",
+      "scientific": "Entoloma subrhodopolium",
       "aliases": [
         "臭裏紅茸擬",
-        "くさうらべにたけもどき"
+        "くさうらべにたけもどき",
+        "Entoloma sinuatum"
       ]
     },
     "toxicity": "toxic",
@@ -16920,10 +16573,11 @@
     "id": "tengutake-modoki",
     "names": {
       "ja": "テングタケモドキ",
-      "scientific": "Amanita pantherina",
+      "scientific": "Amanita sepiacea",
       "aliases": [
         "天狗茸擬",
-        "てんぐたけもどき"
+        "てんぐたけもどき",
+        "Amanita pantherina"
       ]
     },
     "toxicity": "toxic",
@@ -17213,11 +16867,12 @@
     "id": "waraitake",
     "names": {
       "ja": "ワライタケ",
-      "scientific": "Gymnopilus junonius",
+      "scientific": "Panaeolus papilionaceus",
       "aliases": [
         "笑茸",
         "わらいたけ",
-        "Gymnopilus spectabilis"
+        "Gymnopilus spectabilis",
+        "Gymnopilus junonius"
       ]
     },
     "toxicity": "toxic",
@@ -17506,103 +17161,6 @@
     "verified": true
   },
   {
-    "id": "shirotamagotengutake-modoki",
-    "names": {
-      "ja": "シロタマゴテングタケモドキ",
-      "scientific": "Amanita verna",
-      "aliases": [
-        "白卵天狗茸擬",
-        "しろたまごてんぐたけもどき"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 6,
-      "end_month": 9
-    },
-    "habitat": [
-      "広葉樹林",
-      "混合林"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/shirotamagotengutake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/120345698/medium.jpeg",
-      "https://static.inaturalist.org/photos/294100902/medium.jpeg",
-      "https://static.inaturalist.org/photos/504975088/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/35754619/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/76219879/medium.jpg",
-      "https://static.inaturalist.org/photos/195257195/medium.jpg",
-      "https://static.inaturalist.org/photos/295042606/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/193756277/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/12823593/medium.jpeg"
-    ],
-    "description": "初夏から秋にかけて広葉樹林の地上に発生する純白の中型キノコで、テングタケ科に属する。猛毒のアマトキシン（アマニチン）を含む致死性キノコであり、ドクツルタケやシロタマゴテングタケと同等の危険性がある。食用のシロマツタケモドキやハラタケ類の白い種と間違えて摂取する事故がある。全体が純白で美しいが、1本の摂取でも致命的となりうる極めて危険な種である。",
-    "features": "全体が純白色。傘は直径5〜10cm、初め卵形で後に平開する。ひだは白色で密、柄に離生する。柄は白色で上部に膜質のつば、基部に袋状のつぼをもつ。肉は白色で無臭に近い。",
-    "similar_species": [
-      "shirotamagotengutake",
-      "dokutsuru-take"
-    ],
-    "caution": "アマトキシン（アマニチン）を含む猛毒キノコ。摂取後6〜24時間の潜伏期間の後、激しい嘔吐・下痢・腹痛が起こる。一旦症状が治まった後に肝不全・腎不全が進行し、死亡することがある。致死率が高く、1本の摂取でも致命的。絶対に食べてはいけない。",
-    "tree_association": [
-      "コナラ",
-      "ブナ",
-      "シイ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Amanita%20verna",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "white"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "ring",
-        "volva"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) d w borland, some rights reserved (CC BY-NC)",
-      "(c) Alan Mazza, all rights reserved",
-      "(c) Jurian Sterk, all rights reserved",
-      "(c) salvatore_bacciu_paola_mereu, some rights reserved (CC BY-NC)",
-      "no rights reserved",
-      "(c) Fabio Cianchi, all rights reserved",
-      "(c) Antonio Ezquerro Antoñana, all rights reserved",
-      "(c) Amari García, some rights reserved (CC BY-NC)",
-      "(c) Davide Puddu, some rights reserved (CC BY)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Amanitaceae",
-      "genus": "Amanita"
-    },
-    "poisoning_first_aid": "アマトキシン（アマニチン）を含む猛毒キノコ。摂取後6〜24時間の潜伏期間の後、激しい嘔吐・下痢・腹痛が起こる（コレラ様症状）。一旦症状が治まる偽回復期の後に肝不全・腎不全が進行し、死亡に至ることがある。致死率が高く、1本でも致命的。応急処置として直ちに救急搬送し、胃洗浄・活性炭投与・輸液などの集中治療が必要。絶対に食べてはいけない。",
-    "verified": true
-  },
-  {
     "id": "kiibokasatake",
     "names": {
       "ja": "キイボカサタケ",
@@ -17698,10 +17256,11 @@
     "id": "nigakuritake-modoki",
     "names": {
       "ja": "ニガクリタケモドキ",
-      "scientific": "Hypholoma lateritium",
+      "scientific": "Hypholoma gracile",
       "aliases": [
         "苦栗茸擬",
-        "にがくりたけもどき"
+        "にがくりたけもどき",
+        "Hypholoma lateritium"
       ]
     },
     "toxicity": "toxic",
@@ -17797,10 +17356,11 @@
     "id": "midorisugitake",
     "names": {
       "ja": "ミドリスギタケ",
-      "scientific": "Hypholoma fasciculare",
+      "scientific": "Gymnopilus aeruginosus",
       "aliases": [
         "緑杉茸",
-        "みどりすぎたけ"
+        "みどりすぎたけ",
+        "Hypholoma fasciculare"
       ]
     },
     "toxicity": "toxic",
@@ -18182,7 +17742,10 @@
       "scientific": "Russula densifolia",
       "aliases": [
         "偽黒初擬",
-        "にせくろはつもどき"
+        "にせくろはつもどき",
+        "クロハツモドキ",
+        "黒初擬",
+        "くろはつもどき"
       ]
     },
     "toxicity": "toxic",
@@ -18270,106 +17833,6 @@
       "genus": "Russula"
     },
     "poisoning_first_aid": "消化器系の毒素を含む。摂取後1〜6時間で嘔吐・下痢・腹痛が起こる。ニセクロハツほど毒性は強くないとされるが、横紋筋融解症に類似した症状を引き起こした報告もある。応急処置として水分補給を行い、速やかに医療機関を受診する。",
-    "verified": true
-  },
-  {
-    "id": "tsukiyotake-modoki",
-    "names": {
-      "ja": "ツキヨタケモドキ",
-      "scientific": "Omphalotus japonicus",
-      "aliases": [
-        "月夜茸擬",
-        "つきよたけもどき"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "ブナの枯木",
-      "倒木",
-      "立ち枯れ木"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/tsukiyotake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/440014973/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/180436205/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/328831624/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/249023134/medium.jpg",
-      "https://static.inaturalist.org/photos/232099603/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/55930795/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/244915413/medium.jpeg",
-      "https://static.inaturalist.org/photos/66376654/medium.jpg",
-      "https://static.inaturalist.org/photos/452639017/medium.jpeg"
-    ],
-    "description": "秋にブナなどの広葉樹の枯木に重なり合うように発生する中型〜大型のキノコで、ツキヨタケ科に属する。ツキヨタケと同様にイルジンSを含む毒キノコであり、食用のシイタケ・ムキタケ・ヒラタケと酷似するため、毎年多数の中毒事故が発生している。柄の断面に暗紫色のシミが見られることが最も重要な識別特徴である。暗所でひだが淡い青白い蛍光を発する特性がある。",
-    "features": "傘は黄褐色〜暗褐色で直径10〜20cm、半円形〜腎臓形で表面はやや粘性がある。ひだは白色〜黄白色で密。柄は短く偏心し暗色。柄の断面に暗紫色のシミが見られるのが重要な識別特徴。暗所でひだが淡い青白い蛍光を発する。",
-    "similar_species": [
-      "shiitake",
-      "mukitake",
-      "hiratake"
-    ],
-    "caution": "イルジンSを含む有毒キノコ。摂取後30分〜1時間で激しい嘔吐・下痢・腹痛が起こる。症状は通常1〜2日で回復するが、脱水症状が重症化する場合がある。柄の断面に暗紫色のシミがあることで判別できるが、見落としやすい。日本で最も中毒事故が多い毒キノコの一つ。",
-    "tree_association": [
-      "ブナ",
-      "ミズナラ",
-      "イタヤカエデ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Omphalotus%20japonicus",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "brown",
-        "yellow"
-      ],
-      "cap_shape": [
-        "flat",
-        "funnel"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "decurrent"
-      ],
-      "stalk_color": [
-        "brown"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Masaki Hamaguchi, some rights reserved (CC BY-NC)",
-      "(c) tsamche, some rights reserved (CC BY-ND)",
-      "(c) 岸本年郎, some rights reserved (CC BY)",
-      "(c) balawu, some rights reserved (CC BY-NC)",
-      "(c) iwamasa kaoru, all rights reserved",
-      "(c) JODY HSIEH, some rights reserved (CC BY-NC)",
-      "(c) Kanchi Nanjo, some rights reserved (CC BY-NC)",
-      "(c) カズキ, all rights reserved",
-      "(c) Yu Qi Wang, all rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Omphalotaceae",
-      "genus": "Omphalotus"
-    },
-    "poisoning_first_aid": "イルジンSを含む。摂取後30分〜1時間で激しい嘔吐・下痢・腹痛が起こる。症状は通常1〜2日で回復するが、脱水症状が重症化する場合がある。応急処置として水分・電解質の補給を行い、医療機関を受診する。柄の断面に暗紫色のシミがあることが判別の決め手だが、見落としやすいため要注意。",
     "verified": true
   },
   {
@@ -18471,201 +17934,6 @@
       "genus": "Inocybe"
     },
     "poisoning_first_aid": "ムスカリンを含む。摂取後15〜30分で大量の発汗・流涎・流涙・縮瞳・腹痛・下痢・嘔吐が起こる（ムスカリン症候群）。重症例では血圧低下・呼吸困難・肺水腫に至ることがある。解毒薬としてアトロピンが有効。速やかに医療機関を受診することが重要。",
-    "verified": true
-  },
-  {
-    "id": "kurohatsu-modoki",
-    "names": {
-      "ja": "クロハツモドキ",
-      "scientific": "Russula densifolia",
-      "aliases": [
-        "黒初擬",
-        "くろはつもどき"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 7,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹林",
-      "混合林"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/kurohatsu-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/27647779/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/171915766/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/153319138/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/154657650/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/87016148/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/109785276/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/142444802/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/169340309/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/13536026/medium.jpg"
-    ],
-    "description": "夏から秋にかけて広葉樹林の地上に発生する中型のキノコで、ベニタケ科に属する。食用のクロハツと外見がほぼ同一で、ベニタケ科の中でも特に判別が困難な種。Wikipediaによると、茶色から白色のキノコで赤色から黒色に色が変わり、消化器系の中毒を起こす毒キノコである。地方名としてクロヂワレ（長野県）、シチベエ（秋田県）がある。クロハツを食べる習慣のある地域で誤食事故が起きている。",
-    "features": "傘は暗灰色〜黒褐色で直径6〜15cm、表面は乾燥してビロード状〜平滑。ひだは白色で極めて密に並び、傷つけると赤変し最終的に黒変する。柄は白色〜灰色で太く短い。肉は白色で緻密、傷つけると赤変後に黒変する。",
-    "similar_species": [
-      "kurohatsu"
-    ],
-    "caution": "消化器系の毒素を含む有毒キノコ。摂取後1〜6時間で嘔吐・下痢・腹痛が起こる。クロハツと外見的に区別することは極めて困難で、専門家でも顕微鏡観察が必要な場合がある。安全のためクロハツに似たキノコは食べないことを推奨する。",
-    "tree_association": [
-      "コナラ",
-      "ブナ",
-      "シイ",
-      "マツ"
-    ],
-    "source_url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84%E3%83%A2%E3%83%89%E3%82%AD",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "gray",
-        "black"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "white",
-        "gray"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "red"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Danny Miller, some rights reserved (CC BY-NC)",
-      "(c) Christian Schwarz, some rights reserved (CC BY-NC)",
-      "(c) Christian Apschner, some rights reserved (CC BY-NC)",
-      "(c) maricel patino, some rights reserved (CC BY-NC)",
-      "(c) samiam29, some rights reserved (CC BY-NC)",
-      "(c) Mike Potts, some rights reserved (CC BY-NC-ND)",
-      "(c) Stephen Russell, some rights reserved (CC BY-NC)",
-      "(c) noah_siegel, some rights reserved (CC BY-NC-SA)",
-      "(c) tombigelow, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Russulales",
-      "family": "Russulaceae",
-      "genus": "Russula"
-    },
-    "poisoning_first_aid": "消化器系の毒素を含む。摂取後1〜6時間で嘔吐・下痢・腹痛が起こり、場合によっては死に至るおそれがある。クロハツとの外見的区別は極めて困難で、専門家でも顕微鏡観察が必要な場合がある。応急処置として水分補給を行い、速やかに医療機関を受診する。安全のためクロハツに似たキノコは食べないことが推奨される。",
-    "verified": true
-  },
-  {
-    "id": "dokuajirogasa",
-    "names": {
-      "ja": "ドクアジロガサ",
-      "scientific": "Galerina marginata",
-      "aliases": [
-        "毒網代笠",
-        "どくあじろがさ"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 6,
-      "end_month": 11
-    },
-    "habitat": [
-      "枯木",
-      "倒木",
-      "切り株",
-      "埋没木"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/dokuajirogasa.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/584244172/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/342891240/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/174278640/medium.jpg",
-      "https://static.inaturalist.org/photos/447076600/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/270006299/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/359568082/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/454039678/medium.jpeg",
-      "https://static.inaturalist.org/photos/7106791/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/384866929/medium.jpeg"
-    ],
-    "description": "初夏から晩秋にかけて各種枯木に発生する小型のキノコで、ケコガサタケ属に属する。猛毒のアマトキシン（アマニチン）を含む致死性キノコであり、コレラタケの別名でも知られる。食用のナメコやエノキタケに外見が類似し、サイズも小さいため軽視されやすいが、数本の摂取でも致命的となる。広い宿主範囲をもち、さまざまな種類の枯木に発生する。世界的にも中毒事故が報告されている危険種。",
-    "features": "傘は黄褐色〜褐色で直径1.5〜5cm、湿時粘性があり周縁に条線が見られる。乾燥すると色が薄くなる（吸水性）。ひだは黄褐色〜錆褐色で密。柄は上部に膜質のつばがあり、つばより下は褐色の繊維に覆われる。肉は薄く褐色。",
-    "similar_species": [
-      "nameko",
-      "enokitake"
-    ],
-    "caution": "アマトキシン（アマニチン）を含む猛毒キノコ。摂取後6〜24時間の潜伏期間の後、激しい嘔吐・下痢・腹痛が起こる。一旦回復したように見えるが、その後肝不全・腎不全が進行し死亡することがある。少量（数本）でも致死量に達する。絶対に食べてはいけない。",
-    "tree_association": [],
-    "source_url": "https://en.wikipedia.org/wiki/Galerina%20marginata",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "brown",
-        "yellow"
-      ],
-      "cap_shape": [
-        "convex"
-      ],
-      "cap_size": "small",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "brown"
-      ],
-      "stalk_features": [
-        "ring",
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Alan Rockefeller, some rights reserved (CC BY)",
-      "(c) Amos Zoeller, some rights reserved (CC BY-NC)",
-      "(c) dogbowlbookpile, some rights reserved (CC BY-NC)",
-      "(c) Ellie In, all rights reserved",
-      "(c) rdegeer, some rights reserved (CC BY-NC)",
-      "(c) maricel patino, some rights reserved (CC BY-NC)",
-      "(c) mpearlstein, some rights reserved (CC BY-NC)",
-      "(c) bpcass, all rights reserved",
-      "(c) L Joan Heyding, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Hymenogastraceae",
-      "genus": "Galerina"
-    },
-    "poisoning_first_aid": "アマトキシン（アマニチン）を含む猛毒キノコ。摂取後6〜24時間の潜伏期間の後、激しい嘔吐・下痢・腹痛が起こる（コレラ様症状）。一旦回復したように見える偽回復期の後、肝不全・腎不全が進行し死亡することがある。少量（数本）でも致死量に達する。応急処置として直ちに救急搬送し、胃洗浄・活性炭投与・輸液などの集中治療が必要。絶対に食べてはいけない。",
     "verified": true
   },
   {
@@ -19128,104 +18396,6 @@
       "genus": "Collybia"
     },
     "poisoning_first_aid": "ムスカリンを含む。摂取後15〜30分で大量発汗・流涙・唾液分泌過多・縮瞳・腹痛・下痢・嘔吐が起こる（ムスカリン症候群）。重症では血圧低下・呼吸困難を引き起こすことがある。解毒薬としてアトロピンが有効。応急処置として速やかに医療機関を受診する。芝生に生える白いキノコは安易に食べないこと。",
-    "verified": true
-  },
-  {
-    "id": "oowaraitake-sp",
-    "names": {
-      "ja": "オオワライタケ属sp.",
-      "scientific": "Gymnopilus junonius",
-      "aliases": [
-        "大笑茸",
-        "おおわらいたけ"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "広葉樹の枯木",
-      "切り株",
-      "倒木"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/oowaraitake-sp.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/128364336/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/58239330/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/189781548/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/89244251/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/268344309/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/495795251/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/73891210/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/226858605/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/344530507/medium.jpg"
-    ],
-    "description": "秋に広葉樹の切り株や枯木に群生する大型のキノコで、チャツムタケ属に属する。鮮やかな黄橙色の傘が目立ち、ナメコやクリタケなど食用の木生キノコと同じ環境に発生するため注意が必要。シロシビン系の成分を含み幻覚症状を引き起こすことで知られ、「笑い茸」の名の由来となった。肉に強い苦味があるのが特徴。日本では古くから知られた毒キノコの一つ。",
-    "features": "傘は黄橙色〜橙褐色で直径5〜15cm、表面は繊維状で乾いている。ひだは黄色〜錆褐色で密、胞子が成熟すると錆色を帯びる。柄は黄色〜黄褐色で繊維質、上部に不明瞭なつばの痕跡がある。肉は黄色で苦味が強い。",
-    "similar_species": [],
-    "caution": "シロシビン・シロシン等の幻覚成分を含む。摂取後30分〜1時間で幻覚・幻聴・異常な多幸感・笑い・錯乱が起こる（「笑い茸」の名の由来）。加えて嘔吐・下痢などの消化器症状も伴う。精神症状は数時間持続する。",
-    "tree_association": [
-      "コナラ",
-      "クヌギ",
-      "サクラ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Gymnopilus%20junonius",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "yellow",
-        "orange"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "yellow",
-        "brown"
-      ],
-      "stalk_features": [
-        "ring",
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) floradean, some rights reserved (CC BY-NC)",
-      "(c) Daniel Raposo, some rights reserved (CC BY-NC)",
-      "(c) Arturo, some rights reserved (CC BY-NC)",
-      "(c) Christina, some rights reserved (CC BY-NC)",
-      "(c) manueljaramillo, some rights reserved (CC BY-NC)",
-      "(c) sonyareyes, some rights reserved (CC BY-NC)",
-      "(c) Graham Patterson, some rights reserved (CC BY-NC)",
-      "(c) Max Mudie, some rights reserved (CC BY-NC)",
-      "(c) maricel patino, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Hymenogastraceae",
-      "genus": "Gymnopilus"
-    },
-    "poisoning_first_aid": "シロシビン・シロシン等の幻覚成分を含む。摂取後30分〜1時間で幻覚・幻聴・異常な多幸感・不随意の笑い・錯乱が起こる。加えて嘔吐・下痢などの消化器症状も伴う。精神症状は数時間持続する。中毒時は安静にし、パニック状態の場合は静かな環境に移して医療機関を受診する。",
     "verified": true
   },
   {
@@ -19894,107 +19064,6 @@
     "verified": true
   },
   {
-    "id": "mineshimeji-modoki",
-    "names": {
-      "ja": "ミネシメジモドキ",
-      "scientific": "Tricholoma saponaceum",
-      "aliases": [
-        "峰占地擬",
-        "みねしめじもどき",
-        "シャボンシメジ"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "広葉樹林",
-      "針葉樹林",
-      "混交林"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/mineshimeji-modoki.webp",
-    "images_remote": [
-      "https://static.inaturalist.org/photos/451453979/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/111886537/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/94123426/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/5731944/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/332495071/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/254962220/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/56340758/medium.jpg",
-      "https://static.inaturalist.org/photos/53078733/medium.jpg",
-      "https://static.inaturalist.org/photos/459499863/medium.jpg"
-    ],
-    "description": "ミネシメジモドキ（シャボンシメジ）はキシメジ属に属する中型キノコで、広葉樹林や針葉樹林の地上に秋に発生する。外生菌根菌として様々な樹種と共生関係を持ち、世界的に広く分布する。食用のホンシメジやハタケシメジに外見が類似し、誤食事故が発生している。石鹸のような不快な臭いが特徴的な識別ポイントだが、個体によっては臭いが弱く判別が難しい場合もある。傘の色に変異が非常に大きく、灰色・褐色・オリーブ色・緑色がかった個体まで多様で、外見のみでの同定は困難である。iNaturalistでは世界各地から観察記録がある。",
-    "features": "傘は直径4〜12cmで、灰緑色〜灰褐色〜オリーブ色と色の変異が極めて大きい。表面は平滑〜やや繊維状。ひだは白色〜クリーム色で疎〜やや密、直生〜湾生。柄は白色で太く、長さ4〜10cm。肉は白色で、傷つけると徐々にピンク色〜淡紅色に変色する（重要な識別点）。石鹸様の不快な臭いがある。胞子紋は白色。",
-    "similar_species": [
-      "honshimeji"
-    ],
-    "caution": "消化器系に作用する毒素を含む。摂取後30分〜3時間で嘔吐・下痢・腹痛が起こる。色の変異が大きいため外見だけでの判別は困難。肉を傷つけた時のピンク色への変色と石鹸様の臭いが判別のポイント。大量摂取すると重篤化する場合がある。",
-    "tree_association": [
-      "ブナ",
-      "コナラ",
-      "モミ",
-      "ツガ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Tricholoma%20saponaceum",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "gray",
-        "brown"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "sinuate"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "red"
-      ],
-      "substrate": [
-        "broadleaf",
-        "conifer"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Lindsay Underwood, all rights reserved",
-      "(c) Lindsay, some rights reserved (CC BY-NC)",
-      "(c) Александр, some rights reserved (CC BY-NC)",
-      "(c) Alan Rockefeller, some rights reserved (CC BY)",
-      "(c) lastovka, some rights reserved (CC BY-NC)",
-      "(c) Federico Calledda, some rights reserved (CC BY-NC)",
-      "(c) Vladimir Bryukhov, some rights reserved (CC BY-NC)",
-      "(c) OTPanda, all rights reserved",
-      "(c) William Suárez, all rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Tricholomataceae",
-      "genus": "Tricholoma"
-    },
-    "poisoning_first_aid": "【毒素】消化器系に作用する毒素を含む（詳細な毒素成分は未同定）。【症状】摂取後30分〜3時間で嘔吐・下痢・腹痛が起こる。大量摂取すると重篤化する場合がある。【発症時間】30分〜3時間。【応急処置】症状が出た場合は医療機関を受診する。脱水に注意し水分補給を行うこと。識別のポイントは、肉を傷つけた時にピンク色に変色すること、および石鹸様の不快な臭いの有無である。色の変異が大きいため外見だけでの判別は困難。",
-    "verified": true
-  },
-  {
     "id": "tsuchikaburi-modoki",
     "names": {
       "ja": "ツチカブリモドキ",
@@ -20091,100 +19160,6 @@
       "genus": "Russula"
     },
     "poisoning_first_aid": "【毒素】消化器系に作用する刺激性の辛味成分を含む。【症状】摂取後30分〜2時間で激しい嘔吐・下痢・腹痛が起こる。【発症時間】30分〜2時間。【応急処置】症状が出た場合は医療機関を受診する。脱水に注意し水分補給を行うこと。識別のポイントは強い悪臭と辛味であり、少量を噛んで確認すれば判別しやすい（飲み込まないこと）。ベニタケ科で悪臭のある種は有毒と考えるべきである。",
-    "verified": true
-  },
-  {
-    "id": "dokufusentake-modoki",
-    "names": {
-      "ja": "ドクフウセンタケモドキ",
-      "scientific": "Cortinarius rubellus",
-      "aliases": [
-        "毒風船茸擬",
-        "どくふうせんたけもどき"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 8,
-      "end_month": 11
-    },
-    "habitat": [
-      "針葉樹林",
-      "モミ・トウヒ林",
-      "亜高山帯"
-    ],
-    "regions": [
-      "北海道",
-      "本州"
-    ],
-    "image_local": "/images/mushrooms/dokufusentake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/421405490/medium.jpeg",
-      "https://static.inaturalist.org/photos/323312232/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/326087819/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/546388628/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/106833656/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/93384549/medium.jpg",
-      "https://static.inaturalist.org/photos/44895302/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/334810951/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/190065523/medium.jpg"
-    ],
-    "description": "ドクフウセンタケモドキはフウセンタケ属に属する猛毒キノコで、針葉樹林（特にトウヒ林）の地上に秋に発生する。ヨーロッパでは複数の死亡例が報告されている極めて危険な種である。食用のフウセンタケ類やショウゲンジに外見が似ており、誤食事故が発生している。オレラニンという遅効性の腎毒素を含み、摂取後の潜伏期間が2日〜2週間と非常に長いことが特徴的で、原因の特定が遅れる要因となっている。フウセンタケ属は種数が非常に多く同定が困難なグループであり、確実な識別ができない場合は採取を避けるべきである。",
-    "features": "傘は直径3〜8cmで、赤褐色〜橙褐色を呈する。表面は微細な鱗片状〜繊維状。ひだは橙褐色〜錆褐色でやや疎。柄は黄橙色〜橙褐色で繊維質、長さ4〜10cm。若い個体ではクモの巣状の外被膜（コルチナ）があり、その痕跡が柄に残る。全体に赤みの強い褐色を帯びる。胞子紋は錆褐色。",
-    "similar_species": [],
-    "caution": "オレラニンを含む猛毒キノコ。摂取後2日〜2週間という非常に長い潜伏期間の後、激しい口渇・多尿・腎痛が起こり、急性腎不全に至る。解毒剤はなく、重症では人工透析や腎移植が必要となる。ヨーロッパでは複数の死亡例が報告されている。",
-    "tree_association": [
-      "モミ",
-      "トウヒ",
-      "マツ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Cortinarius%20rubellus",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "brown",
-        "orange"
-      ],
-      "cap_shape": [
-        "convex"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "yellow",
-        "brown"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "conifer"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) gnomie_87, some rights reserved (CC BY-NC)",
-      "(c) Erick Lee, all rights reserved",
-      "(c) John Plischke, some rights reserved (CC BY-NC)",
-      "(c) Samantha Eff, some rights reserved (CC BY-NC)",
-      "(c) Federico Calledda, some rights reserved (CC BY-NC)",
-      "(c) Albert Cardona, some rights reserved (CC BY)",
-      "(c) millennialmyces, all rights reserved",
-      "(c) David Malloch, some rights reserved (CC BY-NC)",
-      "(c) Nicolas Schwab, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Cortinariaceae",
-      "genus": "Cortinarius"
-    },
-    "poisoning_first_aid": "【毒素】オレラニン（ビピリジル系腎毒素）。【症状】摂取後2日〜2週間という非常に長い潜伏期間の後、激しい口渇・多尿・多飲が起こり、腎痛・腰痛が発現する。その後急性尿細管壊死から急性腎不全に至る。【発症時間】2日〜2週間（潜伏期間が極めて長い）。【応急処置】腎不全の兆候が現れた場合は直ちに集中治療が必要。解毒剤は存在しない。重症では人工透析が長期間必要となり、腎移植が必要になる場合もある。潜伏期間が長いため、キノコ摂取の事実を医療者に必ず伝えること。ヨーロッパでは複数の死亡例が報告されている。",
     "verified": true
   },
   {
@@ -20438,7 +19413,8 @@
       "scientific": "Entoloma quadratum",
       "aliases": [
         "赤疣傘茸",
-        "あかいぼかさたけ"
+        "あかいぼかさたけ",
+        "Entoloma quadratum"
       ]
     },
     "toxicity": "toxic",
@@ -20715,106 +19691,6 @@
       "genus": "Inocybe"
     },
     "poisoning_first_aid": "【毒素】ムスカリン。【症状】摂取後15〜30分で副交感神経の過剰興奮により、大量の発汗・流涙・唾液分泌過多・縮瞳・徐脈・下痢・腹痛が起こる（ムスカリン症候群）。重症例では気管支収縮による呼吸困難や肺水腫が生じることがある。【発症時間】15〜30分。【応急処置】直ちに医療機関を受診する。解毒にはアトロピン硫酸塩の投与が有効。アセタケ科のキノコは多くがムスカリンを含み、外見での種の同定が非常に困難なため、アセタケ科全体を食用にしないこと。",
-    "verified": true
-  },
-  {
-    "id": "gantake-modoki",
-    "names": {
-      "ja": "ガンタケモドキ",
-      "scientific": "Amanita rubescens",
-      "aliases": [
-        "雁茸擬",
-        "がんたけもどき"
-      ]
-    },
-    "toxicity": "toxic",
-    "season": {
-      "start_month": 7,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹林",
-      "針葉樹林",
-      "混交林"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/2411680/medium.JPG",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/177279901/medium.jpg",
-      "https://static.inaturalist.org/photos/535574506/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/404927246/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/56224138/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/101088413/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/334420454/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/297395003/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/145233820/medium.jpeg"
-    ],
-    "description": "ガンタケモドキ（Amanita rubescens）はテングタケ属に属するキノコで、広葉樹林や針葉樹林の地上に夏から秋にかけて発生する。ヨーロッパでは十分に加熱すれば食用とされているが、生食や加熱不十分で溶血性の中毒を起こす。食用のガンタケやタマゴタケモドキと混同される危険があり、さらに猛毒のテングタケ科の種との混同リスクもある。肉を傷つけると赤みを帯びる変色反応が特徴的である。iNaturalistでは世界中から非常に多数の観察記録があり、ヨーロッパや北米で広く分布する一般的な種である。",
-    "features": "傘は直径5〜15cmで、赤褐色〜ワイン褐色を呈する。表面に灰白色〜淡紅色のイボ（外被膜の破片）が散在する。ひだは白色で密、柄に対して遊離。傷つけると赤褐色に変色する。柄は白色〜淡紅色で太く、長さ6〜15cm、ツバがあり、基部は球根状に膨らむ。肉は白色で、傷つけると赤みを帯びる（重要な識別点）。胞子紋は白色。",
-    "similar_species": [],
-    "caution": "生食で溶血毒（ルベセンスリジン）による中毒を起こす。摂取後30分〜3時間で嘔吐・下痢・腹痛に加え、溶血性貧血を引き起こすことがある。加熱により毒性は分解されるとされるが、加熱不十分の場合は中毒する。日本では食用にしないことが推奨される。猛毒のテングタケ科の種と混同するリスクもある。",
-    "tree_association": [
-      "コナラ",
-      "ブナ",
-      "マツ",
-      "モミ"
-    ],
-    "source_url": "",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "red",
-        "brown"
-      ],
-      "cap_shape": [
-        "convex",
-        "hemisphere"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "ring",
-        "volva",
-        "fibrous"
-      ],
-      "bruising": [
-        "red"
-      ],
-      "substrate": [
-        "broadleaf",
-        "conifer"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Jakob Fahr, some rights reserved (CC BY-NC)",
-      "(c) Richard Stromberg, some rights reserved (CC BY-NC)",
-      "(c) Courtney Costantino, all rights reserved",
-      "(c) Xavi, some rights reserved (CC BY-NC)",
-      "(c) Jonathan Falso, some rights reserved (CC BY-NC)",
-      "(c) aliaska, some rights reserved (CC BY-NC)",
-      "(c) Maria Emília Martins, some rights reserved (CC BY-NC-SA)",
-      "(c) Oleksii Vasyliuk, some rights reserved (CC BY)",
-      "(c) lastovka, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Amanitaceae",
-      "genus": "Amanita"
-    },
-    "poisoning_first_aid": "【毒素】ルベセンスリジン（溶血毒）。生の状態で溶血性を示す。加熱により毒性は分解されるとされるが、加熱不十分の場合は中毒する。【症状】摂取後30分〜3時間で嘔吐・下痢・腹痛に加え、溶血性貧血を引き起こすことがある。【発症時間】30分〜3時間。【応急処置】症状が出た場合は医療機関を受診する。溶血症状（暗色尿・黄疸・貧血）が疑われる場合は緊急の医療処置が必要。日本では食用にしないことが推奨される。猛毒のテングタケ科の種と混同するリスクもあるため、採取自体を避けるべき。",
     "verified": true
   },
   {
@@ -21099,280 +19975,6 @@
     "verified": true
   },
   {
-    "id": "kaen-take-modoki",
-    "names": {
-      "ja": "カエンタケモドキ",
-      "scientific": "Trichoderma cornu-damae",
-      "aliases": [
-        "火炎茸擬"
-      ]
-    },
-    "toxicity": "deadly_toxic",
-    "season": {
-      "start_month": 8,
-      "end_month": 11
-    },
-    "habitat": [
-      "広葉樹林",
-      "枯木上"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/kaen-take-modoki.webp",
-    "images_remote": [
-      "https://static.inaturalist.org/photos/5672995/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/109621034/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/216184459/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/240724627/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/55809259/medium.jpg",
-      "https://static.inaturalist.org/photos/25395052/medium.jpg",
-      "https://static.inaturalist.org/photos/49350273/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/101700882/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/256719819/medium.jpg"
-    ],
-    "description": "カエンタケモドキはカエンタケと同様にトリコテセン系猛毒を含む極めて危険なキノコで、広葉樹の枯木や立枯れ木の根元に発生する。触れるだけで皮膚に炎症を起こすほどの強い毒性を持つ。指状〜棒状に分岐した鮮赤色の子実体が特徴的で、ベニナギナタタケなどの食用キノコと誤認される事故がある。カエンタケに極めて類似するため、野外での識別は非常に困難である。致死量はわずか3g程度とされ、素手で触ることも厳禁である。",
-    "features": "子実体は高さ3〜10cmで、指状〜棒状に分岐する。表面は鮮赤色〜橙赤色で、湿時にはやや粘性がある。基部は白色〜淡黄色で、しばしば複数の指が束状に発生する。断面は白色〜淡桃色で髄質。カエンタケに極めて類似するが、子実体の分岐がやや少なく、表面の質感が異なるとされる。全体として指のような独特の形状。",
-    "similar_species": [],
-    "caution": "マクロサイクリックトリコテセン（サトラトキシンH、ロリジンE等）を含む。触れるだけで皮膚に水疱・炎症を起こし、摂取した場合は2〜3時間以内に激しい嘔吐・下痢・腹痛が始まる。その後、白血球減少・血小板減少・多臓器不全・脳障害が進行し、摂取後数日〜2週間で死亡する。致死量は3g程度と極めて少量。DNA合成阻害により骨髄・消化管粘膜が破壊され、回復は極めて困難。素手で触ることも厳禁。",
-    "tree_association": [
-      "ナラ",
-      "ブナ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Trichoderma%20cornu-damae",
-    "traits": {
-      "gill_type": [
-        "none"
-      ],
-      "cap_color": [
-        "red",
-        "orange"
-      ],
-      "cap_shape": [
-        "conical"
-      ],
-      "cap_size": "small",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Tommy, all rights reserved",
-      "(c) hirabe1216, some rights reserved (CC BY-NC)",
-      "(c) siburanlai, some rights reserved (CC BY-NC)",
-      "(c) Gim Siew Tan, some rights reserved (CC BY-NC)",
-      "(c) azriealliamat, some rights reserved (CC BY-NC)",
-      "(c) xanna orbay, all rights reserved",
-      "(c) 近藤行仁, all rights reserved",
-      "(c) raibums, some rights reserved (CC BY)",
-      "(c) Carol Deane, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Hypocreales",
-      "family": "Hypocreaceae",
-      "genus": "Trichoderma"
-    },
-    "poisoning_first_aid": "【毒素】マクロサイクリックトリコテセン（サトラトキシンH、ロリジンE等）。DNA合成阻害作用を持つ。致死量は約3g。【症状】触れるだけで皮膚に水疱・炎症を起こす。摂取した場合は2〜3時間以内に激しい嘔吐・下痢・腹痛が始まる。その後、白血球減少・血小板減少・多臓器不全・脳障害が進行し、摂取後数日〜2週間で死亡する。【発症時間】皮膚接触は数時間、経口摂取は2〜3時間。【応急処置】皮膚に触れた場合は直ちに大量の水で洗浄し皮膚科を受診する。摂取した場合は直ちに救急搬送する。骨髄・消化管粘膜が破壊され回復は極めて困難。素手で触ることも厳禁。",
-    "verified": true
-  },
-  {
-    "id": "ooshirokarakasatake-deadly",
-    "names": {
-      "ja": "オオシロカラカサタケ致死型",
-      "scientific": "Chlorophyllum molybdites",
-      "aliases": [
-        "大白唐傘茸"
-      ]
-    },
-    "toxicity": "deadly_toxic",
-    "season": {
-      "start_month": 6,
-      "end_month": 10
-    },
-    "habitat": [
-      "芝生",
-      "公園",
-      "庭園",
-      "草地"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/ooshirokarakasatake-deadly.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/4619027/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/165206944/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/104040397/medium.jpg",
-      "https://static.inaturalist.org/photos/178154880/medium.jpeg",
-      "https://static.inaturalist.org/photos/226289674/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/317178080/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/89349010/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/55300704/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/25064721/medium.jpeg"
-    ],
-    "description": "オオシロカラカサタケはハラタケ科に属する毒キノコで、公園や庭園の芝生に大型の白い子実体を形成する。日本国内で最も食中毒事例が多い毒キノコの一つであり、カラカサタケやマクロレピオタ属の食用種と誤認されやすい。大量摂取や体力の弱い人では重症化し致命的となる危険がある。世界的にも熱帯〜温帯に広く分布し、iNaturalistでは非常に多数の観察記録がある。芝生や庭など身近な環境に発生するため、一般の人が遭遇しやすい。ひだが成熟するとオリーブ緑色に変わる点が最大の識別ポイントである。",
-    "features": "傘は直径10〜30cmと大型で白色。表面には淡褐色の鱗片が散在する。成長すると平開し中央がやや突出する。ひだは初め白色から成熟するとオリーブ緑色〜灰緑色に変わる（最重要識別点）。柄は白色で長さ10〜25cm、上部に可動性のつばがある。基部はやや膨らむがつぼはない。胞子紋は緑色を帯びる。肉は白色。",
-    "similar_species": [],
-    "caution": "モリブドフィリシン等の毒素を含み、摂取後1〜3時間で激しい嘔吐・水様性下痢・腹痛が発現する。重症例では脱水・電解質異常・ショック状態に陥り、特に小児・高齢者・基礎疾患のある人では致命的となりうる。世界的に見て本種による死亡例は複数報告されている。大量の体液喪失により急性腎不全を併発することもある。ひだの色が緑色を帯びることが最大の識別ポイント。",
-    "tree_association": [],
-    "source_url": "https://en.wikipedia.org/wiki/Chlorophyllum%20molybdites",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "white",
-        "brown"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "large",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "ring"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "grass"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Jorge Tena, some rights reserved (CC BY-NC)",
-      "(c) Crystal J Rust, some rights reserved (CC BY-NC)",
-      "(c) axelemilio, some rights reserved (CC BY-NC)",
-      "(c) Heath, all rights reserved",
-      "(c) Leah, all rights reserved",
-      "(c) grinnin, some rights reserved (CC BY-NC)",
-      "(c) sbmarchuk, some rights reserved (CC BY-NC)",
-      "(c) Douglas Goldman, some rights reserved (CC BY-SA)",
-      "(c) snellens, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Agaricaceae",
-      "genus": "Chlorophyllum"
-    },
-    "poisoning_first_aid": "【毒素】モリブドフィリシン等の消化器毒を含む。【症状】摂取後1〜3時間で激しい嘔吐・水様性下痢・腹痛が発現する。重症例では脱水・電解質異常・ショック状態に陥る。大量の体液喪失により急性腎不全を併発することもある。特に小児・高齢者・基礎疾患のある人では致命的となりうる。【発症時間】1〜3時間。【応急処置】直ちに医療機関を受診する。輸液による脱水補正と電解質管理が重要。世界的に見て本種による死亡例は複数報告されている。ひだの色が緑色を帯びることが最大の識別ポイントであり、白い大型キノコのひだの色を必ず確認すること。",
-    "verified": true
-  },
-  {
-    "id": "dokuajirogasa-modoki",
-    "names": {
-      "ja": "ドクアジロガサモドキ",
-      "scientific": "Galerina marginata",
-      "aliases": [
-        "毒網代笠擬",
-        "Galerina autumnalis"
-      ]
-    },
-    "toxicity": "deadly_toxic",
-    "season": {
-      "start_month": 9,
-      "end_month": 11
-    },
-    "habitat": [
-      "朽木上",
-      "広葉樹林",
-      "針葉樹林"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/584244172/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/342891240/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/174278640/medium.jpg",
-      "https://static.inaturalist.org/photos/447076600/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/270006299/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/359568082/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/454039678/medium.jpeg",
-      "https://static.inaturalist.org/photos/7106791/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/384866929/medium.jpeg"
-    ],
-    "description": "ドクアジロガサモドキはガレリナ属に属する猛毒キノコで、秋に朽木上に群生する小型のキノコである。ナメコやクリタケなどの食用キノコと混生することがあり、一緒に採取して誤食する事故が後を絶たない。ドクアジロガサ（Galerina marginata）の近縁種あるいは同種とされ、ドクツルタケと同等レベルのアマトキシンを含有する。小型であるため毒キノコと気づかれにくく、食用キノコに混入して誤食されるケースが特に多い。iNaturalistでは世界中から非常に多数の観察記録がある。",
-    "features": "傘は直径2〜5cmで吸水性があり、湿時は黄褐色〜茶褐色で周辺に条線が見える。乾燥すると淡黄土色になる。ひだは淡黄褐色〜錆褐色で、やや密、直生〜上生。柄は長さ3〜7cm、上部に膜質のつばがあるが脱落しやすい。つばより下は暗褐色の繊維に覆われる。肉は薄く淡褐色、粉臭がある。胞子紋は錆褐色。",
-    "similar_species": [],
-    "caution": "アマトキシン（α-アマニチン）をドクツルタケと同等レベルで含有する。小型であるため毒キノコと気づかれにくく、食用キノコに混入して誤食されるケースが多い。摂取後6〜12時間で消化器症状が始まり、その後肝臓の細胞壊死が急速に進行する。体重あたりの致死量が少なく、数本の摂取でも致命的。北米では本種による死亡事故が多数報告されている。",
-    "tree_association": [],
-    "source_url": "",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "brown",
-        "yellow"
-      ],
-      "cap_shape": [
-        "convex"
-      ],
-      "cap_size": "small",
-      "gill_attachment": [
-        "attached"
-      ],
-      "stalk_color": [
-        "brown"
-      ],
-      "stalk_features": [
-        "ring",
-        "fibrous"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Alan Rockefeller, some rights reserved (CC BY)",
-      "(c) Amos Zoeller, some rights reserved (CC BY-NC)",
-      "(c) dogbowlbookpile, some rights reserved (CC BY-NC)",
-      "(c) Ellie In, all rights reserved",
-      "(c) rdegeer, some rights reserved (CC BY-NC)",
-      "(c) maricel patino, some rights reserved (CC BY-NC)",
-      "(c) mpearlstein, some rights reserved (CC BY-NC)",
-      "(c) bpcass, all rights reserved",
-      "(c) L Joan Heyding, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Hymenogastraceae",
-      "genus": "Galerina"
-    },
-    "poisoning_first_aid": "【毒素】アマトキシン（α-アマニチン）をドクツルタケと同等レベルで含有。体重あたりの致死量が少なく、数本の摂取でも致命的。【症状】摂取後6〜12時間で激しい嘔吐・水様性下痢・腹痛が始まる（消化器期）。その後肝臓の細胞壊死が急速に進行し、黄疸・肝不全に至る。【発症時間】6〜12時間。【応急処置】直ちに救急医療機関を受診する。摂取後早期の胃洗浄・活性炭投与が重要。肝機能の厳密なモニタリングと集中治療が不可欠。北米では本種による死亡事故が多数報告されている。ナメコやクリタケ採取時に混入しないよう注意が必要。",
-    "verified": true
-  },
-  {
     "id": "kotengutake-modoki",
     "names": {
       "ja": "コテングタケモドキ",
@@ -21472,7 +20074,8 @@
       "ja": "タマゴタケモドキ",
       "scientific": "Amanita subjunquillea",
       "aliases": [
-        "卵茸擬"
+        "卵茸擬",
+        "Amanita subjunquillea"
       ]
     },
     "toxicity": "deadly_toxic",
@@ -22087,9 +20690,10 @@
     "id": "haikaguratengutake",
     "names": {
       "ja": "ハイカグラテングタケ",
-      "scientific": "Amanita fuliginea",
+      "scientific": "Amanita sinensis",
       "aliases": [
-        "灰神楽天狗茸"
+        "灰神楽天狗茸",
+        "Amanita fuliginea"
       ]
     },
     "toxicity": "deadly_toxic",
@@ -22544,98 +21148,6 @@
       "genus": "Amanita"
     },
     "poisoning_first_aid": "アマトキシン（α-アマニチン等）を含有する。摂取後6〜24時間の長い潜伏期間の後、激しい嘔吐・下痢・腹痛の消化器症状が発現する。その後一時的に症状が改善する偽回復期を経て、48〜72時間後に急性肝障害（肝細胞壊死、AST・ALT急上昇、黄疸）が進行する。肝不全に至った場合は予後不良で致死率が高い。応急処置として直ちに119番通報し、摂取から間もなければ吐かせる。医療機関ではシリビニン投与、活性炭投与、血液透析等が行われる。肝移植が必要となる場合もある。",
-    "verified": true
-  },
-  {
-    "id": "fukurotsuru-take-modoki",
-    "names": {
-      "ja": "フクロツルタケモドキ",
-      "scientific": "Amanita volvata",
-      "aliases": [
-        "袋鶴茸擬"
-      ]
-    },
-    "toxicity": "deadly_toxic",
-    "season": {
-      "start_month": 7,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹林",
-      "混交林"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/fukurotsuru-take-modoki.webp",
-    "images_remote": [
-      "https://static.inaturalist.org/photos/511040614/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/210297533/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/249413953/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/400480875/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/152453038/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/13065293/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/86972175/medium.jpg",
-      "https://static.inaturalist.org/photos/530968420/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/84435732/medium.jpeg"
-    ],
-    "description": "フクロツルタケモドキはテングタケ属の猛毒キノコで、白色の清楚な外見が特徴的である。夏〜秋に広葉樹林やマツ混交林の地上に単生〜散生する。つばを欠き大きな袋状のつぼだけを持つ特異な形態から、テングタケ属と認識されにくい。ハラタケやシロオオハラタケなど白色の食用キノコとの誤認が特に危険である。アマトキシンを含有し、摂取すると致死的な肝腎障害を引き起こす。採取時に柄の基部を丁寧に掘り出してつぼを確認することが重要だが、不確実な場合は絶対に食べてはならない。",
-    "features": "傘は直径5〜10cmで白色〜灰白色、表面は平滑でやや粘性を帯びることがある。成長すると平開する。ひだは白色で密、離生。柄は白色で長さ7〜14cm、つばを欠くのが重要な識別点。基部に大きな白色の膜質つぼがあり、袋状に柄を深く包み込む。つぼは厚く丈夫で、地中に埋もれていることが多い。肉は白色で薄く、ほぼ無臭。",
-    "similar_species": [],
-    "caution": "アマトキシン（α-アマニチン）を含有し、摂取すると6〜24時間の潜伏期間を経て激しい消化器症状（嘔吐・下痢・腹痛）が発現する。偽回復期の後、48〜72時間で急性肝不全・腎不全が進行し、多臓器不全で死亡する。つばがないためテングタケ属と気づかれにくく、ハラタケやマッシュルームと間違えやすい。採取時に柄の基部まで丁寧に掘り出し、つぼの有無を確認することが重要だが、少しでも疑わしい場合は絶対に食べてはならない。",
-    "tree_association": [
-      "コナラ",
-      "クヌギ",
-      "シイ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Amanita%20volvata",
-    "traits": {
-      "gill_type": [
-        "gills"
-      ],
-      "cap_color": [
-        "white"
-      ],
-      "cap_shape": [
-        "convex",
-        "flat"
-      ],
-      "cap_size": "medium",
-      "gill_attachment": [
-        "free"
-      ],
-      "stalk_color": [
-        "white"
-      ],
-      "stalk_features": [
-        "volva"
-      ],
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Bryce Thorson, all rights reserved",
-      "(c) Deana Tempest Thomas, some rights reserved (CC BY)",
-      "(c) balawu, some rights reserved (CC BY-NC)",
-      "no rights reserved",
-      "(c) Ron Kerner, some rights reserved (CC BY-NC)",
-      "(c) mycowalt, some rights reserved (CC BY-SA)",
-      "(c) raindawg, some rights reserved (CC BY-NC)",
-      "(c) Chad Wise, all rights reserved",
-      "no rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Amanitaceae",
-      "genus": "Amanita"
-    },
-    "poisoning_first_aid": "アマトキシン（α-アマニチン）を含有する。摂取後6〜24時間の潜伏期間を経て激しい嘔吐・下痢・腹痛が発現する。偽回復期の後、48〜72時間で急性肝不全および腎不全が進行し、多臓器不全で死亡に至る。応急処置として直ちに119番通報し、摂取から間もなければ吐かせる。食べ残しや吐瀉物を保管し医療機関に持参すること。医療機関ではシリビニン投与、活性炭による毒素吸着、輸液・血液浄化療法等が行われる。重症例では肝移植が考慮される。",
     "verified": true
   },
   {
@@ -23383,92 +21895,6 @@
     "verified": true
   },
   {
-    "id": "masutake-modoki-inedible",
-    "names": {
-      "ja": "マスタケモドキ",
-      "scientific": "Laetiporus sulphureus",
-      "aliases": [
-        "鱒茸擬",
-        "ますたけもどき"
-      ]
-    },
-    "toxicity": "inedible",
-    "season": {
-      "start_month": 6,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹の枯木",
-      "立枯木",
-      "切り株"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/masutake-modoki-inedible.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/92273288/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/98944765/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/145061407/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/158743790/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/435866428/medium.jpeg",
-      "https://static.inaturalist.org/photos/83789586/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/10694060/medium.jpeg",
-      "https://static.inaturalist.org/photos/71573640/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/24338667/medium.jpeg"
-    ],
-    "description": "マスタケモドキは広葉樹の枯木や立枯木に棚状に重なって発生する木材腐朽菌で、鮮やかな黄色〜橙黄色の子実体が非常に目を引く。褐色腐朽を引き起こし、木材のセルロースを分解する。北米ではChicken of the Woodsとして食用にされるが、消化不良やアレルギー様症状を起こす事例が報告されており、日本では食用には適さないとされる。夏〜秋に広葉樹林で発生し、大きな群落は重さ数kgに達することもある。若い個体は柔らかく多汁だが、老成すると粉状になり崩れやすくなる。世界的に広く分布する普通種である。",
-    "features": "子実体は幅10〜30cmの扇形〜半円形で、数段に重なって棚状に発生する。表面は鮮黄色〜橙黄色で、若い時は湿り気があり鮮やかな色彩を示す。管孔面は硫黄色で孔口は微細。肉は若い時は白色〜淡黄色で柔らかく多汁だが、老成すると白色粉状になりもろくなる。乾燥すると退色し白っぽくなる。",
-    "similar_species": [
-      "masutake"
-    ],
-    "tree_association": [
-      "サクラ",
-      "ケヤキ",
-      "クリ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Laetiporus%20sulphureus",
-    "traits": {
-      "gill_type": [
-        "pores"
-      ],
-      "cap_color": [
-        "yellow",
-        "orange"
-      ],
-      "cap_shape": [
-        "flat"
-      ],
-      "cap_size": "large",
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Meg Madden, some rights reserved (CC BY-NC)",
-      "no rights reserved",
-      "(c) Robert Allie, some rights reserved (CC BY-NC)",
-      "(c) maplegirl, some rights reserved (CC BY-NC)",
-      "(c) zebedeugalinha, some rights reserved (CC BY)",
-      "(c) krund8, all rights reserved",
-      "(c) Julie, some rights reserved (CC BY-NC)",
-      "(c) Steve Hurley, all rights reserved",
-      "no rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Polyporales",
-      "family": "Laetiporaceae",
-      "genus": "Laetiporus"
-    },
-    "verified": true
-  },
-  {
     "id": "kaigaratake",
     "names": {
       "ja": "カイガラタケ",
@@ -23699,90 +22125,6 @@
       "substrate": [
         "deadwood"
       ]
-    },
-    "verified": true
-  },
-  {
-    "id": "hiirotake",
-    "names": {
-      "ja": "ヒイロタケ",
-      "scientific": "Trametes coccinea",
-      "aliases": [
-        "緋色茸",
-        "ひいろたけ",
-        "Pycnoporus coccineus"
-      ]
-    },
-    "toxicity": "inedible",
-    "season": {
-      "start_month": 1,
-      "end_month": 12
-    },
-    "habitat": [
-      "広葉樹の枯木",
-      "倒木",
-      "切り株"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/hiirotake.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/144355663/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/80160583/medium.jpeg",
-      "https://static.inaturalist.org/photos/164100365/medium.jpeg",
-      "https://static.inaturalist.org/photos/77345723/medium.jpg",
-      "https://static.inaturalist.org/photos/13611012/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/476650008/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/185628878/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/173558709/medium.jpg",
-      "https://static.inaturalist.org/photos/602894681/medium.jpg"
-    ],
-    "description": "ヒイロタケは広葉樹の枯木に年間を通じて発生する鮮やかな朱赤色の木材腐朽菌である。その目を引く色彩から森林内で最も識別しやすいきのこの一つで、初心者でも見つけやすい。白色腐朽を引き起こし、枯木の分解を促進する重要な生態的役割を担う。旧学名Pycnoporus coccineusとして広く知られ、近年Trametes属に移された。日本全土の低地〜山地に広く分布する普通種である。朱赤色の色素にはシンナバリン等の抗菌物質が含まれ、薬理学的にも研究されている。",
-    "features": "子実体は幅3〜10cmの半円形〜扇形で、やや革質。表面・管孔面ともに鮮やかな朱赤色〜橙赤色で、全体が一様に赤いのが特徴。管孔は微細で肉眼では孔口が見えにくい。肉は薄く橙赤色で硬い革質。乾燥するとやや褪色して橙色がかる。しばしば枯木上に数個体が横一列に連なる。",
-    "similar_species": [],
-    "tree_association": [
-      "サクラ",
-      "ケヤキ",
-      "コナラ"
-    ],
-    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
-    "traits": {
-      "gill_type": [
-        "pores"
-      ],
-      "cap_color": [
-        "red",
-        "orange"
-      ],
-      "cap_shape": [
-        "flat"
-      ],
-      "cap_size": "small",
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Steve Lofthouse, some rights reserved (CC BY-NC)",
-      "(c) Reiner Richter, some rights reserved (CC BY-NC-SA)",
-      "(c) VALERIA SOFIA REYES RODRIGUEZ, all rights reserved",
-      "(c) bekzi, all rights reserved",
-      "(c) Ezequiel Ku Garrido, all rights reserved",
-      "(c) David Boulton, some rights reserved (CC BY-NC)",
-      "(c) rivendel, some rights reserved (CC BY-NC)",
-      "(c) Nan Yang, some rights reserved (CC BY-NC)",
-      "(c) Julia Meirelles, all rights reserved"
-    ],
-    "taxonomy": {
-      "order": "Polyporales",
-      "family": "Polyporaceae",
-      "genus": "Trametes"
     },
     "verified": true
   },
@@ -24100,11 +22442,12 @@
     "id": "himekabairo-take-modoki",
     "names": {
       "ja": "ヒメカバイロタケモドキ",
-      "scientific": "Pluteus cervinus",
+      "scientific": "Xeromphalina kauffmanii",
       "aliases": [
         "姫樺色茸擬",
         "ひめかばいろたけもどき",
-        "ウスチャシカタケ"
+        "ウスチャシカタケ",
+        "Pluteus cervinus"
       ]
     },
     "toxicity": "inedible",
@@ -24968,91 +23311,6 @@
     "verified": true
   },
   {
-    "id": "tsuchiguri-modoki",
-    "names": {
-      "ja": "ツチグリモドキ",
-      "scientific": "Astraeus hygrometricus",
-      "aliases": [
-        "土栗擬",
-        "つちぐりもどき"
-      ]
-    },
-    "toxicity": "inedible",
-    "season": {
-      "start_month": 7,
-      "end_month": 11
-    },
-    "habitat": [
-      "雑木林",
-      "道端",
-      "砂質土壌",
-      "崖地"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/tsuchiguri-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/70560730/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/59435317/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/54702421/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/202908697/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/256483776/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/313232442/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/29322621/medium.jpg",
-      "https://static.inaturalist.org/photos/65691102/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/65224846/medium.jpg"
-    ],
-    "description": "夏から秋に雑木林の道端や崖地の砂質土壌上に発生する菌根菌である。ツチグリ（Geastrum属）に外見が似るが、分類上はイグチ目に属する全く別系統の菌である。外皮の開閉が湿度に応じて起こる吸湿運動を示すのが最大の特徴で、乾燥すると外皮が閉じ、湿ると星形に開く。学名のhygrometricusは「湿度を測る」の意味で、この性質に由来する。世界の温帯から熱帯にかけて広く分布する。食用価値はない。",
-    "features": "子実体は直径2〜5cmの球形で、成熟すると外皮が星形に6〜12片に裂開する。外皮の外側は灰褐色〜暗褐色でひび割れ模様があり、内側は灰黒色を呈する。内部の胞子嚢は球形で灰褐色、頂孔から胞子を放出する。柄はない。外皮は乾湿に応じて開閉を繰り返す。",
-    "similar_species": [],
-    "tree_association": [
-      "コナラ",
-      "クヌギ",
-      "マツ"
-    ],
-    "source_url": "https://en.wikipedia.org/wiki/Astraeus%20hygrometricus",
-    "traits": {
-      "gill_type": [
-        "none"
-      ],
-      "cap_color": [
-        "brown",
-        "gray"
-      ],
-      "cap_shape": [
-        "hemisphere"
-      ],
-      "cap_size": "small",
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "no rights reserved",
-      "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
-      "(c) Jacquie L., some rights reserved (CC BY-NC)",
-      "(c) Susana P. Cunha, some rights reserved (CC BY-NC)",
-      "(c) Michael J. Papay, some rights reserved (CC BY)",
-      "(c) just_b_n_nature, some rights reserved (CC BY-NC)",
-      "(c) Damon Tighe, some rights reserved (CC BY-NC)",
-      "(c) Murray Fisher, all rights reserved",
-      "(c) maddog945, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Boletales",
-      "family": "Diplocystidaceae",
-      "genus": "Astraeus"
-    },
-    "verified": true
-  },
-  {
     "id": "hokoritake-modoki",
     "names": {
       "ja": "ホコリタケモドキ",
@@ -25131,86 +23389,6 @@
       "order": "Agaricales",
       "family": "Lycoperdaceae",
       "genus": "Apioperdon"
-    },
-    "verified": true
-  },
-  {
-    "id": "noutake-modoki",
-    "names": {
-      "ja": "ノウタケモドキ",
-      "scientific": "Calvatia craniiformis",
-      "aliases": [
-        "脳茸擬",
-        "のうたけもどき"
-      ]
-    },
-    "toxicity": "inedible",
-    "season": {
-      "start_month": 7,
-      "end_month": 10
-    },
-    "habitat": [
-      "広葉樹林",
-      "竹林",
-      "公園",
-      "庭先"
-    ],
-    "regions": [
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/noutake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/62778880/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/71151462/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/27772123/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/206813897/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/162112513/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/398499338/medium.jpeg",
-      "https://static.inaturalist.org/photos/385733684/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/97197417/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/32905009/medium.jpg"
-    ],
-    "description": "夏から秋に広葉樹林や竹林の地上に発生する腐生菌である。ノウタケ（Calvatia craniiformis）に近縁で似るが、表面の皺が浅くやや大型になる点で区別される。学名craniiformisは「頭蓋骨の形」を意味し、その外形を表している。幼菌時は内部が白く充実しているが、成熟すると胞子塊がオリーブ褐色の粉状になり自然に崩壊する。日本各地の温帯林に分布する。食用価値はない。",
-    "features": "子実体は直径8〜20cmの球形〜扁球形で、頭蓋骨のような形状をとる。表面は白色〜淡褐色で平滑からわずかに皺がある。基部はやや太い柄状の不妊部をもつ。内部は初め白く充実し、成熟するとオリーブ褐色の胞子塊に変化して粉状に崩壊する。",
-    "similar_species": [],
-    "tree_association": [],
-    "source_url": "https://en.wikipedia.org/wiki/Calvatia%20craniiformis",
-    "traits": {
-      "gill_type": [
-        "none"
-      ],
-      "cap_color": [
-        "white",
-        "brown"
-      ],
-      "cap_shape": [
-        "hemisphere"
-      ],
-      "cap_size": "large",
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "broadleaf"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Anna Henning, some rights reserved (CC BY-NC)",
-      "(c) Byron D. Augustin, some rights reserved (CC BY-NC)",
-      "(c) kellis__, some rights reserved (CC BY-NC)",
-      "(c) fayne, some rights reserved (CC BY-NC)",
-      "(c) becky8425, some rights reserved (CC BY-NC)",
-      "(c) Yuragi, some rights reserved (CC BY-NC)",
-      "(c) Allana Sheard, all rights reserved",
-      "(c) Matt Grinnell, some rights reserved (CC BY-NC)",
-      "(c) kalienplanet, some rights reserved (CC BY-NC)"
-    ],
-    "taxonomy": {
-      "order": "Agaricales",
-      "family": "Lycoperdaceae",
-      "genus": "Calvatia"
     },
     "verified": true
   },
@@ -25559,10 +23737,11 @@
     "id": "tanukinochabukuro",
     "names": {
       "ja": "タヌキノチャブクロ",
-      "scientific": "Lycoperdon perlatum",
+      "scientific": "Lycoperdon pyriforme",
       "aliases": [
         "狸の茶袋",
-        "たぬきのちゃぶくろ"
+        "たぬきのちゃぶくろ",
+        "Lycoperdon perlatum"
       ]
     },
     "toxicity": "inedible",
@@ -26041,86 +24220,6 @@
       "order": "Hymenochaetales",
       "family": "Hymenochaetaceae",
       "genus": "Hymenochaete"
-    },
-    "verified": true
-  },
-  {
-    "id": "kofuki-sarunokoshikake-modoki",
-    "names": {
-      "ja": "コフキサルノコシカケモドキ",
-      "scientific": "Ganoderma applanatum",
-      "aliases": [
-        "こふきさるのこしかけもどき",
-        "粉吹猿の腰掛擬"
-      ]
-    },
-    "toxicity": "inedible",
-    "season": {
-      "start_month": 1,
-      "end_month": 12
-    },
-    "habitat": [
-      "広葉樹の立枯木",
-      "倒木",
-      "生立木基部"
-    ],
-    "regions": [
-      "北海道",
-      "本州",
-      "四国",
-      "九州"
-    ],
-    "image_local": "/images/mushrooms/kofuki-sarunokoshikake-modoki.webp",
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/108788741/medium.jpg",
-      "https://static.inaturalist.org/photos/90402704/medium.jpg",
-      "https://static.inaturalist.org/photos/187531709/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/99225154/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/299160975/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/216384830/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/319127073/medium.jpeg",
-      "https://static.inaturalist.org/photos/375819400/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/198935302/medium.jpeg"
-    ],
-    "description": "広葉樹の立枯木や倒木に多年生で発生する大型の硬質菌で、マンネンタケ属（Ganoderma）に属する。管孔面を傷つけると褐色に速やかに変色するため、海外では「アーティスト・コンク」として絵を描く素材にも利用されている。表面にココア色の胞子粉が大量に堆積するのが特徴である。材の白色腐朽を引き起こす重要な木材腐朽菌で、森林の物質循環に大きく寄与する。世界的に広く分布し、iNaturalistでは4万件以上の観察記録がある。食用には適さない。",
-    "features": "子実体は無柄の半円形〜扇形で、幅10〜50cm、厚さ3〜10cm。表面は灰褐色〜暗褐色で同心円状の段丘をもち、ココア色の胞子粉で覆われる。管孔面は白色で、触れると速やかに褐変する。肉は暗褐色で非常に硬い木質。",
-    "similar_species": [],
-    "tree_association": [],
-    "source_url": "https://en.wikipedia.org/wiki/Ganoderma%20applanatum",
-    "traits": {
-      "gill_type": [
-        "pores"
-      ],
-      "cap_color": [
-        "brown",
-        "gray"
-      ],
-      "cap_shape": [
-        "flat"
-      ],
-      "cap_size": "large",
-      "bruising": [
-        "none"
-      ],
-      "substrate": [
-        "deadwood"
-      ]
-    },
-    "images_remote_credits": [
-      "(c) Vladimir Bryukhov, some rights reserved (CC BY-NC)",
-      "(c) Hernan Castro, all rights reserved",
-      "(c) Clem, all rights reserved",
-      "(c) cooperdininghall, some rights reserved (CC BY-NC)",
-      "(c) Aaron Liston, some rights reserved (CC BY)",
-      "(c) Matthew Syvenky, some rights reserved (CC BY-NC)",
-      "(c) Alexey Zakharinskij, some rights reserved (CC BY-NC-ND)",
-      "(c) Jule Flachsberger, all rights reserved",
-      "(c) Rand Workman, some rights reserved (CC BY-SA)"
-    ],
-    "taxonomy": {
-      "order": "Polyporales",
-      "family": "Polyporaceae",
-      "genus": "Ganoderma"
     },
     "verified": true
   },
