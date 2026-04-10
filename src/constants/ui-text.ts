@@ -156,7 +156,7 @@ export const UI_TEXT = {
     appInfo: 'アプリ情報',
     appName: 'MycoNote',
     appDescription: 'キノコ採取・観察ハンドブック',
-    version: 'v0.2.0',
+    version: 'v1.0.0',
     aiSection: 'AI機能（Claude API）',
     apiKeyLabel: 'APIキー',
     apiKeyPlaceholder: 'sk-ant-...',

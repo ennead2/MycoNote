@@ -30,3 +30,7 @@ public/sw.js
 public/workbox-*.js
 test-results/
 tsconfig.tsbuildinfo
+
+# Screenshots (dev only)
+screenshots/
+.playwright-mcp/
