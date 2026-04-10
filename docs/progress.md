@@ -134,3 +134,18 @@
 - [x] ライトボックスにクレジット表示追加
 - [x] docs/image-review.md 作成（画像なし51種リスト + 差し替え指示用）
 - [x] 全158テスト通過、Vercelデプロイ確認済み
+
+### 8e: データ検証・図鑑詳細化
+- [x] データ収集スクリプト作成 (gather-species-data.mjs)
+- [x] 3ソース検証 (iNaturalist/Wikipedia/kinoco-zukan) 全300種実行
+- [x] 学名���動更新: 38種をiNaturalist最新分類に更新
+- [x] taxonomy追加: 288種に目・科・属を設定
+- [x] 検証問題56件検出 → docs/verification-issues.md
+- [x] description拡充: 全300種を4-6文の詳細概要に
+- [x] features拡充: 具体的サイズ(cm)・色・形状・匂い等
+- [x] cooking_preservation追加: 食用種に調理法・保��方法
+- [x] poisoning_first_aid追加: 毒種に中毒症状・応急処置
+- [x] 充実化フェーズ懸念108件 → docs/verification-issues-enrichment.md
+- [x] ワークフロー文書化 → docs/species-data-workflow.md
+- [x] mushrooms.json: 577KB → 1,177KB
+- [x] 全158テスト通過、Vercelデプロイ確認済み
