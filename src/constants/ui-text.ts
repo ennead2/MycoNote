@@ -8,6 +8,7 @@ export const UI_TEXT = {
     treeAssociation: '関連する樹種', seasonCalendarTitle: 'シーズンカレンダー',
     myRecords: '自分の採取記録', noRecords: 'この種の採取記録はありません',
     googleImageSearch: 'Google で画像を検索',
+    additionalPhotos: '野外写真（iNaturalist）',
   },
   identify: {
     title: '識別',

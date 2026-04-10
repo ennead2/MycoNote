@@ -20,6 +20,7 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 );
 
 export function MushroomDetail({ mushroom }: MushroomDetailProps) {
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
   const similarSpecies = mushroom.similar_species
     .map((id) => getMushroomById(id))
     .filter((m): m is Mushroom => m !== undefined);
@@ -27,7 +28,10 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   return (
     <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
       {/* 1. Hero image */}
-      <div className="w-full h-48 rounded-lg overflow-hidden bg-forest-800 flex items-center justify-center">
+      <div
+        className="w-full h-48 rounded-lg overflow-hidden bg-forest-800 flex items-center justify-center cursor-pointer"
+        onClick={() => setLightboxUrl(mushroom.image_local)}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={mushroom.image_local}
@@ -36,6 +40,23 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
           className="max-w-full max-h-full object-contain"
         />
       </div>
+
+      {/* Additional photos from iNaturalist */}
+      {mushroom.images_remote.length > 0 && (
+        <div>
+          <h2 className="text-xs font-bold text-forest-400 mb-2">{UI_TEXT.zukan.additionalPhotos}</h2>
+          <div className="flex gap-2 overflow-x-auto pb-2">
+            {mushroom.images_remote.map((url, i) => (
+              <RemotePhoto
+                key={i}
+                url={url}
+                alt={`${mushroom.names.ja} - ${i + 1}`}
+                onClick={() => setLightboxUrl(url)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Google image search link */}
       <a
@@ -48,6 +69,29 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <span>{UI_TEXT.zukan.googleImageSearch}</span>
         <span className="text-xs">↗</span>
       </a>
+
+      {/* Lightbox modal */}
+      {lightboxUrl && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setLightboxUrl(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white text-3xl leading-none hover:text-forest-300"
+            onClick={() => setLightboxUrl(null)}
+            aria-label="閉じる"
+          >
+            ×
+          </button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={lightboxUrl}
+            alt={mushroom.names.ja}
+            className="max-w-full max-h-full object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       {/* 2. Name + ToxicityBadge + scientific name + aliases */}
       <div>
@@ -182,6 +226,40 @@ function MyRecordsSection({ mushroomId }: { mushroomId: string }) {
   if (!mounted) return null;
 
   return <MyRecordsList mushroomId={mushroomId} />;
+}
+
+function RemotePhoto({ url, alt, onClick }: { url: string; alt: string; onClick: () => void }) {
+  const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading');
+
+  return (
+    <button
+      className="flex-shrink-0 w-24 h-24 rounded-md overflow-hidden bg-forest-800 cursor-pointer"
+      onClick={onClick}
+    >
+      {status === 'error' ? (
+        <div className="w-full h-full flex items-center justify-center text-forest-500 text-xs">
+          読込失敗
+        </div>
+      ) : (
+        <>
+          {status === 'loading' && (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={url}
+            alt={alt}
+            loading="lazy"
+            className={`w-full h-full object-cover ${status === 'loading' ? 'hidden' : ''}`}
+            onLoad={() => setStatus('loaded')}
+            onError={() => setStatus('error')}
+          />
+        </>
+      )}
+    </button>
+  );
 }
 
 function MyRecordsList({ mushroomId }: { mushroomId: string }) {
