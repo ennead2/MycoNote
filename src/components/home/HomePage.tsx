@@ -196,16 +196,14 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
 
     const measure = () => {
       // Goal: when scrolled to left=0, exactly N cards visible, no N+1 peek.
-      // Card N+1 left edge = paddingLeft + N*cardWidth + N*gap  (N gaps: between
-      // each of the N cards + one *after* card N that precedes card N+1).
-      // We want card N+1 left >= container outer right edge (clientWidth) so it
-      // sits entirely off-screen, absorbing the right padding into card widths:
-      //   paddingLeft + N*cardWidth + N*gap = clientWidth
-      //   cardWidth = (clientWidth - paddingLeft - N*gap) / N
-      const paddingLeft = 12; // px-3
+      // Scroll container has no internal padding now — aligned with section px-3.
+      // Card N+1 left edge = N*cardWidth + N*gap (N gaps between/after N cards).
+      // Set card N+1 left = clientWidth so it sits exactly at the container edge:
+      //   N*cardWidth + N*gap = clientWidth
+      //   cardWidth = (clientWidth - N*gap) / N
       const n = CAROUSEL_VISIBLE_CARDS;
       const gap = CAROUSEL_GAP_PX;
-      const w = Math.ceil((el.clientWidth - paddingLeft - n * gap) / n);
+      const w = Math.floor((el.clientWidth - n * gap) / n);
       if (w > 0) setCardWidth(w);
     };
 
@@ -258,7 +256,7 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       ref={scrollRef}
       onPointerDown={handleUserInteract}
       onWheel={handleUserInteract}
-      className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory"
+      className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory"
     >
       {mushrooms.map((m) => (
         <SeasonalCard key={m.id} mushroom={m} width={cardWidth} />
@@ -267,8 +265,14 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
   );
 }
 
-/** CSS fallback used before the JS measurement runs (SSR + first paint). */
-const SEASONAL_CARD_FALLBACK_WIDTH = `calc((min(100vw, 32rem) - 12px - ${
+/**
+ * CSS fallback used before the JS measurement runs (SSR + first paint).
+ * Scroll container inherits section's px-3 padding, so usable width
+ * = min(viewport, max-w-lg 32rem) - 24px (2 * px-3).
+ * Card N+1 left at clientWidth means: N*w + N*gap = clientWidth
+ *   → w = (clientWidth - N*gap) / N
+ */
+const SEASONAL_CARD_FALLBACK_WIDTH = `calc((min(100vw, 32rem) - 24px - ${
   CAROUSEL_VISIBLE_CARDS * CAROUSEL_GAP_PX
 }px) / ${CAROUSEL_VISIBLE_CARDS})`;
 
