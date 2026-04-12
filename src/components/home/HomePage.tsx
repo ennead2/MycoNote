@@ -184,11 +184,45 @@ function pickImageSrc(m: Mushroom): string | null {
 function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const pauseUntilRef = useRef<number>(0);
+  // Card width measured from the scroll container's actual client width.
+  // Null on first render (SSR / before measurement) → fall back to CSS default.
+  const [cardWidth, setCardWidth] = useState<number | null>(null);
+
+  // Measure the actual container content width and compute card width so exactly
+  // CAROUSEL_VISIBLE_CARDS fit. Re-run on resize.
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const measure = () => {
+      // Goal: when scrolled to left=0, exactly N cards visible, no N+1 peek.
+      // Card N+1 left edge = paddingLeft + N*cardWidth + N*gap  (N gaps: between
+      // each of the N cards + one *after* card N that precedes card N+1).
+      // We want card N+1 left >= container outer right edge (clientWidth) so it
+      // sits entirely off-screen, absorbing the right padding into card widths:
+      //   paddingLeft + N*cardWidth + N*gap = clientWidth
+      //   cardWidth = (clientWidth - paddingLeft - N*gap) / N
+      const paddingLeft = 12; // px-3
+      const n = CAROUSEL_VISIBLE_CARDS;
+      const gap = CAROUSEL_GAP_PX;
+      const w = Math.ceil((el.clientWidth - paddingLeft - n * gap) / n);
+      if (w > 0) setCardWidth(w);
+    };
+
+    measure();
+    // ResizeObserver is not available in some test environments (happy-dom/jsdom).
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', measure);
+      return () => window.removeEventListener('resize', measure);
+    }
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   useEffect(() => {
     if (mushrooms.length <= 1) return;
     if (typeof window === 'undefined') return;
-    // matchMedia is not available in some test environments (happy-dom/jsdom).
     if (typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return;
     }
@@ -201,11 +235,9 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       const maxScroll = el.scrollWidth - el.clientWidth;
       if (maxScroll <= 0) return;
 
-      // Measure actual rendered card width so this works at any viewport.
       const firstCard = el.firstElementChild as HTMLElement | null;
       const step = firstCard ? firstCard.offsetWidth + CAROUSEL_GAP_PX : 136;
 
-      // When near the end, loop back to start with a smooth scroll.
       if (el.scrollLeft >= maxScroll - 4) {
         el.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
@@ -229,30 +261,24 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory"
     >
       {mushrooms.map((m) => (
-        <SeasonalCard key={m.id} mushroom={m} />
+        <SeasonalCard key={m.id} mushroom={m} width={cardWidth} />
       ))}
     </div>
   );
 }
 
-/**
- * Width so exactly {CAROUSEL_VISIBLE_CARDS} cards fit inside the scroll container.
- * Container usable width = min(viewport, max-w-lg 32rem) - 2*px-3 (24px).
- * With (N-1) gaps of {CAROUSEL_GAP_PX}px between cards:
- *   cardWidth = (containerWidth - (N-1)*gap) / N
- * Collapses to calc((min(100vw, 32rem) - 24px - (N-1)*gap) / N).
- */
-const SEASONAL_CARD_WIDTH_CSS = `calc((min(100vw, 32rem) - 24px - ${
-  (CAROUSEL_VISIBLE_CARDS - 1) * CAROUSEL_GAP_PX
+/** CSS fallback used before the JS measurement runs (SSR + first paint). */
+const SEASONAL_CARD_FALLBACK_WIDTH = `calc((min(100vw, 32rem) - 12px - ${
+  CAROUSEL_VISIBLE_CARDS * CAROUSEL_GAP_PX
 }px) / ${CAROUSEL_VISIBLE_CARDS})`;
 
-function SeasonalCard({ mushroom }: { mushroom: Mushroom }) {
+function SeasonalCard({ mushroom, width }: { mushroom: Mushroom; width: number | null }) {
   const src = pickImageSrc(mushroom);
 
   return (
     <Link
       href={`/zukan/${mushroom.id}`}
-      style={{ width: SEASONAL_CARD_WIDTH_CSS }}
+      style={{ width: width ? `${width}px` : SEASONAL_CARD_FALLBACK_WIDTH }}
       className="group shrink-0 snap-start bg-soil-surface border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-moss-light/40 hover:-translate-y-0.5"
     >
       <div className="relative aspect-square bg-soil-elevated">
