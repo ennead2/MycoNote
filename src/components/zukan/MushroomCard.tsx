@@ -11,22 +11,22 @@ export function MushroomCard({ mushroom }: MushroomCardProps) {
   return (
     <Link
       href={`/zukan/${mushroom.id}`}
-      className="block rounded-lg bg-forest-800 border border-forest-700 hover:bg-forest-700 transition-colors overflow-hidden"
+      className="group block rounded-lg bg-soil-surface border border-border overflow-hidden transition-all duration-200 hover:-translate-y-0.5 hover:border-moss-light/40 hover:shadow-lg hover:shadow-moss-primary/10 active:translate-y-0"
     >
-      <div className="relative aspect-square w-full bg-forest-900">
+      <div className="relative aspect-square w-full bg-soil-elevated">
         <Image
           src={mushroom.image_local}
           alt={mushroom.names.ja}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           unoptimized
         />
       </div>
-      <div className="p-2 flex flex-col gap-1">
-        <p className="text-forest-100 font-semibold text-sm leading-tight line-clamp-2">
+      <div className="p-2 flex flex-col gap-1.5">
+        <p className="serif-display text-washi-cream font-bold text-sm leading-tight line-clamp-2 tracking-wide">
           {mushroom.names.ja}
         </p>
-        <ToxicityBadge toxicity={mushroom.toxicity} />
+        <ToxicityBadge toxicity={mushroom.toxicity} compact />
       </div>
     </Link>
   );

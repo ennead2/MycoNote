@@ -23,6 +23,6 @@ describe('getToxicityConfig', () => {
   it('returns correct config for a given toxicity', () => {
     const config = getToxicityConfig('deadly_toxic');
     expect(config.label).toBe('猛毒');
-    expect(config.color).toContain('red');
+    expect(config.color).toContain('safety-deadly');
   });
 });

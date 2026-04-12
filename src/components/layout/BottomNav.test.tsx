@@ -16,20 +16,20 @@ vi.mock('next/link', () => ({
 }));
 
 describe('BottomNav', () => {
-  it('renders all 5 navigation tabs', () => {
+  it('renders all 5 navigation tabs including Home', () => {
     render(<BottomNav />);
+    expect(screen.getByText('ホーム')).toBeInTheDocument();
     expect(screen.getByText('図鑑')).toBeInTheDocument();
     expect(screen.getByText('識別')).toBeInTheDocument();
-    expect(screen.getByText('計画')).toBeInTheDocument();
     expect(screen.getByText('記録')).toBeInTheDocument();
     expect(screen.getByText('設定')).toBeInTheDocument();
   });
 
   it('renders correct hrefs', () => {
     render(<BottomNav />);
+    expect(screen.getByRole('link', { name: /ホーム/ })).toHaveAttribute('href', '/');
     expect(screen.getByRole('link', { name: /図鑑/ })).toHaveAttribute('href', '/zukan');
     expect(screen.getByRole('link', { name: /識別/ })).toHaveAttribute('href', '/identify');
-    expect(screen.getByRole('link', { name: /計画/ })).toHaveAttribute('href', '/plan');
     expect(screen.getByRole('link', { name: /記録/ })).toHaveAttribute('href', '/records');
     expect(screen.getByRole('link', { name: /設定/ })).toHaveAttribute('href', '/settings');
   });
@@ -38,7 +38,7 @@ describe('BottomNav', () => {
     render(<BottomNav />);
     const zukanLink = screen.getByRole('link', { name: /図鑑/ });
     const identifyLink = screen.getByRole('link', { name: /識別/ });
-    expect(zukanLink).toHaveClass('text-forest-300');
-    expect(identifyLink).not.toHaveClass('text-forest-300');
+    expect(zukanLink).toHaveClass('text-moss-light');
+    expect(identifyLink).not.toHaveClass('text-moss-light');
   });
 });

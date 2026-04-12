@@ -1,5 +1,21 @@
 export const UI_TEXT = {
-  nav: { zukan: '図鑑', identify: '識別', plan: '計画', records: '記録', settings: '設定' },
+  nav: { home: 'ホーム', zukan: '図鑑', identify: '識別', plan: '計画', records: '記録', settings: '設定' },
+  home: {
+    title: 'MycoNote',
+    subtitle: 'キノコ採取・観察ハンドブック',
+    seasonalTitle: '今月の旬',
+    noSeasonal: '今月が旬のキノコはありません',
+    quickAccess: 'クイックアクセス',
+    safetyTip: 'Safety Tip',
+    recentRecords: '最近の採取記録',
+    noRecords: 'まだ採取記録がありません',
+    quickZukan: '図鑑',
+    quickIdentify: '識別',
+    quickPlan: '採取計画',
+    quickRecords: '採取記録',
+    speciesCount: '種',
+    viewAll: 'すべて見る',
+  },
   zukan: {
     title: 'キノコ図鑑', searchPlaceholder: '名前で検索...', filterToxicity: '毒性',
     filterSeason: '季節', filterHabitat: '生育地', noResults: '該当するキノコが見つかりません',
