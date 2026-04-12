@@ -32,6 +32,19 @@ describe('replaceEmojisWithIcons', () => {
     expect(joined).toContain('👍');
   });
 
+  it('passes through checklist markers (✅ / ✔) — reverted per UX feedback', () => {
+    const nodes = replaceEmojisWithIcons('✅ 持ち物 ✔ 雨具');
+    const joined = nodes.filter((n) => typeof n === 'string').join('');
+    expect(joined).toContain('✅');
+    expect(joined).toContain('✔');
+  });
+
+  it('replaces newly added weather/tool emoji', () => {
+    const nodes = replaceEmojisWithIcons('🌤 晴れ 🎒 装備 🚨 緊急');
+    const iconCount = nodes.filter((n) => typeof n !== 'string').length;
+    expect(iconCount).toBe(3);
+  });
+
   it('handles multiple mapped emoji in one string', () => {
     const nodes = replaceEmojisWithIcons('📍高尾山 📅10月');
     const iconCount = nodes.filter((n) => typeof n !== 'string').length;

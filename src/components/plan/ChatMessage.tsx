@@ -2,7 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Sprout } from 'lucide-react';
+import { Mushroom } from '@/components/icons/Mushroom';
 import { UI_TEXT } from '@/constants/ui-text';
 import { replaceEmojisInChildren } from '@/lib/emoji-to-icon';
 import type { ChatMessage } from '@/types/chat';
@@ -21,7 +21,7 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
           UI_TEXT.plan.userLabel
         ) : (
           <>
-            <Sprout size={12} className="text-moss-light" aria-hidden="true" />
+            <Mushroom size={12} className="text-moss-light" aria-hidden="true" />
             {UI_TEXT.plan.assistantLabel}
           </>
         )}

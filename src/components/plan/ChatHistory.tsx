@@ -3,6 +3,7 @@
 import { MapPin, Calendar, MessageCircle, Trash2, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { UI_TEXT } from '@/constants/ui-text';
+import { replaceEmojisWithIcons } from '@/lib/emoji-to-icon';
 import type { ChatSession } from '@/types/chat';
 
 interface ChatHistoryListProps {
@@ -63,7 +64,9 @@ export function ChatHistoryList({ sessions, onSelect, onDelete, onNewSession }: 
                 )}
               </div>
               {lastMessage && (
-                <p className="text-xs text-moss-light truncate">{stripMarkdown(lastMessage.content)}</p>
+                <p className="text-xs text-moss-light truncate">
+                  {replaceEmojisWithIcons(stripMarkdown(lastMessage.content))}
+                </p>
               )}
             </button>
             <div className="flex items-center justify-between mt-2">

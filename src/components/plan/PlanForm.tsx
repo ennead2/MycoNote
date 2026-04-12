@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Calendar, MapPin, Sprout, Target, Map as MapIcon } from 'lucide-react';
+import { Calendar, MapPin, Target, Map as MapIcon } from 'lucide-react';
+import { Mushroom } from '@/components/icons/Mushroom';
 import { Button } from '@/components/ui/Button';
 import { TargetSpeciesInput } from '@/components/plan/TargetSpeciesInput';
 import { UI_TEXT } from '@/constants/ui-text';
@@ -61,7 +62,7 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
 
       <div>
         <label htmlFor="plan-target" className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
-          <Sprout size={14} aria-hidden="true" />
+          <Mushroom size={14} aria-hidden="true" />
           {UI_TEXT.plan.fieldTarget}
         </label>
         <TargetSpeciesInput

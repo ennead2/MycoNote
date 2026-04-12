@@ -1,25 +1,39 @@
 import React from 'react';
 import {
-  Sprout,
   TreePine,
   Leaf,
   AlertTriangle,
   Skull,
   MapPin,
   Calendar,
-  Check,
   X,
   CloudRain,
+  CloudSun,
+  Cloud,
+  CloudSnow,
   Sun,
   Lightbulb,
   Search,
   Camera,
   Target,
+  Pin,
+  ClipboardList,
+  Star,
+  Construction,
+  Map as MapIcon,
+  Phone,
+  Users,
+  Siren,
+  Backpack,
+  GraduationCap,
   type LucideIcon,
 } from 'lucide-react';
+import { Mushroom } from '@/components/icons/Mushroom';
+
+type IconComponent = LucideIcon | typeof Mushroom;
 
 interface IconEntry {
-  Icon: LucideIcon;
+  Icon: IconComponent;
   tone: string;
   label: string;
 }
@@ -30,23 +44,46 @@ interface IconEntry {
  * 辞書外の絵文字は素通し。
  */
 const EMOJI_ICON_MAP: Record<string, IconEntry> = {
-  '🍄': { Icon: Sprout, tone: 'text-moss-light', label: 'キノコ' },
+  // 菌類・植物
+  '🍄': { Icon: Mushroom, tone: 'text-moss-light', label: 'キノコ' },
   '🌲': { Icon: TreePine, tone: 'text-moss-light', label: '針葉樹' },
   '🌳': { Icon: TreePine, tone: 'text-moss-light', label: '樹木' },
   '🌴': { Icon: TreePine, tone: 'text-moss-light', label: '樹木' },
+  '🌿': { Icon: Leaf, tone: 'text-moss-light', label: '草葉' },
   '🍂': { Icon: Leaf, tone: 'text-safety-caution', label: '落葉' },
   '🍁': { Icon: Leaf, tone: 'text-safety-toxic', label: '紅葉' },
+
+  // 安全・警告
   '⚠': { Icon: AlertTriangle, tone: 'text-safety-caution', label: '注意' },
   '☠': { Icon: Skull, tone: 'text-safety-deadly', label: '猛毒' },
-  '📍': { Icon: MapPin, tone: 'text-moss-light', label: '場所' },
-  '📅': { Icon: Calendar, tone: 'text-moss-light', label: '日付' },
-  '✅': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
-  '✔': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
+  '🚨': { Icon: Siren, tone: 'text-safety-deadly', label: '緊急' },
   '❌': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
-  '✕': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
+
+  // 位置・日時・情報
+  '📍': { Icon: MapPin, tone: 'text-moss-light', label: '場所' },
+  '📌': { Icon: Pin, tone: 'text-moss-light', label: 'ピン留め' },
+  '📅': { Icon: Calendar, tone: 'text-moss-light', label: '日付' },
+  '🗺': { Icon: MapIcon, tone: 'text-moss-light', label: '地図' },
+  '📋': { Icon: ClipboardList, tone: 'text-moss-light', label: 'リスト' },
+  '📞': { Icon: Phone, tone: 'text-moss-light', label: '連絡' },
+  '👥': { Icon: Users, tone: 'text-moss-light', label: '人数' },
+  '⭐': { Icon: Star, tone: 'text-safety-caution', label: '重要' },
+  '🔰': { Icon: GraduationCap, tone: 'text-moss-light', label: '初心者' },
+  '🏗': { Icon: Construction, tone: 'text-safety-caution', label: '工事中' },
+  '🎒': { Icon: Backpack, tone: 'text-moss-light', label: '装備' },
+
+  // 天気
   '🌧': { Icon: CloudRain, tone: 'text-washi-muted', label: '雨' },
   '☔': { Icon: CloudRain, tone: 'text-washi-muted', label: '雨' },
+  '🌦': { Icon: CloudRain, tone: 'text-washi-muted', label: '雨曇' },
   '☀': { Icon: Sun, tone: 'text-safety-caution', label: '晴' },
+  '🌤': { Icon: CloudSun, tone: 'text-safety-caution', label: '晴時々曇' },
+  '⛅': { Icon: CloudSun, tone: 'text-washi-muted', label: '晴曇' },
+  '🌥': { Icon: Cloud, tone: 'text-washi-muted', label: '曇' },
+  '☁': { Icon: Cloud, tone: 'text-washi-muted', label: '曇' },
+  '🌨': { Icon: CloudSnow, tone: 'text-washi-muted', label: '雪' },
+
+  // その他
   '💡': { Icon: Lightbulb, tone: 'text-safety-caution', label: 'ヒント' },
   '🔍': { Icon: Search, tone: 'text-washi-muted', label: '観察' },
   '📸': { Icon: Camera, tone: 'text-washi-muted', label: '撮影' },
