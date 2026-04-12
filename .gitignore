@@ -41,3 +41,6 @@ scripts/gemini/.env
 
 # Ad-hoc batch script outputs (not for commit)
 scripts/temp/
+
+# Claude Code session state
+.claude/
