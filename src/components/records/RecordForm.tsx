@@ -16,9 +16,21 @@ interface RecordFormProps {
   initialData?: MushroomRecord;
 }
 
+/**
+ * Convert a UTC ISO string (e.g. "2026-04-12T04:30:00.000Z") to a
+ * <input type="datetime-local"> value in the browser's local timezone
+ * (e.g. "2026-04-12T13:30" in JST).
+ *
+ * BUG FIX: the previous implementation did `iso.slice(0, 16)` which returns
+ * UTC hh:mm pretending to be local time — JST users saw records 9 hours
+ * behind their true observation time, and re-saving the edit shifted the
+ * record by another -9h each time.
+ */
 function toDatetimeLocal(iso: string): string {
-  // ISO 文字列を datetime-local input 用にフォーマット
-  return iso.slice(0, 16);
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
 function nowDatetimeLocal(): string {
