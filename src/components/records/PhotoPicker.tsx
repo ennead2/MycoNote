@@ -90,7 +90,7 @@ export function PhotoPicker({ photos, onPhotosChange, onPhotosMetadata }: PhotoP
         type="file"
         accept="image/*"
         capture="environment"
-        className="hidden"
+        className="sr-only"
         onChange={handleFileChange}
       />
       <input
@@ -98,7 +98,7 @@ export function PhotoPicker({ photos, onPhotosChange, onPhotosMetadata }: PhotoP
         type="file"
         accept="image/*"
         multiple
-        className="hidden"
+        className="sr-only"
         onChange={handleFileChange}
       />
 

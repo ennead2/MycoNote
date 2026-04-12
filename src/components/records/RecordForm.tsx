@@ -94,8 +94,11 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
   const [locationTouched, setLocationTouched] = useState(Boolean(initialData));
   const [dateAutoFilled, setDateAutoFilled] = useState(false);
   const [locationAutoFilled, setLocationAutoFilled] = useState(false);
+  /** Last EXIF scan result, retained so the on-screen debug panel can display it. */
+  const [lastExif, setLastExif] = useState<ExifMetadata | null>(null);
 
   const handlePhotoMetadata = (meta: ExifMetadata) => {
+    setLastExif(meta);
     if (meta.observedAt && !dateTouched) {
       const pad = (n: number) => String(n).padStart(2, '0');
       const d = meta.observedAt;
@@ -291,6 +294,7 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
           onPhotosChange={setPhotos}
           onPhotosMetadata={handlePhotoMetadata}
         />
+        <ExifDebugPanel meta={lastExif} />
       </div>
 
       {/* 数量 */}
@@ -371,5 +375,81 @@ function AutoFilledBadge() {
       <Camera size={10} aria-hidden="true" />
       {UI_TEXT.records.form.autoFilledFromPhoto}
     </span>
+  );
+}
+
+/**
+ * On-screen EXIF debug panel, gated by `?debug=exif` in the URL.
+ * Useful when the user is testing on a phone over LAN and can't easily
+ * inspect the browser console. Remove the URL param to hide.
+ */
+function ExifDebugPanel({ meta }: { meta: ExifMetadata | null }) {
+  const [enabled, setEnabled] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    setEnabled(params.get('debug') === 'exif');
+  }, []);
+
+  if (!enabled) return null;
+
+  const json = meta
+    ? JSON.stringify(
+        {
+          observedAt: meta.observedAt?.toISOString() ?? null,
+          location: meta.location ?? null,
+          rawDate: meta._debug?.date,
+          rawGps: meta._debug?.gps,
+        },
+        null,
+        2,
+      )
+    : '';
+
+  const handleCopy = async () => {
+    if (!json) return;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(json);
+      } else {
+        // Fallback for older browsers / non-secure origins (LAN over http)
+        const ta = document.createElement('textarea');
+        ta.value = json;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch (err) {
+      console.error('[exif-debug] clipboard copy failed:', err);
+    }
+  };
+
+  return (
+    <div className="mt-3 rounded-lg border border-moss-light/40 bg-soil-elevated p-3 mono-data text-[10px] text-washi-cream">
+      <div className="flex items-center justify-between mb-1">
+        <p className="font-bold text-moss-light tracking-wider uppercase">EXIF debug</p>
+        {meta && (
+          <button
+            type="button"
+            onClick={handleCopy}
+            className="rounded border border-moss-light/40 px-2 py-0.5 text-[10px] hover:bg-moss-primary/30"
+          >
+            {copied ? 'Copied!' : 'Copy JSON'}
+          </button>
+        )}
+      </div>
+      {!meta ? (
+        <p className="text-washi-dim">まだ写真が追加されていません</p>
+      ) : (
+        <pre className="whitespace-pre-wrap break-all leading-relaxed">{json}</pre>
+      )}
+    </div>
   );
 }

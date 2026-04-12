@@ -77,7 +77,7 @@ export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
         type="file"
         accept="image/*"
         capture="environment"
-        className="hidden"
+        className="sr-only"
         onChange={handleFileChange}
       />
       <input
@@ -85,7 +85,7 @@ export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
         type="file"
         accept="image/*"
         multiple
-        className="hidden"
+        className="sr-only"
         onChange={handleFileChange}
       />
 

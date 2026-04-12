@@ -119,14 +119,14 @@ export default function SimpleIdentifyPage() {
               type="file"
               accept="image/*"
               capture="environment"
-              className="hidden"
+              className="sr-only"
               onChange={handlePhotoChange}
             />
             <input
               ref={fileInputRef}
               type="file"
               accept="image/*"
-              className="hidden"
+              className="sr-only"
               onChange={handlePhotoChange}
             />
           </div>

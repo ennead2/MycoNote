@@ -212,7 +212,7 @@ export default function SettingsPage() {
               ref={fileInputRef}
               type="file"
               accept=".json"
-              className="hidden"
+              className="sr-only"
               onChange={handleImportFile}
             />
           </div>
