@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP, Noto_Serif_JP, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/contexts/AppContext";
@@ -35,10 +35,25 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
+// NOTE: Icon <link> tags (favicon / apple-touch-icon) are generated automatically
+// by Next.js 16 from `src/app/icon.png` and `src/app/apple-icon.png` (file-based
+// convention). `public/favicon.ico` is served at /favicon.ico for legacy clients.
+// Manifest PWA icons are declared in `public/manifest.json`.
 export const metadata: Metadata = {
-  title: "MycoNote - キノコ採取・観察ハンドブック",
-  description: "きのこフィールドガイド PWA",
+  title: "MycoNote — きのこ採取・観察ハンドブック",
+  description: "日本の里山きのこ300種。図鑑・識別・採取記録・採取計画をオフラインで。現代の民藝図鑑。",
   manifest: "/manifest.json",
+  applicationName: "MycoNote",
+  appleWebApp: {
+    capable: true,
+    title: "MycoNote",
+    statusBarStyle: "black-translucent",
+  },
+};
+
+// Next.js 15+: themeColor is configured via the viewport export, not metadata.
+export const viewport: Viewport = {
+  themeColor: "#0F1410",
 };
 
 export default function RootLayout({
