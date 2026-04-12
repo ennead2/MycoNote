@@ -35,7 +35,7 @@ export default function HomePage() {
   const recentRecords = records.slice(0, 3);
 
   return (
-    <div className="flex flex-col min-h-screen animate-fade-in">
+    <div className="flex flex-col min-h-screen">
       {/* Hero */}
       <section className="px-4 pt-8 pb-6 text-center">
         <h1 className="serif-display text-3xl font-bold text-washi-cream tracking-wide">

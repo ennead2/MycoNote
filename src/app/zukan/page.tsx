@@ -17,39 +17,33 @@ export default function ZukanPage() {
 
   const results = useMemo(() => searchMushrooms(filters), [filters]);
 
+  // Stable key for the grid that changes when filter output changes, to replay fade-in.
+  const gridKey = `${JSON.stringify(filters)}:${results.length}`;
+
   return (
-    <div className="flex flex-col min-h-screen bg-forest-900">
+    <div className="flex flex-col min-h-screen">
       <PageHeader title={UI_TEXT.zukan.title} />
       <div className="flex gap-2 px-3 pt-3">
-        <button
+        <ViewToggle
+          label="一覧"
+          active={viewMode === 'grid'}
           onClick={() => setViewMode('grid')}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-            viewMode === 'grid'
-              ? 'bg-forest-500 text-white'
-              : 'bg-forest-800 text-forest-400'
-          }`}
-        >
-          一覧
-        </button>
-        <button
+        />
+        <ViewToggle
+          label={UI_TEXT.zukan.seasonCalendarTitle}
+          active={viewMode === 'calendar'}
           onClick={() => setViewMode('calendar')}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-            viewMode === 'calendar'
-              ? 'bg-forest-500 text-white'
-              : 'bg-forest-800 text-forest-400'
-          }`}
-        >
-          {UI_TEXT.zukan.seasonCalendarTitle}
-        </button>
+        />
       </div>
+
       {viewMode === 'grid' ? (
         <>
           <SearchFilter filters={filters} onFilterChange={setFilters} />
           <main className="flex-1 max-w-lg mx-auto w-full px-3 py-4">
             {results.length === 0 ? (
-              <p className="text-center text-forest-400 mt-10">{UI_TEXT.zukan.noResults}</p>
+              <p className="text-center text-washi-muted mt-10">{UI_TEXT.zukan.noResults}</p>
             ) : (
-              <div className="grid grid-cols-2 gap-3">
+              <div key={gridKey} className="grid grid-cols-2 gap-3 animate-fade-in">
                 {results.map((mushroom) => (
                   <MushroomCard key={mushroom.id} mushroom={mushroom} />
                 ))}
@@ -58,10 +52,34 @@ export default function ZukanPage() {
           </main>
         </>
       ) : (
-        <main className="flex-1 w-full px-3 py-4">
+        <main className="flex-1 w-full px-3 py-4 animate-fade-in">
           <SeasonCalendar mushrooms={allMushrooms} />
         </main>
       )}
     </div>
+  );
+}
+
+function ViewToggle({
+  label,
+  active,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-pressed={active}
+      className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
+        active
+          ? 'bg-moss-primary text-washi-cream border-moss-light'
+          : 'bg-soil-surface text-washi-muted border-border hover:border-moss-primary/50 hover:text-washi-cream'
+      }`}
+    >
+      {label}
+    </button>
   );
 }
