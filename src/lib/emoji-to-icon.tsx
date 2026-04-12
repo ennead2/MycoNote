@@ -61,11 +61,14 @@ const EMOJI_ICON_MAP: Record<string, IconEntry> = {
   '❌': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
   '✕': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
 
-  // チェックマーク（✅ ✔ は OK/完了マーカーとしてアイコン化。
-  // 未チェックの □ ☐ は意図的に辞書に入れず素通し——チェックリスト
-  // の未チェック項目として視認性を保つため）
+  // チェックマーク（OK/完了マーカーとしてアイコン化）
   '✅': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
   '✔': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
+  // NOTE: 以下はチェックリストの視認性を保つため意図的に辞書に入れない:
+  //   □ ■ ☐ ☑ ◻ ◼ (checkbox / square glyphs — Claude が箇条書きの
+  //                  先頭マーカーとして出力することが多い)
+  //   ✓            (plain light check, U+2713 — 簡易チェックマーク)
+  // これらは素通しさせる。回帰テスト: emoji-to-icon.test.tsx
 
   // 位置・日時・情報
   '📍': { Icon: MapPin, tone: 'text-moss-light', label: '場所' },

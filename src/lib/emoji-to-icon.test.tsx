@@ -38,14 +38,28 @@ describe('replaceEmojisWithIcons', () => {
     expect(iconCount).toBe(2);
   });
 
-  it('passes through unchecked checkbox squares (□ / ☐)', () => {
-    // 未チェックのチェックボックス記号はアイコン化せず、チェックリスト
-    // の視認性を保つため素通しする
-    const nodes = replaceEmojisWithIcons('□ 水筒 ☐ 雨具');
+  it('passes through checkbox/square glyphs — never convert to icons', () => {
+    // Claude が Markdown リストの先頭マーカーとして出力する「□」「■」や
+    // Unicode のチェックボックス記号は、チェックリスト視認性を保つため
+    // 絶対にアイコン化しない（UX フィードバックで明示された要件）
+    const input = '□ 水筒  ■ 雨具  ☐ 虫除け  ☑ 救急セット  ◻ 地図  ◼ 手袋';
+    const nodes = replaceEmojisWithIcons(input);
     const joined = nodes.filter((n) => typeof n === 'string').join('');
-    expect(joined).toContain('□');
-    expect(joined).toContain('☐');
+    expect(joined).toContain('□'); // U+25A1
+    expect(joined).toContain('■'); // U+25A0
+    expect(joined).toContain('☐'); // U+2610
+    expect(joined).toContain('☑'); // U+2611
+    expect(joined).toContain('◻'); // U+25FB
+    expect(joined).toContain('◼'); // U+25FC
     expect(nodes.filter((n) => typeof n !== 'string').length).toBe(0);
+  });
+
+  it('passes through plain ✓ (U+2713) — only heavy ✔ is iconified', () => {
+    // ✓ は list bullet や簡易チェックマークとして使われることが多く
+    // 素通し。Claude が明示的にアイコン化したい場合は ✔ を出力する。
+    const nodes = replaceEmojisWithIcons('✓ 持ち物');
+    expect(nodes.filter((n) => typeof n !== 'string').length).toBe(0);
+    expect((nodes as string[]).join('')).toContain('✓');
   });
 
   it('replaces newly added weather/tool emoji', () => {
