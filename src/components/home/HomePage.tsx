@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BookOpen, Search, Map, FileText, ShieldAlert } from 'lucide-react';
@@ -10,6 +10,13 @@ import { useRecords } from '@/contexts/RecordsContext';
 import { mushrooms, getMushroomById } from '@/data/mushrooms';
 import { getSeasonalMushrooms, getSafetyTip, dateToSeed } from '@/lib/season-utils';
 import type { Mushroom } from '@/types/mushroom';
+
+/** Card width (w-32 = 128px) + gap (gap-2 = 8px) — used to advance one slot per tick. */
+const CAROUSEL_CARD_STEP_PX = 128 + 8;
+/** Auto-advance interval. */
+const CAROUSEL_INTERVAL_MS = 5000;
+/** After a user interaction, pause auto-scroll for this long so we don't fight them. */
+const CAROUSEL_USER_PAUSE_MS = 10000;
 
 const QUICK_ACTIONS = [
   { href: '/zukan', label: UI_TEXT.home.quickZukan, Icon: BookOpen, desc: `${mushrooms.length} ${UI_TEXT.home.speciesCount}` },
@@ -89,18 +96,7 @@ export default function HomePage() {
         ) : seasonalMushrooms.length === 0 ? (
           <p className="text-washi-muted text-sm text-center py-6">{UI_TEXT.home.noSeasonal}</p>
         ) : (
-          <div className="relative">
-            <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory">
-              {seasonalMushrooms.map((m) => (
-                <SeasonalCard key={m.id} mushroom={m} />
-              ))}
-            </div>
-            {/* Right-edge fade hint — indicates horizontal scroll */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute top-0 right-0 h-full w-8 bg-gradient-to-l from-soil-bg to-transparent"
-            />
-          </div>
+          <SeasonalCarousel mushrooms={seasonalMushrooms} />
         )}
       </section>
 
@@ -174,6 +170,63 @@ function pickImageSrc(m: Mushroom): string | null {
   if (m.image_local) return m.image_local;
   if (m.images_remote && m.images_remote.length > 0) return m.images_remote[0];
   return null;
+}
+
+/**
+ * Auto-advancing horizontal carousel of seasonal mushroom cards.
+ * - Advances one card every {CAROUSEL_INTERVAL_MS}ms.
+ * - Wraps back to the start when the end is reached.
+ * - Pauses for {CAROUSEL_USER_PAUSE_MS}ms after a user interacts (touch/pointer).
+ * - Respects `prefers-reduced-motion`: no auto-advance, user can still swipe.
+ */
+function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const pauseUntilRef = useRef<number>(0);
+
+  useEffect(() => {
+    if (mushrooms.length <= 1) return;
+    if (typeof window === 'undefined') return;
+    // matchMedia is not available in some test environments (happy-dom/jsdom).
+    if (typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    const tick = () => {
+      const el = scrollRef.current;
+      if (!el) return;
+      if (Date.now() < pauseUntilRef.current) return;
+
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll <= 0) return;
+
+      // When near the end, loop back to start with a smooth scroll.
+      if (el.scrollLeft >= maxScroll - 4) {
+        el.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        el.scrollBy({ left: CAROUSEL_CARD_STEP_PX, behavior: 'smooth' });
+      }
+    };
+
+    const id = window.setInterval(tick, CAROUSEL_INTERVAL_MS);
+    return () => window.clearInterval(id);
+  }, [mushrooms.length]);
+
+  const handleUserInteract = () => {
+    pauseUntilRef.current = Date.now() + CAROUSEL_USER_PAUSE_MS;
+  };
+
+  return (
+    <div
+      ref={scrollRef}
+      onPointerDown={handleUserInteract}
+      onWheel={handleUserInteract}
+      className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory"
+    >
+      {mushrooms.map((m) => (
+        <SeasonalCard key={m.id} mushroom={m} />
+      ))}
+    </div>
+  );
 }
 
 function SeasonalCard({ mushroom }: { mushroom: Mushroom }) {
