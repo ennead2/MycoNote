@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Bookmark, BookmarkCheck } from 'lucide-react';
+import { Bookmark, BookmarkCheck, Search, ArrowUpRight } from 'lucide-react';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
 import { SeasonBar } from '@/components/zukan/SeasonBar';
 import { ChipTag } from '@/components/ui/ChipTag';
@@ -83,9 +83,9 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-sm text-moss-light hover:text-washi-cream transition-colors"
       >
-        <span>🔎</span>
+        <Search size={16} aria-hidden="true" />
         <span>{UI_TEXT.zukan.googleImageSearch}</span>
-        <span className="text-xs">↗</span>
+        <ArrowUpRight size={14} aria-hidden="true" />
       </a>
 
       {/* Lightbox modal with swipe */}

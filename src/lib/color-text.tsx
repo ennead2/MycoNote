@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import { ColorChip } from '@/components/ui/ColorChip';
 
 /**
  * 色名 → 代表Hex値マッピング。
@@ -80,11 +79,12 @@ const COLOR_REGEX = new RegExp(
 );
 
 /**
- * テキスト中の色名を検出し、色名の直前に ColorChip を挿入した ReactNode 配列を返す。
- * 色名テキスト自体は元の状態を保ち、可読性を損なわない。
+ * テキスト中の色名を検出し、色名の文字そのものに色の下線を引く。
+ * 下線色は色名が指す実色（Hex）。可読性を損なわずに色を視覚化する。
  *
  * 例: "傘は赤色で白いイボを持つ"
- *     → [..., <ColorChip color="#C43E3E" />, "赤色", ..., <ColorChip color="#EDE3D0" />, "白い", ...]
+ *     → "傘は <u style="border-bottom:2px solid #C43E3E">赤色</u>
+ *        で <u style="border-bottom:2px solid #EDE3D0">白い</u> イボを持つ"
  */
 export function renderColorText(text: string): ReactNode[] {
   const parts: ReactNode[] = [];
@@ -101,16 +101,14 @@ export function renderColorText(text: string): ReactNode[] {
 
     const hex = COLOR_MAP[term];
     parts.push(
-      <ColorChip
-        key={`chip-${key}`}
-        color={hex}
-        label={term}
-        size="sm"
-        className="mr-0.5"
-      />
-    );
-    parts.push(
-      <span key={`word-${key}`} className="text-washi-cream">
+      <span
+        key={`color-${key}`}
+        className="text-washi-cream"
+        style={{
+          borderBottom: `2px solid ${hex}`,
+          paddingBottom: '1px',
+        }}
+      >
         {term}
       </span>
     );
