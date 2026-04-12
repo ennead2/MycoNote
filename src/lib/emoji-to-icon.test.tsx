@@ -68,6 +68,12 @@ describe('replaceEmojisWithIcons', () => {
     expect(iconCount).toBe(3);
   });
 
+  it('replaces cooking / memo / mountain / ban / soon emoji', () => {
+    const nodes = replaceEmojisWithIcons('🍳 調理 📝 メモ 🏔 登山 🚫 禁止 🔜 近日');
+    const iconCount = nodes.filter((n) => typeof n !== 'string').length;
+    expect(iconCount).toBe(5);
+  });
+
   it('handles multiple mapped emoji in one string', () => {
     const nodes = replaceEmojisWithIcons('📍高尾山 📅10月');
     const iconCount = nodes.filter((n) => typeof n !== 'string').length;

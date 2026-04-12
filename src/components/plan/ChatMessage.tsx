@@ -46,6 +46,12 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
               ul: ({ children }) => <ul className="list-disc pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ul>,
               ol: ({ children }) => <ol className="list-decimal pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ol>,
               li: ({ children }) => <li>{replaceEmojisInChildren(children)}</li>,
+              // GFM タスクリスト (`- [ ] foo`) の disabled チェックボックスを非表示。
+              // ネイティブ input はダークテーマで視認性が低く、何のマークか
+              // 分かりにくいというフィードバックを受けて除去。箇条書きの「・」と
+              // テキストだけ残る形になる。
+              input: (props) =>
+                props.type === 'checkbox' ? null : <input {...props} />,
               strong: ({ children }) => <strong className="font-bold text-washi-cream">{replaceEmojisInChildren(children)}</strong>,
               em: ({ children }) => <em className="italic">{replaceEmojisInChildren(children)}</em>,
               a: ({ href, children }) => <a href={href} className="underline text-moss-light hover:text-washi-muted" target="_blank" rel="noopener noreferrer">{replaceEmojisInChildren(children)}</a>,

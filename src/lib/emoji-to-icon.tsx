@@ -27,6 +27,12 @@ import {
   Siren,
   Backpack,
   GraduationCap,
+  CookingPot,
+  Utensils,
+  Pencil,
+  Mountain,
+  Ban,
+  ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
 import { Mushroom } from '@/components/icons/Mushroom';
@@ -94,7 +100,21 @@ const EMOJI_ICON_MAP: Record<string, IconEntry> = {
   '☁': { Icon: Cloud, tone: 'text-washi-muted', label: '曇' },
   '🌨': { Icon: CloudSnow, tone: 'text-washi-muted', label: '雪' },
 
+  // 地形
+  '🏔': { Icon: Mountain, tone: 'text-moss-light', label: '山' },
+  '⛰': { Icon: Mountain, tone: 'text-moss-light', label: '山' },
+
+  // 料理・食事
+  '🍳': { Icon: CookingPot, tone: 'text-safety-caution', label: '料理' },
+  '🍲': { Icon: CookingPot, tone: 'text-safety-caution', label: '鍋' },
+  '🥘': { Icon: CookingPot, tone: 'text-safety-caution', label: '鍋料理' },
+  '🍴': { Icon: Utensils, tone: 'text-washi-muted', label: '食事' },
+  '🥢': { Icon: Utensils, tone: 'text-washi-muted', label: '箸' },
+
   // その他
+  '📝': { Icon: Pencil, tone: 'text-moss-light', label: 'メモ' },
+  '🚫': { Icon: Ban, tone: 'text-safety-toxic', label: '禁止' },
+  '🔜': { Icon: ArrowRight, tone: 'text-moss-light', label: 'まもなく' },
   '💡': { Icon: Lightbulb, tone: 'text-safety-caution', label: 'ヒント' },
   '🔍': { Icon: Search, tone: 'text-washi-muted', label: '観察' },
   '📸': { Icon: Camera, tone: 'text-washi-muted', label: '撮影' },
