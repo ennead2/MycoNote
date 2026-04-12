@@ -27,10 +27,17 @@ export default function BottomNav() {
               key={href}
               href={href}
               aria-label={label}
-              className={`flex flex-col items-center justify-center flex-1 py-2 pb-3 text-[10px] gap-1 transition-colors ${
-                isActive ? 'text-moss-light' : 'text-washi-dim'
+              aria-current={isActive ? 'page' : undefined}
+              className={`relative flex flex-col items-center justify-center flex-1 py-2 pb-3 text-[10px] gap-1 transition-colors ${
+                isActive ? 'text-moss-light' : 'text-washi-dim hover:text-washi-muted'
               }`}
             >
+              {isActive && (
+                <span
+                  aria-hidden="true"
+                  className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-b bg-moss-light"
+                />
+              )}
               <Icon size={20} strokeWidth={isActive ? 2.5 : 2} aria-hidden="true" />
               <span className="mono-data tracking-wider">{label}</span>
             </Link>

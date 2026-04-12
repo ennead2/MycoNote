@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Map as MapIcon, ArrowLeft, History } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { useApp } from '@/contexts/AppContext';
 import { useRecords } from '@/contexts/RecordsContext';
@@ -210,10 +211,12 @@ export default function PlanPage() {
     return (
       <div>
         <PageHeader title={UI_TEXT.plan.title} />
-        <div className="flex flex-col items-center justify-center px-4 py-16">
-          <span className="mb-4 text-5xl">🗺</span>
-          <p className="text-center text-forest-400 text-sm mb-4">{UI_TEXT.plan.setupApiKey}</p>
-          <a href="/settings" className="text-forest-300 underline text-sm">{UI_TEXT.identify.goToSettings}</a>
+        <div className="flex flex-col items-center justify-center px-4 py-16 gap-4">
+          <MapIcon size={48} className="text-washi-dim" aria-hidden="true" />
+          <p className="text-center text-washi-muted text-sm">{UI_TEXT.plan.setupApiKey}</p>
+          <a href="/settings" className="text-moss-light hover:text-washi-cream underline text-sm transition-colors">
+            {UI_TEXT.identify.goToSettings}
+          </a>
         </div>
       </div>
     );
@@ -236,17 +239,17 @@ export default function PlanPage() {
   if (view === 'chat' && currentSession) {
     return (
       <div className="flex flex-col h-[calc(100vh-4rem)]">
-        <div className="sticky top-0 z-40 bg-forest-900 border-b border-forest-700">
+        <div className="sticky top-0 z-40 bg-soil-surface border-b border-border">
           <div className="max-w-lg mx-auto flex items-center h-14 px-4 gap-3">
             <button
               onClick={() => setView('form')}
-              className="text-forest-300 text-xl leading-none p-1 -ml-1 hover:text-forest-100"
+              className="text-moss-light p-1 -ml-1 hover:text-washi-cream transition-colors"
               aria-label={UI_TEXT.common.back}
             >
-              ←
+              <ArrowLeft size={22} strokeWidth={2} aria-hidden="true" />
             </button>
-            <h1 className="text-lg font-bold text-forest-100 flex-1">{UI_TEXT.plan.title}</h1>
-            <span className="text-[10px] text-forest-500">
+            <h1 className="serif-display text-lg font-bold text-washi-cream flex-1">{UI_TEXT.plan.title}</h1>
+            <span className="mono-data text-[10px] text-washi-dim">
               {currentSession.context.date && currentSession.context.date}
               {currentSession.context.date && currentSession.context.location && ' '}
               {currentSession.context.location && currentSession.context.location}
@@ -275,14 +278,16 @@ export default function PlanPage() {
 
   return (
     <div>
-      <div className="sticky top-0 z-40 bg-forest-900 border-b border-forest-700">
+      <div className="sticky top-0 z-40 bg-soil-surface border-b border-border">
         <div className="max-w-lg mx-auto flex items-center h-14 px-4 gap-3">
-          <h1 className="text-lg font-bold text-forest-100 flex-1">{UI_TEXT.plan.title}</h1>
+          <h1 className="serif-display text-lg font-bold text-washi-cream flex-1">{UI_TEXT.plan.title}</h1>
           <button
             onClick={() => setView('history')}
-            className="text-xs text-forest-400 bg-forest-800 px-2.5 py-1 rounded hover:bg-forest-700"
+            className="inline-flex items-center gap-1 text-xs text-washi-muted bg-soil-elevated border border-border px-2.5 py-1 rounded hover:border-moss-primary/50 hover:text-washi-cream transition-colors"
+            aria-label={UI_TEXT.plan.historyButton}
           >
-            📋 {UI_TEXT.plan.historyButton}
+            <History size={14} aria-hidden="true" />
+            {UI_TEXT.plan.historyButton}
           </button>
         </div>
       </div>

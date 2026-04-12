@@ -89,10 +89,17 @@ export default function HomePage() {
         ) : seasonalMushrooms.length === 0 ? (
           <p className="text-washi-muted text-sm text-center py-6">{UI_TEXT.home.noSeasonal}</p>
         ) : (
-          <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory">
-            {seasonalMushrooms.map((m) => (
-              <SeasonalCard key={m.id} mushroom={m} />
-            ))}
+          <div className="relative">
+            <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide snap-x snap-mandatory">
+              {seasonalMushrooms.map((m) => (
+                <SeasonalCard key={m.id} mushroom={m} />
+              ))}
+            </div>
+            {/* Right-edge fade hint — indicates horizontal scroll */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute top-0 right-0 h-full w-8 bg-gradient-to-l from-soil-bg to-transparent"
+            />
           </div>
         )}
       </section>

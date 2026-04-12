@@ -352,33 +352,37 @@ function RemotePhoto({ url, alt, credit, onClick }: { url: string; alt: string; 
   return (
     <div className="flex flex-col">
       <button
-        className="relative aspect-square w-full rounded-md overflow-hidden bg-forest-800 cursor-pointer"
+        className="relative aspect-square w-full rounded-md overflow-hidden bg-soil-surface cursor-pointer"
         onClick={onClick}
+        aria-label={alt}
       >
+        {status === 'loading' && (
+          <div
+            className="absolute inset-0 animate-shimmer"
+            aria-hidden="true"
+          />
+        )}
         {status !== 'error' && (
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
             src={url}
             alt={alt}
             loading="lazy"
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
+              status === 'loaded' ? 'opacity-100' : 'opacity-0'
+            }`}
             onLoad={() => setStatus('loaded')}
             onError={() => setStatus('error')}
           />
         )}
-        {status === 'loading' && (
-          <div className="absolute inset-0 flex items-center justify-center bg-forest-800">
-            <div className="w-5 h-5 border-2 border-forest-500 border-t-transparent rounded-full animate-spin" />
-          </div>
-        )}
         {status === 'error' && (
-          <div className="w-full h-full flex items-center justify-center text-forest-500 text-xs">
+          <div className="w-full h-full flex items-center justify-center text-washi-dim text-xs">
             読込失敗
           </div>
         )}
       </button>
       {credit && (
-        <p className="text-[10px] text-forest-500 truncate mt-0.5 px-0.5">{credit}</p>
+        <p className="text-[10px] text-washi-dim truncate mt-0.5 px-0.5 mono-data">{credit}</p>
       )}
     </div>
   );
