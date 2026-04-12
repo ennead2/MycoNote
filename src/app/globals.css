@@ -125,3 +125,27 @@ body {
     animation: none;
   }
 }
+
+/* ===== Native date/time picker — Phase 9 palette ===== */
+/* WebKit (Chromium / Safari) calendar icon: recolor to moss tone. */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  /* invert + sepia + hue-rotate で白地アイコンを moss-light 相当に寄せる */
+  filter: invert(0.75) sepia(0.25) saturate(2.5) hue-rotate(70deg);
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 3px;
+  transition: opacity 150ms ease-out;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* 未入力時の擬似プレースホルダ色を washi-dim に寄せる（WebKit のみ） */
+input[type="date"]:not(:focus):invalid::-webkit-datetime-edit,
+input[type="datetime-local"]:not(:focus):invalid::-webkit-datetime-edit {
+  color: var(--color-washi-dim);
+}
