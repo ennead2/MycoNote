@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Sprout } from 'lucide-react';
 import { UI_TEXT } from '@/constants/ui-text';
+import { replaceEmojisInChildren } from '@/lib/emoji-to-icon';
 import type { ChatMessage } from '@/types/chat';
 
 interface ChatMessageBubbleProps {
@@ -38,23 +39,23 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              h1: ({ children }) => <h1 className="text-base font-bold mb-1 mt-2 first:mt-0">{children}</h1>,
-              h2: ({ children }) => <h2 className="text-sm font-bold mb-1 mt-2 first:mt-0">{children}</h2>,
-              h3: ({ children }) => <h3 className="text-sm font-semibold mb-1 mt-1.5 first:mt-0">{children}</h3>,
-              p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+              h1: ({ children }) => <h1 className="text-base font-bold mb-1 mt-2 first:mt-0">{replaceEmojisInChildren(children)}</h1>,
+              h2: ({ children }) => <h2 className="text-sm font-bold mb-1 mt-2 first:mt-0">{replaceEmojisInChildren(children)}</h2>,
+              h3: ({ children }) => <h3 className="text-sm font-semibold mb-1 mt-1.5 first:mt-0">{replaceEmojisInChildren(children)}</h3>,
+              p: ({ children }) => <p className="mb-2 last:mb-0">{replaceEmojisInChildren(children)}</p>,
               ul: ({ children }) => <ul className="list-disc pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ul>,
               ol: ({ children }) => <ol className="list-decimal pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ol>,
-              li: ({ children }) => <li>{children}</li>,
-              strong: ({ children }) => <strong className="font-bold text-washi-cream">{children}</strong>,
-              em: ({ children }) => <em className="italic">{children}</em>,
-              a: ({ href, children }) => <a href={href} className="underline text-moss-light hover:text-washi-muted" target="_blank" rel="noopener noreferrer">{children}</a>,
+              li: ({ children }) => <li>{replaceEmojisInChildren(children)}</li>,
+              strong: ({ children }) => <strong className="font-bold text-washi-cream">{replaceEmojisInChildren(children)}</strong>,
+              em: ({ children }) => <em className="italic">{replaceEmojisInChildren(children)}</em>,
+              a: ({ href, children }) => <a href={href} className="underline text-moss-light hover:text-washi-muted" target="_blank" rel="noopener noreferrer">{replaceEmojisInChildren(children)}</a>,
               hr: () => <hr className="border-moss-primary my-2" />,
               table: ({ children }) => <table className="w-full border-collapse text-xs my-2">{children}</table>,
               thead: ({ children }) => <thead className="border-b border-moss-primary">{children}</thead>,
               tbody: ({ children }) => <tbody>{children}</tbody>,
               tr: ({ children }) => <tr className="border-b border-border last:border-b-0">{children}</tr>,
-              th: ({ children }) => <th className="text-left py-1 pr-3 font-semibold text-moss-light">{children}</th>,
-              td: ({ children }) => <td className="py-1 pr-3 text-washi-muted">{children}</td>,
+              th: ({ children }) => <th className="text-left py-1 pr-3 font-semibold text-moss-light">{replaceEmojisInChildren(children)}</th>,
+              td: ({ children }) => <td className="py-1 pr-3 text-washi-muted">{replaceEmojisInChildren(children)}</td>,
             }}
           >
             {message.content}
