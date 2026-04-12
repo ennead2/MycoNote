@@ -31,10 +31,33 @@ class MycoNoteDB extends Dexie {
 
 export const db = new MycoNoteDB();
 
+// Diagnostic: if another tab holds the DB open at an older schema, the upgrade
+// blocks indefinitely. Log so we can spot this in console rather than hanging
+// silently on records / bookmarks loading.
+if (typeof window !== 'undefined') {
+  db.on('blocked', () => {
+    console.warn(
+      '[db] IndexedDB upgrade blocked — another tab likely holds the previous schema. Close other tabs of this site and reload.'
+    );
+  });
+  // Eagerly open the DB so any schema / migration error shows up in the
+  // console at page load, not on first query. Failure is non-fatal: Dexie
+  // will retry open on first operation.
+  db.open().catch((err) => {
+    console.error('[db] open failed:', err);
+  });
+}
+
 // ===== Bookmarks =====
+//
+// Note: we `toArray()` then sort in JS rather than `orderBy('created_at')` so
+// that the list still loads even if the secondary index failed to build (e.g.
+// during a partial schema upgrade from an older device). Bookmark counts are
+// tiny — O(n log n) in JS is free.
 
 export async function getAllBookmarks(): Promise<Bookmark[]> {
-  return db.bookmarks.orderBy('created_at').reverse().toArray();
+  const all = await db.bookmarks.toArray();
+  return all.sort((a, b) => (a.created_at < b.created_at ? 1 : a.created_at > b.created_at ? -1 : 0));
 }
 
 export async function addBookmark(mushroomId: string): Promise<Bookmark> {

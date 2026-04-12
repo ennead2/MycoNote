@@ -31,15 +31,29 @@ export function RecordsProvider({ children }: { children: ReactNode }) {
   // マウント時にDexieから全レコードを読み込む
   useEffect(() => {
     let cancelled = false;
+    // Watchdog: if DB never responds (e.g. blocked upgrade from another tab),
+    // release the loading state after 8s so the UI shows the empty state
+    // instead of spinning skeletons forever.
+    const watchdog = setTimeout(() => {
+      if (!cancelled) {
+        console.warn('[RecordsContext] load watchdog fired — IndexedDB did not respond in 8s');
+        setIsLoading(false);
+      }
+    }, 8000);
+
     (async () => {
       try {
         const all = await getAllRecords();
         if (!cancelled) setRecords(all);
+      } catch (err) {
+        console.error('[RecordsContext] Failed to load records:', err);
       } finally {
+        clearTimeout(watchdog);
         if (!cancelled) setIsLoading(false);
       }
     })();
-    return () => { cancelled = true; };
+
+    return () => { cancelled = true; clearTimeout(watchdog); };
   }, []);
 
   const addNewRecord = useCallback(async (input: NewRecordInput, photoBlobs?: Blob[]): Promise<MushroomRecord> => {

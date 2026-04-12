@@ -2,6 +2,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import { Camera, ImagePlus, Search } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { FeatureSelector } from '@/components/identify/FeatureSelector';
 import { SimpleIdentifyResult } from '@/components/identify/SimpleIdentifyResult';
@@ -16,6 +17,7 @@ export default function SimpleIdentifyPage() {
   const [input, setInput] = useState<IdentifyInput>({});
   const [results, setResults] = useState<MatchResult[] | null>(null);
   const [photoUrl, setPhotoUrl] = useState<string | null>(null);
+  const cameraInputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handlePhotoChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -64,30 +66,66 @@ export default function SimpleIdentifyPage() {
               <div className="relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={photoUrl} alt={T.referencePhoto} className="w-full max-h-[240px] object-contain bg-black/20" />
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-2.5 bg-gradient-to-t from-black/50 to-transparent">
-                  <span className="text-[10px] text-white/70">📷 {T.referencePhotoHint}</span>
-                  <button
-                    onClick={() => fileInputRef.current?.click()}
-                    className="px-3 py-1 bg-black/50 border border-white/30 rounded-md text-[10px] text-white"
-                  >
-                    {T.changePhoto}
-                  </button>
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-2 p-2.5 bg-gradient-to-t from-black/60 to-transparent">
+                  <span className="text-[10px] text-washi-cream/80 flex items-center gap-1">
+                    <Camera size={11} aria-hidden="true" />
+                    {T.referencePhotoHint}
+                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => cameraInputRef.current?.click()}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 bg-soil-bg/70 border border-washi-cream/30 rounded-md text-[10px] text-washi-cream hover:border-moss-light"
+                    >
+                      <Camera size={11} aria-hidden="true" />
+                      {T.takePhoto}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => fileInputRef.current?.click()}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 bg-soil-bg/70 border border-washi-cream/30 rounded-md text-[10px] text-washi-cream hover:border-moss-light"
+                    >
+                      <ImagePlus size={11} aria-hidden="true" />
+                      {T.chooseFile}
+                    </button>
+                  </div>
                 </div>
               </div>
             ) : (
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                className="w-full h-[120px] flex flex-col items-center justify-center gap-2 text-washi-dim hover:text-moss-light"
-              >
-                <span className="text-2xl">📷</span>
-                <span className="text-xs">{T.referencePhoto}（任意）</span>
-              </button>
+              <div className="flex flex-col items-center gap-3 py-6 px-4">
+                <p className="text-xs text-washi-dim">{T.referencePhoto}（任意）</p>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => cameraInputRef.current?.click()}
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-washi-dim bg-soil-bg px-3.5 py-2 text-sm font-medium text-washi-muted transition-colors hover:bg-soil-elevated hover:border-moss-light hover:text-washi-cream"
+                  >
+                    <Camera size={16} aria-hidden="true" />
+                    {T.takePhoto}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-washi-dim bg-soil-bg px-3.5 py-2 text-sm font-medium text-washi-muted transition-colors hover:bg-soil-elevated hover:border-moss-light hover:text-washi-cream"
+                  >
+                    <ImagePlus size={16} aria-hidden="true" />
+                    {T.chooseFile}
+                  </button>
+                </div>
+              </div>
             )}
+            <input
+              ref={cameraInputRef}
+              type="file"
+              accept="image/*"
+              capture="environment"
+              className="hidden"
+              onChange={handlePhotoChange}
+            />
             <input
               ref={fileInputRef}
               type="file"
               accept="image/*"
-              capture="environment"
               className="hidden"
               onChange={handlePhotoChange}
             />
@@ -100,9 +138,10 @@ export default function SimpleIdentifyPage() {
           <button
             onClick={handleSearch}
             disabled={!hasRequiredInput}
-            className="w-full py-3 bg-washi-dim text-white rounded-lg text-sm font-bold hover:bg-moss-light disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full inline-flex items-center justify-center gap-2 py-3 bg-moss-primary text-washi-cream rounded-lg text-sm font-bold hover:bg-moss-light disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
           >
-            🔍 {T.searchCandidates}
+            <Search size={16} strokeWidth={2.5} aria-hidden="true" />
+            {T.searchCandidates}
           </button>
         </div>
       )}

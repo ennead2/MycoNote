@@ -22,15 +22,28 @@ export function BookmarksProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let cancelled = false;
+    // Watchdog: if DB never responds (e.g. blocked upgrade from another tab),
+    // stop showing a loading spinner after 8s so the UI isn't dead.
+    const watchdog = setTimeout(() => {
+      if (!cancelled) {
+        console.warn('[BookmarksContext] load watchdog fired — IndexedDB did not respond in 8s');
+        setIsLoading(false);
+      }
+    }, 8000);
+
     (async () => {
       try {
         const all = await getAllBookmarks();
         if (!cancelled) setBookmarks(all);
+      } catch (err) {
+        console.error('[BookmarksContext] Failed to load bookmarks:', err);
       } finally {
+        clearTimeout(watchdog);
         if (!cancelled) setIsLoading(false);
       }
     })();
-    return () => { cancelled = true; };
+
+    return () => { cancelled = true; clearTimeout(watchdog); };
   }, []);
 
   // Membership set for O(1) isBookmarked lookups.
@@ -39,12 +52,16 @@ export function BookmarksProvider({ children }: { children: ReactNode }) {
   const isBookmarked = useCallback((mushroomId: string) => idSet.has(mushroomId), [idSet]);
 
   const toggleBookmark = useCallback(async (mushroomId: string) => {
-    if (idSet.has(mushroomId)) {
-      await removeBookmark(mushroomId);
-      setBookmarks((prev) => prev.filter((b) => b.mushroom_id !== mushroomId));
-    } else {
-      const added = await addBookmark(mushroomId);
-      setBookmarks((prev) => [added, ...prev]);
+    try {
+      if (idSet.has(mushroomId)) {
+        await removeBookmark(mushroomId);
+        setBookmarks((prev) => prev.filter((b) => b.mushroom_id !== mushroomId));
+      } else {
+        const added = await addBookmark(mushroomId);
+        setBookmarks((prev) => [added, ...prev]);
+      }
+    } catch (err) {
+      console.error('[BookmarksContext] toggleBookmark failed:', err);
     }
   }, [idSet]);
 
