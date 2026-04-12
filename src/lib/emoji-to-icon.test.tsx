@@ -32,11 +32,20 @@ describe('replaceEmojisWithIcons', () => {
     expect(joined).toContain('👍');
   });
 
-  it('passes through checklist markers (✅ / ✔) — reverted per UX feedback', () => {
+  it('replaces check marks (✅ / ✔) with icons', () => {
     const nodes = replaceEmojisWithIcons('✅ 持ち物 ✔ 雨具');
+    const iconCount = nodes.filter((n) => typeof n !== 'string').length;
+    expect(iconCount).toBe(2);
+  });
+
+  it('passes through unchecked checkbox squares (□ / ☐)', () => {
+    // 未チェックのチェックボックス記号はアイコン化せず、チェックリスト
+    // の視認性を保つため素通しする
+    const nodes = replaceEmojisWithIcons('□ 水筒 ☐ 雨具');
     const joined = nodes.filter((n) => typeof n === 'string').join('');
-    expect(joined).toContain('✅');
-    expect(joined).toContain('✔');
+    expect(joined).toContain('□');
+    expect(joined).toContain('☐');
+    expect(nodes.filter((n) => typeof n !== 'string').length).toBe(0);
   });
 
   it('replaces newly added weather/tool emoji', () => {

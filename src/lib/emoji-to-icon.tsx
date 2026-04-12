@@ -6,6 +6,7 @@ import {
   Skull,
   MapPin,
   Calendar,
+  Check,
   X,
   CloudRain,
   CloudSun,
@@ -58,6 +59,13 @@ const EMOJI_ICON_MAP: Record<string, IconEntry> = {
   '☠': { Icon: Skull, tone: 'text-safety-deadly', label: '猛毒' },
   '🚨': { Icon: Siren, tone: 'text-safety-deadly', label: '緊急' },
   '❌': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
+  '✕': { Icon: X, tone: 'text-safety-toxic', label: 'NG' },
+
+  // チェックマーク（✅ ✔ は OK/完了マーカーとしてアイコン化。
+  // 未チェックの □ ☐ は意図的に辞書に入れず素通し——チェックリスト
+  // の未チェック項目として視認性を保つため）
+  '✅': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
+  '✔': { Icon: Check, tone: 'text-safety-edible', label: 'OK' },
 
   // 位置・日時・情報
   '📍': { Icon: MapPin, tone: 'text-moss-light', label: '場所' },
