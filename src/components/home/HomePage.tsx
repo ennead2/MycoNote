@@ -195,15 +195,19 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
     if (!el) return;
 
     const measure = () => {
-      // Goal: when scrolled to left=0, exactly N cards visible, no N+1 peek.
-      // Scroll container has no internal padding now — aligned with section px-3.
-      // Card N+1 left edge = N*cardWidth + N*gap (N gaps between/after N cards).
-      // Set card N+1 left = clientWidth so it sits exactly at the container edge:
-      //   N*cardWidth + N*gap = clientWidth
-      //   cardWidth = (clientWidth - N*gap) / N
+      // Layout (visible area from left to right edge):
+      //   [gap] [card] [gap] [card] [gap] [card] [gap]
+      // This symmetric padding guarantees:
+      //   - card 1 never touches the left edge (visual breathing room)
+      //   - card N+1 starts fully past the right edge (no peek)
+      // Math: leading gap + N*cardWidth + (N-1) gaps between cards + trailing gap = clientWidth
+      //     = (N+1)*gap + N*cardWidth = clientWidth
+      //     → cardWidth = (clientWidth - (N+1)*gap) / N
+      // Use ceil so the trailing space may exceed 1 gap (never less), ensuring
+      // card N+1 is definitively off-screen.
       const n = CAROUSEL_VISIBLE_CARDS;
       const gap = CAROUSEL_GAP_PX;
-      const w = Math.floor((el.clientWidth - n * gap) / n);
+      const w = Math.ceil((el.clientWidth - (n + 1) * gap) / n);
       if (w > 0) setCardWidth(w);
     };
 
@@ -256,7 +260,11 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       ref={scrollRef}
       onPointerDown={handleUserInteract}
       onWheel={handleUserInteract}
-      className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory"
+      // px-2 gives the symmetric leading/trailing gap. scroll-pl-2 tells the
+      // snap algorithm that the scroll start edge is at the padding, so snapping
+      // card 0 (snap-start) keeps the leading gap visible (without this,
+      // snap-mandatory collapses the leading padding and scrolls to offset=8px).
+      className="flex gap-2 overflow-x-auto pb-2 px-2 scroll-pl-2 scroll-pr-2 scrollbar-hide snap-x snap-mandatory"
     >
       {mushrooms.map((m) => (
         <SeasonalCard key={m.id} mushroom={m} width={cardWidth} />
@@ -267,13 +275,11 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
 
 /**
  * CSS fallback used before the JS measurement runs (SSR + first paint).
- * Scroll container inherits section's px-3 padding, so usable width
- * = min(viewport, max-w-lg 32rem) - 24px (2 * px-3).
- * Card N+1 left at clientWidth means: N*w + N*gap = clientWidth
- *   → w = (clientWidth - N*gap) / N
+ * Usable width = min(viewport, max-w-lg 32rem) - 24px (section px-3).
+ * With symmetric (N+1) gap layout: w = (usable - (N+1)*gap) / N
  */
 const SEASONAL_CARD_FALLBACK_WIDTH = `calc((min(100vw, 32rem) - 24px - ${
-  CAROUSEL_VISIBLE_CARDS * CAROUSEL_GAP_PX
+  (CAROUSEL_VISIBLE_CARDS + 1) * CAROUSEL_GAP_PX
 }px) / ${CAROUSEL_VISIBLE_CARDS})`;
 
 function SeasonalCard({ mushroom, width }: { mushroom: Mushroom; width: number | null }) {
