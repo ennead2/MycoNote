@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { UI_TEXT } from '@/constants/ui-text';
 
 interface ChatInputProps {
@@ -13,15 +13,13 @@ export function ChatInput({ onSend, disabled = false, disabledReason }: ChatInpu
   const [text, setText] = useState('');
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  useEffect(() => {
-    if (!disabled) inputRef.current?.focus();
-  }, [disabled]);
-
   const handleSend = () => {
     const trimmed = text.trim();
     if (!trimmed || disabled) return;
     onSend(trimmed);
     setText('');
+    // Drop focus so the on-screen keyboard hides after send, freeing screen space.
+    inputRef.current?.blur();
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
