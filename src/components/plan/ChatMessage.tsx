@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Sprout } from 'lucide-react';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { ChatMessage } from '@/types/chat';
 
@@ -14,8 +15,15 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
 
   return (
     <div className={`mb-3 ${isUser ? 'flex flex-col items-end' : ''}`}>
-      <div className="text-[10px] text-washi-dim mb-1">
-        {isUser ? UI_TEXT.plan.userLabel : `🤖 ${UI_TEXT.plan.assistantLabel}`}
+      <div className="inline-flex items-center gap-1 text-[10px] text-washi-dim mb-1">
+        {isUser ? (
+          UI_TEXT.plan.userLabel
+        ) : (
+          <>
+            <Sprout size={12} className="text-moss-light" aria-hidden="true" />
+            {UI_TEXT.plan.assistantLabel}
+          </>
+        )}
       </div>
       <div
         className={`max-w-[85%] rounded-xl px-3 py-2.5 text-sm leading-relaxed ${
