@@ -1,5 +1,6 @@
 'use client';
 
+import { MapPin, Calendar, MessageCircle, Trash2, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { ChatSession } from '@/types/chat';
@@ -44,36 +45,50 @@ export function ChatHistoryList({ sessions, onSelect, onDelete, onNewSession }: 
                 <span className="font-bold text-sm text-washi-cream">{session.title}</span>
                 <span className="text-[10px] text-washi-dim shrink-0 ml-2">{formatDate(session.updated_at)}</span>
               </div>
-              <div className="text-xs text-moss-light mb-1">
-                {session.context.location && `📍 ${session.context.location}`}
-                {session.context.location && session.context.date && ' · '}
-                {session.context.date && `📅 ${session.context.date.slice(5, 7)}月`}
+              <div className="inline-flex flex-wrap items-center gap-1.5 text-xs text-moss-light mb-1">
+                {session.context.location && (
+                  <span className="inline-flex items-center gap-1">
+                    <MapPin size={12} aria-hidden="true" />
+                    {session.context.location}
+                  </span>
+                )}
+                {session.context.location && session.context.date && (
+                  <span className="text-washi-dim" aria-hidden="true">·</span>
+                )}
+                {session.context.date && (
+                  <span className="inline-flex items-center gap-1">
+                    <Calendar size={12} aria-hidden="true" />
+                    {session.context.date.slice(5, 7)}月
+                  </span>
+                )}
               </div>
               {lastMessage && (
                 <p className="text-xs text-moss-light truncate">{stripMarkdown(lastMessage.content)}</p>
               )}
             </button>
             <div className="flex items-center justify-between mt-2">
-              <span className="text-[10px] text-washi-dim">
-                💬 {session.messages.length} {UI_TEXT.plan.messageCount}
+              <span className="inline-flex items-center gap-1 text-[10px] text-washi-dim">
+                <MessageCircle size={12} aria-hidden="true" />
+                {session.messages.length} {UI_TEXT.plan.messageCount}
               </span>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   if (confirm(UI_TEXT.plan.deleteSession)) onDelete(session.id);
                 }}
-                className="text-lg text-red-800 hover:text-red-500"
+                className="inline-flex items-center text-washi-dim hover:text-safety-toxic transition-colors p-1 -m-1"
                 aria-label={`${session.title} を削除`}
               >
-                🗑
+                <Trash2 size={16} aria-hidden="true" />
               </button>
             </div>
           </div>
         );
       })}
 
-      <Button variant="primary" size="lg" onClick={onNewSession} className="w-full">
-        + {UI_TEXT.plan.newSession}
+      <Button variant="primary" size="lg" onClick={onNewSession} className="w-full inline-flex items-center justify-center gap-2">
+        <Plus size={18} aria-hidden="true" />
+        {UI_TEXT.plan.newSession}
       </Button>
     </div>
   );
