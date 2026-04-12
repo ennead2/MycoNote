@@ -32,7 +32,6 @@ async function loadSpecies(idx) {
   const id = state.list[idx].id;
   state.currentData = await api(`/api/species/${encodeURIComponent(id)}`);
   render();
-  if (state.started) openGoogleTabs();
 }
 
 async function saveDecision(status, note) {
@@ -44,15 +43,29 @@ async function saveDecision(status, note) {
   state.list[state.currentIndex].decision = status === 'clear' ? null : status;
 }
 
-// ─── Google image tabs ────────────────────────────────────
-// named target を使って同一タブを再利用
-function openGoogleTabs() {
-  const m = state.currentData.mushroom;
-  const jaUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(m.names.ja + ' キノコ')}`;
-  const sciUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(m.names.scientific)}`;
-  // noopener を付けると named target が機能しなくなるので付けない
-  window.open(jaUrl, 'myconote-img-ja');
-  window.open(sciUrl, 'myconote-img-sci');
+// ─── Google image popups ──────────────────────────────────
+// popup ウィンドウを named target で再利用する。
+// 重要: window.open は必ずユーザー操作ハンドラ内で await の前に同期的に呼ぶこと。
+//       await 後だと user activation が切れて Chrome は新規タブを作ってしまう。
+const POPUP_FEATURES_JA = 'popup=1,width=720,height=900,left=0,top=0';
+const POPUP_FEATURES_SCI = 'popup=1,width=720,height=900,left=740,top=0';
+const WIN_NAME_JA = 'myconote-img-ja';
+const WIN_NAME_SCI = 'myconote-img-sci';
+
+/**
+ * 指定した list エントリで Google 画像検索 popup 2 つを開く／既存を再利用する。
+ * @param {{ja:string, scientific:string}} target - state.list の要素
+ * @param {{firstOpen?:boolean}} opts - firstOpen=true なら features を付けて popup 化
+ */
+function openGoogleTabsFor(target, opts = {}) {
+  const jaUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(target.ja + ' キノコ')}`;
+  const sciUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(target.scientific)}`;
+  // 初回: features 付きで popup ウィンドウを作成（別ウィンドウ化 + 位置指定）
+  // 2回目以降: 既存 popup が生きていれば同じ名前で navigate、死んでいれば再作成
+  const feats = opts.firstOpen ? POPUP_FEATURES_JA : '';
+  const feats2 = opts.firstOpen ? POPUP_FEATURES_SCI : '';
+  window.open(jaUrl, WIN_NAME_JA, feats);
+  window.open(sciUrl, WIN_NAME_SCI, feats2);
 }
 
 // ─── Rendering ────────────────────────────────────────────
@@ -73,11 +86,14 @@ function renderStart() {
       <button class="btn-primary" id="start-btn">開始</button>
     </div>
   `;
-  document.getElementById('start-btn').onclick = async () => {
+  document.getElementById('start-btn').onclick = async (e) => {
     state.started = true;
     // 未判定の最初の index に飛ぶ
     const nextIdx = state.list.findIndex(s => !s.decision);
-    await loadSpecies(nextIdx >= 0 ? nextIdx : 0);
+    const targetIdx = nextIdx >= 0 ? nextIdx : 0;
+    // ★ await より前に同期的に popup を開く (user activation を保持)
+    openGoogleTabsFor(state.list[targetIdx], { firstOpen: true });
+    await loadSpecies(targetIdx);
   };
 }
 
@@ -207,7 +223,11 @@ function renderReview() {
     </div>
   `;
 
-  document.getElementById('jump-select').onchange = (e) => loadSpecies(Number(e.target.value));
+  document.getElementById('jump-select').onchange = (e) => {
+    const idx = Number(e.target.value);
+    if (state.started) openGoogleTabsFor(state.list[idx]);
+    loadSpecies(idx);
+  };
   document.getElementById('prev-btn').onclick = () => navigate(-1);
   document.getElementById('next-btn').onclick = () => navigate(1);
   document.querySelectorAll('.d-btn').forEach(btn => {
@@ -249,12 +269,15 @@ async function applyDecision(status) {
 }
 
 async function navigate(delta) {
-  // 次へ押下時は判定をまだしていなくてもスキップ可能（保留扱いにはしない）
   const nextIdx = state.currentIndex + delta;
   if (nextIdx < 0 || nextIdx >= state.list.length) return;
-  // メモだけ保存したい場合：判定ありでメモだけ変わったとき
+  // ★ await より前に同期的に popup を navigate (user activation を保持)
+  if (state.started) {
+    openGoogleTabsFor(state.list[nextIdx]);
+  }
+  // メモだけ保存したい場合
   const cur = state.currentData;
-  if (cur.decision) {
+  if (cur?.decision) {
     const note = document.getElementById('note-input')?.value || '';
     if (note !== (cur.decision.note || '')) {
       await saveDecision(cur.decision.status, note);
