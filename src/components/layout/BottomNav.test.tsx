@@ -16,11 +16,12 @@ vi.mock('next/link', () => ({
 }));
 
 describe('BottomNav', () => {
-  it('renders all 5 navigation tabs including Home', () => {
+  it('renders all 6 navigation tabs', () => {
     render(<BottomNav />);
     expect(screen.getByText('ホーム')).toBeInTheDocument();
     expect(screen.getByText('図鑑')).toBeInTheDocument();
     expect(screen.getByText('識別')).toBeInTheDocument();
+    expect(screen.getByText('計画')).toBeInTheDocument();
     expect(screen.getByText('記録')).toBeInTheDocument();
     expect(screen.getByText('設定')).toBeInTheDocument();
   });
@@ -30,6 +31,7 @@ describe('BottomNav', () => {
     expect(screen.getByRole('link', { name: /ホーム/ })).toHaveAttribute('href', '/');
     expect(screen.getByRole('link', { name: /図鑑/ })).toHaveAttribute('href', '/zukan');
     expect(screen.getByRole('link', { name: /識別/ })).toHaveAttribute('href', '/identify');
+    expect(screen.getByRole('link', { name: /計画/ })).toHaveAttribute('href', '/plan');
     expect(screen.getByRole('link', { name: /記録/ })).toHaveAttribute('href', '/records');
     expect(screen.getByRole('link', { name: /設定/ })).toHaveAttribute('href', '/settings');
   });

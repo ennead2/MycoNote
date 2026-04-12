@@ -223,6 +223,9 @@ export default function SettingsPage() {
               <p className="font-bold mb-1">{UI_TEXT.settings.importComplete}</p>
               <p>{UI_TEXT.settings.importRecords}: {importResult.recordsAdded}{UI_TEXT.settings.importAdded}（{importResult.recordsSkipped}{UI_TEXT.settings.importSkipped}）</p>
               <p>{UI_TEXT.settings.importChats}: {importResult.chatSessionsAdded}{UI_TEXT.settings.importAdded}（{importResult.chatSessionsSkipped}{UI_TEXT.settings.importSkipped}）</p>
+              {(importResult.bookmarksAdded > 0 || importResult.bookmarksSkipped > 0) && (
+                <p>{UI_TEXT.settings.importBookmarks}: {importResult.bookmarksAdded}{UI_TEXT.settings.importAdded}（{importResult.bookmarksSkipped}{UI_TEXT.settings.importSkipped}）</p>
+              )}
               {importResult.photosAdded > 0 && (
                 <p>{UI_TEXT.settings.importPhotos}: {importResult.photosAdded}{UI_TEXT.settings.importAdded}</p>
               )}

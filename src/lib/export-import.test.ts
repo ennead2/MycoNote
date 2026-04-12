@@ -39,6 +39,7 @@ describe('export-import', () => {
     await db.records.clear();
     await db.record_photos.clear();
     await db.chatSessions.clear();
+    await db.bookmarks.clear();
   });
 
   describe('buildExportData', () => {
@@ -170,6 +171,51 @@ describe('export-import', () => {
 
       const photos = await db.record_photos.where('record_id').equals(recordId).toArray();
       expect(photos).toHaveLength(1);
+    });
+
+    it('imports bookmarks from export data', async () => {
+      const data: ExportData = {
+        version: 1, exported_at: '', app_version: '',
+        records: [],
+        chatSessions: [],
+        bookmarks: [
+          { mushroom_id: 'matsutake', created_at: '2026-04-12T00:00:00Z' },
+          { mushroom_id: 'shiitake', created_at: '2026-04-12T01:00:00Z' },
+        ],
+      };
+
+      const result = await importData(data);
+      expect(result.bookmarksAdded).toBe(2);
+      expect(result.bookmarksSkipped).toBe(0);
+
+      const bookmarks = await db.bookmarks.toArray();
+      expect(bookmarks).toHaveLength(2);
+    });
+
+    it('skips duplicate bookmarks', async () => {
+      await db.bookmarks.add({ mushroom_id: 'matsutake', created_at: '2026-04-11T00:00:00Z' });
+      const data: ExportData = {
+        version: 1, exported_at: '', app_version: '',
+        records: [],
+        chatSessions: [],
+        bookmarks: [{ mushroom_id: 'matsutake', created_at: '2026-04-12T00:00:00Z' }],
+      };
+
+      const result = await importData(data);
+      expect(result.bookmarksAdded).toBe(0);
+      expect(result.bookmarksSkipped).toBe(1);
+    });
+
+    it('imports without bookmarks field (backward compat)', async () => {
+      const data: ExportData = {
+        version: 1, exported_at: '', app_version: '',
+        records: [],
+        chatSessions: [],
+      };
+
+      const result = await importData(data);
+      expect(result.bookmarksAdded).toBe(0);
+      expect(result.bookmarksSkipped).toBe(0);
     });
   });
 });

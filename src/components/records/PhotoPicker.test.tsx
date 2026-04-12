@@ -9,9 +9,10 @@ vi.mock('@/lib/photo', () => ({
 }));
 
 describe('PhotoPicker', () => {
-  it('renders add photo button', () => {
+  it('renders camera and file buttons', () => {
     render(<PhotoPicker photos={[]} onPhotosChange={() => {}} />);
-    expect(screen.getByText('写真を追加')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /撮影/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /ファイル/ })).toBeInTheDocument();
   });
 
   it('displays photo count when photos exist', () => {
@@ -20,13 +21,26 @@ describe('PhotoPicker', () => {
     expect(screen.getByText('2枚')).toBeInTheDocument();
   });
 
+  it('camera input has capture attribute, file input does not', () => {
+    render(<PhotoPicker photos={[]} onPhotosChange={() => {}} />);
+    const inputs = document.querySelectorAll('input[type="file"]');
+    expect(inputs).toHaveLength(2);
+    // One of the two inputs should have capture, the other should not
+    const hasCapture = Array.from(inputs).some((el) => el.hasAttribute('capture'));
+    const hasNoCapture = Array.from(inputs).some((el) => !el.hasAttribute('capture'));
+    expect(hasCapture).toBe(true);
+    expect(hasNoCapture).toBe(true);
+  });
+
   it('calls onPhotosChange when file is selected', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
     render(<PhotoPicker photos={[]} onPhotosChange={onChange} />);
     const file = new File(['test'], 'photo.jpg', { type: 'image/jpeg' });
-    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
-    await user.upload(input, file);
+    // Use the file-picker input (non-capture one)
+    const inputs = Array.from(document.querySelectorAll('input[type="file"]')) as HTMLInputElement[];
+    const fileInput = inputs.find((el) => !el.hasAttribute('capture'))!;
+    await user.upload(fileInput, file);
     expect(onChange).toHaveBeenCalled();
   });
 });

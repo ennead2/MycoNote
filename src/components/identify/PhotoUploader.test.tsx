@@ -5,9 +5,10 @@ import userEvent from '@testing-library/user-event';
 import { PhotoUploader } from './PhotoUploader';
 
 describe('PhotoUploader', () => {
-  it('renders add photo button', () => {
+  it('renders camera and file buttons', () => {
     render(<PhotoUploader images={[]} onImagesChange={vi.fn()} />);
-    expect(screen.getByRole('button', { name: /写真を追加/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /撮影/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /ファイル/ })).toBeInTheDocument();
   });
 
   it('shows hint text', () => {

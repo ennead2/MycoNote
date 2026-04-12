@@ -11,6 +11,16 @@ vi.mock('@/contexts/RecordsContext', () => ({
   }),
 }));
 
+vi.mock('@/contexts/BookmarksContext', () => ({
+  useBookmarks: () => ({
+    bookmarks: [],
+    isLoading: false,
+    isBookmarked: () => false,
+    toggleBookmark: vi.fn(),
+    reload: vi.fn(),
+  }),
+}));
+
 const mockMushroom: Mushroom = {
   id: 'mock-toxic-kinoko',
   names: {

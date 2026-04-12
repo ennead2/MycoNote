@@ -2,6 +2,7 @@
 'use client';
 
 import { useRef } from 'react';
+import { Camera, ImagePlus, X } from 'lucide-react';
 import { compressImage } from '@/lib/photo';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { Base64Image } from '@/types/chat';
@@ -24,9 +25,8 @@ async function blobToBase64Image(blob: Blob): Promise<Base64Image> {
 }
 
 export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const handleClick = () => inputRef.current?.click();
+  const cameraInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
@@ -48,25 +48,42 @@ export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2 flex-wrap">
         <button
           type="button"
-          onClick={handleClick}
-          className="inline-flex items-center gap-2 rounded-lg border-2 border-dashed border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-border transition-colors hover:border-moss-light hover:bg-washi-cream"
+          onClick={() => cameraInputRef.current?.click()}
+          aria-label={`${UI_TEXT.identify.takePhoto} - ${UI_TEXT.identify.addPhoto}`}
+          className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-washi-dim bg-soil-surface px-3.5 py-2 text-sm font-medium text-washi-muted transition-colors hover:bg-soil-elevated hover:border-moss-light hover:text-washi-cream"
         >
-          <span className="text-lg">+</span>
-          {UI_TEXT.identify.addPhoto}
+          <Camera size={16} aria-hidden="true" />
+          {UI_TEXT.identify.takePhoto}
+        </button>
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          aria-label={`${UI_TEXT.identify.chooseFile} - ${UI_TEXT.identify.addPhoto}`}
+          className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-washi-dim bg-soil-surface px-3.5 py-2 text-sm font-medium text-washi-muted transition-colors hover:bg-soil-elevated hover:border-moss-light hover:text-washi-cream"
+        >
+          <ImagePlus size={16} aria-hidden="true" />
+          {UI_TEXT.identify.chooseFile}
         </button>
         {images.length > 0 && (
-          <span className="text-sm text-gray-500">{images.length}枚</span>
+          <span className="text-sm text-moss-light mono-data">{images.length}枚</span>
         )}
       </div>
 
       <input
-        ref={inputRef}
+        ref={cameraInputRef}
         type="file"
         accept="image/*"
         capture="environment"
+        className="hidden"
+        onChange={handleFileChange}
+      />
+      <input
+        ref={fileInputRef}
+        type="file"
+        accept="image/*"
         multiple
         className="hidden"
         onChange={handleFileChange}
@@ -80,22 +97,22 @@ export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
               <img
                 src={`data:${img.mediaType};base64,${img.data}`}
                 alt={`写真 ${index + 1}`}
-                className="w-[72px] h-[72px] object-cover rounded-lg border border-gray-200"
+                className="w-[72px] h-[72px] object-cover rounded-lg border border-border"
               />
               <button
                 type="button"
                 onClick={() => handleRemove(index)}
-                className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center hover:bg-red-600"
+                className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-safety-deadly text-washi-cream flex items-center justify-center hover:bg-safety-toxic transition-colors"
                 aria-label={`写真 ${index + 1} を削除`}
               >
-                ×
+                <X size={12} aria-hidden="true" />
               </button>
             </div>
           ))}
         </div>
       )}
 
-      <p className="text-xs text-gray-400">{UI_TEXT.identify.photoHint}</p>
+      <p className="text-xs text-washi-dim">{UI_TEXT.identify.photoHint}</p>
     </div>
   );
 }

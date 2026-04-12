@@ -1,5 +1,6 @@
 import type { MushroomRecord } from './record';
 import type { ChatSession } from './chat';
+import type { Bookmark } from './bookmark';
 
 export interface ExportPhoto {
   record_id: string;
@@ -15,6 +16,8 @@ export interface ExportData {
   records: MushroomRecord[];
   photos?: ExportPhoto[];
   chatSessions: ChatSession[];
+  /** Added in v1.1: optional, backward-compatible with older exports. */
+  bookmarks?: Bookmark[];
 }
 
 export interface ImportResult {
@@ -23,4 +26,6 @@ export interface ImportResult {
   chatSessionsAdded: number;
   chatSessionsSkipped: number;
   photosAdded: number;
+  bookmarksAdded: number;
+  bookmarksSkipped: number;
 }

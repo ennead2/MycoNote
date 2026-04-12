@@ -1,5 +1,5 @@
 // src/lib/export-import.ts
-import { db, getAllRecords, addRecord, addPhoto } from './db';
+import { db, getAllRecords, addRecord, addPhoto, getAllBookmarks } from './db';
 import { getAllChatSessions, addChatSession } from './db-chat';
 import type { ExportData, ExportPhoto, ImportResult } from '@/types/export';
 import type { MushroomRecord } from '@/types/record';
@@ -47,6 +47,7 @@ export async function buildExportData(
 ): Promise<ExportData> {
   const records = await getAllRecords();
   const chatSessions = await getAllChatSessions();
+  const bookmarks = await getAllBookmarks();
 
   const data: ExportData = {
     version: CURRENT_VERSION,
@@ -54,6 +55,7 @@ export async function buildExportData(
     app_version: APP_VERSION,
     records,
     chatSessions,
+    bookmarks,
   };
 
   if (includePhotos) {
@@ -144,6 +146,8 @@ export async function importData(data: ExportData): Promise<ImportResult> {
     chatSessionsAdded: 0,
     chatSessionsSkipped: 0,
     photosAdded: 0,
+    bookmarksAdded: 0,
+    bookmarksSkipped: 0,
   };
 
   // Import records
@@ -165,6 +169,19 @@ export async function importData(data: ExportData): Promise<ImportResult> {
     } else {
       await addChatSession(session);
       result.chatSessionsAdded++;
+    }
+  }
+
+  // Import bookmarks (optional field — older exports may omit)
+  if (data.bookmarks) {
+    for (const bookmark of data.bookmarks) {
+      const existing = await db.bookmarks.get(bookmark.mushroom_id);
+      if (existing) {
+        result.bookmarksSkipped++;
+      } else {
+        await db.bookmarks.add(bookmark);
+        result.bookmarksAdded++;
+      }
     }
   }
 

@@ -3,6 +3,7 @@ import { Noto_Sans_JP, Noto_Serif_JP, Inter, JetBrains_Mono } from "next/font/go
 import "./globals.css";
 import { AppProvider } from "@/contexts/AppContext";
 import { RecordsProvider } from "@/contexts/RecordsContext";
+import { BookmarksProvider } from "@/contexts/BookmarksContext";
 import OfflineBanner from "@/components/layout/OfflineBanner";
 import BottomNav from "@/components/layout/BottomNav";
 
@@ -72,11 +73,13 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <AppProvider>
           <RecordsProvider>
-            <OfflineBanner />
-            <main className="max-w-lg mx-auto w-full flex-1 pb-16">
-              {children}
-            </main>
-            <BottomNav />
+            <BookmarksProvider>
+              <OfflineBanner />
+              <main className="max-w-lg mx-auto w-full flex-1 pb-16">
+                {children}
+              </main>
+              <BottomNav />
+            </BookmarksProvider>
           </RecordsProvider>
         </AppProvider>
       </body>

@@ -40,9 +40,21 @@ export interface FilterOptions {
   query?: string;
   toxicity?: Toxicity[];
   season?: number;
-  habitat?: string;
   hasRecord?: boolean;
+  // Multi-select taxonomy filters
+  family?: string[];
+  genus?: string[];
+  // Multi-select string-array filters (match if mushroom contains any of the selected values)
+  habitat?: string[];
+  regions?: string[];
+  treeAssociation?: string[];
+  // Multi-select trait filter
+  capColor?: CapColor[];
+  // Restrict to bookmarked ids (provided by caller via context)
+  bookmarkedIds?: string[];
 }
+
+export type SortOrder = 'safety' | 'kana' | 'taxonomy';
 
 // --- Phase 4: 簡易識別 特徴型 ---
 

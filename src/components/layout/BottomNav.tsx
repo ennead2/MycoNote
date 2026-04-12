@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { House, BookOpen, Search, FileText, Settings } from 'lucide-react';
+import { House, BookOpen, Search, Map, FileText, Settings } from 'lucide-react';
 import { UI_TEXT } from '@/constants/ui-text';
 
 const NAV_ITEMS = [
   { href: '/', label: UI_TEXT.nav.home, Icon: House },
   { href: '/zukan', label: UI_TEXT.nav.zukan, Icon: BookOpen },
   { href: '/identify', label: UI_TEXT.nav.identify, Icon: Search },
+  { href: '/plan', label: UI_TEXT.nav.plan, Icon: Map },
   { href: '/records', label: UI_TEXT.nav.records, Icon: FileText },
   { href: '/settings', label: UI_TEXT.nav.settings, Icon: Settings },
 ] as const;

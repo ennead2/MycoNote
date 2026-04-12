@@ -239,3 +239,59 @@
 - [x] 全183テスト通過
 - [x] 本番ビルド成功 (292 静的ページ)
 - [x] 色値は視覚的に完全に同一（同 Hex へのリマップ）なので Phase 9 QA 結果を維持
+
+### 9-11: favicon / PWA アイコン配線 — 完了 (2026-04-12)
+- [x] src/app/favicon.ico の古いデフォルト削除
+- [x] Next.js 16 規約で src/app/{icon,apple-icon}.png 新設（RGBA 変換）
+- [x] public/favicon.ico を正しい 32x32 RGBA ICO で再構築
+- [x] layout.tsx に applicationName / appleWebApp / viewport.themeColor 追加
+- [x] title / description を Phase 9 ブランドトーンに調整
+
+## Phase 10: 実利用フィードバック対応 — 完了 (2026-04-12)
+
+ユーザー実機確認で挙がった 7 項目を対応。決定事項: ①6タブ化 / ②一覧・栞・季節の3タブ / ③デフォルト五十音・3ソート切替 / ④フィルタ全項目
+
+### 10-A: Quick fixes
+- [x] **A1**: BottomNav に計画タブを復元（6 タブ化: ホーム/図鑑/識別/**計画**/記録/設定）
+- [x] **A2**: 図鑑リストに `ScrollToTop` floating button (`src/components/ui/ScrollToTop.tsx`)
+
+### 10-B: 写真アップローダ改善
+- [x] **B1**: 「撮影」と「ファイル」の2ボタン分離
+  - PhotoPicker (記録) / PhotoUploader (識別) 両方
+  - camera input (`capture="environment"`) と file input (`multiple`) を分離
+- [x] **B2**: PhotoUploader の Phase 9 パレット違反修正
+  - `bg-white`, `border-gray-300`, 絵文字 `+` → `bg-soil-surface`, `border-washi-dim`, lucide `Camera` / `ImagePlus` / `X`
+
+### 10-C: 検索状態の永続化
+- [x] **C1**: `useSearchParams` + `router.replace` で URL クエリ同期
+  - `?tab=list|bookmarks|calendar&q=...&sort=safety|kana|taxonomy&safety=...&family=...&genus=...&habitat=...&regions=...&tree=...&cap=...`
+  - `Suspense` boundary で CSR bailout 回避、static prerender 成功
+- [x] 戻るボタンで URL 状態が復元される（ブラウザ履歴経由）
+
+### 10-D: ソート・フィルタ充実
+- [x] **D1**: SearchFilter をアコーディオン展開 UI に改修 (`SlidersHorizontal` icon、active 件数バッジ、全クリアボタン)
+- [x] **D2**: フィルタ全項目実装
+  - 傘の色（color chip 付き）、生息地、関連樹種、分布地域、科、属（italic）
+  - 検索入力に leading search icon + 末尾クリア X
+- [x] **D3**: `SortToggle` で 3 ソート: 食用分類 / 五十音 / 分類学
+  - `sortMushrooms()` / `kanaCompare()` / `TOXICITY_SORT_ORDER` 追加
+
+### 10-E: 表示順のデフォルト
+- [x] デフォルト: **五十音** (`DEFAULT_SORT = 'kana'`)
+- [x] 登録順を廃止、3 オプション切替可能
+
+### 10-F: ブックマーク機能（栞）
+- [x] **F1**: IndexedDB schema v3 + `bookmarks` テーブル (`src/lib/db.ts`)
+- [x] `src/types/bookmark.ts` + `src/contexts/BookmarksContext.tsx`
+- [x] **F2**: MushroomDetail 右上にトグルボタン（lucide `Bookmark` ↔ `BookmarkCheck`）
+- [x] **F3**: 図鑑ページに **一覧 / 栞 / 季節** の 3 タブ
+  - 栞タブで bookmarkedMushrooms を MushroomCard グリッド表示
+  - 空状態: `EmptyState` コンポーネントで `bookmarksEmpty` メッセージ
+- [x] **F4**: export/import に `bookmarks` フィールド追加（optional、後方互換）
+  - Settings 画面に栞カウント表示
+  - 3 テスト追加（import bookmarks / skip duplicates / backward compat）
+
+### 検証
+- [x] 全 187 テスト通過（bookmarks 関連 3 追加）
+- [x] 本番ビルド成功 (293 静的ページ)
+- [x] `/zukan` が `Suspense` ラップで CSR bailout 回避

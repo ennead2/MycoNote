@@ -1,11 +1,13 @@
 import Dexie, { type Table } from 'dexie';
 import { MushroomRecord, RecordPhoto } from '../types/record';
 import { ChatSession } from '../types/chat';
+import { Bookmark } from '../types/bookmark';
 
 class MycoNoteDB extends Dexie {
   records!: Table<MushroomRecord, string>;
   record_photos!: Table<RecordPhoto, string>;
   chatSessions!: Table<ChatSession, string>;
+  bookmarks!: Table<Bookmark, string>;
 
   constructor() {
     super('MycoNoteDB');
@@ -18,10 +20,35 @@ class MycoNoteDB extends Dexie {
       record_photos: 'id, record_id',
       chatSessions: 'id, created_at, updated_at',
     });
+    this.version(3).stores({
+      records: 'id, mushroom_id, observed_at',
+      record_photos: 'id, record_id',
+      chatSessions: 'id, created_at, updated_at',
+      bookmarks: 'mushroom_id, created_at',
+    });
   }
 }
 
 export const db = new MycoNoteDB();
+
+// ===== Bookmarks =====
+
+export async function getAllBookmarks(): Promise<Bookmark[]> {
+  return db.bookmarks.orderBy('created_at').reverse().toArray();
+}
+
+export async function addBookmark(mushroomId: string): Promise<Bookmark> {
+  const bookmark: Bookmark = {
+    mushroom_id: mushroomId,
+    created_at: new Date().toISOString(),
+  };
+  await db.bookmarks.put(bookmark);
+  return bookmark;
+}
+
+export async function removeBookmark(mushroomId: string): Promise<void> {
+  await db.bookmarks.delete(mushroomId);
+}
 
 export async function addRecord(record: MushroomRecord): Promise<void> {
   await db.records.add(record);

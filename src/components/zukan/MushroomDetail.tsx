@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Bookmark, BookmarkCheck } from 'lucide-react';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
 import { SeasonBar } from '@/components/zukan/SeasonBar';
 import { ChipTag } from '@/components/ui/ChipTag';
@@ -10,6 +11,7 @@ import { getMushroomById } from '@/data/mushrooms';
 import { UI_TEXT } from '@/constants/ui-text';
 import { renderColorText } from '@/lib/color-text';
 import { useRecords } from '@/contexts/RecordsContext';
+import { useBookmarks } from '@/contexts/BookmarksContext';
 import type { Mushroom } from '@/types/mushroom';
 
 interface MushroomDetailProps {
@@ -98,11 +100,14 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         />
       )}
 
-      {/* 2. Name + ToxicityBadge + scientific name + aliases */}
+      {/* 2. Name + ToxicityBadge + Bookmark + scientific name + aliases */}
       <div>
-        <div className="flex items-center gap-2 flex-wrap mb-1">
-          <h1 className="text-2xl font-bold text-washi-cream">{mushroom.names.ja}</h1>
-          <ToxicityBadge toxicity={mushroom.toxicity} />
+        <div className="flex items-start gap-2 flex-wrap mb-1">
+          <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
+            <h1 className="serif-display text-2xl font-bold text-washi-cream">{mushroom.names.ja}</h1>
+            <ToxicityBadge toxicity={mushroom.toxicity} />
+          </div>
+          <BookmarkToggle mushroomId={mushroom.id} />
         </div>
         <p className="text-sm text-moss-light italic">{mushroom.names.scientific}</p>
         {mushroom.names.aliases && mushroom.names.aliases.length > 0 && (
@@ -221,6 +226,42 @@ function MyRecordsSection({ mushroomId }: { mushroomId: string }) {
   if (!mounted) return null;
 
   return <MyRecordsList mushroomId={mushroomId} />;
+}
+
+/**
+ * Bookmark toggle for the detail page. Renders nothing until hydrated to avoid
+ * SSR/CSR mismatch (bookmark state lives in IndexedDB, client-only).
+ */
+function BookmarkToggle({ mushroomId }: { mushroomId: string }) {
+  const [mounted, setMounted] = useState(false);
+  const { isBookmarked, toggleBookmark } = useBookmarks();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div aria-hidden="true" className="w-9 h-9" />;
+  }
+
+  const active = isBookmarked(mushroomId);
+  const Icon = active ? BookmarkCheck : Bookmark;
+
+  return (
+    <button
+      type="button"
+      onClick={() => void toggleBookmark(mushroomId)}
+      aria-label={active ? UI_TEXT.zukan.bookmarkRemove : UI_TEXT.zukan.bookmarkAdd}
+      aria-pressed={active}
+      className={`shrink-0 w-9 h-9 flex items-center justify-center rounded-full transition-colors border ${
+        active
+          ? 'bg-moss-primary text-washi-cream border-moss-light'
+          : 'bg-soil-surface text-washi-muted border-border hover:border-moss-light hover:text-moss-light'
+      }`}
+    >
+      <Icon size={18} strokeWidth={active ? 2.5 : 2} aria-hidden="true" />
+    </button>
+  );
 }
 
 function Lightbox({
