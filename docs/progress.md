@@ -318,3 +318,11 @@
 - [x] 候補一致時は ✓ マーク + `border-moss-light` で「登録済みの種」表示
 - [x] 外タップ/Escape でドロップダウン閉じ、選択後は input.blur() でモバイルキーボード自動収納
 - [x] 編集時は `getMushroomById` で初期名解決、送信時は DB 正規名を保存（将来の rename 耐性）
+
+### 10-J: マップカスタムピン (Gemini 生成) — 完了 (2026-04-12)
+- [x] `scripts/gemini/generate_map_pin.py` — 4 バリアント生成（balloon / medallion / woodcut / kamon）+ 比較 HTML
+- [x] `scripts/gemini/export_map_pin.py` — 白背景 alpha ramp 抜き + content bbox トリム + @1x/@2x PNG 出力
+- [x] `pin_a_balloon_mushroom` 採用（deep moss balloon + washi cream mushroom）
+- [x] `public/icons/map-pin.png` (48×48) + `map-pin@2x.png` (96×96)
+- [x] `RecordMapInner.tsx`: `L.icon` + `iconRetinaUrl` で DPI 自動切替、`iconAnchor=[24,40]`（tip を座標一致）
+- [x] 以前 unpkg から取得していた Leaflet デフォルトマーカーの外部依存を排除（オフライン時も動く）
