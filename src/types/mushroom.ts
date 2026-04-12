@@ -11,7 +11,10 @@ export interface Mushroom {
   names: {
     ja: string;
     scientific: string;
+    /** 検索ヒットさせたい別称・旧和名・旧漢字表記など */
     aliases?: string[];
+    /** GBIF で確認された旧学名（taxonomic synonyms）— 検索でヒット、詳細画面に併記 */
+    scientific_synonyms?: string[];
   };
   taxonomy?: MushroomTaxonomy;
   toxicity: Toxicity;

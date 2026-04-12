@@ -110,6 +110,12 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
           <BookmarkToggle mushroomId={mushroom.id} />
         </div>
         <p className="text-sm text-moss-light italic">{mushroom.names.scientific}</p>
+        {mushroom.names.scientific_synonyms && mushroom.names.scientific_synonyms.length > 0 && (
+          <p className="text-xs text-washi-dim italic mt-0.5">
+            <span className="mono-data not-italic text-[10px] uppercase tracking-wider mr-1">syn.</span>
+            {mushroom.names.scientific_synonyms.join(', ')}
+          </p>
+        )}
         {mushroom.names.aliases && mushroom.names.aliases.length > 0 && (
           <p className="text-xs text-washi-dim mt-1">{mushroom.names.aliases.join('、')}</p>
         )}

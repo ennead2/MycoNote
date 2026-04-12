@@ -41,7 +41,8 @@ export function searchMushrooms(filters: FilterOptions): Mushroom[] {
       (m) =>
         matchesQuery(m.names.ja, q) ||
         matchesQuery(m.names.scientific, q) ||
-        m.names.aliases?.some((a) => matchesQuery(a, q))
+        m.names.aliases?.some((a) => matchesQuery(a, q)) ||
+        m.names.scientific_synonyms?.some((s) => matchesQuery(s, q))
     );
   }
 

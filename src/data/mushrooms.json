@@ -880,11 +880,16 @@
     "id": "tsukiyo-take",
     "names": {
       "ja": "ツキヨタケ",
-      "scientific": "Omphalotus japonicus",
+      "scientific": "Omphalotus guepiniiformis",
       "aliases": [
         "月夜茸",
         "つきよたけ",
         "ヒラタケモドキ"
+      ],
+      "scientific_synonyms": [
+        "Omphalotus japonicus",
+        "Acanthocystis harmandii",
+        "Agaricus guepiniiformis"
       ]
     },
     "toxicity": "toxic",
@@ -1728,10 +1733,15 @@
     "id": "aragekikurage",
     "names": {
       "ja": "アラゲキクラゲ",
-      "scientific": "Auricularia polytricha",
+      "scientific": "Auricularia nigricans",
       "aliases": [
         "荒毛木耳",
         "あらげきくらげ"
+      ],
+      "scientific_synonyms": [
+        "Auricularia polytricha",
+        "Auricula nigra",
+        "Auricula polytricha"
       ]
     },
     "toxicity": "edible",
@@ -3042,11 +3052,14 @@
     "id": "tamogitake",
     "names": {
       "ja": "タモギタケ",
-      "scientific": "Pleurotus cornucopiae var. citrinopileatus",
+      "scientific": "Pleurotus citrinopileatus",
       "aliases": [
         "楡木茸",
         "たもぎたけ",
         "ニレタケ"
+      ],
+      "scientific_synonyms": [
+        "Pleurotus cornucopiae var. citrinopileatus"
       ]
     },
     "toxicity": "edible",
@@ -3108,7 +3121,12 @@
     },
     "source_url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%A2%E3%82%AE%E3%82%BF%E3%82%B1",
     "cooking_preservation": "出汁がよく出るため、味噌汁や吸い物に最適。煮物・炒め物・天ぷらにも向く。鮮やかな黄色は加熱しても色味が残るため、料理の彩りとしても活用できる。保存は冷蔵で2〜3日。冷凍保存が可能で、凍ったまま調理に使える。乾燥させると保存性が高まり、戻し汁にも旨味が出る。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Agaricales",
+      "family": "Pleurotaceae",
+      "genus": "Pleurotus"
+    }
   },
   {
     "id": "numerisugi-take",
@@ -4048,10 +4066,15 @@
     "id": "akamomitake",
     "names": {
       "ja": "アカモミタケ",
-      "scientific": "Lactarius laeticolor",
+      "scientific": "Lactarius deliciosus",
       "aliases": [
         "赤樅茸",
         "あかもみたけ"
+      ],
+      "scientific_synonyms": [
+        "Lactarius laeticolor",
+        "Agaricus deliciosus",
+        "Amanita deliciosa"
       ]
     },
     "toxicity": "edible",
@@ -4115,7 +4138,12 @@
     },
     "source_url": "https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus_(il%C2%B7lustraci%C3%B3_cient%C3%ADfica).png",
     "cooking_preservation": "歯切れのよい食感が持ち味で、バター炒めやソテーに最適。煮物・味噌汁・鍋物にも向く。天ぷらにしても美味。加熱しても鮮やかなオレンジ色が残り、料理の彩りにもなる。保存は冷蔵で2〜3日。冷凍保存や塩漬けにも適する。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Russulales",
+      "family": "Russulaceae",
+      "genus": "Lactarius"
+    }
   },
   {
     "id": "anzutake",
@@ -5087,11 +5115,15 @@
     "id": "dokusasako",
     "names": {
       "ja": "ドクササコ",
-      "scientific": "Clitocybe acromelalga",
+      "scientific": "Paralepistopsis acromelalga",
       "aliases": [
         "毒笹子",
         "どくささこ",
         "ヤケドキン"
+      ],
+      "scientific_synonyms": [
+        "Clitocybe acromelalga",
+        "Neoclitocybe acromelalga"
       ]
     },
     "toxicity": "toxic",
@@ -5155,16 +5187,25 @@
     },
     "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%B5%E3%82%B5%E3%82%B3",
     "poisoning_first_aid": "アクロメリン酸A・Bおよびクリチジンを含む。摂取後数日〜1週間で手足の先端に焼けるような激痛・発赤・腫脹が生じる。症状は1か月以上持続する場合がある。鎮痛剤が効きにくく、冷水に浸すことでしか痛みを軽減できない。後遺症が残ることもある。症状が出たら直ちに医療機関を受診する。確立された治療法がなく対症療法が中心となる。非常に危険な毒キノコであり、地味な外観のため誤食に特に注意が必要。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Agaricales",
+      "family": "Tricholomataceae",
+      "genus": "Paralepistopsis"
+    }
   },
   {
     "id": "dokuyamadori",
     "names": {
       "ja": "ドクヤマドリ",
-      "scientific": "Boletus venenatus",
+      "scientific": "Sutorius venenatus",
       "aliases": [
         "毒山鳥",
         "どくやまどり"
+      ],
+      "scientific_synonyms": [
+        "Boletus venenatus",
+        "Neoboletus venenatus"
       ]
     },
     "toxicity": "toxic",
@@ -5228,7 +5269,12 @@
     },
     "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA",
     "poisoning_first_aid": "強力な消化器系の毒を含む。摂取後1〜3時間で激しい嘔吐・下痢・腹痛が起こる。症状が出た場合は速やかに医療機関を受診し、脱水予防のため水分補給を行う。食べ残しを保存して持参する。ヤマドリタケに似ているが、肉を切断すると速やかに青変する点が最大の識別点。青変が激しいイグチ類は食べないことが安全の基本である。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Boletales",
+      "family": "Boletaceae",
+      "genus": "Sutorius"
+    }
   },
   {
     "id": "shiroonitake",
@@ -7606,7 +7652,12 @@
     },
     "source_url": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
     "cooking_preservation": "十分な加熱が必須。柔らかい食感で味にクセがなく、汁物や煮物に向く。ただし猛毒種との混同リスクが極めて高いため、確実な同定ができない場合は絶対に採取しないこと。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Agaricales",
+      "family": "Amanitaceae",
+      "genus": "Amanita"
+    }
   },
   {
     "id": "chanametsumuratake",
@@ -8496,10 +8547,15 @@
     "id": "kurohatsu",
     "names": {
       "ja": "クロハツ",
-      "scientific": "Russula nigricans",
+      "scientific": "Russula adusta",
       "aliases": [
         "黒初",
         "くろはつ"
+      ],
+      "scientific_synonyms": [
+        "Russula nigricans",
+        "Agaricus adustus",
+        "Agaricus elephantinus"
       ]
     },
     "toxicity": "inedible",
@@ -9858,11 +9914,16 @@
     "id": "kurifusentake",
     "names": {
       "ja": "クリフウセンタケ",
-      "scientific": "Cortinarius tenuipes",
+      "scientific": "Cortinarius claricolor",
       "aliases": [
         "栗風船茸",
         "くりふうせんたけ",
         "ニセアブラシメジ"
+      ],
+      "scientific_synonyms": [
+        "Cortinarius tenuipes",
+        "Cortinarius pertinens",
+        "Cortinarius subclaricolor"
       ]
     },
     "toxicity": "edible",
@@ -9922,7 +9983,12 @@
       ]
     },
     "cooking_preservation": "ぬめりのある食感を活かして、汁物、鍋物、味噌汁の具に特に適する。クセがなく穏やかな味わいで、煮物、炒め物、和え物にも利用できる。東北地方ではキノコ汁やキノコ鍋の定番食材として親しまれている。保存は冷蔵で2〜3日程度。さっと茹でてから冷凍保存が可能で、冷凍後は1ヶ月程度保存できる。塩蔵保存にも向く。",
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Agaricales",
+      "family": "Cortinariaceae",
+      "genus": "Cortinarius"
+    }
   },
   {
     "id": "shouro",
@@ -10202,11 +10268,16 @@
     "id": "numerisugitake-modoki",
     "names": {
       "ja": "ヌメリスギタケモドキ",
-      "scientific": "Pholiota cerifera",
+      "scientific": "Pholiota aurivella",
       "aliases": [
         "滑杉茸擬",
         "ぬめりすぎたけもどき",
         "Pholiota adiposa"
+      ],
+      "scientific_synonyms": [
+        "Pholiota cerifera",
+        "Agaricus aurivellus",
+        "Agaricus ceriferus"
       ]
     },
     "toxicity": "edible",
@@ -10389,13 +10460,18 @@
     "id": "shimokoshi",
     "names": {
       "ja": "シモコシ",
-      "scientific": "Tricholoma auratum",
+      "scientific": "Tricholoma equestre",
       "aliases": [
         "霜越",
         "しもこし",
         "キンタケ",
         "Tricholoma auratum",
         "Tricholoma equestre"
+      ],
+      "scientific_synonyms": [
+        "Tricholoma auratum",
+        "Agaricus auratus",
+        "Agaricus aureus"
       ]
     },
     "toxicity": "edible",
@@ -10577,10 +10653,15 @@
     "id": "ningyoutake",
     "names": {
       "ja": "ニンギョウタケ",
-      "scientific": "Albatrellus yasudae",
+      "scientific": "Neoalbatrellus yasudae",
       "aliases": [
         "人形茸",
         "にんぎょうたけ"
+      ],
+      "scientific_synonyms": [
+        "Albatrellus yasudae",
+        "Albatrellus yasudai",
+        "Polyporus yasudae"
       ]
     },
     "toxicity": "edible",
@@ -11218,10 +11299,13 @@
     "id": "akahatsu",
     "names": {
       "ja": "アカハツ",
-      "scientific": "Lactarius akahatsu",
+      "scientific": "Lactarius hatsudake",
       "aliases": [
         "赤初",
         "あかはつ"
+      ],
+      "scientific_synonyms": [
+        "Lactarius akahatsu"
       ]
     },
     "toxicity": "edible",
@@ -11489,11 +11573,16 @@
     "id": "koganetake",
     "names": {
       "ja": "コガネタケ",
-      "scientific": "Cystoderma aureum",
+      "scientific": "Phaeolepiota aurea",
       "aliases": [
         "黄金茸",
         "こがねたけ",
         "Phaeolepiota aurea"
+      ],
+      "scientific_synonyms": [
+        "Cystoderma aureum",
+        "Agaricus aureus",
+        "Agaricus spectabilis"
       ]
     },
     "toxicity": "edible",
@@ -12398,7 +12487,7 @@
     ],
     "taxonomy": {
       "order": "Polyporales",
-      "family": "",
+      "family": "Meruliaceae",
       "genus": "Mycoleptodonoides"
     },
     "cooking_preservation": "独特の甘い芳香を持ち、バター炒め、天ぷら、汁物、煮物、炊き込みご飯など幅広い料理に利用される。東北地方では味噌汁の具として特に人気が高い。軽くさっと茹でてからポン酢やマヨネーズで和えるのも美味。歯切れの良い食感が楽しめる。保存は冷蔵で3〜4日と比較的日持ちがよい。塩漬け、乾燥保存、冷凍保存いずれも可能。",
@@ -12596,11 +12685,16 @@
     "id": "numeritsubatake",
     "names": {
       "ja": "ヌメリツバタケ",
-      "scientific": "Oudemansiella mucida",
+      "scientific": "Mucidula mucida",
       "aliases": [
         "滑鍔茸",
         "ぬめりつばたけ",
         "Mucidula mucida"
+      ],
+      "scientific_synonyms": [
+        "Oudemansiella mucida",
+        "Agaricus mucidus",
+        "Agaricus olivaceofuscus"
       ]
     },
     "toxicity": "edible",
@@ -12778,9 +12872,14 @@
     "id": "shakashimeji",
     "names": {
       "ja": "シャカシメジ",
-      "scientific": "Lyophyllum fumosum",
+      "scientific": "Lyophyllum decastes",
       "aliases": [
         "釈迦占地"
+      ],
+      "scientific_synonyms": [
+        "Lyophyllum fumosum",
+        "Agaricus aggregatus",
+        "Agaricus cinerescens"
       ]
     },
     "toxicity": "edible",
@@ -14169,10 +14268,15 @@
     "id": "senbonshimeji",
     "names": {
       "ja": "センボンシメジ",
-      "scientific": "Lyophyllum fumosum",
+      "scientific": "Lyophyllum decastes",
       "aliases": [
         "千本占地",
         "Lyophyllum decastes"
+      ],
+      "scientific_synonyms": [
+        "Lyophyllum fumosum",
+        "Agaricus aggregatus",
+        "Agaricus cinerescens"
       ]
     },
     "toxicity": "edible",
@@ -14632,10 +14736,15 @@
     "id": "shaguma-amigasatake-modoki",
     "names": {
       "ja": "シャグマアミガサタケモドキ",
-      "scientific": "Maublancomyces gigas",
+      "scientific": "Gyromitra gigas",
       "aliases": [
         "しゃぐまあみがさたけもどき",
         "Gyromitra gigas"
+      ],
+      "scientific_synonyms": [
+        "Maublancomyces gigas",
+        "Discina gigas",
+        "Gyromitra curtipes"
       ]
     },
     "toxicity": "edible_caution",
@@ -15754,11 +15863,16 @@
     "id": "mureoofusentake",
     "names": {
       "ja": "ムレオオフウセンタケ",
-      "scientific": "Phlegmacium praestans",
+      "scientific": "Cortinarius praestans",
       "aliases": [
         "群大風船茸",
         "むれおおふうせんたけ",
         "Cortinarius praestans"
+      ],
+      "scientific_synonyms": [
+        "Phlegmacium praestans",
+        "Agaricus praestans",
+        "Cortinarius berkeleyi"
       ]
     },
     "toxicity": "edible_caution",
@@ -16776,10 +16890,15 @@
     "id": "hikageshibiretake",
     "names": {
       "ja": "ヒカゲシビレタケ",
-      "scientific": "Psilocybe argentipes",
+      "scientific": "Psilocybe subcaerulipes",
       "aliases": [
         "日陰痺茸",
         "ひかげしびれたけ"
+      ],
+      "scientific_synonyms": [
+        "Psilocybe argentipes",
+        "Psilocybe taiwanensis",
+        "Psilocybe thaizapoteca"
       ]
     },
     "toxicity": "toxic",
@@ -17256,11 +17375,16 @@
     "id": "nigakuritake-modoki",
     "names": {
       "ja": "ニガクリタケモドキ",
-      "scientific": "Hypholoma gracile",
+      "scientific": "Psathyrella corrugis",
       "aliases": [
         "苦栗茸擬",
         "にがくりたけもどき",
         "Hypholoma lateritium"
+      ],
+      "scientific_synonyms": [
+        "Hypholoma gracile",
+        "Agaricus caudatus",
+        "Agaricus corrugis"
       ]
     },
     "toxicity": "toxic",
@@ -18972,10 +19096,15 @@
     "id": "aikawatake",
     "names": {
       "ja": "アイカワタケ",
-      "scientific": "Laetiporus versisporus",
+      "scientific": "Laetiporus sulphureus",
       "aliases": [
         "藍皮茸",
         "あいかわたけ"
+      ],
+      "scientific_synonyms": [
+        "Laetiporus versisporus",
+        "Agarico-carnis flammula",
+        "Agarico-pulpa styptica"
       ]
     },
     "toxicity": "toxic",
@@ -20866,7 +20995,7 @@
     ],
     "taxonomy": {
       "order": "Agaricales",
-      "family": "",
+      "family": "Tricholomataceae",
       "genus": "Paralepista"
     },
     "poisoning_first_aid": "【毒素】消化器毒を含む（詳細な毒素成分は未同定）。【症状】摂取後1〜3時間で激しい嘔吐・水様性下痢・腹部の激痛が始まる。大量摂取や繰り返しの摂取により、重度の脱水・電解質異常・腸管粘膜の障害を引き起こす。急性腎不全・循環不全から致命的となることがある。特に小児・高齢者・腎機能低下者では少量でも重症化するリスクが高い。【発症時間】1〜3時間。【応急処置】直ちに医療機関を受診する。輸液による脱水補正と電解質管理が重要。腎機能のモニタリングが必要。経験の浅い採取者は漏斗形のキノコの採取を避けるべきである。",
@@ -21898,11 +22027,16 @@
     "id": "kaigaratake",
     "names": {
       "ja": "カイガラタケ",
-      "scientific": "Trametes betulina",
+      "scientific": "Lenzites betulinus",
       "aliases": [
         "貝殻茸",
         "かいがらたけ",
         "Lenzites betulina"
+      ],
+      "scientific_synonyms": [
+        "Trametes betulina",
+        "Agaricus betulinus",
+        "Agaricus coriaceus"
       ]
     },
     "toxicity": "inedible",
@@ -21986,10 +22120,15 @@
     "id": "uchiwatake",
     "names": {
       "ja": "ウチワタケ",
-      "scientific": "Microporus vernicipes",
+      "scientific": "Trametes vernicipes",
       "aliases": [
         "団扇茸",
         "うちわたけ"
+      ],
+      "scientific_synonyms": [
+        "Microporus vernicipes",
+        "Coriolus langbianensis",
+        "Coriolus vernicipes"
       ]
     },
     "toxicity": "inedible",
@@ -22187,7 +22326,12 @@
         "deadwood"
       ]
     },
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Polyporales",
+      "family": "Polyporaceae",
+      "genus": "Daedaleopsis"
+    }
   },
   {
     "id": "shihaitake",
@@ -23039,7 +23183,12 @@
         "conifer"
       ]
     },
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Agaricales",
+      "family": "Mycenaceae",
+      "genus": "Mycena"
+    }
   },
   {
     "id": "himeshirotamogitake",
@@ -23737,11 +23886,16 @@
     "id": "tanukinochabukuro",
     "names": {
       "ja": "タヌキノチャブクロ",
-      "scientific": "Lycoperdon pyriforme",
+      "scientific": "Apioperdon pyriforme",
       "aliases": [
         "狸の茶袋",
         "たぬきのちゃぶくろ",
         "Lycoperdon perlatum"
+      ],
+      "scientific_synonyms": [
+        "Lycoperdon pyriforme",
+        "Lycoperdon betulinum",
+        "Lycoperdon oviforme"
       ]
     },
     "toxicity": "inedible",
@@ -23819,10 +23973,14 @@
     "id": "egonokitake",
     "names": {
       "ja": "エゴノキタケ",
-      "scientific": "Daedaleopsis styracina",
+      "scientific": "Lenzites styracinus",
       "aliases": [
         "えごの木茸",
         "えごのきたけ"
+      ],
+      "scientific_synonyms": [
+        "Daedaleopsis styracina",
+        "Daedalea styracina"
       ]
     },
     "toxicity": "inedible",
@@ -23900,10 +24058,15 @@
     "id": "aragekawakitake",
     "names": {
       "ja": "アラゲカワキタケ",
-      "scientific": "Panus lecomtei",
+      "scientific": "Panus neostrigosus",
       "aliases": [
         "粗毛乾茸",
         "あらげかわきたけ"
+      ],
+      "scientific_synonyms": [
+        "Panus lecomtei",
+        "Agaricus crinitus",
+        "Agaricus hirtus"
       ]
     },
     "toxicity": "inedible",
@@ -24479,10 +24642,15 @@
     "id": "momijiurokotake",
     "names": {
       "ja": "モミジウロコタケ",
-      "scientific": "Hymenochaete yasudae",
+      "scientific": "Hydnoporia yasudae",
       "aliases": [
         "もみじうろこたけ",
         "紅葉鱗茸"
+      ],
+      "scientific_synonyms": [
+        "Hymenochaete yasudae",
+        "Hymenochaete yasudai",
+        "Hymenochaetopsis yasudae"
       ]
     },
     "toxicity": "inedible",
@@ -24526,7 +24694,12 @@
         "broadleaf"
       ]
     },
-    "verified": true
+    "verified": true,
+    "taxonomy": {
+      "order": "Hymenochaetales",
+      "family": "Hymenochaetaceae",
+      "genus": "Hydnoporia"
+    }
   },
   {
     "id": "tamakikurage",

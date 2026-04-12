@@ -140,3 +140,31 @@ describe('getMushroomsBySeason', () => {
     }
   });
 });
+
+// Phase 12: GBIF シノニム解決で追加された scientific_synonyms による検索
+describe('searchMushrooms — scientific_synonyms (Phase 12)', () => {
+  it('finds ツキヨタケ by 旧学名 "Omphalotus japonicus"', () => {
+    const results = searchMushrooms({ query: 'Omphalotus japonicus' });
+    expect(results.some((m) => m.id === 'tsukiyo-take')).toBe(true);
+  });
+
+  it('finds ツキヨタケ by 新学名 "Omphalotus guepiniiformis"', () => {
+    const results = searchMushrooms({ query: 'Omphalotus guepiniiformis' });
+    expect(results.some((m) => m.id === 'tsukiyo-take')).toBe(true);
+  });
+
+  it('finds タモギタケ by 旧学名 var. 表記', () => {
+    const results = searchMushrooms({ query: 'Pleurotus cornucopiae' });
+    expect(results.some((m) => m.id === 'tamogitake')).toBe(true);
+  });
+
+  it('finds ドクササコ by 旧学名 "Clitocybe acromelalga"', () => {
+    const results = searchMushrooms({ query: 'Clitocybe acromelalga' });
+    expect(results.some((m) => m.id === 'dokusasako')).toBe(true);
+  });
+
+  it('scientific_synonyms が付与された種の数が Phase 12 自動訂正と一致', () => {
+    const withSyn = mushrooms.filter((m) => m.names.scientific_synonyms && m.names.scientific_synonyms.length > 0);
+    expect(withSyn.length).toBe(27);
+  });
+});
