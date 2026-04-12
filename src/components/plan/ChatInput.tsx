@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import { ArrowUp } from 'lucide-react';
 import { UI_TEXT } from '@/constants/ui-text';
 
 interface ChatInputProps {
@@ -48,10 +49,10 @@ export function ChatInput({ onSend, disabled = false, disabledReason }: ChatInpu
         <button
           onClick={handleSend}
           disabled={disabled || !text.trim()}
-          className="w-8 h-8 rounded-full bg-washi-dim text-white flex items-center justify-center text-sm hover:bg-moss-light disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
+          className="w-9 h-9 rounded-full bg-moss-primary text-washi-cream flex items-center justify-center hover:bg-moss-light transition-colors disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
           aria-label="送信"
         >
-          ↑
+          <ArrowUp size={18} strokeWidth={2.5} aria-hidden="true" />
         </button>
       </div>
     </div>
