@@ -11,12 +11,14 @@ import { mushrooms, getMushroomById } from '@/data/mushrooms';
 import { getSeasonalMushrooms, getSafetyTip, dateToSeed } from '@/lib/season-utils';
 import type { Mushroom } from '@/types/mushroom';
 
-/** Card width (w-32 = 128px) + gap (gap-2 = 8px) — used to advance one slot per tick. */
-const CAROUSEL_CARD_STEP_PX = 128 + 8;
 /** Auto-advance interval. */
 const CAROUSEL_INTERVAL_MS = 5000;
 /** After a user interaction, pause auto-scroll for this long so we don't fight them. */
 const CAROUSEL_USER_PAUSE_MS = 10000;
+/** Gap between cards (Tailwind gap-2 = 8px). */
+const CAROUSEL_GAP_PX = 8;
+/** Number of cards visible at once — card width is computed so exactly this many fit. */
+const CAROUSEL_VISIBLE_CARDS = 3;
 
 const QUICK_ACTIONS = [
   { href: '/zukan', label: UI_TEXT.home.quickZukan, Icon: BookOpen, desc: `${mushrooms.length} ${UI_TEXT.home.speciesCount}` },
@@ -199,11 +201,15 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       const maxScroll = el.scrollWidth - el.clientWidth;
       if (maxScroll <= 0) return;
 
+      // Measure actual rendered card width so this works at any viewport.
+      const firstCard = el.firstElementChild as HTMLElement | null;
+      const step = firstCard ? firstCard.offsetWidth + CAROUSEL_GAP_PX : 136;
+
       // When near the end, loop back to start with a smooth scroll.
       if (el.scrollLeft >= maxScroll - 4) {
         el.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
-        el.scrollBy({ left: CAROUSEL_CARD_STEP_PX, behavior: 'smooth' });
+        el.scrollBy({ left: step, behavior: 'smooth' });
       }
     };
 
@@ -229,13 +235,25 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
   );
 }
 
+/**
+ * Width so exactly {CAROUSEL_VISIBLE_CARDS} cards fit inside the scroll container.
+ * Container usable width = min(viewport, max-w-lg 32rem) - 2*px-3 (24px).
+ * With (N-1) gaps of {CAROUSEL_GAP_PX}px between cards:
+ *   cardWidth = (containerWidth - (N-1)*gap) / N
+ * Collapses to calc((min(100vw, 32rem) - 24px - (N-1)*gap) / N).
+ */
+const SEASONAL_CARD_WIDTH_CSS = `calc((min(100vw, 32rem) - 24px - ${
+  (CAROUSEL_VISIBLE_CARDS - 1) * CAROUSEL_GAP_PX
+}px) / ${CAROUSEL_VISIBLE_CARDS})`;
+
 function SeasonalCard({ mushroom }: { mushroom: Mushroom }) {
   const src = pickImageSrc(mushroom);
 
   return (
     <Link
       href={`/zukan/${mushroom.id}`}
-      className="group shrink-0 w-32 snap-start bg-soil-surface border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-moss-light/40 hover:-translate-y-0.5"
+      style={{ width: SEASONAL_CARD_WIDTH_CSS }}
+      className="group shrink-0 snap-start bg-soil-surface border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-moss-light/40 hover:-translate-y-0.5"
     >
       <div className="relative aspect-square bg-soil-elevated">
         {src ? (
@@ -243,7 +261,7 @@ function SeasonalCard({ mushroom }: { mushroom: Mushroom }) {
             src={src}
             alt={mushroom.names.ja}
             fill
-            sizes="128px"
+            sizes="(max-width: 512px) 33vw, 160px"
             className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
             unoptimized
           />
