@@ -34,3 +34,7 @@ tsconfig.tsbuildinfo
 # Screenshots (dev only)
 screenshots/
 .playwright-mcp/
+.gstack/
+scripts/gemini/output/
+scripts/gemini/.env
+!scripts/gemini/.env.example
