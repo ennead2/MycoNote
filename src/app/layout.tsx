@@ -49,8 +49,12 @@ export default function RootLayout({
   const fontVars = `${notoSansJP.variable} ${notoSerifJP.variable} ${inter.variable} ${jetbrainsMono.variable}`;
 
   return (
-    <html lang="ja" className={`h-full ${fontVars}`}>
-      <body className="min-h-full flex flex-col">
+    // suppressHydrationWarning on html/body prevents false positives caused by
+    // browser extensions (password managers, dark-mode, translators) that inject
+    // attributes/styles on these elements between SSR and hydration. Only applies
+    // to direct attributes of <html>/<body>, not children.
+    <html lang="ja" className={`h-full ${fontVars}`} suppressHydrationWarning>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <AppProvider>
           <RecordsProvider>
             <OfflineBanner />
