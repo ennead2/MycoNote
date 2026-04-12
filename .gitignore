@@ -38,3 +38,6 @@ screenshots/
 scripts/gemini/output/
 scripts/gemini/.env
 !scripts/gemini/.env.example
+
+# Ad-hoc batch script outputs (not for commit)
+scripts/temp/

@@ -35,7 +35,7 @@ describe('FeatureSelector', () => {
   it('highlights selected chips', () => {
     render(<FeatureSelector input={{ gill_type: 'gills' }} onChange={vi.fn()} />);
     const gillsChip = screen.getByText('ヒダ');
-    expect(gillsChip.className).toContain('bg-forest-500');
+    expect(gillsChip.className).toContain('bg-washi-dim');
   });
 
   it('deselects a chip when clicked again', async () => {

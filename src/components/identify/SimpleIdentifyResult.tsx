@@ -40,7 +40,7 @@ export function SimpleIdentifyResult({ results, onRetry }: SimpleIdentifyResultP
   return (
     <div className="space-y-3">
       {/* 注意書き */}
-      <div className="rounded-lg border-l-[3px] border-amber-500 bg-forest-900 p-3">
+      <div className="rounded-lg border-l-[3px] border-amber-500 bg-soil-surface p-3">
         <p className="text-xs text-amber-300">⚠ {T.simpleResultSafetyWarning}</p>
       </div>
 
@@ -57,7 +57,7 @@ export function SimpleIdentifyResult({ results, onRetry }: SimpleIdentifyResultP
             className={`w-full text-left rounded-lg p-2.5 ${
               toxic
                 ? 'bg-red-950/50 border border-red-800'
-                : 'bg-forest-900 border border-forest-700'
+                : 'bg-soil-surface border border-border'
             }`}
           >
             <div className="flex gap-2.5">
@@ -76,7 +76,7 @@ export function SimpleIdentifyResult({ results, onRetry }: SimpleIdentifyResultP
               {/* 情報 */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between mb-1">
-                  <span className={`font-bold text-sm ${toxic ? 'text-red-200' : 'text-forest-100'}`}>
+                  <span className={`font-bold text-sm ${toxic ? 'text-red-200' : 'text-washi-cream'}`}>
                     {m.names.ja}
                   </span>
                   <span className={`text-[10px] px-1.5 py-0.5 rounded ${badge.bg} ${badge.text}`}>
@@ -84,16 +84,16 @@ export function SimpleIdentifyResult({ results, onRetry }: SimpleIdentifyResultP
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 mb-1">
-                  <div className={`flex-1 h-1.5 rounded-full ${toxic ? 'bg-red-900' : 'bg-forest-800'}`}>
+                  <div className={`flex-1 h-1.5 rounded-full ${toxic ? 'bg-red-900' : 'bg-soil-surface'}`}>
                     <div
                       className={`h-1.5 rounded-full ${toxic ? 'bg-red-500' : 'bg-green-500'}`}
                       style={{ width: `${result.score}%` }}
                     />
                   </div>
-                  <span className={`text-[10px] ${toxic ? 'text-red-300' : 'text-forest-400'}`}>{result.score}%</span>
+                  <span className={`text-[10px] ${toxic ? 'text-red-300' : 'text-moss-light'}`}>{result.score}%</span>
                 </div>
                 {result.matchedTraits.length > 0 && (
-                  <div className={`text-[9px] ${toxic ? 'text-red-400' : 'text-forest-500'}`}>
+                  <div className={`text-[9px] ${toxic ? 'text-red-400' : 'text-washi-dim'}`}>
                     {result.isToxicWarning && '⚠ '}
                     {T.matched}: {result.matchedTraits.map((t) => TRAIT_LABELS[t] ?? t).join('・')}
                   </div>
@@ -108,13 +108,13 @@ export function SimpleIdentifyResult({ results, onRetry }: SimpleIdentifyResultP
       <div className="flex gap-2">
         <button
           onClick={onRetry}
-          className="flex-1 py-2.5 bg-forest-900 border border-forest-700 rounded-lg text-xs text-forest-400 hover:border-forest-500"
+          className="flex-1 py-2.5 bg-soil-surface border border-border rounded-lg text-xs text-moss-light hover:border-washi-dim"
         >
           🔄 {T.changeConditions}
         </button>
         <button
           onClick={() => router.push('/identify/detail')}
-          className="flex-1 py-2.5 bg-forest-900 border border-forest-700 rounded-lg text-xs text-forest-400 hover:border-forest-500"
+          className="flex-1 py-2.5 bg-soil-surface border border-border rounded-lg text-xs text-moss-light hover:border-washi-dim"
         >
           🔬 {T.goToDetailIdentify}
         </button>

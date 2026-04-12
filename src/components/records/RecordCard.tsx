@@ -34,7 +34,7 @@ export function RecordCard({ record }: RecordCardProps) {
   return (
     <Link
       href={`/records/detail?id=${record.id}`}
-      className="block rounded-xl border border-forest-700 bg-forest-800 p-3 transition-colors hover:bg-forest-700"
+      className="block rounded-xl border border-border bg-soil-surface p-3 transition-colors hover:bg-soil-elevated"
     >
       <div className="flex items-start gap-3">
         {/* Thumbnail */}
@@ -43,13 +43,13 @@ export function RecordCard({ record }: RecordCardProps) {
           <img
             src={thumbUrl}
             alt=""
-            className="w-14 h-14 rounded-lg object-cover shrink-0 bg-forest-700"
+            className="w-14 h-14 rounded-lg object-cover shrink-0 bg-soil-elevated"
           />
         )}
 
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
-            <p className="truncate text-sm font-semibold text-forest-100">{mushroomName}</p>
+            <p className="truncate text-sm font-semibold text-washi-cream">{mushroomName}</p>
             <span
               className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${
                 record.harvested
@@ -60,9 +60,9 @@ export function RecordCard({ record }: RecordCardProps) {
               {record.harvested ? '採取' : '観察'}
             </span>
           </div>
-          <p className="mt-0.5 text-xs text-forest-400">{formatDate(record.observed_at)}</p>
+          <p className="mt-0.5 text-xs text-moss-light">{formatDate(record.observed_at)}</p>
           {record.location.description && (
-            <p className="mt-0.5 truncate text-xs text-forest-300">{record.location.description}</p>
+            <p className="mt-0.5 truncate text-xs text-moss-light">{record.location.description}</p>
           )}
         </div>
       </div>

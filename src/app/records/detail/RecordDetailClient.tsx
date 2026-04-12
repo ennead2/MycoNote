@@ -77,7 +77,7 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
     return (
       <div>
         <PageHeader title={UI_TEXT.records.title} showBack />
-        <div className="max-w-lg mx-auto px-4 py-16 text-center text-forest-400">
+        <div className="max-w-lg mx-auto px-4 py-16 text-center text-moss-light">
           記録が見つかりません
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
         <div className="px-4 pb-4">
           <Button
             variant="ghost"
-            className="w-full text-forest-400"
+            className="w-full text-moss-light"
             onClick={() => setIsEditing(false)}
           >
             キャンセル
@@ -127,7 +127,7 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
         {photoUrls.length > 0 && (
           <div className="space-y-3">
             {photoUrls.map((url, i) => (
-              <div key={i} className="rounded-lg overflow-hidden border border-forest-700 bg-forest-800">
+              <div key={i} className="rounded-lg overflow-hidden border border-border bg-soil-surface">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={url}
@@ -141,15 +141,15 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
 
         {/* キノコリンクカード */}
         {mushroom && (
-          <div className="rounded-xl bg-forest-800 border border-forest-700 p-4">
+          <div className="rounded-xl bg-soil-surface border border-border p-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2 min-w-0">
-                <span className="text-forest-100 font-semibold truncate">{mushroom.names.ja}</span>
+                <span className="text-washi-cream font-semibold truncate">{mushroom.names.ja}</span>
                 <ToxicityBadge toxicity={mushroom.toxicity} compact />
               </div>
               <Link
                 href={`/zukan/${mushroom.id}`}
-                className="shrink-0 text-sm text-forest-400 hover:text-forest-200 transition-colors whitespace-nowrap"
+                className="shrink-0 text-sm text-moss-light hover:text-washi-muted transition-colors whitespace-nowrap"
               >
                 図鑑を見る →
               </Link>
@@ -160,27 +160,27 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
         {/* 詳細情報 */}
         <dl className="space-y-3">
           <div className="flex gap-4">
-            <dt className="w-24 shrink-0 text-sm text-forest-400">日時</dt>
-            <dd className="text-sm text-forest-100">{formattedDate}</dd>
+            <dt className="w-24 shrink-0 text-sm text-moss-light">日時</dt>
+            <dd className="text-sm text-washi-cream">{formattedDate}</dd>
           </div>
 
           {record.location.description && (
             <div className="flex gap-4">
-              <dt className="w-24 shrink-0 text-sm text-forest-400">場所</dt>
-              <dd className="text-sm text-forest-100">{record.location.description}</dd>
+              <dt className="w-24 shrink-0 text-sm text-moss-light">場所</dt>
+              <dd className="text-sm text-washi-cream">{record.location.description}</dd>
             </div>
           )}
 
           <div className="flex gap-4">
-            <dt className="w-24 shrink-0 text-sm text-forest-400">座標</dt>
-            <dd className="text-sm text-forest-100 font-mono">
+            <dt className="w-24 shrink-0 text-sm text-moss-light">座標</dt>
+            <dd className="text-sm text-washi-cream font-mono">
               {record.location.lat.toFixed(6)}, {record.location.lng.toFixed(6)}
             </dd>
           </div>
 
           <div className="flex gap-4">
-            <dt className="w-24 shrink-0 text-sm text-forest-400">種別</dt>
-            <dd className="text-sm text-forest-100">
+            <dt className="w-24 shrink-0 text-sm text-moss-light">種別</dt>
+            <dd className="text-sm text-washi-cream">
               {record.harvested
                 ? UI_TEXT.records.form.harvested
                 : UI_TEXT.records.form.observed}
@@ -189,21 +189,21 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
 
           {record.quantity && (
             <div className="flex gap-4">
-              <dt className="w-24 shrink-0 text-sm text-forest-400">数量</dt>
-              <dd className="text-sm text-forest-100">{record.quantity}</dd>
+              <dt className="w-24 shrink-0 text-sm text-moss-light">数量</dt>
+              <dd className="text-sm text-washi-cream">{record.quantity}</dd>
             </div>
           )}
 
           {record.memo && (
             <div className="flex gap-4">
-              <dt className="w-24 shrink-0 text-sm text-forest-400">メモ</dt>
-              <dd className="text-sm text-forest-100 whitespace-pre-wrap">{record.memo}</dd>
+              <dt className="w-24 shrink-0 text-sm text-moss-light">メモ</dt>
+              <dd className="text-sm text-washi-cream whitespace-pre-wrap">{record.memo}</dd>
             </div>
           )}
         </dl>
 
         {/* アクションボタン */}
-        <div className="space-y-2 pt-4 border-t border-forest-700">
+        <div className="space-y-2 pt-4 border-t border-border">
           <Button
             variant="secondary"
             className="w-full"

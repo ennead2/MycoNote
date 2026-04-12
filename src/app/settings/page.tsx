@@ -112,10 +112,10 @@ export default function SettingsPage() {
       <PageHeader title={UI_TEXT.settings.title} />
       <div className="space-y-6 px-4 py-4">
         {/* APIキー設定セクション */}
-        <section className="rounded-lg border border-forest-700 bg-forest-800 p-4">
-          <h2 className="mb-3 text-sm font-bold text-forest-300">{UI_TEXT.settings.aiSection}</h2>
+        <section className="rounded-lg border border-border bg-soil-surface p-4">
+          <h2 className="mb-3 text-sm font-bold text-moss-light">{UI_TEXT.settings.aiSection}</h2>
           <div className="mb-3">
-            <label htmlFor="api-key-input" className="block text-xs text-forest-400 mb-1">
+            <label htmlFor="api-key-input" className="block text-xs text-moss-light mb-1">
               {UI_TEXT.settings.apiKeyLabel}
             </label>
             <div className="flex gap-2">
@@ -126,12 +126,12 @@ export default function SettingsPage() {
                 onChange={(e) => { setKeyInput(e.target.value); setConnectionStatus('idle'); }}
                 onFocus={() => setShowKey(true)}
                 placeholder={UI_TEXT.settings.apiKeyPlaceholder}
-                className="flex-1 rounded-lg bg-forest-900 border border-forest-600 text-forest-100 placeholder-forest-500 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-forest-400"
+                className="flex-1 rounded-lg bg-soil-surface border border-moss-primary text-washi-cream placeholder-washi-dim px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-moss-light"
               />
               <button
                 type="button"
                 onClick={() => setShowKey(!showKey)}
-                className="rounded-lg bg-forest-900 border border-forest-600 px-3 py-2 text-sm text-forest-400 hover:text-forest-200"
+                className="rounded-lg bg-soil-surface border border-moss-primary px-3 py-2 text-sm text-moss-light hover:text-washi-muted"
                 aria-label={showKey ? UI_TEXT.settings.apiKeyHide : UI_TEXT.settings.apiKeyShow}
               >
                 {showKey ? '🙈' : '👁'}
@@ -145,7 +145,7 @@ export default function SettingsPage() {
                 connectionStatus === 'failed' ? 'bg-red-500' :
                 'bg-yellow-500 animate-pulse'
               }`} />
-              <span className="text-xs text-forest-300">
+              <span className="text-xs text-moss-light">
                 {connectionStatus === 'testing' && UI_TEXT.settings.apiKeyTesting}
                 {connectionStatus === 'connected' && UI_TEXT.settings.apiKeyConnected}
                 {connectionStatus === 'failed' && UI_TEXT.settings.apiKeyFailed}
@@ -162,15 +162,15 @@ export default function SettingsPage() {
               </Button>
             )}
           </div>
-          <p className="text-xs text-forest-500 leading-relaxed">{UI_TEXT.settings.apiKeyDescription}</p>
-          <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer" className="text-xs text-forest-400 underline hover:text-forest-300 mt-1 inline-block">
+          <p className="text-xs text-washi-dim leading-relaxed">{UI_TEXT.settings.apiKeyDescription}</p>
+          <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer" className="text-xs text-moss-light underline hover:text-moss-light mt-1 inline-block">
             {UI_TEXT.settings.apiKeyGetLink}
           </a>
         </section>
 
         {/* データ管理 */}
-        <section className="rounded-lg border border-forest-700 bg-forest-800 p-4">
-          <h2 className="mb-3 text-sm font-bold text-forest-300">{UI_TEXT.settings.dataSection}</h2>
+        <section className="rounded-lg border border-border bg-soil-surface p-4">
+          <h2 className="mb-3 text-sm font-bold text-moss-light">{UI_TEXT.settings.dataSection}</h2>
 
           {/* エクスポート */}
           <div className="mb-4">
@@ -180,9 +180,9 @@ export default function SettingsPage() {
                 id="include-photos"
                 checked={includePhotos}
                 onChange={(e) => setIncludePhotos(e.target.checked)}
-                className="rounded border-forest-600 bg-forest-900 text-forest-500"
+                className="rounded border-moss-primary bg-soil-surface text-washi-dim"
               />
-              <label htmlFor="include-photos" className="text-xs text-forest-400">
+              <label htmlFor="include-photos" className="text-xs text-moss-light">
                 {UI_TEXT.settings.exportIncludePhotos}
               </label>
             </div>
@@ -219,7 +219,7 @@ export default function SettingsPage() {
 
           {/* インポート結果 */}
           {importResult && (
-            <div className="mt-3 rounded-md bg-forest-900 p-3 text-xs text-forest-300">
+            <div className="mt-3 rounded-md bg-soil-surface p-3 text-xs text-moss-light">
               <p className="font-bold mb-1">{UI_TEXT.settings.importComplete}</p>
               <p>{UI_TEXT.settings.importRecords}: {importResult.recordsAdded}{UI_TEXT.settings.importAdded}（{importResult.recordsSkipped}{UI_TEXT.settings.importSkipped}）</p>
               <p>{UI_TEXT.settings.importChats}: {importResult.chatSessionsAdded}{UI_TEXT.settings.importAdded}（{importResult.chatSessionsSkipped}{UI_TEXT.settings.importSkipped}）</p>
@@ -238,29 +238,29 @@ export default function SettingsPage() {
         </section>
 
         {/* アプリ情報 */}
-        <section className="rounded-lg border border-forest-700 bg-forest-800 p-4">
-          <h2 className="mb-3 text-sm font-bold text-forest-300">{UI_TEXT.settings.appInfo}</h2>
+        <section className="rounded-lg border border-border bg-soil-surface p-4">
+          <h2 className="mb-3 text-sm font-bold text-moss-light">{UI_TEXT.settings.appInfo}</h2>
           <dl className="space-y-2 text-sm">
             <div className="flex justify-between">
-              <dt className="text-forest-400">アプリ名</dt>
-              <dd className="text-forest-100">{UI_TEXT.settings.appName}</dd>
+              <dt className="text-moss-light">アプリ名</dt>
+              <dd className="text-washi-cream">{UI_TEXT.settings.appName}</dd>
             </div>
             <div className="flex justify-between">
-              <dt className="text-forest-400">バージョン</dt>
-              <dd className="text-forest-100">{UI_TEXT.settings.version}</dd>
+              <dt className="text-moss-light">バージョン</dt>
+              <dd className="text-washi-cream">{UI_TEXT.settings.version}</dd>
             </div>
             <div>
-              <dt className="mb-1 text-forest-400">概要</dt>
-              <dd className="text-forest-200">{UI_TEXT.settings.appDescription}</dd>
+              <dt className="mb-1 text-moss-light">概要</dt>
+              <dd className="text-washi-muted">{UI_TEXT.settings.appDescription}</dd>
             </div>
           </dl>
         </section>
 
         {/* ライセンス */}
-        <section className="rounded-lg border border-forest-700 bg-forest-800 p-4">
-          <h2 className="mb-2 text-sm font-bold text-forest-300">ライセンス</h2>
-          <p className="text-xs text-forest-400">図鑑データ: Wikipedia日本語版 (CC BY-SA 4.0)</p>
-          <p className="text-xs text-forest-400">写真: Wikimedia Commons (CC BY / CC BY-SA)</p>
+        <section className="rounded-lg border border-border bg-soil-surface p-4">
+          <h2 className="mb-2 text-sm font-bold text-moss-light">ライセンス</h2>
+          <p className="text-xs text-moss-light">図鑑データ: Wikipedia日本語版 (CC BY-SA 4.0)</p>
+          <p className="text-xs text-moss-light">写真: Wikimedia Commons (CC BY / CC BY-SA)</p>
         </section>
       </div>
     </div>

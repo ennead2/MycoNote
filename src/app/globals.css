@@ -42,19 +42,6 @@
   --color-species-pink: #C17889;
   --color-species-beige: #BFB292;
 
-  /* ===== Legacy forest-* palette (Task 4 で段階的に移行) ===== */
-  --color-forest-50: #EDE3D0;
-  --color-forest-100: #EDE3D0;
-  --color-forest-200: #B8AE98;
-  --color-forest-300: #6BA368;
-  --color-forest-400: #6BA368;
-  --color-forest-500: #807663;
-  --color-forest-600: #2F5233;
-  --color-forest-700: #2A332C;
-  --color-forest-800: #1A211C;
-  --color-forest-900: #1A211C;
-  --color-forest-950: #0F1410;
-
   /* Font families */
   --font-serif-jp: var(--font-noto-serif-jp), "Yu Mincho", "游明朝", serif;
   --font-sans-jp: var(--font-noto-sans-jp), "Hiragino Sans", "Yu Gothic", sans-serif;

@@ -88,7 +88,7 @@ export default function IdentifyDetailPage() {
         {!result && !isLoading && (
           <>
             <div className="rounded-lg border border-gray-200 bg-white p-4">
-              <h2 className="text-xs font-bold text-forest-700 mb-3">
+              <h2 className="text-xs font-bold text-border mb-3">
                 {UI_TEXT.identify.addPhoto}
               </h2>
               <PhotoUploader images={images} onImagesChange={setImages} />

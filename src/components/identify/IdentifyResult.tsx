@@ -19,7 +19,7 @@ function CandidateCard({ candidate }: { candidate: IdentifyCandidate }) {
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-3">
       <div className="flex items-center justify-between mb-1">
-        <span className="font-bold text-sm text-forest-900">{candidate.name_ja}</span>
+        <span className="font-bold text-sm text-soil-surface">{candidate.name_ja}</span>
         <span className={`${style.bg} ${style.text} px-2 py-0.5 rounded-full text-[10px] font-medium`}>
           {style.label}
         </span>
@@ -28,7 +28,7 @@ function CandidateCard({ candidate }: { candidate: IdentifyCandidate }) {
       {candidate.id && (
         <button
           onClick={() => router.push(`/zukan/${candidate.id}`)}
-          className="mt-2 text-xs text-forest-600 underline hover:text-forest-500"
+          className="mt-2 text-xs text-moss-primary underline hover:text-washi-dim"
         >
           📖 {UI_TEXT.identify.viewInZukan}
         </button>
@@ -74,7 +74,7 @@ export function IdentifyResultView({ result, onRetry }: IdentifyResultViewProps)
         </div>
       )}
 
-      <Button variant="secondary" size="md" onClick={onRetry} className="w-full bg-white text-forest-700 border-forest-300">
+      <Button variant="secondary" size="md" onClick={onRetry} className="w-full bg-white text-border border-moss-light">
         {UI_TEXT.identify.retryIdentify}
       </Button>
     </div>

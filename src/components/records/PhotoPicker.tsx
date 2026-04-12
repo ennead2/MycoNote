@@ -45,13 +45,13 @@ export function PhotoPicker({ photos, onPhotosChange }: PhotoPickerProps) {
         <button
           type="button"
           onClick={handleClick}
-          className="inline-flex items-center gap-2 rounded-lg border border-dashed border-forest-500 bg-forest-800 px-4 py-2.5 text-sm font-medium text-forest-200 transition-colors hover:bg-forest-700 hover:border-forest-400"
+          className="inline-flex items-center gap-2 rounded-lg border border-dashed border-washi-dim bg-soil-surface px-4 py-2.5 text-sm font-medium text-washi-muted transition-colors hover:bg-soil-elevated hover:border-moss-light"
         >
           <span className="text-lg">📷</span>
           {UI_TEXT.records.form.photosAdd}
         </button>
         {photos.length > 0 && (
-          <span className="text-sm text-forest-400">{photos.length}枚</span>
+          <span className="text-sm text-moss-light">{photos.length}枚</span>
         )}
       </div>
 
@@ -73,7 +73,7 @@ export function PhotoPicker({ photos, onPhotosChange }: PhotoPickerProps) {
               <img
                 src={url}
                 alt={`写真 ${index + 1}`}
-                className="w-20 h-20 object-cover rounded-lg border border-forest-700"
+                className="w-20 h-20 object-cover rounded-lg border border-border"
               />
               <button
                 type="button"

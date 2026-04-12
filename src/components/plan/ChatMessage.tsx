@@ -14,14 +14,14 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
 
   return (
     <div className={`mb-3 ${isUser ? 'flex flex-col items-end' : ''}`}>
-      <div className="text-[10px] text-forest-500 mb-1">
+      <div className="text-[10px] text-washi-dim mb-1">
         {isUser ? UI_TEXT.plan.userLabel : `🤖 ${UI_TEXT.plan.assistantLabel}`}
       </div>
       <div
         className={`max-w-[85%] rounded-xl px-3 py-2.5 text-sm leading-relaxed ${
           isUser
-            ? 'bg-forest-600 text-white rounded-tr-none whitespace-pre-wrap'
-            : 'bg-forest-800 text-forest-100 rounded-tl-none'
+            ? 'bg-moss-primary text-white rounded-tr-none whitespace-pre-wrap'
+            : 'bg-soil-surface text-washi-cream rounded-tl-none'
         }`}
       >
         {isUser ? (
@@ -37,16 +37,16 @@ export function ChatMessageBubble({ message }: ChatMessageBubbleProps) {
               ul: ({ children }) => <ul className="list-disc pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ul>,
               ol: ({ children }) => <ol className="list-decimal pl-4 mb-2 last:mb-0 space-y-0.5">{children}</ol>,
               li: ({ children }) => <li>{children}</li>,
-              strong: ({ children }) => <strong className="font-bold text-forest-50">{children}</strong>,
+              strong: ({ children }) => <strong className="font-bold text-washi-cream">{children}</strong>,
               em: ({ children }) => <em className="italic">{children}</em>,
-              a: ({ href, children }) => <a href={href} className="underline text-forest-300 hover:text-forest-200" target="_blank" rel="noopener noreferrer">{children}</a>,
-              hr: () => <hr className="border-forest-600 my-2" />,
+              a: ({ href, children }) => <a href={href} className="underline text-moss-light hover:text-washi-muted" target="_blank" rel="noopener noreferrer">{children}</a>,
+              hr: () => <hr className="border-moss-primary my-2" />,
               table: ({ children }) => <table className="w-full border-collapse text-xs my-2">{children}</table>,
-              thead: ({ children }) => <thead className="border-b border-forest-600">{children}</thead>,
+              thead: ({ children }) => <thead className="border-b border-moss-primary">{children}</thead>,
               tbody: ({ children }) => <tbody>{children}</tbody>,
-              tr: ({ children }) => <tr className="border-b border-forest-700 last:border-b-0">{children}</tr>,
-              th: ({ children }) => <th className="text-left py-1 pr-3 font-semibold text-forest-300">{children}</th>,
-              td: ({ children }) => <td className="py-1 pr-3 text-forest-200">{children}</td>,
+              tr: ({ children }) => <tr className="border-b border-border last:border-b-0">{children}</tr>,
+              th: ({ children }) => <th className="text-left py-1 pr-3 font-semibold text-moss-light">{children}</th>,
+              td: ({ children }) => <td className="py-1 pr-3 text-washi-muted">{children}</td>,
             }}
           >
             {message.content}

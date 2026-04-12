@@ -32,7 +32,7 @@ export function ChatInput({ onSend, disabled = false, disabledReason }: ChatInpu
   };
 
   return (
-    <div className="border-t border-forest-700 bg-forest-800 px-3 py-2.5">
+    <div className="border-t border-border bg-soil-surface px-3 py-2.5">
       {disabledReason && (
         <p className="text-xs text-amber-400 mb-2">{disabledReason}</p>
       )}
@@ -45,12 +45,12 @@ export function ChatInput({ onSend, disabled = false, disabledReason }: ChatInpu
           placeholder={UI_TEXT.plan.inputPlaceholder}
           disabled={disabled}
           rows={1}
-          className="flex-1 bg-forest-900 border border-forest-600 rounded-2xl px-4 py-2 text-sm text-forest-100 placeholder-forest-500 resize-none focus:outline-none focus:ring-2 focus:ring-forest-400 disabled:opacity-50"
+          className="flex-1 bg-soil-surface border border-moss-primary rounded-2xl px-4 py-2 text-sm text-washi-cream placeholder-washi-dim resize-none focus:outline-none focus:ring-2 focus:ring-moss-light disabled:opacity-50"
         />
         <button
           onClick={handleSend}
           disabled={disabled || !text.trim()}
-          className="w-8 h-8 rounded-full bg-forest-500 text-white flex items-center justify-center text-sm hover:bg-forest-400 disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
+          className="w-8 h-8 rounded-full bg-washi-dim text-white flex items-center justify-center text-sm hover:bg-moss-light disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
           aria-label="送信"
         >
           ↑

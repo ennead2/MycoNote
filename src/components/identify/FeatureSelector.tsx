@@ -112,7 +112,7 @@ function ColorDot({ color, active }: { color: string; active: boolean }) {
   };
   return (
     <span
-      className={`inline-block w-3.5 h-3.5 rounded-full border ${active ? 'border-white' : 'border-forest-600'}`}
+      className={`inline-block w-3.5 h-3.5 rounded-full border ${active ? 'border-white' : 'border-moss-primary'}`}
       style={{ backgroundColor: colors[color] ?? '#888' }}
     />
   );
@@ -204,7 +204,7 @@ function ChipGroup({
 }) {
   return (
     <div className="mb-4">
-      <div className="text-xs font-bold text-forest-400 mb-2">
+      <div className="text-xs font-bold text-moss-light mb-2">
         {icon} {label} {required && <span className="text-amber-500">*</span>}
       </div>
       <div className="flex gap-1.5 flex-wrap">
@@ -217,8 +217,8 @@ function ChipGroup({
               onClick={() => onSelect(isActive ? undefined : value)}
               className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm border transition-colors ${
                 isActive
-                  ? 'bg-forest-500 text-white border-forest-400'
-                  : 'bg-forest-900 text-forest-400 border-forest-700 hover:border-forest-500'
+                  ? 'bg-washi-dim text-white border-moss-light'
+                  : 'bg-soil-surface text-moss-light border-border hover:border-washi-dim'
               }`}
             >
               {iconFn && iconFn(isActive)}
@@ -355,7 +355,7 @@ export function FeatureSelector({ input, onChange }: FeatureSelectorProps) {
       <button
         type="button"
         onClick={() => setShowExtra(!showExtra)}
-        className="w-full py-2 bg-forest-900 border border-forest-700 rounded-md text-xs text-forest-500 mb-3 hover:border-forest-500"
+        className="w-full py-2 bg-soil-surface border border-border rounded-md text-xs text-washi-dim mb-3 hover:border-washi-dim"
       >
         {showExtra ? `▲ ${T.lessFilters}` : `▼ ${T.moreFilters}（${extraCount}項目）`}
       </button>

@@ -52,7 +52,7 @@ export function PhotoUploader({ images, onImagesChange }: PhotoUploaderProps) {
         <button
           type="button"
           onClick={handleClick}
-          className="inline-flex items-center gap-2 rounded-lg border-2 border-dashed border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-forest-700 transition-colors hover:border-forest-400 hover:bg-forest-50"
+          className="inline-flex items-center gap-2 rounded-lg border-2 border-dashed border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-border transition-colors hover:border-moss-light hover:bg-washi-cream"
         >
           <span className="text-lg">+</span>
           {UI_TEXT.identify.addPhoto}

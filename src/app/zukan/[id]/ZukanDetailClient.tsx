@@ -15,7 +15,7 @@ export default function ZukanDetailClient({ id }: ZukanDetailClientProps) {
     return (
       <div>
         <PageHeader title="キノコ図鑑" showBack={true} />
-        <p className="px-4 py-8 text-center text-forest-400">
+        <p className="px-4 py-8 text-center text-moss-light">
           キノコが見つかりません
         </p>
       </div>

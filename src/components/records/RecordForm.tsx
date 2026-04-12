@@ -26,9 +26,9 @@ function nowDatetimeLocal(): string {
 }
 
 const inputClass =
-  'w-full rounded-lg bg-forest-800 border border-forest-600 text-forest-100 placeholder-forest-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-forest-400';
+  'w-full rounded-lg bg-soil-surface border border-moss-primary text-washi-cream placeholder-washi-dim px-3 py-2 focus:outline-none focus:ring-2 focus:ring-moss-light';
 
-const labelClass = 'block text-sm font-medium text-forest-300 mb-1';
+const labelClass = 'block text-sm font-medium text-moss-light mb-1';
 
 export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
   const [mushroomId, setMushroomId] = useState(initialData?.mushroom_id ?? '');

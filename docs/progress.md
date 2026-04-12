@@ -207,3 +207,35 @@
   - ホーム横スクロールに右端フェードヒント
 - [x] Before/After スクリーンショット取得
 - [x] 全183テスト通過、本番ビルド成功 (292 静的ページ)
+
+### 9-9: デザインパターン ハードニング (Plan B) — 完了 (2026-04-12)
+- [x] CLAUDE.md に Design Guardrails 章追加（新コード時の 7 ルール明文化）
+  - DESIGN.md トークン強制、forest-* 禁止、共通コンポーネント再利用、lucide-react 統一、safety/species パレット分離、Common Patterns 参照、CSS-only motion
+- [x] DESIGN.md に Common Patterns 章追加（7 パターン）
+  - PageShell / SectionHeader / EmptyState / InfoBanner / ChipTag / ScrollCarousel / BentoGrid
+  - 各パターンに「いつ使うか」「最小コード例」「既存実装パス」「ルール」を明記
+  - パターン選定フローチャート添付
+
+### 9-10: forest-* 一括移行 & 共通コンポーネント抽出 (Plan C) — 完了 (2026-04-12)
+
+**C-1: forest-* → 新パレット一括置換**
+- [x] 22 ファイル 223 箇所の `forest-N` クラスを新トークンへ置換
+  - forest-50/100 → washi-cream、forest-200 → washi-muted、forest-300/400 → moss-light
+  - forest-500 → washi-dim、forest-600 → moss-primary、forest-700 → border
+  - forest-800/900 → soil-surface、forest-950 → soil-bg
+- [x] `bg-border` / `hover:bg-border`（意味的に不自然）を `bg-soil-elevated` / `hover:bg-soil-elevated` に修正（5ファイル 8箇所）
+- [x] globals.css の legacy forest-* block 削除
+- [x] 残存確認: src/ 以下 forest-* ゼロ
+
+**C-2: 共通UIコンポーネント抽出（DESIGN.md Common Patterns に 1:1 対応）**
+- [x] `src/components/ui/SectionHeader.tsx` 新設 — title + label + action link
+- [x] `src/components/ui/EmptyState.tsx` 新設 — lucide icon + message + CTA
+- [x] `src/components/ui/InfoBanner.tsx` 新設 — severity 別 (info/caution/toxic/deadly) safety border
+- [x] `src/components/ui/ChipTag.tsx` 新設 — rounded-full + mono-data、active/onClick 対応
+- [x] HomePage の seasonal/recent セクションヘッダと SafetyTip バナーを新コンポーネントで置換
+- [x] MushroomDetail の habitat/tree_association タグを ChipTag で置換
+
+**検証**
+- [x] 全183テスト通過
+- [x] 本番ビルド成功 (292 静的ページ)
+- [x] 色値は視覚的に完全に同一（同 Hex へのリマップ）なので Phase 9 QA 結果を維持

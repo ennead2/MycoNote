@@ -27,13 +27,13 @@ export function SearchFilter({ filters, onFilterChange }: SearchFilterProps) {
   const activeToxicity = filters.toxicity ?? [];
 
   return (
-    <div className="flex flex-col gap-3 p-3 bg-forest-800 border-b border-forest-700">
+    <div className="flex flex-col gap-3 p-3 bg-soil-surface border-b border-border">
       <input
         type="text"
         placeholder={UI_TEXT.zukan.searchPlaceholder}
         value={filters.query ?? ''}
         onChange={handleQueryChange}
-        className="w-full rounded-md bg-forest-900 border border-forest-600 text-forest-100 placeholder:text-forest-500 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-forest-400"
+        className="w-full rounded-md bg-soil-surface border border-moss-primary text-washi-cream placeholder:text-washi-dim px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-moss-light"
       />
       <div className="flex flex-wrap gap-2">
         {TOXICITY_ORDER.map((toxicity) => {
@@ -47,7 +47,7 @@ export function SearchFilter({ filters, onFilterChange }: SearchFilterProps) {
               className={`rounded-full px-3 py-1 text-xs font-bold border transition-colors ${
                 isActive
                   ? `${config.color} text-white border-transparent`
-                  : 'bg-transparent text-forest-300 border-forest-600 hover:border-forest-400'
+                  : 'bg-transparent text-moss-light border-moss-primary hover:border-moss-light'
               }`}
             >
               {config.label}

@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { BookOpen, Search, Map, FileText, ShieldAlert } from 'lucide-react';
 import { UI_TEXT } from '@/constants/ui-text';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
+import { SectionHeader } from '@/components/ui/SectionHeader';
+import { InfoBanner } from '@/components/ui/InfoBanner';
 import { useRecords } from '@/contexts/RecordsContext';
 import { mushrooms, getMushroomById } from '@/data/mushrooms';
 import { getSeasonalMushrooms, getSafetyTip, dateToSeed } from '@/lib/season-utils';
@@ -74,20 +76,11 @@ export default function HomePage() {
 
       {/* Seasonal mushrooms */}
       <section className="px-3 pb-6">
-        <header className="flex items-end justify-between mb-3 px-1">
-          <h2 className="serif-display text-base text-washi-cream">
-            <span className="mono-data text-moss-light text-xs mr-2">
-              {isHydrated ? `${currentMonth}月` : ''}
-            </span>
-            {UI_TEXT.home.seasonalTitle}
-          </h2>
-          <Link
-            href="/zukan"
-            className="text-washi-muted hover:text-moss-light text-[11px] mono-data transition-colors"
-          >
-            {UI_TEXT.home.viewAll} →
-          </Link>
-        </header>
+        <SectionHeader
+          title={UI_TEXT.home.seasonalTitle}
+          label={isHydrated ? `${currentMonth}月` : ''}
+          action={{ href: '/zukan', text: UI_TEXT.home.viewAll }}
+        />
 
         {!isHydrated ? (
           <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide">
@@ -105,39 +98,19 @@ export default function HomePage() {
       {/* Safety Tip */}
       {isHydrated && (
         <section className="px-3 pb-6">
-          <div
-            role="note"
-            className="bg-soil-surface border border-safety-caution/50 rounded-lg p-3.5 flex gap-3 items-start"
-          >
-            <ShieldAlert
-              size={20}
-              className="text-safety-caution shrink-0 mt-0.5"
-              aria-hidden="true"
-            />
-            <div className="min-w-0">
-              <p className="mono-data text-safety-caution font-bold text-[10px] tracking-wider mb-1">
-                {UI_TEXT.home.safetyTip}
-              </p>
-              <p className="text-washi-cream text-sm leading-relaxed">{safetyTip}</p>
-            </div>
-          </div>
+          <InfoBanner icon={ShieldAlert} severity="caution" label={UI_TEXT.home.safetyTip}>
+            {safetyTip}
+          </InfoBanner>
         </section>
       )}
 
       {/* Recent records */}
       {isHydrated && recentRecords.length > 0 && (
         <section className="px-3 pb-6">
-          <header className="flex items-end justify-between mb-3 px-1">
-            <h2 className="serif-display text-base text-washi-cream">
-              {UI_TEXT.home.recentRecords}
-            </h2>
-            <Link
-              href="/records"
-              className="text-washi-muted hover:text-moss-light text-[11px] mono-data transition-colors"
-            >
-              {UI_TEXT.home.viewAll} →
-            </Link>
-          </header>
+          <SectionHeader
+            title={UI_TEXT.home.recentRecords}
+            action={{ href: '/records', text: UI_TEXT.home.viewAll }}
+          />
           <div className="space-y-2">
             {recentRecords.map((r) => {
               const mushroom = r.mushroom_id ? getMushroomById(r.mushroom_id) : undefined;

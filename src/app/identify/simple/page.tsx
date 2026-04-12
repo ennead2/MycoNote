@@ -40,7 +40,7 @@ export default function SimpleIdentifyPage() {
   const hasRequiredInput = !!(input.gill_type && input.cap_color && input.cap_shape && input.cap_size);
 
   return (
-    <div className="min-h-screen bg-forest-950">
+    <div className="min-h-screen bg-soil-bg">
       <PageHeader title={results ? T.resultTitle : T.simpleTitle} showBack />
 
       {/* 結果表示 */}
@@ -54,12 +54,12 @@ export default function SimpleIdentifyPage() {
       {!results && (
         <div className="px-4 py-4 space-y-3">
           {/* 注意書き */}
-          <div className="rounded-lg border-l-[3px] border-amber-500 bg-forest-900 p-3">
+          <div className="rounded-lg border-l-[3px] border-amber-500 bg-soil-surface p-3">
             <p className="text-xs text-amber-300">⚠ {T.simpleResultSafetyWarning}</p>
           </div>
 
           {/* 参考写真 */}
-          <div className="rounded-lg bg-forest-900 border border-forest-700 overflow-hidden">
+          <div className="rounded-lg bg-soil-surface border border-border overflow-hidden">
             {photoUrl ? (
               <div className="relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -77,7 +77,7 @@ export default function SimpleIdentifyPage() {
             ) : (
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="w-full h-[120px] flex flex-col items-center justify-center gap-2 text-forest-500 hover:text-forest-400"
+                className="w-full h-[120px] flex flex-col items-center justify-center gap-2 text-washi-dim hover:text-moss-light"
               >
                 <span className="text-2xl">📷</span>
                 <span className="text-xs">{T.referencePhoto}（任意）</span>
@@ -100,7 +100,7 @@ export default function SimpleIdentifyPage() {
           <button
             onClick={handleSearch}
             disabled={!hasRequiredInput}
-            className="w-full py-3 bg-forest-500 text-white rounded-lg text-sm font-bold hover:bg-forest-400 disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full py-3 bg-washi-dim text-white rounded-lg text-sm font-bold hover:bg-moss-light disabled:opacity-40 disabled:cursor-not-allowed"
           >
             🔍 {T.searchCandidates}
           </button>

@@ -16,8 +16,8 @@ export function RecordMap({ records }: RecordMapProps) {
 
   if (!MapComponent) {
     return (
-      <div className="flex items-center justify-center h-[60vh] bg-forest-800 rounded-lg">
-        <span className="text-forest-400">地図を読み込み中...</span>
+      <div className="flex items-center justify-center h-[60vh] bg-soil-surface rounded-lg">
+        <span className="text-moss-light">地図を読み込み中...</span>
       </div>
     );
   }
