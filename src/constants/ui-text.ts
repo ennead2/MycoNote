@@ -151,7 +151,7 @@ export const UI_TEXT = {
     fieldLocation: '場所',
     fieldLocationPlaceholder: '例: 高尾山周辺',
     fieldTarget: '探したいキノコ（任意）',
-    fieldTargetPlaceholder: '図鑑から選択...',
+    fieldTargetPlaceholder: '種名を入力（図鑑から候補表示）',
     fieldExperience: '経験レベル',
     experienceBeginner: '初心者',
     experienceIntermediate: '中級者',

@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Calendar, MapPin, Sprout, Target, Map as MapIcon, X } from 'lucide-react';
-import { mushrooms } from '@/data/mushrooms';
+import { Calendar, MapPin, Sprout, Target, Map as MapIcon } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { TargetSpeciesInput } from '@/components/plan/TargetSpeciesInput';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { PlanContext, ExperienceLevel } from '@/types/chat';
 
@@ -39,12 +39,6 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
     onSubmit(context);
   };
 
-  const toggleSpecies = (name: string) => {
-    setTargetSpecies((prev) =>
-      prev.includes(name) ? prev.filter((s) => s !== name) : [...prev, name]
-    );
-  };
-
   return (
     <form onSubmit={handleSubmit} className="px-4 py-4 space-y-4">
       <p className="text-xs text-moss-light leading-relaxed">{UI_TEXT.plan.formDescription}</p>
@@ -66,28 +60,16 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
       </div>
 
       <div>
-        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
+        <label htmlFor="plan-target" className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
           <Sprout size={14} aria-hidden="true" />
           {UI_TEXT.plan.fieldTarget}
-        </span>
-        <select value="" onChange={(e) => { if (e.target.value) toggleSpecies(e.target.value); }} className={inputClass}>
-          <option value="">{UI_TEXT.plan.fieldTargetPlaceholder}</option>
-          {mushrooms.filter((m) => m.toxicity === 'edible' || m.toxicity === 'edible_caution').map((m) => (
-            <option key={m.id} value={m.names.ja}>{m.names.ja}</option>
-          ))}
-        </select>
-        {targetSpecies.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-2">
-            {targetSpecies.map((name) => (
-              <span key={name} className="inline-flex items-center gap-1 text-xs bg-soil-elevated text-washi-muted px-2 py-0.5 rounded-full">
-                {name}
-                <button type="button" onClick={() => toggleSpecies(name)} className="text-moss-light hover:text-washi-cream inline-flex items-center" aria-label={`${name} を削除`}>
-                  <X size={12} aria-hidden="true" />
-                </button>
-              </span>
-            ))}
-          </div>
-        )}
+        </label>
+        <TargetSpeciesInput
+          id="plan-target"
+          value={targetSpecies}
+          onChange={setTargetSpecies}
+          placeholder={UI_TEXT.plan.fieldTargetPlaceholder}
+        />
       </div>
 
       <div>
