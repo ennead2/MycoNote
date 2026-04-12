@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Calendar, MapPin, Sprout, Target, Map as MapIcon, X } from 'lucide-react';
 import { mushrooms } from '@/data/mushrooms';
 import { Button } from '@/components/ui/Button';
 import { UI_TEXT } from '@/constants/ui-text';
@@ -49,21 +50,26 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
       <p className="text-xs text-moss-light leading-relaxed">{UI_TEXT.plan.formDescription}</p>
 
       <div>
-        <label htmlFor="plan-date" className="block text-xs font-bold text-moss-light mb-1">
-          📅 {UI_TEXT.plan.fieldDate}
+        <label htmlFor="plan-date" className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
+          <Calendar size={14} aria-hidden="true" />
+          {UI_TEXT.plan.fieldDate}
         </label>
         <input id="plan-date" type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} />
       </div>
 
       <div>
-        <label htmlFor="plan-location" className="block text-xs font-bold text-moss-light mb-1">
-          📍 {UI_TEXT.plan.fieldLocation}
+        <label htmlFor="plan-location" className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
+          <MapPin size={14} aria-hidden="true" />
+          {UI_TEXT.plan.fieldLocation}
         </label>
         <input id="plan-location" type="text" value={location} onChange={(e) => setLocation(e.target.value)} placeholder={UI_TEXT.plan.fieldLocationPlaceholder} className={inputClass} />
       </div>
 
       <div>
-        <span className="block text-xs font-bold text-moss-light mb-1">🍄 {UI_TEXT.plan.fieldTarget}</span>
+        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-1">
+          <Sprout size={14} aria-hidden="true" />
+          {UI_TEXT.plan.fieldTarget}
+        </span>
         <select value="" onChange={(e) => { if (e.target.value) toggleSpecies(e.target.value); }} className={inputClass}>
           <option value="">{UI_TEXT.plan.fieldTargetPlaceholder}</option>
           {mushrooms.filter((m) => m.toxicity === 'edible' || m.toxicity === 'edible_caution').map((m) => (
@@ -75,7 +81,9 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
             {targetSpecies.map((name) => (
               <span key={name} className="inline-flex items-center gap-1 text-xs bg-soil-elevated text-washi-muted px-2 py-0.5 rounded-full">
                 {name}
-                <button type="button" onClick={() => toggleSpecies(name)} className="text-moss-light hover:text-washi-cream">×</button>
+                <button type="button" onClick={() => toggleSpecies(name)} className="text-moss-light hover:text-washi-cream inline-flex items-center" aria-label={`${name} を削除`}>
+                  <X size={12} aria-hidden="true" />
+                </button>
               </span>
             ))}
           </div>
@@ -83,7 +91,10 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
       </div>
 
       <div>
-        <span className="block text-xs font-bold text-moss-light mb-2">🎯 {UI_TEXT.plan.fieldExperience}</span>
+        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-moss-light mb-2">
+          <Target size={14} aria-hidden="true" />
+          {UI_TEXT.plan.fieldExperience}
+        </span>
         <div className="flex gap-2">
           {experienceLevels.map(({ value, label }) => (
             <Button key={value} type="button" variant={experienceLevel === value ? 'primary' : 'secondary'} size="sm" onClick={() => setExperienceLevel(value)} className="flex-1">
@@ -93,8 +104,9 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
         </div>
       </div>
 
-      <Button type="submit" variant="primary" size="lg" className="w-full">
-        🗺 {UI_TEXT.plan.startChat}
+      <Button type="submit" variant="primary" size="lg" className="w-full inline-flex items-center justify-center gap-2">
+        <MapIcon size={18} aria-hidden="true" />
+        {UI_TEXT.plan.startChat}
       </Button>
     </form>
   );
