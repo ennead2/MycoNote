@@ -225,7 +225,7 @@ export default function PlanPage() {
   if (view === 'history') {
     return (
       <div>
-        <PageHeader title={UI_TEXT.plan.historyTitle} showBack />
+        <PageHeader title={UI_TEXT.plan.historyTitle} showBack onBack={() => setView('form')} />
         <ChatHistoryList
           sessions={sessions}
           onSelect={handleSelectSession}

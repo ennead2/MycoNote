@@ -326,3 +326,19 @@
 - [x] `public/icons/map-pin.png` (48×48) + `map-pin@2x.png` (96×96)
 - [x] `RecordMapInner.tsx`: `L.icon` + `iconRetinaUrl` で DPI 自動切替、`iconAnchor=[24,40]`（tip を座標一致）
 - [x] 以前 unpkg から取得していた Leaflet デフォルトマーカーの外部依存を排除（オフライン時も動く）
+
+## Phase 11: 採取計画画面の UX/デザイン統一 — 計画中 (2026-04-12)
+
+計画書: `docs/superpowers/plans/2026-04-12-phase11-plan-ux.md`
+
+- [ ] **11-A1**: 履歴画面の戻るボタンを計画ホームへ
+- [ ] **11-D**: ChatInput の自動フォーカス解除
+- [ ] **11-E1**: PlanForm の絵文字 → lucide
+- [ ] **11-E2**: ChatHistory の絵文字 → lucide
+- [ ] **11-E3**: ChatMessage のアシスタントラベル（🤖 → Sprout）
+- [ ] **11-E4**: ChatInput 送信ボタン (↑ → ArrowUp)
+- [ ] **11-E5**: Settings の Eye/EyeOff + カスタム Checkbox
+- [ ] **11-C**: 「チャット履歴」→「採取計画の履歴」
+- [ ] **11-B1**: 「探したいキノコ」Combobox 化（全300種、searchMushrooms 参照）
+- [ ] **11-B2**: 予定日ネイティブカレンダーのスタイル調整
+- [ ] **11-F**: アシスタント返答の絵文字 → lucide（頻出15個辞書）
