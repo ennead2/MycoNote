@@ -386,3 +386,13 @@ main {
   padding-top: 8px;
   border-top: 1px dashed var(--border);
 }
+
+.prio-badge {
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--washi);
+}
+.prio-1 { background: var(--high); }
+.prio-2 { background: var(--mid); color: var(--bg); }

@@ -160,11 +160,14 @@ function renderReview() {
     <div class="jump-bar">
       <label style="color:var(--text-dim);font-size:12px;">ジャンプ:</label>
       <select id="jump-select">
-        ${state.list.map((s, i) => `
+        ${state.list.map((s, i) => {
+          const prio = s.priority === 1 ? '🔴要確認' : s.priority === 2 ? '🖼️画像なし' : '    ';
+          return `
           <option value="${i}" ${i === state.currentIndex ? 'selected' : ''}>
-            ${(i + 1).toString().padStart(3)} / ${state.total}  ${s.decision ? '[' + s.decision + '] ' : ''} ${s.ja}
+            ${(i + 1).toString().padStart(3)} / ${state.total}  ${prio}  ${s.decision ? '[' + s.decision + '] ' : ''} ${s.ja}
           </option>
-        `).join('')}
+        `;
+        }).join('')}
       </select>
       <div class="stat">${statHtml}</div>
     </div>
@@ -175,6 +178,8 @@ function renderReview() {
         <span class="sci">${escapeHtml(m.names.scientific)}</span>
         ${m.names.scientific_synonyms?.length ? `<span class="sci" style="opacity:0.6;font-size:13px">syn. ${m.names.scientific_synonyms.map(escapeHtml).join(', ')}</span>` : ''}
         <span class="tox tox-${m.toxicity}">${m.toxicity}</span>
+        ${cur.priority === 1 ? '<span class="prio-badge prio-1">要確認</span>' : ''}
+        ${cur.priority === 2 ? '<span class="prio-badge prio-2">ヒーロー画像なし</span>' : ''}
         <span class="id">${m.id}</span>
         <span class="id">${state.currentIndex + 1} / ${state.total}</span>
       </div>

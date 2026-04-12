@@ -90,15 +90,35 @@ function serveStatic(res, absPath) {
   res.end(readFileSync(absPath));
 }
 
+/**
+ * 種を3段階の優先順位に分類して並べ替える:
+ *   priority=1: verification-issues で要確認とされた種 (species-corrections の open_issues あり)
+ *   priority=2: ヒーロー画像ファイルが不在
+ *   priority=3: 残り
+ * 同一優先度内では元の出現順を維持。
+ */
 function buildSpeciesListing(mushrooms, progress) {
-  return mushrooms.map((m, idx) => ({
-    idx,
-    id: m.id,
-    ja: m.names.ja,
-    scientific: m.names.scientific,
-    toxicity: m.toxicity,
-    decision: progress.decisions[m.id]?.status || null,
-  }));
+  const corrections = readJSON(CORRECTIONS_FILE, {});
+  const enriched = mushrooms.map((m, origIdx) => {
+    const corr = corrections[m.id];
+    const hasIssue = !!(corr?.open_issues && corr.open_issues.length > 0);
+    const heroPath = m.image_local ? join(PUBLIC_DIR, m.image_local) : null;
+    const heroMissing = !heroPath || !existsSync(heroPath);
+    let priority = 3;
+    if (hasIssue) priority = 1;
+    else if (heroMissing) priority = 2;
+    return {
+      origIdx, priority, hasIssue, heroMissing,
+      id: m.id,
+      ja: m.names.ja,
+      scientific: m.names.scientific,
+      toxicity: m.toxicity,
+      decision: progress.decisions[m.id]?.status || null,
+    };
+  });
+  enriched.sort((a, b) => a.priority - b.priority || a.origIdx - b.origIdx);
+  // 並び替え後の位置を idx に付与
+  return enriched.map((e, idx) => ({ ...e, idx }));
 }
 
 function buildSpeciesDetail(m, cache, gbif, corrections) {
