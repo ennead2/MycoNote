@@ -8,7 +8,9 @@ import { UI_TEXT } from '@/constants/ui-text';
 export default function IdentifyPage() {
   const router = useRouter();
   const { state } = useApp();
-  const hasApiKey = !!state.apiKey;
+  // Gate apiKey-dependent rendering on isHydrated to prevent SSR/client mismatch:
+  // localStorage reads produce different values on server (none) vs client (possibly present).
+  const hasApiKey = state.isHydrated && !!state.apiKey;
 
   return (
     <div>
@@ -46,7 +48,8 @@ export default function IdentifyPage() {
             <Tag icon={<Wifi size={10} />} label={UI_TEXT.identify.requiresOnline} />
             <Tag icon={<Key size={10} />} label={UI_TEXT.identify.requiresApiKey} />
           </div>
-          {!hasApiKey && (
+          {/* Only render apiKey-dependent warning after hydration to avoid SSR mismatch */}
+          {state.isHydrated && !state.apiKey && (
             <div className="mt-3 text-xs text-safety-caution mono-data flex items-center gap-1.5">
               <ShieldAlert size={12} aria-hidden="true" />
               {UI_TEXT.identify.setupApiKey} — {UI_TEXT.identify.goToSettings}

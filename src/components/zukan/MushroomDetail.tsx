@@ -21,8 +21,16 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 
 export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const allPhotos = [mushroom.image_local, ...mushroom.images_remote];
-  const allCredits = ['', ...(mushroom.images_remote_credits || mushroom.images_remote.map(() => ''))];
+  // Filter out empty strings so lightbox only navigates valid photos
+  const allPhotos = [
+    ...(mushroom.image_local ? [mushroom.image_local] : []),
+    ...mushroom.images_remote,
+  ];
+  const allCredits = [
+    ...(mushroom.image_local ? [''] : []),
+    ...(mushroom.images_remote_credits || mushroom.images_remote.map(() => '')),
+  ];
+  const heroSrc = mushroom.image_local || mushroom.images_remote[0] || null;
   const similarSpecies = mushroom.similar_species
     .map((id) => getMushroomById(id))
     .filter((m): m is Mushroom => m !== undefined);
@@ -31,16 +39,20 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
     <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
       {/* 1. Hero image */}
       <div
-        className="w-full h-48 rounded-lg overflow-hidden bg-forest-800 flex items-center justify-center cursor-pointer"
-        onClick={() => setLightboxIndex(0)}
+        className="w-full h-48 rounded-lg overflow-hidden bg-soil-surface flex items-center justify-center cursor-pointer"
+        onClick={() => heroSrc && setLightboxIndex(0)}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={mushroom.image_local}
-          alt={mushroom.names.ja}
-          loading="eager"
-          className="max-w-full max-h-full object-contain"
-        />
+        {heroSrc ? (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={heroSrc}
+            alt={mushroom.names.ja}
+            loading="eager"
+            className="max-w-full max-h-full object-contain"
+          />
+        ) : (
+          <p className="text-washi-dim text-sm">画像なし</p>
+        )}
       </div>
 
       {/* Additional photos from iNaturalist — 3-column grid */}

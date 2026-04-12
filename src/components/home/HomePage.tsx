@@ -170,21 +170,35 @@ export default function HomePage() {
   );
 }
 
+function pickImageSrc(m: Mushroom): string | null {
+  if (m.image_local) return m.image_local;
+  if (m.images_remote && m.images_remote.length > 0) return m.images_remote[0];
+  return null;
+}
+
 function SeasonalCard({ mushroom }: { mushroom: Mushroom }) {
+  const src = pickImageSrc(mushroom);
+
   return (
     <Link
       href={`/zukan/${mushroom.id}`}
       className="group shrink-0 w-32 snap-start bg-soil-surface border border-border rounded-lg overflow-hidden transition-all duration-200 hover:border-moss-light/40 hover:-translate-y-0.5"
     >
       <div className="relative aspect-square bg-soil-elevated">
-        <Image
-          src={mushroom.image_local}
-          alt={mushroom.names.ja}
-          fill
-          sizes="128px"
-          className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-          unoptimized
-        />
+        {src ? (
+          <Image
+            src={src}
+            alt={mushroom.names.ja}
+            fill
+            sizes="128px"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            unoptimized
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-washi-dim text-xs">
+            画像なし
+          </div>
+        )}
       </div>
       <div className="p-2 flex flex-col gap-1">
         <p className="serif-display text-washi-cream font-medium text-xs leading-tight truncate">
