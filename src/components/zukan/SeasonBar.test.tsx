@@ -15,9 +15,9 @@ describe('SeasonBar', () => {
     cells.forEach((cell) => {
       const month = Number(cell.getAttribute('data-month'));
       if (month >= 9 && month <= 11) {
-        expect(cell.className).toContain('bg-forest-300');
+        expect(cell.className).toContain('bg-moss-light');
       } else {
-        expect(cell.className).not.toContain('bg-forest-300');
+        expect(cell.className).not.toContain('bg-moss-light');
       }
     });
   });
@@ -28,8 +28,8 @@ describe('SeasonBar', () => {
     cells.forEach((cell) => {
       const month = Number(cell.getAttribute('data-month'));
       const isActive = month >= 11 || month <= 3;
-      if (isActive) expect(cell.className).toContain('bg-forest-300');
-      else expect(cell.className).not.toContain('bg-forest-300');
+      if (isActive) expect(cell.className).toContain('bg-moss-light');
+      else expect(cell.className).not.toContain('bg-moss-light');
     });
   });
 });

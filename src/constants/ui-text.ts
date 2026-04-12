@@ -25,6 +25,10 @@ export const UI_TEXT = {
     myRecords: '自分の採取記録', noRecords: 'この種の採取記録はありません',
     googleImageSearch: 'Google で画像を検索',
     additionalPhotos: '野外写真（iNaturalist）',
+    seasonCalendarFilter: '月で絞り込み',
+    seasonCalendarAll: 'すべて',
+    seasonCalendarCurrent: '今月',
+    seasonCalendarEmpty: 'この月が旬のキノコはありません',
   },
   identify: {
     title: '識別',
