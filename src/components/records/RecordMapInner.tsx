@@ -6,15 +6,21 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { MushroomRecord } from '@/types/record';
 
-// Fix Leaflet default marker icon issue with bundlers
-const defaultIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
+// MycoNote custom map pin — Gemini-generated, mingei emblem style.
+// PNGs live under /public/icons/ and ship as part of the static export.
+//
+// Anchor geometry (for the 48×48 render):
+//  - The balloon's pointed tip sits at roughly y=40 within the 48px canvas;
+//    the last ~8px is the soft drop shadow. Anchoring at (24, 40) puts the
+//    tip exactly on the map coordinate and lets the shadow render under it.
+//  - popupAnchor is measured from the icon anchor; -40 on y lifts the popup
+//    tail just above the pin head.
+const mushroomPin = L.icon({
+  iconUrl: '/icons/map-pin.png',
+  iconRetinaUrl: '/icons/map-pin@2x.png',
+  iconSize: [48, 48],
+  iconAnchor: [24, 40],
+  popupAnchor: [0, -40],
 });
 
 interface RecordMapInnerProps {
@@ -37,7 +43,7 @@ export function RecordMapInner({ records }: RecordMapInnerProps) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {validRecords.map((record) => (
-          <Marker key={record.id} position={[record.location.lat, record.location.lng]} icon={defaultIcon}>
+          <Marker key={record.id} position={[record.location.lat, record.location.lng]} icon={mushroomPin}>
             <Popup>
               <div
                 role="button"

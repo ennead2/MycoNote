@@ -295,3 +295,26 @@
 - [x] 全 187 テスト通過（bookmarks 関連 3 追加）
 - [x] 本番ビルド成功 (293 静的ページ)
 - [x] `/zukan` が `Suspense` ラップで CSR bailout 回避
+
+### 10-G: 緊急修正（実機フィードバック） — 完了 (2026-04-12)
+- [x] 栞ボタン/記録ロード停止 → DB v2→v3 アップグレード時の blocked 問題を watchdog + `db.on('blocked')` ハンドラで可視化（PWA 再インストールで解消済み）
+- [x] 簡易識別にもカメラ/ファイル 2 ボタン分離、Phase 9 パレット準拠
+- [x] ScrollToTop 位置を右上オーバーレイへ（`top-3 right-3` + `backdrop-blur-md`）
+- [x] **critical**: `template.tsx` の `animate-fade-in` が `transform: translateY(0)` を残留させ、`position: fixed` の containing block を壊していた → `fade-in`/`slide-up` を opacity-only に変更
+- [x] **critical**: `RecordForm` の `toDatetimeLocal` が UTC ISO を slice だけして local 扱いしていた → JST で 9h ズレ + 保存毎に更にズレるバグ → `getFullYear/getHours` 方式に修正
+
+### 10-H: 写真 EXIF 自動補完 — 完了 (2026-04-12)
+- [x] `exifr` 導入、`src/lib/exif.ts` 新設
+- [x] PhotoPicker に `onPhotosMetadata` コールバック追加（raw File から EXIF 抽出、圧縮前に実行）
+- [x] RecordForm で日時 / 位置を空フィールドのみ補完、「📷 写真から補完」バッジ表示
+- [x] exifr.gps() が NaN 返す端末向けフォールバック: 生 IFD → DMS 手動変換（`deriveDecimalCoord`）
+- [x] 「撮影」ボタン経由（`capture="environment"`）では EXIF GPS 完全保持で自動補完動作確認
+- [x] **発見**: 「ファイル」ボタン経由は Android 10+ の Scoped Storage 仕様で GPS が redact されるため Web では取得不可 — OS 仕様として受容
+- [x] URL に `?debug=exif` で画面上に EXIF debug panel を表示（Copy JSON ボタン付き）— 将来のトラブル診断用に残存
+
+### 10-I: 種名入力を combobox 化 — 完了 (2026-04-12)
+- [x] `src/components/records/MushroomCombobox.tsx` 新設
+- [x] 入力欄 1 つでリアルタイム候補表示（最大 10 件）→ 候補選択で `mushroom_id` セット、入力継続で自由入力モード
+- [x] 候補一致時は ✓ マーク + `border-moss-light` で「登録済みの種」表示
+- [x] 外タップ/Escape でドロップダウン閉じ、選択後は input.blur() でモバイルキーボード自動収納
+- [x] 編集時は `getMushroomById` で初期名解決、送信時は DB 正規名を保存（将来の rename 耐性）
