@@ -149,3 +149,61 @@
 - [x] ワークフロー文書化 → docs/species-data-workflow.md
 - [x] mushrooms.json: 577KB → 1,177KB
 - [x] 全158テスト通過、Vercelデプロイ確認済み
+
+## Phase 9: UI/UX 改善 — 完了 (2026-04-12)
+
+### 9-1: デザインシステム策定 (design-consultation)
+- [x] Geminiでの競合調査 (iNaturalist/Seek/AllTrails/Merlin/YAMAP/きのこ図鑑.net)
+- [x] デザイン方向性「現代の民藝図鑑」を策定
+- [x] カラーパレット: Moss/Soil/Washi + Safety 5段階 + Species 12色
+- [x] タイポグラフィ: Noto Serif JP + Noto Sans JP + Inter italic + JetBrains Mono
+- [x] DESIGN.md をリポジトリルートに作成 (700行)
+- [x] プレビューHTML作成、色情報視覚化仕様追加
+
+### 9-2: アプリアイコン生成 (gemini-imagegen)
+- [x] Gemini 3 Pro Image で 4バリアント生成
+- [x] Variant D (Washi Emblem) をベースに 3 refinements 生成
+- [x] D3 (Refined Emblem - 木版画風) を採用
+- [x] 192/512/32 PNG + favicon.ico + apple-touch-icon に書き出し
+- [x] manifest.json のテーマカラー更新
+
+### 9-3: デザイン基盤実装
+- [x] lucide-react 1.8.0 インストール
+- [x] globals.css にパレット・アニメーション keyframes (fade-in/shimmer/slide-up)
+- [x] 和紙 grain テクスチャを body 背景に (4% opacity)
+- [x] next/font でフォント4種統合
+- [x] LoadingSkeleton コンポーネント新設
+
+### 9-4: コンポーネント刷新
+- [x] 4a: BottomNav + PageHeader を lucide アイコンに、ホームタブ追加 (5タブ)
+- [x] 4b: ToxicityBadge を safety-* パレットに移行
+- [x] 4c: MushroomCard にホバー translateY + moss shadow
+- [x] 4d: ColorChip コンポーネント + renderColorText リファクタ (色名前にチップ挿入)
+
+### 9-5: ホーム画面新設
+- [x] `/` を `/zukan` リダイレクトから HomePage に
+- [x] season-utils.ts: getSeasonalMushrooms / getSafetyTip (日付シード決定論的)
+- [x] ヒーロー + クイックアクセス4枚 + 今月の旬 + 安全Tips + 最近の記録
+
+### 9-6: シーズンカレンダー改善
+- [x] 13 月タブフィルター (すべて + 1-12月)
+- [x] 現在月デフォルト選択
+- [x] 選択月 moss-primary ハイライト、現在月 border 強調
+- [x] 件数表示 / 空状態メッセージ
+
+### 9-7: アニメーション統合
+- [x] app/template.tsx でルート遷移 fade-in 一元化
+- [x] 図鑑フィルター切替時に grid fade-in リプレイ
+- [x] 記録画面: LoadingSpinner → LoadingSkeleton 4枚
+
+### 9-8: ビジュアルQA (design-review)
+- [x] 全7主要ページを browse binary でスクリーンショット取得 (モバイル 390x844)
+- [x] 6 findings 検出・修正:
+  - 底部ナビのアクティブ状態強化 (上部インジケータバー)
+  - iNat 画像ローディングを shimmer スケルトンに
+  - 識別2カード差別化 (AI=moss グラデ強調 / 簡易=neutral)
+  - 計画ページ emoji 🗺 → lucide Map
+  - Button primary/secondary の palette 修正
+  - ホーム横スクロールに右端フェードヒント
+- [x] Before/After スクリーンショット取得
+- [x] 全183テスト通過、本番ビルド成功 (292 静的ページ)
