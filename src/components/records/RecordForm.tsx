@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Camera } from 'lucide-react';
 import { MushroomRecord } from '@/types/record';
 import { mushrooms } from '@/data/mushrooms';
 import { getCurrentPosition } from '@/lib/geolocation';
 import { getPhotosForRecord } from '@/lib/db';
+import type { ExifMetadata } from '@/lib/exif';
 import { UI_TEXT } from '@/constants/ui-text';
 import { PhotoPicker } from './PhotoPicker';
 import { Button } from '@/components/ui/Button';
@@ -82,6 +84,33 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
   const [gpsError, setGpsError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // EXIF auto-fill bookkeeping.
+  // - `touched`: the user has manually edited the field; we never overwrite.
+  // - `autoFilled`: the value currently in the field came from a photo's EXIF;
+  //   drives the "写真から補完" badge. Cleared when the user edits the field.
+  // When editing an existing record we treat both fields as already `touched`
+  // so adding new photos never clobbers the stored timestamp / coordinates.
+  const [dateTouched, setDateTouched] = useState(Boolean(initialData));
+  const [locationTouched, setLocationTouched] = useState(Boolean(initialData));
+  const [dateAutoFilled, setDateAutoFilled] = useState(false);
+  const [locationAutoFilled, setLocationAutoFilled] = useState(false);
+
+  const handlePhotoMetadata = (meta: ExifMetadata) => {
+    if (meta.observedAt && !dateTouched) {
+      const pad = (n: number) => String(n).padStart(2, '0');
+      const d = meta.observedAt;
+      setObservedAt(
+        `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`,
+      );
+      setDateAutoFilled(true);
+    }
+    if (meta.location && !locationTouched) {
+      setLat(meta.location.lat.toFixed(6));
+      setLng(meta.location.lng.toFixed(6));
+      setLocationAutoFilled(true);
+    }
+  };
+
   const handleGps = async () => {
     setGpsLoading(true);
     setGpsError('');
@@ -89,6 +118,8 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
       const pos = await getCurrentPosition();
       setLat(String(pos.lat));
       setLng(String(pos.lng));
+      setLocationTouched(true);
+      setLocationAutoFilled(false);
     } catch {
       setGpsError(UI_TEXT.records.form.gpsFailed);
     } finally {
@@ -172,14 +203,21 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
 
       {/* 日時 */}
       <div>
-        <label htmlFor="observed-at" className={labelClass}>
-          {UI_TEXT.records.form.date}
-        </label>
+        <div className="flex items-center justify-between mb-1">
+          <label htmlFor="observed-at" className={labelClass + ' mb-0'}>
+            {UI_TEXT.records.form.date}
+          </label>
+          {dateAutoFilled && <AutoFilledBadge />}
+        </div>
         <input
           id="observed-at"
           type="datetime-local"
           value={observedAt}
-          onChange={(e) => setObservedAt(e.target.value)}
+          onChange={(e) => {
+            setObservedAt(e.target.value);
+            setDateTouched(true);
+            setDateAutoFilled(false);
+          }}
           required
           className={inputClass}
         />
@@ -187,15 +225,22 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
 
       {/* 場所 */}
       <div>
-        <label htmlFor="location-description" className={labelClass}>
-          {UI_TEXT.records.form.location}
-        </label>
+        <div className="flex items-center justify-between mb-1">
+          <label htmlFor="location-description" className={labelClass + ' mb-0'}>
+            {UI_TEXT.records.form.location}
+          </label>
+          {locationAutoFilled && <AutoFilledBadge />}
+        </div>
         <div className="flex gap-2 mb-2">
           <input
             id="lat"
             type="text"
             value={lat}
-            onChange={(e) => setLat(e.target.value)}
+            onChange={(e) => {
+              setLat(e.target.value);
+              setLocationTouched(true);
+              setLocationAutoFilled(false);
+            }}
             placeholder="緯度"
             className={`${inputClass} flex-1`}
             aria-label="緯度"
@@ -204,7 +249,11 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
             id="lng"
             type="text"
             value={lng}
-            onChange={(e) => setLng(e.target.value)}
+            onChange={(e) => {
+              setLng(e.target.value);
+              setLocationTouched(true);
+              setLocationAutoFilled(false);
+            }}
             placeholder="経度"
             className={`${inputClass} flex-1`}
             aria-label="経度"
@@ -237,7 +286,11 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
       {/* 写真 */}
       <div>
         <span className={labelClass}>{UI_TEXT.records.form.photos}</span>
-        <PhotoPicker photos={photos} onPhotosChange={setPhotos} />
+        <PhotoPicker
+          photos={photos}
+          onPhotosChange={setPhotos}
+          onPhotosMetadata={handlePhotoMetadata}
+        />
       </div>
 
       {/* 数量 */}
@@ -305,5 +358,18 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
         {isSubmitting ? UI_TEXT.records.form.saving : UI_TEXT.records.form.save}
       </Button>
     </form>
+  );
+}
+
+/**
+ * Small badge shown next to a field label when its value was auto-filled
+ * from a photo's EXIF metadata. Disappears when the user edits the field.
+ */
+function AutoFilledBadge() {
+  return (
+    <span className="inline-flex items-center gap-1 mono-data text-[10px] text-moss-light tracking-wider">
+      <Camera size={10} aria-hidden="true" />
+      {UI_TEXT.records.form.autoFilledFromPhoto}
+    </span>
   );
 }

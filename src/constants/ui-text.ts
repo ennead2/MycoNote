@@ -190,6 +190,7 @@ export const UI_TEXT = {
       photosAdd: '写真を追加',
       photosTake: '撮影',
       photosChoose: 'ファイル',
+      autoFilledFromPhoto: '写真から補完',
       quantity: '数量',
       quantityPlaceholder: '例: 3本',
       memo: 'メモ',

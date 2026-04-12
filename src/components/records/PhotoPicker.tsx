@@ -3,14 +3,22 @@
 import { useRef, useEffect, useState } from 'react';
 import { Camera, ImagePlus, X } from 'lucide-react';
 import { compressImage, blobToDataUrl } from '@/lib/photo';
+import { extractExifMetadata, type ExifMetadata } from '@/lib/exif';
 import { UI_TEXT } from '@/constants/ui-text';
 
 interface PhotoPickerProps {
   photos: Blob[];
   onPhotosChange: (photos: Blob[]) => void;
+  /**
+   * Optional: called with EXIF metadata extracted from the first newly-added
+   * file that has any usable metadata. EXIF is read from the raw File BEFORE
+   * compressImage (canvas-based compression strips EXIF). The callee decides
+   * how to use it (e.g. RecordForm auto-fills empty date / GPS fields).
+   */
+  onPhotosMetadata?: (metadata: ExifMetadata) => void;
 }
 
-export function PhotoPicker({ photos, onPhotosChange }: PhotoPickerProps) {
+export function PhotoPicker({ photos, onPhotosChange, onPhotosMetadata }: PhotoPickerProps) {
   const cameraInputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [previews, setPreviews] = useState<string[]>([]);
@@ -28,9 +36,23 @@ export function PhotoPicker({ photos, onPhotosChange }: PhotoPickerProps) {
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
-    const compressed = await Promise.all(
-      Array.from(files).map((file) => compressImage(file))
-    );
+
+    const rawFiles = Array.from(files);
+
+    // EXIF must be read from the *raw* File before compressImage strips it via
+    // canvas rerender. Walk files in order and surface metadata from the first
+    // one that yields anything useful (date and/or location).
+    if (onPhotosMetadata) {
+      for (const file of rawFiles) {
+        const meta = await extractExifMetadata(file);
+        if (meta.observedAt || meta.location) {
+          onPhotosMetadata(meta);
+          break;
+        }
+      }
+    }
+
+    const compressed = await Promise.all(rawFiles.map((file) => compressImage(file)));
     onPhotosChange([...photos, ...compressed]);
     e.target.value = '';
   };
