@@ -1,19 +1,145 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest-50: #f0f7ec;
-  --color-forest-100: #d8ebd0;
-  --color-forest-200: #b4d9a4;
-  --color-forest-300: #8bc34a;
-  --color-forest-400: #6fa030;
-  --color-forest-500: #4a7c23;
-  --color-forest-600: #3d6620;
-  --color-forest-700: #2d5016;
-  --color-forest-800: #1e3a0e;
-  --color-forest-900: #142808;
-  --color-forest-950: #0a1504;
+  /* ===== New Design System Tokens (現代の民藝図鑑) ===== */
+  /* Moss — 森色 */
+  --color-moss-primary: #2F5233;
+  --color-moss-light: #6BA368;
+  --color-moss-dark: #1E3621;
+
+  /* Soil — ダーク背景 */
+  --color-soil-bg: #0F1410;
+  --color-soil-surface: #1A211C;
+  --color-soil-elevated: #232B25;
+
+  /* Washi — 和紙クリームとテキスト */
+  --color-washi-cream: #EDE3D0;
+  --color-washi-muted: #B8AE98;
+  --color-washi-dim: #807663;
+
+  /* Borders */
+  --color-border: #2A332C;
+  --color-border-soft: #232B25;
+
+  /* Safety Signal System (毒性 5 段階) */
+  --color-safety-edible: #6BA368;
+  --color-safety-caution: #A89554;
+  --color-safety-inedible: #7A7266;
+  --color-safety-toxic: #C26B3F;
+  --color-safety-deadly: #B83A2E;
+
+  /* Species Color Palette (図鑑の色情報視覚化) */
+  --color-species-red: #C43E3E;
+  --color-species-white: #EDE3D0;
+  --color-species-yellow: #D4A017;
+  --color-species-brown: #7A4A2A;
+  --color-species-purple: #6B3F6B;
+  --color-species-black: #2B2420;
+  --color-species-gray: #7A7266;
+  --color-species-orange: #D47337;
+  --color-species-green: #6BA368;
+  --color-species-blue: #3E5A7A;
+  --color-species-pink: #C17889;
+  --color-species-beige: #BFB292;
+
+  /* ===== Legacy forest-* palette (Task 4 で段階的に移行) ===== */
+  --color-forest-50: #EDE3D0;
+  --color-forest-100: #EDE3D0;
+  --color-forest-200: #B8AE98;
+  --color-forest-300: #6BA368;
+  --color-forest-400: #6BA368;
+  --color-forest-500: #807663;
+  --color-forest-600: #2F5233;
+  --color-forest-700: #2A332C;
+  --color-forest-800: #1A211C;
+  --color-forest-900: #1A211C;
+  --color-forest-950: #0F1410;
+
+  /* Font families */
+  --font-serif-jp: var(--font-noto-serif-jp), "Yu Mincho", "游明朝", serif;
+  --font-sans-jp: var(--font-noto-sans-jp), "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-latin: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", "Courier New", monospace;
 }
 
+/* ===== Body base styling ===== */
 body {
-  @apply bg-forest-950 text-forest-50;
+  @apply bg-soil-bg text-washi-cream;
+  font-family: var(--font-sans-jp);
+  background-image:
+    radial-gradient(ellipse at top, rgba(47, 82, 51, 0.08), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Latin italic styling for scientific names */
+.scientific-name {
+  font-family: var(--font-latin);
+  font-style: italic;
+}
+
+/* Monospace for data fields (coordinates, IDs, timestamps) */
+.mono-data {
+  font-family: var(--font-mono);
+}
+
+/* Serif for display headings (Noto Serif JP) */
+.serif-display {
+  font-family: var(--font-serif-jp);
+}
+
+/* ===== Animation Keyframes ===== */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Animation utility classes ===== */
+.animate-fade-in {
+  animation: fade-in 300ms ease-out both;
+}
+
+.animate-slide-up {
+  animation: slide-up 400ms ease-out both;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-soil-surface) 25%,
+    var(--color-soil-elevated) 50%,
+    var(--color-soil-surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-up,
+  .animate-shimmer {
+    animation: none;
+  }
 }
