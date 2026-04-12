@@ -177,7 +177,8 @@ export const UI_TEXT = {
     noRecords: '採取記録がありません',
     form: {
       mushroom: 'キノコの種類',
-      mushroomPlaceholder: '図鑑から選択...',
+      mushroomPlaceholder: '種名を入力（候補から選択、または自由入力）',
+      mushroomRegistered: '図鑑に登録あり',
       mushroomNameManual: '種名（手入力）',
       date: '日時',
       location: '場所',

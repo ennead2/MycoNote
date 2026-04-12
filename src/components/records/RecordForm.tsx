@@ -3,12 +3,13 @@
 import { useState, useEffect } from 'react';
 import { Camera } from 'lucide-react';
 import { MushroomRecord } from '@/types/record';
-import { mushrooms } from '@/data/mushrooms';
+import { getMushroomById } from '@/data/mushrooms';
 import { getCurrentPosition } from '@/lib/geolocation';
 import { getPhotosForRecord } from '@/lib/db';
 import type { ExifMetadata } from '@/lib/exif';
 import { UI_TEXT } from '@/constants/ui-text';
 import { PhotoPicker } from './PhotoPicker';
+import { MushroomCombobox } from './MushroomCombobox';
 import { Button } from '@/components/ui/Button';
 
 export type RecordInput = Omit<MushroomRecord, 'id' | 'created_at' | 'updated_at'>;
@@ -45,10 +46,19 @@ const inputClass =
 const labelClass = 'block text-sm font-medium text-moss-light mb-1';
 
 export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
+  // Single combobox state replaces the old <select> + manual input pair.
+  // - `mushroomId` is set only when the user explicitly picks a candidate.
+  // - `mushroomText` is always the text shown in the input — either the
+  //   picked candidate's Japanese name, or whatever the user typed freely.
   const [mushroomId, setMushroomId] = useState(initialData?.mushroom_id ?? '');
-  const [mushroomNameManual, setMushroomNameManual] = useState(
-    initialData?.mushroom_name_ja ?? ''
-  );
+  const [mushroomText, setMushroomText] = useState(() => {
+    if (initialData?.mushroom_id) {
+      return getMushroomById(initialData.mushroom_id)?.names.ja
+        ?? initialData.mushroom_name_ja
+        ?? '';
+    }
+    return initialData?.mushroom_name_ja ?? '';
+  });
   const [observedAt, setObservedAt] = useState(
     initialData ? toDatetimeLocal(initialData.observed_at) : ''
   );
@@ -135,14 +145,15 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
     if (isSubmitting) return;
     setIsSubmitting(true);
     try {
-      const selectedMushroom = mushroomId
-        ? mushrooms.find((m) => m.id === mushroomId)
-        : undefined;
+      const selectedMushroom = mushroomId ? getMushroomById(mushroomId) : undefined;
+      const trimmedText = mushroomText.trim();
 
       const data: RecordInput = {
         mushroom_id: mushroomId || undefined,
-        mushroom_name_ja:
-          selectedMushroom?.names.ja || mushroomNameManual || undefined,
+        // Prefer the canonical DB name when a candidate was picked, so the
+        // record still displays correctly if the mushroom is later renamed
+        // in the dataset. Otherwise store the free-form text as-is.
+        mushroom_name_ja: selectedMushroom?.names.ja || trimmedText || undefined,
         observed_at: new Date(observedAt).toISOString(),
         location: {
           lat: parseFloat(lat) || 0,
@@ -161,47 +172,23 @@ export function RecordForm({ onSubmit, initialData }: RecordFormProps) {
     }
   };
 
-  const showManualInput = !mushroomId;
-
   return (
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto px-4 py-6 space-y-5">
-      {/* キノコの種類 */}
+      {/* キノコの種類 — 候補付き自由入力 */}
       <div>
-        <label htmlFor="mushroom-select" className={labelClass}>
+        <label htmlFor="mushroom-input" className={labelClass}>
           {UI_TEXT.records.form.mushroom}
         </label>
-        <select
-          id="mushroom-select"
-          value={mushroomId}
-          onChange={(e) => {
-            setMushroomId(e.target.value);
-            if (e.target.value) setMushroomNameManual('');
+        <MushroomCombobox
+          id="mushroom-input"
+          value={mushroomText}
+          selectedId={mushroomId}
+          onChange={(text, id) => {
+            setMushroomText(text);
+            setMushroomId(id);
           }}
-          className={inputClass}
-        >
-          <option value="">{UI_TEXT.records.form.mushroomPlaceholder}</option>
-          {mushrooms.map((m) => (
-            <option key={m.id} value={m.id}>
-              {m.names.ja}
-            </option>
-          ))}
-        </select>
-
-        {showManualInput && (
-          <div className="mt-2">
-            <label htmlFor="mushroom-manual" className={labelClass}>
-              {UI_TEXT.records.form.mushroomNameManual}
-            </label>
-            <input
-              id="mushroom-manual"
-              type="text"
-              value={mushroomNameManual}
-              onChange={(e) => setMushroomNameManual(e.target.value)}
-              placeholder={UI_TEXT.records.form.mushroomPlaceholder}
-              className={inputClass}
-            />
-          </div>
-        )}
+          placeholder={UI_TEXT.records.form.mushroomPlaceholder}
+        />
       </div>
 
       {/* 日時 */}
