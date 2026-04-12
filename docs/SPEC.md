@@ -81,7 +81,7 @@
 #### キノコ詳細画面 `/zukan/[id]`
 
 - 代表写真（同梱）＋追加写真スライダー（キャッシュ）
-- 和名・学名・分類
+- 和名・学名・分類（旧学名 synonyms は学名下に `syn.` ラベル付きで併記）
 - 毒性ラベル（`食用` / `毒` / `猛毒` / `不食` / `要注意`）
 - 生態・形態的特徴・見分け方
 - 発生時期（シーズンバー表示）
@@ -138,9 +138,10 @@ type Toxicity = 'edible' | 'edible_caution' | 'inedible' | 'toxic' | 'deadly_tox
 interface Mushroom {
   id: string;                    // slug形式 例: "amanita-phalloides"
   names: {
-    ja: string;                  // 和名
-    scientific: string;          // 学名
-    aliases?: string[];          // 別名・地方名
+    ja: string;                  // 和名（日本産菌類集覧を参照、ない場合はAI生成の和名）
+    scientific: string;          // 学名（GBIF Backbone Taxonomy の accepted name）
+    aliases?: string[];          // 別名・地方名・旧漢字表記
+    scientific_synonyms?: string[]; // GBIF で確認された旧学名（検索でヒット、詳細画面に併記）
   };
   toxicity: Toxicity;
   season: {
@@ -410,11 +411,28 @@ interface AppSettings {
 - 簡易識別と詳細識別を**自動で切り替えない**（ユーザーが明示的に選択）
 - 毒キノコ情報は**過小表示しない**（毒性ラベルは常に目立つ位置に表示）
 
+### 分類体系の正典（Phase 12 以降）
+
+学名と和名の正典を以下のとおり定める。検証時に各ソース間で不整合があった場合、この優先順位に従って解決する。
+
+| 項目 | 一次ソース | 目的 |
+|---|---|---|
+| 学名 (accepted name) | **GBIF Backbone Taxonomy** (`api.gbif.org/v1/species/match`) | シノニム解決・分類階層の付与 |
+| 学名シノニム | **GBIF** `/species/{key}/synonyms` | 旧名保持・検索ヒット |
+| 和名 | **日本産菌類集覧** (日本菌学会, CC BY 4.0) | 国内正式和名の裏取り |
+| 分類階層 (order/family/genus) | **GBIF Backbone** | taxonomy フィールドの充填 |
+| 生態・特徴テキスト | Wikipedia ja/en + kinoco-zukan.net | description / features の補強 |
+
+- GBIF の `matchType === "EXACT"` かつ `confidence >= 90` を自動適用の閾値とする
+- FUZZY / HIGHERRANK / NONE は `docs/verification-issues.md` に記録し人間レビュー
+- 学名が SYNONYM として再分類された場合、旧学名は `names.scientific_synonyms[]` に保持し検索対象に含める（ユーザーが旧学名で検索してもヒットさせる）
+
 ### ライセンス・著作権
 
 - 図鑑写真はCC BY / CC BY-SAのものを使用し、出典を記録する
 - Wikipedia由来のテキストはCC BY-SA 4.0に従いライセンス表記を行う
 - iNaturalistの写真は個別にライセンスを確認（CC BY-NDやAll Rights Reservedは使用不可）
+- 日本産菌類集覧（日本菌学会）は CC BY 4.0 に従い出典表記（`docs/credits.md`）
 
 ### パフォーマンス目標
 

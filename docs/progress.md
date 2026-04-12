@@ -347,3 +347,70 @@
 - [x] 196 テスト通過（emoji-to-icon 9 テスト追加）
 - [x] 本番ビルド成功（293 静的ページ）
 - [x] plan / settings 配下の残存絵文字ゼロ
+
+## Phase 12: 図鑑ハルシネーション対策（自動シノニム解決） — 進行中 (2026-04-12)
+
+計画書: `docs/superpowers/plans/2026-04-12-phase12-hallucination-reduction.md`
+
+### 背景
+
+Phase 8e で残った 56 件の verification-issue（学名不一致・架空種疑い）の大半が
+分類学的シノニム関係（例: `Lactarius volemus` → `Lactifluus volemus`）であり、
+既存 iNaturalist 主体の workflow では自動解決できず全件人間レビュー待ちだった。
+
+### 正典宣言（SPEC.md に明記）
+
+- **学名・分類階層**: GBIF Backbone Taxonomy を正
+- **和名**: 日本産菌類集覧（日本菌学会, CC BY 4.0）を正
+- 自動適用閾値: `matchType === "EXACT"` かつ `confidence >= 90`
+
+### 12-A: GBIF resolver — 完了
+- [x] `scripts/gbif-resolve.mjs` 新設：`/species/match` + `/species/{key}/synonyms` で全 279 種を解決
+- [x] 自動適用 270 件 / 要レビュー 9 件、学名変化 33 件
+
+### 12-B: 日本産菌類集覧 JSON 化 — 完了
+- [x] `scripts/import-jp-mycology-checklist.mjs` で Katumoto-Wamei.xlsx (日本菌学会) を取り込み
+- [x] `data/jp-mycology-checklist.json` (4429 エントリー, 641KB) として保存
+- [x] `docs/credits.md` 新設、CC BY 4.0 クレジット記録
+
+### 12-C/D: 検証パイプライン + 自動訂正 — 完了
+- [x] `scripts/verify-species-v2.mjs`：GBIF + 菌類集覧でクロスチェック
+  - 種内ランク (`var.` / `f.` / `subsp.`) の差を同一視
+  - 同一属かつ編集距離 <= 2 の綴り異本 (`rhacodes` / `rachodes`) を同一視
+- [x] `scripts/apply-corrections.mjs`：27 件の学名を新名に更新、旧名を `scientific_synonyms[]` に保持
+- [x] 11 件の taxonomy を GBIF ソースで補完
+- [x] 結果: 279 種中 **183 件 (65.6%) 自動クローズ**、残り 96 件が要レビュー
+
+### 12-E: 検索・表示の synonyms 対応 — 完了
+- [x] `Mushroom.names.scientific_synonyms?: string[]` を型に追加
+- [x] `searchMushrooms` が synonyms を検索対象に拡張（旧学名でもヒット）
+- [x] `MushroomDetail`：学名下に `syn.` ラベル + synonyms を `italic` muted 併記
+
+### 12-G: テスト追加 — 完了
+- [x] `scripts/lib/species-match.mjs` に pure helpers 抽出
+- [x] `scripts/lib/species-match.test.mjs` 24 テスト（normalize / stripInfraspecific / editDistance / sciEquivalent / filterSynonyms）
+- [x] `src/data/mushrooms.test.ts` に 5 テスト追加（旧学名検索のヒット確認）
+- [x] **合計 233 テスト通過** (Phase 11 の 196 から +37)
+
+### 12-H: ドキュメント — 完了
+- [x] `docs/SPEC.md` に「分類体系の正典」章を追加
+- [x] `docs/species-data-workflow.md` に Step 0 (GBIF) / Step 1 (菌類集覧) を追記
+- [x] `docs/credits.md` 新設
+
+### 12-F: 残存 96 件の手動レビュー — 次セッション
+96 件内訳:
+- 🔴 高（架空種・和名誤りの強い疑い）: 43 件
+- 🟡 中（HIGHERRANK / 学名不一致）: 59 件
+- 🟢 低（typo）: 2 件
+
+### 主な自動訂正例
+
+| 和名 | 旧学名 | → 新学名 |
+|---|---|---|
+| ツキヨタケ | Omphalotus japonicus | Omphalotus guepiniiformis |
+| タモギタケ | Pleurotus cornucopiae var. citrinopileatus | Pleurotus citrinopileatus |
+| アカモミタケ | Lactarius laeticolor | Lactarius deliciosus |
+| ドクササコ | Clitocybe acromelalga | Paralepistopsis acromelalga |
+| ドクヤマドリ | Boletus venenatus | Sutorius venenatus |
+| シャカシメジ | Lyophyllum fumosum | Lyophyllum decastes |
+| ヒカゲシビレタケ | Psilocybe argentipes | Psilocybe subcaerulipes |

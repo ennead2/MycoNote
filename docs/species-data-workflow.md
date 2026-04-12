@@ -14,35 +14,44 @@
 
 | # | ソース | 目的 | エンドポイント/URL |
 |---|--------|------|--------------------|
-| 1 | **iNaturalist Taxa API** | 学名存在確認、分類階層取得 | `api.inaturalist.org/v1/taxa?q={学名}&rank=species` |
-| 2 | **Wikipedia ja/en** | 和名↔学名照合、記事内容取得 | `{lang}.wikipedia.org/w/api.php` (action=query) |
-| 3 | **kinoco-zukan.net** | 和名・学名・科名照合、特徴テキスト | `kinoco-zukan.net/{romanized_name}.php` |
+| 0 | **GBIF Backbone Taxonomy** ★ Phase 12 | 学名シノニム解決・accepted name 確定・分類階層 | `api.gbif.org/v1/species/match`, `/species/{key}`, `/species/{key}/synonyms` |
+| 1 | **日本産菌類集覧** ★ Phase 12 | 和名↔学名の国内正典（CC BY 4.0 静的 JSON） | `data/jp-mycology-checklist.json` (4429 種) |
+| 2 | **iNaturalist Taxa API** | 学名存在確認の裏取り、観察数取得 | `api.inaturalist.org/v1/taxa?q={学名}&rank=species` |
+| 3 | **Wikipedia ja/en** | 記事内容（description 補強）、分類情報 | `{lang}.wikipedia.org/w/api.php` (action=query) |
+| 4 | **kinoco-zukan.net** | 和名・学名・特徴テキストの第4ソース | `kinoco-zukan.net/{romanized_name}.php` |
 
-## 収集フロー（1種あたり）
+**正典**: 学名・分類階層は **GBIF Backbone**、和名は **日本産菌類集覧** を正とする（`docs/SPEC.md` 参照）。
+
+## 収集フロー（1種あたり, Phase 12 改定）
 
 ```
-Step 1: iNaturalist Taxa API
+Step 0: GBIF Species match  ← シノニム解決層
   入力: 学名 (names.scientific)
-  取得: taxon_id, 分類階層 (order/family/genus), 観察数, wikipedia_url
-  判定: 結果0件 → 学名不正または架空種の可能性 → フラグ
+  取得: status (ACCEPTED/SYNONYM/NONE), accepted name, synonyms[], taxonomy
+  判定: SYNONYM → accepted 名に置換、旧名を scientific_synonyms[] に保持
+        ACCEPTED + EXACT + confidence>=90 → pass
+        それ以外 (FUZZY/HIGHERRANK/NONE) → verification-issues に記録
 
-Step 2: Wikipedia ja
+Step 1: 日本産菌類集覧 JSON 照合  ← 和名正典
+  入力: 和名 (names.ja) + Step 0 で決まった学名
+  判定: 和名ヒット & 学名等価 (sciEquivalent) → 和名確定
+        和名ミス & 学名ヒット → DB 和名が別名 or AI 命名の疑い → issue
+        両方ミス → 2008年以降の新種 or ハルシネーション濃厚 → issue
+
+Step 2: iNaturalist Taxa API  ← 観察数・Wikipedia URL の裏取り
+  入力: Step 0 で確定した accepted 学名
+  取得: taxon_id, 観察数, wikipedia_url
+  判定: 結果0件 → Step 0 と矛盾 → 要レビュー
+
+Step 3: Wikipedia ja
   入力: 和名 (names.ja)
-  取得: 記事テキスト (extract), 学名 (記事内から抽出), ページURL
+  取得: 記事テキスト (extract), ページURL
   判定: 記事なし → 情報源不足フラグ
-        記事の学名と Step 1 の学名が不一致 → 不整合フラグ
 
-Step 3: kinoco-zukan.net
+Step 4: kinoco-zukan.net
   入力: ID (romanized name)
   取得: 学名, 科名, 特徴テキスト
   判定: ページなし → スキップ (マイナー種では正常)
-        学名不一致 → 不整合フラグ
-
-Step 4: 統合・検証
-  - 3ソースの学名を照合
-  - iNaturalist の分類階層を taxonomy フィールドに設定
-  - 不整合があれば verification-issues.md に記録
-  - 学名修正が必要な場合は iNaturalist を正とする
 
 Step 5: 記事充実化
   - 収集した情報を元に description を拡充
@@ -55,10 +64,21 @@ Step 5: 記事充実化
 
 | ソース | 間隔 |
 |--------|------|
+| GBIF | 0.2秒 (5 req/sec) |
 | iNaturalist | 1.5秒 |
 | Wikipedia | 1.5秒 |
 | kinoco-zukan.net | 3秒 |
-| 1種の合計 | 約6-8秒 |
+| 1種の合計 | 約7-9秒 |
+
+## 新スクリプト (Phase 12)
+
+| スクリプト | 用途 |
+|-----------|------|
+| `scripts/gbif-resolve.mjs` | Stage 0: GBIF Backbone 全種シノニム解決、結果を `scripts/temp/gbif-results.json` にキャッシュ |
+| `scripts/import-jp-mycology-checklist.mjs` | 日本菌学会 Excel → `data/jp-mycology-checklist.json` 変換（初回/更新時のみ） |
+| `scripts/verify-species-v2.mjs` | GBIF + 菌類集覧で全種を分類し `docs/verification-issues.md` を再生成 |
+| `scripts/apply-corrections.mjs` | autoApply 対象の学名を `mushrooms.json` に反映、旧名を `scientific_synonyms[]` に保持 |
+| `scripts/lib/species-match.mjs` | 学名マッチング pure helpers (`sciEquivalent`, `filterSynonyms` など) |
 
 ## 進捗管理
 
