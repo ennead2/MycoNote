@@ -242,7 +242,7 @@ export default function PlanPage() {
         <div className="sticky top-0 z-40 bg-soil-surface border-b border-border">
           <div className="max-w-lg mx-auto flex items-center h-14 px-4 gap-3">
             <button
-              onClick={() => setView('form')}
+              onClick={() => setView('history')}
               className="text-moss-light p-1 -ml-1 hover:text-washi-cream transition-colors"
               aria-label={UI_TEXT.common.back}
             >
