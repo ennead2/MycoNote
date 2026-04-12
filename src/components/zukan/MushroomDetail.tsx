@@ -392,6 +392,19 @@ function Lightbox({
 
 function RemotePhoto({ url, alt, credit, onClick }: { url: string; alt: string; credit?: string; onClick: () => void }) {
   const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading');
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // ブラウザキャッシュから即座に画像が読まれた場合、onLoad ハンドラ登録前に
+  // load イベントが発火して取りこぼす（リロード時に status が loading のまま
+  // 固まる症状）。マウント時に complete && naturalWidth > 0 を確認して補正する。
+  useEffect(() => {
+    const img = imgRef.current;
+    if (!img) return;
+    if (img.complete) {
+      if (img.naturalWidth > 0) setStatus('loaded');
+      else setStatus('error');
+    }
+  }, [url]);
 
   return (
     <div className="flex flex-col">
@@ -409,6 +422,7 @@ function RemotePhoto({ url, alt, credit, onClick }: { url: string; alt: string; 
         {status !== 'error' && (
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
+            ref={imgRef}
             src={url}
             alt={alt}
             loading="lazy"
