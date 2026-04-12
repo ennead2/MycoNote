@@ -1,7 +1,9 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import { Eye, EyeOff } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
+import { Checkbox } from '@/components/ui/Checkbox';
 import { useApp } from '@/contexts/AppContext';
 import { useRecords } from '@/contexts/RecordsContext';
 import { testApiKey } from '@/lib/claude';
@@ -131,10 +133,14 @@ export default function SettingsPage() {
               <button
                 type="button"
                 onClick={() => setShowKey(!showKey)}
-                className="rounded-lg bg-soil-surface border border-moss-primary px-3 py-2 text-sm text-moss-light hover:text-washi-muted"
+                className="rounded-lg bg-soil-surface border border-moss-primary px-3 py-2 text-moss-light hover:text-washi-muted transition-colors inline-flex items-center"
                 aria-label={showKey ? UI_TEXT.settings.apiKeyHide : UI_TEXT.settings.apiKeyShow}
               >
-                {showKey ? '🙈' : '👁'}
+                {showKey ? (
+                  <EyeOff size={18} aria-hidden="true" />
+                ) : (
+                  <Eye size={18} aria-hidden="true" />
+                )}
               </button>
             </div>
           </div>
@@ -174,17 +180,13 @@ export default function SettingsPage() {
 
           {/* エクスポート */}
           <div className="mb-4">
-            <div className="flex items-center gap-2 mb-2">
-              <input
-                type="checkbox"
+            <div className="mb-2">
+              <Checkbox
                 id="include-photos"
                 checked={includePhotos}
-                onChange={(e) => setIncludePhotos(e.target.checked)}
-                className="rounded border-moss-primary bg-soil-surface text-washi-dim"
+                onChange={setIncludePhotos}
+                label={UI_TEXT.settings.exportIncludePhotos}
               />
-              <label htmlFor="include-photos" className="text-xs text-moss-light">
-                {UI_TEXT.settings.exportIncludePhotos}
-              </label>
             </div>
             <Button
               variant="primary"
