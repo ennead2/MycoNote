@@ -1,14 +1,14 @@
 # 検証で検出された問題 (v2: GBIF + 日本産菌類集覧)
 
-> 自動生成: 2026-04-12T13:02:14.605Z
+> 自動生成: 2026-04-12T13:12:18.033Z
 > Phase 12 検証: 対象 279 種 / 自動クローズ 183 / 要レビュー 96
 
 ## 🔴 高 (架空種・和名誤りの強い疑い) — 43 件
 
 | id | 和名 | 学名 | 問題内容 |
 |---|---|---|---|
-| dokusasako | ドクササコ | `Clitocybe acromelalga` | 菌類集覧: 学名 "Paralepistopsis acromelalga" の正式和名は "ドクササゴ" — DB 和名 "ドクササコ" と不一致（AI 命名の疑い） |
-| dokuyamadori | ドクヤマドリ | `Boletus venenatus` | 菌類集覧: 学名 "Sutorius venenatus" の正式和名は "ドクヤマドリタケ" — DB 和名 "ドクヤマドリ" と不一致（AI 命名の疑い） |
+| dokusasako | ドクササコ | `Paralepistopsis acromelalga` | 菌類集覧: 和名 "ドクササコ" も 学名 "Paralepistopsis acromelalga" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
+| dokuyamadori | ドクヤマドリ | `Sutorius venenatus` | 菌類集覧: 和名 "ドクヤマドリ" も 学名 "Sutorius venenatus" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
 | dokufusentake | ドクフウセンタケ | `Cortinarius rubellus` | 菌類集覧: 学名 "Cortinarius rubellus" の正式和名は "ジンガサドクフウセンタケ" — DB 和名 "ドクフウセンタケ" と不一致（AI 命名の疑い） |
 | chawantake | チャワンタケ | `Peziza vesiculosa` | 菌類集覧: 学名 "Peziza vesiculosa" の正式和名は "オオチャワンタケ" — DB 和名 "チャワンタケ" と不一致（AI 命名の疑い） |
 | shuirotake | シュイロタケ | `Trametes coccinea` | 菌類集覧: 和名 "シュイロタケ" も 学名 "Trametes coccinea" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
@@ -19,7 +19,7 @@
 | hatsutake-modoki | ハツタケモドキ | `Lactarius chrysorrheus` | 菌類集覧: 学名 "Lactarius chrysorrheus" の正式和名は "キチチタケ" — DB 和名 "ハツタケモドキ" と不一致（AI 命名の疑い） |
 | amitake-modoki | アミタケモドキ | `Suillus spraguei` | 菌類集覧: 和名 "アミタケモドキ" も 学名 "Suillus spraguei" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
 | uraguronigiiguchi | ウラグロニガイグチ | `Neoporphyrellus alboater` | GBIF: "Neoporphyrellus alboater" が見つからない — 架空種の強い疑い |
-| shaguma-amigasatake-modoki | シャグマアミガサタケモドキ | `Maublancomyces gigas` | 菌類集覧: 和名 "シャグマアミガサタケモドキ" も 学名 "Gyromitra gigas" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
+| shaguma-amigasatake-modoki | シャグマアミガサタケモドキ | `Gyromitra gigas` | 菌類集覧: 和名 "シャグマアミガサタケモドキ" も 学名 "Gyromitra gigas" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
 | akamomitake-modoki | アカモミタケモドキ | `Lactarius salmonicolor` | 菌類集覧: 和名 "アカモミタケモドキ" も 学名 "Lactarius salmonicolor" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
 | kakishimeji-modoki | カキシメジモドキ | `Tricholoma pessundatum` | 菌類集覧: 学名 "Tricholoma pessundatum" の正式和名は "オオカキシメジ" — DB 和名 "カキシメジモドキ" と不一致（AI 命名の疑い） |
 | honshimeji-modoki | ホンシメジモドキ | `Leucocybe connata` | 菌類集覧: 和名 "ホンシメジモドキ" も 学名 "Leucocybe connata" も未収録（2008年以降の新種、もしくはハルシネーションの可能性） |
@@ -66,7 +66,7 @@
 | masshurumu | マッシュルーム | `Agaricus bisporus` | 菌類集覧: 和名 "マッシュルーム" に対応する学名が "Agaricus brunnescens" — DB 学名 "Agaricus bisporus" と不一致 |
 | ootsuga-take | オオツガタケ | `Tricholoma zelleri` | 菌類集覧: 和名 "オオツガタケ" に対応する学名が "Cortinarius claricolor" — DB 学名 "Tricholoma zelleri" と不一致 |
 | hatakekinoko | ハタケキノコ | `Agrocybe praecox` | 菌類集覧: 和名 "ハタケキノコ" に対応する学名が "Agrocybe pediades" — DB 学名 "Agrocybe praecox" と不一致 |
-| ningyoutake | ニンギョウタケ | `Albatrellus yasudae` | 菌類集覧: 和名 "ニンギョウタケ" に対応する学名が "Albatrellus confluens" — DB 学名 "Albatrellus yasudae" と不一致 |
+| ningyoutake | ニンギョウタケ | `Neoalbatrellus yasudae` | 菌類集覧: 和名 "ニンギョウタケ" に対応する学名が "Albatrellus confluens" — DB 学名 "Neoalbatrellus yasudae" と不一致 |
 | aishimeji | アイシメジ | `Collybia sordida` | GBIF: 属レベルまでしか一致せず (accepted=Collybia) — 種未登録または学名誤り |
 | aishimeji | アイシメジ | `Collybia sordida` | 菌類集覧: 和名 "アイシメジ" に対応する学名が "Tricholoma sejunctum" — DB 学名 "Collybia sordida" と不一致 |
 | himematsutake | ヒメマツタケ | `Agaricus subrufescens` | 菌類集覧: 和名 "ヒメマツタケ" に対応する学名が "Agaricus blazei" — DB 学名 "Agaricus subrufescens" と不一致 |
@@ -79,7 +79,7 @@
 | nioiwachichitake | ニオイワチチタケ | `Lactarius quietus` | 菌類集覧: 和名 "ニオイワチチタケ" に対応する学名が "Lactarius subzonarius" — DB 学名 "Lactarius quietus" と不一致 |
 | awatake | アワタケ | `Xerocomellus chrysenteron` | 菌類集覧: 和名 "アワタケ" に対応する学名が "Boletus subtomentosus" — DB 学名 "Xerocomellus chrysenteron" と不一致 |
 | shiroonitake-modoki | シロオニタケモドキ | `Amanita echinocephala` | 菌類集覧: 和名 "シロオニタケモドキ" に対応する学名が "Amanita hongoi" — DB 学名 "Amanita echinocephala" と不一致 |
-| nigakuritake-modoki | ニガクリタケモドキ | `Hypholoma gracile` | 菌類集覧: 和名 "ニガクリタケモドキ" に対応する学名が "Naematoloma gracile" — DB 学名 "Hypholoma gracile" と不一致 |
+| nigakuritake-modoki | ニガクリタケモドキ | `Psathyrella corrugis` | 菌類集覧: 和名 "ニガクリタケモドキ" に対応する学名が "Naematoloma gracile" — DB 学名 "Psathyrella corrugis" と不一致 |
 | dokukarakasatake | ドクカラカサタケ | `Lepiota brunneoincarnata` | 菌類集覧: 和名 "ドクカラカサタケ" に対応する学名が "Chlorophyllum neomastoideum" — DB 学名 "Lepiota brunneoincarnata" と不一致 |
 | ookogechaiiguchi | オオコゲチャイグチ | `Paxillus involutus` | 菌類集覧: 和名 "オオコゲチャイグチ" に対応する学名が "Boletus obscureumbrinus" — DB 学名 "Paxillus involutus" と不一致 |
 | kaburatengutake | カブラテングタケ | `Amanita porphyria` | 菌類集覧: 和名 "カブラテングタケ" に対応する学名が "Amanita gymnopus" — DB 学名 "Amanita porphyria" と不一致 |
@@ -98,7 +98,7 @@
 | tengutakedamashi | テングタケダマシ | `Amanita spissacea` | 菌類集覧: 和名 "テングタケダマシ" に対応する学名が "Amanita sychnopyramis" — DB 学名 "Amanita spissacea" と不一致 |
 | semitake | セミタケ | `Paraisaria heteropoda` | 菌類集覧: 和名 "セミタケ" に対応する学名が "Ophiocordyceps sobolifera" — DB 学名 "Paraisaria heteropoda" と不一致 |
 | kawaratake-modoki | カワラタケモドキ | `Trametes hirsuta` | 菌類集覧: 和名 "カワラタケモドキ" に対応する学名が "Trametes ochracea" — DB 学名 "Trametes hirsuta" と不一致 |
-| uchiwatake | ウチワタケ | `Microporus vernicipes` | 菌類集覧: 和名 "ウチワタケ" に対応する学名が "Microporus affinis" — DB 学名 "Microporus vernicipes" と不一致 |
+| uchiwatake | ウチワタケ | `Trametes vernicipes` | 菌類集覧: 和名 "ウチワタケ" に対応する学名が "Microporus affinis" — DB 学名 "Trametes vernicipes" と不一致 |
 | oominokofukitake | オオミノコフキタケ | `Ganodermaceae sp.` | 菌類集覧: 和名 "オオミノコフキタケ" に対応する学名が "Ganoderma australe" — DB 学名 "Ganodermaceae sp." と不一致 |
 | kokiratatake | コキララタケ | `Coprinellus micaceus` | 菌類集覧: 和名 "コキララタケ" に対応する学名が "Coprinellus radians" — DB 学名 "Coprinellus micaceus" と不一致 |
 | usubeniitachitake | ウスベニイタチタケ | `Candolleomyces candolleanus` | 菌類集覧: 和名 "ウスベニイタチタケ" に対応する学名が "Psathyrella bipellis" — DB 学名 "Candolleomyces candolleanus" と不一致 |
@@ -109,7 +109,7 @@
 | kagotake | カゴタケ | `Ileodictyon cibarium` | 菌類集覧: 和名 "カゴタケ" に対応する学名が "Ileodictyon gracile" — DB 学名 "Ileodictyon cibarium" と不一致 |
 | nikuusubatake | ニクウスバタケ | `Stereum ostrea` | 菌類集覧: 和名 "ニクウスバタケ" に対応する学名が "Antrodiella zonata" — DB 学名 "Stereum ostrea" と不一致 |
 | chaurokotake | チャウロコタケ | `Stereum hirsutum` | 菌類集覧: 和名 "チャウロコタケ" に対応する学名が "Stereum ostrea" — DB 学名 "Stereum hirsutum" と不一致 |
-| momijiurokotake | モミジウロコタケ | `Hymenochaete yasudae` | 菌類集覧: 和名 "モミジウロコタケ" に対応する学名が "Xylobolus spectabilis" — DB 学名 "Hymenochaete yasudae" と不一致 |
+| momijiurokotake | モミジウロコタケ | `Hydnoporia yasudae` | 菌類集覧: 和名 "モミジウロコタケ" に対応する学名が "Xylobolus spectabilis" — DB 学名 "Hydnoporia yasudae" と不一致 |
 | tsunomatatake | ツノマタタケ | `Guepinia helvelloides` | 菌類集覧: 和名 "ツノマタタケ" に対応する学名が "Dacryopinax spathularia" — DB 学名 "Guepinia helvelloides" と不一致 |
 | rokushougusarekin | ロクショウグサレキン | `Chlorociboria aeruginascens` | 菌類集覧: 和名 "ロクショウグサレキン" に対応する学名が "Chlorociboria aeruginosa" — DB 学名 "Chlorociboria aeruginascens" と不一致 |
 | benichawantake-modoki | ベニチャワンタケモドキ | `Sarcoscypha coccinea` | 菌類集覧: 和名 "ベニチャワンタケモドキ" に対応する学名が "Sarcoscypha occidentalis" — DB 学名 "Sarcoscypha coccinea" と不一致 |

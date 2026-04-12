@@ -17,6 +17,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { filterSynonyms } from './lib/species-match.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -27,32 +28,6 @@ const DIFF_OUT = join(ROOT, 'docs/corrections-applied.md');
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const MAX_SYNONYMS = 3;
-
-// ── 種ランクで現代的な (属+種小名 2語) シノニムのみ残す ──
-function filterSynonyms(list, accepted, oldName) {
-  if (!list || list.length === 0) return [];
-  const seen = new Set([accepted.toLowerCase()]);
-  const result = [];
-  // 旧名は必ず先頭に含める
-  if (oldName && oldName.toLowerCase() !== accepted.toLowerCase()) {
-    result.push(oldName);
-    seen.add(oldName.toLowerCase());
-  }
-  for (const s of list) {
-    if (!s) continue;
-    const key = s.toLowerCase();
-    if (seen.has(key)) continue;
-    const parts = s.trim().split(/\s+/);
-    // 2 語 (属 + 種小名) のみ、3 語は variety/forma/subsp の可能性が高いので除外
-    if (parts.length !== 2) continue;
-    // 種小名が Capital 始まりは異常なので除外
-    if (/^[A-Z]/.test(parts[1])) continue;
-    result.push(s);
-    seen.add(key);
-    if (result.length >= MAX_SYNONYMS) break;
-  }
-  return result;
-}
 
 function main() {
   const mushrooms = JSON.parse(readFileSync(MUSHROOMS_JSON, 'utf8'));
@@ -85,7 +60,7 @@ function main() {
     // 2. synonyms[] 反映 — 学名が変わった種のみ (旧名を検索対象に保持するため)
     if (c.scientific_new && c.scientific_old && c.synonyms && c.synonyms.length > 0) {
       const oldName = c.scientific_old;
-      const filtered = filterSynonyms(c.synonyms, m.names.scientific, oldName);
+      const filtered = filterSynonyms(c.synonyms, m.names.scientific, oldName, MAX_SYNONYMS);
       if (filtered.length > 0) {
         // 既存 synonyms と結合・重複排除
         const existing = m.names.scientific_synonyms || [];

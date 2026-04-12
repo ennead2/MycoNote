@@ -17,6 +17,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { normalize, sciEquivalent } from './lib/species-match.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -31,42 +32,6 @@ const ONLY = ARGS.find(a => a.startsWith('--only='))?.split('=')[1]?.split(',');
 
 const AUTO_APPLY_THRESHOLD = 90;
 
-function normalize(s) {
-  return String(s || '').trim().toLowerCase();
-}
-
-// 種内ランク (var. / subsp. / f. / forma) を除いた種レベルの学名を返す
-function stripInfraspecific(s) {
-  return normalize(s).replace(/\s+(var|subsp|ssp|f|forma|subvar)\.?\s+.*$/, '').trim();
-}
-
-// Levenshtein 距離 — 綴り異本判定用
-function editDistance(a, b) {
-  a = normalize(a); b = normalize(b);
-  if (a === b) return 0;
-  const dp = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
-  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
-  for (let i = 1; i <= a.length; i++) {
-    for (let j = 1; j <= b.length; j++) {
-      dp[i][j] = a[i-1] === b[j-1]
-        ? dp[i-1][j-1]
-        : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
-    }
-  }
-  return dp[a.length][b.length];
-}
-
-// 2 つの学名が「実質同一」と見なせるか
-function sciEquivalent(a, b) {
-  if (!a || !b) return false;
-  const na = normalize(a), nb = normalize(b);
-  if (na === nb) return true;
-  const sa = stripInfraspecific(a), sb = stripInfraspecific(b);
-  if (sa === sb) return true;
-  // 種小名末尾の正書法揺れ (rhacodes/rachodes, cespitosus/caespitosus 等) を許容
-  if (editDistance(sa, sb) <= 2 && sa.split(' ')[0] === sb.split(' ')[0]) return true;
-  return false;
-}
 
 function buildCheckList() {
   const list = JSON.parse(readFileSync(CHECKLIST_JSON, 'utf8'));
