@@ -42,7 +42,7 @@ describe('ChatHistoryList', () => {
 
   it('shows empty message when no sessions', () => {
     render(<ChatHistoryList sessions={[]} onSelect={vi.fn()} onDelete={vi.fn()} onNewSession={vi.fn()} />);
-    expect(screen.getByText(/チャット履歴がありません/)).toBeInTheDocument();
+    expect(screen.getByText(/まだ計画の履歴はありません/)).toBeInTheDocument();
   });
 
   it('renders new session button', () => {
