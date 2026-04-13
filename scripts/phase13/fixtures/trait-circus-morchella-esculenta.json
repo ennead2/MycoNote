@@ -1,0 +1,3911 @@
+{
+  "currentName": "Morchella esculenta",
+  "traits": [
+    {
+      "trait": "fruiting body_shape_conical",
+      "hitword": "conical",
+      "raw": "conical",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "yellowish|<stipe> yellow",
+      "raw": "yellowish with black lining",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_black",
+      "hitword": "black",
+      "raw": "yellowish with black lining",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_ribbed",
+      "hitword": "ribs|ridges",
+      "raw": "outer surface with irregular pits and cut, ribs along the middle ridges of the pit are usually slightly lighter than the inner side of the pit",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_rugose",
+      "hitword": "ribs|<stipe> wrinkled",
+      "raw": "outer surface with irregular pits and cut, ribs along the middle ridges of the pit are usually slightly lighter than the inner side of the pit",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_punctiform",
+      "hitword": "pit",
+      "raw": "outer surface with irregular pits and cut, ribs along the middle ridges of the pit are usually slightly lighter than the inner side of the pit",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_punctiform",
+      "hitword": "pit",
+      "raw": "outer surface with irregular pits and cut, ribs along the middle ridges of the pit are usually slightly lighter than the inner side of the pit",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_irregular",
+      "hitword": "irregular",
+      "raw": "outer surface with irregular pits and cut, ribs along the middle ridges of the pit are usually slightly lighter than the inner side of the pit",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellow",
+      "raw": "white to pale yellow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "white",
+      "raw": "white to pale yellow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_pale",
+      "hitword": "pale",
+      "raw": "white to pale yellow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "hollow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_rugose",
+      "hitword": "wrinkled",
+      "raw": "wrinkled",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_soil",
+      "hitword": "above the ground|soil",
+      "raw": "above the ground",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_sand",
+      "hitword": "sandy",
+      "raw": "sandy pebble stone soil",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_rock",
+      "hitword": "stone",
+      "raw": "sandy pebble stone soil",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_climate_alpine",
+      "hitword": "alpine",
+      "raw": "Sub-alpine forests",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_forest",
+      "hitword": "forests",
+      "raw": "Sub-alpine forests",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> white",
+      "raw": "white to pale yellow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_pale",
+      "hitword": "<stipe> pale",
+      "raw": "white to pale yellow",
+      "source": "https://www.botanyjournals.com/archives/2022/vol7/issue1/7-1-93",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "淡褐",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_color_dark",
+      "hitword": "淡褐",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "黄色",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_texture_hollow",
+      "hitword": "空洞",
+      "raw": "内部は空洞で",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_reticulate",
+      "hitword": "網目状",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_pruinose",
+      "hitword": "粉状",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_granulose",
+      "hitword": "顆粒",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_warty",
+      "hitword": "顆粒",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "円筒形",
+      "raw": "円筒形",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "asci_color_yellow",
+      "hitword": "黄色",
+      "raw": "黄色を帯びる",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "asci_surface_smooth",
+      "hitword": "平滑",
+      "raw": "平滑",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "帯黄色|黄色",
+      "raw": "内壁は淡褐黄色、白色～帯黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_brown",
+      "hitword": "淡褐",
+      "raw": "内壁は淡褐黄色、白色～帯黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_dark",
+      "hitword": "淡褐",
+      "raw": "内壁は淡褐黄色、白色～帯黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "白色",
+      "raw": "内壁は淡褐黄色、白色～帯黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_surface_pruinose",
+      "hitword": "粉状",
+      "raw": "白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_surface_granulose",
+      "hitword": "顆粒",
+      "raw": "白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_surface_warty",
+      "hitword": "顆粒",
+      "raw": "白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore print_color_yellow",
+      "hitword": "黄色",
+      "raw": "黄色を帯びる",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "development_position_solitary",
+      "hitword": "単生",
+      "raw": "単生",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> 淡褐|<stipe> 淡褐",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "<pileus> 淡褐|<stipe> 淡褐",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> 黄色|<stipe> 帯黄色|黄色",
+      "raw": "内壁は淡褐黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_reticulate",
+      "hitword": "<pileus> 網目状",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_pruinose",
+      "hitword": "<pileus> 粉状|<stipe> 粉状",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_granulose",
+      "hitword": "<pileus> 顆粒|<stipe> 顆粒",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_warty",
+      "hitword": "<pileus> 顆粒|<stipe> 顆粒",
+      "raw": "網目状に隆起した襞があり、小区画に分かれ、小区画のくぼみに子実層を生じる、白粉状の顆粒がある",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "hymenium_color_yellow",
+      "hitword": "<asci> 黄色",
+      "raw": "黄色を帯びる",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "hymenium_surface_smooth",
+      "hitword": "<asci> 平滑",
+      "raw": "平滑",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> 白色",
+      "raw": "内壁は淡褐黄色、白色～帯黄色",
+      "source": "改訂・沖縄県の絶滅のおそれのある野生生物（レッドデータおきなわ）第3版-菌類編・植物編-",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "灰褐色",
+      "raw": "灰褐色",
+      "source": "山渓フィールドブックスきのこ",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> 灰褐色",
+      "raw": "灰褐色",
+      "source": "山渓フィールドブックスきのこ",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_color_green",
+      "hitword": "green|greenish",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown|ochre",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "ochre",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "pileus_color_pale",
+      "hitword": "pale",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "habitat_substrate_ulmus",
+      "hitword": "elm",
+      "raw": "under smaller elm",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "fruiting body_color_green",
+      "hitword": "<pileus> green|greenish|<pileus> greenish",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown|ochre|<pileus> ochre",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> ochre",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "fruiting body_color_pale",
+      "hitword": "<pileus> pale",
+      "raw": "greenish; pale brown; brown-green; quickly turning ochre",
+      "source": "https://www.mycobank.org/details/26/53252",
+      "scientificname": "Morchella ochraceoviridis"
+    },
+    {
+      "trait": "apothecia_shape_ellipsoid",
+      "hitword": "elongated",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_shape_conical",
+      "hitword": "conical",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_shape_globose",
+      "hitword": "rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_shape_round",
+      "hitword": "rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_shape_oval",
+      "hitword": "ovoid",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_surface_ribbed",
+      "hitword": "ridged|ridges",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_surface_rugose",
+      "hitword": "ridged",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_shape_irregular",
+      "hitword": "irregular",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_color_grey",
+      "hitword": "grayish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_color_yellow",
+      "hitword": "yellowish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apothecia_color_brown",
+      "hitword": "brown",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_granulose",
+      "hitword": "granulose",
+      "raw": "creamish wrinkled often granulose",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_rugose",
+      "hitword": "wrinkled",
+      "raw": "creamish wrinkled often granulose",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "creamish",
+      "raw": "creamish wrinkled often granulose",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_forest",
+      "hitword": "forests",
+      "raw": "only in coniferous forests",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_cedrus",
+      "hitword": "cedrus",
+      "raw": "under the canopy of Cedrus deodara Cupressus torulosa",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_ellipsoid",
+      "hitword": "<apothecia> elongated",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_ellipsoid",
+      "hitword": "<apothecia> elongated",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_conical",
+      "hitword": "<apothecia> conical",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_conical",
+      "hitword": "<apothecia> conical",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_globose",
+      "hitword": "<apothecia> rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_globose",
+      "hitword": "<apothecia> rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_round",
+      "hitword": "<apothecia> rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_round",
+      "hitword": "<apothecia> rounded",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_oval",
+      "hitword": "<apothecia> ovoid",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_oval",
+      "hitword": "<apothecia> ovoid",
+      "raw": "rounded to ovoid sometimes elongated to conical",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_surface_ribbed",
+      "hitword": "<apothecia> ridged|ridges|<apothecia> ridges",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_ribbed",
+      "hitword": "<apothecia> ridged|ridges|<apothecia> ridges",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_surface_rugose",
+      "hitword": "<apothecia> ridged",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_rugose",
+      "hitword": "<apothecia> ridged|<stipe> wrinkled",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_irregular",
+      "hitword": "<apothecia> irregular",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_irregular",
+      "hitword": "<apothecia> irregular",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_grey",
+      "hitword": "<apothecia> grayish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<apothecia> grayish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_yellow",
+      "hitword": "<apothecia> yellowish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<apothecia> yellowish",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_brown",
+      "hitword": "<apothecia> brown",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<apothecia> brown",
+      "raw": "dull yellowish to yellowish brown outer surface with irregular pits ridges ridged yellowish grayish brown at maturity",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_granulose",
+      "hitword": "<stipe> granulose",
+      "raw": "creamish wrinkled often granulose",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> creamish",
+      "raw": "creamish wrinkled often granulose",
+      "source": "10.2478/biorc-2019-0002",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_gregarious",
+      "hitword": "clustered",
+      "raw": "clustered and scattered",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_scattered",
+      "hitword": "scattered",
+      "raw": "clustered and scattered",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_orchard",
+      "hitword": "orchard",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_coniferous forest",
+      "hitword": "conifer",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_roadside",
+      "hitword": "roadsides",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_freshwater",
+      "hitword": "stream",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_grassland",
+      "hitword": "grasses",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_disturbed",
+      "hitword": "disturbed",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_cupressus",
+      "hitword": "cypress",
+      "raw": "old orchards, stream sides, long grasses, under conifer and cypress trees, in cultivated and disturbed grounds, along roadsides",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "oval",
+      "raw": "oval",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_yellow",
+      "hitword": "yellow",
+      "raw": "pale/yellow",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_pale",
+      "hitword": "pale",
+      "raw": "pale/yellow",
+      "source": "10.46653/jhst20030252",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "円筒形",
+      "raw": "円筒形",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "帯黄色",
+      "raw": "白-帯黄色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "白",
+      "raw": "白-帯黄色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_reticulate",
+      "hitword": "網目",
+      "raw": "肋脈は縦、横ともによく発達して、これに囲まれた網目は類多角形か不正影",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_surface_veined",
+      "hitword": "脈",
+      "raw": "肋脈は縦、横ともによく発達して、これに囲まれた網目は類多角形か不正影",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<stipe> 帯黄色",
+      "raw": "白-帯黄色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> 白",
+      "raw": "白-帯黄色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<hymenial surface> 灰褐色",
+      "raw": "灰褐色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "<hymenial surface> 灰褐色",
+      "raw": "灰褐色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<hymenial surface> 灰褐色",
+      "raw": "灰褐色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_reticulate",
+      "hitword": "<pileus> 網目",
+      "raw": "肋脈は縦、横ともによく発達して、これに囲まれた網目は類多角形か不正影",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_veined",
+      "hitword": "<pileus> 脈",
+      "raw": "肋脈は縦、横ともによく発達して、これに囲まれた網目は類多角形か不正影",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "hymenial surface_color_brown",
+      "hitword": "灰褐色",
+      "raw": "灰褐色",
+      "source": "日本のきのこ 増補改訂新版",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_position_solitary",
+      "hitword": "solitary",
+      "raw": "solitary, centrally stipitate",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_stipitate",
+      "hitword": "stipitate",
+      "raw": "solitary, centrally stipitate",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_umbonate",
+      "hitword": "subumbonate",
+      "raw": "convex, subumbonate to depressed",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_depressed",
+      "hitword": "depressed",
+      "raw": "convex, subumbonate to depressed",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_convex",
+      "hitword": "convex",
+      "raw": "convex, subumbonate to depressed",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "development_shape_flexuous",
+      "hitword": "incurved",
+      "raw": "margin incurved",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "lamellae_color_red",
+      "hitword": "reddish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "lamellae_color_white",
+      "hitword": "whitish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "lamellae_color_brown",
+      "hitword": "brown",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_white",
+      "hitword": "white",
+      "raw": "white",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_position_eccentric",
+      "hitword": "eccentric",
+      "raw": "central to eccentric",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_position_central",
+      "hitword": "central",
+      "raw": "central to eccentric",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "subcylindric",
+      "raw": "subcylindric",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_presence_absent",
+      "hitword": "absent",
+      "raw": "absent",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "basidia_shape_clavate",
+      "hitword": "clavate",
+      "raw": "clavate",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "basidiospore_shape_ellipsoid",
+      "hitword": "ellipsoid",
+      "raw": "more or less ellipsoid",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "basidiospore_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "hyaline",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "basidiospore_structure_thin walled",
+      "hitword": "wall thin",
+      "raw": "spore wall thin",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_smooth",
+      "hitword": "<pileus> smooth",
+      "raw": "smooth",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenophore_color_red",
+      "hitword": "<lamellae> reddish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenial surface_color_red",
+      "hitword": "<lamellae> reddish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_red",
+      "hitword": "<lamellae> reddish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenophore_color_white",
+      "hitword": "<lamellae> whitish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenial surface_color_white",
+      "hitword": "<lamellae> whitish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<lamellae> whitish",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenophore_color_brown",
+      "hitword": "<lamellae> brown",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenial surface_color_brown",
+      "hitword": "<lamellae> brown",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<lamellae> brown",
+      "raw": "whitish at first, later reddish brown tint",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<basidiospore> ellipsoid",
+      "raw": "more or less ellipsoid",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<basidiospore> hyaline",
+      "raw": "hyaline",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_structure_thin walled",
+      "hitword": "<basidiospore> wall thin",
+      "raw": "spore wall thin",
+      "source": "https://www.researchgate.net/publication/280082859_WILD_EDIBLE_MUSHROOMS_USED_BY_SOME_ETHNIC_TRIBES_OF_WESTERN_ASSAM",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "yellow",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_pale",
+      "hitword": "pale",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "hollow",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_grey",
+      "hitword": "grey|greyish",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "whitish",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_brown",
+      "hitword": "brown",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_pale",
+      "hitword": "pale",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_climate_temperate",
+      "hitword": "deciduous",
+      "raw": "on soil beneath deciduous trees",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_soil",
+      "hitword": "soil",
+      "raw": "on soil beneath deciduous trees",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_grassland",
+      "hitword": "grass",
+      "raw": "often among short grass",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> yellow",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown|<stipe> brown",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_pale",
+      "hitword": "<pileus> pale|<stipe> pale",
+      "raw": "yellow, brown or pale",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<stipe> grey|greyish|<stipe> greyish",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> whitish",
+      "raw": "whitish to pale grey, becomes greyish brown at maturity",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "round",
+      "raw": "round or irregular pits",
+      "source": "10.14719/pst.3571",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "ovate",
+      "raw": "ovate",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_punctiform",
+      "hitword": "pitted",
+      "raw": "pitted irregular to somewhat rounded",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "rounded",
+      "raw": "pitted irregular to somewhat rounded",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_round",
+      "hitword": "rounded",
+      "raw": "pitted irregular to somewhat rounded",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_obtuse",
+      "hitword": "rounded",
+      "raw": "pitted irregular to somewhat rounded",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "yellowish",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_black",
+      "hitword": "black",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_dry",
+      "hitword": "dry|drying",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_soft",
+      "hitword": "soft",
+      "raw": "soft",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "true",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_presence_present",
+      "hitword": "true",
+      "raw": "true",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_concolorous",
+      "hitword": "concolorous",
+      "raw": "concolorous with pileus or slightly creamish yellow",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "creamish",
+      "raw": "concolorous with pileus or slightly creamish yellow",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellow",
+      "raw": "concolorous with pileus or slightly creamish yellow",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "ellipsoidal",
+      "raw": "ellipsoidal",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_uniseriate",
+      "hitword": "uniseriate",
+      "raw": "uniseriate",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "sub-hyaline",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_punctiform",
+      "hitword": "<pileus> pitted",
+      "raw": "pitted irregular to somewhat rounded",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> yellowish|<stipe> yellow",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_black",
+      "hitword": "<pileus> black",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_dry",
+      "hitword": "<pileus> dry|<pileus> drying",
+      "raw": "yellowish-brown on drying changes to black",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_texture_soft",
+      "hitword": "<stipe> soft",
+      "raw": "soft",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_concolorous",
+      "hitword": "<stipe> concolorous",
+      "raw": "concolorous with pileus or slightly creamish yellow",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> creamish",
+      "raw": "concolorous with pileus or slightly creamish yellow",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> ellipsoidal",
+      "raw": "ellipsoidal",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_uniseriate",
+      "hitword": "<ascospore> uniseriate",
+      "raw": "uniseriate",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> hyaline",
+      "raw": "sub-hyaline",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "smooth",
+      "source": "http://gbpihedenvis.nic.in/ENVIS%20Bullitin/ENVIS%20Bulletin,%20Vol.27,2019/1%20Konchok%20Dorjey.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_forest",
+      "hitword": "woods",
+      "raw": "ancient woods",
+      "source": "https://www.mycobank.org/details/26/50587",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_reticulate",
+      "hitword": "網目状",
+      "raw": "網目状",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "円筒形",
+      "raw": "円筒形",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "白色|黄白色",
+      "raw": "白色から淡黄白色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "淡黄",
+      "raw": "白色から淡黄白色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_presence_present",
+      "hitword": "true",
+      "raw": "True",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "context_color_white",
+      "hitword": "白色",
+      "raw": "白色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "context_presence_present",
+      "hitword": "true",
+      "raw": "True",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "楕円形",
+      "raw": "楕円形",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_shape_globose",
+      "hitword": "円形|楕円形",
+      "raw": "楕円形",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "平滑",
+      "raw": "平滑",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_presence_present",
+      "hitword": "true",
+      "raw": "True",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "無色",
+      "raw": "無色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore print_color_brown",
+      "hitword": "黄褐色",
+      "raw": "類白色から淡黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore print_color_dark",
+      "hitword": "黄褐色",
+      "raw": "類白色から淡黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore print_color_white",
+      "hitword": "類白色",
+      "raw": "類白色から淡黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore print_color_yellow",
+      "hitword": "淡黄",
+      "raw": "類白色から淡黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> 黄土|黄褐色",
+      "raw": "黄土色から黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "<pileus> 黄土|黄褐色",
+      "raw": "黄土色から黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> 黄土|黄褐色|<stipe> 淡黄",
+      "raw": "黄土色から黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_reticulate",
+      "hitword": "<pileus> 網目状",
+      "raw": "網目状",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> 白色|黄白色|<context> 白色",
+      "raw": "白色から淡黄白色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> 楕円形",
+      "raw": "楕円形",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_shape_globose",
+      "hitword": "<ascospore> 円形|<ascospore> 楕円形",
+      "raw": "楕円形",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> 平滑",
+      "raw": "平滑",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> 無色",
+      "raw": "無色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "黄土|黄褐色",
+      "raw": "黄土色から黄褐色",
+      "source": "スタンダード版 新分類キノコ図鑑",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascoma_color_orange",
+      "hitword": "orange",
+      "raw": "orange",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "ascoma_texture_hard",
+      "hitword": "firm",
+      "raw": "firm consistency",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "pileus_shape_triangular",
+      "hitword": "triangular",
+      "raw": "obtuse triangular",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "pileus_shape_obtuse",
+      "hitword": "obtuse",
+      "raw": "obtuse triangular",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "pileus_shape_flat",
+      "hitword": "flat",
+      "raw": "flat bottom",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "pileus_presence_absent",
+      "hitword": "absent",
+      "raw": "absent",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "habitat_substrate_equus",
+      "hitword": "horse",
+      "raw": "on Fraxinus (ash) and Aesculus hippocastanum (horse chestnut)",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "habitat_substrate_fraxinus",
+      "hitword": "fraxinus",
+      "raw": "on Fraxinus (ash) and Aesculus hippocastanum (horse chestnut)",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "habitat_substrate_castanea",
+      "hitword": "chestnut",
+      "raw": "on Fraxinus (ash) and Aesculus hippocastanum (horse chestnut)",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "habitat_substrate_aesculus",
+      "hitword": "aesculus",
+      "raw": "on Fraxinus (ash) and Aesculus hippocastanum (horse chestnut)",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "fruiting body_color_orange",
+      "hitword": "<ascoma> orange",
+      "raw": "orange",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "fruiting body_texture_hard",
+      "hitword": "<ascoma> firm",
+      "raw": "firm consistency",
+      "source": "https://www.mycobank.org/details/26/53111",
+      "scientificname": "Morchella esculenta var. aurantiaca"
+    },
+    {
+      "trait": "fruiting body_shape_pileate",
+      "hitword": "pileate",
+      "raw": "pileate",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "ovate",
+      "raw": "ovate",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_obtuse",
+      "hitword": "obtuse|rounded",
+      "raw": "obtuse",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_punctiform",
+      "hitword": "pitted",
+      "raw": "pitted",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "rounded",
+      "raw": "irregular to somewhat rounded",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_round",
+      "hitword": "rounded",
+      "raw": "irregular to somewhat rounded",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "yellowish",
+      "raw": "yellowish-brown",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "yellowish-brown",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_dry",
+      "hitword": "dry|drying",
+      "raw": "on drying changes to black",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_black",
+      "hitword": "black",
+      "raw": "on drying changes to black",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "soft, hollow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_soft",
+      "hitword": "soft",
+      "raw": "soft, hollow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_concolorous",
+      "hitword": "concolorous",
+      "raw": "concOLORous with pileus or slightly creamish yellow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "creamish",
+      "raw": "concOLORous with pileus or slightly creamish yellow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellow",
+      "raw": "concOLORous with pileus or slightly creamish yellow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_amount_8-spored",
+      "hitword": "eight-spored",
+      "raw": "eight-spored",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical to sub-cylindrical",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "sub-hyaline",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_uniseriate",
+      "hitword": "uniseriate",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "ellipsoidal",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_structure_septate",
+      "hitword": "septate",
+      "raw": "septate, sub-hyaline",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "septate, sub-hyaline",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_punctiform",
+      "hitword": "<pileus> pitted",
+      "raw": "pitted",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> yellowish|<stipe> yellow",
+      "raw": "yellowish-brown",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown",
+      "raw": "yellowish-brown",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_dry",
+      "hitword": "<pileus> dry|<pileus> drying",
+      "raw": "on drying changes to black",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_black",
+      "hitword": "<pileus> black",
+      "raw": "on drying changes to black",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_texture_soft",
+      "hitword": "<stipe> soft",
+      "raw": "soft, hollow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_concolorous",
+      "hitword": "<stipe> concolorous",
+      "raw": "concOLORous with pileus or slightly creamish yellow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> creamish",
+      "raw": "concOLORous with pileus or slightly creamish yellow",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> hyaline",
+      "raw": "sub-hyaline",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_uniseriate",
+      "hitword": "<ascospore> uniseriate",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> ellipsoidal",
+      "raw": "uniseriate, ellipsoidal, smooth",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenium_color_hyaline",
+      "hitword": "<paraphysis> hyaline",
+      "raw": "septate, sub-hyaline",
+      "source": "https://www.researchgate.net/publication/259589502_Pezizales_from_Jammu_Province_of_Jammu_and_Kashmir-1_India",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_acute",
+      "hitword": "point",
+      "raw": "23-60 mm wide at the widest point",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_globose",
+      "hitword": "subglobose",
+      "raw": "subglobose to ovoid",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_oval",
+      "hitword": "ovoid",
+      "raw": "subglobose to ovoid",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_yellow",
+      "hitword": "yellowish",
+      "raw": "light beige or yellowish",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_white",
+      "hitword": "beige",
+      "raw": "light beige or yellowish",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_surface_ribbed",
+      "hitword": "ridges",
+      "raw": "scattered pits and ridges",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_position_scattered",
+      "hitword": "scattered",
+      "raw": "scattered pits and ridges",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "beige|whitish",
+      "raw": "light beige or whitish",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_amount_8-spored",
+      "hitword": "eight-spored",
+      "raw": "eight-spored",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_irregular",
+      "hitword": "irregularly",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_uniseriate",
+      "hitword": "uniseriate",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_biseriate",
+      "hitword": "biseriate",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_irregular",
+      "hitword": "irregularly",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "elliptical",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_position_solitary",
+      "hitword": "single",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_structure_septate",
+      "hitword": "septate",
+      "raw": "septate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_shape_branched",
+      "hitword": "ramified",
+      "raw": "ramified at the base",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_structure_septate",
+      "hitword": "septate",
+      "raw": "septate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_color_white",
+      "hitword": "beige",
+      "raw": "light beige",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_color_brown",
+      "hitword": "brown",
+      "raw": "dark brown with time",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_color_dark",
+      "hitword": "dark",
+      "raw": "dark brown with time",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "conidia_presence_present",
+      "hitword": "observed",
+      "raw": "No conidia production was observed",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_acute",
+      "hitword": "<ascoma> point",
+      "raw": "23-60 mm wide at the widest point",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_globose",
+      "hitword": "<ascoma> subglobose",
+      "raw": "subglobose to ovoid",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_oval",
+      "hitword": "<ascoma> ovoid",
+      "raw": "subglobose to ovoid",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<ascoma> yellowish",
+      "raw": "light beige or yellowish",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<ascoma> beige|<stipe> beige|whitish|<stipe> whitish",
+      "raw": "light beige or yellowish",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_ribbed",
+      "hitword": "<ascoma> ridges",
+      "raw": "scattered pits and ridges",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_position_scattered",
+      "hitword": "<ascoma> scattered",
+      "raw": "scattered pits and ridges",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_irregular",
+      "hitword": "<ascospore> irregularly",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_uniseriate",
+      "hitword": "<ascospore> uniseriate",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_biseriate",
+      "hitword": "<ascospore> biseriate",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_irregular",
+      "hitword": "<ascospore> irregularly",
+      "raw": "mostly uniseriate sporadically irregularly biseriate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> elliptical",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> hyaline",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_position_solitary",
+      "hitword": "<ascospore> single",
+      "raw": "single-celled hyaline broadly elliptical",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "smooth",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_structure_septate",
+      "hitword": "<ascospore> septate",
+      "raw": "septate",
+      "source": "10.5586/am.1094",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_brown",
+      "hitword": "ochre",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "ascoma_color_yellow",
+      "hitword": "ochre",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "ascoma_color_pink",
+      "hitword": "pink",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "ascoma_color_red",
+      "hitword": "red",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "habitat_substrate_fraxinus",
+      "hitword": "fraxinus",
+      "raw": "on ash (Fraxinus), possibly Fraxinus excelsior subsp. oxycarpa",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<ascoma> ochre",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<ascoma> ochre",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "fruiting body_color_pink",
+      "hitword": "<ascoma> pink",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "fruiting body_color_red",
+      "hitword": "<ascoma> red",
+      "raw": "ochre; slightly pink-red (mouth alveoli)",
+      "source": "https://www.mycobank.org/details/26/53245",
+      "scientificname": "Morchella esculenta var. rubroris"
+    },
+    {
+      "trait": "habitat_association_mycorrhizal",
+      "hitword": "mycorrhizal",
+      "raw": "Saprotrophic and mycorrhizal",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_association_saprobic",
+      "hitword": "saprotrophic",
+      "raw": "Saprotrophic and mycorrhizal",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_gregarious",
+      "hitword": "gregarious",
+      "raw": "solitary or gregarious on the ground usually amongst tea tree Leptospermum and Eucalyptus species",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_solitary",
+      "hitword": "solitary",
+      "raw": "solitary or gregarious on the ground usually amongst tea tree Leptospermum and Eucalyptus species",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_leptospermum",
+      "hitword": "leptospermum",
+      "raw": "solitary or gregarious on the ground usually amongst tea tree Leptospermum and Eucalyptus species",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_eucalyptus",
+      "hitword": "eucalyptus",
+      "raw": "solitary or gregarious on the ground usually amongst tea tree Leptospermum and Eucalyptus species",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_stipitate",
+      "hitword": "stipe",
+      "raw": "junction between fertile head and stipe well defined",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "subglobose",
+      "raw": "sub-conical, ovoid or subglobose with an irregular network of ridges and pits",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_conical",
+      "hitword": "conical",
+      "raw": "sub-conical, ovoid or subglobose with an irregular network of ridges and pits",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "ovoid",
+      "raw": "sub-conical, ovoid or subglobose with an irregular network of ridges and pits",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_reticulate",
+      "hitword": "network",
+      "raw": "sub-conical, ovoid or subglobose with an irregular network of ridges and pits",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_concolorous",
+      "hitword": "concolorous",
+      "raw": "the color of the ridges usually concolorous with the pits but with age may become darker",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_dark",
+      "hitword": "darker",
+      "raw": "the color of the ridges usually concolorous with the pits but with age may become darker",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_grey",
+      "hitword": "greyish",
+      "raw": "light brown to dark greyish brown",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "light brown to dark greyish brown",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_irregular",
+      "hitword": "irregular",
+      "raw": "often irregular",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_smooth",
+      "hitword": "smooth",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_granulose",
+      "hitword": "granules",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_rugose",
+      "hitword": "wrinkled",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "whitish",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_orange",
+      "hitword": "orange",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellow",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_white",
+      "hitword": "cream",
+      "raw": "Cream",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "ellipsoidal",
+      "raw": "ellipsoidal",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth without oil guttules but occasionally with numerous small oil globules around the external perimeter",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_structure_aseptate",
+      "hitword": "non-septate",
+      "raw": "non-septate",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_structure_septate",
+      "hitword": "septate|non-septate",
+      "raw": "non-septate",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_amount_8-spored",
+      "hitword": "eight-spored",
+      "raw": "eight-spored",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical multiseptate moderately branched",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_branched",
+      "hitword": "branched",
+      "raw": "cylindrical multiseptate moderately branched",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "apex_shape_swollen",
+      "hitword": "inflated",
+      "raw": "inflated diameter 15-25 µm",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical multiseptate moderately branched",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_shape_branched",
+      "hitword": "branched",
+      "raw": "cylindrical multiseptate moderately branched",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_structure_septate",
+      "hitword": "multiseptate",
+      "raw": "cylindrical multiseptate moderately branched",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_reticulate",
+      "hitword": "<pileus> network",
+      "raw": "sub-conical, ovoid or subglobose with an irregular network of ridges and pits",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_concolorous",
+      "hitword": "<pileus> concolorous",
+      "raw": "the color of the ridges usually concolorous with the pits but with age may become darker",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "<pileus> darker",
+      "raw": "the color of the ridges usually concolorous with the pits but with age may become darker",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<pileus> greyish",
+      "raw": "light brown to dark greyish brown",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown",
+      "raw": "light brown to dark greyish brown",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_smooth",
+      "hitword": "<stipe> smooth",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_granulose",
+      "hitword": "<stipe> granules",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_rugose",
+      "hitword": "<stipe> wrinkled",
+      "raw": "nearly smooth to coarsely wrinkled surface appearing to be covered in fine granules",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> whitish",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_orange",
+      "hitword": "<stipe> orange",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<stipe> yellow",
+      "raw": "whitish to light orange-yellow with age",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> ellipsoidal",
+      "raw": "ellipsoidal",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "smooth without oil guttules but occasionally with numerous small oil globules around the external perimeter",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_structure_aseptate",
+      "hitword": "<ascospore> non-septate",
+      "raw": "non-septate",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_structure_septate",
+      "hitword": "<ascospore> septate|<ascospore> non-septate",
+      "raw": "non-septate",
+      "source": "https://www.fncv.org.au/wp-content/uploads/publications/fungi_in_australia/fia-2-asco-pezizo.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_association_mycorrhizal",
+      "hitword": "mycorrhizal",
+      "raw": "Saprotrophic or mycorrhizal",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_association_saprobic",
+      "hitword": "saprotrophic",
+      "raw": "Saprotrophic or mycorrhizal",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_orchard",
+      "hitword": "orchard",
+      "raw": "forests, orchards, disturbed grounds, burnt areas",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_disturbed",
+      "hitword": "disturbed",
+      "raw": "forests, orchards, disturbed grounds, burnt areas",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_forest",
+      "hitword": "forests",
+      "raw": "forests, orchards, disturbed grounds, burnt areas",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_burnt place",
+      "hitword": "burnt",
+      "raw": "forests, orchards, disturbed grounds, burnt areas",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown|brownish",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_grey",
+      "hitword": "greyish",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_pale",
+      "hitword": "pale",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_conical",
+      "hitword": "cone-shaped",
+      "raw": "oval, rarely cone-shaped with a rounded top",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "rounded",
+      "raw": "oval, rarely cone-shaped with a rounded top",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_round",
+      "hitword": "rounded",
+      "raw": "oval, rarely cone-shaped with a rounded top",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_obtuse",
+      "hitword": "rounded",
+      "raw": "oval, rarely cone-shaped with a rounded top",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "oval",
+      "raw": "oval, rarely cone-shaped with a rounded top",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_texture_hollow",
+      "hitword": "empty",
+      "raw": "ridges' borders not darker than pits, empty",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellow",
+      "raw": "White to light yellow",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "white",
+      "raw": "White to light yellow",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "empty",
+      "raw": "empty, upright, bulbous base",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "ellipsoidal",
+      "raw": "Ellipsoidal",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "translucent",
+      "raw": "smooth, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_amount_8-spored",
+      "hitword": "eight-spored",
+      "raw": "Eight-spored",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_color_hyaline",
+      "hitword": "translucent",
+      "raw": "cylindrical, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown|brownish|<pileus> brownish",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<pileus> greyish",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_pale",
+      "hitword": "<pileus> pale",
+      "raw": "Pale brownish to greyish brown",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<stipe> yellow",
+      "raw": "White to light yellow",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> white",
+      "raw": "White to light yellow",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> ellipsoidal",
+      "raw": "Ellipsoidal",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "smooth, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> translucent",
+      "raw": "smooth, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenium_color_hyaline",
+      "hitword": "<asci> translucent",
+      "raw": "cylindrical, translucent",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_bulbous",
+      "hitword": "bulbous",
+      "raw": "empty, upright, bulbous base",
+      "source": "https://imskolkata.org/article/014-03-24.pdf",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "globular|rounded",
+      "raw": "sometimes convex, often globular",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_round",
+      "hitword": "globular|rounded",
+      "raw": "sometimes convex, often globular",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_convex",
+      "hitword": "convex",
+      "raw": "sometimes convex, often globular",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_punctiform",
+      "hitword": "pitted",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "yellowish",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_white",
+      "hitword": "white",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_black",
+      "hitword": "blackish",
+      "raw": "pits up to 15x10 mm, irregular to rounded, up to 7 mm deep, yellowish within becoming brown to blackish on drying",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_dry",
+      "hitword": "dry|drying",
+      "raw": "pits up to 15x10 mm, irregular to rounded, up to 7 mm deep, yellowish within becoming brown to blackish on drying",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_obtuse",
+      "hitword": "rounded|obtuse",
+      "raw": "pits up to 15x10 mm, irregular to rounded, up to 7 mm deep, yellowish within becoming brown to blackish on drying",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_surface_rugose",
+      "hitword": "ribs",
+      "raw": "usually irregular rather than longitudinally disposed, anastomosing",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_concolorous",
+      "hitword": "concolorous",
+      "raw": "obtuse, up to 1.5 mm thick, concolorous with the interior of pits",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_swollen",
+      "hitword": "swollen",
+      "raw": "sometimes slightly swollen at the base, whitish to yellowish",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "yellowish",
+      "raw": "sometimes slightly swollen at the base, whitish to yellowish",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "whitish",
+      "raw": "sometimes slightly swollen at the base, whitish to yellowish",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "cylindrical, hollow",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical, hollow",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_velutinous",
+      "hitword": "pubescent",
+      "raw": "irregularly lacunose at the base, but nearly even above, pubescent",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_irregular",
+      "hitword": "irregularly",
+      "raw": "irregularly lacunose at the base, but nearly even above, pubescent",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_yellow",
+      "hitword": "yellow",
+      "raw": "pale yellow",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore print_color_pale",
+      "hitword": "pale",
+      "raw": "pale yellow",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_gregarious",
+      "hitword": "clustered|gregarious",
+      "raw": "Solitary to widely scattered, gregarious or clustered under conifers",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_scattered",
+      "hitword": "scattered",
+      "raw": "Solitary to widely scattered, gregarious or clustered under conifers",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_solitary",
+      "hitword": "solitary",
+      "raw": "Solitary to widely scattered, gregarious or clustered under conifers",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_location_coniferous forest",
+      "hitword": "conifers",
+      "raw": "Solitary to widely scattered, gregarious or clustered under conifers",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_punctiform",
+      "hitword": "<pileus> pitted",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> yellowish|<stipe> yellowish",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<pileus> white|<stipe> whitish",
+      "raw": "yellowish white to yellowish brown, pitted",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_black",
+      "hitword": "<pileus> blackish",
+      "raw": "pits up to 15x10 mm, irregular to rounded, up to 7 mm deep, yellowish within becoming brown to blackish on drying",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_dry",
+      "hitword": "<pileus> dry|<pileus> drying",
+      "raw": "pits up to 15x10 mm, irregular to rounded, up to 7 mm deep, yellowish within becoming brown to blackish on drying",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_rugose",
+      "hitword": "<pileus> ribs",
+      "raw": "usually irregular rather than longitudinally disposed, anastomosing",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_concolorous",
+      "hitword": "<pileus> concolorous",
+      "raw": "obtuse, up to 1.5 mm thick, concolorous with the interior of pits",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_velutinous",
+      "hitword": "<stipe> pubescent",
+      "raw": "irregularly lacunose at the base, but nearly even above, pubescent",
+      "source": "10.5943/cream/6/2/6",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_yellow",
+      "hitword": "yellow",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_green",
+      "hitword": "green",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_white",
+      "hitword": "beige",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_ellipsoid",
+      "hitword": "ellipsoid",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_globose",
+      "hitword": "round",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_round",
+      "hitword": "round",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_shape_irregular",
+      "hitword": "irregular",
+      "raw": "irregular deep pits",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_orange",
+      "hitword": "orange",
+      "raw": "yellow to orange",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "hollow, flat (glabrous)",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_flat",
+      "hitword": "flat",
+      "raw": "hollow, flat (glabrous)",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_surface_smooth",
+      "hitword": "glabrous",
+      "raw": "hollow, flat (glabrous)",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "cream|white",
+      "raw": "off-white to cream",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_brown",
+      "hitword": "ochraceous",
+      "raw": "sometimes ochraceous-stained with age",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "ochraceous",
+      "raw": "sometimes ochraceous-stained with age",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "hyaline and off-white",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_color_white",
+      "hitword": "white",
+      "raw": "hyaline and off-white",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_amount_scarce",
+      "hitword": "few",
+      "raw": "few or none observed",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "colony_presence_present",
+      "hitword": "observed",
+      "raw": "few or none observed",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<ascoma> yellow|<stipe> ochraceous",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_green",
+      "hitword": "<ascoma> green",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<ascoma> beige|<stipe> cream|white|<stipe> white",
+      "raw": "green beige to olive yellow",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_ellipsoid",
+      "hitword": "<ascoma> ellipsoid",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_globose",
+      "hitword": "<ascoma> round",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_round",
+      "hitword": "<ascoma> round",
+      "raw": "ellipsoid to round",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_shape_irregular",
+      "hitword": "<ascoma> irregular",
+      "raw": "irregular deep pits",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_orange",
+      "hitword": "<ascoma> orange",
+      "raw": "yellow to orange",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_surface_smooth",
+      "hitword": "<stipe> glabrous",
+      "raw": "hollow, flat (glabrous)",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<stipe> ochraceous",
+      "raw": "sometimes ochraceous-stained with age",
+      "source": "10.3390/horticulturae10101020",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascoma_color_red",
+      "hitword": "dark-red",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_color_brown",
+      "hitword": "ochre|fox",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_color_yellow",
+      "hitword": "ochre|fox",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_color_dark",
+      "hitword": "dark",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_color_grey",
+      "hitword": "gray",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_presence_absent",
+      "hitword": "absent",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_amount_scarce",
+      "hitword": "few",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_color_orange",
+      "hitword": "orange",
+      "raw": "quickly becomes orange-fox colour",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "stipe_surface_velutinous",
+      "hitword": "pubescent",
+      "raw": "pubescent",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "stipe_color_orange",
+      "hitword": "orange",
+      "raw": "orange when touched",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "habitat_substrate_quercus",
+      "hitword": "quercus",
+      "raw": "under Quercus ilex and Quercus pubescens, in calcareous soil",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "habitat_substrate_soil",
+      "hitword": "soil",
+      "raw": "under Quercus ilex and Quercus pubescens, in calcareous soil",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "habitat_substrate_ilex",
+      "hitword": "ilex",
+      "raw": "under Quercus ilex and Quercus pubescens, in calcareous soil",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_red",
+      "hitword": "<ascoma> dark-red|<ascoma> red",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<ascoma> ochre|<ascoma> fox",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<ascoma> ochre|<ascoma> fox",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "<ascoma> dark",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<ascoma> gray",
+      "raw": "dirty gray to dark-red; then ochre",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_amount_scarce",
+      "hitword": "<ascoma> few",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_surface_ribbed",
+      "hitword": "<ascoma> ribs",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_surface_rugose",
+      "hitword": "<ascoma> ribs",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_color_orange",
+      "hitword": "<ascoma> orange|<stipe> orange",
+      "raw": "quickly becomes orange-fox colour",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "fruiting body_surface_velutinous",
+      "hitword": "<stipe> pubescent",
+      "raw": "pubescent",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "ascoma_surface_ribbed",
+      "hitword": "ribs",
+      "raw": "tree-like; few primary pores; absent or almost absent secondary pores; thick ribs",
+      "source": "https://www.mycobank.org/details/26/53320",
+      "scientificname": "Morchella ovalis var. minor"
+    },
+    {
+      "trait": "habitat_location_grassland",
+      "hitword": "草地",
+      "raw": "草地",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_shape_globose",
+      "hitword": "類球形",
+      "raw": "卵形-類球形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_presence_present",
+      "hitword": "true",
+      "raw": "True",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "類白色|<stipe> 白色",
+      "raw": "はじめしわ状で類白色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_green",
+      "hitword": "オリーブ",
+      "raw": "次第に不規則に分岐し帯オリーブ淡褐色-淡灰黄色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "淡褐色|灰褐色|黄褐色|<stipe> 黄褐色",
+      "raw": "次第に不規則に分岐し帯オリーブ淡褐色-淡灰黄色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_dark",
+      "hitword": "淡褐色|灰褐色|黄褐色|<stipe> 黄褐色",
+      "raw": "次第に不規則に分岐し帯オリーブ淡褐色-淡灰黄色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "灰黄色|黄褐色|<stipe> 淡黄",
+      "raw": "次第に不規則に分岐し帯オリーブ淡褐色-淡灰黄色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "淡灰|灰褐色",
+      "raw": "次第に不規則に分岐し帯オリーブ淡褐色-淡灰黄色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_veined",
+      "hitword": "脈",
+      "raw": "助脈の縁",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_warty",
+      "hitword": "ざらつ",
+      "raw": "微毛状にざらつく",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "fruiting body_surface_velutinous",
+      "hitword": "微毛",
+      "raw": "微毛状にざらつく",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_brown",
+      "hitword": "黄褐色",
+      "raw": "白色-淡黄褐色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_dark",
+      "hitword": "黄褐色",
+      "raw": "白色-淡黄褐色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "白色",
+      "raw": "白色-淡黄褐色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "stipe_color_yellow",
+      "hitword": "淡黄",
+      "raw": "白色-淡黄褐色",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "円筒形",
+      "raw": "円筒形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "楕円形",
+      "raw": "楕円形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_shape_globose",
+      "hitword": "円形|楕円形",
+      "raw": "楕円形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_presence_present",
+      "hitword": "true",
+      "raw": "True",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "平滑",
+      "raw": "平滑",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> 楕円形",
+      "raw": "楕円形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_shape_globose",
+      "hitword": "<ascospore> 円形|<ascospore> 楕円形",
+      "raw": "楕円形",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> 平滑",
+      "raw": "平滑",
+      "source": "アミガサタケ・チャワンタケ識別ガイド",
+      "scientificname": "アミガサタケ"
+    },
+    {
+      "trait": "pileus_shape_globose",
+      "hitword": "globose",
+      "raw": "oval or sub-globose",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_shape_oval",
+      "hitword": "oval",
+      "raw": "oval or sub-globose",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_texture_hollow",
+      "hitword": "hollow",
+      "raw": "internally hollow",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_grey",
+      "hitword": "grayish",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_yellow",
+      "hitword": "yellow",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_brown",
+      "hitword": "brown",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "pileus_color_pale",
+      "hitword": "pale",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical but sometimes bulbous",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_bulbous",
+      "hitword": "bulbous",
+      "raw": "cylindrical but sometimes bulbous",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_shape_ampuliform",
+      "hitword": "bulbous",
+      "raw": "cylindrical but sometimes bulbous",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_texture_hollow",
+      "hitword": "hollow",
+      "raw": "hollow",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "stipe_color_white",
+      "hitword": "white",
+      "raw": "white",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "asci_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "hyaline",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_shape_ellipsoid",
+      "hitword": "elliptical",
+      "raw": "smooth and elliptical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_surface_smooth",
+      "hitword": "smooth",
+      "raw": "smooth and elliptical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "ascospore_color_hyaline",
+      "hitword": "hyaline",
+      "raw": "hyaline",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_structure_septate",
+      "hitword": "septate",
+      "raw": "septate",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "paraphysis_shape_cylindric",
+      "hitword": "cylindrical",
+      "raw": "cylindrical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_gregarious",
+      "hitword": "groups",
+      "raw": "growing singly or in groups",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_position_solitary",
+      "hitword": "singly",
+      "raw": "growing singly or in groups",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_substrate_soil",
+      "hitword": "on the ground",
+      "raw": "on the ground",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "habitat_association_saprobic",
+      "hitword": "saprobic",
+      "raw": "saprobic",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_grey",
+      "hitword": "<pileus> grayish",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_yellow",
+      "hitword": "<pileus> yellow",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_brown",
+      "hitword": "<pileus> brown",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_pale",
+      "hitword": "<pileus> pale",
+      "raw": "yellow or pale brown to grayish brown",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "fruiting body_color_white",
+      "hitword": "<stipe> white",
+      "raw": "white",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "hymenium_color_hyaline",
+      "hitword": "<asci> hyaline",
+      "raw": "hyaline",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_shape_ellipsoid",
+      "hitword": "<ascospore> elliptical",
+      "raw": "smooth and elliptical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_surface_smooth",
+      "hitword": "<ascospore> smooth",
+      "raw": "smooth and elliptical",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    },
+    {
+      "trait": "spore_color_hyaline",
+      "hitword": "<ascospore> hyaline",
+      "raw": "hyaline",
+      "source": "10.57023/JMycR.62.3.2024.517",
+      "scientificname": "Morchella esculenta"
+    }
+  ]
+}
