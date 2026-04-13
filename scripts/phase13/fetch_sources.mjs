@@ -14,6 +14,12 @@ import { fetchMhlwEntry } from './mhlw.mjs';
 import { fetchRinyaOverview } from './rinya.mjs';
 import { fetchTraitCircus } from './trait-circus.mjs';
 
+// japaneseName は daikinrin 優先、欠落時は mhlw（毒きのこ index）から補う。
+// daikinrin が落ちた種でも wikipediaJa が和名でヒットできるようにするため。
+export function resolveJapaneseName({ daikinrin, mhlw }) {
+  return daikinrin?.japaneseName ?? mhlw?.japaneseName ?? null;
+}
+
 export function combineSources({
   scientificName,
   daikinrin,
@@ -25,7 +31,7 @@ export function combineSources({
 }) {
   return {
     scientificName,
-    japaneseName: daikinrin?.japaneseName ?? null,
+    japaneseName: resolveJapaneseName({ daikinrin, mhlw }),
     taxonomy: daikinrin?.taxonomy ?? {},
     synonyms: daikinrin?.synonyms ?? [],
     mycoBankId: daikinrin?.mycoBankId ?? null,
@@ -44,20 +50,18 @@ export function combineSources({
 }
 
 export async function fetchAllSources({ scientificName, mycoBankId }) {
-  const [daikinrin, wikipediaEn, rinya, traitCircus] = await Promise.all([
+  // wikipediaJa 以外の 5 ソースを並列。wikipediaJa は japaneseName chain に依存するので後続。
+  const [daikinrin, wikipediaEn, mhlw, rinya, traitCircus] = await Promise.all([
     fetchDaikinrinPage(scientificName, mycoBankId).catch(e => { console.error('daikinrin:', e.message); return null; }),
     fetchWikipediaEn({ scientificName }).catch(e => { console.error('wikipediaEn:', e.message); return null; }),
+    fetchMhlwEntry(scientificName).catch(e => { console.error('mhlw:', e.message); return null; }),
     fetchRinyaOverview().catch(e => { console.error('rinya:', e.message); return null; }),
     fetchTraitCircus(scientificName).catch(e => { console.error('traitCircus:', e.message); return null; }),
   ]);
 
-  // ja は和名が必要なので daikinrin 後
-  const wikipediaJa = await fetchWikipediaJa({
-    japaneseName: daikinrin?.japaneseName ?? null,
-    scientificName,
-  }).catch(e => { console.error('wikipediaJa:', e.message); return null; });
-
-  const mhlw = await fetchMhlwEntry(scientificName).catch(e => { console.error('mhlw:', e.message); return null; });
+  const japaneseName = resolveJapaneseName({ daikinrin, mhlw });
+  const wikipediaJa = await fetchWikipediaJa({ japaneseName, scientificName })
+    .catch(e => { console.error('wikipediaJa:', e.message); return null; });
 
   return combineSources({
     scientificName,

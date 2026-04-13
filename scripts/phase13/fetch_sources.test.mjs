@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { combineSources } from './fetch_sources.mjs';
+import { combineSources, resolveJapaneseName } from './fetch_sources.mjs';
 
 describe('combineSources', () => {
   it('全ソースの結果をまとめた単一オブジェクトを返す', () => {
@@ -33,5 +33,39 @@ describe('combineSources', () => {
     const out = combineSources(input);
     expect(out.japaneseName).toBeNull();
     expect(out.sources.wikipediaEn).toBeDefined();
+  });
+
+  it('daikinrin が無くても mhlw の japaneseName で combine される', () => {
+    const input = {
+      scientificName: 'Amanita virosa',
+      daikinrin: null,
+      wikipediaJa: null,
+      wikipediaEn: null,
+      mhlw: { japaneseName: 'ドクツルタケ', scientificName: 'Amanita virosa', text: '...' },
+      rinya: null,
+      traitCircus: null,
+    };
+    const out = combineSources(input);
+    expect(out.japaneseName).toBe('ドクツルタケ');
+  });
+});
+
+describe('resolveJapaneseName', () => {
+  it('daikinrin の japaneseName を最優先', () => {
+    expect(resolveJapaneseName({
+      daikinrin: { japaneseName: 'アミガサタケ' },
+      mhlw: { japaneseName: 'ドクツルタケ' },
+    })).toBe('アミガサタケ');
+  });
+
+  it('daikinrin が無ければ mhlw から取る', () => {
+    expect(resolveJapaneseName({
+      daikinrin: null,
+      mhlw: { japaneseName: 'ドクツルタケ' },
+    })).toBe('ドクツルタケ');
+  });
+
+  it('両方無ければ null', () => {
+    expect(resolveJapaneseName({ daikinrin: null, mhlw: null })).toBeNull();
   });
 });
