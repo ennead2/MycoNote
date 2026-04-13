@@ -5,11 +5,13 @@
 
 import { load } from 'cheerio';
 import { createCache } from './cache.mjs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const BASE = 'https://mycoscouter.coolblog.jp/daikinrin/Pages';
 const USER_AGENT = 'MycoNote/1.0 (https://github.com/ennead2/MycoNote; data ingestion)';
-const CACHE_DIR = join(process.cwd(), '.cache/phase13');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const CACHE_DIR = join(__dirname, '../../.cache/phase13');
 
 const daikinrinCache = createCache({ dir: CACHE_DIR, namespace: 'daikinrin' });
 
@@ -101,12 +103,14 @@ function extractTaxonomy($) {
     const rawText = $(el).text().trim();
     for (const [suffix, field] of Object.entries(RANK_MAP)) {
       if (href.endsWith(suffix)) {
-        if (field === 'genus') {
-          // "Morchella（アミガサタケ属）" → "Morchella" だけを取る
-          const genusMatch = rawText.match(/^([A-Za-z]+)/);
-          tax[field] = genusMatch ? genusMatch[1] : rawText;
-        } else {
-          tax[field] = rawText;
+        if (!tax[field]) {
+          if (field === 'genus') {
+            // "Morchella（アミガサタケ属）" → "Morchella" だけを取る
+            const genusMatch = rawText.match(/^([A-Za-z]+)/);
+            tax[field] = genusMatch ? genusMatch[1] : rawText;
+          } else {
+            tax[field] = rawText;
+          }
         }
         break;
       }
