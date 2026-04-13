@@ -1,16 +1,26 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { rmSync, existsSync } from 'node:fs';
+import { rm, access } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createCache } from './cache.mjs';
 
 const TEST_DIR = join(process.cwd(), '.cache/phase13-test');
 
 describe('createCache', () => {
-  beforeEach(() => {
-    if (existsSync(TEST_DIR)) rmSync(TEST_DIR, { recursive: true });
+  beforeEach(async () => {
+    try {
+      await access(TEST_DIR);
+      await rm(TEST_DIR, { recursive: true });
+    } catch {
+      // dir doesn't exist
+    }
   });
-  afterEach(() => {
-    if (existsSync(TEST_DIR)) rmSync(TEST_DIR, { recursive: true });
+  afterEach(async () => {
+    try {
+      await access(TEST_DIR);
+      await rm(TEST_DIR, { recursive: true });
+    } catch {
+      // dir doesn't exist
+    }
   });
 
   it('保存した値を get で取り出せる', async () => {
@@ -49,5 +59,13 @@ describe('createCache', () => {
     const cache = createCache({ dir: TEST_DIR, namespace: 'test' });
     await cache.set('Morchella esculenta', { ok: true });
     expect(await cache.get('Morchella esculenta')).toEqual({ ok: true });
+  });
+
+  it('異なる key が同じファイルに衝突しない（sanitize 衝突防止）', async () => {
+    const cache = createCache({ dir: TEST_DIR, namespace: 'test' });
+    await cache.set('Morchella esculenta', { id: 1 });
+    await cache.set('Morchella_esculenta', { id: 2 });
+    expect(await cache.get('Morchella esculenta')).toEqual({ id: 1 });
+    expect(await cache.get('Morchella_esculenta')).toEqual({ id: 2 });
   });
 });
