@@ -44,3 +44,9 @@ scripts/temp/
 
 # Claude Code session state
 .claude/
+
+# Git worktrees
+.worktrees/
+
+# Phase 13 data ingestion cache
+.cache/
