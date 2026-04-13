@@ -414,3 +414,34 @@ Phase 8e で残った 56 件の verification-issue（学名不一致・架空種
 | ドクヤマドリ | Boletus venenatus | Sutorius venenatus |
 | シャカシメジ | Lyophyllum fumosum | Lyophyllum decastes |
 | ヒカゲシビレタケ | Psilocybe argentipes | Psilocybe subcaerulipes |
+
+---
+
+## Phase 13-A: データソース収集基盤 — 完了
+
+完了日: 2026-04-13
+
+### 成果
+
+- 学名 + MycoBank ID 指定で 5 ソースを並列取得し正規化 JSON を出力する CLI
+  - `node scripts/phase13/fetch_sources.mjs --name <学名> --mycobank <ID> [--out <path>]`
+- ソース別モジュール（fixture 駆動 unit test 付き）
+  - `daikinrin.mjs` — 大菌輪 HTML パーサー（学名・和名・分類・観察数・外部リンク）
+  - `wikipedia.mjs` — MediaWiki API、ja は和名→学名 fallback
+  - `mhlw.mjs` — 厚労省自然毒 19 種（HTML/PDF 混在対応）
+  - `rinya.mjs` — 林野庁特用林産物（単一ページ）
+  - `trait-circus.mjs` + `trait-circus-prep.py` — Parquet → species 別 JSON 変換と Node loader
+- ファイルベース TTL キャッシュ（`cache.mjs`）
+  - `node:fs/promises` ベース、atomic write（temp + rename）
+  - `encodeURIComponent` で衝突なし key sanitize
+- オーケストレータの fault-tolerance（1 ソース失敗で全体死なない）
+- japaneseName fallback chain（daikinrin → mhlw）でスモークテストの wiki ja ヒット率改善
+
+### テスト
+
+- `scripts/phase13/` 配下で 7 ファイル / 32 ユニットテスト全パス
+- 実データスモーク 3 種（Morchella esculenta / Amanita virosa / Tricholoma matsutake）
+
+### 次フェーズ
+
+Phase 13-B（種選定 + スコアリング、MycoBank ID 自動解決、学名→和名 resolver）
