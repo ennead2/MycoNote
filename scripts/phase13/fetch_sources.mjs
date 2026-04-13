@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Phase 13 データソース収集 CLI。
  * Usage:
