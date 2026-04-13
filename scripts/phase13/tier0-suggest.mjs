@@ -49,7 +49,7 @@ export function suggestTier0(v1Mushrooms) {
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
-if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith('tier0-suggest.mjs')) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const v1Path = new URL('../../src/data/mushrooms.json', import.meta.url);
   const outPath = new URL('../../data/tier0-species.json', import.meta.url);
   const v1 = JSON.parse(await readFile(v1Path, 'utf-8'));
