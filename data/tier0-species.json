@@ -1,0 +1,372 @@
+{
+  "description": "Tier 0 手動指名リスト。自動生成した叩き台を手動で編集する。",
+  "generatedAt": "2026-04-13T14:53:03.988Z",
+  "editedBy": null,
+  "species": [
+    {
+      "scientificName": "Amanita caesareoides",
+      "japaneseName": "タマゴタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Amanita ceciliae",
+      "japaneseName": "テングツルタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita ibotengutake",
+      "japaneseName": "イボテングタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita muscaria",
+      "japaneseName": "ベニテングタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita pantherina",
+      "japaneseName": "テングタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita porphyria",
+      "japaneseName": "カブラテングタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita rubescens",
+      "japaneseName": "ガンタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita sepiacea",
+      "japaneseName": "テングタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita virgineoides",
+      "japaneseName": "シロオニタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Amanita virginoides",
+      "japaneseName": "オオシロオニタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Anthracoporus nigropurpureus",
+      "japaneseName": "クロニガイグチ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Boletus edulis",
+      "japaneseName": "ヤマドリタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Boletus sensibilis",
+      "japaneseName": "ドクヤマドリモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Chlorophyllum molybdites",
+      "japaneseName": "オオシロカラカサタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Chlorophyllum neoapicale",
+      "japaneseName": "オオシロカラカサタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Collybia irina",
+      "japaneseName": "ムラサキシメジモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Collybia rivulosa",
+      "japaneseName": "コカブイヌシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Entoloma murrayi",
+      "japaneseName": "キイボカサタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Entoloma quadratum",
+      "japaneseName": "アカイボカサタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Entoloma rhodopolium",
+      "japaneseName": "クサウラベニタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Entoloma sinuatum",
+      "japaneseName": "イッポンシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Entoloma subrhodopolium",
+      "japaneseName": "クサウラベニタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Flammulina velutipes",
+      "japaneseName": "エノキタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Galerina fasciculata",
+      "japaneseName": "コレラタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Galerina vittiformis",
+      "japaneseName": "ヒメアジロガサモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Grifola frondosa",
+      "japaneseName": "マイタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Gymnopilus aeruginosus",
+      "japaneseName": "ミドリスギタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Gymnopilus junonius",
+      "japaneseName": "オオワライタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Gymnopilus liquiritiae",
+      "japaneseName": "オオワライタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Hypholoma fasciculare",
+      "japaneseName": "ニガクリタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Hypsizygus marmoreus",
+      "japaneseName": "ブナシメジ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Infundibulicybe gibba",
+      "japaneseName": "カヤタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Inocybe asterospora",
+      "japaneseName": "オオキヌハダトマヤタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Inocybe geophylla",
+      "japaneseName": "シロトマヤタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Inocybe lacera",
+      "japaneseName": "ヒメクロアセタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Inocybe napipes",
+      "japaneseName": "カブラアセタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Laccaria amethystina",
+      "japaneseName": "カレバキツネタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Lactarius hatsudake",
+      "japaneseName": "ハツタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Lactarius hatsudake",
+      "japaneseName": "アカハツ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Laetiporus sulphureus",
+      "japaneseName": "アイカワタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Lentinula edodes",
+      "japaneseName": "シイタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Lepiota brunneoincarnata",
+      "japaneseName": "ドクカラカサタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Lepiota cristata",
+      "japaneseName": "キツネノカラカサ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Leucocoprinus birnbaumii",
+      "japaneseName": "キツネノハナガサ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Lyophyllum decastes",
+      "japaneseName": "ハタケシメジ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Lyophyllum decastes",
+      "japaneseName": "シャカシメジ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Lyophyllum decastes",
+      "japaneseName": "センボンシメジ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Morchella esculenta",
+      "japaneseName": "アミガサタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Omphalotus guepiniiformis",
+      "japaneseName": "ツキヨタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Panaeolus papilionaceus",
+      "japaneseName": "ワライタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Paralepistopsis acromelalga",
+      "japaneseName": "ドクササコ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Paxillus involutus",
+      "japaneseName": "オオコゲチャイグチ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Pholiota nameko",
+      "japaneseName": "ナメコ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Pholiota squarrosa",
+      "japaneseName": "スギタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Pleurotus ostreatus",
+      "japaneseName": "ヒラタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Psathyrella corrugis",
+      "japaneseName": "ニガクリタケモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Pseudosperma rimosum",
+      "japaneseName": "アセタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Psilocybe subcaerulipes",
+      "japaneseName": "ヒカゲシビレタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Russula densifolia",
+      "japaneseName": "ニセクロハツモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Russula emetica",
+      "japaneseName": "ドクベニタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Russula foetens",
+      "japaneseName": "ツチカブリモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Russula nobilis",
+      "japaneseName": "ドクベニダマシ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Suillus luteus",
+      "japaneseName": "ヌメリイグチ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Sutorius venenatus",
+      "japaneseName": "ドクヤマドリ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma bakamatsutake",
+      "japaneseName": "ニセマツタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma equestre",
+      "japaneseName": "キシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma matsutake",
+      "japaneseName": "マツタケ",
+      "rationale": "famous_edible: 採取対象の主要種"
+    },
+    {
+      "scientificName": "Tricholoma muscarium",
+      "japaneseName": "ハエトリシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma saponaceum",
+      "japaneseName": "ミネシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma ustale",
+      "japaneseName": "カキシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma ustaloides",
+      "japaneseName": "カキシメジモドキ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Tricholoma virgatum",
+      "japaneseName": "ネズミシメジ",
+      "rationale": "toxic: 主要な毒きのこ"
+    },
+    {
+      "scientificName": "Turbinellus floccosus",
+      "japaneseName": "ウスタケ",
+      "rationale": "toxic: 主要な毒きのこ"
+    }
+  ]
+}
