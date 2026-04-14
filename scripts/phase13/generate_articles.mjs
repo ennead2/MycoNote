@@ -44,6 +44,19 @@ export function tier0ToPromptInput(target) {
   };
 }
 
+export function buildManifestEntry(target, { promptPath, hasCombined }) {
+  const input = tier0ToPromptInput(target);
+  return {
+    slug: scientificNameToSlug(target.scientificName),
+    japaneseName: target.japaneseName,
+    scientificName: target.scientificName,
+    safety: input.safety,
+    hasCombined,
+    promptPath,
+    outputPath: input.outputJsonPath,
+  };
+}
+
 function prepare() {
   const ranking = JSON.parse(readFileSync(RANKING_PATH, 'utf8'));
   const targets = resolveTier0Targets(ranking);
@@ -58,15 +71,7 @@ function prepare() {
     const prompt = buildArticlePrompt(input);
     const promptPath = `${PROMPTS_DIR}/${slug}.txt`;
     writeFileSync(promptPath, prompt, 'utf8');
-    manifest.push({
-      slug,
-      japaneseName: t.japaneseName,
-      scientificName: t.scientificName,
-      safety: input.safety,
-      hasCombined,
-      promptPath,
-      outputPath: input.outputJsonPath,
-    });
+    manifest.push(buildManifestEntry(t, { promptPath, hasCombined }));
   }
   writeFileSync(`${PROMPTS_DIR}/manifest.json`, JSON.stringify(manifest, null, 2), 'utf8');
   console.log(`prepared ${targets.length} targets`);

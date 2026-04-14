@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { resolveTier0Targets, tier0ToPromptInput } from './generate_articles.mjs';
+import { resolveTier0Targets, tier0ToPromptInput, buildManifestEntry } from './generate_articles.mjs';
 
 describe('resolveTier0Targets', () => {
   it('ranking から tier=0 のみ抽出', () => {
@@ -42,5 +42,38 @@ describe('tier0ToPromptInput', () => {
     const target = { scientificName: 'Amanita cf. muscaria', japaneseName: 'ア', toxicity: 'toxic' };
     const out = tier0ToPromptInput(target);
     expect(out.combinedJsonPath).toBe('.cache/phase13/combined/Amanita_cf_muscaria.json');
+  });
+});
+
+describe('buildManifestEntry', () => {
+  it('Task 7 契約となる manifest キー集合を固定する', () => {
+    const target = { scientificName: 'Morchella esculenta', japaneseName: 'アミガサタケ', toxicity: 'edible' };
+    const entry = buildManifestEntry(target, {
+      promptPath: '.cache/phase13/prompts/Morchella_esculenta.txt',
+      hasCombined: true,
+    });
+    expect(Object.keys(entry).sort()).toEqual([
+      'hasCombined',
+      'japaneseName',
+      'outputPath',
+      'promptPath',
+      'safety',
+      'scientificName',
+      'slug',
+    ]);
+  });
+
+  it('値が target と options から導出される', () => {
+    const entry = buildManifestEntry(
+      { scientificName: 'Amanita phalloides', japaneseName: 'ドクツルタケ', toxicity: 'deadly_toxic' },
+      { promptPath: 'p/x.txt', hasCombined: false },
+    );
+    expect(entry.slug).toBe('Amanita_phalloides');
+    expect(entry.japaneseName).toBe('ドクツルタケ');
+    expect(entry.scientificName).toBe('Amanita phalloides');
+    expect(entry.safety).toBe('deadly');
+    expect(entry.hasCombined).toBe(false);
+    expect(entry.promptPath).toBe('p/x.txt');
+    expect(entry.outputPath).toBe('.cache/phase13/generated/Amanita_phalloides.json');
   });
 });
