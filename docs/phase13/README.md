@@ -5,7 +5,8 @@
 ## サブフェーズ
 
 - [x] Phase 13-A: データソース収集基盤 — [計画書](../superpowers/plans/2026-04-13-phase13a-data-source-foundation.md)
-- [ ] Phase 13-B: 種選定 + スコアリング
+- [x] Phase 13-B: 種選定 + スコアリング — [計画書](../superpowers/plans/2026-04-13-phase13b-species-selection-scoring.md)
+- [x] Phase 13-B': シノニム正規化層追加 — [計画書](../superpowers/plans/2026-04-14-phase13b-prime-synonym-normalization.md)
 - [ ] Phase 13-C: AI 合成パイプライン
 - [ ] Phase 13-D: レビューツール拡張
 - [ ] Phase 13-E: 軽量スキーマ移行
@@ -80,3 +81,40 @@ node scripts/phase13/fetch_sources.mjs \
 - **daikinrin 未登録種**: HTTP 404 で `daikinrin: null`、他ソースは継続取得
 - **Trait Circus データ範囲**: Tricholoma など一部の属を含まない種がある（データ側制約）
 - **PDF 詳細ページ**: 厚労省で混在。本文抽出は Phase 13-C で `pdfplumber` 経由
+
+## Phase 13-B / 13-B' の使い方
+
+日本産菌類集覧 + Tier 0 手動リストからシグナルを集約し、重み付けスコアで tier 分類した `data/species-ranking.json` を出力する。
+
+### 実行
+
+```bash
+# 全量実行（3,145 候補、concurrency 3 推奨）
+node scripts/phase13/build_ranking.mjs --concurrency 3
+
+# スモーク実行
+node scripts/phase13/build_ranking.mjs --limit 500 --concurrency 3
+```
+
+### Phase 13-B' で追加された正規化層
+
+- 全候補を GBIF Backbone Taxonomy の **accepted name** に正規化
+- 旧名/新名の checklist 登録が 1 エントリに自動統合（例: `Amanita hemibapha` ↔ `A. caesareoides`）
+- シグナル収集器は accepted → synonyms[] の順に試行（Wikipedia, iNat, GBIF observations）
+- Tier 0 指名も正規化、pool 不在の種は `tier0Forced: true` で強制追加
+
+### Phase 13-B' 本番実行統計 (2026-04-14)
+
+| 指標 | Phase 13-B | Phase 13-B' |
+|---|---|---|
+| 候補総数 | 3,145 | 2,906 (accepted で merge) |
+| tier0 完全一致 | 52/73 (71%) | 68/68 (100%) |
+| GBIF 国内観察 hit | 292 (9.3%) | 642 (22.1%) |
+| iNat 写真 hit | 537 (17.1%) | 604 (20.8%) |
+| 毒性判定 | 195 (6.2%) | 240 (8.3%) |
+| status=SYNONYM (統合された旧名) | - | 607 件 |
+
+### 既知の caveat
+
+- 複数和名を持つ種（例 `Omphalotus guepiniiformis` ツキヨタケ）では、`japaneseName`（primary）が checklist 処理順依存。`japaneseNames[]` には全異名が含まれるが、先頭が最も代表的な和名とは限らない。将来的には tier0 doc の wamei を primary 優先する heuristic を検討。
+- MycoBank ID は依然として 0 件解決（GBIF の identifiers に MycoBank が登録されていない既知問題）。Phase 13-C で daikinrin index スクレイプ等別経路を検討。

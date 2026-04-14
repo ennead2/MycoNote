@@ -1,0 +1,35 @@
+{
+  "match": {
+    "usageKey": 7001111,
+    "scientificName": "Amanita hemibapha (Berk. & Broome) Sacc.",
+    "canonicalName": "Amanita hemibapha",
+    "rank": "SPECIES",
+    "status": "SYNONYM",
+    "confidence": 95,
+    "matchType": "EXACT",
+    "acceptedUsageKey": 7002222,
+    "kingdom": "Fungi"
+  },
+  "accepted": {
+    "key": 7002222,
+    "canonicalName": "Amanita caesareoides",
+    "scientificName": "Amanita caesareoides Lj.N. Vassiljeva",
+    "rank": "SPECIES",
+    "status": "ACCEPTED",
+    "kingdom": "Fungi"
+  },
+  "synonyms": {
+    "results": [
+      {
+        "key": 7003333,
+        "canonicalName": "Amanita hemibapha",
+        "rank": "SPECIES"
+      },
+      {
+        "key": 7003334,
+        "canonicalName": "Amanita hemibapha subsp. javanica",
+        "rank": "SUBSPECIES"
+      }
+    ]
+  }
+}

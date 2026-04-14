@@ -445,3 +445,83 @@ Phase 8e で残った 56 件の verification-issue（学名不一致・架空種
 ### 次フェーズ
 
 Phase 13-B（種選定 + スコアリング、MycoBank ID 自動解決、学名→和名 resolver）
+
+---
+
+## Phase 13-B: 種選定 + スコアリング — 完了
+
+完了日: 2026-04-14
+
+### 成果
+
+- 日本産菌類集覧 3,145 候補 × 5 シグナル（MycoBank / Wikipedia ja / iNat / GBIF 観察 / 毒性）の並列収集 → 重み付けスコア → tier 分類 → `data/species-ranking.json` 出力
+- サブモジュール（全 fixture 駆動 unit test 付き）
+  - `candidate-pool.mjs` — 集覧フィルタ + 和名集約
+  - `mycobank-resolve.mjs` — known-map → GBIF backbone
+  - `wikipedia-exists.mjs` / `inat-photos.mjs` / `gbif-observations.mjs`
+  - `toxicity-classify.mjs` — v1 map + 厚労省リスト
+  - `scoring.mjs` — 重み計算 + tier 分類
+  - `tier0-suggest.mjs` — v1 → 手動指名叩き台
+  - `build_ranking.mjs` — オーケストレータ CLI
+
+### 初回本番実行（Phase 13-B のみ）
+
+tier0=52/73 (71%)、Wikipedia ja 317 (10.1%)、iNat 537 (17.1%)、GBIF 国内 292 (9.3%)。
+tier0 取りこぼし 19 件発生（新旧学名の不一致が原因）→ Phase 13-B' で解決。
+
+---
+
+## Phase 13-B': シノニム正規化層 — 完了
+
+完了日: 2026-04-14
+計画書: [docs/superpowers/plans/2026-04-14-phase13b-prime-synonym-normalization.md](./superpowers/plans/2026-04-14-phase13b-prime-synonym-normalization.md)
+
+### 背景
+
+Phase 13-B 実行後、`tier0-species.json` の 73 件指名のうち 52 件しか ranking に tier=0 として現れない事象が判明。原因は v1 MycoNote DB（新学名）と日本産菌類集覧（旧学名）の学名体系の差：
+
+| v1 (新名、tier0 由来) | 菌類集覧 (旧名、pool 由来) |
+|---|---|
+| Amanita caesareoides | Amanita hemibapha |
+| Lactarius hatsudake | Lactarius lividatus |
+| Pseudosperma rimosum | Inocybe rimosa |
+| Sutorius venenatus | Boletus venenatus |
+| etc. (計 13 件) |
+
+Phase 12 の GBIF Backbone 検証ではこの不一致を検出していたが、Phase 13-B のパイプラインではその知見を活用できていなかった。
+
+### 成果
+
+- 新規モジュール `gbif-normalize.mjs` — 学名 → `{ acceptedName, acceptedUsageKey, synonyms[], status }` 解決
+- `candidate-pool.mjs` に `buildCandidatePoolNormalized` 追加 — accepted name で dedupe、旧名/新名を 1 エントリに統合
+- `wikipedia-exists.mjs` / `inat-photos.mjs` に synonyms fallback — accepted miss 時に synonyms を順に試行
+- `gbif-observations.mjs` / `mycobank-resolve.mjs` に `acceptedUsageKey` 直接ルート — GBIF は usageKey 指定で synonyms を包含
+- `build_ranking.mjs` に `resolveTier0` — tier0 指名も正規化、pool 不在なら `tier0Forced: true` で強制追加
+- `tier0-species.json` の typo 修正 + 重複統合（73 → 69 unique entries）
+
+### 本番実行統計（before/after）
+
+| 指標 | Phase 13-B | Phase 13-B' | 変化 |
+|---|---|---|---|
+| 候補総数 | 3,145 | 2,906 | -7.6% (accepted merge) |
+| **tier0 完全一致** | **52/73 (71%)** | **68/68 (100%)** | ✅ 取りこぼしゼロ |
+| Wikipedia ja hit | 317 (10.1%) | 308 (10.6%) | ≈ |
+| iNat 写真 hit | 537 (17.1%) | 604 (20.8%) | +12% |
+| **GBIF 国内観察 hit** | **292 (9.3%)** | **642 (22.1%)** | **+120%** |
+| 毒性判定 | 195 (6.2%) | 240 (8.3%) | +23% |
+| status=SYNONYM (旧名統合) | - | 607 件 | - |
+| status=UNKNOWN | - | 1 件のみ | ほぼ全解決 |
+| iNat matched via synonym | - | 162 件 | fallback 実効 |
+
+### テスト
+
+- `scripts/phase13/` 配下 17 files / 111 tests 全パス
+
+### 既知の caveat
+
+- `japaneseName` (primary) は checklist 処理順依存。複数和名を持つ種では obscure な異名が先頭に来ることがある（`japaneseNames[]` に全異名は保持）。将来的に tier0 doc の wamei を優先する heuristic 検討
+- MycoBank ID は依然 0 件解決（GBIF の identifiers 未登録問題）
+
+### 次フェーズ
+
+Phase 13-C（AI 合成パイプライン）の入力として `data/species-ranking.json` を使用
