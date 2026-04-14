@@ -1,5 +1,6 @@
 /**
  * Wikipedia ja/en の記事存在チェッカー（本文取得なし、軽量）。
+ * synonyms fallback 対応: 和名 → accepted → synonyms[] の順に試行。
  */
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -44,14 +45,37 @@ async function checkTitle(lang, title) {
 }
 
 /**
- * @param {{ japaneseName?: string, scientificName: string }} args
- * @returns {Promise<{ jaExists: boolean, matchedTitle: string | null }>}
+ * @param {{ japaneseName?: string, japaneseNames?: string[], scientificName: string, synonyms?: string[] }} args
+ * @returns {Promise<{ jaExists: boolean, matchedTitle: string | null, matchedVia: string | null }>}
  */
-export async function checkWikipediaJaExists({ japaneseName, scientificName }) {
-  if (japaneseName) {
-    const hit = await checkTitle('ja', japaneseName);
-    if (hit) return { jaExists: true, matchedTitle: japaneseName };
+export async function checkWikipediaJaExists({ japaneseName, japaneseNames, scientificName, synonyms }) {
+  // 1. すべての和名候補を試行
+  const jaCandidates = [];
+  if (japaneseName) jaCandidates.push(japaneseName);
+  if (Array.isArray(japaneseNames)) {
+    for (const ja of japaneseNames) {
+      if (ja && !jaCandidates.includes(ja)) jaCandidates.push(ja);
+    }
   }
-  const hit = await checkTitle('ja', scientificName);
-  return { jaExists: hit, matchedTitle: hit ? scientificName : null };
+  for (const ja of jaCandidates) {
+    const hit = await checkTitle('ja', ja);
+    if (hit) return { jaExists: true, matchedTitle: ja, matchedVia: 'japaneseName' };
+  }
+
+  // 2. accepted (scientificName)
+  if (scientificName) {
+    const hit = await checkTitle('ja', scientificName);
+    if (hit) return { jaExists: true, matchedTitle: scientificName, matchedVia: 'accepted' };
+  }
+
+  // 3. synonyms
+  if (Array.isArray(synonyms)) {
+    for (const syn of synonyms) {
+      if (!syn || syn === scientificName) continue;
+      const hit = await checkTitle('ja', syn);
+      if (hit) return { jaExists: true, matchedTitle: syn, matchedVia: `synonym:${syn}` };
+    }
+  }
+
+  return { jaExists: false, matchedTitle: null, matchedVia: null };
 }

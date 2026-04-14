@@ -1,6 +1,6 @@
 /**
  * iNaturalist で学名に紐付く Research Grade 観察写真の件数を取得する軽量チェッカー。
- * 実際の画像 URL は取得しない（Phase 13-C でヒーロー画像選定時に別途取得）。
+ * synonyms fallback 対応: accepted → synonyms[] の順に試行、最初に hasPhotos=true の taxon を採用。
  */
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -18,7 +18,7 @@ export function parseInatObservationsResponse(json) {
   return { totalResults: total, hasPhotos };
 }
 
-export async function checkInatPhotos(scientificName) {
+async function fetchOneByName(scientificName) {
   const cached = await cache.get(scientificName);
   if (cached !== null) return cached;
 
@@ -41,4 +41,29 @@ export async function checkInatPhotos(scientificName) {
   const parsed = parseInatObservationsResponse(json);
   await cache.set(scientificName, parsed);
   return parsed;
+}
+
+/**
+ * @param {string} scientificName
+ * @param {{ synonyms?: string[] }} opts
+ * @returns {Promise<{ totalResults: number, hasPhotos: boolean, matchedName: string | null }>}
+ */
+export async function checkInatPhotos(scientificName, opts = {}) {
+  const synonyms = Array.isArray(opts.synonyms) ? opts.synonyms : [];
+  const tried = new Set();
+  const candidates = [scientificName, ...synonyms].filter(Boolean);
+
+  let best = { totalResults: 0, hasPhotos: false, matchedName: null };
+  for (const name of candidates) {
+    if (tried.has(name)) continue;
+    tried.add(name);
+    const r = await fetchOneByName(name);
+    if (r.hasPhotos) {
+      return { totalResults: r.totalResults, hasPhotos: true, matchedName: name };
+    }
+    if (r.totalResults > best.totalResults) {
+      best = { totalResults: r.totalResults, hasPhotos: false, matchedName: name };
+    }
+  }
+  return best;
 }

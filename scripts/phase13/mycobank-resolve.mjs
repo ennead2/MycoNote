@@ -60,12 +60,22 @@ async function fetchGbifSpecies(usageKey) {
  */
 export async function resolveMycoBankId(scientificName, opts = {}) {
   const knownMap = opts.knownMap || {};
+  const acceptedUsageKey = opts.acceptedUsageKey ?? null;
 
   // 1. known map
   const known = resolveFromKnownMap(scientificName, knownMap);
   if (known !== null) return { mycobankId: known, source: 'known-map' };
 
-  // 2. GBIF match → species
+  // 2. acceptedUsageKey 直接ルート（match をスキップ）
+  if (acceptedUsageKey) {
+    const species = await fetchGbifSpecies(acceptedUsageKey);
+    if (species) {
+      const mb = extractMycoBankFromGbifSpecies(species);
+      if (mb !== null) return { mycobankId: mb, source: 'gbif-accepted' };
+    }
+  }
+
+  // 3. GBIF match → species（fallback）
   const match = await fetchGbifMatch(scientificName);
   if (match?.usageKey) {
     const species = await fetchGbifSpecies(match.usageKey);

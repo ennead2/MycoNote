@@ -1,7 +1,7 @@
 /**
  * GBIF occurrence API で国内・海外観察数を取得。
- * 注: GBIF usageKey は resolveMycoBankId から取得済みのものを再利用するのが理想だが、
- *     独立ユニットとして taxonKey を自前で解決する。
+ * acceptedUsageKey が与えられればそれを直接使う（GBIF は usageKey 指定で synonyms を包含）。
+ * なければ従来通り species/match で解決する。
  */
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -51,12 +51,13 @@ async function countOccurrences(usageKey, country) {
 
 /**
  * @param {string} scientificName
- * @returns {Promise<{ domestic: number, overseas: number }>}
+ * @param {{ acceptedUsageKey?: number | null }} opts
+ * @returns {Promise<{ domestic: number, overseas: number, usedUsageKey: number | null }>}
  */
-export async function fetchGbifObservations(scientificName) {
-  const usageKey = await getUsageKey(scientificName);
-  if (!usageKey) return { domestic: 0, overseas: 0 };
+export async function fetchGbifObservations(scientificName, opts = {}) {
+  const usageKey = opts.acceptedUsageKey ?? await getUsageKey(scientificName);
+  if (!usageKey) return { domestic: 0, overseas: 0, usedUsageKey: null };
   const total = await countOccurrences(usageKey, null);
   const domestic = await countOccurrences(usageKey, 'JP');
-  return { domestic, overseas: Math.max(0, total - domestic) };
+  return { domestic, overseas: Math.max(0, total - domestic), usedUsageKey: usageKey };
 }
