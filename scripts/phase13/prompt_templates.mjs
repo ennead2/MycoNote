@@ -48,13 +48,12 @@ export const SEASON_SPEC = `- 配列で発生期ごとに {start_month, end_mont
 - 月数値は 1〜12 の整数、start <= end`;
 
 function safetyHints(safety) {
-  const edible = safety === 'edible' || safety === 'caution';
-  const dangerous = safety === 'caution' || safety === 'toxic' || safety === 'deadly';
-  const hasCaution = safety === 'caution' || safety === 'toxic' || safety === 'deadly';
+  const canEat = safety === 'edible' || safety === 'caution';
+  const canPoison = safety !== 'edible';
   return {
-    cooking: edible ? '必須（400字以内）' : 'null を返す',
-    poisoning: dangerous ? '必須（400字以内）' : 'null を返す',
-    caution: hasCaution ? '必要なら 100 字以内で、なければ null' : 'null を返す',
+    cooking: canEat ? '必須（400字以内）' : 'null を返す',
+    poisoning: canPoison ? '必須（400字以内）' : 'null を返す',
+    caution: canPoison ? '必要なら 100 字以内で、なければ null' : 'null を返す',
   };
 }
 

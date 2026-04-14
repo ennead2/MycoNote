@@ -28,14 +28,16 @@ describe('buildArticlePrompt', () => {
     expect(prompt).toContain('.cache/phase13/generated/Morchella_esculenta.json');
   });
 
-  it('safety=edible では poisoning_first_aid の指示が null 化されている', () => {
+  it('safety=edible では hints ブロックで poisoning_first_aid が null を返すよう指示される', () => {
     const prompt = buildArticlePrompt(fixture);
-    expect(prompt).toMatch(/poisoning_first_aid.*null/);
+    expect(prompt).toContain('- poisoning_first_aid: null を返す');
+    expect(prompt).toContain('- cooking_preservation: 必須（400字以内）');
   });
 
-  it('safety=deadly では cooking_preservation の指示が null 化されている', () => {
+  it('safety=deadly では hints ブロックで cooking_preservation が null を返すよう指示される', () => {
     const prompt = buildArticlePrompt({ ...fixture, safety: 'deadly' });
-    expect(prompt).toMatch(/cooking_preservation.*null/);
+    expect(prompt).toContain('- cooking_preservation: null を返す');
+    expect(prompt).toContain('- poisoning_first_aid: 必須（400字以内）');
   });
 
   it('SCHEMA_BLOCK に必須フィールドが全て含まれる', () => {
