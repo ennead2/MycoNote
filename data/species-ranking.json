@@ -12594,13 +12594,13 @@
       "tier": 2
     },
     {
-      "scientificName": "Chlorophyllum",
+      "scientificName": "Chlorophyllum neoapicale",
       "japaneseName": "オオシロカラカサタケモドキ",
       "japaneseNames": [
         "オオシロカラカサタケモドキ"
       ],
       "genus": "Chlorophyllum",
-      "species": null,
+      "species": "neoapicale",
       "originalNames": [
         "Chlorophyllum neoapicale"
       ],
@@ -12617,8 +12617,8 @@
         "inatMatchedName": null,
         "observationsDomestic": 384,
         "observationsOverseas": 49164,
-        "toxicity": "unknown",
-        "toxicitySource": "none",
+        "toxicity": "toxic",
+        "toxicitySource": "tier0-curated",
         "hasWamei": true
       },
       "score": 8.17,
@@ -76856,8 +76856,8 @@
         "inatMatchedName": null,
         "observationsDomestic": 0,
         "observationsOverseas": 0,
-        "toxicity": "unknown",
-        "toxicitySource": "none",
+        "toxicity": "toxic",
+        "toxicitySource": "tier0-curated",
         "hasWamei": true
       },
       "score": 3,
@@ -76866,7 +76866,7 @@
     },
     {
       "scientificName": "Chlorophyllum neomastoideum",
-      "japaneseName": "コカラカサタケ",
+      "japaneseName": "ドクカラカサタケ",
       "japaneseNames": [
         "コカラカサタケ",
         "ドクカラカサタケ"
@@ -76892,8 +76892,8 @@
         "inatMatchedName": null,
         "observationsDomestic": 0,
         "observationsOverseas": 0,
-        "toxicity": "unknown",
-        "toxicitySource": "none",
+        "toxicity": "toxic",
+        "toxicitySource": "tier0-curated",
         "hasWamei": true
       },
       "score": 3,
