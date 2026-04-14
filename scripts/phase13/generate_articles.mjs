@@ -35,10 +35,11 @@ export function normalizeSafety(toxicity) {
 
 export function tier0ToPromptInput(target) {
   const slug = scientificNameToSlug(target.scientificName);
+  const toxicity = target.signals?.toxicity ?? target.toxicity;
   return {
     japaneseName: target.japaneseName,
     scientificName: target.scientificName,
-    safety: normalizeSafety(target.toxicity),
+    safety: normalizeSafety(toxicity),
     combinedJsonPath: `${COMBINED_DIR}/${slug}.json`,
     outputJsonPath: `${GENERATED_DIR}/${slug}.json`,
   };

@@ -43,6 +43,27 @@ describe('tier0ToPromptInput', () => {
     const out = tier0ToPromptInput(target);
     expect(out.combinedJsonPath).toBe('.cache/phase13/combined/Amanita_cf_muscaria.json');
   });
+
+  it('toxicity が signals.toxicity にネストされている ranking エントリを解決', () => {
+    const target = {
+      scientificName: 'Pseudosperma rimosum',
+      japaneseName: 'アセタケ',
+      signals: { toxicity: 'toxic' },
+    };
+    const out = tier0ToPromptInput(target);
+    expect(out.safety).toBe('toxic');
+  });
+
+  it('signals.toxicity が top-level toxicity より優先される', () => {
+    const target = {
+      scientificName: 'Foo bar',
+      japaneseName: 'フー',
+      toxicity: 'edible',
+      signals: { toxicity: 'deadly_toxic' },
+    };
+    const out = tier0ToPromptInput(target);
+    expect(out.safety).toBe('deadly');
+  });
 });
 
 describe('buildManifestEntry', () => {
