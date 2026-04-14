@@ -1,0 +1,31 @@
+{
+  "match": {
+    "usageKey": 5239509,
+    "scientificName": "Morchella esculenta (L.) Pers.",
+    "canonicalName": "Morchella esculenta",
+    "rank": "SPECIES",
+    "status": "ACCEPTED",
+    "confidence": 98,
+    "matchType": "EXACT",
+    "kingdom": "Fungi"
+  },
+  "synonyms": {
+    "results": [
+      {
+        "key": 8012345,
+        "canonicalName": "Morchella rotunda var. esculenta",
+        "rank": "VARIETY"
+      },
+      {
+        "key": 8012346,
+        "canonicalName": "Morellus esculentus",
+        "rank": "SPECIES"
+      },
+      {
+        "key": 8012347,
+        "canonicalName": "Phallus esculentus",
+        "rank": "SPECIES"
+      }
+    ]
+  }
+}
