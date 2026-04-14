@@ -12,6 +12,11 @@ describe('validateArticle', () => {
     expect(result.errors).toEqual([]);
   });
 
+  it('valid-edible は warnings も空', () => {
+    const result = validateArticle(load('article-valid-edible'), { safety: 'edible' });
+    expect(result.warnings).toEqual([]);
+  });
+
   it('valid-deadly は errors なし', () => {
     const result = validateArticle(load('article-valid-deadly'), { safety: 'deadly' });
     expect(result.errors).toEqual([]);
@@ -22,6 +27,13 @@ describe('validateArticle', () => {
     delete a.description;
     const result = validateArticle(a, { safety: 'edible' });
     expect(result.errors).toContain('V1: description が存在しない');
+  });
+
+  it('V1: names.aliases が配列でない を検出', () => {
+    const a = load('article-valid-edible');
+    a.names = { aliases: '編笠茸' };
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors).toContain('V1: names.aliases が配列でない');
   });
 
   it('V2: description の文字数超過を検出', () => {
