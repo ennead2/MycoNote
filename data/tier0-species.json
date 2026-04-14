@@ -74,14 +74,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Collybia irina",
-      "japaneseName": "ムラサキシメジモドキ",
-      "rationale": "toxic: 主要な毒きのこ"
-    },
-    {
-      "scientificName": "Collybia rivulosa",
+      "scientificName": "Clitocybe fragrans",
       "japaneseName": "コカブイヌシメジ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "toxic: 主要な毒きのこ（学名は菌類集覧に合わせる、Collybia rivulosa は別種）"
     },
     {
       "scientificName": "Entoloma murrayi",
@@ -200,9 +195,9 @@
       "rationale": "famous_edible: 採取対象の主要種"
     },
     {
-      "scientificName": "Lepiota brunneoincarnata",
+      "scientificName": "Chlorophyllum neomastoideum",
       "japaneseName": "ドクカラカサタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "toxic: 主要な毒きのこ（学名は菌類集覧に合わせる、Lepiota brunneoincarnata は別種）"
     },
     {
       "scientificName": "Lepiota cristata",
