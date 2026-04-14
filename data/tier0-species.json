@@ -1,6 +1,6 @@
 {
   "description": "Tier 0 手動指名リスト。自動生成した叩き台を手動で編集する。",
-  "generatedAt": "2026-04-13T14:53:03.988Z",
+  "generatedAt": "2026-04-13T14:55:17.630Z",
   "editedBy": null,
   "species": [
     {
@@ -46,11 +46,6 @@
     {
       "scientificName": "Amanita virgineoides",
       "japaneseName": "シロオニタケ",
-      "rationale": "toxic: 主要な毒きのこ"
-    },
-    {
-      "scientificName": "Amanita virginoides",
-      "japaneseName": "オオシロオニタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -191,12 +186,8 @@
     {
       "scientificName": "Lactarius hatsudake",
       "japaneseName": "ハツタケ",
-      "rationale": "famous_edible: 採取対象の主要種"
-    },
-    {
-      "scientificName": "Lactarius hatsudake",
-      "japaneseName": "アカハツ",
-      "rationale": "famous_edible: 採取対象の主要種"
+      "japaneseNames": ["ハツタケ", "アカハツ"],
+      "rationale": "famous_edible: 採取対象の主要種（ハツタケ/アカハツ統合）"
     },
     {
       "scientificName": "Laetiporus sulphureus",
@@ -226,17 +217,8 @@
     {
       "scientificName": "Lyophyllum decastes",
       "japaneseName": "ハタケシメジ",
-      "rationale": "famous_edible: 採取対象の主要種"
-    },
-    {
-      "scientificName": "Lyophyllum decastes",
-      "japaneseName": "シャカシメジ",
-      "rationale": "famous_edible: 採取対象の主要種"
-    },
-    {
-      "scientificName": "Lyophyllum decastes",
-      "japaneseName": "センボンシメジ",
-      "rationale": "famous_edible: 採取対象の主要種"
+      "japaneseNames": ["ハタケシメジ", "シャカシメジ", "センボンシメジ"],
+      "rationale": "famous_edible: 採取対象の主要種（ハタケシメジ/シャカシメジ/センボンシメジ統合）"
     },
     {
       "scientificName": "Morchella esculenta",
@@ -244,7 +226,7 @@
       "rationale": "famous_edible: 採取対象の主要種"
     },
     {
-      "scientificName": "Omphalotus guepiniiformis",
+      "scientificName": "Omphalotus guepiniformis",
       "japaneseName": "ツキヨタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
