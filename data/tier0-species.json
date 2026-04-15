@@ -1,7 +1,13 @@
 {
   "description": "Tier 0 手動指名リスト。自動生成した叩き台を手動で編集する。",
   "generatedAt": "2026-04-13T14:55:17.630Z",
-  "editedBy": null,
+  "editedBy": [
+    {
+      "at": "2026-04-15",
+      "who": "phase13a-hotfix",
+      "note": "大菌輪の正典和名に 15 件揃える（pages.json 駆動の fetcher 改修時）"
+    }
+  ],
   "species": [
     {
       "scientificName": "Amanita caesareoides",
@@ -30,7 +36,7 @@
     },
     {
       "scientificName": "Amanita porphyria",
-      "japaneseName": "カブラテングタケ",
+      "japaneseName": "コテングタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -60,7 +66,7 @@
     },
     {
       "scientificName": "Boletus sensibilis",
-      "japaneseName": "ドクヤマドリモドキ",
+      "japaneseName": "ミヤマイロガワリ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -110,12 +116,12 @@
     },
     {
       "scientificName": "Galerina fasciculata",
-      "japaneseName": "コレラタケモドキ",
+      "japaneseName": "コレラタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Galerina vittiformis",
-      "japaneseName": "ヒメアジロガサモドキ",
+      "japaneseName": "ケコガサタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -165,7 +171,7 @@
     },
     {
       "scientificName": "Inocybe lacera",
-      "japaneseName": "ヒメクロアセタケ",
+      "japaneseName": "クロトマヤタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -180,8 +186,11 @@
     },
     {
       "scientificName": "Lactarius hatsudake",
-      "japaneseName": "ハツタケ",
-      "japaneseNames": ["ハツタケ", "アカハツ"],
+      "japaneseName": "アカハツ",
+      "japaneseNames": [
+        "ハツタケ",
+        "アカハツ"
+      ],
       "rationale": "famous_edible: 採取対象の主要種（ハツタケ/アカハツ統合）"
     },
     {
@@ -206,13 +215,17 @@
     },
     {
       "scientificName": "Leucocoprinus birnbaumii",
-      "japaneseName": "キツネノハナガサ",
+      "japaneseName": "コガネキヌカラカサタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Lyophyllum decastes",
       "japaneseName": "ハタケシメジ",
-      "japaneseNames": ["ハタケシメジ", "シャカシメジ", "センボンシメジ"],
+      "japaneseNames": [
+        "ハタケシメジ",
+        "シャカシメジ",
+        "センボンシメジ"
+      ],
       "rationale": "famous_edible: 採取対象の主要種（ハタケシメジ/シャカシメジ/センボンシメジ統合）"
     },
     {
@@ -237,7 +250,7 @@
     },
     {
       "scientificName": "Paxillus involutus",
-      "japaneseName": "オオコゲチャイグチ",
+      "japaneseName": "ヒダハタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -257,22 +270,22 @@
     },
     {
       "scientificName": "Psathyrella corrugis",
-      "japaneseName": "ニガクリタケモドキ",
+      "japaneseName": "ナヨタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Pseudosperma rimosum",
-      "japaneseName": "アセタケ",
+      "japaneseName": "オオキヌハダトマヤタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Psilocybe subcaerulipes",
-      "japaneseName": "ヒカゲシビレタケ",
+      "japaneseName": "アイゾメシバフタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Russula densifolia",
-      "japaneseName": "ニセクロハツモドキ",
+      "japaneseName": "クロハツモドキ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -282,7 +295,7 @@
     },
     {
       "scientificName": "Russula foetens",
-      "japaneseName": "ツチカブリモドキ",
+      "japaneseName": "クサハツ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -302,7 +315,7 @@
     },
     {
       "scientificName": "Tricholoma bakamatsutake",
-      "japaneseName": "ニセマツタケ",
+      "japaneseName": "バカマツタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -322,7 +335,7 @@
     },
     {
       "scientificName": "Tricholoma saponaceum",
-      "japaneseName": "ミネシメジ",
+      "japaneseName": "ミドリシメジ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {

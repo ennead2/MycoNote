@@ -16,6 +16,10 @@
 
 5 ソース（大菌輪・Wikipedia ja/en・厚労省自然毒・林野庁特用林産物・Trait Circus）から学名指定で一次情報を集約する CLI。
 
+**注 (2026-04-15 hotfix)**: 大菌輪 fetcher は MycoBank ID の解決経路を GBIF から
+大菌輪公式 `pages.json` に切り替えた（`daikinrin-pages.mjs`）。MycoBank ID なしで
+全種解決可能。tier0 の和名も大菌輪の正典に揃えた。詳細は [hotfix レポート](./daikinrin-hotfix-report.md)。
+
 ### 1. Python 依存をインストール（初回のみ）
 
 ```bash

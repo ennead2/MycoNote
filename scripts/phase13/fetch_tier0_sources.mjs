@@ -21,7 +21,7 @@ const OUT_DIR = '.cache/phase13/combined';
 
 async function fetchFor({ scientificName, japaneseName }) {
   const [daikinrin, wikipediaEn, mhlw, rinya, traitCircus] = await Promise.all([
-    fetchDaikinrinPage(scientificName, null).catch(() => null),
+    fetchDaikinrinPage(scientificName, japaneseName).catch(() => null),
     fetchWikipediaEn({ scientificName }).catch(() => null),
     fetchMhlwEntry(scientificName).catch(() => null),
     fetchRinyaOverview().catch(() => null),
