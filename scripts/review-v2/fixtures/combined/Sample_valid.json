@@ -1,0 +1,14 @@
+{
+  "scientificName": "Sample sample",
+  "japaneseName": "サンプル食用きのこ",
+  "taxonomy": { "phylum": "Basidiomycota", "class": "Agaricomycetes", "order": "Agaricales", "family": "Samplaceae", "genus": "Sample" },
+  "synonyms": [],
+  "sources": {
+    "daikinrin": { "title": "Sample sample", "extract": "大菌輪のサンプル抜粋" },
+    "wikipediaJa": { "title": "サンプル", "extract": "Wikipedia ja のサンプル抜粋" },
+    "wikipediaEn": null,
+    "mhlw": null,
+    "rinya": null,
+    "traitCircus": null
+  }
+}

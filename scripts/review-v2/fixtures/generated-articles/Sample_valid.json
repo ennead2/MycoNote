@@ -1,0 +1,17 @@
+{
+  "names": { "aliases": ["サンプル食用きのこ"] },
+  "season": [{ "start_month": 9, "end_month": 10 }],
+  "habitat": ["広葉樹林"],
+  "regions": ["本州"],
+  "tree_association": ["コナラ"],
+  "similar_species": [{ "ja": "似たきのこ", "note": "見分け方の記述" }],
+  "description": "サンプル記事の概要セクションです。出典付きで記述されています[1]。",
+  "features": "傘は5〜10cm、色は褐色、ヒダは密[1]。",
+  "cooking_preservation": "バター炒めや汁物に適する[1]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「サンプル」", "url": "https://ja.wikipedia.org/wiki/Sample", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "テスト用フィクスチャ"
+}

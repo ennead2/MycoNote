@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "Sample_valid",
+    "japaneseName": "サンプル食用きのこ",
+    "status": "pass",
+    "errors": [],
+    "warnings": [],
+    "outputBytes": 500
+  },
+  {
+    "slug": "Sample_warning",
+    "japaneseName": "警告付きサンプル",
+    "status": "pass",
+    "errors": [],
+    "warnings": ["V4: description に学名パターンが含まれる"],
+    "outputBytes": 600
+  }
+]
