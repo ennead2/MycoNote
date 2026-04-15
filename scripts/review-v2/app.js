@@ -100,7 +100,7 @@ function renderSpeciesHeader() {
   const d = Store.currentData;
   if (!d) return;
   const a = d.article;
-  document.getElementById('species-name-ja').textContent = (a.names?.aliases?.[0]) || d.slug;
+  document.getElementById('species-name-ja').textContent = d.primaryName || d.slug;
   const scientific = d.slug.replace(/_/g, ' ');
   document.getElementById('species-name-sci').textContent = scientific;
   document.getElementById('google-search').href = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(scientific)}`;
@@ -127,6 +127,20 @@ function renderArticlePanel() {
   if (!d) { panel.textContent = '(no article)'; return; }
   const a = d.article;
   const warningsText = (d.warnings || []).join(' / ');
+
+  // 別名（aliases）を最初に表示
+  const aliasH = document.createElement('h3');
+  aliasH.textContent = '別名 / aliases';
+  panel.appendChild(aliasH);
+  const aliasContent = document.createElement('div');
+  const aliases = a.names?.aliases || [];
+  if (aliases.length === 0) {
+    aliasContent.textContent = '(なし)';
+    aliasContent.style.color = '#b8ac9e';
+  } else {
+    aliasContent.textContent = aliases.join(' / ');
+  }
+  panel.appendChild(aliasContent);
 
   for (const s of ARTICLE_SECTIONS) {
     const h = document.createElement('h3');
@@ -180,6 +194,45 @@ function renderArticlePanel() {
   } else {
     panel.appendChild(document.createTextNode('(出典なし)'));
   }
+
+  // 補助フィールド (notes など、上のセクションに含まれない自由形式)
+  const auxFields = ['notes', 'mycoBankId', 'taxonomy', 'synonyms'];
+  for (const k of auxFields) {
+    if (a[k] === undefined || a[k] === null || a[k] === '') continue;
+    const ah = document.createElement('h3');
+    ah.textContent = k;
+    panel.appendChild(ah);
+    const av = document.createElement('div');
+    av.style.fontSize = '13px';
+    av.style.color = '#443c35';
+    av.textContent = typeof a[k] === 'string' ? a[k] : JSON.stringify(a[k]);
+    panel.appendChild(av);
+  }
+
+  // Raw JSON (折りたたみ)
+  const details = document.createElement('details');
+  details.style.marginTop = '20px';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Raw JSON (article)';
+  summary.style.cursor = 'pointer';
+  summary.style.fontFamily = '"JetBrains Mono", monospace';
+  summary.style.fontSize = '11px';
+  summary.style.textTransform = 'uppercase';
+  summary.style.letterSpacing = '0.08em';
+  summary.style.color = '#6c635a';
+  details.appendChild(summary);
+  const pre = document.createElement('pre');
+  pre.style.fontSize = '11px';
+  pre.style.fontFamily = '"JetBrains Mono", monospace';
+  pre.style.background = '#f6f3ea';
+  pre.style.padding = '8px';
+  pre.style.borderRadius = '4px';
+  pre.style.overflowX = 'auto';
+  pre.style.whiteSpace = 'pre-wrap';
+  pre.style.wordBreak = 'break-all';
+  pre.textContent = JSON.stringify(a, null, 2);
+  details.appendChild(pre);
+  panel.appendChild(details);
 }
 
 function renderSourcesPanel() {
@@ -218,6 +271,31 @@ function renderSourcesPanel() {
   if (!panel.hasChildNodes()) {
     panel.textContent = '(どのソースも情報なし)';
   }
+
+  // Raw JSON (combined 全体、折りたたみ)
+  const details = document.createElement('details');
+  details.style.marginTop = '20px';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Raw JSON (combined)';
+  summary.style.cursor = 'pointer';
+  summary.style.fontFamily = '"JetBrains Mono", monospace';
+  summary.style.fontSize = '11px';
+  summary.style.textTransform = 'uppercase';
+  summary.style.letterSpacing = '0.08em';
+  summary.style.color = '#6c635a';
+  details.appendChild(summary);
+  const pre = document.createElement('pre');
+  pre.style.fontSize = '11px';
+  pre.style.fontFamily = '"JetBrains Mono", monospace';
+  pre.style.background = '#f6f3ea';
+  pre.style.padding = '8px';
+  pre.style.borderRadius = '4px';
+  pre.style.overflowX = 'auto';
+  pre.style.whiteSpace = 'pre-wrap';
+  pre.style.wordBreak = 'break-all';
+  pre.textContent = JSON.stringify(d.combined, null, 2);
+  details.appendChild(pre);
+  panel.appendChild(details);
 }
 
 function renderDecisionState() {

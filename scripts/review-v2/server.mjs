@@ -30,6 +30,7 @@ const DEFAULT_CONFIG = {
   combinedDir: join(ROOT, '.cache/phase13/combined'),
   reportPath: join(ROOT, '.cache/phase13/generation-report.json'),
   progressPath: join(ROOT, 'scripts/temp/review-v2-progress.json'),
+  tier0Path: join(ROOT, 'data/tier0-species.json'),
   indexHtmlPath: join(__dirname, 'index.html'),
   appJsPath: join(__dirname, 'app.js'),
   styleCssPath: join(__dirname, 'style.css'),
@@ -59,6 +60,21 @@ function readJSON(path, fallback = null) {
 
 function loadProgress(progressPath) {
   return readJSON(progressPath, { started_at: null, last_updated: null, decisions: {} });
+}
+
+function loadTier0Map(tier0Path) {
+  // scientific name 正典 → 標準カタカナ和名 のマップを構築。
+  // slug 形式 (Genus_species) でも引けるように両方キーを持たせる。
+  const data = readJSON(tier0Path, null);
+  const out = {};
+  if (!data || !Array.isArray(data.species)) return out;
+  for (const s of data.species) {
+    if (!s.scientificName || !s.japaneseName) continue;
+    const slug = s.scientificName.replace(/\s+/g, '_');
+    out[s.scientificName] = s.japaneseName;
+    out[slug] = s.japaneseName;
+  }
+  return out;
 }
 
 async function readBody(req) {
@@ -121,14 +137,17 @@ function listArticles(config) {
   const report = readJSON(config.reportPath, []);
   const reportBySlug = Object.fromEntries(report.map(r => [r.slug, r]));
   const progress = loadProgress(config.progressPath);
+  const tier0 = loadTier0Map(config.tier0Path);
   return files.map(f => {
     const slug = f.replace(/\.json$/, '');
     const article = readJSON(join(config.articlesDir, f), {});
     const r = reportBySlug[slug];
+    // tier0 wamei を優先、なければ aliases[0]、それもなければ slug
+    const ja = tier0[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
     return {
       slug,
       scientific: slug,
-      ja: (article.names && article.names.aliases && article.names.aliases[0]) || slug,
+      ja,
       safety: article.safety || null,
       warningsCount: r ? (r.warnings || []).length : 0,
       decision: progress.decisions[slug]?.decision || null,
@@ -174,8 +193,11 @@ export function createReviewServer(config = DEFAULT_CONFIG) {
         const report = readJSON(config.reportPath, []);
         const reportEntry = report.find(r => r.slug === slug);
         const progress = loadProgress(config.progressPath);
+        const tier0 = loadTier0Map(config.tier0Path);
+        const primaryName = tier0[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
         return sendJSON(res, {
           slug,
+          primaryName,
           article,
           combined,
           warnings: reportEntry?.warnings || [],
