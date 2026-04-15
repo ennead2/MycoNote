@@ -90,7 +90,17 @@ function validate() {
       continue;
     }
     const article = JSON.parse(readFileSync(m.outputPath, 'utf8'));
-    const { errors, warnings } = validateArticle(article, { safety: m.safety });
+
+    const combinedPath = `${COMBINED_DIR}/${m.slug}.json`;
+    const combined = existsSync(combinedPath)
+      ? JSON.parse(readFileSync(combinedPath, 'utf8'))
+      : null;
+
+    const { errors, warnings } = validateArticle(article, {
+      safety: m.safety,
+      combined,
+      targetScientificName: m.scientificName,
+    });
     report.push({
       slug: m.slug,
       japaneseName: m.japaneseName,
