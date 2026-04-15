@@ -1,0 +1,25 @@
+{
+  "names": { "aliases": [] },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["落葉樹林の地上", "針葉樹林の地上", "菌輪"],
+  "regions": ["日本", "ヨーロッパ", "北アメリカ"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "Infundibulicybe squamulosa", "note": "類似種として挙げられる" },
+    { "ja": "Pseudoclitocybe cyathiformis", "note": "類似種として挙げられる" },
+    { "ja": "Bonomyces sinopicus", "note": "類似種として挙げられる" },
+    { "ja": "Singerocybe adirondackensis", "note": "類似種として挙げられる" }
+  ],
+  "description": "オオジョウゴタケはヨーロッパの森林で普通に見られるハラタケ型のきのこで、日本や北アメリカにも分布する。群生する腐生菌で、若いうちは食べられるとされるものの味は並程度と評価され、有毒な類似種との混同リスクがある。本データベースでは安全区分を toxic として扱う。[1]",
+  "features": "カサは無光沢でやや繊毛状、径約3〜9cmでベージュから黄褐色、ときにピンク味を帯び、中央に浅いくぼみを生じやがて漏斗状になる。柄は白〜淡色で長さ2〜8cm、径約1cmで、ツバなどの被膜残片はない。ヒダは白色で密生し強く垂生する。肉は新しい干草のような淡い匂いをもち、味は温和。胞子は涙形で白色、約5.5〜8×4〜5μm、胞子紋は白色。夏から秋にかけて落葉樹林、まれに針葉樹林の地上に群生し、菌輪を作ることもある。[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "提供された一次資料には、本種の中毒症状・潜伏時間・主要毒成分・応急措置に関する具体的記述は見当たらない。英語版 Wikipedia は本種について若いうちは可食とする一方、有毒種に似るため混同の危険があると述べるにとどまる。野生きのこによる中毒が疑われる場合は、摂取物や吐物を保全したうえで速やかに医療機関を受診し、自己判断での催吐や民間療法に頼らないことが原則である。[1][2]",
+  "caution": "有毒種と外観が似ており、誤食による中毒の危険があるため野生個体の食用は避ける。[1]",
+  "sources": [
+    { "name": "Wikipedia en「Infundibulicybe gibba」", "url": "https://en.wikipedia.org/wiki/Infundibulicybe_gibba", "license": "CC BY-SA 4.0" },
+    { "name": "林野庁「きのこのはなし」", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "政府サイト利用規約" }
+  ],
+  "notes": "一次ソースに daikinrin・wikipediaJa・mhlw・traitCircus は null、rinyaは一般論のみ。英語版Wikipediaを主資料として利用。和名別名情報なしのためaliasesは空。season「summer to autumn」を6〜10月と解釈。国内の食毒・中毒情報は具体的記述がないため一般的注意喚起に留めた。樹種の個別言及はないためtree_associationは空。"
+}

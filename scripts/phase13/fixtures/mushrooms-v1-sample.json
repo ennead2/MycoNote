@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tsukiyotake",
+    "names": { "ja": "ツキヨタケ", "scientific": "Omphalotus guepiniiformis", "aliases": ["月夜茸"] }
+  },
+  {
+    "id": "shaguma_amigasatake",
+    "names": { "ja": "シャグマアミガサタケ", "scientific": "Gyromitra esculenta", "aliases": [] }
+  },
+  {
+    "id": "tamagotake",
+    "names": { "ja": "タマゴタケ", "scientific": "Amanita caesareoides", "aliases": ["卵茸"] }
+  }
+]

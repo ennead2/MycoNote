@@ -7,7 +7,7 @@
 - [x] Phase 13-A: データソース収集基盤 — [計画書](../superpowers/plans/2026-04-13-phase13a-data-source-foundation.md)
 - [x] Phase 13-B: 種選定 + スコアリング — [計画書](../superpowers/plans/2026-04-13-phase13b-species-selection-scoring.md)
 - [x] Phase 13-B': シノニム正規化層追加 — [計画書](../superpowers/plans/2026-04-14-phase13b-prime-synonym-normalization.md)
-- [ ] Phase 13-C: AI 合成パイプライン
+- [x] Phase 13-C: AI 合成パイプライン — [計画書](../superpowers/plans/2026-04-14-phase13c-ai-synthesis.md) / [設計書](../superpowers/specs/2026-04-14-phase13c-ai-synthesis-design.md) / [生成ログ](./generation-log.md)
 - [ ] Phase 13-D: レビューツール拡張
 - [ ] Phase 13-E: 軽量スキーマ移行
 - [ ] Phase 13-F: v2.0 リリース
@@ -118,3 +118,34 @@ node scripts/phase13/build_ranking.mjs --limit 500 --concurrency 3
 
 - 複数和名を持つ種（例 `Omphalotus guepiniiformis` ツキヨタケ）では、`japaneseName`（primary）が checklist 処理順依存。`japaneseNames[]` には全異名が含まれるが、先頭が最も代表的な和名とは限らない。将来的には tier0 doc の wamei を primary 優先する heuristic を検討。
 - MycoBank ID は依然として 0 件解決（GBIF の identifiers に MycoBank が登録されていない既知問題）。Phase 13-C で daikinrin index スクレイプ等別経路を検討。
+
+## Phase 13-C の使い方
+
+Phase 13-A/B の成果物（combined source + ranking）を入力として Claude Opus 4.6 で記事 JSON を合成する。
+
+### 1. prepare（対象解決 + プロンプト書き出し）
+
+```bash
+node scripts/phase13/generate_articles.mjs --prepare
+```
+
+`.cache/phase13/prompts/manifest.json` と `.cache/phase13/prompts/<slug>.txt` が生成される。
+
+### 2. 合成（Claude Code セッション内）
+
+manifest の各 slug について Agent ツールで `model: "opus"` を指定して発射。concurrency 5 推奨。
+出力は `.cache/phase13/generated/<slug>.json`。
+
+### 3. 検証
+
+```bash
+node scripts/phase13/generate_articles.mjs --validate
+```
+
+`.cache/phase13/generation-report.json` に各 slug の pass / needs_regeneration を出力。
+
+### 4. 採用候補の commit
+
+pass 判定を `generated/articles/` にコピーして commit。tier0 batch #1（62 種）の成果と傾向は [生成ログ](./generation-log.md) を参照。
+
+詳細は [計画書](../superpowers/plans/2026-04-14-phase13c-ai-synthesis.md) を参照。

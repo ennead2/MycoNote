@@ -1,0 +1,20 @@
+{
+  "names": { "aliases": ["red milk mushroom"] },
+  "season": [
+    { "start_month": 9, "end_month": 11 }
+  ],
+  "habitat": ["マツ林"],
+  "regions": ["日本", "中国", "朝鮮半島", "ロシア極東", "小笠原諸島", "東南アジア"],
+  "tree_association": ["クロマツ", "アカマツ", "リュウキュウマツ", "Pinus yunnanensis", "Pinus kesiya"],
+  "similar_species": [],
+  "description": "アカハツはベニタケ科に属する食用きのこで、アジアに分布し、1890年に田中延次郎によって初めて記載された。アジアのいくつかの国で珍重される食用種として知られ、菌根共生による栽培の試みも行われている [1]。",
+  "features": "マツ属の樹木と外生菌根を形成して共生する菌根性のきのこで、クロマツ、アカマツ、リュウキュウマツなどのマツ類の林内に発生する。日本では秋のきのこ狩りシーズンに採取される対象のひとつで、発生地域は日本、中国、朝鮮半島、ロシア極東、小笠原諸島など東〜東南アジアに広く及ぶ [1][2]。",
+  "cooking_preservation": "アジアの一部の国々では珍重される食用きのことされ、日本でも古くから秋の味覚として親しまれてきた野生きのこの一つである。ただし野生きのこについては、食毒を安易に自己判断せず、きのこアドバイザーや専門機関の判断を仰ぐことが最良とされる [1][2]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia en 'Lactarius hatsudake'", "url": "https://en.wikipedia.org/wiki/Lactarius_hatsudake", "license": "CC BY-SA 4.0" },
+    { "name": "林野庁「きのこのはなし」", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "政府機関公開情報" }
+  ],
+  "notes": "wikipediaJa/daikinrin/mhlw/traitCircus は null のため英語版Wikipediaを主情報源とした。季節は原典に明記されず、林野庁資料の『秋のきのこ狩りシーズン』記述および本種が菌根性マツ林きのこである点から秋（9-11月）と推定し、similar_species は原典記載なしのため空配列とした。"
+}

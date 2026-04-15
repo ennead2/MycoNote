@@ -1,0 +1,17 @@
+{
+  "names": { "aliases": ["白毒茸"] },
+  "season": [{ "start_month": 8, "end_month": 10 }],
+  "habitat": ["ブナ科樹林"],
+  "regions": ["日本", "北半球"],
+  "tree_association": ["ブナ", "ミズナラ"],
+  "similar_species": [{ "ja": "シロシメジ", "note": "柄のツバとツボが決定的に異なる" }],
+  "description": "ドクツルタケは猛毒のきのこで致死率が極めて高いことで知られる [1]。",
+  "features": "傘は白色で半球形から平らに開く。柄は白色で基部にツボを持ち、ツバを備える [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "主要毒素はアマトキシン類で、摂取後6〜24時間の潜伏期を経て胃腸症状が発現する。速やかに医療機関を受診する [1]。",
+  "caution": "致死率が極めて高く、一本で成人が死亡する量に達する [1]",
+  "sources": [
+    { "name": "厚生労働省 自然毒", "url": "https://example.com", "license": "政府標準利用規約" }
+  ],
+  "notes": "厚労省ソース優先"
+}
