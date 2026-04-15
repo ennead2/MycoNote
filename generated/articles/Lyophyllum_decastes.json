@@ -1,0 +1,24 @@
+{
+  "names": { "aliases": ["ハタケシメジ", "hatake shimeji", "clustered domecap", "fried chicken mushroom"] },
+  "season": [
+    { "start_month": 6, "end_month": 11 }
+  ],
+  "habitat": ["地上群生", "道端や砂利地", "造成地", "林内"],
+  "regions": ["日本", "東アジア温帯域", "北アメリカ", "ヨーロッパ"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "Lyophyllum fumosum", "note": "外見が似て種複合体として扱われる場合あり" },
+    { "ja": "Lyophyllum semitale", "note": "外観が本種と類似する" },
+    { "ja": "Pluteus petasatus", "note": "外観が本種と類似する" },
+    { "ja": "Lyophyllum loricatum", "note": "種複合体として本種と一括される場合あり" }
+  ],
+  "description": "地上に密集した大きな株を作って発生する、傘と柄を持つハラタケ型の食用きのこ。日本では「ハタケシメジ」として商業栽培され、中国でも「luronggu」の名で栽培される。食品としてだけでなく健康食品としても扱われ、オガコや樹皮堆肥で栽培される。北米では稀に野生採取されるが、胃腸障害の報告や有毒種との誤食例もあるとされる[1]。",
+  "features": "傘は平滑で色調に幅があり、径4〜12cm。柄は白色〜灰白色で長さ5〜10cm、太さ1〜3cm。ヒダは白色で古くなるとやや黄味を帯び、肉は白色のまま変色しない。胞子紋は白色。地上に密で大きな株状に群生し、攪乱された土壌（道の路肩、砂利、小道、造成地など）によく発生し、林内で見られることもある。夏から秋、さらに地域によっては春まで発生する。腐生性とも外生菌根性とも解釈されている[1]。",
+  "cooking_preservation": "日本ではハタケシメジの名でオガコや樹皮堆肥を用いた菌床栽培が商業的に行われ、食材として流通する。食品に加えて健康食品としても扱われる[1]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia en 'Lyophyllum decastes'", "url": "https://en.wikipedia.org/wiki/Lyophyllum_decastes", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "一次ソースは Wikipedia 英語版のみ有効（daikinrin/wikipediaJa/mhlw/traitCircus は null、rinya は一般論のみで本種記述なし）。発生期は『summer and fall until spring』の記述のうち国内での主要期として 6〜11 月を採用し、地域差は記載省略。tree_association は腐生/外生菌根の両論で特定樹種記載がないため空配列。"
+}

@@ -1,0 +1,24 @@
+{
+  "names": { "aliases": ["マイタケ", "舞茸", "hen-of-the-woods", "sheep's head", "ram's head"] },
+  "season": [
+    { "start_month": 9, "end_month": 10 }
+  ],
+  "habitat": ["樹木の根元", "老齢のナラ", "カエデ"],
+  "regions": ["日本", "中国", "ヨーロッパ", "東部北アメリカ", "アイダホ"],
+  "tree_association": ["ナラ類", "カエデ類"],
+  "similar_species": [
+    { "ja": "メリピルス・スムスティネイ", "note": "傷つくと黒く染まる近縁種で、食味は類似するがゴム質 [1]" },
+    { "ja": "ハナビラタケ近縁種", "note": "Sparassis spathulata は可食で外観が似る [1]" },
+    { "ja": "マスタケ／チキン・オブ・ザ・ウッズ", "note": "Laetiporus sulphureus、可食の多孔菌類 [1]" },
+    { "ja": "チョレイマイタケ", "note": "Polyporus umbellatus、傘が明瞭に丸い [1]" }
+  ],
+  "description": "樹木の根元、特に老齢のナラやカエデの根元に群生する多孔菌類の一種で、日本では舞茸と呼ばれ古くから主要な食用きのことして親しまれてきた。中国・ヨーロッパ・北アメリカにも自生し、中国と日本では何世紀にもわたり食されている。若い傘をゆっくり加熱した料理が特に美味とされる優良な食用菌である [1]。",
+  "features": "地下にあるジャガイモ大の菌核から子実体を生じ、子実体の塊は径50cmに達し、まれに150cmに及ぶ。日本では45kgを超える大株も記録されている。傘は灰褐色で、しばしば巻いたり匙形で、波打つ縁をもち、幅2〜10cm。傘の下面は1mmあたり約1〜3個の孔を備え、管孔の深さは通常3mm以下。クリーム色の柄は枝分かれした構造をもち、胞子紋は白色。老成すると肉質は硬くなる。樹木の根元で同じ場所に複数年続けて発生する多年生菌で、ヨーロッパでは8〜10月、東部北アメリカでは9〜10月に発生する [1]。",
+  "cooking_preservation": "日本では鍋物をはじめ多くの和食に用いられる主要な食用きのこで、中国と日本で何世紀も食されてきた。特に若い傘をゆっくり加熱した料理が美味とされ、やわらかい傘でもしっかり火を通して用いる。ピクルスに加工することもできる。ただし人によってはアレルギー反応を示す場合がある [1]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia en「Grifola frondosa」", "url": "https://en.wikipedia.org/wiki/Grifola_frondosa", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "プロンプト指定の和名はシロマイタケだが、combined の Wikipedia EN は Grifola frondosa = マイタケ（舞茸）を記述するため、本文はマイタケとして記述し aliases に舞茸を併記した。daikinrin・wikipediaJa・mhlw・traitCircus は null、rinya は本種固有記載なしのため不使用。発生時期は北米・欧州データ（9〜10月）を採用。"
+}

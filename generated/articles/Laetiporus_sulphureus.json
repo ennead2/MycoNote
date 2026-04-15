@@ -1,0 +1,23 @@
+{
+  "names": { "aliases": ["sulphur polypore", "sulphur shelf", "chicken-of-the-woods", "chicken polypore", "lobster-of-the-woods"] },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["広葉樹の生木", "広葉樹の枯木", "まれに針葉樹"],
+  "regions": ["ヨーロッパ", "北アメリカ", "地中海地域"],
+  "tree_association": ["Quercus", "Prunus", "Pyrus", "Populus", "Salix", "Robinia", "Fagus", "Ceratonia", "Eucalyptus"],
+  "similar_species": [
+    { "ja": "Laetiporus persicinus", "note": "本種に似るが別種として区別される" },
+    { "ja": "Laetiporus huroniensis", "note": "ツガに発生、混同で重篤な中毒報告" },
+    { "ja": "Laetiporus gilbertsonii", "note": "ユーカリに発生、混同で重篤な中毒報告" }
+  ],
+  "description": "樹木に発生するサルノコシカケ型の菌で、幹や枝に鮮やかな硫黄色から橙色の棚状の子実体を重なり合わせて形成する。古くなると淡いベージュや灰白色に退色する。子実体下面はヒダではなく管孔からなる。ヨーロッパと北アメリカに分布し、腐生菌として、また弱い寄生菌として発生し、樹木の心材に褐色立方腐朽を引き起こす。多くのサルノコシカケとは異なり若いものは食用とされるが、消化器症状など副作用の報告がある [1]。",
+  "features": "子実体は樹幹から直接発生し、初めはこぶ状で、やがて扇形の棚が重なり合う形に展開する。色は硫黄黄色から鮮やかな橙色で、スエード状の質感をもち、古くなると褐色や白っぽく退色する。各棚の径は 5〜60 cm、厚さは 4〜12 cm に達する。下面の実質層は硫黄黄色で微小な管孔からなり、胞子紋は白色。新鮮なときは肉質で強い菌臭があり、黄色みがかった透明な液を滲ませるが、やがて乾いて脆くなる。生木または成熟した広葉樹の枯木に群生し、Quercus、Prunus、Pyrus、Populus、Salix、Robinia、Fagus などの多様な樹種から、まれに針葉樹からも発生する。ヨーロッパでは 4〜11 月、北米では 8〜10 月、早ければ 6 月にも見られ、地中海地域では Ceratonia や Eucalyptus に発生する [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "本種を食べた人の一部に消化器症状が報告されており、生食は避けるべきとされる。一般人口の約 10% で嘔吐や発熱を伴う重篤な副作用が起こるとの報告があるが、これは Laetiporus huroniensis（ツガに発生）や L. gilbertsonii（ユーカリに発生）など形態的によく似た別種との混同によるものと現在は考えられている。本菌は赤血球を溶解・凝集させる Laetiporus sulphureus lectin（LSL）と呼ばれる溶血性レクチンを産生することが知られる。症状が現れた場合は速やかに医療機関を受診し、摂食したきのこの残品を持参することが望ましい [1]。",
+  "caution": "生食は禁忌。摂食後に嘔吐・発熱等の重篤な症状が出ることがある。",
+  "sources": [
+    { "name": "Wikipedia en「Laetiporus sulphureus」", "url": "https://en.wikipedia.org/wiki/Laetiporus_sulphureus", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "日本語ソース（大菌輪・Wikipedia ja・厚労省）が全て null のため英語版 Wikipedia のみを出典とした。季節は欧州 4〜11 月と北米 8〜10 月（早ければ 6 月）の記述を包括して 6〜10 月に要約。safety=toxic 指定のため cooking_preservation は null、国内分布・和名別名・国内樹種情報はソースに無く空または原綴のまま記載。"
+}
