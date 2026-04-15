@@ -94,6 +94,24 @@ export function createReviewServer(config = DEFAULT_CONFIG) {
         const articles = listArticles(config);
         return sendJSON(res, { total: articles.length, articles });
       }
+      if (path.startsWith('/api/articles/') && req.method === 'GET') {
+        const slug = decodeURIComponent(path.slice('/api/articles/'.length));
+        if (!/^[\w-]+$/.test(slug)) return sendError(res, 400, 'invalid slug');
+        const articlePath = join(config.articlesDir, `${slug}.json`);
+        if (!existsSync(articlePath)) return sendError(res, 404, 'article not found');
+        const article = readJSON(articlePath);
+        const combined = readJSON(join(config.combinedDir, `${slug}.json`), null);
+        const report = readJSON(config.reportPath, []);
+        const reportEntry = report.find(r => r.slug === slug);
+        const progress = loadProgress(config.progressPath);
+        return sendJSON(res, {
+          slug,
+          article,
+          combined,
+          warnings: reportEntry?.warnings || [],
+          decision: progress.decisions[slug] || null,
+        });
+      }
       if (path === '/' || path === '/index.html') {
         return serveFile(res, config.indexHtmlPath, MIME['.html']);
       }
