@@ -1,0 +1,32 @@
+[
+  {
+    "file": "Lentinula_edodes_316467.html",
+    "japanese_name": "シイタケ",
+    "GBIF_kokunai": 150,
+    "GBIF_kaigai": 1150
+  },
+  {
+    "file": "Amanita_caesareoides_447788.html",
+    "japanese_name": "タマゴタケ",
+    "GBIF_kokunai": 190,
+    "GBIF_kaigai": 50
+  },
+  {
+    "file": "Amanita_virosa_123456.html",
+    "japanese_name": "ドクツルタケ",
+    "GBIF_kokunai": 200,
+    "GBIF_kaigai": 300
+  },
+  {
+    "file": "Clitocybe_rufoalutacea_999999.html",
+    "japanese_name": null,
+    "GBIF_kokunai": 0,
+    "GBIF_kaigai": 10
+  },
+  {
+    "file": "Aaosphaeria_genus.html",
+    "japanese_name": null,
+    "GBIF_kokunai": 0,
+    "GBIF_kaigai": 597
+  }
+]
