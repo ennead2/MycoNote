@@ -111,5 +111,15 @@ export function validateArticle(article, { safety }) {
     }
   }
 
+  // V9: aliases のカタカナ純度チェック（ラテン文字・数字の混入を error）
+  const LATIN_OR_DIGIT = /[A-Za-z0-9]/;
+  if (article.names && Array.isArray(article.names.aliases)) {
+    for (const [i, alias] of article.names.aliases.entries()) {
+      if (typeof alias === 'string' && alias.length > 0 && LATIN_OR_DIGIT.test(alias)) {
+        errors.push(`V9: names.aliases[${i}] "${alias}" にラテン文字/数字が含まれる`);
+      }
+    }
+  }
+
   return { errors, warnings };
 }

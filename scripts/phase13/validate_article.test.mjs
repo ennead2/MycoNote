@@ -95,6 +95,27 @@ describe('validateArticle', () => {
   });
 });
 
+describe('V9: カタカナ純度チェック', () => {
+  it('aliases にラテン文字が混入していると error', () => {
+    const result = validateArticle(load('article-invalid-romaji-alias'), { safety: 'toxic' });
+    expect(result.errors.some(e => e.startsWith('V9:'))).toBe(true);
+  });
+
+  it('aliases が純粋な日本語（漢字・ひらがな・カタカナ・中点・長音符）なら error なし', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['編笠茸', 'アミガサ・タケ', 'あみがさたけ'];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:'))).toEqual([]);
+  });
+
+  it('aliases に空文字が混入していても V9 は発火しない（他 rule で扱う）', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['編笠茸', ''];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:'))).toEqual([]);
+  });
+});
+
 describe('LIMITS', () => {
   it('各自由文の上限が定義されている', () => {
     expect(LIMITS.description).toBe(400);
