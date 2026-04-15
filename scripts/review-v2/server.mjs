@@ -52,11 +52,48 @@ function serveFile(res, absPath, contentType) {
   res.end(readFileSync(absPath));
 }
 
+function readJSON(path, fallback = null) {
+  try { return existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : fallback; }
+  catch { return fallback; }
+}
+
+function loadProgress(progressPath) {
+  return readJSON(progressPath, { started_at: null, last_updated: null, decisions: {} });
+}
+
+function listArticles(config) {
+  if (!existsSync(config.articlesDir)) return [];
+  // approved/ サブディレクトリは除外（isFile() フィルタ）
+  const files = readdirSync(config.articlesDir, { withFileTypes: true })
+    .filter(d => d.isFile() && d.name.endsWith('.json'))
+    .map(d => d.name);
+  const report = readJSON(config.reportPath, []);
+  const reportBySlug = Object.fromEntries(report.map(r => [r.slug, r]));
+  const progress = loadProgress(config.progressPath);
+  return files.map(f => {
+    const slug = f.replace(/\.json$/, '');
+    const article = readJSON(join(config.articlesDir, f), {});
+    const r = reportBySlug[slug];
+    return {
+      slug,
+      scientific: slug,
+      ja: (article.names && article.names.aliases && article.names.aliases[0]) || slug,
+      safety: article.safety || null,
+      warningsCount: r ? (r.warnings || []).length : 0,
+      decision: progress.decisions[slug]?.decision || null,
+    };
+  }).sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
 export function createReviewServer(config = DEFAULT_CONFIG) {
   return createServer(async (req, res) => {
     const url = new URL(req.url, `http://localhost`);
     const path = url.pathname;
     try {
+      if (path === '/api/articles' && req.method === 'GET') {
+        const articles = listArticles(config);
+        return sendJSON(res, { total: articles.length, articles });
+      }
       if (path === '/' || path === '/index.html') {
         return serveFile(res, config.indexHtmlPath, MIME['.html']);
       }
