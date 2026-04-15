@@ -1,6 +1,9 @@
 /**
  * Wikipedia ja/en 取得。MediaWiki API 利用。
  * License: CC BY-SA 4.0 / GFDL dual. 帰属表示必須。
+ *
+ * Phase 13-E: redirect を追わない。requestedTitle と title を両方保存して
+ *   redirect 被害を validator V12 で検出できるようにする。
  */
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -13,7 +16,7 @@ const USER_AGENT = 'MycoNote/1.0 (https://github.com/ennead2/MycoNote; data inge
 const jaCache = createCache({ dir: CACHE_DIR, namespace: 'wikipedia-ja' });
 const enCache = createCache({ dir: CACHE_DIR, namespace: 'wikipedia-en' });
 
-function buildApiUrl(lang, title) {
+export function buildApiUrl(lang, title) {
   const base = `https://${lang}.wikipedia.org/w/api.php`;
   const params = new URLSearchParams({
     action: 'query',
@@ -22,13 +25,12 @@ function buildApiUrl(lang, title) {
     inprop: 'url',
     titles: title,
     format: 'json',
-    redirects: '1',
     origin: '*',
   });
   return `${base}?${params.toString()}`;
 }
 
-export function parseWikipediaResponse(json) {
+export function parseWikipediaResponse(json, requestedTitle = null) {
   const pages = json?.query?.pages;
   if (!pages) return null;
   const firstKey = Object.keys(pages)[0];
@@ -36,6 +38,7 @@ export function parseWikipediaResponse(json) {
   if (!page || page.missing !== undefined) return null;
   if (!page.extract || page.extract.length === 0) return null;
   return {
+    requestedTitle,
     title: page.title,
     extract: page.extract,
     url: page.fullurl || null,
@@ -50,7 +53,7 @@ async function fetchLang(lang, title, cache) {
   const res = await fetch(buildApiUrl(lang, title), { headers: { 'User-Agent': USER_AGENT } });
   if (!res.ok) throw new Error(`wikipedia ${lang} fetch failed: ${res.status}`);
   const json = await res.json();
-  const parsed = parseWikipediaResponse(json);
+  const parsed = parseWikipediaResponse(json, title);
   if (!parsed) return null;
   const record = { ...parsed, lang, fetchedAt: new Date().toISOString() };
   await cache.set(title, record);

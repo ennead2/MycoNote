@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
-import { parseWikipediaResponse } from './wikipedia.mjs';
+import { parseWikipediaResponse, buildApiUrl } from './wikipedia.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -39,5 +39,44 @@ describe('parseWikipediaResponse', () => {
   it('extract が空の場合も null を返す', () => {
     const empty = { query: { pages: { '12345': { ns: 0, title: 'T', extract: '' } } } };
     expect(parseWikipediaResponse(empty)).toBeNull();
+  });
+});
+
+describe('buildApiUrl', () => {
+  it('redirects パラメータを含まない', () => {
+    const url = buildApiUrl('ja', 'アミガサタケ');
+    expect(url).not.toMatch(/redirects/);
+  });
+
+  it('lang と title をエンコードして組み立てる', () => {
+    const url = buildApiUrl('en', 'Morchella esculenta');
+    expect(url).toContain('en.wikipedia.org');
+    expect(url).toContain('titles=Morchella+esculenta');
+  });
+});
+
+describe('parseWikipediaResponse with requestedTitle', () => {
+  it('requestedTitle を渡すと返却オブジェクトに含む', () => {
+    const parsed = parseWikipediaResponse(JA_FIXTURE, 'アミガサタケ');
+    expect(parsed.requestedTitle).toBe('アミガサタケ');
+  });
+
+  it('requestedTitle が title と異なる場合も両方保持する（redirect 検出用）', () => {
+    const redirected = {
+      query: {
+        pages: {
+          '12345': {
+            pageid: 12345,
+            ns: 0,
+            title: 'ヒカゲシビレタケ',
+            extract: 'ヒカゲシビレタケは...',
+            fullurl: 'https://ja.wikipedia.org/wiki/...',
+          },
+        },
+      },
+    };
+    const parsed = parseWikipediaResponse(redirected, 'アイゾメシバフタケ');
+    expect(parsed.title).toBe('ヒカゲシビレタケ');
+    expect(parsed.requestedTitle).toBe('アイゾメシバフタケ');
   });
 });
