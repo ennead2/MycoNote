@@ -44,3 +44,59 @@ describe('parsePagesJson', () => {
     expect(entries[0].mycoBankId).toBe(222222);
   });
 });
+
+import { buildPagesIndex, lookupMycoBankId } from './daikinrin-pages.mjs';
+
+describe('buildPagesIndex', () => {
+  it('entries から sci → mbid, ja → mbid のマップを構築する', () => {
+    const entries = parsePagesJson(raw);
+    const idx = buildPagesIndex(entries);
+    expect(idx.byScientific.get('lentinula edodes')).toBe(316467);
+    expect(idx.byJapanese.get('シイタケ')).toBe(316467);
+  });
+
+  it('byScientific は lowercase キーで保存する（lookup 側で正規化される前提）', () => {
+    const entries = parsePagesJson(raw);
+    const idx = buildPagesIndex(entries);
+    expect(idx.byScientific.get('lentinula edodes')).toBe(316467);
+    expect(idx.byScientific.has('Lentinula Edodes')).toBe(false);
+  });
+
+  it('和名なし種は byJapanese に含まない', () => {
+    const entries = parsePagesJson(raw);
+    const idx = buildPagesIndex(entries);
+    expect(idx.byJapanese.has(null)).toBe(false);
+  });
+});
+
+describe('lookupMycoBankId', () => {
+  it('学名ヒットを優先', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    const id = lookupMycoBankId(idx, { scientificName: 'Lentinula edodes', japaneseName: 'シイタケ' });
+    expect(id).toBe(316467);
+  });
+
+  it('学名なし＋和名のみで解決可', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    const id = lookupMycoBankId(idx, { scientificName: null, japaneseName: 'タマゴタケ' });
+    expect(id).toBe(447788);
+  });
+
+  it('学名ミスヒット時は和名にフォールバック', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    const id = lookupMycoBankId(idx, { scientificName: 'Does not exist', japaneseName: 'シイタケ' });
+    expect(id).toBe(316467);
+  });
+
+  it('どちらにもヒットしなければ null', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    const id = lookupMycoBankId(idx, { scientificName: 'Nonexistent species', japaneseName: 'ナイヨ' });
+    expect(id).toBeNull();
+  });
+
+  it('学名入力の大文字小文字は lookup 側で吸収される', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    expect(lookupMycoBankId(idx, { scientificName: 'LENTINULA EDODES' })).toBe(316467);
+    expect(lookupMycoBankId(idx, { scientificName: 'lentinula EDODES' })).toBe(316467);
+  });
+});

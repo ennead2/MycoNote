@@ -47,3 +47,55 @@ export function parsePagesJson(raw) {
   }
   return entries;
 }
+
+/**
+ * entries 配列から (学名 → MycoBankId, 和名 → MycoBankId) のマップを構築。
+ * @param {{ scientificName: string, japaneseName: string | null, mycoBankId: number }[]} entries
+ * @returns {{ byScientific: Map<string, number>, byJapanese: Map<string, number> }}
+ */
+export function buildPagesIndex(entries) {
+  const byScientific = new Map();
+  const byJapanese = new Map();
+  for (const e of entries) {
+    if (e.scientificName) byScientific.set(e.scientificName.toLowerCase(), e.mycoBankId);
+    if (e.japaneseName) byJapanese.set(e.japaneseName, e.mycoBankId);
+  }
+  return { byScientific, byJapanese };
+}
+
+/**
+ * 学名 → 和名 の順で MycoBank ID を引く。両方失敗で null。
+ * @param {{ byScientific: Map<string, number>, byJapanese: Map<string, number> }} index
+ * @param {{ scientificName?: string | null, japaneseName?: string | null }} key
+ * @returns {number | null}
+ */
+export function lookupMycoBankId(index, { scientificName, japaneseName }) {
+  if (scientificName) {
+    const id = index.byScientific.get(scientificName.toLowerCase());
+    if (id) return id;
+  }
+  if (japaneseName) {
+    const id = index.byJapanese.get(japaneseName);
+    if (id) return id;
+  }
+  return null;
+}
+
+/**
+ * 大菌輪 pages.json をネットから fetch（または fresh=false かつキャッシュがあればそこから返す）。
+ * @param {{ fresh?: boolean }} [opts]
+ * @returns {Promise<{ scientificName: string, japaneseName: string | null, mycoBankId: number }[]>}
+ */
+export async function fetchDaikinrinPagesIndex({ fresh = false } = {}) {
+  if (!fresh && existsSync(PAGES_CACHE_PATH)) {
+    const cached = JSON.parse(readFileSync(PAGES_CACHE_PATH, 'utf8'));
+    if (cached?.entries) return cached.entries;
+  }
+  const res = await fetch(PAGES_URL, { headers: { 'User-Agent': USER_AGENT } });
+  if (!res.ok) throw new Error(`daikinrin pages.json fetch failed: ${res.status}`);
+  const raw = await res.json();
+  const entries = parsePagesJson(raw);
+  mkdirSync(CACHE_DIR, { recursive: true });
+  writeFileSync(PAGES_CACHE_PATH, JSON.stringify({ fetchedAt: new Date().toISOString(), entries }, null, 2));
+  return entries;
+}
