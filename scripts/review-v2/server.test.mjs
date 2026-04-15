@@ -162,3 +162,35 @@ describe('POST /api/decisions', () => {
     await new Promise((resolve) => server.close(resolve));
   });
 });
+
+describe('DELETE /api/decisions/:slug', () => {
+  it('clears decision and removes approved copy', async () => {
+    if (existsSync(FIXTURE_CONFIG.progressPath)) unlinkSync(FIXTURE_CONFIG.progressPath);
+    if (existsSync(FIXTURE_CONFIG.approvedDir)) rmSync(FIXTURE_CONFIG.approvedDir, { recursive: true });
+    const server = createReviewServer(FIXTURE_CONFIG);
+    await server.listen(0);
+    const port = server.address().port;
+    await fetch(`http://localhost:${port}/api/decisions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug: 'Sample_valid', decision: 'approve', sections: [], note: '' }),
+    });
+    assert.equal(existsSync(join(FIXTURE_CONFIG.approvedDir, 'Sample_valid.json')), true);
+    const res = await fetch(`http://localhost:${port}/api/decisions/Sample_valid`, { method: 'DELETE' });
+    assert.equal(res.status, 200);
+    const progress = JSON.parse(readFileSync(FIXTURE_CONFIG.progressPath, 'utf8'));
+    assert.equal(progress.decisions.Sample_valid, undefined);
+    assert.equal(existsSync(join(FIXTURE_CONFIG.approvedDir, 'Sample_valid.json')), false);
+    await new Promise((resolve) => server.close(resolve));
+  });
+
+  it('returns 200 even if slug had no decision', async () => {
+    if (existsSync(FIXTURE_CONFIG.progressPath)) unlinkSync(FIXTURE_CONFIG.progressPath);
+    const server = createReviewServer(FIXTURE_CONFIG);
+    await server.listen(0);
+    const port = server.address().port;
+    const res = await fetch(`http://localhost:${port}/api/decisions/Sample_valid`, { method: 'DELETE' });
+    assert.equal(res.status, 200);
+    await new Promise((resolve) => server.close(resolve));
+  });
+});

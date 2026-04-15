@@ -102,6 +102,16 @@ function saveDecision(config, { slug, decision, sections, note }) {
   return progress;
 }
 
+function clearDecision(config, slug) {
+  const progress = loadProgress(config.progressPath);
+  delete progress.decisions[slug];
+  progress.last_updated = new Date().toISOString();
+  mkdirSync(dirname(config.progressPath), { recursive: true });
+  writeJSON(config.progressPath, progress);
+  const approvedPath = join(config.approvedDir, `${slug}.json`);
+  if (existsSync(approvedPath)) unlinkSync(approvedPath);
+}
+
 function listArticles(config) {
   if (!existsSync(config.articlesDir)) return [];
   // approved/ サブディレクトリは除外（isFile() フィルタ）
@@ -131,6 +141,12 @@ export function createReviewServer(config = DEFAULT_CONFIG) {
     const url = new URL(req.url, `http://localhost`);
     const path = url.pathname;
     try {
+      if (path.startsWith('/api/decisions/') && req.method === 'DELETE') {
+        const slug = decodeURIComponent(path.slice('/api/decisions/'.length));
+        if (!/^[\w-]+$/.test(slug)) return sendError(res, 400, 'invalid slug');
+        clearDecision(config, slug);
+        return sendJSON(res, { ok: true });
+      }
       if (path === '/api/decisions' && req.method === 'POST') {
         const body = await readBody(req);
         const { slug, decision, sections, note } = body;
