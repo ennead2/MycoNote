@@ -51,7 +51,8 @@ export function combineSources({
 export async function fetchAllSources({ scientificName, mycoBankId }) {
   // wikipediaJa 以外の 5 ソースを並列。wikipediaJa は japaneseName chain に依存するので後続。
   const [daikinrin, wikipediaEn, mhlw, rinya, traitCircus] = await Promise.all([
-    fetchDaikinrinPage(scientificName, mycoBankId).catch(e => { console.error('daikinrin:', e.message); return null; }),
+    // pages.json 経由で学名から MycoBank ID を引くため japaneseName は不要（null でよい）
+    fetchDaikinrinPage(scientificName, null).catch(e => { console.error('daikinrin:', e.message); return null; }),
     fetchWikipediaEn({ scientificName }).catch(e => { console.error('wikipediaEn:', e.message); return null; }),
     fetchMhlwEntry(scientificName).catch(e => { console.error('mhlw:', e.message); return null; }),
     fetchRinyaOverview().catch(e => { console.error('rinya:', e.message); return null; }),

@@ -156,12 +156,43 @@ function extractExternalLinks($) {
   return [...seen.values()];
 }
 
-export async function fetchDaikinrinPage(scientificName, mycoBankId) {
-  const key = `${scientificName}_${mycoBankId}`;
-  const cached = await daikinrinCache.get(key);
+import { fetchDaikinrinPagesIndex, buildPagesIndex, lookupEntry } from './daikinrin-pages.mjs';
+
+let _pagesIndexPromise = null;
+async function getPagesIndex() {
+  if (!_pagesIndexPromise) {
+    _pagesIndexPromise = fetchDaikinrinPagesIndex().then(buildPagesIndex);
+  }
+  return _pagesIndexPromise;
+}
+
+/**
+ * 大菌輪の種ページを fetch + parse + キャッシュ。
+ *
+ * 旧 API は mycoBankId を呼び出し側から受け取っていたが、GBIF が MycoBank ID を
+ * 持たない問題のため現在は内部で pages.json から解決する。
+ *
+ * 大菌輪は GBIF と accepted name が異なるケースがある（例: GBIF `Pholiota nameko` →
+ * 大菌輪 `Pholiota microspora`）。URL 組み立てには **大菌輪側の正典学名** を使うので、
+ * 呼び出し側の scientificName が旧名/新名どちらでも和名経由で解決できれば fetch 可能。
+ *
+ * @param {string} scientificName
+ * @param {string | null} japaneseName 和名（pages.json で学名ヒットしない時の fallback key）
+ * @returns {Promise<object | null>}
+ */
+export async function fetchDaikinrinPage(scientificName, japaneseName) {
+  const index = await getPagesIndex();
+  const entry = lookupEntry(index, { scientificName, japaneseName });
+  if (!entry) return null;
+
+  // 大菌輪の正典学名を URL 構築に使う
+  const canonicalSci = entry.scientificName;
+  const mycoBankId = entry.mycoBankId;
+  const cacheKey = `${canonicalSci}_${mycoBankId}`;
+  const cached = await daikinrinCache.get(cacheKey);
   if (cached) return cached;
 
-  const url = buildPageUrl(scientificName, mycoBankId);
+  const url = buildPageUrl(canonicalSci, mycoBankId);
   const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
   if (!res.ok) {
     if (res.status === 404) return null;
@@ -170,6 +201,6 @@ export async function fetchDaikinrinPage(scientificName, mycoBankId) {
   const html = await res.text();
   const parsed = parseDaikinrinPage(html);
   const record = { url, fetchedAt: new Date().toISOString(), ...parsed };
-  await daikinrinCache.set(key, record);
+  await daikinrinCache.set(cacheKey, record);
   return record;
 }

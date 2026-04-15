@@ -13,7 +13,7 @@ import { combineSources } from './fetch_sources.mjs';
 // パイロット専用: 期待 japaneseName を直接 wikipediaJa 検索に渡し、daikinrin 欠損を補う。
 async function fetchPilotSources({ scientificName, japaneseName, mycoBankId = null }) {
   const [daikinrin, wikipediaEn, mhlw, rinya, traitCircus] = await Promise.all([
-    fetchDaikinrinPage(scientificName, mycoBankId).catch(() => null),
+    fetchDaikinrinPage(scientificName, japaneseName).catch(() => null),
     fetchWikipediaEn({ scientificName }).catch(() => null),
     fetchMhlwEntry(scientificName).catch(() => null),
     fetchRinyaOverview().catch(() => null),
