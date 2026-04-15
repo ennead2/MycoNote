@@ -45,20 +45,20 @@ describe('parsePagesJson', () => {
   });
 });
 
-import { buildPagesIndex, lookupMycoBankId } from './daikinrin-pages.mjs';
+import { buildPagesIndex, lookupMycoBankId, lookupEntry } from './daikinrin-pages.mjs';
 
 describe('buildPagesIndex', () => {
-  it('entries から sci → mbid, ja → mbid のマップを構築する', () => {
+  it('entries から sci → entry, ja → entry のマップを構築する', () => {
     const entries = parsePagesJson(raw);
     const idx = buildPagesIndex(entries);
-    expect(idx.byScientific.get('lentinula edodes')).toBe(316467);
-    expect(idx.byJapanese.get('シイタケ')).toBe(316467);
+    expect(idx.byScientific.get('lentinula edodes').mycoBankId).toBe(316467);
+    expect(idx.byJapanese.get('シイタケ').scientificName).toBe('Lentinula edodes');
   });
 
   it('byScientific は lowercase キーで保存する（lookup 側で正規化される前提）', () => {
     const entries = parsePagesJson(raw);
     const idx = buildPagesIndex(entries);
-    expect(idx.byScientific.get('lentinula edodes')).toBe(316467);
+    expect(idx.byScientific.get('lentinula edodes')).toBeDefined();
     expect(idx.byScientific.has('Lentinula Edodes')).toBe(false);
   });
 
@@ -66,6 +66,19 @@ describe('buildPagesIndex', () => {
     const entries = parsePagesJson(raw);
     const idx = buildPagesIndex(entries);
     expect(idx.byJapanese.has(null)).toBe(false);
+  });
+});
+
+describe('lookupEntry', () => {
+  it('和名ヒット時に大菌輪側の正典学名を返す', () => {
+    const idx = buildPagesIndex(parsePagesJson(raw));
+    // fixture には登場しないが、実データで起きるケースをシミュレート:
+    // GBIF accepted 'Pholiota nameko' だが大菌輪は 'Pholiota microspora' が accepted というケース。
+    // fixture では和名「シイタケ」→ 学名 'Lentinula edodes' の対応で同等の挙動を確認。
+    const e = lookupEntry(idx, { scientificName: 'Wrong name', japaneseName: 'シイタケ' });
+    expect(e).not.toBeNull();
+    expect(e.scientificName).toBe('Lentinula edodes');
+    expect(e.mycoBankId).toBe(316467);
   });
 });
 

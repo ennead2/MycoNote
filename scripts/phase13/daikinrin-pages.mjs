@@ -49,36 +49,50 @@ export function parsePagesJson(raw) {
 }
 
 /**
- * entries 配列から (学名 → MycoBankId, 和名 → MycoBankId) のマップを構築。
+ * entries 配列から (学名 → entry, 和名 → entry) のマップを構築。
+ * 値は entry 全体（scientificName, japaneseName, mycoBankId）を持つので、
+ * 利用側は大菌輪の正典学名と ID の両方を取得できる。
  * @param {{ scientificName: string, japaneseName: string | null, mycoBankId: number }[]} entries
- * @returns {{ byScientific: Map<string, number>, byJapanese: Map<string, number> }}
+ * @returns {{ byScientific: Map<string, object>, byJapanese: Map<string, object> }}
  */
 export function buildPagesIndex(entries) {
   const byScientific = new Map();
   const byJapanese = new Map();
   for (const e of entries) {
-    if (e.scientificName) byScientific.set(e.scientificName.toLowerCase(), e.mycoBankId);
-    if (e.japaneseName) byJapanese.set(e.japaneseName, e.mycoBankId);
+    if (e.scientificName) byScientific.set(e.scientificName.toLowerCase(), e);
+    if (e.japaneseName) byJapanese.set(e.japaneseName, e);
   }
   return { byScientific, byJapanese };
 }
 
 /**
- * 学名 → 和名 の順で MycoBank ID を引く。両方失敗で null。
- * @param {{ byScientific: Map<string, number>, byJapanese: Map<string, number> }} index
+ * 学名 → 和名 の順でエントリ全体を引く。両方失敗で null。
+ * 戻り値は大菌輪側の正典エントリ（学名 / 和名 / MycoBankId）。
+ * URL 組み立てには入力 scientificName ではなく戻り値の scientificName を使う必要がある
+ * （大菌輪が旧学名を accepted として使うケースがあるため）。
+ * @param {{ byScientific: Map<string, object>, byJapanese: Map<string, object> }} index
  * @param {{ scientificName?: string | null, japaneseName?: string | null }} key
- * @returns {number | null}
+ * @returns {{ scientificName: string, japaneseName: string | null, mycoBankId: number } | null}
  */
-export function lookupMycoBankId(index, { scientificName, japaneseName }) {
+export function lookupEntry(index, { scientificName, japaneseName }) {
   if (scientificName) {
-    const id = index.byScientific.get(scientificName.toLowerCase());
-    if (id) return id;
+    const e = index.byScientific.get(scientificName.toLowerCase());
+    if (e) return e;
   }
   if (japaneseName) {
-    const id = index.byJapanese.get(japaneseName);
-    if (id) return id;
+    const e = index.byJapanese.get(japaneseName);
+    if (e) return e;
   }
   return null;
+}
+
+/**
+ * lookupEntry の薄いラッパー。MycoBank ID だけを引きたい旧用途向け。
+ * @returns {number | null}
+ */
+export function lookupMycoBankId(index, key) {
+  const e = lookupEntry(index, key);
+  return e ? e.mycoBankId : null;
 }
 
 /**
