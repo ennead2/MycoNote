@@ -24,7 +24,7 @@ const SCI_PATTERN = /\b[A-Z][a-z]+ [a-z]+\b/;
 const CITATION_PATTERN = /\[\d+\]/;
 const LATIN_OR_DIGIT = /[A-Za-z0-9\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]/;
 
-export function validateArticle(article, { safety, combined } = {}) {
+export function validateArticle(article, { safety, combined, targetScientificName } = {}) {
   const errors = [];
   const warnings = [];
 
@@ -128,6 +128,18 @@ export function validateArticle(article, { safety, combined } = {}) {
     );
     if (!hasWikiJa) {
       warnings.push('V10: combined に wikipediaJa があるが sources に Wikipedia ja 引用なし');
+    }
+  }
+
+  // V11: daikinrin URL の canonical 学名と target scientificName の不一致（warning）
+  const daikinrinUrl = combined?.sources?.daikinrin?.url;
+  if (daikinrinUrl && targetScientificName) {
+    const m = daikinrinUrl.match(/\/Pages\/([A-Z][a-z]+_[a-z]+(?:_[a-z]+)*)_\d+\.html/);
+    if (m) {
+      const canonical = m[1].replace(/_/g, ' ');
+      if (canonical !== targetScientificName) {
+        warnings.push(`V11: target "${targetScientificName}" と daikinrin canonical "${canonical}" が不一致`);
+      }
     }
   }
 

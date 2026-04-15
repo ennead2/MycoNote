@@ -168,3 +168,45 @@ describe('V10: wikipediaJa があるのに引用していない', () => {
     expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
   });
 });
+
+describe('V11: 学名 canonical 一致', () => {
+  it('daikinrin URL から抽出した学名が target と一致 → warning なし', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        daikinrin: { url: 'https://mycoscouter.coolblog.jp/daikinrin/Pages/Pleurotus_ostreatus_174220.html' },
+      },
+    };
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined,
+      targetScientificName: 'Pleurotus ostreatus',
+    });
+    expect(result.warnings.filter(w => w.startsWith('V11:'))).toEqual([]);
+  });
+
+  it('daikinrin URL の学名が target と不一致 → warning', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        daikinrin: { url: 'https://mycoscouter.coolblog.jp/daikinrin/Pages/Pholiota_microspora_235533.html' },
+      },
+    };
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined,
+      targetScientificName: 'Pholiota nameko',
+    });
+    expect(result.warnings.some(w => w.startsWith('V11:'))).toBe(true);
+  });
+
+  it('daikinrin が null なら V11 は発火しない', () => {
+    const a = load('article-valid-edible');
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined: { sources: { daikinrin: null } },
+      targetScientificName: 'Pholiota nameko',
+    });
+    expect(result.warnings.filter(w => w.startsWith('V11:'))).toEqual([]);
+  });
+});
