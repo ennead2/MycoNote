@@ -149,5 +149,16 @@ export function validateArticle(article, { safety, combined, targetScientificNam
     errors.push(`V12: wikipediaJa が "${wj.requestedTitle}" を要求したが "${wj.title}" に redirect された`);
   }
 
+  // V13: 1 期 season で 8 ヶ月以上カバー（年中扱い）は warning
+  if (Array.isArray(article.season) && article.season.length === 1) {
+    const s = article.season[0];
+    if (Number.isInteger(s?.start_month) && Number.isInteger(s?.end_month)) {
+      const span = s.end_month - s.start_month + 1;
+      if (span >= 8) {
+        warnings.push(`V13: season が 1 期で ${span} ヶ月カバー（年中扱いの疑い）`);
+      }
+    }
+  }
+
   return { errors, warnings };
 }

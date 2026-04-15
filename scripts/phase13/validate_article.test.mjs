@@ -243,3 +243,29 @@ describe('V12: Wikipedia redirect 被害検出', () => {
     expect(result.errors.filter(e => e.startsWith('V12:'))).toEqual([]);
   });
 });
+
+describe('V13: season 年中相当の検出', () => {
+  it('1 期で 8 ヶ月以上カバーすると warning', () => {
+    const a = load('article-valid-edible');
+    a.season = [{ start_month: 3, end_month: 11 }];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.some(w => w.startsWith('V13:'))).toBe(true);
+  });
+
+  it('1 期で 7 ヶ月以下は warning なし', () => {
+    const a = load('article-valid-edible');
+    a.season = [{ start_month: 6, end_month: 10 }];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V13:'))).toEqual([]);
+  });
+
+  it('2 期に分かれていれば年中でも warning なし', () => {
+    const a = load('article-valid-edible');
+    a.season = [
+      { start_month: 3, end_month: 5 },
+      { start_month: 9, end_month: 11 },
+    ];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V13:'))).toEqual([]);
+  });
+});
