@@ -210,3 +210,36 @@ describe('V11: 学名 canonical 一致', () => {
     expect(result.warnings.filter(w => w.startsWith('V11:'))).toEqual([]);
   });
 });
+
+describe('V12: Wikipedia redirect 被害検出', () => {
+  it('requestedTitle と title が一致 → error なし', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        wikipediaJa: { requestedTitle: 'アミガサタケ', title: 'アミガサタケ' },
+      },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.filter(e => e.startsWith('V12:'))).toEqual([]);
+  });
+
+  it('requestedTitle と title が不一致 → error', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        wikipediaJa: { requestedTitle: 'アイゾメシバフタケ', title: 'ヒカゲシビレタケ' },
+      },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.some(e => e.startsWith('V12:'))).toBe(true);
+  });
+
+  it('requestedTitle が null（旧キャッシュ）なら V12 は発火しない', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: { wikipediaJa: { title: 'アミガサタケ' } },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.filter(e => e.startsWith('V12:'))).toEqual([]);
+  });
+});

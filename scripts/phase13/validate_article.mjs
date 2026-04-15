@@ -143,5 +143,11 @@ export function validateArticle(article, { safety, combined, targetScientificNam
     }
   }
 
+  // V12: Wikipedia ja redirect 被害（requestedTitle ≠ title）を error
+  const wj = combined?.sources?.wikipediaJa;
+  if (wj?.requestedTitle && wj?.title && wj.requestedTitle !== wj.title) {
+    errors.push(`V12: wikipediaJa が "${wj.requestedTitle}" を要求したが "${wj.title}" に redirect された`);
+  }
+
   return { errors, warnings };
 }
