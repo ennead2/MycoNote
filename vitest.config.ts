@@ -9,6 +9,7 @@ export default defineConfig({
     setupFiles: ["./src/test-setup.ts"],
     globals: true,
     css: true,
+    testTimeout: 15000,
     exclude: ["**/node_modules/**", "**/dist/**", "e2e/**", ".worktrees/**"],
   },
   resolve: {

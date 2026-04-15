@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom/vitest";
+import "fake-indexeddb/auto";
 
 // jsdom 環境では Node.js ネイティブの structuredClone が Blob を正しくクローンしない問題を修正。
 // fake-indexeddb が Blob を structuredClone 経由で保存するため、
