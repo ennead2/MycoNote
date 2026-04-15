@@ -132,3 +132,39 @@ describe('LIMITS', () => {
     expect(LIMITS.caution).toBe(100);
   });
 });
+
+describe('V10: wikipediaJa があるのに引用していない', () => {
+  const combinedWithJa = {
+    sources: {
+      wikipediaJa: { title: 'ヒラタケ', extract: 'xxx' },
+      wikipediaEn: { title: 'Pleurotus ostreatus', extract: 'yyy' },
+    },
+  };
+
+  it('wikipediaJa あり、sources に Wikipedia ja がない → warning', () => {
+    const a = load('article-valid-edible');
+    a.sources = [{ name: 'Wikipedia en「Pleurotus ostreatus」', url: 'https://en.wikipedia.org/wiki/...', license: 'CC BY-SA 4.0' }];
+    const result = validateArticle(a, { safety: 'edible', combined: combinedWithJa });
+    expect(result.warnings.some(w => w.startsWith('V10:'))).toBe(true);
+  });
+
+  it('wikipediaJa あり、sources に Wikipedia ja あり → warning なし', () => {
+    const a = load('article-valid-edible');
+    // article-valid-edible.json は元々 "Wikipedia ja「アミガサタケ」" を含む
+    const result = validateArticle(a, { safety: 'edible', combined: combinedWithJa });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+
+  it('combined が渡されない場合は V10 を発火しない', () => {
+    const a = load('article-valid-edible');
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+
+  it('wikipediaJa が null の場合は V10 を発火しない', () => {
+    const a = load('article-valid-edible');
+    a.sources = [{ name: 'Wikipedia en「X」', url: 'https://en.wikipedia.org/wiki/X', license: 'CC BY-SA 4.0' }];
+    const result = validateArticle(a, { safety: 'edible', combined: { sources: { wikipediaJa: null } } });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+});

@@ -24,7 +24,7 @@ const SCI_PATTERN = /\b[A-Z][a-z]+ [a-z]+\b/;
 const CITATION_PATTERN = /\[\d+\]/;
 const LATIN_OR_DIGIT = /[A-Za-z0-9\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]/;
 
-export function validateArticle(article, { safety }) {
+export function validateArticle(article, { safety, combined } = {}) {
   const errors = [];
   const warnings = [];
 
@@ -118,6 +118,16 @@ export function validateArticle(article, { safety }) {
       if (typeof alias === 'string' && alias.length > 0 && LATIN_OR_DIGIT.test(alias)) {
         errors.push(`V9: names.aliases[${i}] "${alias}" にラテン文字/数字が含まれる`);
       }
+    }
+  }
+
+  // V10: combined に wikipediaJa があるのに sources[] に Wikipedia ja が無い（warning）
+  if (combined?.sources?.wikipediaJa && Array.isArray(article.sources)) {
+    const hasWikiJa = article.sources.some(s =>
+      typeof s?.name === 'string' && /Wikipedia.*(?:ja|JA|日本語)/u.test(s.name)
+    );
+    if (!hasWikiJa) {
+      warnings.push('V10: combined に wikipediaJa があるが sources に Wikipedia ja 引用なし');
     }
   }
 
