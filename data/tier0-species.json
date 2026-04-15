@@ -181,7 +181,7 @@
     },
     {
       "scientificName": "Laccaria amethystina",
-      "japaneseName": "カレバキツネタケ",
+      "japaneseName": "ウラムラサキ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
@@ -234,7 +234,7 @@
       "rationale": "famous_edible: 採取対象の主要種"
     },
     {
-      "scientificName": "Omphalotus guepiniformis",
+      "scientificName": "Omphalotus japonicus",
       "japaneseName": "ツキヨタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
@@ -254,7 +254,7 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Pholiota nameko",
+      "scientificName": "Pholiota microspora",
       "japaneseName": "ナメコ",
       "rationale": "famous_edible: 採取対象の主要種"
     },
@@ -339,7 +339,7 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Tricholoma ustale",
+      "scientificName": "Tricholoma kakishimeji",
       "japaneseName": "カキシメジ",
       "rationale": "toxic: 主要な毒きのこ"
     },

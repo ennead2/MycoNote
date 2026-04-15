@@ -190,7 +190,7 @@
       "tier": 0
     },
     {
-      "scientificName": "Omphalotus guepiniiformis",
+      "scientificName": "Omphalotus japonicus",
       "japaneseName": "ツキヨタケ",
       "japaneseNames": [
         "クマヒラ",
@@ -207,6 +207,7 @@
         "Omphalotus guepiniformis"
       ],
       "synonyms": [
+        "Omphalotus guepiniiformis",
         "Omphalotus japonicus",
         "Acanthocystis harmandii",
         "Agaricus guepiniiformis",
@@ -2101,17 +2102,18 @@
       "tier": 0
     },
     {
-      "scientificName": "Tricholoma ustale",
+      "scientificName": "Tricholoma kakishimeji",
       "japaneseName": "カキシメジ",
       "japaneseNames": [
         "カキシメジ"
       ],
       "genus": "Tricholoma",
-      "species": "ustale",
+      "species": "kakishimeji",
       "originalNames": [
         "Tricholoma ustale"
       ],
       "synonyms": [
+        "Tricholoma ustale",
         "Agaricus fulvellus",
         "Agaricus ustalis",
         "Gyrophila striata ustalis",
@@ -4430,17 +4432,18 @@
       "tier": 1
     },
     {
-      "scientificName": "Pholiota nameko",
+      "scientificName": "Pholiota microspora",
       "japaneseName": "ナメコ",
       "japaneseNames": [
         "ナメコ"
       ],
       "genus": "Pholiota",
-      "species": "nameko",
+      "species": "microspora",
       "originalNames": [
         "Pholiota nameko"
       ],
       "synonyms": [
+        "Pholiota nameko",
         "Collybia nameko",
         "Kuehneromyces nameko"
       ],
