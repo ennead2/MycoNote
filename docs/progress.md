@@ -566,3 +566,49 @@ Phase 13-C（AI 合成パイプライン）の入力として `data/species-rank
 ### 次フェーズ
 
 Phase 13-D（レビューツール拡張、v1/v2 差分 UI）で `generated/articles/` の 62 件を人間レビューに掛ける。warning 付き 19 件は UI でバッジ表示予定。
+
+---
+
+## Phase 13-A Hotfix: 大菌輪 fetcher の pages.json 駆動化 — 完了 (2026-04-15)
+
+計画書: [docs/superpowers/plans/2026-04-15-phase13a-hotfix-daikinrin-index.md](./superpowers/plans/2026-04-15-phase13a-hotfix-daikinrin-index.md)
+レポート: [docs/phase13/daikinrin-hotfix-report.md](./phase13/daikinrin-hotfix-report.md)
+
+### 背景
+
+Phase 13-A の `daikinrin.mjs` は MycoBank ID 必須の旧 URL 形式を使っていたが、
+GBIF Backbone Taxonomy に MycoBank ID が登録されていないため事実上 0 件解決という
+既知 caveat があり、すべての daikinrin fetch が失敗していた。
+Phase 13-D レビュー UI で「大菌輪 null」が頻発して発覚。
+
+### 修正
+
+- 大菌輪公式 `pages.json`（50,686 件、7.7MB）を `.cache/phase13/daikinrin-pages.json` にキャッシュ
+- `daikinrin-pages.mjs` 新規追加: `parsePagesJson / buildPagesIndex / lookupEntry / lookupMycoBankId / fetchDaikinrinPagesIndex`
+- `fetchDaikinrinPage(scientificName, japaneseName)` は内部で `lookupEntry` を呼び、
+  大菌輪側の**正典学名**で URL を組み立てる（GBIF と accepted name が異なるケース対応）
+- caller 3 ファイル (fetch_sources / fetch_tier0_sources / fetch_pilot_sources) を新シグネチャに更新
+
+### 結果
+
+- 旧 fetcher: tier0 daikinrin hit = **0 / 62**
+- 新 fetcher: tier0 daikinrin hit = **62 / 62（100%）**
+- GBIF ↔ 大菌輪の accepted name 差分 2 件（Pholiota nameko → microspora, Omphalotus guepiniiformis → japonicus）は和名経由で正典学名を取得して解消
+- tier0 和名と大菌輪和名の乖離 15 件を発見 → **一括で大菌輪正典に揃えた**（選択肢 A）
+  - 主な修正: Boletus sensibilis「ドクヤマドリモドキ」→「ミヤマイロガワリ」、Tricholoma bakamatsutake「ニセマツタケ」→「バカマツタケ」等
+  - 慣用呼称は generated/articles の aliases 配列に残っているため UI 表示で失うものはない
+
+### 既存 generated/articles の扱い
+
+retain（Phase 13-D レビューで新 combined JSON と目視照合）。Phase 13-C 再合成は別 plan 化。
+
+### 既知 caveat の解消
+
+| 旧 caveat | 解消状態 |
+|---|---|
+| MycoBank ID 0 件解決 → 大菌輪 fetch 全失敗 | ✓ 解消（pages.json 駆動で全解決可能） |
+
+### テスト
+
+- 新規 `daikinrin-pages.test.mjs` 13 tests 追加
+- 既存 149 + 新規 13 = **162 tests all pass**
