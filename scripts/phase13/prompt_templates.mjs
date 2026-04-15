@@ -64,8 +64,11 @@ function safetyHints(safety) {
   };
 }
 
-export function buildArticlePrompt({ japaneseName, scientificName, safety, combinedJsonPath, outputJsonPath }) {
+export function buildArticlePrompt({ japaneseName, scientificName, safety, combinedJsonPath, outputJsonPath, extractHint }) {
   const hints = safetyHints(safety);
+  const extractHintBlock = extractHint
+    ? `\n# 部分抽出ヒント（ja wiki の全文ではなく一部だけ使う）\n${extractHint}\n`
+    : '';
   return `あなたは日本の菌類図鑑の編集者です。以下のルールを厳守して、指定種の図鑑データを JSON で合成してください。
 
 # 対象種
@@ -96,7 +99,7 @@ ${FIELD_GUIDE}
 - cooking_preservation: ${hints.cooking}
 - poisoning_first_aid: ${hints.poisoning}
 - caution: ${hints.caution}
-
+${extractHintBlock}
 # 完了後
 ${outputJsonPath} に Write ツールで JSON を書き込む。応答は \`done: <path> (<size>)\` のみ。
 `;

@@ -77,3 +77,26 @@ describe('buildArticlePrompt contains SOURCE_PRIORITY_BLOCK', () => {
     expect(p).toContain(SOURCE_PRIORITY_BLOCK);
   });
 });
+
+describe('buildArticlePrompt with extractHint', () => {
+  it('extractHint を渡すと prompt に含まれる', () => {
+    const p = buildArticlePrompt({
+      japaneseName: 'アカハツ',
+      scientificName: 'Lactarius akahatsu',
+      safety: 'edible',
+      combinedJsonPath: 'x.json',
+      outputJsonPath: 'y.json',
+      extractHint: '記事内の『類似種』セクションのアカハツ部分のみ使用',
+    });
+    expect(p).toContain('類似種');
+    expect(p).toContain('アカハツ部分のみ使用');
+  });
+
+  it('extractHint が undefined ならヒントブロックは出ない', () => {
+    const p = buildArticlePrompt({
+      japaneseName: 'テスト', scientificName: 'Testus testus', safety: 'edible',
+      combinedJsonPath: 'x.json', outputJsonPath: 'y.json',
+    });
+    expect(p).not.toMatch(/部分抽出ヒント|extract_hint/);
+  });
+});
