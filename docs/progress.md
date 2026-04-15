@@ -566,3 +566,37 @@ Phase 13-C（AI 合成パイプライン）の入力として `data/species-rank
 ### 次フェーズ
 
 Phase 13-D（レビューツール拡張、v1/v2 差分 UI）で `generated/articles/` の 62 件を人間レビューに掛ける。warning 付き 19 件は UI でバッジ表示予定。
+
+---
+
+## Phase 13-D: レビューツール拡張 — 完了 (2026-04-15)
+
+設計書: [docs/superpowers/specs/2026-04-15-phase13d-review-ui-design.md](./superpowers/specs/2026-04-15-phase13d-review-ui-design.md)
+計画書: [docs/superpowers/plans/2026-04-15-phase13d-review-ui.md](./superpowers/plans/2026-04-15-phase13d-review-ui.md)
+
+### 成果
+
+- `scripts/review-v2/` — tier0 62 件の人間判定用 dev-only ツール（port 3031）
+- vanilla JS + HTML + CSS、Next.js 本体に影響なし
+- 3 択判定（approve / concern / reject）+ concern 時のセクション指定 + メモ
+- キーボード中心（1/2/3/0/N/Enter/←→/G）
+- autosave + ブラウザ閉じて再開で状態復元
+- approve 判定で `generated/articles/approved/<slug>.json` に自動コピー
+- `server.mjs` に unit test 11 件（`node --test`）
+
+### パネル構成
+
+- 左: v2 記事の 7 セクション（概要 / 形態 / 発生・生態 / 類似種 / 食用 / 中毒 / 注意）
+- 右: combined JSON のソース抜粋（Wikipedia ja/en / 大菌輪 / 厚労省 / 林野庁 / Trait Circus）
+- warning 付きセクションは赤波下線で強調
+
+### 設計判断
+
+- v1 比較は捨て、代わりに combined JSON のソース抜粋を右パネルに表示（v2 の RAG 思想と一致）
+- 編集機能なし（read-only + concern マーク + メモのみ）。本文修正は再生成プロンプトに委ねる
+- hero_image 画面内完結（Phase 12-F の Google 画像検索 2 タブ自動操作は廃止、`G` キーで新タブ起動のみ）
+
+### 次フェーズ
+
+Phase 13-E（軽量スキーマ移行）で v2 スキーマ対応の型・ローダを実装、起動時に bookmarks 初期化 + records の mushroom_id リセット。
+Phase 13-F（v2.0 リリース）で `generated/articles/approved/` を `src/data/mushrooms.json` に組み立てて図鑑 UI を v2 に切替。

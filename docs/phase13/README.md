@@ -8,7 +8,7 @@
 - [x] Phase 13-B: 種選定 + スコアリング — [計画書](../superpowers/plans/2026-04-13-phase13b-species-selection-scoring.md)
 - [x] Phase 13-B': シノニム正規化層追加 — [計画書](../superpowers/plans/2026-04-14-phase13b-prime-synonym-normalization.md)
 - [x] Phase 13-C: AI 合成パイプライン — [計画書](../superpowers/plans/2026-04-14-phase13c-ai-synthesis.md) / [設計書](../superpowers/specs/2026-04-14-phase13c-ai-synthesis-design.md) / [生成ログ](./generation-log.md)
-- [ ] Phase 13-D: レビューツール拡張
+- [x] Phase 13-D: レビューツール拡張 — [計画書](../superpowers/plans/2026-04-15-phase13d-review-ui.md) / [設計書](../superpowers/specs/2026-04-15-phase13d-review-ui-design.md)
 - [ ] Phase 13-E: 軽量スキーマ移行
 - [ ] Phase 13-F: v2.0 リリース
 
@@ -149,3 +149,19 @@ node scripts/phase13/generate_articles.mjs --validate
 pass 判定を `generated/articles/` にコピーして commit。tier0 batch #1（62 種）の成果と傾向は [生成ログ](./generation-log.md) を参照。
 
 詳細は [計画書](../superpowers/plans/2026-04-14-phase13c-ai-synthesis.md) を参照。
+
+## Phase 13-D の使い方（レビュー）
+
+tier0 62 件を人間判定するための dev-only レビュー UI。詳細は [scripts/review-v2/README.md](../../scripts/review-v2/README.md)。
+
+```bash
+# 事前準備（combined JSON 不足時のみ、~15 分。スキップ可）
+node scripts/phase13/generate_articles.mjs --prepare
+node scripts/phase13/fetch_tier0_sources.mjs
+
+# レビュー起動
+node scripts/review-v2/server.mjs
+# → http://localhost:3031
+```
+
+判定は `scripts/temp/review-v2-progress.json` に autosave、approve された記事は `generated/articles/approved/<slug>.json` にコピーされる（Phase 13-F の入力）。
