@@ -22,6 +22,7 @@ const REQUIRED_FIELDS = [
 const BULLET_PATTERN = /(^|\n)\s*(・|[-*]\s|\d+[.、)]\s)/;
 const SCI_PATTERN = /\b[A-Z][a-z]+ [a-z]+\b/;
 const CITATION_PATTERN = /\[\d+\]/;
+const LATIN_OR_DIGIT = /[A-Za-z0-9\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]/;
 
 export function validateArticle(article, { safety }) {
   const errors = [];
@@ -111,8 +112,7 @@ export function validateArticle(article, { safety }) {
     }
   }
 
-  // V9: aliases のカタカナ純度チェック（ラテン文字・数字の混入を error）
-  const LATIN_OR_DIGIT = /[A-Za-z0-9]/;
+  // V9: aliases のカタカナ純度チェック（ラテン文字・数字・全角ラテン/数字の混入を error）
   if (article.names && Array.isArray(article.names.aliases)) {
     for (const [i, alias] of article.names.aliases.entries()) {
       if (typeof alias === 'string' && alias.length > 0 && LATIN_OR_DIGIT.test(alias)) {

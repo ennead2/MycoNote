@@ -114,6 +114,13 @@ describe('V9: カタカナ純度チェック', () => {
     const result = validateArticle(a, { safety: 'edible' });
     expect(result.errors.filter(e => e.startsWith('V9:'))).toEqual([]);
   });
+
+  it('aliases に全角数字・全角ラテンが混入していると error', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['ホンシメジ１号', 'ベニテングタケＡ'];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:')).length).toBe(2);
+  });
 });
 
 describe('LIMITS', () => {
