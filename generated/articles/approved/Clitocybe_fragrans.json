@@ -1,0 +1,25 @@
+{
+  "names": { "aliases": [] },
+  "season": [
+    { "start_month": 8, "end_month": 12 },
+    { "start_month": 10, "end_month": 12 },
+    { "start_month": 1, "end_month": 2 }
+  ],
+  "habitat": ["広葉樹林", "針葉樹林"],
+  "regions": ["ヨーロッパ全域", "北アメリカ西海岸", "太平洋岸北西部"],
+  "tree_association": ["広葉樹", "針葉樹"],
+  "similar_species": [
+    { "ja": "Clitocybe dealbata", "note": "アニスの香りを欠く、致命的な毒種" },
+    { "ja": "Clitocybe odora", "note": "アニス臭を持つ食用種、本種との混同に注意" }
+  ],
+  "description": "コカブイヌシメジは白色の小型から中型のきのこで、カサにアニス（八角）に似た芳香を持つ点が目立つ特徴である。子実体は白色、胞子紋は白っぽい。欧州や北米に広く分布するが、類似する致命的な毒種と混同されやすく、ガイドブックによっては食用と扱いつつも摂食を避けるよう警告されている。日本の一次資料に本種の記述は確認できなかった[1]。",
+  "features": "カサは直径1〜5cmの白色、ヒダはやや密。柄は長さ2〜6cm、幅2〜5mmで白色、アニスシード様の芳香を放つ。胞子紋は白色を帯びる。ヨーロッパでは広葉樹林内に8月から12月にかけて発生し、北アメリカでは西海岸および太平洋岸北西部の針葉樹林下に10月から翌2月にかけて発生する[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "本種自体は食用と記述する資料もあるが、致命的な毒を持つ近縁種と混同されやすいため摂食は避けるべきである。特にアニス臭を欠く Clitocybe dealbata は極めて危険な毒種であり、誤食時にはムスカリンによる発汗・流涙・縮瞳・徐脈などのコリン作動性中毒症状が知られる。きのこによる中毒が疑われる場合は直ちに医療機関を受診し、可能であれば食べたきのこの残りを持参する。自己判断での催吐や民間療法に頼らず、専門機関の判断を仰ぐことが最良の策とされる[1][2]。",
+  "caution": "アニス臭を欠く致命的毒種 Clitocybe dealbata と酷似するため、自己判断での摂食は避けること[1]。",
+  "sources": [
+    { "name": "Wikipedia en「Clitocybe fragrans」", "url": "https://en.wikipedia.org/wiki/Clitocybe_fragrans", "license": "CC BY-SA 4.0" },
+    { "name": "林野庁「きのこのはなし」", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "government" }
+  ],
+  "notes": "日本語一次資料（大菌輪・Wikipedia ja・厚労省）に本種の記述なし。英語版 Wikipedia と林野庁の一般注意喚起のみで合成。safety=toxic 指定に従い cooking_preservation=null。発生期は欧州（8-12月）と北米（10月-翌2月）を年跨ぎ分割で3要素として表現。"
+}
