@@ -53,6 +53,13 @@ describe('buildApiUrl', () => {
     expect(url).toContain('en.wikipedia.org');
     expect(url).toContain('titles=Morchella+esculenta');
   });
+
+  it('日本語タイトルを percent-encode する', () => {
+    const url = buildApiUrl('ja', 'アミガサタケ');
+    expect(url).toContain('ja.wikipedia.org');
+    expect(url).toContain('titles=');
+    expect(url).not.toContain('アミガサタケ'); // 生の日本語が残らない（percent-encoded）
+  });
 });
 
 describe('parseWikipediaResponse with requestedTitle', () => {

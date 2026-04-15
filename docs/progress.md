@@ -646,3 +646,28 @@ retain（Phase 13-D レビューで新 combined JSON と目視照合）。Phase 
 
 Phase 13-E（軽量スキーマ移行）で v2 スキーマ対応の型・ローダを実装、起動時に bookmarks 初期化 + records の mushroom_id リセット。
 Phase 13-F（v2.0 リリース）で `generated/articles/approved/` を `src/data/mushrooms.json` に組み立てて図鑑 UI を v2 に切替。
+
+---
+
+## Phase 13-E: 自動判定強化 + tier0 全再生成 + ラインナップ調整
+
+設計書: `docs/superpowers/specs/2026-04-16-phase13e-auto-validation-design.md`
+計画書: `docs/superpowers/plans/2026-04-16-phase13e-auto-validation.md`
+
+### Step 1: 検証・fetcher・prompt の強化 — 完了 (2026-04-16)
+
+- [x] Task 1.1: wikipedia.mjs redirect 除去 + requestedTitle 保存
+- [x] Task 1.2: validate V9 aliases のラテン文字/数字混入検出（全角も対応）
+- [x] Task 1.3: validate V10 wikipediaJa 未引用検出
+- [x] Task 1.4: validate V11 学名 canonical 不一致検出
+- [x] Task 1.5: validate V12 wikipedia redirect 被害検出
+- [x] Task 1.6: validate V13 season 年中扱い検出
+- [x] Task 1.7: generate_articles validate に combined/targetScientificName を渡す
+- [x] Task 1.8: prompt SOURCE_PRIORITY_BLOCK 追加（wikipediaJa 優先）
+- [x] Task 1.9: prompt extractHint 引数追加
+- [x] Task 1.10: combineSources に extractHint 経路追加
+- [x] Task 1.11: fetch_tier0 override 伝播 + --resolve-canonical モード追加
+- [x] Task 1.12: reset_phase13e.mjs キャッシュ破棄スクリプト
+- [x] Task 1.13: 全テスト通過確認・本 commit
+
+新規テスト約 266 件追加（162件 → 428件）。全テスト PASS。
