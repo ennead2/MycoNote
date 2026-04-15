@@ -27,6 +27,7 @@ export function combineSources({
   mhlw,
   rinya,
   traitCircus,
+  extractHint = null,
 }) {
   return {
     scientificName,
@@ -44,6 +45,7 @@ export function combineSources({
       rinya,
       traitCircus,
     },
+    extractHint,
     combinedAt: new Date().toISOString(),
   };
 }
