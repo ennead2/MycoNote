@@ -156,9 +156,33 @@ function extractExternalLinks($) {
   return [...seen.values()];
 }
 
-export async function fetchDaikinrinPage(scientificName, mycoBankId) {
-  const key = `${scientificName}_${mycoBankId}`;
-  const cached = await daikinrinCache.get(key);
+import { fetchDaikinrinPagesIndex, buildPagesIndex, lookupMycoBankId } from './daikinrin-pages.mjs';
+
+let _pagesIndexPromise = null;
+async function getPagesIndex() {
+  if (!_pagesIndexPromise) {
+    _pagesIndexPromise = fetchDaikinrinPagesIndex().then(buildPagesIndex);
+  }
+  return _pagesIndexPromise;
+}
+
+/**
+ * 大菌輪の種ページを fetch + parse + キャッシュ。
+ *
+ * 旧 API は mycoBankId を呼び出し側から受け取っていたが、GBIF が MycoBank ID を
+ * 持たない問題のため現在は内部で pages.json から解決する。
+ *
+ * @param {string} scientificName
+ * @param {string | null} japaneseName 和名（pages.json で学名ヒットしない時の fallback key）
+ * @returns {Promise<object | null>}
+ */
+export async function fetchDaikinrinPage(scientificName, japaneseName) {
+  const index = await getPagesIndex();
+  const mycoBankId = lookupMycoBankId(index, { scientificName, japaneseName });
+  if (!mycoBankId) return null;
+
+  const cacheKey = `${scientificName}_${mycoBankId}`;
+  const cached = await daikinrinCache.get(cacheKey);
   if (cached) return cached;
 
   const url = buildPageUrl(scientificName, mycoBankId);
@@ -170,6 +194,6 @@ export async function fetchDaikinrinPage(scientificName, mycoBankId) {
   const html = await res.text();
   const parsed = parseDaikinrinPage(html);
   const record = { url, fetchedAt: new Date().toISOString(), ...parsed };
-  await daikinrinCache.set(key, record);
+  await daikinrinCache.set(cacheKey, record);
   return record;
 }
