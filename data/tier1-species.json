@@ -1475,7 +1475,8 @@
         "Panellus edulis"
       ],
       "normalizationStatus": "ACCEPTED",
-      "curator_notes": "Phase 14 S2 追加: Sarcomyxa serotina (オソムキタケ) と別種。日本慣用「ムキタケ」は本種。GBIF usageKey=8307192、ranking.json 未登録につき spec に直接追加"
+      "curator_notes": "Phase 14 S2 追加: Sarcomyxa serotina (オソムキタケ) と別種。日本慣用「ムキタケ」は本種。GBIF usageKey=8307192、ranking.json 未登録につき spec に直接追加",
+      "safety": "edible"
     },
     {
       "scientificName": "Trichaleurina tenuispora",
@@ -1483,7 +1484,8 @@
       "aliases": [],
       "synonyms": [],
       "normalizationStatus": "ACCEPTED",
-      "curator_notes": "Phase 14 S2 追加: Trichaleurina celebica と別種。日本慣用「オオゴムタケ」は本種。GBIF usageKey=7932906、ranking.json 未登録につき spec に直接追加"
+      "curator_notes": "Phase 14 S2 追加: Trichaleurina celebica と別種。日本慣用「オオゴムタケ」は本種。GBIF usageKey=7932906、ranking.json 未登録につき spec に直接追加",
+      "safety": "edible"
     }
   ],
   "editedBy": [
