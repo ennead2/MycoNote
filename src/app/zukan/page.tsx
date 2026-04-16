@@ -149,7 +149,7 @@ function ZukanInner() {
           onClick={() => setTab('list')}
         />
         <TabButton
-          label={`${UI_TEXT.zukan.tabBookmarks}${bookmarks.length > 0 ? ` (${bookmarks.length})` : ''}`}
+          label={`${UI_TEXT.zukan.tabBookmarks}${bookmarkedMushrooms.length > 0 ? ` (${bookmarkedMushrooms.length})` : ''}`}
           active={tab === 'bookmarks'}
           onClick={() => setTab('bookmarks')}
         />

@@ -73,8 +73,25 @@ const COLOR_MAP: Record<string, string> = {
 
 // 長い語から先にマッチさせる
 const COLOR_TERMS = Object.keys(COLOR_MAP).sort((a, b) => b.length - a.length);
+
+/**
+ * 単一漢字の色名（赤 / 青 / 白 等）が地名や別語の一部にマッチするのを防ぐため、
+ * 次の文字が日本語（漢字 / ひらがな / カタカナ）の場合は不一致とする negative lookahead。
+ * 例: 青森県 の "青" → 次が "森" (漢字) でマッチさせない
+ *     赤坂 の "赤" → 次が "坂" (漢字) でマッチさせない
+ *     紫陽花 の "紫" → 次が "陽" (漢字) でマッチさせない
+ *
+ * "赤色" / "赤い" 等の複合語は COLOR_MAP に長い語として登録されているため、
+ * sort + alternation の優先順位で先にマッチする。
+ */
+const SINGLE_CHAR_GUARD = '(?![\\u4E00-\\u9FFF\\u3040-\\u309F\\u30A0-\\u30FF\\u30FC])';
+
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 const COLOR_REGEX = new RegExp(
-  `(${COLOR_TERMS.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
+  `(${COLOR_TERMS.map((t) => (t.length === 1 ? `${escapeRegex(t)}${SINGLE_CHAR_GUARD}` : escapeRegex(t))).join('|')})`,
   'g'
 );
 

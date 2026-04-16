@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Bookmark, BookmarkCheck, Search, ArrowUpRight, AlertTriangle, ImageOff, ExternalLink } from 'lucide-react';
+import { Bookmark, BookmarkCheck, Search, ArrowUpRight, AlertTriangle, ImageOff, ExternalLink, ChefHat, HeartPulse, type LucideIcon } from 'lucide-react';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
 import { SeasonBar } from '@/components/zukan/SeasonBar';
 import { ChipTag } from '@/components/ui/ChipTag';
@@ -111,10 +111,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         </div>
         <p className="text-sm text-moss-light italic">{mushroom.names.scientific}</p>
         {mushroom.names.scientific_synonyms && mushroom.names.scientific_synonyms.length > 0 && (
-          <p className="text-xs text-washi-dim italic mt-0.5">
-            <span className="mono-data not-italic text-[10px] uppercase tracking-wider mr-1">syn.</span>
-            {mushroom.names.scientific_synonyms.join(', ')}
-          </p>
+          <ScientificSynonymsList synonyms={mushroom.names.scientific_synonyms} />
         )}
         {mushroom.names.aliases && mushroom.names.aliases.length > 0 && (
           <p className="text-xs text-washi-dim mt-1">{mushroom.names.aliases.join('、')}</p>
@@ -187,18 +184,16 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
 
       {/* 10. Cooking & preservation (food-safe species only) */}
       {mushroom.cooking_preservation && (
-        <div>
-          <SectionHeading>{UI_TEXT.zukan.cooking}</SectionHeading>
-          <p className="text-sm text-washi-muted leading-relaxed">{renderColorText(mushroom.cooking_preservation)}</p>
-        </div>
+        <HighlightSection icon={ChefHat} severity="edible" label={UI_TEXT.zukan.cooking}>
+          {renderColorText(mushroom.cooking_preservation)}
+        </HighlightSection>
       )}
 
       {/* 11. Poisoning first aid (toxic species only) */}
       {mushroom.poisoning_first_aid && (
-        <div>
-          <SectionHeading>{UI_TEXT.zukan.firstAid}</SectionHeading>
-          <p className="text-sm text-washi-muted leading-relaxed">{renderColorText(mushroom.poisoning_first_aid)}</p>
-        </div>
+        <HighlightSection icon={HeartPulse} severity="toxic" label={UI_TEXT.zukan.firstAid}>
+          {renderColorText(mushroom.poisoning_first_aid)}
+        </HighlightSection>
       )}
 
       {/* 12. Similar species */}
@@ -237,6 +232,89 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       {/* 14. My records for this species */}
       <MyRecordsSection mushroomId={mushroom.id} />
     </div>
+  );
+}
+
+/**
+ * 学名のシノニム一覧。多すぎる場合は折り畳んで初期 3 件 + 「他 N 件」表示。
+ * 5 件以下は全件展開のまま（折り畳み不要）。
+ */
+function ScientificSynonymsList({ synonyms }: { synonyms: string[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const COLLAPSE_THRESHOLD = 5;
+  const INITIAL_VISIBLE = 3;
+  const isLong = synonyms.length > COLLAPSE_THRESHOLD;
+  const showAll = expanded || !isLong;
+  const visible = showAll ? synonyms : synonyms.slice(0, INITIAL_VISIBLE);
+  const hiddenCount = synonyms.length - INITIAL_VISIBLE;
+
+  return (
+    <p className="text-xs text-washi-dim italic mt-0.5">
+      <span className="mono-data not-italic text-[10px] uppercase tracking-wider mr-1">syn.</span>
+      {visible.join(', ')}
+      {isLong && !showAll && (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="ml-1 not-italic mono-data text-[10px] text-moss-light hover:text-washi-cream transition-colors"
+        >
+          …他 {hiddenCount} 件を表示
+        </button>
+      )}
+      {isLong && showAll && (
+        <button
+          type="button"
+          onClick={() => setExpanded(false)}
+          className="ml-1 not-italic mono-data text-[10px] text-moss-light hover:text-washi-cream transition-colors"
+        >
+          閉じる
+        </button>
+      )}
+    </p>
+  );
+}
+
+/**
+ * Phase 13-F Step 5: 中毒症状・調理など重要セクションを safety パレットの
+ * カード型で強調表示。option B (rounded box + icon header)。
+ */
+function HighlightSection({
+  icon: Icon,
+  severity,
+  label,
+  children,
+}: {
+  icon: LucideIcon;
+  severity: 'edible' | 'toxic' | 'caution';
+  label: string;
+  children: React.ReactNode;
+}) {
+  const palette = {
+    edible: {
+      border: 'border-safety-edible/40',
+      bg: 'bg-safety-edible/[0.06]',
+      icon: 'text-safety-edible',
+    },
+    toxic: {
+      border: 'border-safety-toxic/40',
+      bg: 'bg-safety-toxic/[0.06]',
+      icon: 'text-safety-toxic',
+    },
+    caution: {
+      border: 'border-safety-caution/40',
+      bg: 'bg-safety-caution/[0.06]',
+      icon: 'text-safety-caution',
+    },
+  }[severity];
+
+  return (
+    <section className={`rounded-lg border ${palette.border} ${palette.bg} p-4`}>
+      <h2 className={`text-sm font-bold ${palette.icon} mb-2 flex items-center gap-2`}>
+        <Icon size={16} strokeWidth={2} aria-hidden="true" />
+        {label}
+      </h2>
+      <p className="text-sm text-washi-cream leading-relaxed">{children}</p>
+    </section>
   );
 }
 
