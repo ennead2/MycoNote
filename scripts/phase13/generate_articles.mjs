@@ -42,6 +42,7 @@ export function tier0ToPromptInput(target) {
     safety: normalizeSafety(toxicity),
     combinedJsonPath: `${COMBINED_DIR}/${slug}.json`,
     outputJsonPath: `${GENERATED_DIR}/${slug}.json`,
+    jaWikiSourceOverride: target.ja_wiki_source_override ?? null,
   };
 }
 
@@ -55,6 +56,7 @@ export function buildManifestEntry(target, { promptPath, hasCombined }) {
     hasCombined,
     promptPath,
     outputPath: input.outputJsonPath,
+    jaWikiSourceOverride: input.jaWikiSourceOverride,
   };
 }
 
@@ -69,7 +71,10 @@ function prepare() {
     const input = tier0ToPromptInput(t);
     const slug = scientificNameToSlug(t.scientificName);
     const hasCombined = existsSync(input.combinedJsonPath);
-    const prompt = buildArticlePrompt(input);
+    const prompt = buildArticlePrompt({
+      ...input,
+      extractHint: input.jaWikiSourceOverride?.extract_hint ?? undefined,
+    });
     const promptPath = `${PROMPTS_DIR}/${slug}.txt`;
     writeFileSync(promptPath, prompt, 'utf8');
     manifest.push(buildManifestEntry(t, { promptPath, hasCombined }));
@@ -90,7 +95,17 @@ function validate() {
       continue;
     }
     const article = JSON.parse(readFileSync(m.outputPath, 'utf8'));
-    const { errors, warnings } = validateArticle(article, { safety: m.safety });
+
+    const combinedPath = `${COMBINED_DIR}/${m.slug}.json`;
+    const combined = existsSync(combinedPath)
+      ? JSON.parse(readFileSync(combinedPath, 'utf8'))
+      : null;
+
+    const { errors, warnings } = validateArticle(article, {
+      safety: m.safety,
+      combined,
+      targetScientificName: m.scientificName,
+    });
     report.push({
       slug: m.slug,
       japaneseName: m.japaneseName,

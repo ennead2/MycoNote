@@ -95,6 +95,34 @@ describe('validateArticle', () => {
   });
 });
 
+describe('V9: カタカナ純度チェック', () => {
+  it('aliases にラテン文字が混入していると error', () => {
+    const result = validateArticle(load('article-invalid-romaji-alias'), { safety: 'toxic' });
+    expect(result.errors.some(e => e.startsWith('V9:'))).toBe(true);
+  });
+
+  it('aliases が純粋な日本語（漢字・ひらがな・カタカナ・中点・長音符）なら error なし', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['編笠茸', 'アミガサ・タケ', 'あみがさたけ'];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:'))).toEqual([]);
+  });
+
+  it('aliases に空文字が混入していても V9 は発火しない（他 rule で扱う）', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['編笠茸', ''];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:'))).toEqual([]);
+  });
+
+  it('aliases に全角数字・全角ラテンが混入していると error', () => {
+    const a = load('article-valid-edible');
+    a.names.aliases = ['ホンシメジ１号', 'ベニテングタケＡ'];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.errors.filter(e => e.startsWith('V9:')).length).toBe(2);
+  });
+});
+
 describe('LIMITS', () => {
   it('各自由文の上限が定義されている', () => {
     expect(LIMITS.description).toBe(400);
@@ -102,5 +130,142 @@ describe('LIMITS', () => {
     expect(LIMITS.cooking_preservation).toBe(400);
     expect(LIMITS.poisoning_first_aid).toBe(400);
     expect(LIMITS.caution).toBe(100);
+  });
+});
+
+describe('V10: wikipediaJa があるのに引用していない', () => {
+  const combinedWithJa = {
+    sources: {
+      wikipediaJa: { title: 'ヒラタケ', extract: 'xxx' },
+      wikipediaEn: { title: 'Pleurotus ostreatus', extract: 'yyy' },
+    },
+  };
+
+  it('wikipediaJa あり、sources に Wikipedia ja がない → warning', () => {
+    const a = load('article-valid-edible');
+    a.sources = [{ name: 'Wikipedia en「Pleurotus ostreatus」', url: 'https://en.wikipedia.org/wiki/...', license: 'CC BY-SA 4.0' }];
+    const result = validateArticle(a, { safety: 'edible', combined: combinedWithJa });
+    expect(result.warnings.some(w => w.startsWith('V10:'))).toBe(true);
+  });
+
+  it('wikipediaJa あり、sources に Wikipedia ja あり → warning なし', () => {
+    const a = load('article-valid-edible');
+    // article-valid-edible.json は元々 "Wikipedia ja「アミガサタケ」" を含む
+    const result = validateArticle(a, { safety: 'edible', combined: combinedWithJa });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+
+  it('combined が渡されない場合は V10 を発火しない', () => {
+    const a = load('article-valid-edible');
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+
+  it('wikipediaJa が null の場合は V10 を発火しない', () => {
+    const a = load('article-valid-edible');
+    a.sources = [{ name: 'Wikipedia en「X」', url: 'https://en.wikipedia.org/wiki/X', license: 'CC BY-SA 4.0' }];
+    const result = validateArticle(a, { safety: 'edible', combined: { sources: { wikipediaJa: null } } });
+    expect(result.warnings.filter(w => w.startsWith('V10:'))).toEqual([]);
+  });
+});
+
+describe('V11: 学名 canonical 一致', () => {
+  it('daikinrin URL から抽出した学名が target と一致 → warning なし', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        daikinrin: { url: 'https://mycoscouter.coolblog.jp/daikinrin/Pages/Pleurotus_ostreatus_174220.html' },
+      },
+    };
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined,
+      targetScientificName: 'Pleurotus ostreatus',
+    });
+    expect(result.warnings.filter(w => w.startsWith('V11:'))).toEqual([]);
+  });
+
+  it('daikinrin URL の学名が target と不一致 → warning', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        daikinrin: { url: 'https://mycoscouter.coolblog.jp/daikinrin/Pages/Pholiota_microspora_235533.html' },
+      },
+    };
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined,
+      targetScientificName: 'Pholiota nameko',
+    });
+    expect(result.warnings.some(w => w.startsWith('V11:'))).toBe(true);
+  });
+
+  it('daikinrin が null なら V11 は発火しない', () => {
+    const a = load('article-valid-edible');
+    const result = validateArticle(a, {
+      safety: 'edible',
+      combined: { sources: { daikinrin: null } },
+      targetScientificName: 'Pholiota nameko',
+    });
+    expect(result.warnings.filter(w => w.startsWith('V11:'))).toEqual([]);
+  });
+});
+
+describe('V12: Wikipedia redirect 被害検出', () => {
+  it('requestedTitle と title が一致 → error なし', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        wikipediaJa: { requestedTitle: 'アミガサタケ', title: 'アミガサタケ' },
+      },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.filter(e => e.startsWith('V12:'))).toEqual([]);
+  });
+
+  it('requestedTitle と title が不一致 → error', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: {
+        wikipediaJa: { requestedTitle: 'アイゾメシバフタケ', title: 'ヒカゲシビレタケ' },
+      },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.some(e => e.startsWith('V12:'))).toBe(true);
+  });
+
+  it('requestedTitle が null（旧キャッシュ）なら V12 は発火しない', () => {
+    const a = load('article-valid-edible');
+    const combined = {
+      sources: { wikipediaJa: { title: 'アミガサタケ' } },
+    };
+    const result = validateArticle(a, { safety: 'edible', combined });
+    expect(result.errors.filter(e => e.startsWith('V12:'))).toEqual([]);
+  });
+});
+
+describe('V13: season 年中相当の検出', () => {
+  it('1 期で 8 ヶ月以上カバーすると warning', () => {
+    const a = load('article-valid-edible');
+    a.season = [{ start_month: 3, end_month: 11 }];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.some(w => w.startsWith('V13:'))).toBe(true);
+  });
+
+  it('1 期で 7 ヶ月以下は warning なし', () => {
+    const a = load('article-valid-edible');
+    a.season = [{ start_month: 6, end_month: 10 }];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V13:'))).toEqual([]);
+  });
+
+  it('2 期に分かれていれば年中でも warning なし', () => {
+    const a = load('article-valid-edible');
+    a.season = [
+      { start_month: 3, end_month: 5 },
+      { start_month: 9, end_month: 11 },
+    ];
+    const result = validateArticle(a, { safety: 'edible' });
+    expect(result.warnings.filter(w => w.startsWith('V13:'))).toEqual([]);
   });
 });

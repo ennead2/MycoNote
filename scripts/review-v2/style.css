@@ -1,0 +1,110 @@
+/* MycoNote Phase 13-D Review — DESIGN.md 準拠 (dev-only ツール、Tailwind 不使用) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  background: #f6f3ea; /* washi-cream */
+  color: #2a2420;     /* soil-ink */
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+  overflow: hidden;
+}
+header#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: #3a5f3a; /* moss-primary */
+  color: #f6f3ea;
+}
+#header-left { display: flex; align-items: center; gap: 16px; }
+#header h1 { font-size: 16px; font-weight: 600; }
+#progress-text { font-family: "JetBrains Mono", monospace; font-size: 14px; }
+#progress-bar { width: 200px; height: 8px; background: rgba(255,255,255,0.2); border-radius: 4px; }
+#progress-bar-fill { height: 100%; background: #e8c547; /* moss-accent */ border-radius: 4px; transition: width 0.2s; }
+
+section#species-header {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #d9d1c1;
+}
+#hero-image { width: 320px; height: 240px; object-fit: cover; background: #eee; }
+#species-meta h2 { font-family: "Noto Serif JP", serif; font-size: 24px; margin-bottom: 4px; }
+#species-name-sci { font-family: "Inter", sans-serif; font-style: italic; color: #6c635a; margin-bottom: 8px; }
+#species-badges { display: flex; gap: 8px; font-family: "JetBrains Mono", monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+#species-badges .badge { padding: 2px 8px; border-radius: 4px; background: #e9e3d3; }
+#species-badges .badge.warning { background: #fde4c9; color: #8a4a1a; }
+#species-warnings {
+  margin-top: 8px;
+  padding: 6px 10px 6px 24px;
+  background: #fdf3e4;
+  border-left: 3px solid #d9534f;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #8a4a1a;
+  line-height: 1.6;
+  list-style: disc;
+}
+#species-warnings li { margin-left: 0; }
+#google-search { font-size: 13px; color: #3a5f3a; text-decoration: none; display: inline-block; margin-top: 8px; }
+
+main#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  overflow: hidden;
+}
+section#article-panel, section#sources-panel {
+  overflow-y: auto;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #d9d1c1;
+  border-radius: 4px;
+}
+#article-panel h3, #sources-panel h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c635a;
+  margin: 12px 0 4px;
+}
+#article-panel h3:first-child, #sources-panel h3:first-child { margin-top: 0; }
+#article-panel p { margin-bottom: 8px; line-height: 1.7; }
+#article-panel .warning { text-decoration: underline wavy #d9534f; }
+#article-panel ul, #article-panel ol { padding-left: 20px; margin-bottom: 8px; }
+#article-panel li { margin-bottom: 4px; line-height: 1.6; }
+#sources-panel .source-block { margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px dashed #d9d1c1; }
+#sources-panel .source-block:last-child { border-bottom: none; }
+#sources-panel .extract { font-size: 13px; color: #443c35; line-height: 1.6; }
+
+footer#footer {
+  padding: 12px 16px;
+  background: #fff;
+  border-top: 1px solid #d9d1c1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#decision-row, #nav-row { display: flex; gap: 8px; align-items: center; }
+#sections-row { display: flex; gap: 12px; flex-wrap: wrap; padding: 8px 0; }
+#sections-row label { font-size: 13px; cursor: pointer; }
+button {
+  padding: 6px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #eee;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #e0e0e0; }
+button.active[data-decision="approve"] { background: #9dc69d; border-color: #3a5f3a; }
+button.active[data-decision="concern"] { background: #fde4c9; border-color: #c98024; }
+button.active[data-decision="reject"] { background: #f2b8b0; border-color: #a83a33; }
+#note { flex: 1; padding: 6px 10px; font-family: inherit; border: 1px solid #bbb; border-radius: 4px; }
+#stats { margin-left: auto; font-family: "JetBrains Mono", monospace; font-size: 12px; color: #6c635a; }

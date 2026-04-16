@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MycoNote Phase 13-D Review</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header id="header">
+    <div id="header-left">
+      <h1>Phase 13-D Review</h1>
+      <span id="progress-text">0 / 0</span>
+      <div id="progress-bar"><div id="progress-bar-fill"></div></div>
+    </div>
+    <div id="header-right">
+      <label><input type="checkbox" id="warnings-only"> warnings only</label>
+    </div>
+  </header>
+
+  <section id="species-header">
+    <img id="hero-image" alt="">
+    <div id="species-meta">
+      <h2 id="species-name-ja"></h2>
+      <div id="species-name-sci"></div>
+      <div id="species-badges"></div>
+      <ul id="species-warnings" hidden></ul>
+      <a id="google-search" target="_blank" rel="noopener">Google 画像検索で開く ↗</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="article-panel"></section>
+    <section id="sources-panel"></section>
+  </main>
+
+  <footer id="footer">
+    <div id="decision-row">
+      <button data-decision="approve">1 Approve</button>
+      <button data-decision="concern">2 Concern</button>
+      <button data-decision="reject">3 Reject</button>
+      <button data-decision="clear">0 Clear</button>
+      <input type="text" id="note" placeholder="メモ (N)">
+    </div>
+    <div id="sections-row" hidden>
+      <label><input type="checkbox" data-section="description"> 概要</label>
+      <label><input type="checkbox" data-section="features"> 形態</label>
+      <label><input type="checkbox" data-section="habitat_ecology"> 発生・生態</label>
+      <label><input type="checkbox" data-section="similar_species"> 類似種</label>
+      <label><input type="checkbox" data-section="cooking_preservation"> 食用</label>
+      <label><input type="checkbox" data-section="poisoning_first_aid"> 中毒</label>
+      <label><input type="checkbox" data-section="misc"> 雑学</label>
+      <label><input type="checkbox" data-section="structured"> 構造化</label>
+    </div>
+    <div id="nav-row">
+      <button id="prev">← 前</button>
+      <button id="next">→ 次</button>
+      <span id="stats"></span>
+    </div>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

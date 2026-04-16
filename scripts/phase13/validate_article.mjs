@@ -22,8 +22,9 @@ const REQUIRED_FIELDS = [
 const BULLET_PATTERN = /(^|\n)\s*(・|[-*]\s|\d+[.、)]\s)/;
 const SCI_PATTERN = /\b[A-Z][a-z]+ [a-z]+\b/;
 const CITATION_PATTERN = /\[\d+\]/;
+const LATIN_OR_DIGIT = /[A-Za-z0-9\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]/;
 
-export function validateArticle(article, { safety }) {
+export function validateArticle(article, { safety, combined, targetScientificName } = {}) {
   const errors = [];
   const warnings = [];
 
@@ -108,6 +109,54 @@ export function validateArticle(article, { safety }) {
     const v = article[f];
     if (typeof v === 'string' && v.length > 0 && !CITATION_PATTERN.test(v)) {
       warnings.push(`V8: ${f} に出典番号 [N] が一度も出現しない`);
+    }
+  }
+
+  // V9: aliases のカタカナ純度チェック（ラテン文字・数字・全角ラテン/数字の混入を error）
+  if (article.names && Array.isArray(article.names.aliases)) {
+    for (const [i, alias] of article.names.aliases.entries()) {
+      if (typeof alias === 'string' && alias.length > 0 && LATIN_OR_DIGIT.test(alias)) {
+        errors.push(`V9: names.aliases[${i}] "${alias}" にラテン文字/数字が含まれる`);
+      }
+    }
+  }
+
+  // V10: combined に wikipediaJa があるのに sources[] に Wikipedia ja が無い（warning）
+  if (combined?.sources?.wikipediaJa && Array.isArray(article.sources)) {
+    const hasWikiJa = article.sources.some(s =>
+      typeof s?.name === 'string' && /Wikipedia.*(?:ja|JA|日本語)/u.test(s.name)
+    );
+    if (!hasWikiJa) {
+      warnings.push('V10: combined に wikipediaJa があるが sources に Wikipedia ja 引用なし');
+    }
+  }
+
+  // V11: daikinrin URL の canonical 学名と target scientificName の不一致（warning）
+  const daikinrinUrl = combined?.sources?.daikinrin?.url;
+  if (daikinrinUrl && targetScientificName) {
+    const m = daikinrinUrl.match(/\/Pages\/([A-Z][a-z]+_[a-z]+(?:_[a-z]+)*)_\d+\.html/);
+    if (m) {
+      const canonical = m[1].replace(/_/g, ' ');
+      if (canonical !== targetScientificName) {
+        warnings.push(`V11: target "${targetScientificName}" と daikinrin canonical "${canonical}" が不一致`);
+      }
+    }
+  }
+
+  // V12: Wikipedia ja redirect 被害（requestedTitle ≠ title）を error
+  const wj = combined?.sources?.wikipediaJa;
+  if (wj?.requestedTitle && wj?.title && wj.requestedTitle !== wj.title) {
+    errors.push(`V12: wikipediaJa が "${wj.requestedTitle}" を要求したが "${wj.title}" に redirect された`);
+  }
+
+  // V13: 1 期 season で 8 ヶ月以上カバー（年中扱い）は warning
+  if (Array.isArray(article.season) && article.season.length === 1) {
+    const s = article.season[0];
+    if (Number.isInteger(s?.start_month) && Number.isInteger(s?.end_month)) {
+      const span = s.end_month - s.start_month + 1;
+      if (span >= 8) {
+        warnings.push(`V13: season が 1 期で ${span} ヶ月カバー（年中扱いの疑い）`);
+      }
     }
   }
 

@@ -75,6 +75,7 @@ describe('buildManifestEntry', () => {
     });
     expect(Object.keys(entry).sort()).toEqual([
       'hasCombined',
+      'jaWikiSourceOverride',
       'japaneseName',
       'outputPath',
       'promptPath',

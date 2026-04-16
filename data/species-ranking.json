@@ -190,7 +190,7 @@
       "tier": 0
     },
     {
-      "scientificName": "Omphalotus guepiniiformis",
+      "scientificName": "Omphalotus japonicus",
       "japaneseName": "ツキヨタケ",
       "japaneseNames": [
         "クマヒラ",
@@ -207,6 +207,7 @@
         "Omphalotus guepiniformis"
       ],
       "synonyms": [
+        "Omphalotus guepiniiformis",
         "Omphalotus japonicus",
         "Acanthocystis harmandii",
         "Agaricus guepiniiformis",
@@ -588,44 +589,6 @@
       "score": 16.21,
       "rank": 9,
       "tier": 1
-    },
-    {
-      "scientificName": "Psilocybe subcaerulipes",
-      "japaneseName": "アイゾメシバフタケ",
-      "japaneseNames": [
-        "アイゾメシバフタケ",
-        "ヒカゲシビレタケ"
-      ],
-      "genus": "Psilocybe",
-      "species": "subcaerulipes",
-      "originalNames": [
-        "Psilocybe subcaerulipes",
-        "Psilocybe argentipes"
-      ],
-      "synonyms": [
-        "Psilocybe argentipes",
-        "Psilocybe taiwanensis",
-        "Psilocybe thaizapoteca"
-      ],
-      "acceptedUsageKey": 5459385,
-      "normalizationStatus": "ACCEPTED",
-      "signals": {
-        "mycobankId": null,
-        "mycobankSource": "unresolved",
-        "wikiJaExists": true,
-        "wikiMatchedVia": "japaneseName",
-        "inatHasPhotos": true,
-        "inatTotalResults": 17,
-        "inatMatchedName": "Psilocybe subcaerulipes",
-        "observationsDomestic": 0,
-        "observationsOverseas": 81,
-        "toxicity": "toxic",
-        "toxicitySource": "v1",
-        "hasWamei": true
-      },
-      "score": 16,
-      "rank": 10,
-      "tier": 0
     },
     {
       "scientificName": "Entoloma quadratum",
@@ -1028,8 +991,8 @@
         "inatMatchedName": "Tricholoma bakamatsutake",
         "observationsDomestic": 0,
         "observationsOverseas": 0,
-        "toxicity": "toxic",
-        "toxicitySource": "v1",
+        "toxicity": "edible",
+        "toxicitySource": "manual-correction",
         "hasWamei": true
       },
       "score": 16,
@@ -2101,17 +2064,18 @@
       "tier": 0
     },
     {
-      "scientificName": "Tricholoma ustale",
+      "scientificName": "Tricholoma kakishimeji",
       "japaneseName": "カキシメジ",
       "japaneseNames": [
         "カキシメジ"
       ],
       "genus": "Tricholoma",
-      "species": "ustale",
+      "species": "kakishimeji",
       "originalNames": [
         "Tricholoma ustale"
       ],
       "synonyms": [
+        "Tricholoma ustale",
         "Agaricus fulvellus",
         "Agaricus ustalis",
         "Gyrophila striata ustalis",
@@ -2415,7 +2379,7 @@
       },
       "score": 14,
       "rank": 44,
-      "tier": 0
+      "tier": 2
     },
     {
       "scientificName": "Amanita ceciliae",
@@ -4430,17 +4394,18 @@
       "tier": 1
     },
     {
-      "scientificName": "Pholiota nameko",
+      "scientificName": "Pholiota microspora",
       "japaneseName": "ナメコ",
       "japaneseNames": [
         "ナメコ"
       ],
       "genus": "Pholiota",
-      "species": "nameko",
+      "species": "microspora",
       "originalNames": [
         "Pholiota nameko"
       ],
       "synonyms": [
+        "Pholiota nameko",
         "Collybia nameko",
         "Kuehneromyces nameko"
       ],
@@ -4573,8 +4538,9 @@
     },
     {
       "scientificName": "Lactarius hatsudake",
-      "japaneseName": "アカハツ",
+      "japaneseName": "ハツタケ",
       "japaneseNames": [
+        "ハツタケ",
         "アカハツ"
       ],
       "genus": "Lactarius",
@@ -4604,7 +4570,10 @@
       },
       "score": 11.96,
       "rank": 88,
-      "tier": 0
+      "tier": 0,
+      "ja_wiki_source_override": {
+        "title": "ハツタケ"
+      }
     },
     {
       "scientificName": "Narcissea patouillardii",
@@ -10775,8 +10744,9 @@
     },
     {
       "scientificName": "Entoloma murrayi",
-      "japaneseName": "キイボガサタケ",
+      "japaneseName": "キイボカサタケ",
       "japaneseNames": [
+        "キイボカサタケ",
         "キイボガサタケ",
         "シロイボガサタケ"
       ],
@@ -10809,7 +10779,10 @@
       },
       "score": 9,
       "rank": 216,
-      "tier": 0
+      "tier": 0,
+      "ja_wiki_source_override": {
+        "title": "キイボカサタケ"
+      }
     },
     {
       "scientificName": "Lepiota cristata",
@@ -11133,7 +11106,7 @@
       },
       "score": 9,
       "rank": 223,
-      "tier": 0
+      "tier": 2
     },
     {
       "scientificName": "Boletus sensibilis",
@@ -11241,7 +11214,7 @@
       },
       "score": 9,
       "rank": 226,
-      "tier": 0
+      "tier": 2
     },
     {
       "scientificName": "Helvella",
@@ -26193,13 +26166,13 @@
         "inatMatchedName": null,
         "observationsDomestic": 29,
         "observationsOverseas": 0,
-        "toxicity": "unknown",
-        "toxicitySource": "none",
+        "toxicity": "toxic",
+        "toxicitySource": "manual-tier0",
         "hasWamei": true
       },
       "score": 5.92,
       "rank": 560,
-      "tier": 3
+      "tier": 2
     },
     {
       "scientificName": "Ditiola peziziformis",
@@ -119254,6 +119227,69 @@
       "score": 3,
       "rank": 2904,
       "tier": 3
+    },
+    {
+      "scientificName": "Gymnopilus picreus",
+      "japaneseName": "チャツムタケ",
+      "japaneseNames": [
+        "チャツムタケ"
+      ],
+      "genus": "Gymnopilus",
+      "species": "picreus",
+      "originalNames": [
+        "Gymnopilus picreus"
+      ],
+      "synonyms": [
+        "Agaricus picreus",
+        "Derminus picreus",
+        "Dryophila picrea",
+        "Dryophilus picreus",
+        "Flammula picrea",
+        "Fulvidula picrea",
+        "Gymnopus picreus",
+        "Naucoria picrea"
+      ],
+      "acceptedUsageKey": 2533726,
+      "normalizationStatus": "ACCEPTED",
+      "tier0Forced": true,
+      "signals": {
+        "toxicity": "caution",
+        "toxicitySource": "manual-tier0",
+        "wikiJaExists": false,
+        "inatHasPhotos": false,
+        "observationsDomestic": 0,
+        "observationsOverseas": 0
+      },
+      "score": 10,
+      "tier": 0
+    },
+    {
+      "scientificName": "Psilocybe argentipes",
+      "japaneseName": "ヒカゲシビレタケ",
+      "japaneseNames": [
+        "ヒカゲシビレタケ"
+      ],
+      "genus": "Psilocybe",
+      "species": "argentipes",
+      "originalNames": [
+        "Psilocybe argentipes"
+      ],
+      "synonyms": [
+        "Psilocybe subcaerulipes"
+      ],
+      "acceptedUsageKey": null,
+      "normalizationStatus": "MANUAL",
+      "tier0Forced": true,
+      "signals": {
+        "toxicity": "toxic",
+        "toxicitySource": "manual",
+        "wikiJaExists": false,
+        "inatHasPhotos": false,
+        "observationsDomestic": 0,
+        "observationsOverseas": 0
+      },
+      "score": 10,
+      "tier": 0
     }
   ]
 }

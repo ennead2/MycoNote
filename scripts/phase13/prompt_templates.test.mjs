@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { buildArticlePrompt, SCHEMA_BLOCK, RULES_BLOCK } from './prompt_templates.mjs';
+import { buildArticlePrompt, SCHEMA_BLOCK, RULES_BLOCK, SOURCE_PRIORITY_BLOCK } from './prompt_templates.mjs';
 
 const fixture = JSON.parse(readFileSync('scripts/phase13/fixtures/prompt-input-morchella.json', 'utf8'));
 
@@ -56,5 +56,47 @@ describe('buildArticlePrompt', () => {
     for (let i = 1; i <= 8; i++) {
       expect(RULES_BLOCK).toMatch(new RegExp(`^${i}\\.`, 'm'));
     }
+  });
+});
+
+describe('SOURCE_PRIORITY_BLOCK', () => {
+  it('ja 優先、en 補助、mhlw 優先の順を含む', () => {
+    expect(SOURCE_PRIORITY_BLOCK).toContain('wikipediaJa');
+    expect(SOURCE_PRIORITY_BLOCK).toContain('wikipediaEn');
+    expect(SOURCE_PRIORITY_BLOCK).toContain('mhlw');
+    expect(SOURCE_PRIORITY_BLOCK).toMatch(/ja.*優先|優先.*ja/u);
+  });
+});
+
+describe('buildArticlePrompt contains SOURCE_PRIORITY_BLOCK', () => {
+  it('SOURCE_PRIORITY_BLOCK を含む', () => {
+    const p = buildArticlePrompt({
+      japaneseName: 'テスト', scientificName: 'Testus testus', safety: 'edible',
+      combinedJsonPath: 'x.json', outputJsonPath: 'y.json',
+    });
+    expect(p).toContain(SOURCE_PRIORITY_BLOCK);
+  });
+});
+
+describe('buildArticlePrompt with extractHint', () => {
+  it('extractHint を渡すと prompt に含まれる', () => {
+    const p = buildArticlePrompt({
+      japaneseName: 'アカハツ',
+      scientificName: 'Lactarius akahatsu',
+      safety: 'edible',
+      combinedJsonPath: 'x.json',
+      outputJsonPath: 'y.json',
+      extractHint: '記事内の『類似種』セクションのアカハツ部分のみ使用',
+    });
+    expect(p).toContain('類似種');
+    expect(p).toContain('アカハツ部分のみ使用');
+  });
+
+  it('extractHint が undefined ならヒントブロックは出ない', () => {
+    const p = buildArticlePrompt({
+      japaneseName: 'テスト', scientificName: 'Testus testus', safety: 'edible',
+      combinedJsonPath: 'x.json', outputJsonPath: 'y.json',
+    });
+    expect(p).not.toMatch(/部分抽出ヒント|extract_hint/);
   });
 });

@@ -69,3 +69,33 @@ describe('resolveJapaneseName', () => {
     expect(resolveJapaneseName({ daikinrin: null, mhlw: null })).toBeNull();
   });
 });
+
+describe('combineSources with ja_wiki_source_override', () => {
+  it('override 経由で fetch された wikipediaJa と extractHint が combined に入る', () => {
+    const combined = combineSources({
+      scientificName: 'Lactarius akahatsu',
+      daikinrin: null,
+      wikipediaJa: { requestedTitle: 'ハツタケ', title: 'ハツタケ', extract: 'ハツタケは...', lang: 'ja' },
+      wikipediaEn: null,
+      mhlw: null,
+      rinya: null,
+      traitCircus: null,
+      extractHint: '類似種セクションのアカハツ部分のみ使用',
+    });
+    expect(combined.sources.wikipediaJa.title).toBe('ハツタケ');
+    expect(combined.extractHint).toBe('類似種セクションのアカハツ部分のみ使用');
+  });
+
+  it('extractHint を渡さないと combined.extractHint は null', () => {
+    const combined = combineSources({
+      scientificName: 'Testus testus',
+      daikinrin: null,
+      wikipediaJa: null,
+      wikipediaEn: null,
+      mhlw: null,
+      rinya: null,
+      traitCircus: null,
+    });
+    expect(combined.extractHint).toBeNull();
+  });
+});

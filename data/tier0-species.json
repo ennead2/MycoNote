@@ -87,7 +87,10 @@
     {
       "scientificName": "Entoloma murrayi",
       "japaneseName": "キイボカサタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "toxic: 主要な毒きのこ",
+      "ja_wiki_source_override": {
+        "title": "キイボカサタケ"
+      }
     },
     {
       "scientificName": "Entoloma quadratum",
@@ -140,9 +143,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Gymnopilus liquiritiae",
-      "japaneseName": "オオワライタケモドキ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "scientificName": "Gymnopilus picreus",
+      "japaneseName": "チャツムタケ",
+      "rationale": "famous_inedible: 頻出する苦味の誤食注意種（旧 G. liquiritiae を置換）"
     },
     {
       "scientificName": "Hypholoma fasciculare",
@@ -181,17 +184,16 @@
     },
     {
       "scientificName": "Laccaria amethystina",
-      "japaneseName": "カレバキツネタケ",
+      "japaneseName": "ウラムラサキ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
       "scientificName": "Lactarius hatsudake",
-      "japaneseName": "アカハツ",
-      "japaneseNames": [
-        "ハツタケ",
-        "アカハツ"
-      ],
-      "rationale": "famous_edible: 採取対象の主要種（ハツタケ/アカハツ統合）"
+      "japaneseName": "ハツタケ",
+      "rationale": "famous_edible: 採取対象の主要種",
+      "ja_wiki_source_override": {
+        "title": "ハツタケ"
+      }
     },
     {
       "scientificName": "Laetiporus sulphureus",
@@ -234,7 +236,7 @@
       "rationale": "famous_edible: 採取対象の主要種"
     },
     {
-      "scientificName": "Omphalotus guepiniformis",
+      "scientificName": "Omphalotus japonicus",
       "japaneseName": "ツキヨタケ",
       "rationale": "toxic: 主要な毒きのこ"
     },
@@ -254,7 +256,7 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Pholiota nameko",
+      "scientificName": "Pholiota microspora",
       "japaneseName": "ナメコ",
       "rationale": "famous_edible: 採取対象の主要種"
     },
@@ -279,9 +281,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Psilocybe subcaerulipes",
-      "japaneseName": "アイゾメシバフタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "scientificName": "Psilocybe argentipes",
+      "japaneseName": "ヒカゲシビレタケ",
+      "rationale": "toxic: 主要な毒きのこ（幻覚性・シロシビン含有、旧 P. subcaerulipes を置換）"
     },
     {
       "scientificName": "Russula densifolia",
@@ -299,11 +301,6 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Russula nobilis",
-      "japaneseName": "ドクベニダマシ",
-      "rationale": "toxic: 主要な毒きのこ"
-    },
-    {
       "scientificName": "Suillus luteus",
       "japaneseName": "ヌメリイグチ",
       "rationale": "famous_edible: 採取対象の主要種"
@@ -316,7 +313,7 @@
     {
       "scientificName": "Tricholoma bakamatsutake",
       "japaneseName": "バカマツタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "famous_edible: 採取対象の主要種（食用・2017 農水省事業で栽培成功）"
     },
     {
       "scientificName": "Tricholoma equestre",
@@ -339,13 +336,8 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Tricholoma ustale",
+      "scientificName": "Tricholoma kakishimeji",
       "japaneseName": "カキシメジ",
-      "rationale": "toxic: 主要な毒きのこ"
-    },
-    {
-      "scientificName": "Tricholoma ustaloides",
-      "japaneseName": "カキシメジモドキ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {

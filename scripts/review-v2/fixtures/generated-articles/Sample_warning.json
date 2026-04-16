@@ -1,0 +1,17 @@
+{
+  "names": { "aliases": ["警告付きサンプル"] },
+  "season": [{ "start_month": 8, "end_month": 11 }],
+  "habitat": ["雑木林"],
+  "regions": ["北海道", "本州"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "警告が付いているサンプル記事。Amanita muscaria のような学名が本文に混入している[1]。",
+  "features": "傘は10cm前後の毒きのこ[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "嘔吐や下痢を引き起こす場合がある。",
+  "caution": "幻覚作用を伴う中毒症状が報告されている。",
+  "sources": [
+    { "name": "厚生労働省 自然毒プロファイル", "url": "https://www.mhlw.go.jp/topics/syokuchu/poison/dock_sample.html", "license": "政府標準利用規約" }
+  ],
+  "notes": "テスト用フィクスチャ（warning あり）"
+}

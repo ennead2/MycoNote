@@ -1,0 +1,17 @@
+{
+  "names": { "aliases": ["アイゾメシバフタケ", "hikageshibiretake"] },
+  "season": [{ "start_month": 6, "end_month": 10 }],
+  "habitat": ["公園"],
+  "regions": ["日本"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "サンプル記事 [1]。",
+  "features": "サンプル [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "サンプル [1]。",
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「X」", "url": "https://ja.wikipedia.org/wiki/X", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "V9 反例テスト用"
+}
