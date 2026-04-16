@@ -26,3 +26,11 @@ test('cleanJapaneseNames returns empty array for nullish input', () => {
   assert.deepStrictEqual(cleanJapaneseNames(undefined), []);
   assert.deepStrictEqual(cleanJapaneseNames([]), []);
 });
+
+test('cleanJapaneseNames removes internal whitespace (mushroom names have no internal spaces)', () => {
+  // checklist 由来の変則エントリや注釈混入を想定
+  assert.deepStrictEqual(
+    cleanJapaneseNames(['タマゴ タケ', 'シイ　タケ']),
+    ['タマゴタケ', 'シイタケ']
+  );
+});

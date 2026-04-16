@@ -1,12 +1,16 @@
 /**
  * tier1 和名リストから checklist ノイズを除去する。
+ *
+ * 日本語キノコ和名は内部空白を持たない前提で、全ての全角/半角空白を除去する
+ * （checklist の「クモ　※クモタケ」のような空白+注釈混入に対応するため）。
+ *
  * 除去対象:
- *   - "※" 以降が続く注釈エントリ（例: "クモ　※クモタケ"）
- *   - 前後の全角/半角空白
+ *   - "※" を含むエントリ（checklist 側の注釈）
+ *   - 全ての全角/半角空白（前後・内部すべて）
  *   - 空文字・重複
  *
- * @param {string[] | null | undefined} names
- * @returns {string[]}
+ * @param {string[] | null | undefined} names 非配列/nullish は [] として扱う
+ * @returns {string[]} 正規化済み和名配列（空白なし、重複なし、空文字なし）
  */
 export function cleanJapaneseNames(names) {
   if (!Array.isArray(names)) return [];
