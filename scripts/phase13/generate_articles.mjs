@@ -40,8 +40,11 @@ export function resolveTier0Targets(ranking) {
  */
 export function resolveTargetsFromSpecs(ranking, specs) {
   const rankingMap = new Map();
+  const synonymMap = new Map();
   for (const s of ranking.species ?? []) {
     rankingMap.set(s.scientificName, s);
+    for (const syn of s.synonyms ?? []) synonymMap.set(syn, s);
+    for (const on of s.originalNames ?? []) synonymMap.set(on, s);
   }
   const seen = new Set();
   const targets = [];
@@ -49,10 +52,11 @@ export function resolveTargetsFromSpecs(ranking, specs) {
     for (const entry of spec.species ?? []) {
       if (seen.has(entry.scientificName)) continue;
       seen.add(entry.scientificName);
-      const rank = rankingMap.get(entry.scientificName);
+      const rank = rankingMap.get(entry.scientificName) ?? synonymMap.get(entry.scientificName);
       if (rank) {
         targets.push({
           ...rank,
+          scientificName: entry.scientificName,
           japaneseName: entry.japaneseName,
           ja_wiki_source_override: entry.ja_wiki_source_override ?? rank.ja_wiki_source_override ?? null,
         });
