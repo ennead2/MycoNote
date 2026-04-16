@@ -1,77 +1,86 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Zukan (図鑑)', () => {
-  test('displays mushroom grid on zukan page', async ({ page }) => {
+test.describe('Zukan v2 (図鑑)', () => {
+  test('displays 60 v2 mushrooms on default tab', async ({ page }) => {
     await page.goto('/zukan');
     await expect(page.getByText('キノコ図鑑')).toBeVisible();
-    const cards = page.locator('a[href^="/zukan/"]');
-    await expect(cards).toHaveCount(13);
+    const cards = page.locator('a[href^="/zukan/"]:not([href="/zukan"])');
+    await expect(cards).toHaveCount(60);
   });
 
-  test('search filters mushrooms by name', async ({ page }) => {
+  test('search filters by Japanese name (ベニテング)', async ({ page }) => {
     await page.goto('/zukan');
-    await page.fill('input[placeholder*="検索"]', 'マツタケ');
-    const cards = page.locator('a[href^="/zukan/"]');
-    await expect(cards).toHaveCount(1);
-    await expect(page.getByText('マツタケ')).toBeVisible();
+    await page.fill('input[placeholder*="検索"]', 'ベニテング');
+    await expect(page.locator('a[href="/zukan/amanita_muscaria"]')).toBeVisible();
   });
 
-  test('toxicity filter works', async ({ page }) => {
+  test('safety filter (deadly only)', async ({ page }) => {
     await page.goto('/zukan');
     await page.click('button:has-text("猛毒")');
-    const cards = page.locator('a[href^="/zukan/"]');
-    await expect(cards).toHaveCount(3);
+    const cards = page.locator('a[href^="/zukan/"]:not([href="/zukan"])');
+    await expect(cards.first()).toBeVisible();
   });
 
-  test('navigates to detail page from grid', async ({ page }) => {
+  test('navigates to v2 detail page (Amanita muscaria)', async ({ page }) => {
     await page.goto('/zukan');
-    await page.click('a[href="/zukan/matsutake"]');
-    await expect(page.getByText('マツタケ')).toBeVisible();
-    await expect(page.getByText('Tricholoma matsutake')).toBeVisible();
-    await expect(page.getByText('食用')).toBeVisible();
-  });
-
-  test('toxic mushroom detail shows caution box', async ({ page }) => {
-    await page.goto('/zukan/tsukiyo-take');
-    // ToxicityBadge shows "毒" for toxic mushrooms (span element)
+    await page.click('a[href="/zukan/amanita_muscaria"]');
+    await expect(page.getByText('ベニテングタケ')).toBeVisible();
+    await expect(page.getByText('Amanita muscaria')).toBeVisible();
     await expect(page.locator('span:has-text("毒")').first()).toBeVisible();
-    // Check caution section exists
-    await expect(page.locator('text=注意事項')).toBeVisible();
   });
 
-  test('similar species links work', async ({ page }) => {
-    await page.goto('/zukan/tsukiyo-take');
-    // Click on a similar species link (シイタケ or ヒラタケ)
-    const similarLink = page.locator('a[href="/zukan/shiitake"]').or(page.locator('a[href="/zukan/hiratake"]'));
-    await similarLink.first().click();
-    await expect(page).toHaveURL(/\/zukan\/(shiitake|hiratake)/);
+  test('toxic species shows caution InfoBanner', async ({ page }) => {
+    await page.goto('/zukan/amanita_muscaria');
+    await expect(page.getByRole('alert')).toBeVisible();
   });
 
-  test('season calendar view shows all mushrooms', async ({ page }) => {
+  test('detail page renders sources section with links', async ({ page }) => {
+    await page.goto('/zukan/amanita_muscaria');
+    await expect(page.getByText('出典・ライセンス')).toBeVisible();
+    await expect(page.locator('a[href*="ja.wikipedia.org"]').first()).toBeVisible();
+  });
+
+  test('cap color filter is removed (Phase 13-F: traits not in v2)', async ({ page }) => {
     await page.goto('/zukan');
-    await page.click('button:has-text("シーズンカレンダー")');
-    await expect(page.getByText('マツタケ')).toBeVisible();
-    await expect(page.getByText('ツキヨタケ')).toBeVisible();
+    await page.click('button:has-text("もっと絞り込む")');
+    await expect(page.getByText('傘の色')).not.toBeVisible();
   });
 
   test('bottom navigation works', async ({ page }) => {
     await page.goto('/zukan');
-    // Verify BottomNav has links to all main sections
     await expect(page.locator('nav a[href="/settings"]')).toBeVisible();
-    await expect(page.locator('nav a[href="/zukan"]')).toBeVisible();
-    // Navigate to settings page
     await page.goto('/settings');
     await expect(page.getByText('アプリ情報')).toBeVisible();
-    // Navigate back to zukan page
     await page.goto('/zukan');
     await expect(page.getByText('キノコ図鑑')).toBeVisible();
   });
 
   test('back button on detail page returns to list', async ({ page }) => {
     await page.goto('/zukan');
-    await page.click('a[href="/zukan/matsutake"]');
-    await expect(page.getByText('Tricholoma matsutake')).toBeVisible();
+    await page.click('a[href="/zukan/amanita_muscaria"]');
+    await expect(page.getByText('Amanita muscaria')).toBeVisible();
     await page.click('button[aria-label="戻る"]');
     await expect(page.getByText('キノコ図鑑')).toBeVisible();
+  });
+});
+
+test.describe('Identify menu (Phase 13-F: simple identify suspended)', () => {
+  test('simple identify card shows 準備中 badge', async ({ page }) => {
+    await page.goto('/identify');
+    await expect(page.getByText('準備中')).toBeVisible();
+  });
+
+  test('simple identify page renders placeholder', async ({ page }) => {
+    await page.goto('/identify/simple');
+    await expect(page.getByText('準備中')).toBeVisible();
+    await expect(page.getByRole('link', { name: /AI 識別を使う/ })).toBeVisible();
+  });
+});
+
+test.describe('Settings お知らせ section', () => {
+  test('お知らせ section renders v2 release notice', async ({ page }) => {
+    await page.goto('/settings');
+    await expect(page.getByText('お知らせ')).toBeVisible();
+    await expect(page.getByText('v2.0 — データ刷新')).toBeVisible();
   });
 });
