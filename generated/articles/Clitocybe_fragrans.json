@@ -1,25 +1,31 @@
 {
   "names": { "aliases": [] },
   "season": [
-    { "start_month": 8, "end_month": 12 },
-    { "start_month": 10, "end_month": 12 },
-    { "start_month": 1, "end_month": 2 }
+    { "start_month": 8, "end_month": 12 }
   ],
   "habitat": ["広葉樹林", "針葉樹林"],
-  "regions": ["ヨーロッパ全域", "北アメリカ西海岸", "太平洋岸北西部"],
+  "regions": ["ヨーロッパ全域", "北米西海岸", "太平洋岸北西部"],
   "tree_association": ["広葉樹", "針葉樹"],
   "similar_species": [
-    { "ja": "Clitocybe dealbata", "note": "アニスの香りを欠く、致命的な毒種" },
-    { "ja": "Clitocybe odora", "note": "アニス臭を持つ食用種、本種との混同に注意" }
+    { "ja": "Clitocybe dealbata", "note": "アニスの香りを欠き、猛毒の類似種 [2]" },
+    { "ja": "Clitocybe odora", "note": "アニス香があり食用とされる類似種 [2]" }
   ],
-  "description": "コカブイヌシメジは白色の小型から中型のきのこで、カサにアニス（八角）に似た芳香を持つ点が目立つ特徴である。子実体は白色、胞子紋は白っぽい。欧州や北米に広く分布するが、類似する致命的な毒種と混同されやすく、ガイドブックによっては食用と扱いつつも摂食を避けるよう警告されている。日本の一次資料に本種の記述は確認できなかった[1]。",
-  "features": "カサは直径1〜5cmの白色、ヒダはやや密。柄は長さ2〜6cm、幅2〜5mmで白色、アニスシード様の芳香を放つ。胞子紋は白色を帯びる。ヨーロッパでは広葉樹林内に8月から12月にかけて発生し、北アメリカでは西海岸および太平洋岸北西部の針葉樹林下に10月から翌2月にかけて発生する[1]。",
+  "description": "コカブイヌシメジは全体が白色の小型のハラタケ目のきのこで、アニスに似た芳香を放つことを特徴とする。海外では食用とされる場合もあるが、致命的な毒をもつ類似種と混同されやすいため、食用は避けるよう注意されている。日本国内の観察記録は大菌輪の集計で国内 33 件・海外 11314 件と、国内では希少な種として扱われている [1][2]。",
+  "features": "傘は直径 1〜5cm 程度の白色で、ヒダはやや密につき、柄は長さ 2〜6cm、太さ 2〜5mm の白色を呈する。子実体はアニス（ウイキョウ）様の芳香を放ち、胞子紋は白色系である。発生はヨーロッパ全域の広葉樹林下で 8〜12 月にかけて見られ、北米では西海岸および太平洋岸北西部の針葉樹林下で 10 月から翌 2 月にかけて確認されている [2]。日本国内からも大菌輪に観察が集積されている [1]。",
   "cooking_preservation": null,
-  "poisoning_first_aid": "本種自体は食用と記述する資料もあるが、致命的な毒を持つ近縁種と混同されやすいため摂食は避けるべきである。特にアニス臭を欠く Clitocybe dealbata は極めて危険な毒種であり、誤食時にはムスカリンによる発汗・流涙・縮瞳・徐脈などのコリン作動性中毒症状が知られる。きのこによる中毒が疑われる場合は直ちに医療機関を受診し、可能であれば食べたきのこの残りを持参する。自己判断での催吐や民間療法に頼らず、専門機関の判断を仰ぐことが最良の策とされる[1][2]。",
-  "caution": "アニス臭を欠く致命的毒種 Clitocybe dealbata と酷似するため、自己判断での摂食は避けること[1]。",
+  "poisoning_first_aid": "本種は海外の資料では食用とされる例もある一方、致命的な毒をもつ近縁種 Clitocybe dealbata をはじめとする白色の類似種と外見がきわめて似ており、見分けて摂食することは強く戒められている。アニスに似た香りの有無が唯一の目安とされるが、それだけで安全性を判断することは推奨されない。誤って猛毒の類似種を摂取した疑いがある場合は自己判断で対処せず、摂取した子実体を持参して速やかに医療機関を受診することが望ましい [2]。",
+  "caution": "致命的な毒をもつ Clitocybe 属の類似種と混同しやすく、安易な食用は避ける [2]。",
   "sources": [
-    { "name": "Wikipedia en「Clitocybe fragrans」", "url": "https://en.wikipedia.org/wiki/Clitocybe_fragrans", "license": "CC BY-SA 4.0" },
-    { "name": "林野庁「きのこのはなし」", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "government" }
+    {
+      "name": "大菌輪「Clitocybe fragrans」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Clitocybe_fragrans_232936.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Wikipedia en「Clitocybe fragrans」",
+      "url": "https://en.wikipedia.org/wiki/Clitocybe_fragrans",
+      "license": "CC BY-SA 4.0"
+    }
   ],
-  "notes": "日本語一次資料（大菌輪・Wikipedia ja・厚労省）に本種の記述なし。英語版 Wikipedia と林野庁の一般注意喚起のみで合成。safety=toxic 指定に従い cooking_preservation=null。発生期は欧州（8-12月）と北米（10月-翌2月）を年跨ぎ分割で3要素として表現。"
+  "notes": "wikipediaJa と mhlw は null のため未使用。主情報は wikipediaEn、学名・和名・分布件数・分類は daikinrin を採用。季節は en の『August to December』を 8〜12 月に翻訳、北米の 10 月〜翌 2 月は regions 補足に留め欧州記載を season に採用。毒成分の詳細は en に記載がないため具体名に踏み込まず、『類似の致命種と混同リスク + 医療機関受診』に限定して記述した。"
 }

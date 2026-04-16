@@ -1,20 +1,18 @@
 {
-  "names": { "aliases": ["red milk mushroom"] },
-  "season": [
-    { "start_month": 9, "end_month": 11 }
-  ],
-  "habitat": ["マツ林"],
-  "regions": ["日本", "中国", "朝鮮半島", "ロシア極東", "小笠原諸島", "東南アジア"],
-  "tree_association": ["クロマツ", "アカマツ", "リュウキュウマツ", "Pinus yunnanensis", "Pinus kesiya"],
+  "names": { "aliases": [] },
+  "season": [{ "start_month": 9, "end_month": 11 }],
+  "habitat": ["マツ林", "針葉樹林"],
+  "regions": ["日本", "中国", "小笠原諸島", "ロシア極東", "朝鮮半島"],
+  "tree_association": ["クロマツ", "アカマツ", "リュウキュウマツ", "ユンナンマツ"],
   "similar_species": [],
-  "description": "アカハツはベニタケ科に属する食用きのこで、アジアに分布し、1890年に田中延次郎によって初めて記載された。アジアのいくつかの国で珍重される食用種として知られ、菌根共生による栽培の試みも行われている [1]。",
-  "features": "マツ属の樹木と外生菌根を形成して共生する菌根性のきのこで、クロマツ、アカマツ、リュウキュウマツなどのマツ類の林内に発生する。日本では秋のきのこ狩りシーズンに採取される対象のひとつで、発生地域は日本、中国、朝鮮半島、ロシア極東、小笠原諸島など東〜東南アジアに広く及ぶ [1][2]。",
-  "cooking_preservation": "アジアの一部の国々では珍重される食用きのことされ、日本でも古くから秋の味覚として親しまれてきた野生きのこの一つである。ただし野生きのこについては、食毒を安易に自己判断せず、きのこアドバイザーや専門機関の判断を仰ぐことが最良とされる [1][2]。",
+  "description": "アカハツはベニタケ科の食用きのこで、1890年に田中延次郎によって最初に記載されたアジア原産の種である。複数のアジア諸国で珍重される食用種として知られ、菌根共生による栽培の試みもなされている[1]。",
+  "features": "マツ属の樹木との外生菌根菌として生育する。国内ではクロマツ・アカマツ、南西諸島ではリュウキュウマツなどの針葉樹と共生関係を結ぶ。分布は東アジアから東南アジアにかけて広く、中国、日本、小笠原諸島、ロシア極東、朝鮮半島に及ぶ[1]。",
+  "cooking_preservation": "複数のアジア諸国で珍重される食用きのことして利用されている[1]。",
   "poisoning_first_aid": null,
   "caution": null,
   "sources": [
-    { "name": "Wikipedia en 'Lactarius hatsudake'", "url": "https://en.wikipedia.org/wiki/Lactarius_hatsudake", "license": "CC BY-SA 4.0" },
-    { "name": "林野庁「きのこのはなし」", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "政府機関公開情報" }
+    { "name": "Wikipedia en「Lactarius hatsudake」", "url": "https://en.wikipedia.org/wiki/Lactarius_hatsudake", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Lactarius hatsudake」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Lactarius_hatsudake_223913.html", "license": "CC BY 4.0" }
   ],
-  "notes": "wikipediaJa/daikinrin/mhlw/traitCircus は null のため英語版Wikipediaを主情報源とした。季節は原典に明記されず、林野庁資料の『秋のきのこ狩りシーズン』記述および本種が菌根性マツ林きのこである点から秋（9-11月）と推定し、similar_species は原典記載なしのため空配列とした。"
+  "notes": "wikipediaJa と mhlw は null。主情報源は wikipediaEn（記載者・食用性・共生樹種・分布）と daikinrin（学名・和名・分類）。rinya は一般論のみで本種記述なし。season は資料に明示なきため、和名『アカハツ』のマツ林に発生する秋季キノコ通念に基づき 9〜11月を暫定採用（要出典補強）。features から学名表記（Pinus kesiya 等）を除去し、tree_association からも Latin 表記を削除。aliases と similar_species も資料に明示がないため空。habitat はマツとの共生記述から導出。"
 }

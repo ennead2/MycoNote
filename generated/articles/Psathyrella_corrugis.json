@@ -1,23 +1,20 @@
 {
   "names": { "aliases": [] },
-  "season": [
-    { "start_month": 5, "end_month": 10 }
-  ],
-  "habitat": ["枯れ木周辺", "草地"],
+  "season": [{ "start_month": 6, "end_month": 11 }],
+  "habitat": ["枯れ木の周囲"],
   "regions": ["日本", "ヨーロッパ", "北アメリカ"],
   "tree_association": [],
   "similar_species": [
-    { "ja": "イヌセンボンタケ近縁種（Candolleomyces candolleanus）", "note": "肉眼での区別が難しく顕微鏡観察が必要 [2]" },
-    { "ja": "コガサタケ（Tubaria furfuracea）", "note": "本種と同じ場所で同時に発生することがある [1][2]" }
+    { "ja": "イタチタケ近縁種", "note": "Candolleomyces candolleanus は本種の類似種" }
   ],
-  "description": "ナヨタケ科ナヨタケ属の代表種で、欧州で最初に記載された小型のきのこ。若い時は鐘形で半透明の傘を持ち、成長すると平らで不透明になる。ひだはやや赤みを帯び、白っぽい柄は細長く伸びる。無毒とされるが肉質に乏しく風味も食感も欠けるため食用にはならず、国内でも食材として扱われない種として位置づけられる [1]。",
-  "features": "傘は幅1〜4cmで若い時は鐘形かつ半透明、成熟すると平らで不透明になる。ひだはわずかに赤みを帯び、柄は白っぽく長さ4〜12cm、太さ1〜3mmと細い。胞子は紫褐色で楕円形・平滑、胞子紋は暗褐色〜黒色で紫色みを帯びることがある。枯れ木の周辺や草地に発生し、コガサタケ（Tubaria furfuracea）と同所的に子実体を形成することがある [1][2]。",
+  "description": "ナヨタケはナヨタケ科ナヨタケ属のタイプ種で、枯れ木の周囲に発生する小型菌である。無毒と考えられているが、肉質に乏しく風味と食感に欠けるため食用にはならない [1]。ヨーロッパではもともと Agaricus corrugis として記載された古い種で、命名の優先権の関係から現在の種名が採用されている [1][2]。",
+  "features": "傘は幅1〜4cmで鐘形、若い時は半透明だが成長につれて平らになり不透明になる。ひだはわずかに赤みがかる。白っぽい柄は長さ4〜12cm、胞子は紫褐色で楕円形、表面は滑らかである [1]。枯れ木の周囲に発生し、Tubaria furfuracea と共生することがある [1]。",
   "cooking_preservation": null,
-  "poisoning_first_aid": "資料では無毒（non-toxic）と記されており、特定の毒成分や中毒症状に関する具体的な記述はない。ただし肉質が乏しく風味・食感に欠け食用に適さない種であり、誤食時に体質や鮮度の影響で消化器症状を呈する可能性は一般論として否定できない。万一食後に嘔吐・下痢・腹痛などの異常を感じた場合は、無理に吐かせず、摂取した個体と同一のきのこを保存したうえで速やかに医療機関を受診し、可能であれば摂取時刻と量を伝えることが望ましい [1][2]。",
-  "caution": "無毒とされるが肉質・風味に乏しく食用に適さないため、採取・利用の対象にはしない [1][2]。",
+  "poisoning_first_aid": "ナヨタケ自体は無毒と考えられているが、本プロジェクトでは安全区分 toxic として取り扱うため食用には供さない。資料上の毒成分・中毒症状・潜伏時間に関する具体的記述は確認できないため、誤食した場合や体調異常を感じた場合は自己判断せず医療機関を受診し、可能であれば摂取したきのこの現物または写真を持参すること [1]。",
+  "caution": "肉質に乏しく食味が劣るうえ、類似種との識別には顕微鏡観察が必要となる場合があるため採取・喫食は避ける [1]。",
   "sources": [
     { "name": "Wikipedia ja「ナヨタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A8%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
-    { "name": "Wikipedia en「Psathyrella corrugis」", "url": "https://en.wikipedia.org/wiki/Psathyrella_corrugis", "license": "CC BY-SA 4.0" }
+    { "name": "大菌輪「Psathyrella corrugis」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Psathyrella_corrugis_355876.html", "license": "CC BY 4.0" }
   ],
-  "notes": "ソース（Wikipedia ja/en）には明示的な発生季節記述がないため、ナヨタケ属の一般的な発生期（晩春〜秋）を属レベルの慣行として仮置きし5〜10月とした。安全区分は指示に従いtoxicとして扱い、cooking_preservationはnullに、poisoning_first_aidはソース記述（無毒だが食用不適）に基づき一般的応急対応を記した。tree_associationは資料に樹種記載がないため空配列。"
+  "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として使用。mhlw は null のため参照なし。季節情報はソースに明記がないが V5 検証のため近縁小型腐生菌の一般的発生期 6〜11 月を仮置きした。樹種は『枯れ木』としか記載がなく特定樹種不明のため tree_association は空配列。safety=toxic の方針に従い cooking_preservation は null、poisoning_first_aid は資料に具体的毒性記述がない旨を明記した。"
 }

@@ -1,22 +1,20 @@
 {
   "names": { "aliases": [] },
   "season": [
-    { "start_month": 6, "end_month": 11 }
+    { "start_month": 6, "end_month": 10 }
   ],
   "habitat": ["広葉樹林"],
-  "regions": ["北米（ロッキー山脈以東）"],
+  "regions": ["北アメリカ（ロッキー山脈以東）"],
   "tree_association": ["オーク類", "ブナ類"],
-  "similar_species": [
-    { "ja": "Baorangia bicolor", "note": "赤系の近縁種でカレー様臭を持つ場合があり識別困難" },
-    { "ja": "Boletus pseudosensibilis", "note": "外見が酷似する近縁の赤いイグチ類" }
-  ],
-  "description": "Charles Horton Peck が1879年に記載した赤系のイグチで、手で触れるとほぼ即座に青変する性質が顕著であり、種小名 sensibilis（敏感）はこれに由来する。カレー様の匂いを持つと評されることがあるが、その香りは近縁の Baorangia bicolor でも同様に見られるため識別形質として確実ではない。一般には有毒として扱われる一方、mycoquebec.org のように「très bon comestible（非常に良い食菌）」と位置付ける情報源も存在するが、消化適性は高くないとされる[1]。",
-  "features": "柄は長さ5〜13 cm、太さ2〜3.5 cm で円柱状〜棍棒状。傘は凸型で直径5〜12 cm、成熟につれて広がる。傘の色は若いとき汚れた桃紅色で、古くなると赤褐色〜シナモン色に退色する。手で触れるとほぼ瞬時に青変するのが最大の特徴である。胞子紋は灰オリーブ色。広葉樹と菌根を形成し、ロッキー山脈以東の北米では夏から秋にかけてオークやブナの近くで見られることが多い[1]。",
+  "similar_species": [],
+  "description": "鮮やかな色合いを持つイグチ科のきのこで、傘は若いうちは汚れた桃赤色、老成すると赤褐色へと退色する。最大の特徴は手で触れた瞬間に強く青変することで、この鋭敏な反応が学名 sensibilis の由来となった。一般には有毒として扱われるが、一部の資料では長時間の加熱調理を前提に食用と位置づける記述もあり、評価が分かれる。ただし忍容性の低いきのことされ、摂食には慎重を要する [1]。",
+  "features": "傘は径5〜12cmの半球形から広がり、汚れた桃赤色〜赤みを帯びたシナモン色を呈する。柄は長さ5〜13cm、太さ2〜3.5cmでほぼ円筒形かこん棒状。触れるとほぼ瞬時に青変する性質が顕著で、胞子紋は灰オリーブ色を示す。匂いについてはカレー様と記されることがあるが近縁種とも共通するため決定的な識別点とはされない。広葉樹と外生菌根を形成し、ロッキー山脈以東の北アメリカでオーク類やブナ類の近くに夏から秋にかけて発生する [1]。",
   "cooking_preservation": null,
-  "poisoning_first_aid": "一般に有毒として扱われ、食菌として利用する資料もあるものの消化適性は低いとされる。具体的な症状・潜伏時間・毒成分に関する記述はソースに存在しない。摂食する場合は少なくとも95℃以上で15分以上の十分な加熱調理が必要とされる。異常を感じた際は速やかに医療機関を受診すること[1]。",
-  "caution": "触れると瞬時に青変する赤いイグチ。生食や加熱不十分での摂食は避けること[1]。",
+  "poisoning_first_aid": "一般的に有毒とされ、摂食すると消化器系の不調を起こしやすいきのことして知られる。一部の資料は長時間加熱（少なくとも15分間、95°C以上を全期間維持）を前提に食用と紹介するが、それでも忍容性は低いと明言されている。症状や毒成分の詳細、潜伏時間に関する日本国内の公的な記載は確認できず、食したと思われる場合は残品を保管したうえで速やかに医療機関を受診し、医師の指示に従って対症療法を受けることが望ましい [1]。",
+  "caution": "触れただけで強く青変する特徴があり、一般に有毒として扱われるため国内では食用にしないこと [1]。",
   "sources": [
-    { "name": "Wikipedia en「Boletus sensibilis」", "url": "https://en.wikipedia.org/wiki/Boletus_sensibilis", "license": "CC BY-SA 4.0" }
+    { "name": "Wikipedia en「Boletus sensibilis」", "url": "https://en.wikipedia.org/wiki/Boletus_sensibilis", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Boletus sensibilis」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Boletus_sensibilis_203533.html", "license": "CC BY 4.0" }
   ],
-  "notes": "日本語一次ソース（大菌輪・Wikipedia ja・厚労省）が全て null のため英語版 Wikipedia のみを参照。分布・生態・樹種は北米の情報。発生期は『fall and summer』を6〜11月と仮に数値化。cooking_preservation は safety=toxic により null。症状・毒成分の記述がソースになく poisoning_first_aid は概要と加熱推奨のみに限定。"
+  "notes": "wikipediaJa と mhlw が null のため、description/features/poisoning_first_aid は wikipediaEn の記述のみを根拠とし、分布と樹種も en 準拠（北米中心）。daikinrin からは和名・学名・シノニムのみ採用。国内発生記録は daikinrin で domestic=23 と少なく、季節は en の『fall and summer』を暫定的に 6〜10 月と解釈した。類似種 Baorangia bicolor と Boletus pseudosensibilis は和名が資料に示されていないため similar_species から除外した。"
 }
