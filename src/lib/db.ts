@@ -2,12 +2,14 @@ import Dexie, { type Table } from 'dexie';
 import { MushroomRecord, RecordPhoto } from '../types/record';
 import { ChatSession } from '../types/chat';
 import { Bookmark } from '../types/bookmark';
+import { MigrationRecord } from '../types/migration';
 
 class MycoNoteDB extends Dexie {
   records!: Table<MushroomRecord, string>;
   record_photos!: Table<RecordPhoto, string>;
   chatSessions!: Table<ChatSession, string>;
   bookmarks!: Table<Bookmark, string>;
+  migrations!: Table<MigrationRecord, string>;
 
   constructor() {
     super('MycoNoteDB');
@@ -25,6 +27,15 @@ class MycoNoteDB extends Dexie {
       record_photos: 'id, record_id',
       chatSessions: 'id, created_at, updated_at',
       bookmarks: 'mushroom_id, created_at',
+    });
+    // Phase 13-F: v2 移行に伴うデータマイグレーション履歴を保存する migrations テーブルを追加。
+    // 実データの整合（bookmarks / records の v1 ID 整理）は src/lib/migrations/v3-to-v4.ts が担う。
+    this.version(4).stores({
+      records: 'id, mushroom_id, observed_at',
+      record_photos: 'id, record_id',
+      chatSessions: 'id, created_at, updated_at',
+      bookmarks: 'mushroom_id, created_at',
+      migrations: 'id, ranAt',
     });
   }
 }
@@ -118,4 +129,14 @@ export async function getPhotosForRecord(recordId: string): Promise<RecordPhoto[
 
 export async function deletePhotosForRecord(recordId: string): Promise<void> {
   await db.record_photos.where('record_id').equals(recordId).delete();
+}
+
+// ===== Migrations =====
+
+export async function getMigration(id: string): Promise<MigrationRecord | undefined> {
+  return db.migrations.get(id);
+}
+
+export async function recordMigration(record: MigrationRecord): Promise<void> {
+  await db.migrations.put(record);
 }

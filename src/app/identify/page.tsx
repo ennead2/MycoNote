@@ -57,31 +57,35 @@ export default function IdentifyPage() {
           )}
         </button>
 
-        {/* 簡易識別 — offline/field utility */}
+        {/* 簡易識別 — Phase 13-F: 準備中（traits 廃止に伴い一時停止） */}
         <button
           onClick={() => router.push('/identify/simple')}
-          className="group w-full text-left rounded-xl p-5 border transition-all duration-200 hover:-translate-y-0.5 bg-soil-surface border-border hover:border-moss-primary/50"
+          className="group w-full text-left rounded-xl p-5 border transition-all duration-200 bg-soil-surface/60 border-border opacity-60 hover:opacity-80"
+          aria-label={`${UI_TEXT.identify.simpleTitle} — ${UI_TEXT.identify.simpleSuspendedTitle}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-11 h-11 rounded-lg bg-soil-elevated border border-border flex items-center justify-center text-moss-light shrink-0">
+            <div className="w-11 h-11 rounded-lg bg-soil-elevated border border-border flex items-center justify-center text-washi-dim shrink-0">
               <SlidersHorizontal size={22} strokeWidth={2} aria-hidden="true" />
             </div>
             <div className="flex-1 min-w-0">
-              <div className="serif-display font-bold text-base text-washi-cream">
+              <div className="serif-display font-bold text-base text-washi-muted flex items-center gap-2">
                 {UI_TEXT.identify.simpleTitle}
+                <span className="mono-data text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-soil-elevated text-washi-dim border border-border">
+                  {UI_TEXT.identify.simpleSuspendedTitle}
+                </span>
               </div>
-              <div className="text-xs text-washi-muted mono-data tracking-wide mt-0.5">
+              <div className="text-xs text-washi-dim mono-data tracking-wide mt-0.5">
                 {UI_TEXT.identify.simpleLabel}
               </div>
             </div>
             <ArrowRight
               size={18}
-              className="text-washi-muted opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all shrink-0"
+              className="text-washi-dim opacity-50 shrink-0"
               aria-hidden="true"
             />
           </div>
-          <p className="text-xs text-washi-cream/85 leading-relaxed mb-3">
-            {UI_TEXT.identify.simpleDescription}
+          <p className="text-xs text-washi-muted leading-relaxed mb-3">
+            {UI_TEXT.identify.simpleSuspendedDescription}
           </p>
           <div className="flex gap-1.5 flex-wrap">
             <Tag icon={<WifiOff size={10} />} label={UI_TEXT.identify.offlineAvailable} />

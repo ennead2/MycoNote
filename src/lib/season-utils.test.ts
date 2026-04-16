@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getSeasonalMushrooms, getSafetyTip, SAFETY_TIPS, isMonthInSeason } from './season-utils';
+import { getSeasonalMushrooms, getSafetyTip, SAFETY_TIPS, isMonthInSeason, isMonthInSeasonRanges } from './season-utils';
 
 describe('isMonthInSeason', () => {
   it('returns true when month is in a normal range', () => {
@@ -22,12 +22,23 @@ describe('isMonthInSeason', () => {
   });
 });
 
+describe('isMonthInSeasonRanges', () => {
+  it('matches if any range contains the month', () => {
+    expect(isMonthInSeasonRanges(7, [{ start_month: 7, end_month: 10 }])).toBe(true);
+    expect(isMonthInSeasonRanges(7, [{ start_month: 11, end_month: 2 }, { start_month: 6, end_month: 8 }])).toBe(true);
+  });
+
+  it('returns false when no range contains the month', () => {
+    expect(isMonthInSeasonRanges(5, [{ start_month: 7, end_month: 10 }])).toBe(false);
+  });
+});
+
 describe('getSeasonalMushrooms', () => {
   it('returns mushrooms in season for the given month', () => {
     const results = getSeasonalMushrooms(10);
     expect(results.length).toBeGreaterThan(0);
     for (const m of results) {
-      expect(isMonthInSeason(10, m.season.start_month, m.season.end_month)).toBe(true);
+      expect(isMonthInSeasonRanges(10, m.season)).toBe(true);
     }
   });
 

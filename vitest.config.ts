@@ -10,7 +10,13 @@ export default defineConfig({
     globals: true,
     css: true,
     testTimeout: 15000,
-    exclude: ["**/node_modules/**", "**/dist/**", "e2e/**", ".worktrees/**"],
+    exclude: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "e2e/**",
+      ".worktrees/**",
+      "scripts/review-v2/**",
+    ],
   },
   resolve: {
     alias: {

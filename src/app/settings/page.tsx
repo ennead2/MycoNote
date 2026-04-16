@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, Sparkles } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { Checkbox } from '@/components/ui/Checkbox';
@@ -10,6 +10,7 @@ import { testApiKey } from '@/lib/claude';
 import { UI_TEXT } from '@/constants/ui-text';
 import { buildExportData, downloadExportFile, parseImportFile, importData } from '@/lib/export-import';
 import type { ImportResult } from '@/types/export';
+import type { MigrationRecord } from '@/types/migration';
 
 type ConnectionStatus = 'idle' | 'testing' | 'connected' | 'failed';
 
@@ -113,6 +114,9 @@ export default function SettingsPage() {
     <div>
       <PageHeader title={UI_TEXT.settings.title} />
       <div className="space-y-6 px-4 py-4">
+        {/* Phase 13-F: お知らせセクション */}
+        <NoticeSection migration={state.migration} />
+
         {/* APIキー設定セクション */}
         <section className="rounded-lg border border-border bg-soil-surface p-4">
           <h2 className="mb-3 text-sm font-bold text-moss-light">{UI_TEXT.settings.aiSection}</h2>
@@ -264,10 +268,54 @@ export default function SettingsPage() {
         {/* ライセンス */}
         <section className="rounded-lg border border-border bg-soil-surface p-4">
           <h2 className="mb-2 text-sm font-bold text-moss-light">ライセンス</h2>
-          <p className="text-xs text-moss-light">図鑑データ: Wikipedia日本語版 (CC BY-SA 4.0)</p>
-          <p className="text-xs text-moss-light">写真: Wikimedia Commons (CC BY / CC BY-SA)</p>
+          <p className="text-xs text-moss-light">図鑑データ: Wikipedia 日本語版 (CC BY-SA 4.0) / 大菌輪 (CC BY 4.0) / 厚生労働省自然毒のリスクプロファイル (政府標準利用規約)</p>
+          <p className="text-xs text-moss-light">写真: iNaturalist (各撮影者の CC ライセンス)</p>
+          <p className="text-xs text-moss-light">分類: GBIF Backbone Taxonomy / 日本産菌類集覧 (CC BY 4.0)</p>
         </section>
       </div>
     </div>
+  );
+}
+
+/**
+ * Phase 13-F: お知らせセクション。v2 移行の経緯と migration 結果を恒久掲載。
+ */
+function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
+  const T = UI_TEXT.settings;
+  return (
+    <section className="rounded-lg border border-moss-light/30 bg-soil-elevated p-4">
+      <h2 className="mb-3 text-sm font-bold text-moss-light flex items-center gap-2">
+        <Sparkles size={16} aria-hidden="true" />
+        {T.noticeSection}
+      </h2>
+      <div className="space-y-3">
+        <div>
+          <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV2Title}</h3>
+          <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV2Body}</p>
+        </div>
+        {migration && (
+          <div className="border-t border-border pt-3">
+            <p className="mono-data text-[10px] uppercase tracking-wider text-washi-dim mb-1.5">
+              {T.noticeMigrationLabel}
+            </p>
+            {migration.bookmarksDeleted === 0 && migration.recordsReset === 0 ? (
+              <p className="text-xs text-washi-muted">{T.noticeMigrationNoChange}</p>
+            ) : (
+              <ul className="text-xs text-washi-muted space-y-0.5 list-disc list-inside">
+                {migration.bookmarksDeleted > 0 && (
+                  <li>{T.noticeMigrationBookmarks.replace('{n}', String(migration.bookmarksDeleted))}</li>
+                )}
+                {migration.recordsReset > 0 && (
+                  <li>{T.noticeMigrationRecords.replace('{n}', String(migration.recordsReset))}</li>
+                )}
+              </ul>
+            )}
+            <p className="mono-data text-[10px] text-washi-dim mt-1.5">
+              {T.noticeMigrationRanAt} {new Date(migration.ranAt).toLocaleString('ja-JP')}
+            </p>
+          </div>
+        )}
+      </div>
+    </section>
   );
 }

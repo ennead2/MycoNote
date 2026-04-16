@@ -37,7 +37,7 @@ describe('getApiKey', () => {
 describe('identifyMushroom', () => {
   const images: Base64Image[] = [{ data: 'base64data', mediaType: 'image/jpeg' }];
   const mushroomList: CompactMushroom[] = [
-    { id: 'hiratake', name_ja: 'ヒラタケ', scientific: 'Pleurotus ostreatus', toxicity: 'edible' },
+    { id: 'hiratake', name_ja: 'ヒラタケ', scientific: 'Pleurotus ostreatus', safety: 'edible' },
   ];
 
   it('returns parsed identify result on success', async () => {

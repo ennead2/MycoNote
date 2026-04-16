@@ -13,8 +13,7 @@ import { Bookmark as BookmarkIcon, BookOpen } from 'lucide-react';
 import { mushrooms as allMushrooms, searchMushrooms, sortMushrooms, getMushroomById } from '@/data/mushrooms';
 import { UI_TEXT } from '@/constants/ui-text';
 import { useBookmarks } from '@/contexts/BookmarksContext';
-import type { FilterOptions, SortOrder, Toxicity, CapColor } from '@/types/mushroom';
-import type { Mushroom } from '@/types/mushroom';
+import type { FilterOptions, SortOrder, Safety, Mushroom } from '@/types/mushroom';
 
 type Tab = 'list' | 'bookmarks' | 'calendar';
 
@@ -23,8 +22,7 @@ const DEFAULT_TAB: Tab = 'list';
 
 const VALID_SORTS: SortOrder[] = ['safety', 'kana', 'taxonomy'];
 const VALID_TABS: Tab[] = ['list', 'bookmarks', 'calendar'];
-const VALID_TOXICITY: Toxicity[] = ['edible', 'edible_caution', 'inedible', 'toxic', 'deadly_toxic'];
-const VALID_CAP_COLORS: CapColor[] = ['white', 'brown', 'red', 'yellow', 'orange', 'gray', 'black'];
+const VALID_SAFETY: Safety[] = ['edible', 'caution', 'inedible', 'toxic', 'deadly'];
 
 /** Parse URL search params into our state shape. Unknown values are ignored. */
 function paramsToState(params: URLSearchParams): {
@@ -44,21 +42,17 @@ function paramsToState(params: URLSearchParams): {
     return arr.length > 0 ? arr : undefined;
   };
 
-  const toxicityRaw = getList('safety');
-  const toxicity = toxicityRaw?.filter((t): t is Toxicity => VALID_TOXICITY.includes(t as Toxicity));
-
-  const capColorRaw = getList('cap');
-  const capColor = capColorRaw?.filter((c): c is CapColor => VALID_CAP_COLORS.includes(c as CapColor));
+  const safetyRaw = getList('safety');
+  const safety = safetyRaw?.filter((t): t is Safety => VALID_SAFETY.includes(t as Safety));
 
   const filters: FilterOptions = {
     query: params.get('q') || undefined,
-    toxicity: toxicity && toxicity.length > 0 ? toxicity : undefined,
+    safety: safety && safety.length > 0 ? safety : undefined,
     family: getList('family'),
     genus: getList('genus'),
     habitat: getList('habitat'),
     regions: getList('regions'),
     treeAssociation: getList('tree'),
-    capColor: capColor && capColor.length > 0 ? capColor : undefined,
   };
 
   return { tab, sort, filters };
@@ -70,13 +64,12 @@ function stateToParams(tab: Tab, sort: SortOrder, filters: FilterOptions): URLSe
   if (tab !== DEFAULT_TAB) params.set('tab', tab);
   if (sort !== DEFAULT_SORT) params.set('sort', sort);
   if (filters.query) params.set('q', filters.query);
-  if (filters.toxicity?.length) params.set('safety', filters.toxicity.join(','));
+  if (filters.safety?.length) params.set('safety', filters.safety.join(','));
   if (filters.family?.length) params.set('family', filters.family.join(','));
   if (filters.genus?.length) params.set('genus', filters.genus.join(','));
   if (filters.habitat?.length) params.set('habitat', filters.habitat.join(','));
   if (filters.regions?.length) params.set('regions', filters.regions.join(','));
   if (filters.treeAssociation?.length) params.set('tree', filters.treeAssociation.join(','));
-  if (filters.capColor?.length) params.set('cap', filters.capColor.join(','));
   return params;
 }
 
@@ -156,7 +149,7 @@ function ZukanInner() {
           onClick={() => setTab('list')}
         />
         <TabButton
-          label={`${UI_TEXT.zukan.tabBookmarks}${bookmarks.length > 0 ? ` (${bookmarks.length})` : ''}`}
+          label={`${UI_TEXT.zukan.tabBookmarks}${bookmarkedMushrooms.length > 0 ? ` (${bookmarkedMushrooms.length})` : ''}`}
           active={tab === 'bookmarks'}
           onClick={() => setTab('bookmarks')}
         />

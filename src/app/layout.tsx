@@ -6,6 +6,7 @@ import { RecordsProvider } from "@/contexts/RecordsContext";
 import { BookmarksProvider } from "@/contexts/BookmarksContext";
 import OfflineBanner from "@/components/layout/OfflineBanner";
 import BottomNav from "@/components/layout/BottomNav";
+import { V2ReleaseBanner } from "@/components/layout/V2ReleaseBanner";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -42,7 +43,7 @@ const jetbrainsMono = JetBrains_Mono({
 // Manifest PWA icons are declared in `public/manifest.json`.
 export const metadata: Metadata = {
   title: "MycoNote — きのこ採取・観察ハンドブック",
-  description: "日本の里山きのこ300種。図鑑・識別・採取記録・採取計画をオフラインで。現代の民藝図鑑。",
+  description: "日本の里山きのこを CC BY 出典付き・人間レビュー済みでまとめた図鑑。識別・採取記録・採取計画をオフラインで。現代の民藝図鑑。",
   manifest: "/manifest.json",
   applicationName: "MycoNote",
   appleWebApp: {
@@ -75,6 +76,7 @@ export default function RootLayout({
           <RecordsProvider>
             <BookmarksProvider>
               <OfflineBanner />
+              <V2ReleaseBanner />
               <main className="max-w-lg mx-auto w-full flex-1 pb-16">
                 {children}
               </main>

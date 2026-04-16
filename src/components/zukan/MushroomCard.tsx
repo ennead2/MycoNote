@@ -45,7 +45,7 @@ export function MushroomCard({ mushroom }: MushroomCardProps) {
         <p className="serif-display text-washi-cream font-bold text-sm leading-tight line-clamp-2 tracking-wide">
           {mushroom.names.ja}
         </p>
-        <ToxicityBadge toxicity={mushroom.toxicity} compact />
+        <ToxicityBadge safety={mushroom.safety} compact />
       </div>
     </Link>
   );

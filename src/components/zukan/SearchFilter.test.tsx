@@ -19,7 +19,7 @@ describe('SearchFilter', () => {
     expect(onFilterChange).toHaveBeenCalledWith(expect.objectContaining({ query: 'マツタケ' }));
   });
 
-  it('renders toxicity filter buttons', () => {
+  it('renders safety filter buttons', () => {
     render(<SearchFilter filters={defaultFilters} onFilterChange={vi.fn()} />);
     expect(screen.getByText('食用')).toBeInTheDocument();
     expect(screen.getByText('要注意')).toBeInTheDocument();
@@ -28,23 +28,26 @@ describe('SearchFilter', () => {
     expect(screen.getByText('猛毒')).toBeInTheDocument();
   });
 
-  it('toggles toxicity filter on click', () => {
+  it('toggles safety filter on click', () => {
     const onFilterChange = vi.fn();
     render(<SearchFilter filters={defaultFilters} onFilterChange={onFilterChange} />);
-    const edibleButton = screen.getByText('食用');
-    fireEvent.click(edibleButton);
+    fireEvent.click(screen.getByText('食用'));
     expect(onFilterChange).toHaveBeenCalledWith(
-      expect.objectContaining({ toxicity: expect.arrayContaining(['edible']) })
+      expect.objectContaining({ safety: expect.arrayContaining(['edible']) })
     );
   });
 
-  it('removes toxicity filter when clicked again', () => {
+  it('removes safety filter when clicked again', () => {
     const onFilterChange = vi.fn();
-    const filtersWithEdible: FilterOptions = { toxicity: ['edible'] };
+    const filtersWithEdible: FilterOptions = { safety: ['edible'] };
     render(<SearchFilter filters={filtersWithEdible} onFilterChange={onFilterChange} />);
-    const edibleButton = screen.getByText('食用');
-    fireEvent.click(edibleButton);
+    fireEvent.click(screen.getByText('食用'));
     const called = onFilterChange.mock.calls[0][0] as FilterOptions;
-    expect(called.toxicity).not.toContain('edible');
+    expect(called.safety).not.toContain('edible');
+  });
+
+  it('does not render cap color filter (Phase 13-F: traits removed)', () => {
+    render(<SearchFilter filters={defaultFilters} onFilterChange={vi.fn()} />);
+    expect(screen.queryByText('傘の色')).not.toBeInTheDocument();
   });
 });

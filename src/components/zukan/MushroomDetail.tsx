@@ -3,16 +3,17 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Bookmark, BookmarkCheck, Search, ArrowUpRight } from 'lucide-react';
+import { Bookmark, BookmarkCheck, Search, ArrowUpRight, AlertTriangle, ImageOff, ExternalLink, ChefHat, HeartPulse, type LucideIcon } from 'lucide-react';
 import { ToxicityBadge } from '@/components/zukan/ToxicityBadge';
 import { SeasonBar } from '@/components/zukan/SeasonBar';
 import { ChipTag } from '@/components/ui/ChipTag';
+import { InfoBanner } from '@/components/ui/InfoBanner';
 import { getMushroomById } from '@/data/mushrooms';
 import { UI_TEXT } from '@/constants/ui-text';
 import { renderColorText } from '@/lib/color-text';
 import { useRecords } from '@/contexts/RecordsContext';
 import { useBookmarks } from '@/contexts/BookmarksContext';
-import type { Mushroom } from '@/types/mushroom';
+import type { Mushroom, SimilarSpecies } from '@/types/mushroom';
 
 interface MushroomDetailProps {
   mushroom: Mushroom;
@@ -34,9 +35,8 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
     ...(mushroom.images_remote_credits || mushroom.images_remote.map(() => '')),
   ];
   const heroSrc = mushroom.image_local || mushroom.images_remote[0] || null;
-  const similarSpecies = mushroom.similar_species
-    .map((id) => getMushroomById(id))
-    .filter((m): m is Mushroom => m !== undefined);
+  // 仕様上 v2 種は被り無し前提。SeasonBar は最初の range を表示。
+  const primarySeason = mushroom.season[0];
 
   return (
     <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
@@ -69,7 +69,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
                 url={url}
                 alt={`${mushroom.names.ja} - ${i + 1}`}
                 credit={mushroom.images_remote_credits?.[i]}
-                onClick={() => setLightboxIndex(i + 1)}
+                onClick={() => setLightboxIndex(i + (mushroom.image_local ? 1 : 0))}
               />
             ))}
           </div>
@@ -89,7 +89,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       </a>
 
       {/* Lightbox modal with swipe */}
-      {lightboxIndex !== null && (
+      {lightboxIndex !== null && allPhotos.length > 0 && (
         <Lightbox
           photos={allPhotos}
           credits={allCredits}
@@ -100,21 +100,18 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         />
       )}
 
-      {/* 2. Name + ToxicityBadge + Bookmark + scientific name + aliases */}
+      {/* 2. Name + safety + Bookmark + scientific name + aliases */}
       <div>
         <div className="flex items-start gap-2 flex-wrap mb-1">
           <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
             <h1 className="serif-display text-2xl font-bold text-washi-cream">{mushroom.names.ja}</h1>
-            <ToxicityBadge toxicity={mushroom.toxicity} />
+            <ToxicityBadge safety={mushroom.safety} />
           </div>
           <BookmarkToggle mushroomId={mushroom.id} />
         </div>
         <p className="text-sm text-moss-light italic">{mushroom.names.scientific}</p>
         {mushroom.names.scientific_synonyms && mushroom.names.scientific_synonyms.length > 0 && (
-          <p className="text-xs text-washi-dim italic mt-0.5">
-            <span className="mono-data not-italic text-[10px] uppercase tracking-wider mr-1">syn.</span>
-            {mushroom.names.scientific_synonyms.join(', ')}
-          </p>
+          <ScientificSynonymsList synonyms={mushroom.names.scientific_synonyms} />
         )}
         {mushroom.names.aliases && mushroom.names.aliases.length > 0 && (
           <p className="text-xs text-washi-dim mt-1">{mushroom.names.aliases.join('、')}</p>
@@ -123,13 +120,14 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
 
       {/* 3. Caution box (if caution exists) */}
       {mushroom.caution && (
-        <div
+        <InfoBanner
+          icon={AlertTriangle}
+          severity={mushroom.safety === 'deadly' ? 'deadly' : mushroom.safety === 'toxic' ? 'toxic' : 'caution'}
+          label={UI_TEXT.zukan.cautionLabel}
           role="alert"
-          className="border border-red-500 bg-red-950/50 rounded-lg p-4"
         >
-          <h2 className="text-sm font-bold text-red-400 mb-2">⚠ 注意事項</h2>
-          <p className="text-sm text-red-200">{renderColorText(mushroom.caution)}</p>
-        </div>
+          {renderColorText(mushroom.caution)}
+        </InfoBanner>
       )}
 
       {/* 4. Description section */}
@@ -147,10 +145,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       {/* 6. Season bar */}
       <div>
         <SectionHeading>{UI_TEXT.zukan.season}</SectionHeading>
-        <SeasonBar
-          startMonth={mushroom.season.start_month}
-          endMonth={mushroom.season.end_month}
-        />
+        <SeasonBar startMonth={primarySeason.start_month} endMonth={primarySeason.end_month} />
       </div>
 
       {/* 7. Habitat tags */}
@@ -187,38 +182,183 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         </div>
       )}
 
-      {/* 10. Similar species (if exists) */}
-      {similarSpecies.length > 0 && (
+      {/* 10. Cooking & preservation (food-safe species only) */}
+      {mushroom.cooking_preservation && (
+        <HighlightSection icon={ChefHat} severity="edible" label={UI_TEXT.zukan.cooking}>
+          {renderColorText(mushroom.cooking_preservation)}
+        </HighlightSection>
+      )}
+
+      {/* 11. Poisoning first aid (toxic species only) */}
+      {mushroom.poisoning_first_aid && (
+        <HighlightSection icon={HeartPulse} severity="toxic" label={UI_TEXT.zukan.firstAid}>
+          {renderColorText(mushroom.poisoning_first_aid)}
+        </HighlightSection>
+      )}
+
+      {/* 12. Similar species */}
+      {mushroom.similar_species.length > 0 && (
         <div>
           <SectionHeading>{UI_TEXT.zukan.similarSpecies}</SectionHeading>
           <div className="flex flex-col gap-3">
-            {similarSpecies.map((species) => (
-              <Link
-                key={species.id}
-                href={`/zukan/${species.id}`}
-                className="flex items-center gap-3 bg-soil-surface rounded-lg p-3 hover:bg-soil-elevated transition-colors"
-              >
-                <div className="relative w-16 h-16 rounded-md overflow-hidden flex-shrink-0 bg-soil-elevated">
-                  <Image
-                    src={species.image_local}
-                    alt={species.names.ja}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <span className="text-sm font-bold text-washi-cream">{species.names.ja}</span>
-                  <ToxicityBadge toxicity={species.toxicity} />
-                </div>
-              </Link>
+            {mushroom.similar_species.map((sim, i) => (
+              <SimilarSpeciesCard key={`${sim.ja}-${i}`} sim={sim} />
             ))}
           </div>
         </div>
       )}
 
-      {/* 11. My records for this species */}
+      {/* 13. Sources & licenses */}
+      <div>
+        <SectionHeading>{UI_TEXT.zukan.sources}</SectionHeading>
+        <ul className="space-y-1.5">
+          {mushroom.sources.map((src, i) => (
+            <li key={i} className="text-xs">
+              <a
+                href={src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-moss-light hover:text-washi-cream transition-colors"
+              >
+                <span>{src.name}</span>
+                <ExternalLink size={11} aria-hidden="true" />
+              </a>
+              <span className="ml-2 mono-data text-[10px] text-washi-dim">{src.license}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* 14. My records for this species */}
       <MyRecordsSection mushroomId={mushroom.id} />
     </div>
+  );
+}
+
+/**
+ * 学名のシノニム一覧。多すぎる場合は折り畳んで初期 3 件 + 「他 N 件」表示。
+ * 5 件以下は全件展開のまま（折り畳み不要）。
+ */
+function ScientificSynonymsList({ synonyms }: { synonyms: string[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const COLLAPSE_THRESHOLD = 5;
+  const INITIAL_VISIBLE = 3;
+  const isLong = synonyms.length > COLLAPSE_THRESHOLD;
+  const showAll = expanded || !isLong;
+  const visible = showAll ? synonyms : synonyms.slice(0, INITIAL_VISIBLE);
+  const hiddenCount = synonyms.length - INITIAL_VISIBLE;
+
+  return (
+    <p className="text-xs text-washi-dim italic mt-0.5">
+      <span className="mono-data not-italic text-[10px] uppercase tracking-wider mr-1">syn.</span>
+      {visible.join(', ')}
+      {isLong && !showAll && (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="ml-1 not-italic mono-data text-[10px] text-moss-light hover:text-washi-cream transition-colors"
+        >
+          …他 {hiddenCount} 件を表示
+        </button>
+      )}
+      {isLong && showAll && (
+        <button
+          type="button"
+          onClick={() => setExpanded(false)}
+          className="ml-1 not-italic mono-data text-[10px] text-moss-light hover:text-washi-cream transition-colors"
+        >
+          閉じる
+        </button>
+      )}
+    </p>
+  );
+}
+
+/**
+ * Phase 13-F Step 5: 中毒症状・調理など重要セクションを safety パレットの
+ * カード型で強調表示。option B (rounded box + icon header)。
+ */
+function HighlightSection({
+  icon: Icon,
+  severity,
+  label,
+  children,
+}: {
+  icon: LucideIcon;
+  severity: 'edible' | 'toxic' | 'caution';
+  label: string;
+  children: React.ReactNode;
+}) {
+  const palette = {
+    edible: {
+      border: 'border-safety-edible/40',
+      bg: 'bg-safety-edible/[0.06]',
+      icon: 'text-safety-edible',
+    },
+    toxic: {
+      border: 'border-safety-toxic/40',
+      bg: 'bg-safety-toxic/[0.06]',
+      icon: 'text-safety-toxic',
+    },
+    caution: {
+      border: 'border-safety-caution/40',
+      bg: 'bg-safety-caution/[0.06]',
+      icon: 'text-safety-caution',
+    },
+  }[severity];
+
+  return (
+    <section className={`rounded-lg border ${palette.border} ${palette.bg} p-4`}>
+      <h2 className={`text-sm font-bold ${palette.icon} mb-2 flex items-center gap-2`}>
+        <Icon size={16} strokeWidth={2} aria-hidden="true" />
+        {label}
+      </h2>
+      <p className="text-sm text-washi-cream leading-relaxed">{children}</p>
+    </section>
+  );
+}
+
+function SimilarSpeciesCard({ sim }: { sim: SimilarSpecies }) {
+  const linked = sim.id ? getMushroomById(sim.id) : undefined;
+
+  if (!linked) {
+    // Text-only — no link to a v2 species detail page.
+    return (
+      <div className="flex items-start gap-3 bg-soil-surface rounded-lg p-3">
+        <div className="w-16 h-16 rounded-md flex items-center justify-center bg-soil-elevated text-washi-dim shrink-0">
+          <ImageOff size={20} strokeWidth={1.5} aria-hidden="true" />
+        </div>
+        <div className="flex flex-col gap-1 min-w-0">
+          <span className="text-sm font-bold text-washi-cream">{sim.ja}</span>
+          {sim.scientific && (
+            <span className="text-xs italic text-moss-light">{sim.scientific}</span>
+          )}
+          <span className="text-xs text-washi-muted leading-relaxed">{sim.note}</span>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      href={`/zukan/${linked.id}`}
+      className="flex items-start gap-3 bg-soil-surface rounded-lg p-3 hover:bg-soil-elevated transition-colors"
+    >
+      <div className="relative w-16 h-16 rounded-md overflow-hidden flex-shrink-0 bg-soil-elevated">
+        {linked.image_local ? (
+          <Image src={linked.image_local} alt={linked.names.ja} fill className="object-cover" />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-washi-dim">
+            <ImageOff size={20} strokeWidth={1.5} aria-hidden="true" />
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col gap-1 min-w-0">
+        <span className="text-sm font-bold text-washi-cream">{linked.names.ja}</span>
+        <ToxicityBadge safety={linked.safety} compact />
+        <span className="text-xs text-washi-muted leading-relaxed">{sim.note}</span>
+      </div>
+    </Link>
   );
 }
 

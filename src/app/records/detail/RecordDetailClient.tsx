@@ -145,7 +145,7 @@ export default function RecordDetailClient({ id }: RecordDetailClientProps) {
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2 min-w-0">
                 <span className="text-washi-cream font-semibold truncate">{mushroom.names.ja}</span>
-                <ToxicityBadge toxicity={mushroom.toxicity} compact />
+                <ToxicityBadge safety={mushroom.safety} compact />
               </div>
               <Link
                 href={`/zukan/${mushroom.id}`}

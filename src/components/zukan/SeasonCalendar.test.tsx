@@ -53,10 +53,11 @@ describe('SeasonCalendar', () => {
 
   it('links mushroom names to detail pages', () => {
     render(<SeasonCalendar mushrooms={mushrooms} />);
-    // Select "すべて" first
     fireEvent.click(screen.getByRole('button', { name: 'すべて' }));
-    const links = screen.getAllByRole('link', { name: /マツタケ/ });
-    const matsutakeLink = links.find((l) => l.getAttribute('href') === '/zukan/matsutake');
-    expect(matsutakeLink).toBeDefined();
+    // Pick the first v2 species and assert its name links to its slug.
+    const sample = mushrooms[0];
+    const links = screen.getAllByRole('link', { name: new RegExp(sample.names.ja) });
+    const targetLink = links.find((l) => l.getAttribute('href') === `/zukan/${sample.id}`);
+    expect(targetLink).toBeDefined();
   });
 });

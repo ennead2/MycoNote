@@ -1,14 +1,14 @@
-import { TOXICITY_CONFIG } from '@/constants/toxicity';
-import type { Toxicity } from '@/types/mushroom';
+import { SAFETY_CONFIG } from '@/constants/safety';
+import type { Safety } from '@/types/mushroom';
 
 interface ToxicityBadgeProps {
-  toxicity: Toxicity;
+  safety: Safety;
   compact?: boolean;
 }
 
-export function ToxicityBadge({ toxicity, compact = false }: ToxicityBadgeProps) {
-  const config = TOXICITY_CONFIG[toxicity];
-  const isDangerous = toxicity === 'toxic' || toxicity === 'deadly_toxic';
+export function ToxicityBadge({ safety, compact = false }: ToxicityBadgeProps) {
+  const config = SAFETY_CONFIG[safety];
+  const isDangerous = safety === 'toxic' || safety === 'deadly';
 
   if (compact) {
     return (

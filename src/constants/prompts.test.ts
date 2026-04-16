@@ -5,7 +5,7 @@ import type { CompactMushroom, PlanContext } from '@/types/chat';
 describe('buildIdentifyPrompt', () => {
   it('includes mushroom list in user message', () => {
     const list: CompactMushroom[] = [
-      { id: 'matsutake', name_ja: 'マツタケ', scientific: 'Tricholoma matsutake', toxicity: 'edible' },
+      { id: 'matsutake', name_ja: 'マツタケ', scientific: 'Tricholoma matsutake', safety: 'edible' },
     ];
     const result = buildIdentifyPrompt(list);
     expect(result).toContain('マツタケ');
@@ -15,10 +15,10 @@ describe('buildIdentifyPrompt', () => {
 
   it('uses pipe-delimited compact format', () => {
     const list: CompactMushroom[] = [
-      { id: 'amanita', name_ja: 'タマゴテングタケ', scientific: 'Amanita phalloides', toxicity: 'deadly_toxic' },
+      { id: 'amanita', name_ja: 'タマゴテングタケ', scientific: 'Amanita phalloides', safety: 'deadly' },
     ];
     const result = buildIdentifyPrompt(list);
-    expect(result).toContain('amanita|タマゴテングタケ|Amanita phalloides|deadly_toxic');
+    expect(result).toContain('amanita|タマゴテングタケ|Amanita phalloides|deadly');
   });
 });
 

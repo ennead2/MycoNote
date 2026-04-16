@@ -21,6 +21,10 @@ export const UI_TEXT = {
     filterSeason: '季節', filterHabitat: '生育地', noResults: '該当するキノコが見つかりません',
     season: 'シーズン', habitat: '生育地', regions: '分布地域', features: '形態的特徴',
     description: '概要', similarSpecies: '似ている種', caution: '注意事項',
+    cautionLabel: '注意事項',
+    cooking: '調理・保存',
+    firstAid: '中毒症状・応急処置',
+    sources: '出典・ライセンス',
     treeAssociation: '関連する樹種', seasonCalendarTitle: 'シーズンカレンダー',
     myRecords: '自分の採取記録', noRecords: 'この種の採取記録はありません',
     googleImageSearch: 'Google で画像を検索',
@@ -141,6 +145,10 @@ export const UI_TEXT = {
     matched: '一致',
     changeConditions: '条件を変える',
     goToDetailIdentify: '詳細識別へ',
+    // Phase 13-F: 簡易識別 一時停止
+    simpleSuspendedTitle: '準備中',
+    simpleSuspendedDescription: '簡易識別は v2 データ移行に伴い一時停止しています。順次再開予定です。AI 識別は引き続きご利用いただけます。',
+    simpleSuspendedCTA: 'AI 識別を使う',
   },
   plan: {
     title: '採取計画',
@@ -207,6 +215,15 @@ export const UI_TEXT = {
   },
   settings: {
     title: '設定',
+    // Phase 13-F: お知らせ
+    noticeSection: 'お知らせ',
+    noticeV2Title: 'v2.0 — データ刷新',
+    noticeV2Body: '2026 年 4 月、出典付き・人間レビュー済みの 60 種で図鑑を作り直しました。v1 で報告のあったハルシネーション疑い種を排除するための再構築です。収録種は順次拡充されます。',
+    noticeMigrationLabel: 'データ整合の結果',
+    noticeMigrationBookmarks: '栞: {n} 件削除（参照先消失）',
+    noticeMigrationRecords: '記録: {n} 件の種紐付けをリセット（記録自体は残ります）',
+    noticeMigrationNoChange: '影響なし（v2 種のみ参照していた、または記録なし）',
+    noticeMigrationRanAt: '実行日時:',
     appInfo: 'アプリ情報',
     appName: 'MycoNote',
     appDescription: 'キノコ採取・観察ハンドブック',
@@ -243,6 +260,12 @@ export const UI_TEXT = {
     importErrorFormat: 'ファイル形式が不正です',
     importErrorVersion: 'このバージョンのバックアップファイルには対応していません',
     importErrorInvalid: 'データ形式が不正です。正しいバックアップファイルを選択してください',
+  },
+  // Phase 13-F: 起動時バナー
+  banner: {
+    v2Title: 'データを刷新しました',
+    v2Body: '2026 年 4 月、出典付き・人間レビュー済みの 60 種で図鑑を作り直しました。収録種は順次拡充されます。詳細は設定 > お知らせをご覧ください。',
+    dismiss: '閉じる',
   },
   common: {
     loading: '読み込み中...', error: 'エラーが発生しました',
