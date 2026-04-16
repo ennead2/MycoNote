@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": []
+  },
+  "season": [
+    { "start_month": 9, "end_month": 11 }
+  ],
+  "habitat": ["林内"],
+  "regions": ["日本"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "オオツガタケはフウセンタケ科フウセンタケ属に分類されるきのこで、大菌輪の記録では国内観測 61 件、海外観測 1,501 件とされる。欧米では比較的よく記録される種で、国内では日本各地のきのこ愛好者サイトで言及される程度にとどまる。食毒についての国内一次資料の記述は乏しく、本サイトでは慎重な取り扱いを前提に整理している [1]。",
+  "features": "大菌輪により、和名オオツガタケ、同物異名として二つの属名に基づく旧称が記録されている。国内における形態・発生期・共生樹種の一次記述は本記事が参照したソース内には示されておらず、詳細は不明。国内愛好者サイトや海外アトラスのリンク集が知見の中心であり、秋のきのこ狩りシーズンに林内で見出されるとの一般的な位置づけにとどまる [1][2]。",
+  "cooking_preservation": "国内向け一次資料に本種固有の食べ方・保存法の記述が確認できないため、和食文脈での具体的な調理・保存の記述は控える。野生のきのこについては食毒を安易に自己判断せず、きのこアドバイザーや専門機関の判断を仰ぐことが最良とされる。採取時は個体の状態・発生環境・類似種との混同に留意し、加熱調理を前提としたうえで少量で試すなどの慎重な取り扱いが望ましい [2]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    {
+      "name": "大菌輪「Cortinarius claricolor」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Cortinarius_claricolor_225011.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "林野庁「きのこのはなし」",
+      "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/",
+      "license": "政府標準利用規約 2.0"
+    }
+  ],
+  "notes": "wikipediaJa・wikipediaEn・mhlw・traitCircus は null（gate fail force_include）。主情報源は大菌輪（和名・学名・分類・synonyms・観測数）[1] と林野庁きのこのはなし（野生きのこの一般指針）[2]。本種固有の形態・発生期・共生樹種・食文化の国内一次記述がソース内に確認できなかったため、habitat は林内のみ、tree_association / similar_species / aliases は空、season は rinya の『秋のきのこ狩りシーズン』に準拠して 9〜11 月を保守的に記載。safety=edible のため cooking_preservation は記載必須であり、具体記述が不能な分を林野庁の一般指針で補った（自己判断回避・専門機関相談）。poisoning_first_aid・caution は edible 規則により null。"
+}

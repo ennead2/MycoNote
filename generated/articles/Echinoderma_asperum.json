@@ -1,0 +1,37 @@
+{
+  "names": {
+    "aliases": ["鬼茸"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["雑木林", "林床", "庭園", "公園", "道端"],
+  "regions": ["日本", "ヨーロッパ", "北米", "北アフリカ", "オーストラリア", "ニュージーランド"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "テングタケ属", "note": "本種はイボが暗褐色で尖り、毒成分不明な点が異なる" }
+  ],
+  "description": "オニタケは、傘の表面に角のような暗褐色の尖ったイボを多数つける中型のキノコで、和名の由来もこの特徴にある。全世界に分布し、日本では雑木林の林床や庭園・公園の花壇、人家付近の道端など腐植土に好んで発生する。日本では昔から食用とはされてこず、消化器系の中毒症状を起こす毒を持つとされ毒キノコに分類されるが、有毒成分は不明で、美味しいとする資料もあり諸説混在している [1][2]",
+  "features": "子実体は傘と柄からなる。傘は径7〜10センチメートルで、幼菌時は円錐形、のち丸山形からまんじゅう形となり、成菌で中央が中高の扁平となる。表面は黄褐色から赤褐色の繊維に覆われ、先のとがった暗褐色のいぼが多数つくが落ちやすい。生長すると表皮が割れ地肌がのぞく。裏のひだは白色で密、分岐しやや幅広く、柄に離生する。胞子紋は白色。柄は高さ8〜10センチメートルで中空、ほぼ上下同大だが根元はやや膨らむ。膜質の大きなツバがあり、ツバから下は淡褐色でりん片を帯び、上は白色。肉は白色でやや厚く不快な匂いがある。腐植菌で、子実体は夏から秋に発生する [1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "消化器系の中毒症状を起こす毒を持つとされ、食用不可。テングタケ属の致命的な有毒種と誤認の恐れもある [1][2]",
+  "sources": [
+    {
+      "name": "Wikipedia ja「オニタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "Wikipedia en「Echinoderma asperum」",
+      "url": "https://en.wikipedia.org/wiki/Echinoderma_asperum",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Echinoderma asperum」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Echinoderma_asperum_354364.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "Wikipedia ja を主情報源、en を類似種・海外分布の補助、daikinrin を学名カノニカル。season は ja の「夏から秋」を 6-10 月と解釈。tree_association は ja に特定樹種の記載がなく空配列。safety=unknown のため V6 規則に従い poisoning_first_aid は null とし、警告は caution に集約。mhlw/traitCircus データなし。aliases は ja 記載の漢字表記「鬼茸」のみ。"
+}

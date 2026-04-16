@@ -1,0 +1,25 @@
+{
+  "names": {
+    "aliases": ["黄金膠茸"]
+  },
+  "season": [
+    { "start_month": 1, "end_month": 12 }
+  ],
+  "habitat": ["広葉樹の枯枝", "広葉樹林", "雨天後"],
+  "regions": ["日本", "ユーラシア", "アフリカ", "オーストラリア", "南北アメリカ"],
+  "tree_association": ["カシ", "ヤナギ", "広葉樹"],
+  "similar_species": [
+    { "ja": "ハナビラニカワタケ", "note": "同じニカワ質だが色が淡く形態が花弁状で識別される [1]" }
+  ],
+  "description": "シロキクラゲ科シロキクラゲ属のキノコで、その名の通り膠（にかわ）のように軟質で光沢のある黄白色から黄色の子実体を付ける。形はシワのよった花びらに似て球形の塊をなす。世界的に広く分布するごく有り触れたキノコであり、シロキクラゲ属の基準種として位置づけられる。日本国内でも観察されるが、国内食文化上の位置づけは限定的で、食毒に関する確たる情報は乏しい [1][2]。",
+  "features": "子実体は膠質で軟らかく光沢があり、黄白色または黄色を呈する。形はシワのよった花びら状で、球形の塊となる。カシやヤナギなどの広葉樹の枝または枯枝に活着し、キウロコタケ（Peniophora 属の仲間）と結びついて樹皮を破って花びら状に成長する。担子器は類球形で2〜4細胞からなり、シロキクラゲ目に共通する縦隔壁によって分割される。性接合物質としてトレメロゲン A-10・a-13 が東京大学農学部により発見されている。雨天時に発生し、乾燥すると薄い膜状に縮み、再び降雨で復活する [1][2]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「コガネニカワタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%83%8B%E3%82%AB%E3%83%AF%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "Wikipedia en「Tremella mesenterica」", "url": "https://en.wikipedia.org/wiki/Tremella_mesenterica", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Tremella mesenterica」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Tremella_mesenterica_350980.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa を主情報源とし、発生・形態・性接合物質記述を採用。海外分布および雨天後発生・通年性は wikipediaEn を補助利用し、国内季節情報が乏しいため season は 1〜12 月を1期で記し V13 warning は許容。国内日本語別名は漢字表記『黄金膠茸』のみで、海外 common name は aliases から除外。safety=unknown のため cooking_preservation/poisoning_first_aid/caution は null（V6 規則遵守）。類似種はwikipediaJa 関連項目からハナビラニカワタケのみ採用（キウロコタケは宿主のため除外）。分類・synonym・国内外観察数は daikinrin で裏取り。"
+}

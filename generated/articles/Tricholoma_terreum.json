@@ -1,0 +1,25 @@
+{
+  "names": {
+    "aliases": ["熊占地", "熊湿地"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 12 }
+  ],
+  "habitat": ["雑木林", "アカマツ林", "モミ林", "針葉樹林", "里山"],
+  "regions": ["日本", "北半球温帯以北", "オーストラリア"],
+  "tree_association": ["アカマツ", "モミ"],
+  "similar_species": [
+    { "ja": "ハマシメジ", "note": "海岸の針葉樹林に発生し、大きさや形がよく似る" }
+  ],
+  "description": "キシメジ科キシメジ属に属する中型のキノコで、里山の雑木林やアカマツ・モミなどの針葉樹林内の地上に、夏から晩秋、ときに初冬まで発生する菌根性の共生菌。傘表面は暗灰色から暗褐色で黒い綿毛が密生しフェルト状となり、ヒダは灰白色から灰色でやや疎らに配列する。日本国内ではかつてより食用キノコの一つとされてきたが、近年は海外で毒性成分に関する論争があり、取り扱いに注意を要する [1][2]。",
+  "features": "子実体は傘と柄からなり、傘の径は4〜8cmで最初はまんじゅう形、のちに中高の扁平に開く。傘表面は暗灰色から暗褐色でしばしば中央部がやや濃色、黒い綿毛が密生してフェルト状から細かい鱗片状となる。ヒダは灰白色から灰色でやや疎らに配列し、柄に対して湾生または垂生する。柄は中実、長さ3〜8cm・太さ1〜2cmの円柱状で、表面は白色から薄い灰色、基部はやや細くなり土がつく。肉は灰白色。担子胞子は6〜8×4〜6μmの広楕円形で非アミロイド性、胞子紋は白色。里山の雑木林やアカマツ・モミの針葉樹林内の地上に、夏から晩秋、ときに初冬まで発生する [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "海外で横紋筋融解症を誘発する毒性成分の指摘と否定の論争があり、食毒判断には慎重を要する [2]。",
+  "sources": [
+    { "name": "Wikipedia ja「クマシメジ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%9E%E3%82%B7%E3%83%A1%E3%82%B8", "license": "CC BY-SA 4.0" },
+    { "name": "Wikipedia en「Tricholoma terreum」", "url": "https://en.wikipedia.org/wiki/Tricholoma_terreum", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Tricholoma terreum」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Tricholoma_terreum_216171.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa を主情報源とし、分類・synonym・国内外観察数は大菌輪で裏取り。ja では食用扱いだが en に 2014 年毒性指摘と 2016/2024 年の否定論文が記載され論争があるため、safety=unknown として cooking_preservation/poisoning_first_aid を null、caution に論争を集約。季節『夏から晩秋、ときに初冬』は 7〜12 月に翻訳（V13 warning 覚悟）。aliases は ja 記載の漢字表記『熊占地・熊湿地』を日本語のみ採用。regions は ja の『日本各地・北半球温帯以北・オーストラリア』記述を引用。"
+}

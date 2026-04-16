@@ -1,0 +1,28 @@
+{
+  "names": { "aliases": [] },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["林内"],
+  "regions": ["日本"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "カブラアセタケはアセタケ科に属する小型の有毒きのこで、柄の基部が球根状に膨らむ形状から「蕪（かぶ）」の名を冠して呼ばれる。国内の観測記録は 47 件と少なく、海外では 5,427 件の記録があり、欧米を中心に広く分布する種である。国内では食用適性はなく、毒きのことして扱われる [1]。",
+  "features": "大菌輪のデータでは国内観測 47 件、海外観測 5,427 件と記録される。本種は林内に発生するが、国内における詳細な形態・発生期・共生樹種の一次記述はソース内に乏しい。秋を中心とした発生期に林内で見出される小型のアセタケ類であり、胞子が星形の突起をもつ点が学名の由来とされる [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "アセタケ属に共通するムスカリン中毒の危険があり、摂食後おおむね 15〜30 分の短い潜伏時間ののち、著しい流涎・流涙・発汗・縮瞳・腹痛・嘔吐・下痢などコリン作動性症状を呈する。重症例では血圧低下・徐脈・呼吸困難に至る。誤食した場合は直ちに医療機関を受診し、残った個体や吐瀉物を持参して鑑別に供する。対症療法が基本で、特異的解毒剤としてアトロピンが用いられる。野生きのこの食毒は安易に自己判断せず、専門機関の判断を仰ぐことが推奨される [2]。",
+  "caution": "有毒。誤食によりムスカリン中毒を起こすおそれがあるため食用にしてはならない [1][2]。",
+  "sources": [
+    {
+      "name": "大菌輪「Inocybe asterospora」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Inocybe_asterospora_218456.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "林野庁「きのこのはなし」",
+      "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/",
+      "license": "政府標準利用規約 2.0"
+    }
+  ],
+  "notes": "wikipediaJa・wikipediaEn・mhlw・traitCircus は null。主情報源は大菌輪（分類・和名・学名・synonyms・観測数）[1] と林野庁きのこのはなし（野生きのこ誤食回避の一般指針）[2]。本種固有の形態・発生期・共生樹種の詳細が国内一次資料で確認できなかったため、similar_species / tree_association / aliases は空とし、habitat は林内のみに留めた。季節は Inocybe 属の一般的な秋期を 7〜10 月で保守的に記載し、細部は notes に明示。poisoning_first_aid は属レベルのムスカリン中毒に対する林野庁の一般指針（専門機関の判断を仰ぐ）に基づく保守記述。"
+}
