@@ -1,0 +1,24 @@
+{
+  "names": { "aliases": ["シロトマヤタケ"] },
+  "season": [
+    { "start_month": 6, "end_month": 11 }
+  ],
+  "habitat": ["針葉樹林", "広葉樹林", "路傍", "裸地", "林床"],
+  "regions": ["日本", "ヨーロッパ", "北アメリカ"],
+  "tree_association": ["マツ", "ダグラスモミ", "オーク", "カシ"],
+  "similar_species": [
+    { "ja": "ウスムラサキアセタケ（var. lilacina）", "note": "全体が淡紫色を帯び、傘頂と柄基部が黄褐色を帯びる [2]" },
+    { "ja": "Inocybe umbratica", "note": "肉眼識別は困難で顕微鏡観察が必要 [2]" },
+    { "ja": "ムラサキシメジ類（Laccaria amethystina 等）", "note": "var. lilacina と紛らわしいが柄が繊維状で果実臭 [2]" }
+  ],
+  "description": "白色〜クリーム色の小型きのこで、絹状繊維を帯びた傘に中央突起（臍状突起）をもつアセタケの一種。欧州・北米で普通に見られ、針葉樹林・広葉樹林下に夏から秋に発生する。ムスカリンを含有する有毒種として知られ、食用にはならない。淡紫色を帯びる品種 var. lilacina もあり、本種と同様に有毒と扱われる [2]。",
+  "features": "傘は径1〜4cmで、初め円錐形から扁平に開き、中央に明瞭な突起をもつ。表面は白〜クリーム色で絹状の繊維質、老成すると縁が裂けやすい。ヒダは上生で若いときはクリーム色、胞子の成熟に伴い褐色味を帯びる。胞子紋は褐色、胞子はアーモンド形で平滑、およそ9×5μm。柄は高さ1〜6cm・太さ0.3〜0.6cmでつばを欠き、基部にわずかな膨らみをもつ。匂いは弱く、穀粉様・土臭様と形容される。夏〜秋にかけて広葉樹林・針葉樹林の林床、特に路傍や裸地など撹乱地に菌根性として発生する [2]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "ムスカリン中毒を起こす。摂取後15〜30分で著しい唾液分泌、発汗、流涙などコリン作動性症状が現れ、多量では腹痛、激しい吐き気、下痢、視覚異常、呼吸困難を伴う。症状は通常2時間以内に軽快し、譫妄は起こらない。本種のみの摂取による死亡例は報告されていない。特異的解毒剤としてアトロピンが用いられ、発症が早いため摂取直後であれば催吐による胃内容除去も有効とされる。疑わしい場合は医療機関を受診し、残った個体や吐物を持参して鑑別に供する [2]。",
+  "caution": "ムスカリンを含み有毒。小型のため見過ごされやすいが誤食すれば強いコリン作動性症状を引き起こす [2]。",
+  "sources": [
+    { "name": "大菌輪「Inocybe geophylla」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Inocybe_geophylla_192709.html", "license": "CC BY 4.0" },
+    { "name": "Wikipedia en \"Inocybe geophylla\"", "url": "https://en.wikipedia.org/wiki/Inocybe_geophylla", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "wikipediaJa・mhlw・traitCircus は null のため、分類・分布・学名は daikinrin[1]、形態・生態・毒性記述は wikipediaEn[2] を主情報源とした。daikinrin の canonical 和名は『シロトマヤタケ』で、入力指定の『ウスムラサキアセタケ』は淡紫色品種 var. lilacina に相当する通称のため、aliases に『シロトマヤタケ』を収めた。発生期は wikipediaEn の『summer and autumn』を国内慣用の 6〜11 月に翻訳。"
+}

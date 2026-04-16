@@ -1,0 +1,24 @@
+{
+  "names": { "aliases": [] },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["広葉樹の生木", "広葉樹の枯木", "樹幹", "稀に針葉樹"],
+  "regions": ["ヨーロッパ", "北アメリカ（ロッキー山脈以東）", "地中海地域"],
+  "tree_association": ["コナラ属", "サクラ属", "ナシ属", "ポプラ属", "ヤナギ属", "ハリエンジュ属", "ブナ属"],
+  "similar_species": [
+    { "ja": "Laetiporus persicinus", "note": "外観が類似するが近縁別種で、識別には顕微鏡的特徴が必要" },
+    { "ja": "Laetiporus huroniensis", "note": "ツガ類に発生する近縁種で、食べて激しい症状を起こす例がある" },
+    { "ja": "Laetiporus gilbertsonii", "note": "ユーカリに発生する近縁種で、食べて激しい症状を起こす例がある" }
+  ],
+  "description": "子実体が樹幹や枝に棚状に重なって生じる多孔菌で、鮮やかな硫黄色から橙色を呈し、古くなると淡い灰白色に褪せる。欧米では若い子実体を食用とする文化があるが、生食は禁忌で、体質や近縁種との混同により嘔吐・発熱などの強い症状を呈する例が約10%の摂食者に報告されている。子実下面はヒダではなく細かな孔で構成され、白い胞子紋を落とす[1]。",
+  "features": "子実体は幹から直接出て、初めこぶ状、のちに扇形の棚状となり重なり合って成長する。1個の棚は幅5〜60cm、厚さ4〜12cmに達し、表面は硫黄色から鮮橙色でスエード状の質感を持つ。古くなると淡黄褐色から白色に褪せる。孔面は硫黄色で微小な孔が並び、白色胞子紋を出す。新鮮時は肉質で強いきのこ臭を放ち黄色がかった透明な汁を滲ませるが、のちに乾燥して脆くなる。ヨーロッパでは4〜11月、北アメリカでは主に8〜10月、早いものは6月から広葉樹（コナラ属・サクラ属・ナシ属・ポプラ属・ヤナギ属・ハリエンジュ属・ブナ属など）の枯木や成木、稀に針葉樹に発生し、心材に褐色立方状腐朽を起こす[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "摂食者のおよそ10%に嘔吐や発熱などの強い胃腸症状が出ると報告されており、これはツガ類やユーカリに生える同属の近縁種との混同が一因と考えられている。生食では胃腸障害の報告があるため、いかなる場合も生で食べてはならない。症状が出た場合は速やかに摂食を中止し、医療機関を受診する。可能であれば摂食した子実体の一部を保存して医師に提示することが望ましい[1]。",
+  "caution": "生食禁忌。加熱しても約10%の人に嘔吐・発熱等の強い症状が出る例が報告されている[1]。",
+  "sources": [
+    { "name": "Wikipedia en「Laetiporus sulphureus」", "url": "https://en.wikipedia.org/wiki/Laetiporus_sulphureus", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Laetiporus sulphureus」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Laetiporus_sulphureus_299348.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa・mhlw・traitCircus が null のため、主情報源は wikipediaEn、canonical 情報は daikinrin を採用。和名アイカワタケは prompt 指定。季節は欧州 4-11 月と北米 6-10 月のうち、共通する発生期として 6-10 月を採用し、notes に経緯を記録。safety=toxic のため cooking_preservation を null、poisoning_first_aid と caution を記入。"
+}

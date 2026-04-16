@@ -1,0 +1,23 @@
+{
+  "names": { "aliases": ["裏紫"] },
+  "season": [
+    { "start_month": 7, "end_month": 11 }
+  ],
+  "habitat": ["林内", "畑地", "庭", "道端"],
+  "regions": ["日本各地", "東南アジア", "ヨーロッパ", "北アメリカ"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "キツネタケ", "note": "子実体の形状と大きさがほぼ同じで、色味で識別する。" }
+  ],
+  "description": "ウラムラサキは小型のキノコで、子実体は学名のように紫水晶を思わせる美しい紫色を帯びるが、色の変異は大きい。傘・ヒダ・柄のいずれもが紫系に染まる姿が特徴的で、夏から秋の林内や道端などで群生する身近な種である。日本では古くから食用とされ、風味にクセがなく歯切れが良いことから、さっと茹でて三杯酢などで供されてきた[1]。ただし海外の知見では土壌のヒ素を蓄積する性質が報告されており、汚染地では食用を避けるべきとされる[2]。[1][2]",
+  "features": "傘の径は1.5〜3 cmで、傘全体は紫色だが乾くと色褪せて淡灰褐色になりやすい。傘表面は帯紫色で縁に条線があり、中央部は窪み周辺は波打つ。裏面のヒダは厚く、柄に対して直生から垂生、疎らに配列し、濃い紫色を保つ。柄は中空で長さ3〜7 cm、太さ0.2〜0.5 cmの円柱状、繊維質で縦筋があり、根元に白い軟毛をつける。担子胞子は径7〜9 μmの類球形で、表面が1〜1.5 μmのトゲ状突起に覆われ非アミロイド性、胞子紋は白色。菌根菌かつアンモニア菌で、夏から秋に林内・畑地・庭・道端などの地上に群生し、動物の糞尿からも生える[1]。[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "本種そのものは本来有毒とはされていないが、ヒ素で汚染された土壌に生えた個体ではヒ素を高濃度に生物濃縮することが知られており、そうした環境で採取したものを食べれば慢性・急性のヒ素中毒を招く恐れがある。ヒ素中毒では嘔吐・下痢・腹痛などの消化器症状や脱水が生じうるため、摂食後に体調不良が出た場合は残品と吐物を保存し、速やかに医療機関を受診すること。汚染が疑われる地域や工場跡地・鉱山跡地周辺で採取された個体は食用に供さない[2]。[2]",
+  "caution": "ヒ素汚染土壌に生えた個体は高濃度のヒ素を蓄積することがあるため、汚染地では食用を避ける[2]。",
+  "sources": [
+    { "name": "Wikipedia ja「ウラムラサキ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD", "license": "CC BY-SA 4.0" },
+    { "name": "Wikipedia en「Laccaria amethystina」", "url": "https://en.wikipedia.org/wiki/Laccaria_amethystina", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Laccaria amethystina」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Laccaria_amethystina_433576.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "safety=toxic 指定のため cooking_preservation は null、poisoning_first_aid を必須として記載。wikipediaJa は本種を食用と記すが、wikipediaEn はヒ素の生物濃縮リスクを明記しており、toxic 指定に整合する後者を毒性根拠として採用。発生期の『夏から秋』は 7〜11 月に翻訳。mhlw は null のため安全情報は wikipediaEn に依拠。tree_association は ja/en とも具体樹種の特定記述が乏しいため空配列とした。"
+}

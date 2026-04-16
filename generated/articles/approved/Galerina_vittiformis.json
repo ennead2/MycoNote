@@ -1,0 +1,26 @@
+{
+  "names": {
+    "aliases": ["ケコガサタケ"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 9 }
+  ],
+  "habitat": ["湿った場所", "コケの間"],
+  "regions": ["温帯域", "北米（西海岸でより普通）"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "Galerina hypnorum", "note": "同属の近似種で肉眼的区別が難しい [2]" },
+    { "ja": "Galerina pumila", "note": "同属の近似種で形質が類似する [2]" },
+    { "ja": "Galerina semilanceata", "note": "同属の近似種で識別に顕微鏡観察が要る [2]" }
+  ],
+  "description": "ケコガサタケは温帯域に広く分布する小型のハラタケ型きのこで、湿った場所のコケの間に発生する。カサは蜂蜜色で条線を帯び、湿時と乾時で色味が変わる吸水性を示す。日本国内での発生記録は少数だが世界的には多数の観察例があり、同属の近似種群と外観がよく似るため識別には注意を要する。毒成分を帯びるグループに属するとされ、食用には供されない。重金属を蓄積する性質が報告されている。[1][2]",
+  "features": "カサは径1cmほどまでの小型で、はじめ鈍円錐形から次第に広い凸型、老成するとほぼ平らになり、しばしば中央に突起を残す。表面は蜂蜜色で条線を帯び、湿時と乾時で色が変わる。ヒダは直生で淡黄褐色からクリーム色を呈し、胞子紋は赤褐色。柄は長さ5cmまで、太さ2mmほどで、淡黄色から栗褐色、初めはわずかに毛羽立ち、つばを欠く。肉は薄く脆い。温帯域に広く分布し、湿った場所のコケの間に発生する。北米では6月から9月ごろに見られ、西海岸ではやや遅い時期にも普通に見られる。[2]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "本種は毒きのこに区分されるため食用にしない。摂食してしまった場合は速やかに医療機関を受診し、残った個体や吐瀉物を持参して専門家の同定を仰ぐのが望ましい。野生きのこの食毒は外観で安易に自己判断せず、きのこアドバイザーや専門機関の判断を仰ぐことが最良の策とされている。症状や潜伏時間、主な毒成分の詳細は本ソースに明示がないため、ここでは記述しない。[1][2]",
+  "caution": "同属には致命的な毒を含む種が知られるため、ケコガサタケ類の摂食は避ける。[1]",
+  "sources": [
+    { "name": "大菌輪「Galerina vittiformis」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Galerina_vittiformis_100238.html", "license": "CC BY 4.0" },
+    { "name": "Wikipedia en「Galerina vittiformis」", "url": "https://en.wikipedia.org/wiki/Galerina_vittiformis", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "wikipediaJa と mhlw が null のため、和名・分類は daikinrin、形態・生態・類似種・分布は wikipediaEn を採用した。season は wikipediaEn の北米6〜9月の記述を数値化（国内発生期の直接記述は得られず notes に記録）。毒性の具体症状・毒成分はソースに明示がないため poisoning_first_aid では一般的対応と専門家相談のみ記述し、caution は同属に猛毒種が知られる旨に留めた。"
+}
