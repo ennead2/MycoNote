@@ -87,7 +87,10 @@
     {
       "scientificName": "Entoloma murrayi",
       "japaneseName": "キイボカサタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "toxic: 主要な毒きのこ",
+      "ja_wiki_source_override": {
+        "title": "キイボカサタケ"
+      }
     },
     {
       "scientificName": "Entoloma quadratum",
@@ -140,9 +143,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Gymnopilus liquiritiae",
-      "japaneseName": "オオワライタケモドキ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "scientificName": "Gymnopilus picreus",
+      "japaneseName": "チャツムタケ",
+      "rationale": "famous_inedible: 頻出する苦味の誤食注意種（旧 G. liquiritiae を置換）"
     },
     {
       "scientificName": "Hypholoma fasciculare",
@@ -186,12 +189,11 @@
     },
     {
       "scientificName": "Lactarius hatsudake",
-      "japaneseName": "アカハツ",
-      "japaneseNames": [
-        "ハツタケ",
-        "アカハツ"
-      ],
-      "rationale": "famous_edible: 採取対象の主要種（ハツタケ/アカハツ統合）"
+      "japaneseName": "ハツタケ",
+      "rationale": "famous_edible: 採取対象の主要種",
+      "ja_wiki_source_override": {
+        "title": "ハツタケ"
+      }
     },
     {
       "scientificName": "Laetiporus sulphureus",
@@ -279,9 +281,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Psilocybe subcaerulipes",
-      "japaneseName": "アイゾメシバフタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "scientificName": "Psilocybe argentipes",
+      "japaneseName": "ヒカゲシビレタケ",
+      "rationale": "toxic: 主要な毒きのこ（幻覚性・シロシビン含有、旧 P. subcaerulipes を置換）"
     },
     {
       "scientificName": "Russula densifolia",
@@ -299,9 +301,9 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Russula nobilis",
+      "scientificName": "Russula neoemetica",
       "japaneseName": "ドクベニダマシ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "toxic: 主要な毒きのこ（旧 R. nobilis、大菌輪正典は neoemetica）"
     },
     {
       "scientificName": "Suillus luteus",
@@ -316,7 +318,7 @@
     {
       "scientificName": "Tricholoma bakamatsutake",
       "japaneseName": "バカマツタケ",
-      "rationale": "toxic: 主要な毒きのこ"
+      "rationale": "famous_edible: 採取対象の主要種（食用・2017 農水省事業で栽培成功）"
     },
     {
       "scientificName": "Tricholoma equestre",
@@ -345,7 +347,7 @@
     },
     {
       "scientificName": "Tricholoma ustaloides",
-      "japaneseName": "カキシメジモドキ",
+      "japaneseName": "ニガシメジ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
