@@ -27,6 +27,52 @@ export function resolveTier0Targets(ranking) {
   return (ranking.species ?? []).filter(s => s.tier === 0);
 }
 
+/**
+ * spec ファイル配列と ranking を突合し、AI 合成対象の target 配列を返す。
+ * 複数 spec を渡すとマージされる（dedupe は scientificName 基準）。
+ *
+ * spec にあり ranking にない種は spec の safety / synonyms から minimal target を組む。
+ * spec.safety が無くて ranking にもない場合は throw。
+ *
+ * @param {object} ranking species-ranking.json 全体
+ * @param {Array<{species: Array<{scientificName: string, japaneseName: string, safety?: string, synonyms?: string[], ja_wiki_source_override?: object}>}>} specs
+ * @returns {Array<object>} target entries
+ */
+export function resolveTargetsFromSpecs(ranking, specs) {
+  const rankingMap = new Map();
+  for (const s of ranking.species ?? []) {
+    rankingMap.set(s.scientificName, s);
+  }
+  const seen = new Set();
+  const targets = [];
+  for (const spec of specs) {
+    for (const entry of spec.species ?? []) {
+      if (seen.has(entry.scientificName)) continue;
+      seen.add(entry.scientificName);
+      const rank = rankingMap.get(entry.scientificName);
+      if (rank) {
+        targets.push({
+          ...rank,
+          japaneseName: entry.japaneseName,
+          ja_wiki_source_override: entry.ja_wiki_source_override ?? rank.ja_wiki_source_override ?? null,
+        });
+      } else {
+        if (!entry.safety) {
+          throw new Error(`spec species missing from ranking and has no safety: ${entry.scientificName}`);
+        }
+        targets.push({
+          scientificName: entry.scientificName,
+          japaneseName: entry.japaneseName,
+          signals: { toxicity: entry.safety },
+          synonyms: entry.synonyms ?? [],
+          ja_wiki_source_override: entry.ja_wiki_source_override ?? null,
+        });
+      }
+    }
+  }
+  return targets;
+}
+
 export function normalizeSafety(toxicity) {
   if (toxicity === 'edible_caution') return 'caution';
   if (toxicity === 'deadly_toxic') return 'deadly';
@@ -60,9 +106,11 @@ export function buildManifestEntry(target, { promptPath, hasCombined }) {
   };
 }
 
-function prepare() {
+function prepare(specPaths = []) {
   const ranking = JSON.parse(readFileSync(RANKING_PATH, 'utf8'));
-  const targets = resolveTier0Targets(ranking);
+  const targets = specPaths.length > 0
+    ? resolveTargetsFromSpecs(ranking, specPaths.map((p) => JSON.parse(readFileSync(p, 'utf8'))))
+    : resolveTier0Targets(ranking);
   mkdirSync(PROMPTS_DIR, { recursive: true });
   mkdirSync(GENERATED_DIR, { recursive: true });
 
@@ -124,11 +172,20 @@ function validate() {
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const mode = process.argv[2];
-  if (mode === '--prepare') prepare();
-  else if (mode === '--validate') validate();
-  else {
-    console.error('Usage: node generate_articles.mjs [--prepare|--validate]');
+  const args = process.argv.slice(2);
+  const specPaths = [];
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--spec' && args[i + 1]) {
+      specPaths.push(args[i + 1]);
+      i++;
+    }
+  }
+  if (args.includes('--prepare')) {
+    prepare(specPaths);
+  } else if (args.includes('--validate')) {
+    validate();
+  } else {
+    console.error('Usage: --prepare [--spec <path> ...]  |  --validate');
     process.exit(1);
   }
 }
