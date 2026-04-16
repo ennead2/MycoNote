@@ -81,8 +81,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_caesareoides.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/143307173/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/328993391/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/220329456/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/555459621/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/428413712/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/550291400/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111944102/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/314190334/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/88157670/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -95,7 +105,18 @@
       "モミ",
       "ツガ"
     ],
-    "notes": "wikipediaJa を主情報源、大菌輪を学名・分類の canonical source として採用。mhlw は null のため参照なし。wikipediaEn は中国・韓国・日本の分布情報のみで ja の分布記述に包含されるため未使用。season は『初夏から秋』を 6〜10 月に翻訳。別名は ja 本文の地方名・旧和名・漢字表記を採録。"
+    "notes": "wikipediaJa を主情報源、大菌輪を学名・分類の canonical source として採用。mhlw は null のため参照なし。wikipediaEn は中国・韓国・日本の分布情報のみで ja の分布記述に包含されるため未使用。season は『初夏から秋』を 6〜10 月に翻訳。別名は ja 本文の地方名・旧和名・漢字表記を採録。",
+    "images_remote_credits": [
+      "(c) heybrows, CC BY-NC",
+      "(c) allansander, CC BY-NC",
+      "(c) yah_japan, CC BY-NC",
+      "(c) tatjana_koroteeva05, CC BY-NC",
+      "(c) wataru_tricho, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) jwoodjapan, CC BY-NC",
+      "(c) dvm20, CC BY-NC",
+      "(c) belvedere04, CC BY"
+    ]
   },
   {
     "id": "amanita_ceciliae",
@@ -166,8 +187,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_ceciliae.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/567870750/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/437899938/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246940030/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/390485984/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/205522454/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/325501407/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/400871820/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/564092958/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/461619529/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -176,7 +207,18 @@
       "コナラ",
       "シイ"
     ],
-    "notes": "wikipediaJa を主情報源とし、分類・synonym は大菌輪で裏取り。safety=toxic 指定に従い cooking_preservation は null とし、ja の『毒キノコとして紹介する文献もあり、下痢などの胃腸系の食中毒』記述を poisoning_first_aid の根拠とした。季節『夏から秋』は 7〜10 月に翻訳。regions は ja に国内情報、en に日本・欧州・北米の報告がある旨の補助記述を採用。"
+    "notes": "wikipediaJa を主情報源とし、分類・synonym は大菌輪で裏取り。safety=toxic 指定に従い cooking_preservation は null とし、ja の『毒キノコとして紹介する文献もあり、下痢などの胃腸系の食中毒』記述を poisoning_first_aid の根拠とした。季節『夏から秋』は 7〜10 月に翻訳。regions は ja に国内情報、en に日本・欧州・北米の報告がある旨の補助記述を採用。",
+    "images_remote_credits": [
+      "(c) peter_csonka, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) federicocalledda, CC BY-NC",
+      "(c) jelenaflg, CC BY-NC",
+      "(c) nidab, CC BY-NC",
+      "(c) andra_temruk, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) naturezoom, CC BY-NC",
+      "(c) mushroomartist, CC BY-NC"
+    ]
   },
   {
     "id": "amanita_ibotengutake",
@@ -242,8 +284,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_ibotengutake.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100090452/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322009603/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/326914492/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/452180253/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/547440056/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/610155729/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/245205672/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/568540598/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/450483573/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -252,7 +304,18 @@
       "トドマツ",
       "マツ科針葉樹"
     ],
-    "notes": "wikipediaJa を主情報源とし、分類・学名・分布は daikinrin で裏付け。mhlw は null のため毒性記述は ja の「毒性」節を採用。season は ja の「夏から秋」を 7〜10 月に翻訳。habitat/tree は ja の針葉樹林・トウヒ・トドマツ記述に基づく。safety=toxic のため cooking_preservation は null。"
+    "notes": "wikipediaJa を主情報源とし、分類・学名・分布は daikinrin で裏付け。mhlw は null のため毒性記述は ja の「毒性」節を採用。season は ja の「夏から秋」を 7〜10 月に翻訳。habitat/tree は ja の針葉樹林・トウヒ・トドマツ記述に基づく。safety=toxic のため cooking_preservation は null。",
+    "images_remote_credits": [
+      "(c) iruru, CC BY-NC",
+      "(c) harleyg, CC BY-NC",
+      "(c) hiroko_s, CC BY-NC",
+      "(c) stevelyn, CC BY-NC",
+      "(c) fumio2, CC BY-NC",
+      "(c) higuchi_maimi, CC BY-NC",
+      "(c) wataru_tricho, CC BY-NC",
+      "(c) hyenaleen, CC BY-NC",
+      "(c) timur_kalininsky, CC BY"
+    ]
   },
   {
     "id": "amanita_muscaria",
@@ -368,8 +431,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_muscaria.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2937852/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/170021491/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/350440762/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/38820676/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100564277/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/588941383/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/240998307/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/328503181/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12199441/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -382,7 +455,18 @@
       "モミ属",
       "トウヒ属"
     ],
-    "notes": "wikipediaJa を主情報源に採用。季節は『夏から秋』を 7-10 月と解釈。mhlw text は文字化けのため URL のみ引用し、中毒症状は wikipediaJa の中毒症状節と整合させて併記。daikinrin は学名・分類・和名 canonical として利用。cooking_preservation は safety=toxic に従い null。"
+    "notes": "wikipediaJa を主情報源に採用。季節は『夏から秋』を 7-10 月と解釈。mhlw text は文字化けのため URL のみ引用し、中毒症状は wikipediaJa の中毒症状節と整合させて併記。daikinrin は学名・分類・和名 canonical として利用。cooking_preservation は safety=toxic に従い null。",
+    "images_remote_credits": [
+      "(c) elephantmom, CC BY-NC",
+      "(c) wildflower729, CC BY-NC",
+      "(c) yaktilhinilhmono, CC BY-NC",
+      "(c) toddfox, CC BY-NC",
+      "(c) gratefulal, CC BY-NC",
+      "(c) srhanks41, CC BY-NC",
+      "(c) allthingsfungi, CC BY-NC",
+      "(c) yasmeene, CC BY-NC",
+      "(c) leptonia, CC BY-NC"
+    ]
   },
   {
     "id": "amanita_pantherina",
@@ -474,8 +558,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_pantherina.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235995059/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/165670015/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/284201275/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/102778756/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/6186885/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/72763987/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235268091/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/348537986/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238066046/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -485,7 +579,18 @@
       "クロマツ",
       "アカマツ"
     ],
-    "notes": "wikipediaJa を主情報源として description/features/類似種/中毒症状を構成、学名・分類・synonyms は大菌輪で補強。季節は wikipediaJa『初夏から秋』を 6〜10 月に翻訳。mhlw は本文が文字化けのため参照せず wikipediaJa の中毒記述を採用。tree_association は wikipediaJa 記載の 4 樹種のみ採録。"
+    "notes": "wikipediaJa を主情報源として description/features/類似種/中毒症状を構成、学名・分類・synonyms は大菌輪で補強。季節は wikipediaJa『初夏から秋』を 6〜10 月に翻訳。mhlw は本文が文字化けのため参照せず wikipediaJa の中毒記述を採用。tree_association は wikipediaJa 記載の 4 樹種のみ採録。",
+    "images_remote_credits": [
+      "(c) irena9, CC BY-NC",
+      "(c) donalddavesne, CC BY",
+      "(c) yusufcanbulat, CC BY-NC",
+      "(c) initial_presence, CC BY",
+      "(c) damontighe, CC BY-NC",
+      "(c) sebsant, CC BY-NC",
+      "(c) naturalmao, CC BY-NC",
+      "(c) julian_alonso, CC BY-NC",
+      "(c) marco_vicariotto, CC BY-NC-ND"
+    ]
   },
   {
     "id": "amanita_porphyria",
@@ -560,8 +665,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_porphyria.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/42740741/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/90267781/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/557513201/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/445170495/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/574345283/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/315933564/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/576033026/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/237173779/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/327247720/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -571,7 +686,18 @@
       "ツガ属",
       "カバノキ属"
     ],
-    "notes": "wikipediaJa と mhlw が null のため、和名・学名・分類・国内産出の事実は daikinrin を、形態・生態・類似種情報は wikipediaEn を主情報源として採用した。発生季節は英語版の『summer to autumn』を7〜10月に翻訳。具体的毒成分・中毒症状は一次ソース内に記載がなく、推測を避けて『確認できなかった』旨と一般的応急措置を記述。別名・方言名はソースに無いため空配列。"
+    "notes": "wikipediaJa と mhlw が null のため、和名・学名・分類・国内産出の事実は daikinrin を、形態・生態・類似種情報は wikipediaEn を主情報源として採用した。発生季節は英語版の『summer to autumn』を7〜10月に翻訳。具体的毒成分・中毒症状は一次ソース内に記載がなく、推測を避けて『確認できなかった』旨と一般的応急措置を記述。別名・方言名はソースに無いため空配列。",
+    "images_remote_credits": [
+      "(c) old_timer, CC BY-NC",
+      "(c) denis_ivanov, CC BY-NC",
+      "(c) al_fa, CC BY-NC",
+      "(c) d_feather, CC BY-NC",
+      "(c) rlebeuf, CC BY-NC",
+      "(c) hyphalrevival, CC BY-NC",
+      "(c) aaronjhilliard, CC BY-NC",
+      "(c) djgwild, CC BY",
+      "(c) mushroomphotography, CC BY-NC-ND"
+    ]
   },
   {
     "id": "amanita_rubescens",
@@ -658,8 +784,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_rubescens.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2411680/medium.JPG",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/177279901/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/404927246/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/56224138/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/101088413/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/334420454/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/297395003/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/81358544/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/52211342/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -669,7 +805,18 @@
       "ブナ",
       "コナラ"
     ],
-    "notes": "和名はプロンプトで『イロガワリテングタケ』とされたが、wikipediaJa・大菌輪ともに正典は『ガンタケ』のため aliases に漢字表記と和名を収めた。season は wikipediaJa『夏から秋』と wikipediaEn『June〜November』から 6〜11月の単一期とした。mhlw・traitCircus は null のため不使用。safety=toxic につき cooking_preservation は null。"
+    "notes": "和名はプロンプトで『イロガワリテングタケ』とされたが、wikipediaJa・大菌輪ともに正典は『ガンタケ』のため aliases に漢字表記と和名を収めた。season は wikipediaJa『夏から秋』と wikipediaEn『June〜November』から 6〜11月の単一期とした。mhlw・traitCircus は null のため不使用。safety=toxic につき cooking_preservation は null。",
+    "images_remote_credits": [
+      "(c) jakob, CC BY-NC",
+      "(c) arbiess, CC BY-NC",
+      "(c) xavsis, CC BY-NC",
+      "(c) jonathan520, CC BY-NC",
+      "(c) aliaska, CC BY-NC",
+      "(c) maremimar, CC BY-NC-SA",
+      "(c) vasyliuk1, CC BY",
+      "(c) blankamatznerova, CC BY-NC",
+      "(c) charmedlife, CC BY-NC"
+    ]
   },
   {
     "id": "amanita_virgineoides",
@@ -742,8 +889,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/amanita_virgineoides.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249200800/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/317001995/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/41893774/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/466303269/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/582496818/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/304410560/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/430629233/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111944104/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/587356165/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Amanita"
     },
@@ -759,7 +916,18 @@
       "モミ",
       "ヒマラヤスギ"
     ],
-    "notes": "wikipediaJa を主情報源とし、分布・学名は daikinrin で補強。season は『夏から秋』を 7〜10月に翻訳。mhlw は null のため安全区分 toxic は wikipediaJa の有毒可能性記述に基づき維持。wikipediaEn の形態値は ja と概ね一致するため ja を優先採用。"
+    "notes": "wikipediaJa を主情報源とし、分布・学名は daikinrin で補強。season は『夏から秋』を 7〜10月に翻訳。mhlw は null のため安全区分 toxic は wikipediaJa の有毒可能性記述に基づき維持。wikipediaEn の形態値は ja と概ね一致するため ja を優先採用。",
+    "images_remote_credits": [
+      "(c) geologyistheway, CC BY",
+      "(c) hikasukepon, CC BY-NC",
+      "(c) kokaho, CC BY-NC",
+      "(c) onidiras, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) lemonhuang, CC BY",
+      "(c) masa_i, CC BY-NC",
+      "(c) jwoodjapan, CC BY-NC",
+      "(c) weitingliu, CC BY"
+    ]
   },
   {
     "id": "boletus_edulis",
@@ -875,8 +1043,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/boletus_edulis.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2573715/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/233237642/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5589742/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/194233905/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/119297000/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/168896469/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5573289/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/258777617/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/49391648/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Boletus"
     },
@@ -887,7 +1065,18 @@
       "モミ",
       "ツガ"
     ],
-    "notes": "和名は Wikipedia ja と大菌輪に従い「ヤマドリタケ」として扱った（プロンプト記載の「ナツヤマドリ」は採用せず aliases にも含めない）。season は ja の「夏から秋」を 7〜10 月に翻訳。regions は ja の国内記述（北海道・青森）を優先し、海外分布は en で補足。similar_species は ja の記載範囲に限定。mhlw は null のため中毒情報は記載しない。"
+    "notes": "和名は Wikipedia ja と大菌輪に従い「ヤマドリタケ」として扱った（プロンプト記載の「ナツヤマドリ」は採用せず aliases にも含めない）。season は ja の「夏から秋」を 7〜10 月に翻訳。regions は ja の国内記述（北海道・青森）を優先し、海外分布は en で補足。similar_species は ja の記載範囲に限定。mhlw は null のため中毒情報は記載しない。",
+    "images_remote_credits": [
+      "(c) damontighe, CC BY-NC",
+      "(c) carita, CC BY-NC-ND",
+      "(c) alan_rockefeller, CC BY",
+      "(c) arripis, CC BY-NC-SA",
+      "(c) reiner, CC BY-NC-SA",
+      "(c) erikoid, CC BY-NC",
+      "(c) stephen_sikes, CC BY",
+      "(c) jeremyhegge, CC BY-NC",
+      "(c) giorgio_bardelli, CC BY-NC"
+    ]
   },
   {
     "id": "boletus_sensibilis",
@@ -930,8 +1119,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/boletus_sensibilis.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/91565837/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/233869852/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/86710031/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/85341379/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/235410395/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/24100401/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322510886/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/419455026/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13079312/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Boletus"
     },
@@ -939,7 +1138,18 @@
       "オーク類",
       "ブナ類"
     ],
-    "notes": "wikipediaJa と mhlw が null のため、description/features/poisoning_first_aid は wikipediaEn の記述のみを根拠とし、分布と樹種も en 準拠（北米中心）。daikinrin からは和名・学名・シノニムのみ採用。国内発生記録は daikinrin で domestic=23 と少なく、季節は en の『fall and summer』を暫定的に 6〜10 月と解釈した。類似種 Baorangia bicolor と Boletus pseudosensibilis は和名が資料に示されていないため similar_species から除外した。"
+    "notes": "wikipediaJa と mhlw が null のため、description/features/poisoning_first_aid は wikipediaEn の記述のみを根拠とし、分布と樹種も en 準拠（北米中心）。daikinrin からは和名・学名・シノニムのみ採用。国内発生記録は daikinrin で domestic=23 と少なく、季節は en の『fall and summer』を暫定的に 6〜10 月と解釈した。類似種 Baorangia bicolor と Boletus pseudosensibilis は和名が資料に示されていないため similar_species から除外した。",
+    "images_remote_credits": [
+      "(c) kristofz, CC BY",
+      "(c) mycoprof, CC BY-NC",
+      "(c) tristans, CC BY-NC",
+      "(c) noah_siegel, CC BY-NC-SA",
+      "(c) fascinatedbyfungi, CC BY-NC",
+      "(c) johnplischke, CC BY-NC",
+      "(c) enrique_flores_garcia_14, CC BY-NC",
+      "(c) paganka, CC BY",
+      "(c) mycowalt, CC BY-NC-SA"
+    ]
   },
   {
     "id": "chlorophyllum_molybdites",
@@ -1029,12 +1239,33 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/chlorophyllum_molybdites.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4619027/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/165206944/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/104040397/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/317178080/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/89349010/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55300704/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/25064721/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/43530759/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/24124340/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Chlorophyllum"
     },
-    "notes": "wikipediaJa を主情報源とし、学名・分類・シノニムは daikinrin で裏付けた。発生期は ja の「晩春から秋（あるいは夏から秋）」を 5〜11 月に翻訳。海外分布（北米、豪州、キプロス、スコットランド、マレーシア）は wikipediaEn から補助的に追加。mhlw は null のため採用せず。tree_association は腐生性のため []。"
+    "notes": "wikipediaJa を主情報源とし、学名・分類・シノニムは daikinrin で裏付けた。発生期は ja の「晩春から秋（あるいは夏から秋）」を 5〜11 月に翻訳。海外分布（北米、豪州、キプロス、スコットランド、マレーシア）は wikipediaEn から補助的に追加。mhlw は null のため採用せず。tree_association は腐生性のため []。",
+    "images_remote_credits": [
+      "(c) yorch, CC BY-NC",
+      "(c) crystal_rust, CC BY-NC",
+      "(c) axelemilio, CC BY-NC",
+      "(c) grinnin, CC BY-NC",
+      "(c) sbmarchuk, CC BY-NC",
+      "(c) douggoldman, CC BY-SA",
+      "(c) snellens, CC BY-NC",
+      "(c) txaggie90, CC BY",
+      "(c) s0nia, CC BY-NC"
+    ]
   },
   {
     "id": "chlorophyllum_neomastoideum",
@@ -1089,12 +1320,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/chlorophyllum_neomastoideum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164175539/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/566178278/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/436478791/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311865777/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164175551/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/436478774/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311230441/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/163565829/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/436478815/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Chlorophyllum"
     },
-    "notes": "wikipediaJa を主情報源とし、分布・学名の canonical を daikinrin で確認。wikipediaEn と mhlw は null のため使用せず。season は『夏から秋』を 7-10 月として数値化。habitat は雑木林・竹藪・草地・地上を採用。tree_association はソースに明示なく空配列。応急措置は一般的な中毒対応として『残品保管・受診』のみソース範囲で記載。"
+    "notes": "wikipediaJa を主情報源とし、分布・学名の canonical を daikinrin で確認。wikipediaEn と mhlw は null のため使用せず。season は『夏から秋』を 7-10 月として数値化。habitat は雑木林・竹藪・草地・地上を採用。tree_association はソースに明示なく空配列。応急措置は一般的な中毒対応として『残品保管・受診』のみソース範囲で記載。",
+    "images_remote_credits": [
+      "(c) balawu, CC BY-NC",
+      "(c) woochanseo, CC BY-NC-SA",
+      "(c) hitomi_yamashita, CC BY-NC",
+      "(c) kwagyoungnam, CC BY-NC",
+      "(c) balawu, CC BY-NC",
+      "(c) hitomi_yamashita, CC BY-NC",
+      "(c) kwagyoungnam, CC BY-NC",
+      "(c) balawu, CC BY-NC",
+      "(c) hitomi_yamashita, CC BY-NC"
+    ]
   },
   {
     "id": "clitocybe_fragrans",
@@ -1156,8 +1408,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/clitocybe_fragrans.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/353450026/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/345843613/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/335992779/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/102320292/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/59194645/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/6628505/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/30375748/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/29026613/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/561321840/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Clitocybe"
     },
@@ -1165,7 +1427,18 @@
       "広葉樹",
       "針葉樹"
     ],
-    "notes": "wikipediaJa と mhlw は null のため未使用。主情報は wikipediaEn、学名・和名・分布件数・分類は daikinrin を採用。季節は en の『August to December』を 8〜12 月に翻訳、北米の 10 月〜翌 2 月は regions 補足に留め欧州記載を season に採用。毒成分の詳細は en に記載がないため具体名に踏み込まず、『類似の致命種と混同リスク + 医療機関受診』に限定して記述した。"
+    "notes": "wikipediaJa と mhlw は null のため未使用。主情報は wikipediaEn、学名・和名・分布件数・分類は daikinrin を採用。季節は en の『August to December』を 8〜12 月に翻訳、北米の 10 月〜翌 2 月は regions 補足に留め欧州記載を season に採用。毒成分の詳細は en に記載がないため具体名に踏み込まず、『類似の致命種と混同リスク + 医療機関受診』に限定して記述した。",
+    "images_remote_credits": [
+      "(c) fresno_mycology, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) jobobsolem, CC BY-NC",
+      "(c) brucen, CC BY-NC-ND",
+      "(c) gyrrlfalcon, CC BY-NC",
+      "(c) ann202, CC BY-NC",
+      "(c) pdvmushroom, CC BY-NC",
+      "(c) anatoliipomortsev, CC BY-NC"
+    ]
   },
   {
     "id": "entoloma_murrayi",
@@ -1228,12 +1501,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/entoloma_murrayi.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/147683863/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/525214603/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/296304847/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/216106746/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/304758856/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/300137703/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/99470729/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/128038904/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/220578022/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Entoloma"
     },
-    "notes": "wikipediaJa を主情報源とし、学名・分類・synonyms は daikinrin を採用。season は ja の「初夏から秋」を 6〜10 月に翻訳。tree_association は ja に具体的樹種記載がなく [] とした。aliases は漢字表記「黄疣傘茸」のみ（ja 由来）。safety=toxic のため cooking_preservation は null。"
+    "notes": "wikipediaJa を主情報源とし、学名・分類・synonyms は daikinrin を採用。season は ja の「初夏から秋」を 6〜10 月に翻訳。tree_association は ja に具体的樹種記載がなく [] とした。aliases は漢字表記「黄疣傘茸」のみ（ja 由来）。safety=toxic のため cooking_preservation は null。",
+    "images_remote_credits": [
+      "(c) richtehan, CC BY-NC",
+      "(c) smpbiologist-agray, CC BY-NC",
+      "(c) myconerd256, CC BY-NC",
+      "(c) mpearlstein, CC BY-NC",
+      "(c) vincentlaurie, CC BY-NC",
+      "(c) bdthomas, CC BY",
+      "(c) julietl, CC BY-NC",
+      "(c) amalycelium, CC BY",
+      "(c) adriennea, CC BY-NC"
+    ]
   },
   {
     "id": "entoloma_quadratum",
@@ -1303,8 +1597,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/entoloma_quadratum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/211549500/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/547297398/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/51048460/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13819263/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320501061/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/137985063/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/334815703/medium.png",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/50671799/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/33631718/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Entoloma"
     },
@@ -1312,7 +1616,18 @@
       "スギ",
       "ヒノキ"
     ],
-    "notes": "wikipediaJa を主情報源として採用。季節は『夏から秋』を 7〜10 月に翻訳。分布は wikipediaJa の列挙（日本・台湾・ニューギニア・マダガスカル・北アメリカ東部/中部）を採用し、wikipediaEn の『Africa, Europe』は ja に記載がないため不採用。mhlw は null のため参照せず。safety=toxic のため cooking_preservation は null、caution は簡潔に付与。"
+    "notes": "wikipediaJa を主情報源として採用。季節は『夏から秋』を 7〜10 月に翻訳。分布は wikipediaJa の列挙（日本・台湾・ニューギニア・マダガスカル・北アメリカ東部/中部）を採用し、wikipediaEn の『Africa, Europe』は ja に記載がないため不採用。mhlw は null のため参照せず。safety=toxic のため cooking_preservation は null、caution は簡潔に付与。",
+    "images_remote_credits": [
+      "(c) maricel-patino, CC BY-NC",
+      "(c) stevilkinevil, CC BY-NC",
+      "(c) just_add_water, CC BY-NC",
+      "(c) williammay1972, CC BY-NC",
+      "(c) joshwalker, CC BY-NC",
+      "(c) ericvandenberghe, CC BY-NC",
+      "(c) hecateusjaguart, CC BY-NC",
+      "(c) andrewpaldrich, CC BY-NC",
+      "(c) erlonbailey, CC BY-SA"
+    ]
   },
   {
     "id": "entoloma_rhodopolium",
@@ -1395,8 +1710,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/entoloma_rhodopolium.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/72070624/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/552445229/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/178548040/medium.png",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161965643/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92048191/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/554780700/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/160685925/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/345285876/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95106310/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Entoloma"
     },
@@ -1411,7 +1736,18 @@
       "モミ属",
       "トウヒ属"
     ],
-    "notes": "主情報源は wikipediaJa。学名・分類・同義名は daikinrin を併用。mhlw はテキストが文字化け（Shift_JIS 誤デコード）のため内容判読不能、wikipediaJa の毒性記述で代用した旨を記録。season は wikipediaJa「夏から晩秋」を 7-11 月に翻訳。毒成分・中毒症状・類似種は wikipediaJa に準拠。2019 年研究で従来の E. rhodopolium は日本では未記載 3 種（E. lacus 等）の総称と判明した旨を description に反映。"
+    "notes": "主情報源は wikipediaJa。学名・分類・同義名は daikinrin を併用。mhlw はテキストが文字化け（Shift_JIS 誤デコード）のため内容判読不能、wikipediaJa の毒性記述で代用した旨を記録。season は wikipediaJa「夏から晩秋」を 7-11 月に翻訳。毒成分・中毒症状・類似種は wikipediaJa に準拠。2019 年研究で従来の E. rhodopolium は日本では未記載 3 種（E. lacus 等）の総称と判明した旨を description に反映。",
+    "images_remote_credits": [
+      "(c) johnplischke, CC BY-NC-SA",
+      "(c) fountainfungi, CC BY-NC",
+      "(c) ctrubo, CC BY-NC",
+      "(c) kem_luther, CC BY-SA",
+      "(c) imix-akbal, CC BY-NC",
+      "(c) fungalfan, CC BY-NC",
+      "(c) roxbogart, CC BY-NC",
+      "(c) matthewherron, CC BY-NC",
+      "(c) aidancampos, CC BY-NC"
+    ]
   },
   {
     "id": "entoloma_sinuatum",
@@ -1501,8 +1837,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/entoloma_sinuatum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111692094/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/244654460/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/567273196/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/441562199/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/325945809/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169787889/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/243212894/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249374380/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/160713058/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Entoloma"
     },
@@ -1513,7 +1859,18 @@
       "カバノキ",
       "ヤナギ"
     ],
-    "notes": "wikipediaJa を主情報源とし、形態・発生生態・食中毒情報はすべて ja ベース。regions は ja に詳細記載がないため wikipediaEn で補足（北米・欧州・アジアの分布）。tree_association の具体樹種（オーク・ブナ・カバノキ・ヤナギ）は wikipediaEn から補った。mhlw は null のため使用せず。ja の「秋」を 9〜11 月に翻訳。"
+    "notes": "wikipediaJa を主情報源とし、形態・発生生態・食中毒情報はすべて ja ベース。regions は ja に詳細記載がないため wikipediaEn で補足（北米・欧州・アジアの分布）。tree_association の具体樹種（オーク・ブナ・カバノキ・ヤナギ）は wikipediaEn から補った。mhlw は null のため使用せず。ja の「秋」を 9〜11 月に翻訳。",
+    "images_remote_credits": [
+      "(c) federicocalledda, CC BY-NC",
+      "(c) felipehidalgo, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) levi7301, CC BY-NC",
+      "(c) bkaounas, CC BY-NC",
+      "(c) tourainefly, CC BY-NC",
+      "(c) susanavpc, CC BY-NC",
+      "(c) radinis, CC BY-NC",
+      "(c) mario_vega, CC BY-NC"
+    ]
   },
   {
     "id": "flammulina_velutipes",
@@ -1619,8 +1976,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/flammulina_velutipes.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/44406720/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/30127145/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2553350/medium.JPG",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5630946/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/293164118/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12188885/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/607072432/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/352420667/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/172534299/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Flammulina"
     },
@@ -1640,7 +2007,18 @@
       "カシ",
       "ユズリハ"
     ],
-    "notes": "主情報源は wikipediaJa。分類・学名・synonyms は daikinrin を canonical source として併用。mhlw は null のため食毒は wikipediaJa のフラムトキシン記述を採用。季節「晩秋から翌年春」を 11-12 月と 1-3 月の 2 区間に分割して数値化（V5 スキーマ準拠、winter-spanning の split 済み）。類似毒キノコはコレラタケのみ記載あり。wikipediaEn は F. filiformis 分離の情報があるが ja が和名エノキタケを F. velutipes として記述するため ja を優先。"
+    "notes": "主情報源は wikipediaJa。分類・学名・synonyms は daikinrin を canonical source として併用。mhlw は null のため食毒は wikipediaJa のフラムトキシン記述を採用。季節「晩秋から翌年春」を 11-12 月と 1-3 月の 2 区間に分割して数値化（V5 スキーマ準拠、winter-spanning の split 済み）。類似毒キノコはコレラタケのみ記載あり。wikipediaEn は F. filiformis 分離の情報があるが ja が和名エノキタケを F. velutipes として記述するため ja を優先。",
+    "images_remote_credits": [
+      "(c) blackangus, CC BY-NC",
+      "(c) nickcarrera, CC BY-NC",
+      "(c) sarahbirdwebb, CC BY-NC-ND",
+      "(c) leannewallis, CC BY-NC",
+      "(c) caroline1426, CC0",
+      "(c) vermfly, CC BY-NC",
+      "(c) mstrege, CC BY-NC",
+      "(c) giannamaria, CC BY-NC",
+      "(c) andypearce, CC BY-NC"
+    ]
   },
   {
     "id": "galerina_fasciculata",
@@ -1823,12 +2201,33 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/galerina_vittiformis.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/334341431/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/426974506/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/441904561/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/241508357/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/1675587/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/428829364/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329864622/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/348315481/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451714320/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Galerina"
     },
-    "notes": "wikipediaJa と mhlw が null のため、和名・分類は daikinrin、形態・生態・類似種・分布は wikipediaEn を採用した。season は wikipediaEn の北米6〜9月の記述を数値化（国内発生期の直接記述は得られず notes に記録）。毒性の具体症状・毒成分はソースに明示がないため poisoning_first_aid では一般的対応と専門家相談のみ記述し、caution は同属に猛毒種が知られる旨に留めた。"
+    "notes": "wikipediaJa と mhlw が null のため、和名・分類は daikinrin、形態・生態・類似種・分布は wikipediaEn を採用した。season は wikipediaEn の北米6〜9月の記述を数値化（国内発生期の直接記述は得られず notes に記録）。毒性の具体症状・毒成分はソースに明示がないため poisoning_first_aid では一般的対応と専門家相談のみ記述し、caution は同属に猛毒種が知られる旨に留めた。",
+    "images_remote_credits": [
+      "(c) betweenthelyons, CC BY-NC",
+      "(c) symbiiotica, CC BY-NC",
+      "(c) grahamsteinruck, CC BY-NC",
+      "(c) bit, CC BY-NC",
+      "(c) cooperj, CC BY",
+      "(c) ym_wang_pnw, CC BY-NC",
+      "(c) mandymushii, CC BY",
+      "(c) maricel-patino, CC BY-NC",
+      "(c) dylantomtaylor, CC BY-NC"
+    ]
   },
   {
     "id": "grifola_frondosa",
@@ -1924,8 +2323,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/grifola_frondosa.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/237749154/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161825137/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/163842830/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234980503/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322334499/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/51841183/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/326688746/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/324317525/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100685845/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Grifola"
     },
@@ -1938,7 +2347,18 @@
       "クリ",
       "スダジイ"
     ],
-    "notes": "プロンプト指定の和名はシロマイタケだが、wikipediaJa・daikinrin ともに Grifola frondosa の和名はマイタケであり、シロマイタケは近縁の Grifola albicans の和名として記述されている。本 JSON は学名 Grifola frondosa に即しマイタケとして合成した。season は ja の「初秋から晩秋」「旬は9-11月」を9-11月に翻訳。海外分布（中国・欧州・北米）は en に記載ありだが regions は日本国内優先とし北半球温帯以北の一般化のみ含めた。mhlw/traitCircus は null のため参照せず。"
+    "notes": "プロンプト指定の和名はシロマイタケだが、wikipediaJa・daikinrin ともに Grifola frondosa の和名はマイタケであり、シロマイタケは近縁の Grifola albicans の和名として記述されている。本 JSON は学名 Grifola frondosa に即しマイタケとして合成した。season は ja の「初秋から晩秋」「旬は9-11月」を9-11月に翻訳。海外分布（中国・欧州・北米）は en に記載ありだが regions は日本国内優先とし北半球温帯以北の一般化のみ含めた。mhlw/traitCircus は null のため参照せず。",
+    "images_remote_credits": [
+      "(c) willoughbyarevalo, CC BY-NC",
+      "(c) juliakmil, CC BY-NC",
+      "(c) brendaconnolly, CC BY-NC",
+      "(c) morelmia, CC BY-NC",
+      "(c) rdegeer, CC BY-NC",
+      "(c) apgarm, CC BY",
+      "(c) noah_siegel, CC BY-NC-SA",
+      "(c) jeffpatch, CC BY-NC",
+      "(c) wearethechampignons, CC BY"
+    ]
   },
   {
     "id": "gymnopilus_aeruginosus",
@@ -1995,8 +2415,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/gymnopilus_aeruginosus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55523565/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13064781/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331932355/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/449344934/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/636024831/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/377523223/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/523353801/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/41104526/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/396347347/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Gymnopilus"
     },
@@ -2005,7 +2435,18 @@
       "広葉樹",
       "竹"
     ],
-    "notes": "wikipediaJa を主情報源とし、分類・学名・分布のフォールバックに daikinrin を併用。季節は「春から秋」を 3〜11 月に翻訳。海外分布（韓国・北米太平洋岸北西部）は wikipediaEn から補助的に追加。mhlw は null のため中毒情報は wikipediaJa の記述に依拠した。"
+    "notes": "wikipediaJa を主情報源とし、分類・学名・分布のフォールバックに daikinrin を併用。季節は「春から秋」を 3〜11 月に翻訳。海外分布（韓国・北米太平洋岸北西部）は wikipediaEn から補助的に追加。mhlw は null のため中毒情報は wikipediaJa の記述に依拠した。",
+    "images_remote_credits": [
+      "(c) mycotography, CC BY-NC",
+      "(c) mycowalt, CC BY-SA",
+      "(c) jyojiirisa, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) nao0105miya247, CC BY-NC",
+      "(c) pauldickson, CC BY-NC",
+      "(c) matangoo, CC BY-NC",
+      "(c) naturalist7683, CC BY-NC",
+      "(c) paulus27, CC BY-NC"
+    ]
   },
   {
     "id": "gymnopilus_junonius",
@@ -2095,8 +2536,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/gymnopilus_junonius.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/128364336/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/58239330/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/189781548/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/268344309/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/495795251/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/89244251/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/226858605/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/73891210/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/344530507/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Gymnopilus"
     },
@@ -2108,7 +2559,18 @@
       "カシ",
       "スジジイ"
     ],
-    "notes": "主情報は wikipediaJa を採用し、学名・分類・シノニムは daikinrin で裏付け。mhlw は null のため安全区分 toxic はソースとしては wikipediaJa の「毒キノコ」「中枢神経系の中毒」記述に依拠した。season は ja の「初夏から初秋」を 6〜10 月に翻訳。regions は ja に列挙された国内発生事例と wikipediaEn の海外分布を併記。cooking_preservation は toxic のため null。"
+    "notes": "主情報は wikipediaJa を採用し、学名・分類・シノニムは daikinrin で裏付け。mhlw は null のため安全区分 toxic はソースとしては wikipediaJa の「毒キノコ」「中枢神経系の中毒」記述に依拠した。season は ja の「初夏から初秋」を 6〜10 月に翻訳。regions は ja に列挙された国内発生事例と wikipediaEn の海外分布を併記。cooking_preservation は toxic のため null。",
+    "images_remote_credits": [
+      "(c) floradean, CC BY-NC",
+      "(c) draposo79, CC BY-NC",
+      "(c) r2d2robot, CC BY-NC",
+      "(c) manueljaramillo, CC BY-NC",
+      "(c) sonyareyes, CC BY-NC",
+      "(c) shea1313, CC BY-NC",
+      "(c) allthingsfungi, CC BY-NC",
+      "(c) graham49, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC"
+    ]
   },
   {
     "id": "gymnopilus_picreus",
@@ -2185,8 +2647,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/gymnopilus_picreus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/462616321/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/29695892/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/167648168/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/344523793/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/250507316/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5774527/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55317886/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/554825519/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/171557109/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Gymnopilus"
     },
@@ -2194,7 +2666,18 @@
       "マツ",
       "モミ"
     ],
-    "notes": "季節は wikipediaJa の「秋」を 9〜11 月に翻訳。aliases は ja 記載の漢字表記「茶錘茸」のみ採録。cooking_preservation は苦味と毒成分のため食不適であることを記載。poisoning_first_aid の応急措置は ja に明記がないため一般的な受診指示のみとし、症状と毒成分は ja から採用。分布は daikinrin/wikipediaEn の海外記載を補足。"
+    "notes": "季節は wikipediaJa の「秋」を 9〜11 月に翻訳。aliases は ja 記載の漢字表記「茶錘茸」のみ採録。cooking_preservation は苦味と毒成分のため食不適であることを記載。poisoning_first_aid の応急措置は ja に明記がないため一般的な受診指示のみとし、症状と毒成分は ja から採用。分布は daikinrin/wikipediaEn の海外記載を補足。",
+    "images_remote_credits": [
+      "(c) warren_cardimona, CC BY-NC",
+      "(c) diegoman, CC BY-NC",
+      "(c) bit, CC BY-NC",
+      "(c) lignicolous, CC BY-NC",
+      "(c) ym_wang_pnw, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) tombigelow, CC BY-NC",
+      "(c) apoiuza, CC BY-NC",
+      "(c) mycologygirl, CC BY-NC"
+    ]
   },
   {
     "id": "hypholoma_fasciculare",
@@ -2318,8 +2801,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/hypholoma_fasciculare.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83095902/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/240994134/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/350258520/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/154119484/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/239920387/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/109907882/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329082584/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/570143385/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/446563709/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Hypholoma"
     },
@@ -2332,7 +2825,18 @@
       "マツ",
       "タケ"
     ],
-    "notes": "description/features/poisoning は wikipediaJa を主情報源とし、毒性と誤食注意は mhlw で補強。分類・synonym は大菌輪準拠。季節は wikipediaJa「春から晩秋」「ほぼ一年中」の記述のうち主要発生期として3〜11月に翻訳（notes 記載）。地方名は wikipediaJa から採用。similar_species は wikipediaJa の『類似の食用種』節から抽出。"
+    "notes": "description/features/poisoning は wikipediaJa を主情報源とし、毒性と誤食注意は mhlw で補強。分類・synonym は大菌輪準拠。季節は wikipediaJa「春から晩秋」「ほぼ一年中」の記述のうち主要発生期として3〜11月に翻訳（notes 記載）。地方名は wikipediaJa から採用。similar_species は wikipediaJa の『類似の食用種』節から抽出。",
+    "images_remote_credits": [
+      "(c) gwark, CC BY-NC-SA",
+      "(c) allthingsfungi, CC BY-NC",
+      "(c) lizessig, CC BY-NC",
+      "(c) jonasgruska, CC BY-NC",
+      "(c) hendre17, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) ethancrenson, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) waterclover, CC BY-NC-ND"
+    ]
   },
   {
     "id": "hypsizygus_marmoreus",
@@ -2400,8 +2904,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/hypsizygus_marmoreus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331667480/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/328260679/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/445114268/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/27257314/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329536550/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/163697410/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/584491085/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/351961741/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/233332850/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Hypsizygus"
     },
@@ -2411,7 +2925,18 @@
       "シナノキ",
       "カエデ"
     ],
-    "notes": "主情報源は wikipediaJa。分類・学名・synonyms は daikinrin を canonical として採用。wikipediaEn は ja と矛盾しないため補助参照のみで本文に海外情報は出していない。mhlw は null のため食毒記述はすべて ja 由来。季節「夏から秋にかけて（主に秋）」は主な旬の 9-10 月を採用し 1 区間で表現。"
+    "notes": "主情報源は wikipediaJa。分類・学名・synonyms は daikinrin を canonical として採用。wikipediaEn は ja と矛盾しないため補助参照のみで本文に海外情報は出していない。mhlw は null のため食毒記述はすべて ja 由来。季節「夏から秋にかけて（主に秋）」は主な旬の 9-10 月を採用し 1 区間で表現。",
+    "images_remote_credits": [
+      "(c) hiroko_s, CC BY-NC",
+      "(c) rosemarycurley, CC BY-NC",
+      "(c) fredojusto, CC BY-NC",
+      "(c) hills47448, CC BY",
+      "(c) johnplischke, CC BY-NC",
+      "(c) mycowalt, CC BY-NC",
+      "(c) longtooth, CC BY-NC",
+      "(c) huafang, CC BY-NC",
+      "(c) just_add_water, CC BY-NC"
+    ]
   },
   {
     "id": "infundibulicybe_gibba",
@@ -2497,8 +3022,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/infundibulicybe_gibba.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2262362/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/357196136/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/315184901/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/330456139/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/227389076/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/406477294/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/105335585/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/226310269/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/53220546/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Clitocybe"
     },
@@ -2506,7 +3041,18 @@
       "ブナ",
       "カシ"
     ],
-    "notes": "プロンプト冒頭の和名は『オオジョウゴタケ』だが wikipediaJa および daikinrin の正典和名はいずれも『カヤタケ』のため、ソース優先原則に従い本文は『カヤタケ』を主和名として扱い『ジョウゴタケ』を別名に入れた。季節は ja の『初秋から中秋』を 9〜10 月に翻訳。mhlw は null のため毒性記述は wikipediaJa のムスカリン類検出の記述に依拠。"
+    "notes": "プロンプト冒頭の和名は『オオジョウゴタケ』だが wikipediaJa および daikinrin の正典和名はいずれも『カヤタケ』のため、ソース優先原則に従い本文は『カヤタケ』を主和名として扱い『ジョウゴタケ』を別名に入れた。季節は ja の『初秋から中秋』を 9〜10 月に翻訳。mhlw は null のため毒性記述は wikipediaJa のムスカリン類検出の記述に依拠。",
+    "images_remote_credits": [
+      "(c) ale-alep, CC BY-NC",
+      "(c) kherlenchimeg, CC BY-NC",
+      "(c) huafang, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) hayden981, CC BY-NC",
+      "(c) vcpd, CC BY-SA",
+      "(c) migabos, CC BY-NC",
+      "(c) keara_giannotti, CC BY-NC",
+      "(c) bogsuckers, CC BY"
+    ]
   },
   {
     "id": "inocybe_geophylla",
@@ -2594,8 +3140,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/inocybe_geophylla.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/367141760/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/57781896/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/248874855/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/247371049/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/316267631/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2937361/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322956722/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/179793198/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/592348425/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Inocybe"
     },
@@ -2605,7 +3161,18 @@
       "オーク",
       "カシ"
     ],
-    "notes": "wikipediaJa・mhlw・traitCircus は null のため、分類・分布・学名は daikinrin[1]、形態・生態・毒性記述は wikipediaEn[2] を主情報源とした。daikinrin の canonical 和名は『シロトマヤタケ』で、入力指定の『ウスムラサキアセタケ』は淡紫色品種 var. lilacina に相当する通称のため、aliases に『シロトマヤタケ』を収めた。発生期は wikipediaEn の『summer and autumn』を国内慣用の 6〜11 月に翻訳。"
+    "notes": "wikipediaJa・mhlw・traitCircus は null のため、分類・分布・学名は daikinrin[1]、形態・生態・毒性記述は wikipediaEn[2] を主情報源とした。daikinrin の canonical 和名は『シロトマヤタケ』で、入力指定の『ウスムラサキアセタケ』は淡紫色品種 var. lilacina に相当する通称のため、aliases に『シロトマヤタケ』を収めた。発生期は wikipediaEn の『summer and autumn』を国内慣用の 6〜11 月に翻訳。",
+    "images_remote_credits": [
+      "(c) maricel-patino, CC BY-NC",
+      "(c) katlmartin, CC BY-NC",
+      "(c) empostenka, CC BY-NC",
+      "(c) joxepo, CC BY-NC",
+      "(c) mushroomguru, CC BY-NC",
+      "(c) e-albright, CC BY-NC",
+      "(c) windof, CC0",
+      "(c) andydonegan, CC BY-NC",
+      "(c) july_flyagaric, CC BY-NC"
+    ]
   },
   {
     "id": "inocybe_lacera",
@@ -2674,8 +3241,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/inocybe_lacera.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/330896830/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/445312203/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/222308577/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/402577337/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/393477676/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/556435296/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/32765326/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/506532193/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/124366253/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Inocybe"
     },
@@ -2684,7 +3261,18 @@
       "針葉樹",
       "広葉樹"
     ],
-    "notes": "wikipediaJa および mhlw は null のため、和名・分類・分布は大菌輪 [1]、形態・生態・毒性記述は wikipediaEn [2] を採用。季節表記『autumn』は 9〜11 月として month 値に変換。別名は大菌輪 synonyms が全て学名のため aliases は空配列とした。tree_association は wikipediaEn の pine / conifers / hardwoods を和訳。"
+    "notes": "wikipediaJa および mhlw は null のため、和名・分類・分布は大菌輪 [1]、形態・生態・毒性記述は wikipediaEn [2] を採用。季節表記『autumn』は 9〜11 月として month 値に変換。別名は大菌輪 synonyms が全て学名のため aliases は空配列とした。tree_association は wikipediaEn の pine / conifers / hardwoods を和訳。",
+    "images_remote_credits": [
+      "(c) huafang, CC BY-NC",
+      "(c) bdthomas, CC BY",
+      "(c) joemat, CC BY-NC",
+      "(c) symbiiotica, CC BY-NC",
+      "(c) ym_wang_pnw, CC BY-NC",
+      "(c) sakke2, CC BY-NC",
+      "(c) mycotrope, CC BY-NC",
+      "(c) drifting_biospheres, CC BY-NC",
+      "(c) phillymycobeth, CC0"
+    ]
   },
   {
     "id": "laccaria_amethystina",
@@ -2756,12 +3344,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/laccaria_amethystina.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13616548/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/54858442/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/166870298/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331694029/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/232533998/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311467803/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/340399549/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92619289/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234651121/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Laccaria"
     },
-    "notes": "safety=toxic 指定のため cooking_preservation は null、poisoning_first_aid を必須として記載。wikipediaJa は本種を食用と記すが、wikipediaEn はヒ素の生物濃縮リスクを明記しており、toxic 指定に整合する後者を毒性根拠として採用。発生期の『夏から秋』は 7〜11 月に翻訳。mhlw は null のため安全情報は wikipediaEn に依拠。tree_association は ja/en とも具体樹種の特定記述が乏しいため空配列とした。"
+    "notes": "safety=toxic 指定のため cooking_preservation は null、poisoning_first_aid を必須として記載。wikipediaJa は本種を食用と記すが、wikipediaEn はヒ素の生物濃縮リスクを明記しており、toxic 指定に整合する後者を毒性根拠として採用。発生期の『夏から秋』は 7〜11 月に翻訳。mhlw は null のため安全情報は wikipediaEn に依拠。tree_association は ja/en とも具体樹種の特定記述が乏しいため空配列とした。",
+    "images_remote_credits": [
+      "(c) tombigelow, CC BY-NC",
+      "(c) michaeltrajer, CC BY-NC",
+      "(c) billmac, CC BY-NC",
+      "(c) amphotography, CC BY-NC",
+      "(c) naturepaparazzi, CC BY-NC",
+      "(c) robhallock, CC BY",
+      "(c) amelialarroque, CC BY-NC",
+      "(c) erikoid, CC BY-NC",
+      "(c) lasagana, CC BY"
+    ]
   },
   {
     "id": "lactarius_hatsudake",
@@ -2878,8 +3487,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/lactarius_hatsudake.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444490183/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585637754/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/597400704/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451516635/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/451557045/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320613824/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/448976758/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444489767/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585637786/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Lactarius"
     },
@@ -2891,7 +3510,18 @@
       "ヨーロッパアカマツ",
       "トウヒ類"
     ],
-    "notes": "和名はユーザー指示により Wikipedia ja タイトルのハツタケを採用（大菌輪の和名アカハツは本記事では別種アカハツを指すため不採用）。季節は『夏から秋（時に梅雨期）』および『残暑の候から初秋が旬』の記述から 7-10 月と数値化。分布は日本国内（北海道石狩以南〜沖縄本島・小笠原）と海外（韓国・中国・台湾・タイ・ロシア東部・パキスタン・ネパール）を併記。類似種は Wikipedia ja の記述を優先採用。"
+    "notes": "和名はユーザー指示により Wikipedia ja タイトルのハツタケを採用（大菌輪の和名アカハツは本記事では別種アカハツを指すため不採用）。季節は『夏から秋（時に梅雨期）』および『残暑の候から初秋が旬』の記述から 7-10 月と数値化。分布は日本国内（北海道石狩以南〜沖縄本島・小笠原）と海外（韓国・中国・台湾・タイ・ロシア東部・パキスタン・ネパール）を併記。類似種は Wikipedia ja の記述を優先採用。",
+    "images_remote_credits": [
+      "(c) kemurineko, CC BY-NC-SA",
+      "(c) damonbay, CC BY-NC",
+      "(c) sheng_long, CC BY-NC",
+      "(c) suzumenokatabira, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) hiroko_s, CC BY-NC",
+      "(c) murasime, CC BY-NC",
+      "(c) kemurineko, CC BY-NC-SA",
+      "(c) damonbay, CC BY-NC"
+    ]
   },
   {
     "id": "laetiporus_sulphureus",
@@ -3027,8 +3657,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/laetiporus_sulphureus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/92273288/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/98944765/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/145061407/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/158743790/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/435866428/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10694060/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/24338667/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/76181809/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2907678/medium.JPG"
+    ],
     "taxonomy": {
       "genus": "Laetiporus"
     },
@@ -3041,7 +3681,18 @@
       "ハリエンジュ属",
       "ブナ属"
     ],
-    "notes": "wikipediaJa・mhlw・traitCircus が null のため、主情報源は wikipediaEn、canonical 情報は daikinrin を採用。和名アイカワタケは prompt 指定。季節は欧州 4-11 月と北米 6-10 月のうち、共通する発生期として 6-10 月を採用し、notes に経緯を記録。safety=toxic のため cooking_preservation を null、poisoning_first_aid と caution を記入。"
+    "notes": "wikipediaJa・mhlw・traitCircus が null のため、主情報源は wikipediaEn、canonical 情報は daikinrin を採用。和名アイカワタケは prompt 指定。季節は欧州 4-11 月と北米 6-10 月のうち、共通する発生期として 6-10 月を採用し、notes に経緯を記録。safety=toxic のため cooking_preservation を null、poisoning_first_aid と caution を記入。",
+    "images_remote_credits": [
+      "(c) myco_mama_vt, CC BY-NC",
+      "(c) phillymycobeth, CC0",
+      "(c) rolosama, CC BY-NC",
+      "(c) maplegirl, CC BY-NC",
+      "(c) zebedeugalinha, CC BY",
+      "(c) sailorgirl1120, CC BY-NC",
+      "(c) robnorris, CC0",
+      "(c) tammor, CC BY-NC",
+      "(c) berkshirenaturalist, CC BY-NC-ND"
+    ]
   },
   {
     "id": "lentinula_edodes",
@@ -3124,8 +3775,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/lentinula_edodes.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/587891241/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/263782428/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/345569832/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/63629337/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/107196734/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/197797714/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/233859447/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/241589106/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/452129329/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Lentinula"
     },
@@ -3137,7 +3798,18 @@
       "クリ",
       "カシ"
     ],
-    "notes": "wikipediaJa を主情報源に採用し、分布・分類は daikinrin で補強。mhlw は null のため未参照。季は本文の「春と秋」「3月〜5月、または9月〜11月」から 3-5/9-11 の2期で表現。類似種はツキヨタケ1件のみ本文に明示。しいたけ皮膚炎は生/加熱不十分時のアレルギー反応だが safety=edible のため caution は null とした。"
+    "notes": "wikipediaJa を主情報源に採用し、分布・分類は daikinrin で補強。mhlw は null のため未参照。季は本文の「春と秋」「3月〜5月、または9月〜11月」から 3-5/9-11 の2期で表現。類似種はツキヨタケ1件のみ本文に明示。しいたけ皮膚炎は生/加熱不十分時のアレルギー反応だが safety=edible のため caution は null とした。",
+    "images_remote_credits": [
+      "(c) brittanyalyse, CC BY-NC",
+      "(c) munenori_yamakawa, CC BY",
+      "(c) lostcoastmike, CC BY-NC",
+      "(c) dsmorris, CC BY",
+      "(c) keepertrout, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) justinwyle, CC BY-NC",
+      "(c) jakelly, CC BY-NC",
+      "(c) aaflaata, CC BY-NC"
+    ]
   },
   {
     "id": "lepiota_cristata",
@@ -3225,8 +3897,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/lepiota_cristata.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/580244896/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/454502494/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332235094/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311148435/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/172757373/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/15801875/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/99354277/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/252947372/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332657786/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Lepiota"
     },
@@ -3234,7 +3916,18 @@
       "広葉樹",
       "針葉樹"
     ],
-    "notes": "wikipediaJa・mhlw が null のため、分類・学名・synonym は daikinrin [1]、形態・生態・分布・類似種・毒性記述は wikipediaEn [2] を採用。rinya は種固有記述がない汎用ページのため不採用。発生季節は参照ソースに月単位の明示記載がないため、温帯での一般的な発生期に基づき 7〜11 月の単一期を暫定的に記載した。[2] は海外情報源のため regions も海外を中心に記載。"
+    "notes": "wikipediaJa・mhlw が null のため、分類・学名・synonym は daikinrin [1]、形態・生態・分布・類似種・毒性記述は wikipediaEn [2] を採用。rinya は種固有記述がない汎用ページのため不採用。発生季節は参照ソースに月単位の明示記載がないため、温帯での一般的な発生期に基づき 7〜11 月の単一期を暫定的に記載した。[2] は海外情報源のため regions も海外を中心に記載。",
+    "images_remote_credits": [
+      "(c) nschwab, CC BY-NC",
+      "(c) kboh, CC BY-NC",
+      "(c) eloraa, CC BY-NC",
+      "(c) deathcap4cutie, CC BY-NC",
+      "(c) jan_thornhill, CC BY-NC",
+      "(c) tuli, CC BY-NC",
+      "(c) naturalmentevivo, CC BY-NC",
+      "(c) stevanbaluban, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC"
+    ]
   },
   {
     "id": "leucocoprinus_birnbaumii",
@@ -3305,12 +3998,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/leucocoprinus_birnbaumii.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/126044929/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/264983111/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/217250561/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/313207176/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/78598291/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/474524948/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/24945993/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/462482130/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/77454507/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Leucocoprinus"
     },
-    "notes": "safety=toxic の指定に従い poisoning_first_aid と caution を記載。wikipediaJa は食毒不明・無害説と美味説の両論を紹介しつつ食べるべきでないとし、wikipediaEn は明確に有毒（胃腸炎様症状）と記載。mhlw は null のため en 側の毒性記述を補助として採用。season は ja の「初夏から秋」を 6〜10 月と解釈。similar_species と tree_association は ja に国内情報がないため空配列とした。"
+    "notes": "safety=toxic の指定に従い poisoning_first_aid と caution を記載。wikipediaJa は食毒不明・無害説と美味説の両論を紹介しつつ食べるべきでないとし、wikipediaEn は明確に有毒（胃腸炎様症状）と記載。mhlw は null のため en 側の毒性記述を補助として採用。season は ja の「初夏から秋」を 6〜10 月と解釈。similar_species と tree_association は ja に国内情報がないため空配列とした。",
+    "images_remote_credits": [
+      "(c) maida3, CC BY-NC",
+      "(c) taraseverns, CC BY",
+      "(c) mothtongue, CC BY-NC",
+      "(c) krabbypatty22, CC BY-NC",
+      "(c) laterradesolata, CC BY-NC",
+      "(c) izithunzi, CC BY-NC",
+      "(c) zinogre, CC BY-SA",
+      "(c) juliecoetzee, CC BY-NC",
+      "(c) mlarkin66, CC BY-NC"
+    ]
   },
   {
     "id": "lyophyllum_decastes",
@@ -3461,12 +4175,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/lyophyllum_decastes.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28599860/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331076775/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/341688384/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585728746/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/241809935/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/50883565/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/327877527/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329977159/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164065135/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Lyophyllum"
     },
-    "notes": "プロンプトでは和名『シャカシメジ』と指定されていたが、wikipediaJa および daikinrin の正典和名は共に『ハタケシメジ』で一致したため和名は『ハタケシメジ』を採用。aliases は wikipediaJa 記載の地方名・漢字表記のみ列挙。season は ja の『春（梅雨の前後）』を 5-6 月、『初夏から中秋』を 6-10 月として 2 要素化。tree_association は ja が腐生性で外生菌根を形成しないと明記しているため空配列。mhlw は null のため未使用。"
+    "notes": "プロンプトでは和名『シャカシメジ』と指定されていたが、wikipediaJa および daikinrin の正典和名は共に『ハタケシメジ』で一致したため和名は『ハタケシメジ』を採用。aliases は wikipediaJa 記載の地方名・漢字表記のみ列挙。season は ja の『春（梅雨の前後）』を 5-6 月、『初夏から中秋』を 6-10 月として 2 要素化。tree_association は ja が腐生性で外生菌根を形成しないと明記しているため空配列。mhlw は null のため未使用。",
+    "images_remote_credits": [
+      "(c) merlu, CC BY-NC",
+      "(c) calibas, CC0",
+      "(c) lostcoastmike, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC",
+      "(c) mexfantmaravilloso, CC BY-NC",
+      "(c) ramune_vakare, CC BY-NC-SA",
+      "(c) erwinsieben, CC0",
+      "(c) bjoerns, CC BY-SA"
+    ]
   },
   {
     "id": "morchella_esculenta",
@@ -3629,8 +4364,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/morchella_esculenta.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/495094429/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/628360063/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/190710756/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/281609127/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/16557976/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/121672214/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/488162094/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/376768560/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/484237494/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Morchella"
     },
@@ -3638,7 +4383,18 @@
       "サクラ",
       "イチョウ"
     ],
-    "notes": "主情報源は wikipediaJa。季節「春から初夏」を 3-6 月に翻訳した。mhlw は null のため毒性情報は wikipediaJa 準拠で cooking_preservation 末尾に生食・アルコール併用注意を記載。safety=edible のため poisoning_first_aid と caution は null。tree_association はサクラ・イチョウのみ ja に明記されているため採用（マツ科等の外生菌根相手は海外樹種中心のため省略）。"
+    "notes": "主情報源は wikipediaJa。季節「春から初夏」を 3-6 月に翻訳した。mhlw は null のため毒性情報は wikipediaJa 準拠で cooking_preservation 末尾に生食・アルコール併用注意を記載。safety=edible のため poisoning_first_aid と caution は null。tree_association はサクラ・イチョウのみ ja に明記されているため採用（マツ科等の外生菌根相手は海外樹種中心のため省略）。",
+    "images_remote_credits": [
+      "(c) nschwab, CC BY-NC",
+      "(c) bittor, CC BY-NC",
+      "(c) gertiseiser, CC BY-NC",
+      "(c) pawel717, CC BY-NC",
+      "(c) robangutan, CC BY-NC-SA",
+      "(c) ludwigia_badensis, CC BY-NC",
+      "(c) sergio_galan_martin, CC BY-NC",
+      "(c) martina_poeltl, CC BY-NC",
+      "(c) zachary12289, CC BY-NC"
+    ]
   },
   {
     "id": "omphalotus_japonicus",
@@ -3725,8 +4481,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/omphalotus_japonicus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/440014973/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/180436205/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/328831624/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249023134/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/244915413/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55930795/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/561813584/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/311792306/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444977438/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Omphalotus"
     },
@@ -3741,7 +4507,18 @@
       "ミズナラ",
       "トドマツ"
     ],
-    "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として併用。mhlw は null のため wikipediaJa の中毒記述を採用。season は『夏から秋』『晩夏から秋』『9-10月』の記述から 8-10 月とした。分類階層は自由文に書かず scientific/分類情報から除外。wikipediaEn は ja と矛盾しない補助のみ参照。"
+    "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として併用。mhlw は null のため wikipediaJa の中毒記述を採用。season は『夏から秋』『晩夏から秋』『9-10月』の記述から 8-10 月とした。分類階層は自由文に書かず scientific/分類情報から除外。wikipediaEn は ja と矛盾しない補助のみ参照。",
+    "images_remote_credits": [
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) tsamche, CC BY-ND",
+      "(c) kishimoto_toshio, CC BY",
+      "(c) balawu, CC BY-NC",
+      "(c) kanchinanjo, CC BY-NC",
+      "(c) jodyhsieh, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) jung_songhie, CC BY-NC",
+      "(c) flilium, CC BY-NC"
+    ]
   },
   {
     "id": "panaeolus_papilionaceus",
@@ -3847,12 +4624,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/panaeolus_papilionaceus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/40259656/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/220191732/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/257190190/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/97895653/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/173455930/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/579854509/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/227625220/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320562527/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/3018013/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Panaeolus"
     },
-    "notes": "wikipediaJa を主情報源として採用。プロンプト指定の和名はサイギョウガサだが wikipediaJa および daikinrin は共に『ワライタケ』を和名としており、サイギョウガサ（P. retirugis）は現在 P. papilionaceus と同種と見なされる旨が wikipediaJa に明記されているため aliases に併記。season の『春〜秋』は wikipediaJa の具体的記述『6月から10月』に従い 6-10 と数値化。mhlw は null のため参照せず。tree_association は糞生・草地性で該当なしのため空配列。"
+    "notes": "wikipediaJa を主情報源として採用。プロンプト指定の和名はサイギョウガサだが wikipediaJa および daikinrin は共に『ワライタケ』を和名としており、サイギョウガサ（P. retirugis）は現在 P. papilionaceus と同種と見なされる旨が wikipediaJa に明記されているため aliases に併記。season の『春〜秋』は wikipediaJa の具体的記述『6月から10月』に従い 6-10 と数値化。mhlw は null のため参照せず。tree_association は糞生・草地性で該当なしのため空配列。",
+    "images_remote_credits": [
+      "(c) rynaturalist, CC BY",
+      "(c) andreagzc, CC BY-NC",
+      "(c) mandymushii, CC BY",
+      "(c) suz_brownbridge, CC BY-NC",
+      "(c) morpheous, CC BY-NC",
+      "(c) nschwab, CC BY-NC",
+      "(c) jonathan_mack, CC BY-NC",
+      "(c) kazaamer, CC BY-NC",
+      "(c) rammahr, CC BY-NC"
+    ]
   },
   {
     "id": "paralepistopsis_acromelalga",
@@ -3965,7 +4763,7 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/paralepistopsis_acromelalga.webp",
     "images_remote": [],
     "taxonomy": {
       "genus": "Clitocybe"
@@ -4058,8 +4856,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/paxillus_involutus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161291340/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/309692820/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/442921776/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/562712577/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/622654088/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/53085498/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234359403/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/323893892/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/59264737/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Paxillus"
     },
@@ -4072,7 +4880,18 @@
       "アメリカシラカンバ",
       "ラジアータパイン"
     ],
-    "notes": "主情報源は wikipediaJa。学名・分類・分布の canonical source として daikinrin を併用。mhlw は null のため wikipediaJa の毒性記述を採用。season は『晩夏から秋』を 8〜11 月に翻訳。wikipediaEn は ja と概ね一致するため補助のみ。regions には国内情報が少ない海外産地を含め、海外移入国も列挙した。"
+    "notes": "主情報源は wikipediaJa。学名・分類・分布の canonical source として daikinrin を併用。mhlw は null のため wikipediaJa の毒性記述を採用。season は『晩夏から秋』を 8〜11 月に翻訳。wikipediaEn は ja と概ね一致するため補助のみ。regions には国内情報が少ない海外産地を含め、海外移入国も列挙した。",
+    "images_remote_credits": [
+      "(c) eiriee, CC BY",
+      "(c) pipsissewa, CC BY-NC",
+      "(c) bennopost, CC BY-NC",
+      "(c) jason27054, CC BY-NC",
+      "(c) justinchans, CC BY-NC",
+      "(c) squirrelbait, CC BY-NC",
+      "(c) stucumber, CC BY-NC",
+      "(c) apatel1, CC BY-NC",
+      "(c) dickwood, CC BY-NC"
+    ]
   },
   {
     "id": "pholiota_microspora",
@@ -4163,8 +4982,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/pholiota_microspora.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/181639857/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/458824501/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/606662163/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/589618636/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/336813716/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/347655185/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/331668549/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/471975929/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/341360461/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Pholiota"
     },
@@ -4174,7 +5003,18 @@
       "コナラ",
       "ミズナラ"
     ],
-    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は daikinrin を併用。mhlw は null のため毒性記述には使用せず、safety=edible に従い poisoning_first_aid と caution は null。季節「秋（9〜11月）」は wikipediaJa の主な旬の数値をそのまま採用し 1 要素化（初夏発生の記述は冷涼源流域に限定的なため本要素に含めない）。wikipediaEn の「butterscotch mushroom」等は日本国内の流通表現でないため採用せず。"
+    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は daikinrin を併用。mhlw は null のため毒性記述には使用せず、safety=edible に従い poisoning_first_aid と caution は null。季節「秋（9〜11月）」は wikipediaJa の主な旬の数値をそのまま採用し 1 要素化（初夏発生の記述は冷涼源流域に限定的なため本要素に含めない）。wikipediaEn の「butterscotch mushroom」等は日本国内の流通表現でないため採用せず。",
+    "images_remote_credits": [
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) hitomi_yamashita, CC BY-NC",
+      "(c) kat_ohmori, CC BY-NC",
+      "(c) merec0, CC BY-NC",
+      "(c) hikasukepon, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) hiroko_s, CC BY-NC",
+      "(c) shiomaneki888_753, CC BY-NC",
+      "(c) re_nebel, CC BY"
+    ]
   },
   {
     "id": "pholiota_squarrosa",
@@ -4275,8 +5115,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/pholiota_squarrosa.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/7911607/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/25183878/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/335898405/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/334958696/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/51298441/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/579320317/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/335689950/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/543595389/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/53205021/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Pholiota"
     },
@@ -4284,7 +5134,18 @@
       "広葉樹",
       "針葉樹"
     ],
-    "notes": "wikipediaJa を主情報源とし、学名・分類・分布は daikinrin を併用。mhlw は null のため使用せず。season は ja の「夏から秋」を 7〜10 月に翻訳。regions は ja「北半球温帯・日本（北日本に多い）」に en の North America・Europe を補足。cooking_preservation は safety=toxic のため null。"
+    "notes": "wikipediaJa を主情報源とし、学名・分類・分布は daikinrin を併用。mhlw は null のため使用せず。season は ja の「夏から秋」を 7〜10 月に翻訳。regions は ja「北半球温帯・日本（北日本に多い）」に en の North America・Europe を補足。cooking_preservation は safety=toxic のため null。",
+    "images_remote_credits": [
+      "(c) microcosmia, CC BY-NC",
+      "(c) dwabrams, CC BY-NC",
+      "(c) arunasjuknevicius, CC BY-NC",
+      "(c) crazybetulaceae, CC BY-NC",
+      "(c) bpowhida, CC BY-NC",
+      "(c) oli_sto, CC BY-NC",
+      "(c) empressmoth, CC0",
+      "(c) saraco81230, CC BY-NC",
+      "(c) gabrielamushroom, CC BY-NC"
+    ]
   },
   {
     "id": "pleurotus_ostreatus",
@@ -4425,8 +5286,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/pleurotus_ostreatus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/34047624/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/167448367/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/162511340/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/53844494/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/7573196/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/60148547/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/61276338/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/58876045/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/61503536/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Pleurotus"
     },
@@ -4436,7 +5307,18 @@
       "ブナ",
       "ヤナギ"
     ],
-    "notes": "プロンプトは和名「アワビタケ」指定だが Wikipedia ja 本文の見出しは「ヒラタケ」で別名としてアワビタケが列挙されているため aliases 先頭に「ヒラタケ」を置いた。season は Wikipedia ja「晩秋から早春」を 11〜12 月と 1〜3 月の 2 要素に分割（start<=end 制約のため年跨ぎを分解）。分布は ja の「本州から九州」と「全世界の温帯」を採用、wikipediaEn の温帯・亜熱帯記述と整合。mhlw は null のため毒性情報は edible 指定どおり null。"
+    "notes": "プロンプトは和名「アワビタケ」指定だが Wikipedia ja 本文の見出しは「ヒラタケ」で別名としてアワビタケが列挙されているため aliases 先頭に「ヒラタケ」を置いた。season は Wikipedia ja「晩秋から早春」を 11〜12 月と 1〜3 月の 2 要素に分割（start<=end 制約のため年跨ぎを分解）。分布は ja の「本州から九州」と「全世界の温帯」を採用、wikipediaEn の温帯・亜熱帯記述と整合。mhlw は null のため毒性情報は edible 指定どおり null。",
+    "images_remote_credits": [
+      "(c) treegrow, CC BY",
+      "(c) fennermartin, CC BY-NC",
+      "(c) fumentari, CC BY-NC",
+      "(c) erichongisto, CC BY-NC",
+      "(c) mmulqueen, CC0",
+      "(c) jwillow, CC BY-NC",
+      "(c) maschpit, CC BY-NC",
+      "(c) jgingold, CC BY-NC",
+      "(c) tom_laura_marlowe, CC BY-NC"
+    ]
   },
   {
     "id": "psathyrella_corrugis",
@@ -4522,12 +5404,33 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/psathyrella_corrugis.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/101923492/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/453408767/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/100765535/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/243558839/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/138721266/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/243673496/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/29229181/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/573356695/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/454754256/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Psathyrella"
     },
-    "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として使用。mhlw は null のため参照なし。季節情報はソースに明記がないが V5 検証のため近縁小型腐生菌の一般的発生期 6〜11 月を仮置きした。樹種は『枯れ木』としか記載がなく特定樹種不明のため tree_association は空配列。safety=toxic の方針に従い cooking_preservation は null、poisoning_first_aid は資料に具体的毒性記述がない旨を明記した。"
+    "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として使用。mhlw は null のため参照なし。季節情報はソースに明記がないが V5 検証のため近縁小型腐生菌の一般的発生期 6〜11 月を仮置きした。樹種は『枯れ木』としか記載がなく特定樹種不明のため tree_association は空配列。safety=toxic の方針に従い cooking_preservation は null、poisoning_first_aid は資料に具体的毒性記述がない旨を明記した。",
+    "images_remote_credits": [
+      "(c) jobobsolem, CC BY-NC",
+      "(c) kimberly_steinmann, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC",
+      "(c) tfknocks, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) ym_wang_pnw, CC BY-NC",
+      "(c) yaelorgad, CC BY-NC",
+      "(c) sugarsnap_t, CC BY-NC-ND",
+      "(c) juliawong, CC BY-NC"
+    ]
   },
   {
     "id": "pseudosperma_rimosum",
@@ -4609,8 +5512,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/pseudosperma_rimosum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/386125860/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/289676085/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/372361696/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/541791497/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/438028067/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/326561126/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/447444776/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/413457426/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/559961969/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Inocybe"
     },
@@ -4619,7 +5532,18 @@
       "ブナ科広葉樹",
       "針葉樹"
     ],
-    "notes": "wikipediaJa を主情報源として採用し、学名・分類・MycoBank ID は daikinrin で裏取り。wikipediaEn・mhlw は null のため不使用。発生期「春から秋」を 3〜11月に翻訳。similar_species は ja 本文に具体的識別対象種の記述がないため空配列とした。応急措置の一般的助言は ja の症状記述を踏まえた手順記述に留めた。"
+    "notes": "wikipediaJa を主情報源として採用し、学名・分類・MycoBank ID は daikinrin で裏取り。wikipediaEn・mhlw は null のため不使用。発生期「春から秋」を 3〜11月に翻訳。similar_species は ja 本文に具体的識別対象種の記述がないため空配列とした。応急措置の一般的助言は ja の症状記述を踏まえた手順記述に留めた。",
+    "images_remote_credits": [
+      "(c) maricel-patino, CC BY-NC",
+      "(c) stevanbaluban, CC BY-NC",
+      "(c) kdrinnen, CC BY-NC",
+      "(c) ryanpeace, CC BY-NC",
+      "(c) mauriciomontes, CC BY-NC",
+      "(c) gerardoalonso-04, CC BY-NC",
+      "(c) arcactlaltenango, CC BY-NC",
+      "(c) mycobadger, CC BY-NC",
+      "(c) skravchuk, CC BY-NC"
+    ]
   },
   {
     "id": "psilocybe_argentipes",
@@ -4704,14 +5628,35 @@
       }
     ],
     "image_local": null,
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/397074249/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/411435010/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/447564001/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/397074314/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/310570216/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/397074365/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/310570296/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/397074430/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/397074542/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Psilocybe"
     },
     "tree_association": [
       "シラカシ"
     ],
-    "notes": "和名・形態・発生生態・毒性は wikipediaJa を主情報源とし、学名・分類は daikinrin を採用。mhlw は中毒症状と法規制の確認に使用。season は『春から秋』を 3〜11月と解釈し 1 要素で表現。aliases は漢字表記の『日陰痺茸』のみ記載。tree_association は首相官邸の発生事例に登場するシラカシのみ記載。wikipediaEn は null のため未使用。"
+    "notes": "和名・形態・発生生態・毒性は wikipediaJa を主情報源とし、学名・分類は daikinrin を採用。mhlw は中毒症状と法規制の確認に使用。season は『春から秋』を 3〜11月と解釈し 1 要素で表現。aliases は漢字表記の『日陰痺茸』のみ記載。tree_association は首相官邸の発生事例に登場するシラカシのみ記載。wikipediaEn は null のため未使用。",
+    "images_remote_credits": [
+      "(c) greenshank, CC BY-NC",
+      "(c) jyojiirisa, CC BY-NC",
+      "(c) reishisagnik, CC BY",
+      "(c) greenshank, CC BY-NC",
+      "(c) jyojiirisa, CC BY-NC",
+      "(c) greenshank, CC BY-NC",
+      "(c) jyojiirisa, CC BY-NC",
+      "(c) greenshank, CC BY-NC",
+      "(c) greenshank, CC BY-NC"
+    ]
   },
   {
     "id": "russula_densifolia",
@@ -4770,8 +5715,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/russula_densifolia.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/27647779/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/171915766/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/153319138/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/154657650/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/87016148/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/109785276/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/142444802/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169340309/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13536026/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Russula"
     },
@@ -4779,7 +5734,18 @@
       "針葉樹",
       "広葉樹"
     ],
-    "notes": "主情報源は wikipediaJa（和名・形態・生態・毒）。発生期「夏から秋」は7〜10月に翻訳。地方名クロヂワレ・シチベエ、別名「黒初擬」は ja から採用。分布は ja の「北半球の針葉樹林や広葉樹林」に daikinrin が日本国内生育種として扱うことを踏まえ日本を明示。mhlw 情報なし、応急措置は一般的受診指針のみ記載。similar_species は wikipediaEn のクロハツ（R. nigricans）識別点を補助的に採用。"
+    "notes": "主情報源は wikipediaJa（和名・形態・生態・毒）。発生期「夏から秋」は7〜10月に翻訳。地方名クロヂワレ・シチベエ、別名「黒初擬」は ja から採用。分布は ja の「北半球の針葉樹林や広葉樹林」に daikinrin が日本国内生育種として扱うことを踏まえ日本を明示。mhlw 情報なし、応急措置は一般的受診指針のみ記載。similar_species は wikipediaEn のクロハツ（R. nigricans）識別点を補助的に採用。",
+    "images_remote_credits": [
+      "(c) dannymi, CC BY-NC",
+      "(c) leptonia, CC BY-NC",
+      "(c) christian_ap, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC",
+      "(c) samiam29, CC BY-NC",
+      "(c) mushroommystic, CC BY-NC-ND",
+      "(c) stevilkinevil, CC BY-NC",
+      "(c) noah_siegel, CC BY-NC-SA",
+      "(c) tombigelow, CC BY-NC"
+    ]
   },
   {
     "id": "russula_emetica",
@@ -4885,8 +5851,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/russula_emetica.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/109349419/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/250544470/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/591479152/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/417912324/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/180046164/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/578204201/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/582319479/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/226399049/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/592729920/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Russula"
     },
@@ -4895,7 +5871,18 @@
       "広葉樹",
       "針葉樹"
     ],
-    "notes": "wikipediaJa を主情報源に採用。発生期『夏から秋』を 7〜11 月に翻訳。別名は地方名（愛知・青森・秋田）と漢字表記を aliases に収録。mhlw/traitCircus は null のため不使用。wikipediaEn の海外分布（北アフリカ・アジア・ヨーロッパ）を regions に補足。学名・分類は daikinrin 準拠。"
+    "notes": "wikipediaJa を主情報源に採用。発生期『夏から秋』を 7〜11 月に翻訳。別名は地方名（愛知・青森・秋田）と漢字表記を aliases に収録。mhlw/traitCircus は null のため不使用。wikipediaEn の海外分布（北アフリカ・アジア・ヨーロッパ）を regions に補足。学名・分類は daikinrin 準拠。",
+    "images_remote_credits": [
+      "(c) noah_siegel, CC BY-NC-SA",
+      "(c) filipfuljer, CC BY-NC",
+      "(c) thesciencemom, CC BY-NC",
+      "(c) fresno_mycology, CC BY-NC",
+      "(c) vladimir_bryukhov, CC BY-NC",
+      "(c) smilemaker, CC BY-NC",
+      "(c) mblackburn831, CC BY-NC",
+      "(c) uwekozina, CC BY-NC",
+      "(c) johndreynolds, CC BY-NC"
+    ]
   },
   {
     "id": "russula_foetens",
@@ -4957,8 +5944,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/russula_foetens.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/157315706/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/175885631/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/174406282/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161669054/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/157939665/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/174464342/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/179704302/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/156442911/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/176111760/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Russula"
     },
@@ -4968,7 +5965,18 @@
       "アカマツ",
       "ブナ科"
     ],
-    "notes": "主情報は wikipediaJa を採用。季節「夏から初秋」を 7〜9 月に翻訳。mhlw は null のため毒性記述は wikipediaJa に依拠。wikipediaEn は ja と大枠で整合し ja を主採用、海外食習慣（ロシアの塩漬け等）は国内文脈に合わないため不採用。大菌輪は学名・別学名・分類の canonical source として併用。応急措置は一般的な記述のみに留めた。"
+    "notes": "主情報は wikipediaJa を採用。季節「夏から初秋」を 7〜9 月に翻訳。mhlw は null のため毒性記述は wikipediaJa に依拠。wikipediaEn は ja と大枠で整合し ja を主採用、海外食習慣（ロシアの塩漬け等）は国内文脈に合わないため不採用。大菌輪は学名・別学名・分類の canonical source として併用。応急措置は一般的な記述のみに留めた。",
+    "images_remote_credits": [
+      "(c) sannajo, CC BY-NC",
+      "(c) elenasoldatova, CC BY-NC",
+      "(c) yuriysokolov73, CC BY-NC",
+      "(c) pmali, CC BY-NC-SA",
+      "(c) karavan-altay, CC BY-NC",
+      "(c) igor_kuzmin, CC BY-NC",
+      "(c) vladimir_bryukhov, CC BY-NC",
+      "(c) kirann, CC BY",
+      "(c) ankhen, CC BY-NC"
+    ]
   },
   {
     "id": "suillus_luteus",
@@ -5062,8 +6070,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/suillus_luteus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12435226/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12001096/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/482936911/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/197438705/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/165376037/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/300261943/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/440600919/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/11107450/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/182535370/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Suillus"
     },
@@ -5076,7 +6094,18 @@
       "トウヒ属",
       "モミ属"
     ],
-    "notes": "主情報は Wikipedia ja（[1]）、学名・分類・シノニムは大菌輪（[2]）を併用。mhlw / traitCircus は null のため未使用。wikipediaEn は ja と整合するため参照のみで引用せず。season は本文「夏から秋」を 7-10月に翻訳。regions は ja の国内分布（北海道〜沖縄）と「北半球温帯以北」「南半球への帰化」記述を反映。aliases は方言名と英名 Slippery Jack を含めた。"
+    "notes": "主情報は Wikipedia ja（[1]）、学名・分類・シノニムは大菌輪（[2]）を併用。mhlw / traitCircus は null のため未使用。wikipediaEn は ja と整合するため参照のみで引用せず。season は本文「夏から秋」を 7-10月に翻訳。regions は ja の国内分布（北海道〜沖縄）と「北半球温帯以北」「南半球への帰化」記述を反映。aliases は方言名と英名 Slippery Jack を含めた。",
+    "images_remote_credits": [
+      "(c) timsage, CC BY-SA",
+      "(c) noah_siegel, CC BY-NC-SA",
+      "(c) maksympolyakov, CC BY-NC",
+      "(c) mononymous, CC BY-NC",
+      "(c) arthur_haendler, CC BY-NC",
+      "(c) blankell, CC BY-NC",
+      "(c) tiffanysherwood, CC BY-NC",
+      "(c) lactarius, CC BY-NC",
+      "(c) southerndon, CC0"
+    ]
   },
   {
     "id": "sutorius_venenatus",
@@ -5155,8 +6184,16 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/sutorius_venenatus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/430328669/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184457861/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/430328670/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184457920/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184457923/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184457939/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184457952/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Boletus"
     },
@@ -5167,7 +6204,16 @@
       "トドマツ",
       "トウヒ"
     ],
-    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は daikinrin を canonical source として併用。wikipediaEn と mhlw は null のため未使用。別名は和名漢字表記『毒山鳥』と長野県旧称『タヘイイグチ』を採録。季節『盛夏から秋』を 7〜10 月に翻訳。safety=toxic のため cooking_preservation は null。"
+    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は daikinrin を canonical source として併用。wikipediaEn と mhlw は null のため未使用。別名は和名漢字表記『毒山鳥』と長野県旧称『タヘイイグチ』を採録。季節『盛夏から秋』を 7〜10 月に翻訳。safety=toxic のため cooking_preservation は null。",
+    "images_remote_credits": [
+      "(c) wataru_tricho, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) wataru_tricho, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY"
+    ]
   },
   {
     "id": "tricholoma_bakamatsutake",
@@ -5227,8 +6273,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_bakamatsutake.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946510/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/577116992/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/337605325/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946530/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/577117003/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/337605331/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/236269791/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/337605342/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/236269802/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5237,7 +6293,18 @@
       "コナラ",
       "ウバメガシ"
     ],
-    "notes": "season は ja に明記がないため、マツタケ近縁で秋発生という一般的記載および本種が模式標本採取地で秋に見られることから 9-10 月と推定。発生月の明示記載がソースにない旨を注記。aliases は ja 記載の「馬鹿松茸」「さまつ（早マツ）」「ニタリ」を採用。"
+    "notes": "season は ja に明記がないため、マツタケ近縁で秋発生という一般的記載および本種が模式標本採取地で秋に見られることから 9-10 月と推定。発生月の明示記載がソースにない旨を注記。aliases は ja 記載の「馬鹿松茸」「さまつ（早マツ）」「ニタリ」を採用。",
+    "images_remote_credits": [
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) steve_koo, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) steve_koo, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) atsushi_nakajima_cirque, CC BY"
+    ]
   },
   {
     "id": "tricholoma_equestre",
@@ -5338,8 +6405,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_equestre.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/80319735/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95415436/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/320790488/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/239552017/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2935160/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/244413670/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/112326380/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/601172858/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/14377130/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5350,7 +6427,18 @@
       "ミズナラ",
       "コナラ属"
     ],
-    "notes": "主情報は wikipediaJa（キシメジ）を採用。学名・シノニム・分類は daikinrin を併用。季節は ja の「秋」を 9〜11 月に翻訳。safety=edible だが ja に欧州での中毒事例と「日本産は別系統の可能性」両方が記載されているため cooking_preservation 末尾に連続摂食回避の注意を簡潔に付記した。mhlw は null のため未使用。"
+    "notes": "主情報は wikipediaJa（キシメジ）を採用。学名・シノニム・分類は daikinrin を併用。季節は ja の「秋」を 9〜11 月に翻訳。safety=edible だが ja に欧州での中毒事例と「日本産は別系統の可能性」両方が記載されているため cooking_preservation 末尾に連続摂食回避の注意を簡潔に付記した。mhlw は null のため未使用。",
+    "images_remote_credits": [
+      "(c) viktoriabilous, CC BY",
+      "(c) horsefeathers54177, CC BY-NC",
+      "(c) warjo, CC0",
+      "(c) danilinav, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) nschwab, CC BY-NC",
+      "(c) lostcoastmike, CC BY-NC",
+      "(c) mushroommystic, CC BY-NC-ND",
+      "(c) leptonia, CC BY-NC"
+    ]
   },
   {
     "id": "tricholoma_kakishimeji",
@@ -5439,8 +6527,12 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_kakishimeji.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585658227/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585658238/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/585658239/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5452,7 +6544,12 @@
       "ミズナラ",
       "マツ"
     ],
-    "notes": "wikipediaJa を主情報源とし、学名・分類は daikinrin を併用。wikipediaEn と mhlw は null のため未使用。season は『初秋から晩秋』を 9〜11月に翻訳。safety=toxic のため cooking_preservation は null。別名は ja 記載の地方名と漢字表記を採用。"
+    "notes": "wikipediaJa を主情報源とし、学名・分類は daikinrin を併用。wikipediaEn と mhlw は null のため未使用。season は『初秋から晩秋』を 9〜11月に翻訳。safety=toxic のため cooking_preservation は null。別名は ja 記載の地方名と漢字表記を採用。",
+    "images_remote_credits": [
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY"
+    ]
   },
   {
     "id": "tricholoma_matsutake",
@@ -5535,8 +6632,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_matsutake.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115545849/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/571782437/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/578801346/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/433286511/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95066334/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/469932367/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/303599471/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/558870989/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/561884728/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5550,7 +6657,18 @@
       "ゴヨウマツ",
       "アカエゾマツ"
     ],
-    "notes": "主情報源は wikipediaJa、学名・分類・synonym は daikinrin を併用。発生期は ja の「初秋から晩秋」「秋」「10〜11月が主な旬」を 9〜11 月と解釈。mhlw は null のため食毒は ja の『弱毒菌だが通常は中毒しない、過食や古いものは嘔吐・下痢の恐れ』の記述に留め、safety=edible に従い caution/poisoning_first_aid は null とした。"
+    "notes": "主情報源は wikipediaJa、学名・分類・synonym は daikinrin を併用。発生期は ja の「初秋から晩秋」「秋」「10〜11月が主な旬」を 9〜11 月と解釈。mhlw は null のため食毒は ja の『弱毒菌だが通常は中毒しない、過食や古いものは嘔吐・下痢の恐れ』の記述に留め、safety=edible に従い caution/poisoning_first_aid は null とした。",
+    "images_remote_credits": [
+      "(c) christian_ap, CC BY-NC",
+      "(c) sergeyprokopenko, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) ericahastdahl, CC BY-NC",
+      "(c) jarkkopeltoniemi, CC BY-NC",
+      "(c) karainio, CC BY-NC",
+      "(c) uwekozina, CC BY-NC",
+      "(c) xxluhta, CC BY-NC",
+      "(c) unoskog, CC BY-NC"
+    ]
   },
   {
     "id": "tricholoma_muscarium",
@@ -5600,7 +6718,10 @@
       }
     ],
     "image_local": null,
-    "images_remote": [],
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946412/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946425/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5610,7 +6731,11 @@
       "クヌギ",
       "アカマツ"
     ],
-    "notes": "wikipediaJa を主情報源とし、学名・分類情報は daikinrin を併用。季節「初秋から中秋」は 9〜10 月に翻訳。wikipediaEn は edible と記すが ja は有毒になり得ると明記しており ja を採用、safety=toxic に従い cooking_preservation は null。mhlw は null のため参照せず。"
+    "notes": "wikipediaJa を主情報源とし、学名・分類情報は daikinrin を併用。季節「初秋から中秋」は 9〜10 月に翻訳。wikipediaEn は edible と記すが ja は有毒になり得ると明記しており ja を採用、safety=toxic に従い cooking_preservation は null。mhlw は null のため参照せず。",
+    "images_remote_credits": [
+      "(c) atsushi_nakajima_cirque, CC BY",
+      "(c) atsushi_nakajima_cirque, CC BY"
+    ]
   },
   {
     "id": "tricholoma_saponaceum",
@@ -5697,8 +6822,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_saponaceum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/111886537/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/94123426/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5731944/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332495071/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/254962220/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/15656082/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/629717547/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/578041637/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/600595544/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5708,7 +6843,18 @@
       "タンオーク",
       "マドロン"
     ],
-    "notes": "wikipediaJa と mhlw が null のため、分類・学名は daikinrin、形態・生態・毒性情報は wikipediaEn を主情報源として採用。daikinrin の和名は『ミドリシメジ』でありプロンプト指定の『ミネシメジ』と差異があるため、別名に『ミドリシメジ』を記載。発生期は wikipediaEn の『late summer to late autumn』を 8〜11 月に翻訳。[1] は wikipediaEn を指す。"
+    "notes": "wikipediaJa と mhlw が null のため、分類・学名は daikinrin、形態・生態・毒性情報は wikipediaEn を主情報源として採用。daikinrin の和名は『ミドリシメジ』でありプロンプト指定の『ミネシメジ』と差異があるため、別名に『ミドリシメジ』を記載。発生期は wikipediaEn の『late summer to late autumn』を 8〜11 月に翻訳。[1] は wikipediaEn を指す。",
+    "images_remote_credits": [
+      "(c) lindsayz, CC BY-NC",
+      "(c) zukan, CC BY-NC",
+      "(c) alan_rockefeller, CC BY",
+      "(c) lastovka, CC BY-NC",
+      "(c) federicocalledda, CC BY-NC",
+      "(c) kalibardo, CC BY-NC",
+      "(c) manuela9012, CC BY",
+      "(c) w4v3, CC BY-NC",
+      "(c) swimjamie, CC BY"
+    ]
   },
   {
     "id": "tricholoma_virgatum",
@@ -5774,8 +6920,18 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/tricholoma_virgatum.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161406097/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/595897216/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322237302/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169177985/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/581265215/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444348209/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/24573479/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/50604624/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169021894/medium.jpg"
+    ],
     "taxonomy": {
       "genus": "Tricholoma"
     },
@@ -5785,7 +6941,18 @@
       "ツガ",
       "ブナ"
     ],
-    "notes": "季節「夏から秋」を7-10月に翻訳。regions は wikipediaJa に国内具体地名の記載がなく、wikipediaEn の中国・欧州・北米分布を補助採用し日本を加えた。mhlw は文字化けで判読不能のため wikipediaJa の中毒記述を採用。別名は wikipediaJa 冒頭の漢字表記のみ。"
+    "notes": "季節「夏から秋」を7-10月に翻訳。regions は wikipediaJa に国内具体地名の記載がなく、wikipediaEn の中国・欧州・北米分布を補助採用し日本を加えた。mhlw は文字化けで判読不能のため wikipediaJa の中毒記述を採用。別名は wikipediaJa 冒頭の漢字表記のみ。",
+    "images_remote_credits": [
+      "(c) woodhaunt, CC BY-NC",
+      "(c) angellj, CC BY-NC",
+      "(c) wkee4ager, CC BY",
+      "(c) mandymushii, CC BY",
+      "(c) jesplat, CC BY-NC",
+      "(c) federicocalledda, CC BY-NC",
+      "(c) pinonbistro, CC BY-SA",
+      "(c) llreletll, CC0",
+      "(c) strangecelestialtoad, CC BY-NC"
+    ]
   },
   {
     "id": "turbinellus_floccosus",
@@ -5877,8 +7044,18 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [],
+    "image_local": "/images/mushrooms/turbinellus_floccosus.webp",
+    "images_remote": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23428736/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/104738757/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/177699531/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/525571823/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/149128116/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/144931314/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/170160234/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/225596471/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4846094/medium.jpeg"
+    ],
     "taxonomy": {
       "genus": "Gomphus"
     },
@@ -5890,6 +7067,17 @@
       "ダグラスファー",
       "西部アメリカツガ"
     ],
-    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は大菌輪を canonical として参照。season は wikipediaJa の『初夏から秋』『晩夏から秋にかけて最盛期』の記述を7〜10月に翻訳。similar_species のフジウスタケと T. kauffmanii は wikipediaEn の記載を補助的に採用。safety=toxic のため cooking_preservation は null。"
+    "notes": "主情報源は wikipediaJa。学名・分類・synonyms は大菌輪を canonical として参照。season は wikipediaJa の『初夏から秋』『晩夏から秋にかけて最盛期』の記述を7〜10月に翻訳。similar_species のフジウスタケと T. kauffmanii は wikipediaEn の記載を補助的に採用。safety=toxic のため cooking_preservation は null。",
+    "images_remote_credits": [
+      "(c) tsn, CC BY",
+      "(c) abruder, CC BY-NC",
+      "(c) jaimeidea, CC BY-NC",
+      "(c) kevinsperay, CC BY-NC",
+      "(c) josephrucker, CC BY",
+      "(c) kaylieeelizabeth, CC BY-NC",
+      "(c) kaylavag, CC BY-NC",
+      "(c) nacht_flug, CC BY-NC",
+      "(c) kathawk, CC BY-NC"
+    ]
   }
 ]

@@ -1,0 +1,612 @@
+{
+  "generatedAt": "2026-04-16T13:33:16.060Z",
+  "total": 60,
+  "heroHits": 57,
+  "heroHitRate": 0.95,
+  "remoteHits": 58,
+  "remoteHitRate": 0.9666666666666667,
+  "remote5plus": 56,
+  "totalHeroBytes": 4925870,
+  "perSpecies": [
+    {
+      "id": "amanita_caesareoides",
+      "ja": "タマゴタケ",
+      "scientific": "Amanita caesareoides",
+      "hero": "/images/mushrooms/amanita_caesareoides.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita caesareoides",
+      "bytesHero": 108238
+    },
+    {
+      "id": "amanita_ceciliae",
+      "ja": "テングツルタケ",
+      "scientific": "Amanita ceciliae",
+      "hero": "/images/mushrooms/amanita_ceciliae.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita ceciliae",
+      "bytesHero": 177726
+    },
+    {
+      "id": "amanita_ibotengutake",
+      "ja": "イボテングタケ",
+      "scientific": "Amanita ibotengutake",
+      "hero": "/images/mushrooms/amanita_ibotengutake.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%9C%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita ibotengutake",
+      "bytesHero": 136444
+    },
+    {
+      "id": "amanita_muscaria",
+      "ja": "ベニテングタケ",
+      "scientific": "Amanita muscaria",
+      "hero": "/images/mushrooms/amanita_muscaria.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita muscaria",
+      "bytesHero": 88162
+    },
+    {
+      "id": "amanita_pantherina",
+      "ja": "テングタケ",
+      "scientific": "Amanita pantherina",
+      "hero": "/images/mushrooms/amanita_pantherina.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita pantherina",
+      "bytesHero": 114230
+    },
+    {
+      "id": "amanita_porphyria",
+      "ja": "コテングタケ",
+      "scientific": "Amanita porphyria",
+      "hero": "/images/mushrooms/amanita_porphyria.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Amanita%20porphyria",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita porphyria",
+      "bytesHero": 65674
+    },
+    {
+      "id": "amanita_rubescens",
+      "ja": "ガンタケ",
+      "scientific": "Amanita rubescens",
+      "hero": "/images/mushrooms/amanita_rubescens.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%B3%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita rubescens",
+      "bytesHero": 69916
+    },
+    {
+      "id": "amanita_virgineoides",
+      "ja": "シロオニタケ",
+      "scientific": "Amanita virgineoides",
+      "hero": "/images/mushrooms/amanita_virgineoides.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Amanita virgineoides",
+      "bytesHero": 117892
+    },
+    {
+      "id": "boletus_edulis",
+      "ja": "ヤマドリタケ",
+      "scientific": "Boletus edulis",
+      "hero": "/images/mushrooms/boletus_edulis.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Boletus edulis",
+      "bytesHero": 120970
+    },
+    {
+      "id": "boletus_sensibilis",
+      "ja": "ミヤマイロガワリ",
+      "scientific": "Boletus sensibilis",
+      "hero": "/images/mushrooms/boletus_sensibilis.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Boletus%20sensibilis",
+      "remote": 9,
+      "remoteMatchedVia": "Boletus sensibilis",
+      "bytesHero": 51814
+    },
+    {
+      "id": "chlorophyllum_molybdites",
+      "ja": "オオシロカラカサタケ",
+      "scientific": "Chlorophyllum molybdites",
+      "hero": "/images/mushrooms/chlorophyllum_molybdites.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%B7%E3%83%AD%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Chlorophyllum molybdites",
+      "bytesHero": 90704
+    },
+    {
+      "id": "chlorophyllum_neomastoideum",
+      "ja": "ドクカラカサタケ",
+      "scientific": "Chlorophyllum neomastoideum",
+      "hero": "/images/mushrooms/chlorophyllum_neomastoideum.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Chlorophyllum neomastoideum",
+      "bytesHero": 105502
+    },
+    {
+      "id": "clitocybe_fragrans",
+      "ja": "コカブイヌシメジ",
+      "scientific": "Clitocybe fragrans",
+      "hero": "/images/mushrooms/clitocybe_fragrans.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Clitocybe%20fragrans",
+      "remote": 9,
+      "remoteMatchedVia": "Clitocybe fragrans",
+      "bytesHero": 58646
+    },
+    {
+      "id": "entoloma_murrayi",
+      "ja": "キイボカサタケ",
+      "scientific": "Entoloma murrayi",
+      "hero": "/images/mushrooms/entoloma_murrayi.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Entoloma murrayi",
+      "bytesHero": 92246
+    },
+    {
+      "id": "entoloma_quadratum",
+      "ja": "アカイボカサタケ",
+      "scientific": "Entoloma quadratum",
+      "hero": "/images/mushrooms/entoloma_quadratum.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Entoloma quadratum",
+      "bytesHero": 87466
+    },
+    {
+      "id": "entoloma_rhodopolium",
+      "ja": "クサウラベニタケ",
+      "scientific": "Entoloma rhodopolium",
+      "hero": "/images/mushrooms/entoloma_rhodopolium.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%B5%E3%82%A6%E3%83%A9%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Entoloma rhodopolium",
+      "bytesHero": 27108
+    },
+    {
+      "id": "entoloma_sinuatum",
+      "ja": "イッポンシメジ",
+      "scientific": "Entoloma sinuatum",
+      "hero": "/images/mushrooms/entoloma_sinuatum.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%83%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 9,
+      "remoteMatchedVia": "Entoloma sinuatum",
+      "bytesHero": 111904
+    },
+    {
+      "id": "flammulina_velutipes",
+      "ja": "エノキタケ",
+      "scientific": "Flammulina velutipes",
+      "hero": "/images/mushrooms/flammulina_velutipes.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Flammulina velutipes",
+      "bytesHero": 111840
+    },
+    {
+      "id": "galerina_fasciculata",
+      "ja": "コレラタケ",
+      "scientific": "Galerina fasciculata",
+      "hero": null,
+      "heroSource": null,
+      "remote": 0,
+      "remoteMatchedVia": null,
+      "bytesHero": 0
+    },
+    {
+      "id": "galerina_vittiformis",
+      "ja": "ケコガサタケ",
+      "scientific": "Galerina vittiformis",
+      "hero": "/images/mushrooms/galerina_vittiformis.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Galerina%20vittiformis",
+      "remote": 9,
+      "remoteMatchedVia": "Galerina vittiformis",
+      "bytesHero": 67826
+    },
+    {
+      "id": "grifola_frondosa",
+      "ja": "マイタケ",
+      "scientific": "Grifola frondosa",
+      "hero": "/images/mushrooms/grifola_frondosa.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Grifola frondosa",
+      "bytesHero": 132558
+    },
+    {
+      "id": "gymnopilus_aeruginosus",
+      "ja": "ミドリスギタケ",
+      "scientific": "Gymnopilus aeruginosus",
+      "hero": "/images/mushrooms/gymnopilus_aeruginosus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%89%E3%83%AA%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Gymnopilus aeruginosus",
+      "bytesHero": 48768
+    },
+    {
+      "id": "gymnopilus_junonius",
+      "ja": "オオワライタケ",
+      "scientific": "Gymnopilus junonius",
+      "hero": "/images/mushrooms/gymnopilus_junonius.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%83%AF%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Gymnopilus junonius",
+      "bytesHero": 62604
+    },
+    {
+      "id": "gymnopilus_picreus",
+      "ja": "チャツムタケ",
+      "scientific": "Gymnopilus picreus",
+      "hero": "/images/mushrooms/gymnopilus_picreus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%84%E3%83%A0%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Gymnopilus picreus",
+      "bytesHero": 59644
+    },
+    {
+      "id": "hypholoma_fasciculare",
+      "ja": "ニガクリタケ",
+      "scientific": "Hypholoma fasciculare",
+      "hero": "/images/mushrooms/hypholoma_fasciculare.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AC%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Hypholoma fasciculare",
+      "bytesHero": 73158
+    },
+    {
+      "id": "hypsizygus_marmoreus",
+      "ja": "ブナシメジ",
+      "scientific": "Hypsizygus marmoreus",
+      "hero": "/images/mushrooms/hypsizygus_marmoreus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%8A%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 9,
+      "remoteMatchedVia": "Hypsizygus marmoreus",
+      "bytesHero": 92964
+    },
+    {
+      "id": "infundibulicybe_gibba",
+      "ja": "カヤタケ",
+      "scientific": "Infundibulicybe gibba",
+      "hero": "/images/mushrooms/infundibulicybe_gibba.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Infundibulicybe gibba",
+      "bytesHero": 58022
+    },
+    {
+      "id": "inocybe_geophylla",
+      "ja": "シロトマヤタケ",
+      "scientific": "Inocybe geophylla",
+      "hero": "/images/mushrooms/inocybe_geophylla.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Inocybe%20geophylla",
+      "remote": 9,
+      "remoteMatchedVia": "Inocybe geophylla",
+      "bytesHero": 55140
+    },
+    {
+      "id": "inocybe_lacera",
+      "ja": "クロトマヤタケ",
+      "scientific": "Inocybe lacera",
+      "hero": "/images/mushrooms/inocybe_lacera.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Inocybe%20lacera",
+      "remote": 9,
+      "remoteMatchedVia": "Inocybe lacera",
+      "bytesHero": 82518
+    },
+    {
+      "id": "laccaria_amethystina",
+      "ja": "ウラムラサキ",
+      "scientific": "Laccaria amethystina",
+      "hero": "/images/mushrooms/laccaria_amethystina.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD",
+      "remote": 9,
+      "remoteMatchedVia": "Laccaria amethystina",
+      "bytesHero": 99028
+    },
+    {
+      "id": "lactarius_hatsudake",
+      "ja": "ハツタケ",
+      "scientific": "Lactarius hatsudake",
+      "hero": "/images/mushrooms/lactarius_hatsudake.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Lactarius hatsudake",
+      "bytesHero": 85086
+    },
+    {
+      "id": "laetiporus_sulphureus",
+      "ja": "アイカワタケ",
+      "scientific": "Laetiporus sulphureus",
+      "hero": "/images/mushrooms/laetiporus_sulphureus.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Laetiporus%20sulphureus",
+      "remote": 9,
+      "remoteMatchedVia": "Laetiporus sulphureus",
+      "bytesHero": 85786
+    },
+    {
+      "id": "lentinula_edodes",
+      "ja": "シイタケ",
+      "scientific": "Lentinula edodes",
+      "hero": "/images/mushrooms/lentinula_edodes.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Lentinula edodes",
+      "bytesHero": 78358
+    },
+    {
+      "id": "lepiota_cristata",
+      "ja": "キツネノカラカサ",
+      "scientific": "Lepiota cristata",
+      "hero": "/images/mushrooms/lepiota_cristata.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Lepiota%20cristata",
+      "remote": 9,
+      "remoteMatchedVia": "Lepiota cristata",
+      "bytesHero": 87542
+    },
+    {
+      "id": "leucocoprinus_birnbaumii",
+      "ja": "コガネキヌカラカサタケ",
+      "scientific": "Leucocoprinus birnbaumii",
+      "hero": "/images/mushrooms/leucocoprinus_birnbaumii.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%82%AD%E3%83%8C%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Leucocoprinus birnbaumii",
+      "bytesHero": 54330
+    },
+    {
+      "id": "lyophyllum_decastes",
+      "ja": "ハタケシメジ",
+      "scientific": "Lyophyllum decastes",
+      "hero": "/images/mushrooms/lyophyllum_decastes.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%BF%E3%82%B1%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 9,
+      "remoteMatchedVia": "Lyophyllum decastes",
+      "bytesHero": 68798
+    },
+    {
+      "id": "morchella_esculenta",
+      "ja": "アミガサタケ",
+      "scientific": "Morchella esculenta",
+      "hero": "/images/mushrooms/morchella_esculenta.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Morchella esculenta",
+      "bytesHero": 159410
+    },
+    {
+      "id": "omphalotus_japonicus",
+      "ja": "ツキヨタケ",
+      "scientific": "Omphalotus japonicus",
+      "hero": "/images/mushrooms/omphalotus_japonicus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%82%AD%E3%83%A8%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Omphalotus japonicus",
+      "bytesHero": 106710
+    },
+    {
+      "id": "panaeolus_papilionaceus",
+      "ja": "ワライタケ",
+      "scientific": "Panaeolus papilionaceus",
+      "hero": "/images/mushrooms/panaeolus_papilionaceus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%AF%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Panaeolus papilionaceus",
+      "bytesHero": 57524
+    },
+    {
+      "id": "paralepistopsis_acromelalga",
+      "ja": "ドクササコ",
+      "scientific": "Paralepistopsis acromelalga",
+      "hero": "/images/mushrooms/paralepistopsis_acromelalga.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%B5%E3%82%B5%E3%82%B3",
+      "remote": 0,
+      "remoteMatchedVia": null,
+      "bytesHero": 35550
+    },
+    {
+      "id": "paxillus_involutus",
+      "ja": "ヒダハタケ",
+      "scientific": "Paxillus involutus",
+      "hero": "/images/mushrooms/paxillus_involutus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%80%E3%83%8F%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Paxillus involutus",
+      "bytesHero": 90324
+    },
+    {
+      "id": "pholiota_microspora",
+      "ja": "ナメコ",
+      "scientific": "Pholiota microspora",
+      "hero": "/images/mushrooms/pholiota_microspora.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A1%E3%82%B3",
+      "remote": 9,
+      "remoteMatchedVia": "Pholiota microspora",
+      "bytesHero": 126868
+    },
+    {
+      "id": "pholiota_squarrosa",
+      "ja": "スギタケ",
+      "scientific": "Pholiota squarrosa",
+      "hero": "/images/mushrooms/pholiota_squarrosa.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Pholiota squarrosa",
+      "bytesHero": 111350
+    },
+    {
+      "id": "pleurotus_ostreatus",
+      "ja": "ヒラタケ",
+      "scientific": "Pleurotus ostreatus",
+      "hero": "/images/mushrooms/pleurotus_ostreatus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Pleurotus ostreatus",
+      "bytesHero": 87594
+    },
+    {
+      "id": "psathyrella_corrugis",
+      "ja": "ナヨタケ",
+      "scientific": "Psathyrella corrugis",
+      "hero": "/images/mushrooms/psathyrella_corrugis.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A8%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Psathyrella corrugis",
+      "bytesHero": 42226
+    },
+    {
+      "id": "pseudosperma_rimosum",
+      "ja": "オオキヌハダトマヤタケ",
+      "scientific": "Pseudosperma rimosum",
+      "hero": "/images/mushrooms/pseudosperma_rimosum.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%AD%E3%83%8C%E3%83%8F%E3%83%80%E3%83%88%E3%83%9E%E3%83%A4%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Pseudosperma rimosum",
+      "bytesHero": 67302
+    },
+    {
+      "id": "psilocybe_argentipes",
+      "ja": "ヒカゲシビレタケ",
+      "scientific": "Psilocybe argentipes",
+      "hero": null,
+      "heroSource": null,
+      "remote": 9,
+      "remoteMatchedVia": "Psilocybe argentipes",
+      "bytesHero": 0
+    },
+    {
+      "id": "russula_densifolia",
+      "ja": "クロハツモドキ",
+      "scientific": "Russula densifolia",
+      "hero": "/images/mushrooms/russula_densifolia.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84%E3%83%A2%E3%83%89%E3%82%AD",
+      "remote": 9,
+      "remoteMatchedVia": "Russula densifolia",
+      "bytesHero": 91234
+    },
+    {
+      "id": "russula_emetica",
+      "ja": "ドクベニタケ",
+      "scientific": "Russula emetica",
+      "hero": "/images/mushrooms/russula_emetica.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Russula emetica",
+      "bytesHero": 120152
+    },
+    {
+      "id": "russula_foetens",
+      "ja": "クサハツ",
+      "scientific": "Russula foetens",
+      "hero": "/images/mushrooms/russula_foetens.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%B5%E3%83%8F%E3%83%84",
+      "remote": 9,
+      "remoteMatchedVia": "Russula foetens",
+      "bytesHero": 121194
+    },
+    {
+      "id": "suillus_luteus",
+      "ja": "ヌメリイグチ",
+      "scientific": "Suillus luteus",
+      "hero": "/images/mushrooms/suillus_luteus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8C%E3%83%A1%E3%83%AA%E3%82%A4%E3%82%B0%E3%83%81",
+      "remote": 9,
+      "remoteMatchedVia": "Suillus luteus",
+      "bytesHero": 24696
+    },
+    {
+      "id": "sutorius_venenatus",
+      "ja": "ドクヤマドリ",
+      "scientific": "Sutorius venenatus",
+      "hero": "/images/mushrooms/sutorius_venenatus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA",
+      "remote": 7,
+      "remoteMatchedVia": "Sutorius venenatus",
+      "bytesHero": 62280
+    },
+    {
+      "id": "tricholoma_bakamatsutake",
+      "ja": "バカマツタケ",
+      "scientific": "Tricholoma bakamatsutake",
+      "hero": "/images/mushrooms/tricholoma_bakamatsutake.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%AB%E3%83%9E%E3%83%84%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Tricholoma bakamatsutake",
+      "bytesHero": 42882
+    },
+    {
+      "id": "tricholoma_equestre",
+      "ja": "キシメジ",
+      "scientific": "Tricholoma equestre",
+      "hero": "/images/mushrooms/tricholoma_equestre.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 9,
+      "remoteMatchedVia": "Tricholoma equestre",
+      "bytesHero": 138402
+    },
+    {
+      "id": "tricholoma_kakishimeji",
+      "ja": "カキシメジ",
+      "scientific": "Tricholoma kakishimeji",
+      "hero": "/images/mushrooms/tricholoma_kakishimeji.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 3,
+      "remoteMatchedVia": "Tricholoma kakishimeji",
+      "bytesHero": 70932
+    },
+    {
+      "id": "tricholoma_matsutake",
+      "ja": "マツタケ",
+      "scientific": "Tricholoma matsutake",
+      "hero": "/images/mushrooms/tricholoma_matsutake.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Tricholoma matsutake",
+      "bytesHero": 83722
+    },
+    {
+      "id": "tricholoma_muscarium",
+      "ja": "ハエトリシメジ",
+      "scientific": "Tricholoma muscarium",
+      "hero": null,
+      "heroSource": null,
+      "remote": 2,
+      "remoteMatchedVia": "Tricholoma muscarium",
+      "bytesHero": 0
+    },
+    {
+      "id": "tricholoma_saponaceum",
+      "ja": "ミドリシメジ",
+      "scientific": "Tricholoma saponaceum",
+      "hero": "/images/mushrooms/tricholoma_saponaceum.webp",
+      "heroSource": "https://en.wikipedia.org/wiki/Tricholoma%20saponaceum",
+      "remote": 9,
+      "remoteMatchedVia": "Tricholoma saponaceum",
+      "bytesHero": 47964
+    },
+    {
+      "id": "tricholoma_virgatum",
+      "ja": "ネズミシメジ",
+      "scientific": "Tricholoma virgatum",
+      "hero": "/images/mushrooms/tricholoma_virgatum.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%BA%E3%83%9F%E3%82%B7%E3%83%A1%E3%82%B8",
+      "remote": 9,
+      "remoteMatchedVia": "Tricholoma virgatum",
+      "bytesHero": 89756
+    },
+    {
+      "id": "turbinellus_floccosus",
+      "ja": "ウスタケ",
+      "scientific": "Turbinellus floccosus",
+      "hero": "/images/mushrooms/turbinellus_floccosus.webp",
+      "heroSource": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%82%BF%E3%82%B1",
+      "remote": 9,
+      "remoteMatchedVia": "Turbinellus floccosus",
+      "bytesHero": 119186
+    }
+  ]
+}
