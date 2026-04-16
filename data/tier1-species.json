@@ -1038,6 +1038,7 @@
       "japaneseName": "メシマコブ",
       "aliases": [],
       "synonyms": [
+        "Sanghuangporus sanghuang",
         "Phellinus linteus",
         "Fomes linteus",
         "Fulvifomes linteus",
@@ -1047,7 +1048,7 @@
         "Scindalma linteum"
       ],
       "normalizationStatus": "SYNONYM",
-      "curator_notes": "force_include: scientific を Phellinus linteus へ差し替え予定、synonyms に Tropicoporus linteus + Sanghuangporus sanghuang を登録"
+      "curator_notes": "force_include: gate fail (wiki ja missing、iNat のみ) だがメシマコブ重要種。Sanghuangporus sanghuang も実質同義の検索補助として synonyms 登録"
     },
     {
       "scientificName": "Retiboletus ornatipes",
@@ -1286,7 +1287,7 @@
         "Oudemansiella venosolamellata"
       ],
       "normalizationStatus": "SYNONYM",
-      "curator_notes": "force_include: scientific を Mucidula venosolamellata へ差し替え予定、synonyms に Mucidula mucida を登録"
+      "curator_notes": "force_include: gate fail (wiki ja missing) だがヌメリツバタケ重要種。Mucidula venosolamellata 他複数シノニムを保持"
     },
     {
       "scientificName": "Aureoboletus auriflammeus",
@@ -1465,6 +1466,31 @@
       ],
       "normalizationStatus": "ACCEPTED",
       "curator_notes": "force_include: gate fail だが Amanita 属、大菌輪 hit"
+    },
+    {
+      "scientificName": "Sarcomyxa edulis",
+      "japaneseName": "ムキタケ",
+      "aliases": [],
+      "synonyms": [
+        "Panellus edulis"
+      ],
+      "normalizationStatus": "ACCEPTED",
+      "curator_notes": "Phase 14 S2 追加: Sarcomyxa serotina (オソムキタケ) と別種。日本慣用「ムキタケ」は本種。GBIF usageKey=8307192、ranking.json 未登録につき spec に直接追加"
+    },
+    {
+      "scientificName": "Trichaleurina tenuispora",
+      "japaneseName": "オオゴムタケ",
+      "aliases": [],
+      "synonyms": [],
+      "normalizationStatus": "ACCEPTED",
+      "curator_notes": "Phase 14 S2 追加: Trichaleurina celebica と別種。日本慣用「オオゴムタケ」は本種。GBIF usageKey=7932906、ranking.json 未登録につき spec に直接追加"
+    }
+  ],
+  "editedBy": [
+    {
+      "at": "2026-04-16T17:04:34.752Z",
+      "who": "phase14-task9-postedit",
+      "note": "Tropicoporus linteus に Sanghuangporus sanghuang synonym 追加 (方針 B)、Mucidula mucida curator_notes 更新、Sarcomyxa edulis と Trichaleurina tenuispora を新規追加 (GBIF accepted / ranking 未登録)"
     }
   ]
 }
