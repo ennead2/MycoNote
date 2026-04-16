@@ -43,9 +43,9 @@ const EXPERIENCE_LABELS: Record<string, string> = {
 
 export function buildIdentifyPrompt(mushroomList: CompactMushroom[]): string {
   const lines = mushroomList.map(
-    (m) => `${m.id}|${m.name_ja}|${m.scientific}|${m.toxicity}`
+    (m) => `${m.id}|${m.name_ja}|${m.scientific}|${m.safety}`
   );
-  return `以下は図鑑に収録されているキノコのリストです（id|和名|学名|毒性）:\n${lines.join('\n')}`;
+  return `以下は図鑑に収録されているキノコのリストです（id|和名|学名|安全性）:\n${lines.join('\n')}`;
 }
 
 export function buildPlanSystemPrompt(context: PlanContext): string {

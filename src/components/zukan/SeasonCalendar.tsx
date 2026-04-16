@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ToxicityBadge } from './ToxicityBadge';
 import { UI_TEXT } from '@/constants/ui-text';
-import { isMonthInSeason } from '@/lib/season-utils';
+import { isMonthInSeasonRanges } from '@/lib/season-utils';
 import type { Mushroom } from '@/types/mushroom';
 
 interface SeasonCalendarProps {
@@ -30,9 +30,7 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
 
   const filtered = useMemo(() => {
     if (selected === ALL) return mushrooms;
-    return mushrooms.filter((mu) =>
-      isMonthInSeason(selected, mu.season.start_month, mu.season.end_month)
-    );
+    return mushrooms.filter((mu) => isMonthInSeasonRanges(selected, mu.season));
   }, [mushrooms, selected]);
 
   return (
@@ -116,15 +114,11 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
                       <span className="serif-display text-washi-cream hover:text-moss-light font-medium truncate text-xs transition-colors">
                         {mushroom.names.ja}
                       </span>
-                      <ToxicityBadge toxicity={mushroom.toxicity} compact />
+                      <ToxicityBadge safety={mushroom.safety} compact />
                     </Link>
                   </td>
                   {MONTHS.map((m) => {
-                    const active = isMonthInSeason(
-                      m,
-                      mushroom.season.start_month,
-                      mushroom.season.end_month
-                    );
+                    const active = isMonthInSeasonRanges(m, mushroom.season);
                     const isCurrent = isHydrated && m === currentMonth;
                     const isSelected = selected === m;
                     return (

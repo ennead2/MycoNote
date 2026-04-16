@@ -1,5 +1,5 @@
 import mushroomsRaw from './mushrooms.json';
-import type { Mushroom, FilterOptions, SortOrder, Toxicity } from '@/types/mushroom';
+import type { Mushroom, FilterOptions, SortOrder, Safety } from '@/types/mushroom';
 
 export const mushrooms: Mushroom[] = mushroomsRaw as Mushroom[];
 
@@ -46,8 +46,8 @@ export function searchMushrooms(filters: FilterOptions): Mushroom[] {
     );
   }
 
-  if (filters.toxicity && filters.toxicity.length > 0) {
-    results = results.filter((m) => filters.toxicity!.includes(m.toxicity));
+  if (filters.safety && filters.safety.length > 0) {
+    results = results.filter((m) => filters.safety!.includes(m.safety));
   }
 
   if (filters.season) {
@@ -74,10 +74,6 @@ export function searchMushrooms(filters: FilterOptions): Mushroom[] {
     results = results.filter((m) => anyOf(m.tree_association, filters.treeAssociation!));
   }
 
-  if (filters.capColor && filters.capColor.length > 0) {
-    results = results.filter((m) => anyOf(m.traits?.cap_color, filters.capColor!));
-  }
-
   return results;
 }
 
@@ -85,23 +81,28 @@ export function getMushroomsBySeason(month: number): Mushroom[] {
   return mushrooms.filter((m) => isInSeason(m, month));
 }
 
+/**
+ * 任意の月が season array のどれか 1 つにヒットすれば true。
+ * 各 SeasonRange は単発期間（start_month <= end_month）または年またぎ（start > end）。
+ */
 function isInSeason(mushroom: Mushroom, month: number): boolean {
-  const { start_month, end_month } = mushroom.season;
-  if (start_month <= end_month) {
-    return month >= start_month && month <= end_month;
-  }
-  // 年をまたぐ場合（例: 11月〜3月）
-  return month >= start_month || month <= end_month;
+  return mushroom.season.some((range) => {
+    const { start_month, end_month } = range;
+    if (start_month <= end_month) {
+      return month >= start_month && month <= end_month;
+    }
+    return month >= start_month || month <= end_month;
+  });
 }
 
 // ===== Sorting =====
 
-const TOXICITY_SORT_ORDER: Record<Toxicity, number> = {
+const SAFETY_SORT_ORDER: Record<Safety, number> = {
   edible: 0,
-  edible_caution: 1,
+  caution: 1,
   inedible: 2,
   toxic: 3,
-  deadly_toxic: 4,
+  deadly: 4,
 };
 
 /** Japanese name comparator using localeCompare with ja collation (handles hiragana/katakana). */
@@ -117,7 +118,7 @@ export function sortMushrooms(list: Mushroom[], order: SortOrder): Mushroom[] {
       return copy;
     case 'safety':
       copy.sort((a, b) => {
-        const d = TOXICITY_SORT_ORDER[a.toxicity] - TOXICITY_SORT_ORDER[b.toxicity];
+        const d = SAFETY_SORT_ORDER[a.safety] - SAFETY_SORT_ORDER[b.safety];
         return d !== 0 ? d : kanaCompare(a.names.ja, b.names.ja);
       });
       return copy;
@@ -125,14 +126,16 @@ export function sortMushrooms(list: Mushroom[], order: SortOrder): Mushroom[] {
       copy.sort((a, b) => {
         // Place un-taxonomized entries at the end
         const at = a.taxonomy, bt = b.taxonomy;
-        if (at && !bt) return -1;
-        if (!at && bt) return 1;
-        if (at && bt) {
-          const orderDiff = at.order.localeCompare(bt.order, 'en');
+        const aHasTax = !!(at?.order || at?.family || at?.genus);
+        const bHasTax = !!(bt?.order || bt?.family || bt?.genus);
+        if (aHasTax && !bHasTax) return -1;
+        if (!aHasTax && bHasTax) return 1;
+        if (aHasTax && bHasTax) {
+          const orderDiff = (at?.order ?? '').localeCompare(bt?.order ?? '', 'en');
           if (orderDiff !== 0) return orderDiff;
-          const familyDiff = at.family.localeCompare(bt.family, 'en');
+          const familyDiff = (at?.family ?? '').localeCompare(bt?.family ?? '', 'en');
           if (familyDiff !== 0) return familyDiff;
-          const genusDiff = at.genus.localeCompare(bt.genus, 'en');
+          const genusDiff = (at?.genus ?? '').localeCompare(bt?.genus ?? '', 'en');
           if (genusDiff !== 0) return genusDiff;
         }
         return kanaCompare(a.names.ja, b.names.ja);

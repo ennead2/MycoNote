@@ -7,7 +7,7 @@ export interface CompactMushroom {
   id: string;
   name_ja: string;
   scientific: string;
-  toxicity: string;
+  safety: string;
 }
 
 export interface IdentifyCandidate {

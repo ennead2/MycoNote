@@ -2,22 +2,12 @@
 
 import { useState } from 'react';
 import { Search, SlidersHorizontal, X } from 'lucide-react';
-import type { FilterOptions, Toxicity, CapColor } from '@/types/mushroom';
-import { TOXICITY_CONFIG } from '@/constants/toxicity';
+import type { FilterOptions, Safety } from '@/types/mushroom';
+import { SAFETY_CONFIG } from '@/constants/safety';
 import { UI_TEXT } from '@/constants/ui-text';
 import { getFacetValues } from '@/data/mushrooms';
 
-const TOXICITY_ORDER: Toxicity[] = ['edible', 'edible_caution', 'inedible', 'toxic', 'deadly_toxic'];
-
-const CAP_COLOR_CONFIG: Array<{ value: CapColor; label: string; hex: string }> = [
-  { value: 'white', label: '白', hex: '#EDE3D0' },
-  { value: 'brown', label: '茶', hex: '#7A4A2A' },
-  { value: 'red', label: '赤', hex: '#C43E3E' },
-  { value: 'yellow', label: '黄', hex: '#D4A017' },
-  { value: 'orange', label: '橙', hex: '#D47337' },
-  { value: 'gray', label: '灰', hex: '#7A7266' },
-  { value: 'black', label: '黒', hex: '#2B2420' },
-];
+const SAFETY_ORDER: Safety[] = ['edible', 'caution', 'inedible', 'toxic', 'deadly'];
 
 interface SearchFilterProps {
   filters: FilterOptions;
@@ -37,25 +27,23 @@ export function SearchFilter({ filters, onFilterChange }: SearchFilterProps) {
   const [expanded, setExpanded] = useState(false);
   const facets = getFacetValues();
 
-  const activeToxicity = filters.toxicity ?? [];
+  const activeSafety = filters.safety ?? [];
   const activeFamily = filters.family ?? [];
   const activeGenus = filters.genus ?? [];
   const activeHabitat = filters.habitat ?? [];
   const activeRegions = filters.regions ?? [];
   const activeTrees = filters.treeAssociation ?? [];
-  const activeCapColor = filters.capColor ?? [];
 
   const advancedActiveCount =
     activeFamily.length +
     activeGenus.length +
     activeHabitat.length +
     activeRegions.length +
-    activeTrees.length +
-    activeCapColor.length;
+    activeTrees.length;
 
   const hasAnyFilter =
     (filters.query && filters.query.length > 0) ||
-    activeToxicity.length > 0 ||
+    activeSafety.length > 0 ||
     advancedActiveCount > 0;
 
   const handleClearAll = () => {
@@ -90,16 +78,16 @@ export function SearchFilter({ filters, onFilterChange }: SearchFilterProps) {
         )}
       </div>
 
-      {/* Safety (toxicity) filter — always visible */}
+      {/* Safety filter — always visible */}
       <div className="flex flex-wrap gap-1.5">
-        {TOXICITY_ORDER.map((toxicity) => {
-          const config = TOXICITY_CONFIG[toxicity];
-          const isActive = activeToxicity.includes(toxicity);
+        {SAFETY_ORDER.map((safety) => {
+          const config = SAFETY_CONFIG[safety];
+          const isActive = activeSafety.includes(safety);
           return (
             <button
-              key={toxicity}
+              key={safety}
               type="button"
-              onClick={() => onFilterChange({ ...filters, toxicity: toggleIn(activeToxicity, toxicity) })}
+              onClick={() => onFilterChange({ ...filters, safety: toggleIn(activeSafety, safety) })}
               aria-pressed={isActive}
               className={`rounded-full px-2.5 py-1 text-[11px] font-bold border transition-colors ${
                 isActive
@@ -143,33 +131,6 @@ export function SearchFilter({ filters, onFilterChange }: SearchFilterProps) {
       {/* Expanded advanced filters */}
       {expanded && (
         <div className="flex flex-col gap-3 pt-1 animate-fade-in">
-          {/* Cap color — uses color chips */}
-          <FilterGroup label={UI_TEXT.zukan.filterCapColor}>
-            {CAP_COLOR_CONFIG.map(({ value, label, hex }) => {
-              const active = activeCapColor.includes(value);
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => onFilterChange({ ...filters, capColor: toggleIn(activeCapColor, value) })}
-                  aria-pressed={active}
-                  className={`inline-flex items-center gap-1.5 rounded-full px-2 py-1 text-[11px] mono-data border transition-colors ${
-                    active
-                      ? 'bg-moss-primary text-washi-cream border-moss-primary'
-                      : 'bg-soil-bg text-washi-muted border-border hover:border-moss-light/50'
-                  }`}
-                >
-                  <span
-                    aria-hidden="true"
-                    className="inline-block w-3 h-3 rounded-full border border-washi-cream/15"
-                    style={{ backgroundColor: hex }}
-                  />
-                  {label}
-                </button>
-              );
-            })}
-          </FilterGroup>
-
           <FilterGroup label={UI_TEXT.zukan.filterHabitatPlural}>
             <MultiChipSelect
               options={facets.habitats}

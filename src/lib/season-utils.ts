@@ -1,5 +1,5 @@
 import { mushrooms } from '@/data/mushrooms';
-import type { Mushroom } from '@/types/mushroom';
+import type { Mushroom, SeasonRange } from '@/types/mushroom';
 
 /** 安全Tips — ホーム画面でランダム表示 */
 export const SAFETY_TIPS: readonly string[] = [
@@ -16,7 +16,7 @@ export const SAFETY_TIPS: readonly string[] = [
 ] as const;
 
 /**
- * 指定月が発生期間内にあるかを判定。
+ * 指定月が発生期間内にあるかを判定（単一 range 版）。
  * start_month <= end_month の通常パターンと、
  * 冬をまたぐパターン（例: start=11, end=2）両方に対応。
  */
@@ -28,15 +28,18 @@ export function isMonthInSeason(month: number, startMonth: number, endMonth: num
   return month >= startMonth || month <= endMonth;
 }
 
+/** 任意の SeasonRange[] のいずれかに月が含まれれば true。v2 schema 用。 */
+export function isMonthInSeasonRanges(month: number, ranges: readonly SeasonRange[]): boolean {
+  return ranges.some((r) => isMonthInSeason(month, r.start_month, r.end_month));
+}
+
 /**
  * 指定月が旬のキノコ一覧を返す。
  * @param month 1-12
  * @param maxCount 先頭から取得する最大件数（省略時は全件）
  */
 export function getSeasonalMushrooms(month: number, maxCount?: number): Mushroom[] {
-  const seasonal = mushrooms.filter((m) =>
-    isMonthInSeason(month, m.season.start_month, m.season.end_month)
-  );
+  const seasonal = mushrooms.filter((m) => isMonthInSeasonRanges(month, m.season));
   if (maxCount !== undefined && seasonal.length > maxCount) {
     return seasonal.slice(0, maxCount);
   }

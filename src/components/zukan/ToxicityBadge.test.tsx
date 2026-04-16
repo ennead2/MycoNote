@@ -1,20 +1,20 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { ToxicityBadge } from './ToxicityBadge';
-import { TOXICITY_CONFIG } from '@/constants/toxicity';
-import type { Toxicity } from '@/types/mushroom';
+import { SAFETY_CONFIG } from '@/constants/safety';
+import type { Safety } from '@/types/mushroom';
 
 describe('ToxicityBadge', () => {
-  const allToxicities: Toxicity[] = ['edible', 'edible_caution', 'inedible', 'toxic', 'deadly_toxic'];
+  const allSafety: Safety[] = ['edible', 'caution', 'inedible', 'toxic', 'deadly'];
 
-  it.each(allToxicities)('renders correct label for %s', (toxicity) => {
-    render(<ToxicityBadge toxicity={toxicity} />);
-    expect(screen.getByText(TOXICITY_CONFIG[toxicity].label)).toBeInTheDocument();
+  it.each(allSafety)('renders correct label for %s', (safety) => {
+    render(<ToxicityBadge safety={safety} />);
+    expect(screen.getByText(SAFETY_CONFIG[safety].label)).toBeInTheDocument();
   });
 
-  it('renders larger badge for toxic and deadly_toxic', () => {
-    const { container: toxicContainer } = render(<ToxicityBadge toxicity="toxic" />);
-    const { container: edibleContainer } = render(<ToxicityBadge toxicity="edible" />);
+  it('renders larger badge for toxic and deadly', () => {
+    const { container: toxicContainer } = render(<ToxicityBadge safety="toxic" />);
+    const { container: edibleContainer } = render(<ToxicityBadge safety="edible" />);
     const toxicBadge = toxicContainer.firstChild as HTMLElement;
     const edibleBadge = edibleContainer.firstChild as HTMLElement;
     expect(toxicBadge.className).toContain('text-sm');
@@ -22,7 +22,7 @@ describe('ToxicityBadge', () => {
   });
 
   it('includes icon in the badge', () => {
-    render(<ToxicityBadge toxicity="deadly_toxic" />);
+    render(<ToxicityBadge safety="deadly" />);
     expect(screen.getByText(/☠/)).toBeInTheDocument();
   });
 });

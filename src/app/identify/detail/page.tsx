@@ -17,7 +17,7 @@ const compactList: CompactMushroom[] = mushrooms.map((m) => ({
   id: m.id,
   name_ja: m.names.ja,
   scientific: m.names.scientific,
-  toxicity: m.toxicity,
+  safety: m.safety,
 }));
 
 export default function IdentifyDetailPage() {

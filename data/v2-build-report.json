@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-04-16T12:57:19.739Z",
+  "total": 60,
+  "safetyCount": {
+    "edible": 15,
+    "toxic": 43,
+    "caution": 1,
+    "deadly": 1
+  },
+  "similarResolutionRate": 0.23783783783783785,
+  "similarResolved": 44,
+  "similarTotal": 185,
+  "withImages": 0,
+  "skipped": [],
+  "skippedCount": 0
+}

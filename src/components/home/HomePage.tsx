@@ -130,7 +130,7 @@ export default function HomePage() {
                       )}
                     </p>
                   </div>
-                  {mushroom && <ToxicityBadge toxicity={mushroom.toxicity} compact />}
+                  {mushroom && <ToxicityBadge safety={mushroom.safety} compact />}
                 </Link>
               );
             })}
@@ -143,7 +143,7 @@ export default function HomePage() {
 
 function pickImageSrc(m: Mushroom): string | null {
   if (m.image_local) return m.image_local;
-  if (m.images_remote && m.images_remote.length > 0) return m.images_remote[0];
+  if (m.images_remote.length > 0) return m.images_remote[0];
   return null;
 }
 
@@ -284,7 +284,7 @@ function SeasonalCard({ mushroom, width }: { mushroom: Mushroom; width: number |
         <p className="serif-display text-washi-cream font-medium text-xs leading-tight truncate">
           {mushroom.names.ja}
         </p>
-        <ToxicityBadge toxicity={mushroom.toxicity} compact />
+        <ToxicityBadge safety={mushroom.safety} compact />
       </div>
     </Link>
   );
