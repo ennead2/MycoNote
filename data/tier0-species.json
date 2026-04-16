@@ -301,11 +301,6 @@
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
-      "scientificName": "Russula neoemetica",
-      "japaneseName": "ドクベニダマシ",
-      "rationale": "toxic: 主要な毒きのこ（旧 R. nobilis、大菌輪正典は neoemetica）"
-    },
-    {
       "scientificName": "Suillus luteus",
       "japaneseName": "ヌメリイグチ",
       "rationale": "famous_edible: 採取対象の主要種"
@@ -343,11 +338,6 @@
     {
       "scientificName": "Tricholoma kakishimeji",
       "japaneseName": "カキシメジ",
-      "rationale": "toxic: 主要な毒きのこ"
-    },
-    {
-      "scientificName": "Tricholoma ustaloides",
-      "japaneseName": "ニガシメジ",
       "rationale": "toxic: 主要な毒きのこ"
     },
     {
