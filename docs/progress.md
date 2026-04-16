@@ -671,3 +671,97 @@ Phase 13-F（v2.0 リリース）で `generated/articles/approved/` を `src/dat
 - [x] Task 1.13: 全テスト通過確認・本 commit
 
 新規テスト約 266 件追加（162件 → 428件）。全テスト PASS。
+
+### Step 2: tier0 62 種を新パイプラインで全再生成 — 完了 (2026-04-16)
+
+- [x] `reset_phase13e.mjs` で旧キャッシュ・旧 generated/articles 破棄
+- [x] tier0 62 種を新 fetcher + 新 prompt + V1〜V13 validator で再生成
+- [x] subagent 並列（concurrency 5）で 62/62 pass を達成
+- [x] `combined_to_md.mjs` 追加 — combined JSON から Markdown サイドカー出力
+- [x] commit `8d83dc5`（tier0 62 種再生成）
+
+### Step 3: レビュー UI 改善 + 人間レビュー確定 — 完了 (2026-04-16)
+
+- [x] `review-v2` UI に warning 理由表示を追加（commit `cd6cfbf`）
+- [x] 第 1 ラウンド: 55 approve、concern 7 件を残課題として分離（commit `b8adb7c`）
+- [x] 第 2 ラウンド concern 対応（commit `1a12824`）
+  - 差し替え 3 件: Gymnopilus liquiritiae → picreus、Psilocybe subcaerulipes → argentipes、Russula nobilis → neoemetica
+  - 修正 4 件: Tricholoma bakamatsutake (toxic→edible)、Lactarius hatsudake 和名、Entoloma murrayi 和名、Tricholoma ustaloides 和名
+- [x] 第 3 ラウンド reject 2 件: Russula neoemetica / Tricholoma ustaloides を tier0 除外（commit `a3cd3bf`）
+- [x] **最終: tier0 60 種 approve 確定**、`generated/articles/approved/` に 60 件配置
+- [x] validate: 60/60 pass
+
+### マージ
+- [x] phase13d-review-ui ブランチを main にマージ（merge commit `fc73966`）
+- [x] origin に push 済み（36 commits 反映）
+- [x] worktree 削除済み
+
+### 主要な学び（Phase 13-F 以降に活用）
+
+1. validator の season スキーマは `start_month` / `end_month`（`from`/`to` ではない）
+2. aliases は日本語和名のみ（Latin binomial / 英語 common name は V9 違反）
+3. V6: safety=caution/edible は cooking_preservation 必須
+4. 大菌輪正典和名と checklist 和名が食い違うケースあり → `tier0-species.json` に `ja_wiki_source_override.title` を追加
+5. GBIF シノニム統合との衝突（例: Psilocybe argentipes → subcaerulipes）→ ranking.json に literal 行 + `normalizationStatus: MANUAL`
+6. subagent への指示テンプレートで `start_month`/`end_month` と alias 規則を明示するのが初回 NG 率を下げる
+
+### 次フェーズ
+
+Phase 13-F（v2.0 リリース）: `generated/articles/approved/` の 60 件を `src/data/mushrooms.json` に統合、図鑑 UI を v2 スキーマに切替。計画書: `docs/superpowers/plans/2026-04-16-phase13f-v2-release.md`
+
+---
+
+## Phase 13-F: v2.0 リリース — 完了 (2026-04-16)
+
+計画書: `docs/superpowers/plans/2026-04-16-phase13f-v2-release.md`
+方針: v1 (300 種) を完全廃棄、v2 (60 種) で `src/data/mushrooms.json` を新規構築
+
+### Step 1-3: スキーマ刷新 + 構築 + 簡易識別停止
+- [x] `src/types/mushroom.ts` を v2 schema に置換 (Toxicity → Safety、enum caution/deadly、season array、similar_species を {ja, note, id?, scientific?} 化、sources/caution/notes 追加、traits/verified/source_url/capColor 廃止)
+- [x] `src/constants/toxicity.ts` → `safety.ts` リネーム (SAFETY_CONFIG)
+- [x] `scripts/phase13/build_v2_mushrooms.mjs` 新設、approved + ranking + tier0 統合 (21 unit tests)
+- [x] `src/data/mushrooms.json` を v2 60 種で完全置換 (1,107 KB → 313 KB)
+- [x] v1 を `mushrooms-v1-archive.json` として保管 (本体コードは参照しない)
+- [x] 簡易識別ページ (`/identify/simple`) を「準備中」プレースホルダ化
+- [x] `identify-matcher.ts` / `SimpleIdentifyResult.tsx` / `FeatureSelector.tsx` 削除
+
+### Step 4: IndexedDB v3→v4 マイグレーション
+- [x] `src/lib/migrations/v3-to-v4.ts` (純粋関数 + DI、7 unit tests)
+- [x] `src/types/migration.ts` 新設、`db.version(4)` で migrations テーブル追加
+- [x] AppContext で起動時 hydration 後にマイグレーション実行
+- [x] bookmarks: 不一致 ID 削除、records: mushroom_id を null リセット (種名テキストは保持)
+
+### Step 5: UI 改修
+- [x] MushroomDetail に sources セクション + cooking/poisoning は HighlightSection (safety palette カード)
+- [x] caution box を ad-hoc red から InfoBanner (severity=safety) に置換
+- [x] SearchFilter から capColor フィルタセクション削除
+- [x] V2ReleaseBanner 新設、layout に挿入 (localStorage で再表示抑止)
+- [x] 設定 > お知らせセクション新設、移行詳細 + マイグレーション結果表示
+
+### Step 6: テスト整備
+- [x] 全 zukan 関連テストを v2 schema に書き換え
+- [x] e2e/zukan.spec.ts を v2 (60 種、amanita_muscaria slug、sources、お知らせ) で更新
+- [x] e2e/phase4-simple-identify.spec.ts 削除 (簡易識別停止に伴い)
+
+### Step 7 (Phase 13-G): 画像取得
+- [x] `scripts/phase13/fetch_v2_photos.mjs` 新設 (CC ライセンスのみ採用、scientific_synonyms フォールバック、10 unit tests)
+- [x] Hero (Wikipedia): 57/60 (95.0%) — 目標 83% を上回る
+- [x] iNat (any): 58/60 (96.7%)、(≥5): 56/60 (93.3%)
+- [x] 合計画像サイズ: 4,810 KB (60 hero)
+- [x] v1 画像 262 件 (21,105 KB) を `public/images/mushrooms/` から削除
+
+### Step 9: アナウンス (Plan A: 起動時バナー + README のみ)
+- [x] V2ReleaseBanner で初回起動時に告知
+- [x] 設定 > お知らせセクションに恒久掲載
+- [x] README.md 新規作成 (v2.0 リリース告知 + データソース掲載)
+- 外部告知 (GitHub Release / ブログ / SNS) は実施しない
+
+### UX 修正 (実機確認後)
+- [x] 色 text の単一漢字偽陽性修正 (青森県 → 青に下線が引かれる等)
+- [x] シノニム 5 件超は折り畳み + 「他 N 件を表示」
+- [x] 栞タブのバッジ件数を v2 解決済みカウントに修正
+
+### 検証
+- [x] 455/455 unit tests PASS (60 test files)
+- [x] next build 成功 (60 v2 species pages、static export)
+- [x] dev server 目視確認済
