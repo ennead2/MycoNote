@@ -1,3 +1,6 @@
+import { isNonFungusGenus } from './non-fungi-genera.mjs';
+import { lookupEntry } from '../phase13/daikinrin-pages.mjs';
+
 /**
  * tier1 和名リストから checklist ノイズを除去する。
  *
@@ -26,4 +29,45 @@ export function cleanJapaneseNames(names) {
     result.push(trimmed);
   }
   return result;
+}
+
+/**
+ * 種を以下の suggestion に分類する:
+ *   - KEEP: 大菌輪ヒット かつ 和名一致
+ *   - RENAME_TO: 大菌輪ヒット かつ 和名不一致（daikinrinTitle に候補）
+ *   - EXCLUDE_NOT_MUSHROOM: 大菌輪未ヒット かつ 非キノコ属
+ *   - NEEDS_REVIEW: 大菌輪未ヒット かつ 非キノコ属ではない
+ *
+ * @param {{scientificName: string, japaneseName: string, genus: string}} sp
+ * @param {{byScientific: Map, byJapanese: Map}} daikinrinIndex
+ * @returns {{suggestion: string, daikinrinHit: boolean, daikinrinTitle?: string, daikinrinScientificName?: string, excludeReason?: string}}
+ */
+export function classifySpecies(sp, daikinrinIndex) {
+  const entry = lookupEntry(daikinrinIndex, {
+    scientificName: sp.scientificName,
+    japaneseName: sp.japaneseName,
+  });
+
+  if (entry) {
+    const matches = entry.japaneseName === sp.japaneseName;
+    return {
+      suggestion: matches ? 'KEEP' : 'RENAME_TO',
+      daikinrinHit: true,
+      daikinrinTitle: entry.japaneseName,
+      daikinrinScientificName: entry.scientificName,
+    };
+  }
+
+  if (isNonFungusGenus(sp.genus)) {
+    return {
+      suggestion: 'EXCLUDE_NOT_MUSHROOM',
+      daikinrinHit: false,
+      excludeReason: `子実体を形成しないカビ・酵母属 (${sp.genus})`,
+    };
+  }
+
+  return {
+    suggestion: 'NEEDS_REVIEW',
+    daikinrinHit: false,
+  };
 }

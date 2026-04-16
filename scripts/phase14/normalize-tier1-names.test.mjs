@@ -34,3 +34,45 @@ test('cleanJapaneseNames removes internal whitespace (mushroom names have no int
     ['タマゴタケ', 'シイタケ']
   );
 });
+
+import { classifySpecies } from './normalize-tier1-names.mjs';
+
+test('classifySpecies returns KEEP when daikinrin matches species name', () => {
+  const sp = { scientificName: 'Trametes versicolor', japaneseName: 'アイカワラタケ', genus: 'Trametes' };
+  const index = {
+    byScientific: new Map([['trametes versicolor', { scientificName: 'Trametes versicolor', japaneseName: 'アイカワラタケ', mycoBankId: 123 }]]),
+    byJapanese: new Map([['アイカワラタケ', { scientificName: 'Trametes versicolor', japaneseName: 'アイカワラタケ', mycoBankId: 123 }]]),
+  };
+  const r = classifySpecies(sp, index);
+  assert.strictEqual(r.suggestion, 'KEEP');
+  assert.strictEqual(r.daikinrinHit, true);
+  assert.strictEqual(r.daikinrinTitle, 'アイカワラタケ');
+});
+
+test('classifySpecies returns RENAME_TO when daikinrin title differs', () => {
+  const sp = { scientificName: 'Boletus sensibilis', japaneseName: 'ドクヤマドリモドキ', genus: 'Boletus' };
+  const index = {
+    byScientific: new Map([['boletus sensibilis', { scientificName: 'Boletus sensibilis', japaneseName: 'ミヤマイロガワリ', mycoBankId: 456 }]]),
+    byJapanese: new Map(),
+  };
+  const r = classifySpecies(sp, index);
+  assert.strictEqual(r.suggestion, 'RENAME_TO');
+  assert.strictEqual(r.daikinrinTitle, 'ミヤマイロガワリ');
+});
+
+test('classifySpecies returns EXCLUDE_NOT_MUSHROOM for Aspergillus', () => {
+  const sp = { scientificName: 'Aspergillus niger', japaneseName: 'クロカビ', genus: 'Aspergillus' };
+  const index = { byScientific: new Map(), byJapanese: new Map() };
+  const r = classifySpecies(sp, index);
+  assert.strictEqual(r.suggestion, 'EXCLUDE_NOT_MUSHROOM');
+  assert.strictEqual(r.daikinrinHit, false);
+  assert.strictEqual(r.excludeReason, '子実体を形成しないカビ・酵母属 (Aspergillus)');
+});
+
+test('classifySpecies returns NEEDS_REVIEW when no daikinrin and not non-fungi', () => {
+  const sp = { scientificName: 'Weird species', japaneseName: 'フシギタケ', genus: 'Weird' };
+  const index = { byScientific: new Map(), byJapanese: new Map() };
+  const r = classifySpecies(sp, index);
+  assert.strictEqual(r.suggestion, 'NEEDS_REVIEW');
+  assert.strictEqual(r.daikinrinHit, false);
+});
