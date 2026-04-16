@@ -37,6 +37,18 @@ section#species-header {
 #species-badges { display: flex; gap: 8px; font-family: "JetBrains Mono", monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
 #species-badges .badge { padding: 2px 8px; border-radius: 4px; background: #e9e3d3; }
 #species-badges .badge.warning { background: #fde4c9; color: #8a4a1a; }
+#species-warnings {
+  margin-top: 8px;
+  padding: 6px 10px 6px 24px;
+  background: #fdf3e4;
+  border-left: 3px solid #d9534f;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #8a4a1a;
+  line-height: 1.6;
+  list-style: disc;
+}
+#species-warnings li { margin-left: 0; }
 #google-search { font-size: 13px; color: #3a5f3a; text-decoration: none; display: inline-block; margin-top: 8px; }
 
 main#main {

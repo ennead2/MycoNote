@@ -114,6 +114,18 @@ function renderSpeciesHeader() {
   if (d.warnings.length > 0) {
     badges.appendChild(makeBadge(`⚠ w:${d.warnings.length}`, 'warning'));
   }
+  const warningsList = document.getElementById('species-warnings');
+  warningsList.innerHTML = '';
+  if (d.warnings.length > 0) {
+    warningsList.hidden = false;
+    for (const w of d.warnings) {
+      const li = document.createElement('li');
+      li.textContent = w;
+      warningsList.appendChild(li);
+    }
+  } else {
+    warningsList.hidden = true;
+  }
   const hero = document.getElementById('hero-image');
   const heroUrl = a.hero_image?.url || '';
   hero.src = heroUrl;
@@ -154,7 +166,11 @@ function renderArticlePanel() {
       else {
         const p = document.createElement('p');
         p.textContent = v;
-        if (warningsText && warningContainsSection(warningsText, s.key)) p.classList.add('warning');
+        const matching = (d.warnings || []).filter(w => w.toLowerCase().includes(s.key.toLowerCase()));
+        if (matching.length > 0) {
+          p.classList.add('warning');
+          p.title = matching.join('\n');
+        }
         content.appendChild(p);
       }
     } else if (s.type === 'similar') {
