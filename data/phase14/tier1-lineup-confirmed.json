@@ -1,0 +1,300 @@
+{
+  "generatedAt": "2026-04-16T16:53:54.328Z",
+  "source": "Phase 14 S2: user-approved batch lineup",
+  "decisions": {
+    "lactifluus_volemus": {
+      "action": "include",
+      "usedName": "チチタケ",
+      "auto": true
+    },
+    "trametes_versicolor": {
+      "action": "rename",
+      "renameTo": "カワラタケ"
+    },
+    "fistulina_hepatica": {
+      "action": "include",
+      "usedName": "カンゾウタケ",
+      "auto": true
+    },
+    "auricularia_nigricans": {
+      "action": "include",
+      "usedName": "アラゲキクラゲ"
+    },
+    "aspropaxillus_giganteus": {
+      "action": "include",
+      "usedName": "オオイチョウタケ",
+      "auto": true
+    },
+    "amanita_vaginata": {
+      "action": "include",
+      "usedName": "ツルタケ",
+      "auto": true
+    },
+    "amanita_fulva": {
+      "action": "include",
+      "usedName": "カバイロツルタケ",
+      "auto": true
+    },
+    "sarcomyxa_serotina": {
+      "action": "rename",
+      "renameTo": "オソムキタケ"
+    },
+    "inocybe_asterospora": {
+      "action": "include",
+      "usedName": "カブラアセタケ",
+      "reason": "force_include: gate fail だが毒キノコ重要種、大菌輪 hit"
+    },
+    "echinoderma_asperum": {
+      "action": "include",
+      "usedName": "オニタケ",
+      "auto": true
+    },
+    "purpureocillium_atypicola": {
+      "action": "include",
+      "usedName": "クモタケ",
+      "auto": true
+    },
+    "trametes_coccinea": {
+      "action": "include",
+      "usedName": "ヒイロタケ",
+      "auto": true
+    },
+    "phlebiopsis_crassa": {
+      "action": "include",
+      "usedName": "カミウロコタケ",
+      "auto": true
+    },
+    "stropharia_aeruginosa": {
+      "action": "include",
+      "usedName": "モエギタケ",
+      "auto": true
+    },
+    "cantharellus_minor": {
+      "action": "include",
+      "usedName": "ヒナアンズタケ",
+      "auto": true
+    },
+    "tapinella_atrotomentosa": {
+      "action": "include",
+      "usedName": "ニワタケ",
+      "auto": true
+    },
+    "cortinarius_claricolor": {
+      "action": "include",
+      "usedName": "オオツガタケ",
+      "auto": true
+    },
+    "tremella_mesenterica": {
+      "action": "include",
+      "usedName": "コガネニカワタケ",
+      "auto": true
+    },
+    "cuphophyllus_pratensis": {
+      "action": "rename",
+      "renameTo": "ハダイロガサ"
+    },
+    "tricholoma_terreum": {
+      "action": "include",
+      "usedName": "クマシメジ",
+      "auto": true
+    },
+    "cuphophyllus_virgineus": {
+      "action": "include",
+      "usedName": "オトメノカサ",
+      "auto": true
+    },
+    "rhodocollybia_maculata": {
+      "action": "include",
+      "usedName": "アカアザタケ",
+      "auto": true
+    },
+    "desarmillaria_tabescens": {
+      "action": "include",
+      "usedName": "ナラタケモドキ",
+      "auto": true
+    },
+    "leucocybe_connata": {
+      "action": "include",
+      "usedName": "オシロイシメジ",
+      "auto": true
+    },
+    "amanita_rufoferruginea": {
+      "action": "include",
+      "usedName": "カバイロコナテングタケ",
+      "auto": true
+    },
+    "hygrocybe_coccinea": {
+      "action": "include",
+      "usedName": "ベニヤマタケ",
+      "auto": true
+    },
+    "candolleomyces_candolleanus": {
+      "action": "include",
+      "usedName": "イタチタケ",
+      "auto": true
+    },
+    "amanita_virosa": {
+      "action": "include",
+      "usedName": "ドクツルタケ",
+      "auto": true
+    },
+    "lepista_nuda": {
+      "action": "include",
+      "usedName": "ムラサキシメジ",
+      "auto": true
+    },
+    "calycina_citrina": {
+      "action": "include",
+      "usedName": "ビョウタケ",
+      "auto": true
+    },
+    "phallus_impudicus": {
+      "action": "include",
+      "usedName": "スッポンタケ",
+      "auto": true
+    },
+    "dacrymyces_spathularius": {
+      "action": "include",
+      "usedName": "ツノマタタケ",
+      "auto": true
+    },
+    "entoloma_sarcopus": {
+      "action": "include",
+      "usedName": "ウラベニホテイシメジ",
+      "reason": "force_include: gate fail だが食用重要種 (safety=edible)"
+    },
+    "trichaleurina_celebica": {
+      "action": "exclude",
+      "reason": "Trichaleurina tenuispora (オオゴムタケ) を別途追加するため除外"
+    },
+    "trichoderma_cornu_damae": {
+      "action": "include",
+      "usedName": "カエンタケ",
+      "auto": true
+    },
+    "hymenochaete_cyclolamellata": {
+      "action": "include",
+      "usedName": "ワヒダタケ",
+      "auto": true
+    },
+    "descolea_flavoannulata": {
+      "action": "include",
+      "usedName": "キショウゲンジ",
+      "auto": true
+    },
+    "aspergillus_niger": {
+      "action": "exclude",
+      "reason": "子実体を形成しないカビ類"
+    },
+    "ophiocordyceps_sobolifera": {
+      "action": "rename",
+      "renameTo": "セミタケ"
+    },
+    "tropicoporus_linteus": {
+      "action": "include",
+      "usedName": "メシマコブ",
+      "reason": "force_include: scientific を Phellinus linteus へ差し替え予定、synonyms に Tropicoporus linteus + Sanghuangporus sanghuang を登録"
+    },
+    "retiboletus_ornatipes": {
+      "action": "include",
+      "usedName": "キアミアシイグチ",
+      "auto": true
+    },
+    "laccaria_laccata": {
+      "action": "rename",
+      "renameTo": "キツネタケ"
+    },
+    "lactarius_chrysorrheus": {
+      "action": "include",
+      "usedName": "キチチタケ",
+      "auto": true
+    },
+    "mutinus_caninus": {
+      "action": "include",
+      "usedName": "キツネノロウソク",
+      "auto": true
+    },
+    "suillus_granulatus": {
+      "action": "include",
+      "usedName": "チチアワタケ",
+      "auto": true
+    },
+    "lyophyllum_shimeji": {
+      "action": "include",
+      "usedName": "ホンシメジ",
+      "auto": true
+    },
+    "catathelasma_ventricosum": {
+      "action": "include",
+      "usedName": "モミタケ",
+      "auto": true
+    },
+    "narcissea_patouillardii": {
+      "action": "include",
+      "usedName": "クズヒトヨタケ",
+      "auto": true
+    },
+    "mucidula_mucida": {
+      "action": "include",
+      "usedName": "ヌメリツバタケ",
+      "reason": "force_include: scientific を Mucidula venosolamellata へ差し替え予定、synonyms に Mucidula mucida を登録"
+    },
+    "aureoboletus_auriflammeus": {
+      "action": "include",
+      "usedName": "ハナガサイグチ",
+      "auto": true
+    },
+    "rickenella_fibula": {
+      "action": "include",
+      "usedName": "ヒナノヒガサ",
+      "auto": true
+    },
+    "clavaria_fragilis": {
+      "action": "include",
+      "usedName": "シロソウメンタケ",
+      "auto": true
+    },
+    "filoboletus_manipularis": {
+      "action": "include",
+      "usedName": "アミヒカリタケ",
+      "auto": true
+    },
+    "tylopilus_nigropurpureus": {
+      "action": "defer",
+      "reason": "tier2 降格: 情報源薄い (大菌輪のみ)"
+    },
+    "hydnophlebia_chrysorhiza": {
+      "action": "include",
+      "usedName": "ヒイロハリタケ",
+      "auto": true
+    },
+    "trametes_cinnabarina": {
+      "action": "include",
+      "usedName": "シュタケ",
+      "auto": true
+    },
+    "pseudoaustroboletus_valens": {
+      "action": "include",
+      "usedName": "ホオベニシロアシイグチ",
+      "auto": true
+    },
+    "inocybe_napipes": {
+      "action": "include",
+      "usedName": "コブミノアセタケ",
+      "reason": "force_include: gate fail だがアセタケ属毒キノコ、大菌輪 hit"
+    },
+    "amanita_sepiacea": {
+      "action": "include",
+      "usedName": "テングタケモドキ",
+      "reason": "force_include: gate fail だが Amanita 属、大菌輪 hit"
+    },
+    "entoloma_subrhodopolium": {
+      "action": "defer",
+      "reason": "tier2 降格: 情報源完全枯渇"
+    },
+    "chlorophyllum_neoapicale": {
+      "action": "exclude",
+      "reason": "情報源なし、除外"
+    }
+  }
+}
