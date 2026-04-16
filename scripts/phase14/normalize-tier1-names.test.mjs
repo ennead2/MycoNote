@@ -76,3 +76,45 @@ test('classifySpecies returns NEEDS_REVIEW when no daikinrin and not non-fungi',
   assert.strictEqual(r.suggestion, 'NEEDS_REVIEW');
   assert.strictEqual(r.daikinrinHit, false);
 });
+
+import { normalizeTier1 } from './normalize-tier1-names.mjs';
+
+test('normalizeTier1 produces normalized entries with daikinrinHit and cleanedJapaneseNames', () => {
+  const rankingSpecies = [
+    {
+      scientificName: 'Trametes versicolor',
+      japaneseName: 'アイカワラタケ',
+      japaneseNames: ['アイカワラタケ', 'カワラタケ', 'クモ　※クモタケ'],
+      genus: 'Trametes',
+      synonyms: [],
+      signals: { wikiJaExists: true, inatHasPhotos: true },
+      normalizationStatus: 'ACCEPTED',
+      tier: 1,
+    },
+    {
+      scientificName: 'Aspergillus niger',
+      japaneseName: 'クロカビ',
+      japaneseNames: ['クロカビ'],
+      genus: 'Aspergillus',
+      synonyms: [],
+      signals: { wikiJaExists: true, inatHasPhotos: false },
+      normalizationStatus: 'ACCEPTED',
+      tier: 1,
+    },
+  ];
+  const daikinrinIndex = {
+    byScientific: new Map([['trametes versicolor', { scientificName: 'Trametes versicolor', japaneseName: 'アイカワラタケ', mycoBankId: 1 }]]),
+    byJapanese: new Map([['アイカワラタケ', { scientificName: 'Trametes versicolor', japaneseName: 'アイカワラタケ', mycoBankId: 1 }]]),
+  };
+
+  const r = normalizeTier1(rankingSpecies, daikinrinIndex);
+
+  assert.strictEqual(r.species.length, 2);
+  assert.strictEqual(r.species[0].suggestion, 'KEEP');
+  assert.deepStrictEqual(r.species[0].cleanedJapaneseNames, ['アイカワラタケ', 'カワラタケ']);
+  assert.strictEqual(r.species[1].suggestion, 'EXCLUDE_NOT_MUSHROOM');
+
+  assert.strictEqual(r.summary.total, 2);
+  assert.strictEqual(r.summary.daikinrinHit, 1);
+  assert.strictEqual(r.summary.autoExcludeCandidates, 1);
+});

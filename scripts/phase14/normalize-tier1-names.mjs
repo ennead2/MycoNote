@@ -71,3 +71,36 @@ export function classifySpecies(sp, daikinrinIndex) {
     daikinrinHit: false,
   };
 }
+
+/**
+ * tier1 種全件を正規化してサマリ付き JSON 構造で返す。
+ * @param {Array<object>} tier1Species ranking.json 由来の tier===1 entries
+ * @param {{byScientific: Map, byJapanese: Map}} daikinrinIndex
+ * @returns {{species: Array<object>, summary: {total: number, daikinrinHit: number, renameCandidates: number, autoExcludeCandidates: number, needsReview: number}}}
+ */
+export function normalizeTier1(tier1Species, daikinrinIndex) {
+  const species = [];
+  const summary = { total: 0, daikinrinHit: 0, renameCandidates: 0, autoExcludeCandidates: 0, needsReview: 0 };
+
+  for (const sp of tier1Species) {
+    const classification = classifySpecies(sp, daikinrinIndex);
+    const cleanedJapaneseNames = cleanJapaneseNames(sp.japaneseNames);
+    species.push({
+      scientificName: sp.scientificName,
+      japaneseName: sp.japaneseName,
+      cleanedJapaneseNames,
+      genus: sp.genus ?? null,
+      synonyms: sp.synonyms ?? [],
+      signals: sp.signals ?? {},
+      normalizationStatus: sp.normalizationStatus ?? 'UNKNOWN',
+      ...classification,
+    });
+    summary.total++;
+    if (classification.daikinrinHit) summary.daikinrinHit++;
+    if (classification.suggestion === 'RENAME_TO') summary.renameCandidates++;
+    if (classification.suggestion === 'EXCLUDE_NOT_MUSHROOM') summary.autoExcludeCandidates++;
+    if (classification.suggestion === 'NEEDS_REVIEW') summary.needsReview++;
+  }
+
+  return { species, summary };
+}
