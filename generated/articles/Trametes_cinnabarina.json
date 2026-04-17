@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["朱茸"]
+  },
+  "season": [
+    { "start_month": 1, "end_month": 12 }
+  ],
+  "habitat": ["広葉樹の枯れ木", "用材", "温帯落葉林", "寒冷地"],
+  "regions": ["日本（寒冷地）", "温帯落葉林域"],
+  "tree_association": ["広葉樹"],
+  "similar_species": [],
+  "description": "子実体に柄を持たず、広葉樹の枯れ木や用材に半円形のカサをつくる硬質菌。カサはオレンジ色から朱紅色で目を引く色合いをもち、名前の由来となっている。白色腐朽菌として木材中のリグニンを分解し、森林生態系の養分循環を支える役割を担う。主として腐生菌とされるが、特定の森林条件下では菌根性の関係も観察されており、詳細は十分に解明されていない。食用には適さず、国内では寒冷地を中心に分布する。近年はラッカーゼなど酸化酵素の生産や、フェルラ酸からバニリンへの生物転換など、天然香料生産やグリーンケミストリー分野での応用研究の対象としても注目されている [1]。",
+  "features": "子実体は柄を持たず、広葉樹の枯れ木や用材の表面に直接付着して発生する。カサは半円形で、表面はオレンジ色から朱紅色を帯び、白色腐朽菌として木材のリグニン分解に寄与する。温帯落葉林を中心とした寒冷地の環境で観察され、枯死材上で養分循環の一端を担う。主に腐生菌として振る舞うが、森林条件によっては樹木との菌根性の関係を示す事例も報告されている [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "食用不適。硬質の子実体で食材向きではなく、利用は避けること [1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「シュタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Pycnoporus cinnabarinus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Pycnoporus_cinnabarinus_120171.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "wikipediaJa を主情報源に採用。硬質多孔菌のため発生期を通年 [1,12] と解釈（V13 warning 受容）。safety=unknown のため cooking_preservation と poisoning_first_aid はいずれも null、食用不適の喚起は caution に集約。similar_species はソースに識別対象の記載がないため空配列。daikinrin は学名・分類・synonym の canonical として併用（Pycnoporus→Trametes の属名差異による V11 warning 受容）。mhlw/wikipediaEn/traitCircus は null のため不使用。"
+}

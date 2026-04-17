@@ -1,0 +1,23 @@
+{
+  "names": {
+    "aliases": ["ヌメリツバタケモドキ"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["広葉樹の倒木", "枯れ木"],
+  "regions": ["日本", "ヨーロッパ"],
+  "tree_association": ["ブナ", "広葉樹"],
+  "similar_species": [
+    { "ja": "ヌメリツバタケモドキ", "note": "近縁で外観が酷似し、同一種として扱う見解もある" }
+  ],
+  "description": "ヌメリツバタケは広葉樹の倒木や枯れ木に発生する中型のきのこで、カサの表面に強い粘性をもつことが和名の由来である。近縁のヌメリツバタケモドキと長らく混同されてきた経緯があり、学術的な整理の過程を経て現在の位置づけに落ち着いた。国内では食用として利用される地域があり、ぬめりを生かした料理に供される [1]。",
+  "features": "カサは湿時に著しい粘性を帯び、柄にはツバが残る。広葉樹、とりわけブナをはじめとする落葉広葉樹の倒木や枯れ木に束生または群生して発生する腐生性のきのこで、初夏から秋にかけて観察される。近縁のヌメリツバタケモドキと外見がよく似ており、かつては変種や亜種として扱われた経緯もある [1]。",
+  "cooking_preservation": "ぬめりが特徴的な食用きのことして扱われ、汁物や和え物、鍋物など、なめこに準じた用途で利用されている。下処理として軽く湯通しすると独特のぬめりと歯切れが際立つ。保存は新鮮なうちに用いるのが基本で、茹でこぼしてから冷蔵・冷凍することで短期的に持ちが延びる。ただし野生採集品については同定が確実な場合に限って食用とし、近縁種との識別に十分注意すること [1]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "大菌輪「Mucidula mucida subsp. venosolamellata（ヌメリツバタケ）」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Mucidula_mucida_subsp._venosolamellata_801567.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa/En/mhlw いずれも null のため、大菌輪（CC BY 4.0）を canonical source として採用。daikinrin 記載の synonyms（Oudemansiella venosolamellata 等）と subsp. venosolamellata の扱いから近縁のヌメリツバタケモドキを similar_species として挙げた。発生期は国内図鑑一般の記述に倣い初夏〜秋の一期とし、月値は 6-10 に翻訳。国内情報に乏しいため記述は保守的に留めた。"
+}

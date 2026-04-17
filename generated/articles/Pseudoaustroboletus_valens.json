@@ -1,0 +1,24 @@
+{
+  "names": { "aliases": ["頬紅白足猪口"] },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["ブナ科樹林", "外生菌根"],
+  "regions": ["日本（関東以西が中心、福島県・宮城県でも確認）", "中国", "東南アジア（マレー半島、ボルネオ島）"],
+  "tree_association": ["シイ", "カシ"],
+  "similar_species": [
+    { "ja": "ニガイグチモドキ", "note": "管孔が紫色で強い苦味があり食用不適" },
+    { "ja": "アケボノアワタケ", "note": "管孔はピンクを帯び柄が黄色になる" },
+    { "ja": "ウラグロニガイグチ", "note": "孔口が黒く、人により食中毒を起こす" }
+  ],
+  "description": "日本で見られるイグチの仲間で、和名は傘が反り返って見える管孔の部分を頬に見立てたことに由来する。国内では主に関東以西で記録され、福島県や宮城県でも確認されている。シイやカシなどブナ科樹林に夏から秋に発生する外生菌根菌だが、発生はやや稀とされる。食用キノコに位置づけられる一方、酸味を帯びるのが特徴で、調理ではその風味を活かした味付けが推奨されている。[1]",
+  "features": "傘は直径6〜20cmで、初めまんじゅう形のち平らに開き、表面は灰褐色。幼菌時はやや線毛状だが生長につれてほぼ無毛となり、湿時は多少粘性を帯びる。管孔は初め白色で、のち淡紅色から灰橙色へ変わる。孔口は多角形で管孔と同色、傷つくと褐色に変色する。管孔と柄は上生または離生。柄は長さ7〜15cmで白色、基部はやや膨らみ、表面にはやや目の粗い隆起した網目模様がある。基部付近は老成により黄色のシミを生じる。夏から秋にかけてシイ・カシなどブナ科樹林に発生するが、出会いはやや稀である。[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「ホオベニシロアシイグチ」", "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%AA%E3%83%99%E3%83%8B%E3%82%B7%E3%83%AD%E3%82%A2%E3%82%B7%E3%82%A4%E3%82%B0%E3%83%81", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「ホオベニシロアシイグチ」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Pseudoaustroboletus_valens_809891.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa を主情報源、daikinrin を分類・学名の canonical source として併用。season は「夏から秋」を 7〜10 月に翻訳。safety=unknown のため cooking_preservation / poisoning_first_aid / caution はいずれも null とし（V6 準拠）、自由文には学名・分類階層を含めていない。"
+}
