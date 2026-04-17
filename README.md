@@ -73,6 +73,14 @@ node scripts/phase13/build_v2_mushrooms.mjs --append
 
 # 4. 画像取得 (新規 id のみ)
 node scripts/phase13/fetch_v2_photos.mjs --only=<new_id1>,<new_id2>
+
+# 5. 分類 (taxonomy) + 形質 (traits) 取得 — Phase 15 追加
+#    大菌輪統制形質 (CC BY 4.0) から 7 階層 taxonomy と肉眼観察可能な trait_keys を
+#    mushrooms.json に埋め込む。新規種のみ HTML / Parquet からフェッチ、既存はキャッシュ再利用。
+node scripts/phase15/fetch_taxonomy.mjs && node scripts/phase15/apply_taxonomy.mjs
+python scripts/phase15/fetch_species_traits.py   # 未取得時のみ --download を付ける
+node scripts/phase15/measure_coverage.mjs
+node scripts/phase15/apply_traits.mjs
 ```
 
 ---
