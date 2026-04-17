@@ -15,7 +15,10 @@ export default defineConfig({
       "**/dist/**",
       "e2e/**",
       ".worktrees/**",
+      ".claude/**",
       "scripts/review-v2/**",
+      // Phase 14 scripts use node:test runner, not vitest
+      "scripts/phase14/**",
     ],
   },
   resolve: {

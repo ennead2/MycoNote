@@ -33,8 +33,12 @@ describe('normalizeSafety', () => {
     expect(normalizeSafety('toxic')).toBe('toxic');
   });
 
-  it('throws on unknown', () => {
-    expect(() => normalizeSafety('unknown')).toThrow(/unknown safety/);
+  it('accepts unknown (v2 schema allows unknown as a Safety value)', () => {
+    expect(normalizeSafety('unknown')).toBe('unknown');
+  });
+
+  it('throws on truly invalid safety', () => {
+    expect(() => normalizeSafety('bogus')).toThrow(/unknown safety/);
   });
 });
 
@@ -240,8 +244,8 @@ describe('buildAll', () => {
   it('builds from approved files driving the iteration', () => {
     const { mushrooms, skipped } = buildAll({
       approvedFiles: ['Amanita_muscaria.json'],
-      rankingByScientific: new Map([['Amanita muscaria', rankingMosc]]),
-      tier0ByScientific: new Map([['Amanita muscaria', tier0Mosc]]),
+      rankingByScientific: new Map([['amanita_muscaria', rankingMosc]]),
+      tier0ByScientific: new Map([['amanita_muscaria', tier0Mosc]]),
       loader: () => approvedMosc,
     });
     expect(mushrooms).toHaveLength(1);
@@ -249,42 +253,54 @@ describe('buildAll', () => {
     expect(skipped).toEqual([]);
   });
 
-  it('skips when ranking entry missing', () => {
+  it('skips when ranking missing and tier inline safety absent', () => {
     const { mushrooms, skipped } = buildAll({
       approvedFiles: ['Amanita_muscaria.json'],
       rankingByScientific: new Map(),
-      tier0ByScientific: new Map([['Amanita muscaria', tier0Mosc]]),
+      tier0ByScientific: new Map([['amanita_muscaria', tier0Mosc]]),
       loader: () => approvedMosc,
     });
     expect(mushrooms).toEqual([]);
-    expect(skipped[0]).toMatchObject({ scientificName: 'Amanita muscaria', reason: 'ranking-missing' });
+    expect(skipped[0]).toMatchObject({ scientificName: 'Amanita muscaria', reason: 'ranking-missing (and no tier inline safety)' });
   });
 
-  it('skips when tier0 entry missing', () => {
+  it('allows build when ranking missing but tier entry has inline safety', () => {
+    const { mushrooms, skipped } = buildAll({
+      approvedFiles: ['Sarcomyxa_edulis.json'],
+      rankingByScientific: new Map(),
+      tier0ByScientific: new Map([['sarcomyxa_edulis', { scientificName: 'Sarcomyxa edulis', japaneseName: 'ムキタケ', safety: 'edible' }]]),
+      loader: () => approvedMosc,
+    });
+    expect(mushrooms).toHaveLength(1);
+    expect(mushrooms[0].safety).toBe('edible');
+    expect(skipped).toEqual([]);
+  });
+
+  it('skips when tier0/tier1 entry missing', () => {
     const { mushrooms, skipped } = buildAll({
       approvedFiles: ['Amanita_muscaria.json'],
-      rankingByScientific: new Map([['Amanita muscaria', rankingMosc]]),
+      rankingByScientific: new Map([['amanita_muscaria', rankingMosc]]),
       tier0ByScientific: new Map(),
       loader: () => approvedMosc,
     });
     expect(mushrooms).toEqual([]);
-    expect(skipped[0]).toMatchObject({ scientificName: 'Amanita muscaria', reason: 'tier0-missing' });
+    expect(skipped[0]).toMatchObject({ scientificName: 'Amanita muscaria', reason: 'tier0/tier1 entry missing' });
   });
 
   it('captures build errors per entry without crashing the run', () => {
     const { mushrooms, skipped } = buildAll({
       approvedFiles: ['Amanita_muscaria.json', 'Boletus_edulis.json'],
       rankingByScientific: new Map([
-        ['Amanita muscaria', rankingMosc],
-        ['Boletus edulis', { genus: 'Boletus', signals: { toxicity: 'unknown' } }],
+        ['amanita_muscaria', rankingMosc],
+        ['boletus_edulis', { genus: 'Boletus', signals: { toxicity: 'bogus' } }],
       ]),
       tier0ByScientific: new Map([
-        ['Amanita muscaria', tier0Mosc],
-        ['Boletus edulis', { scientificName: 'Boletus edulis', japaneseName: 'ヤマドリタケ' }],
+        ['amanita_muscaria', tier0Mosc],
+        ['boletus_edulis', { scientificName: 'Boletus edulis', japaneseName: 'ヤマドリタケ' }],
       ]),
       loader: () => approvedMosc,
     });
     expect(mushrooms).toHaveLength(1);
-    expect(skipped[0].reason).toMatch(/build-error: unknown safety: unknown/);
+    expect(skipped[0].reason).toMatch(/build-error: unknown safety: bogus/);
   });
 });

@@ -1,0 +1,55 @@
+{
+  "names": {
+    "aliases": [
+      "鼈茸"
+    ]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 11 }
+  ],
+  "habitat": [
+    "竹林",
+    "林内の地上",
+    "腐生性環境"
+  ],
+  "regions": [
+    "日本",
+    "ヨーロッパ",
+    "北アメリカ",
+    "アジア",
+    "中国",
+    "台湾",
+    "インド",
+    "アイスランド",
+    "コスタリカ",
+    "タンザニア",
+    "オーストラリア南東部"
+  ],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "キヌガサタケ", "note": "柄からレース状の飾りが垂れ下がる点で識別[1]" }
+  ],
+  "description": "スッポンタケはスッポンタケ科の腐生性キノコで、和名は頭部の形状がスッポンの頭に似ることに由来する。幼菌は白い卵形で、成熟すると柄と傘が急速に展開し、傘表面に暗緑色で粘液質のグレバを纏って強烈な悪臭を放つ。この臭いはハエなどを誘引して胞子を運ばせるための仕組みである。英語名は stinkhorn（臭い角）。グレバを取り除いた柄や幼菌は食用とされ中華料理にも使われるが、日本の一般的な図鑑では食用キノコとして積極的に扱われることは少ない[1]。",
+  "features": "子実体は柔らかく、幼菌は卵のような形状で、内部には半透明のゼラチン状物質に包まれた柄と暗緑色の傘を備える。この時点では悪臭はない。成熟すると柄と傘が展開し、傘の表面に悪臭を放つ黒っぽい粘液質のグレバが一面に現れる。グレバは胞子を含み、ハエなどの昆虫を誘引して胞子散布を担う。粘液を虫が舐め取り白っぽくなることもあり、本体は一日でとろけるように消滅する。色は幼菌を含め基本的に白だが、傘はグレバの色により暗緑色に見える。初夏の梅雨時期から秋にかけて、竹林など林内の地上に腐生菌として発生する[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "成熟個体は強烈な悪臭を放つため同定時は注意[1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「スッポンタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%83%E3%83%9D%E3%83%B3%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Phallus impudicus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Phallus_impudicus_245934.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Wikipedia en「Phallus impudicus」",
+      "url": "https://en.wikipedia.org/wiki/Phallus_impudicus",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": "wikipediaJa を主情報源、canonical は daikinrin、分布の海外情報補足は wikipediaEn を採用。safety=inedible のため V6 に従い cooking_preservation / poisoning_first_aid は null。wikipediaJa に「グレバを取り除いた柄や幼菌は食用」との記述はあるが本種の安全区分は inedible のため積極的な調理情報は caution に要点集約。季節は wikipediaJa「初夏（梅雨）から秋」を 6-11 月として単一期で表現。similar_species は wikipediaJa で明示されているキヌガサタケのみ採用。mhlw・traitCircus は null で未参照、rinya は種別情報を含まないため未使用。aliases は和名の漢字表記「鼈茸」のみ（V9 日本語和名のみ）。"
+}

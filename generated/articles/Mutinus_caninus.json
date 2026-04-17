@@ -1,0 +1,25 @@
+{
+  "names": {
+    "aliases": ["キツネノロウソク"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 11 }
+  ],
+  "habitat": ["森林", "朽ちた切り株付近", "落葉上"],
+  "regions": ["北半球の温帯域", "ヨーロッパ", "イギリス", "北アメリカ東部"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "キツネノエフデ", "note": "別名キツネノフデ、色調と形態が類似する近縁種 [1]" }
+  ],
+  "description": "キツネノロウソクは森林の朽ちた切り株付近の落葉上に発生する小型のキノコで、灰白色の卵形の幼菌から橙色の細長い子実体を伸ばす姿が特徴である。頂部に黒褐色の粘着性の胞子塊（グレバ）を備え、悪臭でハエを誘引して胞子を散布させる独特の生態をもつ。国内では食用とはされない位置づけである [1]。",
+  "features": "幼菌は地中に半ば埋もれた灰白色の卵形で、成熟すると中から 6〜12cm ほどの細長い子実体が伸び出す。子実体は橙色で、頂部には胞子を含む粘着性の黒っぽい塊（グレバ）が載り、強い悪臭を放ってハエを誘引し胞子散布に利用する。発生場所は森林の朽ちた切り株付近の落葉に限られ、夏から秋にかけて小さな群れで出現する [1][2]。",
+  "cooking_preservation": "本種は日本国内の資料において食用にはならないとされており、食材としての利用は想定されていない。海外では幼菌の卵の段階で食用になる可能性が言及される例もあるが、一般的に食用として推奨されるものではなく、国内の食文化に位置づけはない。したがって調理法や保存法に関する確立された手順は伝わっておらず、採取して食べる対象として扱うべきではない [1][2]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「キツネノロウソク」", "url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%84%E3%83%8D%E3%83%8E%E3%83%AD%E3%82%A6%E3%82%BD%E3%82%AF", "license": "CC BY-SA 4.0" },
+    { "name": "Wikipedia en「Mutinus caninus」", "url": "https://en.wikipedia.org/wiki/Mutinus_caninus", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Mutinus caninus」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Mutinus_caninus_223415.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "和名・発生環境・形態は Wikipedia ja を主情報源として採用。分布域の詳細と発生季節（夏〜晩秋）は Wikipedia en を補助として参照し、6〜11月と翻訳した。safety=edible のスキーマ要件に従い poisoning_first_aid と caution は null、cooking_preservation は食用不適の旨を記載。tree_association は朽木・落葉依存で特定樹種の記載がないため空配列とした。"
+}

@@ -1,7 +1,7 @@
 // v2 schema (Phase 13-F). v1 互換は廃止。
 // 旧型 (Toxicity / MushroomTraits / source_url / verified / traits) はリポジトリ履歴を参照。
 
-export type Safety = 'edible' | 'caution' | 'inedible' | 'toxic' | 'deadly';
+export type Safety = 'edible' | 'caution' | 'inedible' | 'toxic' | 'deadly' | 'unknown';
 
 export interface MushroomTaxonomy {
   order?: string;       // 目 (例: Agaricales)

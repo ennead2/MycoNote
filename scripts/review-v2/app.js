@@ -32,9 +32,13 @@ const Store = {
   currentIndex: 0,
   currentData: null,
   warningsOnly: false,
+  pendingOnly: true,
 
   get visibleArticles() {
-    return this.warningsOnly ? this.articles.filter(a => a.warningsCount > 0) : this.articles;
+    let list = this.articles;
+    if (this.pendingOnly) list = list.filter(a => !a.decision);
+    if (this.warningsOnly) list = list.filter(a => a.warningsCount > 0);
+    return list;
   },
   get currentSlug() {
     return this.visibleArticles[this.currentIndex]?.slug;
@@ -260,6 +264,22 @@ function renderSourcesPanel() {
     panel.style.color = '#b8ac9e';
     return;
   }
+
+  function formatSourceExtract(key, src) {
+    // 本来の解説本文を優先、無ければ text / content に fallback
+    let body = src.extract || src.text || src.content || '';
+    if (key === 'rinya' && body) {
+      // 林野庁「きのこのはなし」はページ先頭にサイトナビゲーションが含まれるため除去
+      const marker = body.indexOf('きのこのはなし きのこのはなし');
+      if (marker >= 0) body = body.slice(marker);
+      else {
+        const fallback = body.indexOf('ホーム 分野別情報');
+        if (fallback >= 0) body = body.slice(fallback);
+      }
+    }
+    if (!body) return JSON.stringify(src).slice(0, 500);
+    return body;
+  }
   panel.style.color = '';
   const sources = d.combined.sources || {};
   const order = [
@@ -280,7 +300,7 @@ function renderSourcesPanel() {
     block.appendChild(h);
     const extract = document.createElement('div');
     extract.className = 'extract';
-    extract.textContent = src.extract || JSON.stringify(src).slice(0, 500);
+    extract.textContent = formatSourceExtract(key, src);
     block.appendChild(extract);
     panel.appendChild(block);
   }
@@ -434,6 +454,13 @@ function bindEvents() {
 
   document.getElementById('warnings-only').addEventListener('change', async (ev) => {
     Store.warningsOnly = ev.target.checked;
+    Store.currentIndex = 0;
+    await Store.loadCurrent();
+    renderAll();
+  });
+
+  document.getElementById('pending-only').addEventListener('change', async (ev) => {
+    Store.pendingOnly = ev.target.checked;
     Store.currentIndex = 0;
     await Store.loadCurrent();
     renderAll();

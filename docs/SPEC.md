@@ -434,6 +434,18 @@ interface AppSettings {
 - iNaturalistの写真は個別にライセンスを確認（CC BY-NDやAll Rights Reservedは使用不可）
 - 日本産菌類集覧（日本菌学会）は CC BY 4.0 に従い出典表記（`docs/credits.md`）
 
+### 画像選別の方針（tier0/tier1/tier2 共通）
+
+`scripts/phase13/fetch_v2_photos.mjs` で以下を優先順で適用:
+
+1. **ユーザー分散最大**（同一撮影者の偏り回避）
+2. **Japan 観察優先**（iNat `place_id=6737` のものを同順位内で先出し）
+3. **ユーザー内は JP → global 順**
+4. CC ライセンスのみ、`all-rights-reserved` 除外
+5. Wikipedia ヒーロー不在時は iNat +1 枚取得（ギャラリー 3x3 を維持）
+
+詳細: `docs/species-data-workflow.md` の「iNaturalist 写真の取得」
+
 ### パフォーマンス目標
 
 - 初回インストールサイズ：〜30MB以下（代表写真込み）

@@ -1,0 +1,26 @@
+{
+  "names": {
+    "aliases": ["アカナバ"]
+  },
+  "season": [
+    { "start_month": 3, "end_month": 6 },
+    { "start_month": 8, "end_month": 11 }
+  ],
+  "habitat": ["広葉樹林の林床", "針葉樹林の林床", "草原", "笹やぶ"],
+  "regions": ["日本", "中国", "ヨーロッパ", "北アメリカ", "ネパール", "インド"],
+  "tree_association": ["コナラ", "ミズナラ", "スギ", "ツツジ", "オーク", "アカマツ"],
+  "similar_species": [
+    { "ja": "アカヌマベニタケ", "note": "オーストラリア産で本種とされた標本の一部が再分類された別種" }
+  ],
+  "description": "ベニヤマタケは鮮やかな深紅色の傘をもつ小型のきのこで、北半球に広く分布する。日本では春から秋にかけて広葉樹林や針葉樹林の林床、草原、笹やぶなどに散生または群生する。可食とされ、山口県では「アカナバ」の地方名で古くから食用にされてきたが、小型のため採取量が限られ、一般的な食材ではない。発色の美しさから観察対象としても親しまれる種である。[1]",
+  "features": "傘は径2〜5cmで、若いうちはまんじゅう形だが生長すると中央が中高の扁平に開く。色は鮮やかな深紅色で、成熟するにつれ薄くなり黄色味を帯びる。表面はぬるぬるしている。ヒダは粗く、柄に対して直生または垂生し、紅黄色を呈する。柄は長さ最大7cm、太さ0.3〜1cmで傘と同色、つばはない。肉は黄色っぽい赤色で味は薄い。胞子は白色で卵形、7〜9.5×4〜5μmほど。日本では春から秋にコナラやミズナラなどの広葉樹林、スギなどの針葉樹林の林床、草原、笹やぶに散生または群生する。[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「ベニヤマタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Hygrocybe coccinea」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Hygrocybe_coccinea_355640.html", "license": "CC BY 4.0" },
+    { "name": "Wikipedia en「Hygrocybe coccinea」", "url": "https://en.wikipedia.org/wiki/Hygrocybe_coccinea", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "safety=unknown のため cooking_preservation/poisoning_first_aid はともに null。wikipediaJa を主情報源にし、海外分布・分類補足は wikipediaEn と daikinrin を採用。wikipediaJa の『春から秋』を春 3-6 月・夏秋 8-11 月の 2 期に翻訳（梅雨明け前後を除外）。aliases は和名の地方名『アカナバ』のみ採録。"
+}

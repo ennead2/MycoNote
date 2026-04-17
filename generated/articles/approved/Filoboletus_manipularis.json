@@ -1,0 +1,27 @@
+{
+  "names": {
+    "aliases": ["網光茸"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 9 }
+  ],
+  "habitat": ["広葉樹の枯れ木", "倒木", "照葉樹林"],
+  "regions": ["関東以西", "八丈島", "沖縄", "東南アジア", "オーストラリア"],
+  "tree_association": ["広葉樹"],
+  "similar_species": [
+    { "ja": "ヤコウタケ", "note": "ヒダがあり柄基部に円盤状の付着器がある" },
+    { "ja": "シイノトモシビタケ", "note": "ヒダがあり傘は褐色を帯びる" },
+    { "ja": "ツキヨタケ", "note": "大型でヒダが発光し柄基部に黒斑がある" }
+  ],
+  "description": "アミヒカリタケは夏に広葉樹の枯れ木へ群生する小型の発光キノコで、傘の裏に管孔をもつ点が同属の発光種と異なる。傘の表面から管孔が透けて網目模様のように見えることが和名の由来である。日本では関東以西に分布し、八丈島や沖縄など温暖地で観察される。柄が特に強く光り、暗所で緑色の光を放つ姿が知られる。子実体が小さいため食用には適さないとされる。[1][2]",
+  "features": "傘の直径は1〜3センチメートル、柄の長さは1.5〜4センチメートルとなり、全体はほぼ白色を呈する。傘の裏側はヒダではなく管孔となっており、この構造が傘の表面からも透けて見えることから網目状の外観を示す。発光性があり、特に柄の部分が強く光る。夏に各種の広葉樹の枯れ木や倒木に束生状に群生して発生する。日本では関東以西の温暖な地域に見られ、東南アジアやオーストラリアなどでも発生が報告されている。[1][2]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "食毒不明のため食用としない。発光は同定の決め手にならない。[1]",
+  "sources": [
+    { "name": "Wikipedia ja「アミヒカリタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%83%92%E3%82%AB%E3%83%AA%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪 Mycena manipularis", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Mycena_manipularis_247169.html", "license": "CC BY 4.0" },
+    { "name": "林野庁 きのこのはなし", "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/", "license": "政府著作物" }
+  ],
+  "notes": "safety=unknown のため cooking_preservation は null とし、poisoning_first_aid は食毒不明を前提とした野生キノコ一般の対応を Wikipedia ja と林野庁情報に基づき記述した。season はソース記載の「夏」を 6〜9 月と解釈。regions は ja の「関東から西」「東南アジア、オーストラリア」と八丈島・沖縄の観察例を含めた。"
+}

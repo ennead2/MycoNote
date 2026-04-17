@@ -1,0 +1,32 @@
+{
+  "names": {
+    "aliases": ["オソムキタケ"]
+  },
+  "season": [
+    { "start_month": 10, "end_month": 12 }
+  ],
+  "habitat": ["広葉樹倒木", "広葉樹枯枝", "稀に針葉樹"],
+  "regions": ["日本", "ヨーロッパ", "北アメリカ"],
+  "tree_association": ["ブナ", "ナラ類", "針葉樹"],
+  "similar_species": [
+    { "ja": "ムキタケ", "note": "近縁の姉妹種。中国・日本で食用栽培される別種 [1]" }
+  ],
+  "description": "オソムキタケは寒冷期に広葉樹の倒木や枯枝上に扇形ないしカキ殻形の子実体を重なり合って発生させるキノコで、イギリスではオリーブオイスターリング、北米では late fall oyster や late oyster mushroom と呼ばれる。かつては日本で親しまれてきた「ムキタケ」と同一種とされてきたが、近年の研究で本種と姉妹種ムキタケの二種に分かれることが明らかとなり、大菌輪では本種の和名を「オソムキタケ」としている。本種は欧米では食用として優秀ではないか不食とされ、風味は穏やかなものから苦味を帯びるものまでばらつきがある [1][2]",
+  "features": "傘は緑色を帯びて重なり合うように生え、扇形ないしカキ殻形で径 9 cm ほどになる。裏側のヒダは密で鮮やかな橙黄色を呈し、短くずんぐりとした柄に直生ないし垂生する。胞子は平滑でアミロイド、大きさは 4〜6 × 1〜2 μm、胞子紋はクリーム色から黄色。北米では寒くなった時期に広葉樹や稀に針葉樹の倒木上に発生し、きのこシーズンの終わりを告げる指標種として知られる [1]",
+  "cooking_preservation": "欧米の分類学的知見では本種は食用可だが優良ではない、あるいは不食に分類され、風味は穏やかなものから苦味を帯びるものまで幅がある。中国および日本で食用として栽培されてきたのは姉妹種ムキタケのほうで、本種とは別種として近年区別された。したがって従来「ムキタケ」として日本で広く食されてきた和食の炊き込みご飯や味噌汁、鍋物などの調理文化は主に姉妹種に帰属する可能性が高く、本種そのものの国内食文化に関する確証的情報は乏しい [1]",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    {
+      "name": "Wikipedia en「Sarcomyxa serotina」",
+      "url": "https://en.wikipedia.org/wiki/Sarcomyxa_serotina",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Sarcomyxa serotina（オソムキタケ）」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Sarcomyxa_serotina_556853.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "wikipediaJa は requestedTitle null で無関係な『Null』記事が返ったため不使用。V10 警告は本件素材不備で回避不能。主情報源は wikipediaEn（形態・生態・食用性）、分類と和名は daikinrin を採用。近年姉妹種との二分割が明らかとなった旨を description に明記。自由文中の学名表記は V4 警告を避けるため削除し和名ムキタケで統一。季節は wikipediaEn の『cold weather』『late fall』を晩秋〜初冬 10〜12 月と翻訳。"
+}

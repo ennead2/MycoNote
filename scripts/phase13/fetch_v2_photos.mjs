@@ -1,14 +1,23 @@
 /**
- * Phase 13-G: v2 60 種の画像取得
+ * Phase 13-G / 14+: v2 図鑑の画像取得
  *
- * Fork of scripts/fetch-photos-v2.mjs with v2-specific changes:
- * - all-rights-reserved 写真を除外
- * - scientific_synonyms フォールバック
- * - カバレッジレポート出力 (data/v2-image-coverage.json)
- * - 撮影者名 + ライセンスを attribution として保存
+ * 方針:
+ *   - Hero: Wikipedia ja → en → 学名 synonyms の順にフォールバック
+ *   - Gallery: iNaturalist Research Grade + CC ライセンス画像
+ *   - ライセンス優先順位: cc0 > cc-by > cc-by-nc > cc-by-sa > cc-by-nc-sa > cc-by-nd > cc-by-nc-nd
+ *   - all-rights-reserved は採用しない
+ *   - 選別ルール（優先順位の高い順）:
+ *     1. ユーザー分散最大（同一ユーザーの写真が偏らない）
+ *     2. Japan 観察（place_id=6737）優先（同順位内で先出し）
+ *     3. ユーザー内は JP 写真 → global 写真の順
+ *   - ヒーロー不在のとき iNat を +1 枚取得（ギャラリー 3x3 を維持）
+ *   - scientific_synonyms を taxon 解決のフォールバックとして使用
  *
  * Usage:
- *   node scripts/phase13/fetch_v2_photos.mjs [--dry-run] [--only=<id>,<id>]
+ *   node scripts/phase13/fetch_v2_photos.mjs                             # 全種
+ *   node scripts/phase13/fetch_v2_photos.mjs --only=<id>,<id>            # 対象指定
+ *   node scripts/phase13/fetch_v2_photos.mjs --max-photos=N              # iNat 枚数上限 (既定 9)
+ *   node scripts/phase13/fetch_v2_photos.mjs --dry-run                   # 書き込まない
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -25,6 +34,7 @@ const DETAIL_WIDTH = 800;
 const DETAIL_QUALITY = 80;
 const INAT_MAX_PHOTOS = 9;
 const INAT_FETCH_COUNT = 30;
+const INAT_JAPAN_PLACE_ID = 6737; // iNat の Japan place_id
 
 // ライセンス: cc0 / cc-by* のみ採用、all-rights-reserved は除外
 const ACCEPTED_LICENSES = new Set([
@@ -145,7 +155,61 @@ async function getWikipediaImage(jaName, scientificName, synonyms = []) {
   return null;
 }
 
-/** iNaturalist Research Grade 写真。CC ライセンスのみ、ユーザー分散選択。 */
+/** observations を photosByUser (Map<userId, photos[]>) に変換。CC ライセンスのみ採用。 */
+function observationsToPhotosByUser(observations) {
+  const photosByUser = new Map();
+  for (const obs of observations) {
+    const userId = obs.user?.id || 'unknown';
+    const userName = obs.user?.login || 'unknown';
+    if (!photosByUser.has(userId)) photosByUser.set(userId, []);
+    for (const photo of obs.photos || []) {
+      if (!isAcceptedLicense(photo.license_code)) continue;
+      const mediumUrl = photo.url?.replace(/\/square\./i, '/medium.');
+      if (!mediumUrl) continue;
+      photosByUser.get(userId).push({
+        url: mediumUrl,
+        attribution: formatAttribution(userName, photo.license_code),
+      });
+    }
+  }
+  return photosByUser;
+}
+
+async function fetchObservations(taxonId, { placeId } = {}) {
+  const params = new URLSearchParams({
+    taxon_id: String(taxonId),
+    quality_grade: 'research',
+    photos: 'true',
+    per_page: String(INAT_FETCH_COUNT),
+    order: 'desc',
+    order_by: 'votes',
+  });
+  if (placeId) params.set('place_id', String(placeId));
+  const res = await fetchWithRetry(`https://api.inaturalist.org/v1/observations?${params}`);
+  if (!res) return [];
+  const data = await res.json();
+  return data.results || [];
+}
+
+/** JP と global の photosByUser を統合。優先順位: 異なるユーザー (round-robin) > Japan 観察先出し。
+ *  JP ユーザーを先に Map に insert → Map 反復順（挿入順）で round-robin 時に先に当たる。
+ *  各ユーザー内でも JP 写真を先頭に配置。URL 重複は除外。
+ */
+export function mergeByUserJapanFirst(jpByUser, globalByUser) {
+  const merged = new Map();
+  for (const [userId, photos] of jpByUser) {
+    merged.set(userId, [...photos]);
+  }
+  for (const [userId, photos] of globalByUser) {
+    const existing = merged.get(userId) || [];
+    const existingUrls = new Set(existing.map((p) => p.url));
+    const extras = photos.filter((p) => !existingUrls.has(p.url));
+    merged.set(userId, [...existing, ...extras]);
+  }
+  return merged;
+}
+
+/** iNaturalist Research Grade 写真。ユーザー分散最優先、Japan 観察は同順位内で先出し。 */
 async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX_PHOTOS) {
   const candidates = [scientificName, ...synonyms];
 
@@ -153,41 +217,28 @@ async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX
     const taxonUrl = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(candidate)}&rank=species&per_page=1`;
     const taxonRes = await fetchWithRetry(taxonUrl);
     if (!taxonRes) continue;
-
     const taxonData = await taxonRes.json();
     const taxon = taxonData.results?.[0];
     if (!taxon) continue;
 
     await sleep(1000);
 
-    const obsUrl = `https://api.inaturalist.org/v1/observations?taxon_id=${taxon.id}&quality_grade=research&photos=true&per_page=${INAT_FETCH_COUNT}&order=desc&order_by=votes`;
-    const obsRes = await fetchWithRetry(obsUrl);
-    if (!obsRes) continue;
+    // Japan + global を並行 fetch（両方得て統合プールで分散選択）
+    const jpObs = await fetchObservations(taxon.id, { placeId: INAT_JAPAN_PLACE_ID });
+    await sleep(1000);
+    const globalObs = await fetchObservations(taxon.id);
 
-    const obsData = await obsRes.json();
-    const observations = obsData.results || [];
-    if (observations.length === 0) continue;
+    const jpByUser = observationsToPhotosByUser(jpObs);
+    const globalByUser = observationsToPhotosByUser(globalObs);
+    const merged = mergeByUserJapanFirst(jpByUser, globalByUser);
 
-    const photosByUser = new Map();
-    for (const obs of observations) {
-      const userId = obs.user?.id || 'unknown';
-      const userName = obs.user?.login || 'unknown';
-      if (!photosByUser.has(userId)) photosByUser.set(userId, []);
-
-      for (const photo of obs.photos || []) {
-        if (!isAcceptedLicense(photo.license_code)) continue;
-        const mediumUrl = photo.url?.replace(/\/square\./i, '/medium.');
-        if (!mediumUrl) continue;
-        photosByUser.get(userId).push({
-          url: mediumUrl,
-          attribution: formatAttribution(userName, photo.license_code),
-        });
-      }
-    }
-
-    const selected = selectByUserDispersion(photosByUser, maxPhotos);
+    const selected = selectByUserDispersion(merged, maxPhotos);
     if (selected.length > 0) {
-      return { photos: selected, matchedName: candidate };
+      const jpCount = selected.filter((p) => [...jpByUser.values()].flat().some((j) => j.url === p.url)).length;
+      const matchedVia = jpCount > 0
+        ? `${candidate} (users:${[...merged.keys()].filter((k) => merged.get(k).length > 0).length}, JP:${jpCount})`
+        : `${candidate} (users:${[...merged.keys()].filter((k) => merged.get(k).length > 0).length})`;
+      return { photos: selected, matchedName: matchedVia };
     }
   }
 
@@ -215,6 +266,8 @@ async function downloadAndConvert(url, outputPath) {
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
   const only = process.argv.find((a) => a.startsWith('--only='))?.split('=')[1]?.split(',');
+  const maxPhotosArg = process.argv.find((a) => a.startsWith('--max-photos='))?.split('=')[1];
+  const maxPhotos = maxPhotosArg ? Number(maxPhotosArg) : INAT_MAX_PHOTOS;
 
   mkdirSync(IMAGES_DIR, { recursive: true });
   const mushrooms = JSON.parse(readFileSync(MUSHROOMS_JSON, 'utf8'));
@@ -264,7 +317,9 @@ async function main() {
 
       await sleep(1000);
 
-      const { photos, matchedName } = await getInatPhotos(m.names.scientific, synonyms);
+      // wiki hero が無い種はギャラリー 3x3 を保つため 1 枚多く取得（1 枚は hero 流用で消費される）
+      const inatTarget = wikiImg ? maxPhotos : maxPhotos + 1;
+      const { photos, matchedName } = await getInatPhotos(m.names.scientific, synonyms, inatTarget);
       if (photos.length > 0) {
         m.images_remote = photos.map((p) => p.url);
         m.images_remote_credits = photos.map((p) => p.attribution);

@@ -104,18 +104,50 @@ Step 5: 記事充実化
 
 ## iNaturalist写真の取得
 
-検証後の正しい学名で写真を再取得する。
+検証後の正しい学名で写真を再取得する。v2 以降は `scripts/phase13/fetch_v2_photos.mjs` を使用（旧 `scripts/fetch-photos-v2.mjs` は v1 時代の遺物）。
 
-- 最大9枚/種、ユーザー分散（ラウンドロビン）
-- 撮影者クレジット (images_remote_credits) を付与
-- `scripts/fetch-photos-v2.mjs` を使用
+### 選別ルール（優先順位の高い順、tier0/tier1/tier2 共通）
+
+1. **ユーザー分散最大** — 同一撮影者の写真が複数枚連続しないよう round-robin 選別
+2. **Japan 観察を優先** — iNat `place_id=6737` で絞った観察を同順位内で先出し
+3. **ユーザー内順序** — 各ユーザーの写真は JP → global の順に並べる
+4. **ライセンス** — `cc0` / `cc-by*` のみ採用、`all-rights-reserved` は除外
+5. **ヒーロー流用時の補正** — Wikipedia ヒーロー画像が取得できない種は iNat を `+1` 枚取得（ギャラリー 3x3 を維持）
+6. **学名 synonyms フォールバック** — accepted name で 0 ヒット時に旧学名で再検索
+
+### 出力フィールド（`src/data/mushrooms.json`）
+
+- `image_local`: Wikipedia ヒーローのローカル path（取得失敗時は null、iNat[0] を hero 流用）
+- `images_remote[]`: iNat 写真 URL（原寸）。既定 9 枚、hero 流用時 10 枚
+- `images_remote_credits[]`: 撮影者クレジット `(c) {ユーザー名}, {ライセンス}`
+
+### 代表的なコマンド
+
+```bash
+# 全種（デフォルト 9 枚/種）
+node scripts/phase13/fetch_v2_photos.mjs
+
+# 特定 id のみ
+node scripts/phase13/fetch_v2_photos.mjs --only=amanita_muscaria,lepista_nuda
+
+# 枚数上限を変更（例: 確認用に 3 枚のみ）
+node scripts/phase13/fetch_v2_photos.mjs --max-photos=3
+
+# 書き込まない確認モード
+node scripts/phase13/fetch_v2_photos.mjs --dry-run
+```
+
+### tier2 以降への継承
+
+tier2 以降の新規追加でも同じ `fetch_v2_photos.mjs` をそのまま使う。`build_v2_mushrooms.mjs --append` で `src/data/mushrooms.json` に新規エントリ追加後、新規 id を `--only` で指定して fetch すれば既存種の画像は一切影響を受けない。
 
 ## スクリプト
 
 | スクリプト | 用途 |
 |-----------|------|
-| `scripts/gather-species-data.mjs` | 3ソースからの情報収集 |
-| `scripts/fetch-photos-v2.mjs` | Wikipedia/iNaturalist 写真取得 |
+| `scripts/gather-species-data.mjs` | v1 時代の 3 ソース情報収集（v2 以降は未使用） |
+| `scripts/phase13/fetch_v2_photos.mjs` | v2 画像取得（ユーザー分散 + Japan 優先） |
+| `scripts/phase13/build_v2_mushrooms.mjs` | mushrooms.json 再構築（`--append` で tier 追加） |
 
 ## 出力ファイル
 

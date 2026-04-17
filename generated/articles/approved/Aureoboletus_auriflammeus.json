@@ -1,0 +1,32 @@
+{
+  "names": {
+    "aliases": ["花笠猪口"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["針葉樹林", "広葉樹林", "雑木林", "社寺林"],
+  "regions": ["日本", "中国", "北アメリカ"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "キイロイグチ", "note": "同じ鮮黄色系のイグチ類で近縁種として挙げられる" }
+  ],
+  "description": "ハナガサイグチは子実体全体が鮮やかなオレンジ色を帯びた小型のイグチで、傘と柄からなる。傘表面は橙黄色から鮮黄色でやや粉質、管孔は淡黄色から老成で汚緑色に変わる。食毒は不明とされており、食用としての利用は確立されていない。夏から秋にかけて国内の林内地上に単生または群生する、色彩の目立つ種である[1]。",
+  "features": "傘は直径2〜5cmで初めまんじゅう形、のち山形からほぼ平らに開く。表面は繊維状で毛羽立ちがあり橙黄色から鮮黄色、やや粉質で細かくひび割れることもあり、湿時は粘性を帯びる。管孔は初め淡黄色で老成により徐々に汚緑色となり、孔口は小〜中型で橙黄色に縁取られる。柄は中実で長さ3〜5cm、下方に向かってやや太まり、上部表面に縦長の網目模様がある。肉は黄白色で傷つけても変色しない。夏から秋にかけて針葉樹林や広葉樹林の雑木林や社寺林の樹下の地上に単生または群生する菌根菌である[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "食毒不明種のため、食用としての摂取は避けること[1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「ハナガサイグチ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%AC%E3%82%B5%E3%82%A4%E3%82%B0%E3%83%81",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Aureoboletus auriflammeus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Aureoboletus_auriflammeus_818393.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "Wikipedia ja を主情報源、大菌輪を学名・分類の併用ソースとした。季節「夏から秋」は7〜10月に翻訳。tree_association は ja に具体的な樹種名記述が無いため空配列とした（en は oak 記載あるが国内情報優先）。safety=unknown のため cooking_preservation を null、poisoning_first_aid を汎用的な食毒不明種対応として記載。"
+}

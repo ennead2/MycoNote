@@ -1,0 +1,39 @@
+{
+  "names": {
+    "aliases": ["シロヤマタケ", "乙女傘"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 11 }
+  ],
+  "habitat": ["カラマツ林", "広葉樹林", "草地", "公園の草地"],
+  "regions": ["北海道", "本州", "四国", "ヨーロッパ", "北アメリカ", "オーストラリア"],
+  "tree_association": ["カラマツ", "広葉樹"],
+  "similar_species": [
+    { "ja": "コオトメノカサ", "note": "色形は酷似するが傘径 1〜3cm と小型 [1]" },
+    { "ja": "ウバノカサ", "note": "秋冬にコケの間から生え傘が灰褐色 [1]" },
+    { "ja": "シロヒメカヤタケ", "note": "有毒種で白色が類似し誤認の恐れ [1]" }
+  ],
+  "description": "オトメノカサは小型の白いキノコで、別名をシロヤマタケともいう。日本では北海道・本州・四国に分布し、夏から秋にかけてカラマツ林や広葉樹林の地上、よく湿った公園の草地などに散生または群生する。可食とされるが、小型で土や落ち葉が付きやすく、あまり利用されない存在である。北半球一帯からオーストラリアまで広く見られる普通種で、国内の野生きのことしては地味ながら古くから知られている [1]。",
+  "features": "子実体は傘と柄からなり、全体がほぼ白色。傘は径 2〜6cm で、はじめ中央が盛り上がった丸山形からまんじゅう形、のちに平らに開く。傘の上面は白色から黄色味を帯び、滑らかで通常粘性はなく、傘肉も白色。下面のヒダは白色で疎らに配列し、脈状のしわで互いに連結して柄へ長く下垂する。柄は長さ 2〜6cm、太さ 3〜7mm で下に向かって細くなり、表面は白色でツバやツボを欠く。担子胞子は 7.5〜10×5.5〜6.5μm の楕円形で非アミロイド性、胞子紋は白色。夏から秋にカラマツ林や広葉樹林の地上、草地に発生する非菌根性のキノコである [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    {
+      "name": "Wikipedia ja「オトメノカサ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%88%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%B5",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Cuphophyllus virgineus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Cuphophyllus_virgineus_127382.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "林野庁「きのこのはなし」",
+      "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/",
+      "license": "政府標準利用規約"
+    }
+  ],
+  "notes": "safety=unknown のため validator V6 に従い cooking_preservation と poisoning_first_aid はともに null。Wikipedia ja にある料理用途（オムレツ・スープ・和え物・酢の物）の記載は採用せず description で食用性のみ言及。季節は Wikipedia ja の『夏から秋』を 7〜11 月に翻訳。分布は大菌輪の国内観察記録と Wikipedia ja の記述を統合した。"
+}

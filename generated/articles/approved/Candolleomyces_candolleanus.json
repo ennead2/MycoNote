@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["鼬茸", "ウマノクソボッチ", "カキネタケ"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["広葉樹林", "切り株", "朽ち木", "公園", "倒木"],
+  "regions": ["日本", "世界各地の広葉樹林", "北米", "ヨーロッパ"],
+  "tree_association": ["ナラ", "コナラ", "クヌギ"],
+  "similar_species": [],
+  "description": "イタチタケは森林や公園で見られる小型から中型のきのこで、傘が淡黄褐色をおび、広葉樹の切り株や枯れ木に発生する木材腐朽菌である。世界中の広葉樹林に分布し、国内でも身近に観察される普通種として知られる。若い子実体を食用にする地方もあるが、肉が薄く脆いうえにシロシビン類を含むとされ、中枢神経系の中毒を起こす危険があるため避けるのが無難とされている [1]。",
+  "features": "子実体は傘と柄からなり、傘は径3〜7cmで若い時期は卵形から鐘形、生長すると中央が中高の扁平になる。傘表面は湿ると淡黄褐色でなめらかかつ条線があり、乾燥すると放射状に裂けやすく白っぽい淡褐色で微細なささくれ状から平滑となる。縁には白色の被膜をつけるが落ちやすい。ヒダははじめ白色で淡紅色を帯び、柄に対して直生または湾生し密に配列、老成すると帯紫褐色となる。胞子は暗紫褐色。柄は長さ4〜8cm、白色で脆く上部は粉状、中空で上下同大か下方に向かって太くなる。初夏の梅雨ごろから秋の中秋にかけてナラ、コナラ、クヌギなどの広葉樹林の林内地上や枯幹、切り株腐木、公園などの切り株に散生か群生する [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "シロシビン類を含み、摂食により頭痛・悪寒・平衡感覚喪失・めまい・血圧降下・幻覚・精神錯乱など中枢神経系の中毒を起こすおそれがある [1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「イタチタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%81%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Candolleomyces candolleanus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Candolleomyces_candolleanus_832265.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "safety=inedible 指定に従い cooking_preservation と poisoning_first_aid を null とし、シロシビン類による中毒リスクは caution に集約。季節は wikipediaJa の『初夏（梅雨ごろ）から秋（中秋）』を 6〜10 月に翻訳。aliases は wikipediaJa の地方名（秋田のウマノクソボッチ、岩手・福島・佐賀のカキネタケ）と漢字表記を採用。類似種は wikipediaJa に言及なし、wikipediaEn の Psathyrella gracilis 等は和名情報が国内資料になく空配列とした。"
+}

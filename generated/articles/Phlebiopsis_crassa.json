@@ -1,0 +1,22 @@
+{
+  "names": {
+    "aliases": ["紙鱗茸"]
+  },
+  "season": [
+    { "start_month": 1, "end_month": 12 }
+  ],
+  "habitat": ["広葉樹林", "朽ちた倒木", "落枝", "沢沿いの湿った場所"],
+  "regions": ["日本各地", "アジア", "北アメリカ", "南アメリカ", "オーストラリア"],
+  "tree_association": ["広葉樹"],
+  "similar_species": [],
+  "description": "カミウロコタケは、広葉樹の倒木や落枝に広範囲に発生する中型の白色腐朽菌で、日本各地を含むアジア、北米、南米、オーストラリアなど汎世界的に分布する。子実体は皮状で周縁が反転し、半円形から棚状の傘を作る。食用には適さないとされる。腐朽が進んだ朽ち木の上で普通に見られる種である [1][2]。",
+  "features": "子実体はやや厚みのある柔らかい皮状で、周縁部は上部が反転して丸くめくれたような半円形から棚状の傘となる。背着生から半背着生で、表面は薄茶色、浅い環紋がみられる。傘部分は柔らかなフェルト質で厚さ0.5〜2mm、上面は材白色の短毛状の菌糸で覆われる。傘裏の子実層面は、はじめ淡いすみれ色からやや褐色を帯びた紫色で、のちに退色して最後には黄褐色になる。肉は類白色。担子胞子は8.5〜11×4〜6μmの円柱形から広楕円形、平滑で無色、非アミロイド性で胞子紋は白色。白色腐朽菌として一年を通じて発生し、広葉樹林の沢沿いなど湿った場所で、腐朽がすすんだ広葉樹の朽ちた倒木や落枝の上に広範囲に普通に発生する [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "食用不適とされるため、安易な試食は避けること [1]。",
+  "sources": [
+    { "name": "Wikipedia ja「カミウロコタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%9F%E3%82%A6%E3%83%AD%E3%82%B3%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Phlebiopsis crassa」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Phlebiopsis_crassa_811935.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa を主情報源、daikinrin を分類・分布の補助に採用。season は「一年を通じて発生」を 1–12 月に翻訳（V13 warning 承知）。similar_species はソース記述なしで空配列。safety=unknown のため cooking_preservation/poisoning_first_aid は null、注意喚起のみ caution に記載。"
+}

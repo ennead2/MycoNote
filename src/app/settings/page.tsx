@@ -288,8 +288,14 @@ function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
         <Sparkles size={16} aria-hidden="true" />
         {T.noticeSection}
       </h2>
-      <div className="space-y-3">
+      <div className="space-y-4">
+        {/* v2.1 (最新、Phase 14) */}
         <div>
+          <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV21Title}</h3>
+          <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV21Body}</p>
+        </div>
+        {/* v2.0 (Phase 13-F) */}
+        <div className="border-t border-border pt-3">
           <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV2Title}</h3>
           <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV2Body}</p>
         </div>

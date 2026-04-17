@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["樺色粉天狗茸"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["アカマツ林", "コナラ林", "樹下"],
+  "regions": ["日本（滋賀県・熊本県ほか）"],
+  "tree_association": ["アカマツ", "コナラ"],
+  "similar_species": [],
+  "description": "カバイロコナテングタケは帯褐色で表面が粉状の物質に覆われた中型のきのこで、夏から秋にアカマツやコナラの林内に発生する。日本では滋賀県や熊本県などで観察されている。毒成分は明らかになっておらず、人間に対する中毒症状の詳細も不明であり、食不適として扱われる種である[1]。",
+  "features": "傘は明るい帯褐燈色で表面が粉状の物質に覆われ、ふちに条線が見られるが粉状物質のため傘が開く前は確認しづらい。ヒダは白色で密に配列する。柄も同様に粉状の物質に覆われ、上部に白色で薄い膜質のツバがあり、基部は球根状に膨らみ、その表面に粉状のツボの名残が環状に残る。夏から秋にかけてアカマツ・コナラ林などの樹下に発生する[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "毒成分・中毒症状ともに不明な種であり、食用にしないこと。中国産のものには殺蠅性があるとの報告がある[1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「カバイロコナテングタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%90%E3%82%A4%E3%83%AD%E3%82%B3%E3%83%8A%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Amanita rufoferruginea」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Amanita_rufoferruginea_326112.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "wikipediaJa を主情報源、daikinrin を分類・学名の canonical source として併用。wikipediaEn・mhlw は null のため不使用。season は「夏から秋」を 7〜10 月に翻訳。similar_species は ja/daikinrin いずれにも明示記載がないため空配列。aliases は ja 冒頭の漢字表記「樺色粉天狗茸」のみ採用。safety=unknown のため cooking_preservation・poisoning_first_aid とも null、殺蠅性等の注意点は caution に集約。"
+}

@@ -1,0 +1,34 @@
+{
+  "names": {
+    "aliases": ["蝉茸"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 9 }
+  ],
+  "habitat": ["人家の庭", "庭園", "神社の境内", "地中"],
+  "regions": [
+    "日本（沖縄本島以北、北限は石川県・富山県）",
+    "中国",
+    "キューバ",
+    "ドミニカ共和国",
+    "メキシコ",
+    "ニュージーランド",
+    "スリランカ",
+    "マダガスカル"
+  ],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "ヒグラシタケ", "note": "ヒグラシ幼虫に寄生し、宿主が厚い菌糸膜に覆われる[1]" },
+    { "ja": "オオセミタケ", "note": "柄の基部が細根状に分岐して宿主につながる[1]" }
+  ],
+  "description": "セミタケは地中のニイニイゼミの幼虫に寄生して発生する冬虫夏草の一種である。初夏から初秋にかけて、人家の庭や庭園、神社の境内などで見出される。狭義の冬虫夏草と共通する成分コルジセピンを含有し、薬用資源としての将来性が期待されているが、日本国内では臨床用製剤としての実用化には至っていない。京都府レッドデータブック2015では「絶滅寸前種」に指定されている[1]。",
+  "features": "有性世代の子実体は高さ3〜6センチの棍棒状で、やや膨らんだ円筒形の頭部（子座）とそれよりいくぶん細い柄からなる。頭部は淡い赤褐色〜灰褐色を呈し、表面直下に微細な粒状の子嚢殻が多数埋もれる。柄は頭部よりも色が淡く、基部は分岐することなく直接セミの幼虫体につながる。基部近くにはしばしば灰桃色のこぶ状ないし樹枝状の突起（無性世代）を生じる。日本ではニイニイゼミの幼虫を宿主とし、初夏から初秋にかけて人家の庭・庭園・神社の境内などに発生する[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "京都府レッドデータブック2015で絶滅寸前種に指定されており、採集には配慮が必要[1]。",
+  "sources": [
+    { "name": "Wikipedia ja「セミタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%9F%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Ophiocordyceps sobolifera」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Ophiocordyceps_sobolifera_504342.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "Wikipedia ja を主情報源、大菌輪を分類・分布の補助として使用。季節は「初夏から初秋」を6〜9月に翻訳。safety=inedible のため cooking_preservation と poisoning_first_aid は null（validator V6 仕様）。京都府レッドデータブックの絶滅寸前種指定を caution に反映。"
+}

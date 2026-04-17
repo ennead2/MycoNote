@@ -31,6 +31,7 @@ const DEFAULT_CONFIG = {
   reportPath: join(ROOT, '.cache/phase13/generation-report.json'),
   progressPath: join(ROOT, 'scripts/temp/review-v2-progress.json'),
   tier0Path: join(ROOT, 'data/tier0-species.json'),
+  tier1Path: join(ROOT, 'data/tier1-species.json'),
   indexHtmlPath: join(__dirname, 'index.html'),
   appJsPath: join(__dirname, 'app.js'),
   styleCssPath: join(__dirname, 'style.css'),
@@ -73,6 +74,26 @@ function loadTier0Map(tier0Path) {
     const slug = s.scientificName.replace(/\s+/g, '_');
     out[s.scientificName] = s.japaneseName;
     out[slug] = s.japaneseName;
+  }
+  return out;
+}
+
+function loadSpeciesNameMap(paths) {
+  // tier0 + tier1 を合成して lookup を作る。tier0 が優先（先に追加）。
+  // slug は空白 と ハイフンをアンダースコアに変換（例: Trichoderma cornu-damae → Trichoderma_cornu_damae）
+  const out = {};
+  for (const p of paths) {
+    if (!p) continue;
+    const data = readJSON(p, null);
+    const list = data && Array.isArray(data.species) ? data.species
+      : Array.isArray(data) ? data : null;
+    if (!list) continue;
+    for (const s of list) {
+      if (!s.scientificName || !s.japaneseName) continue;
+      const slug = s.scientificName.replace(/[\s-]+/g, '_');
+      if (!(s.scientificName in out)) out[s.scientificName] = s.japaneseName;
+      if (!(slug in out)) out[slug] = s.japaneseName;
+    }
   }
   return out;
 }
@@ -137,13 +158,13 @@ function listArticles(config) {
   const report = readJSON(config.reportPath, []);
   const reportBySlug = Object.fromEntries(report.map(r => [r.slug, r]));
   const progress = loadProgress(config.progressPath);
-  const tier0 = loadTier0Map(config.tier0Path);
+  const nameMap = loadSpeciesNameMap([config.tier0Path, config.tier1Path]);
   return files.map(f => {
     const slug = f.replace(/\.json$/, '');
     const article = readJSON(join(config.articlesDir, f), {});
     const r = reportBySlug[slug];
-    // tier0 wamei を優先、なければ aliases[0]、それもなければ slug
-    const ja = tier0[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
+    // tier0/tier1 curated wamei を優先、なければ aliases[0]、それもなければ slug
+    const ja = nameMap[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
     return {
       slug,
       scientific: slug,
@@ -193,8 +214,8 @@ export function createReviewServer(config = DEFAULT_CONFIG) {
         const report = readJSON(config.reportPath, []);
         const reportEntry = report.find(r => r.slug === slug);
         const progress = loadProgress(config.progressPath);
-        const tier0 = loadTier0Map(config.tier0Path);
-        const primaryName = tier0[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
+        const nameMap = loadSpeciesNameMap([config.tier0Path, config.tier1Path]);
+        const primaryName = nameMap[slug] || (article.names && article.names.aliases && article.names.aliases[0]) || slug;
         return sendJSON(res, {
           slug,
           primaryName,

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { resolveTier0Targets, tier0ToPromptInput, buildManifestEntry } from './generate_articles.mjs';
+import { resolveTier0Targets, tier0ToPromptInput, buildManifestEntry, resolveTargetsFromSpecs } from './generate_articles.mjs';
 
 describe('resolveTier0Targets', () => {
   it('ranking から tier=0 のみ抽出', () => {
@@ -97,5 +97,94 @@ describe('buildManifestEntry', () => {
     expect(entry.hasCombined).toBe(false);
     expect(entry.promptPath).toBe('p/x.txt');
     expect(entry.outputPath).toBe('.cache/phase13/generated/Amanita_phalloides.json');
+  });
+});
+
+describe('resolveTargetsFromSpecs', () => {
+  it('merges tier0 + tier1 with deduplication', () => {
+    const ranking = {
+      species: [
+        { scientificName: 'Amanita muscaria', japaneseName: 'ベニテングタケ', tier: 0, signals: { toxicity: 'toxic' } },
+        { scientificName: 'Lactifluus volemus', japaneseName: 'チチタケ', tier: 1, signals: { toxicity: 'edible' } },
+        { scientificName: 'Random sp', japaneseName: 'ランダム', tier: 2, signals: { toxicity: 'inedible' } },
+      ],
+    };
+    const tier0Spec = { species: [{ scientificName: 'Amanita muscaria', japaneseName: 'ベニテングタケ' }] };
+    const tier1Spec = { species: [{ scientificName: 'Lactifluus volemus', japaneseName: 'チチタケ' }] };
+
+    const targets = resolveTargetsFromSpecs(ranking, [tier0Spec, tier1Spec]);
+    expect(targets.length).toBe(2);
+    expect(targets.map((t) => t.scientificName).sort()).toEqual(['Amanita muscaria', 'Lactifluus volemus']);
+  });
+
+  it('uses ranking signals for toxicity when species in ranking', () => {
+    const ranking = { species: [{ scientificName: 'A b', japaneseName: 'AB', tier: 1, signals: { toxicity: 'toxic' }, synonyms: ['X y'] }] };
+    const spec = { species: [{ scientificName: 'A b', japaneseName: 'AB' }] };
+    const targets = resolveTargetsFromSpecs(ranking, [spec]);
+    expect(targets[0].signals.toxicity).toBe('toxic');
+    expect(targets[0].synonyms).toEqual(['X y']);
+  });
+
+  it('applies spec-level ja_wiki_source_override', () => {
+    const ranking = { species: [{ scientificName: 'Boletus sensibilis', japaneseName: 'ドクヤマドリモドキ', tier: 1, signals: { toxicity: 'toxic' } }] };
+    const spec = { species: [{ scientificName: 'Boletus sensibilis', japaneseName: 'ミヤマイロガワリ', ja_wiki_source_override: { title: 'ミヤマイロガワリ', reason: 'x' } }] };
+    const targets = resolveTargetsFromSpecs(ranking, [spec]);
+    expect(targets[0].japaneseName).toBe('ミヤマイロガワリ');
+    expect(targets[0].ja_wiki_source_override.title).toBe('ミヤマイロガワリ');
+  });
+
+  it('accepts spec species NOT in ranking when spec provides safety', () => {
+    const ranking = { species: [] };
+    const spec = { species: [{ scientificName: 'Sarcomyxa edulis', japaneseName: 'ムキタケ', safety: 'edible', synonyms: ['Panellus edulis'] }] };
+    const targets = resolveTargetsFromSpecs(ranking, [spec]);
+    expect(targets.length).toBe(1);
+    expect(targets[0].scientificName).toBe('Sarcomyxa edulis');
+    expect(targets[0].signals.toxicity).toBe('edible');
+    expect(targets[0].synonyms).toEqual(['Panellus edulis']);
+  });
+
+  it('throws when spec species missing from ranking and has no safety', () => {
+    const ranking = { species: [] };
+    const spec = { species: [{ scientificName: 'Unknown x', japaneseName: '不明' }] };
+    expect(() => resolveTargetsFromSpecs(ranking, [spec])).toThrow(/missing from ranking/);
+  });
+
+  it('spec scientific が ranking synonyms にヒットすれば accepted name から signals 引用', () => {
+    const ranking = {
+      species: [
+        {
+          scientificName: 'Tylopilus nigropurpureus',
+          japaneseName: 'クロニガイグチ',
+          tier: 1,
+          signals: { toxicity: 'toxic' },
+          synonyms: ['Anthracoporus nigropurpureus'],
+        },
+      ],
+    };
+    const spec = { species: [{ scientificName: 'Anthracoporus nigropurpureus', japaneseName: 'クロニガイグチ' }] };
+    const targets = resolveTargetsFromSpecs(ranking, [spec]);
+    expect(targets.length).toBe(1);
+    expect(targets[0].scientificName).toBe('Anthracoporus nigropurpureus'); // spec 側を保持
+    expect(targets[0].signals.toxicity).toBe('toxic'); // ranking accepted から引用
+  });
+
+  it('spec scientific が ranking originalNames にもヒットする', () => {
+    const ranking = {
+      species: [
+        {
+          scientificName: 'Lactifluus volemus',
+          japaneseName: 'チチタケ',
+          tier: 1,
+          signals: { toxicity: 'edible' },
+          synonyms: [],
+          originalNames: ['Lactarius volemus'],
+        },
+      ],
+    };
+    const spec = { species: [{ scientificName: 'Lactarius volemus', japaneseName: 'チチタケ' }] };
+    const targets = resolveTargetsFromSpecs(ranking, [spec]);
+    expect(targets.length).toBe(1);
+    expect(targets[0].scientificName).toBe('Lactarius volemus');
+    expect(targets[0].signals.toxicity).toBe('edible');
   });
 });

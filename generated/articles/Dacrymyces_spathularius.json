@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["角又茸", "角叉茸"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["針葉樹の枯れ木", "枯れ枝", "腐った倒木", "建築材", "林内・道端・庭先"],
+  "regions": ["日本", "アジア", "ハワイ", "ヨーロッパ", "南アメリカ"],
+  "tree_association": ["針葉樹"],
+  "similar_species": [],
+  "description": "ツノマタタケは小型の膠質菌で、鮮やかな橙色の子実体をつけるキノコである。短い柄を持つヘラ形から扇形で、先端に切れ込みが入り、水かき状に広がることもある。温帯から熱帯にかけて汎世界的に分布し、国内では夏から秋にかけて林内や道端、庭先などで見かけられる。食用とされるが日本国内での利用例は限定的で、身近な自然観察の対象として親しまれている。[1][2]",
+  "features": "子実体は短い柄のあるヘラ形から扇形で、先端に切れ込みが入り水かき状に広がることもある。通常は高さ4〜20ミリメートル、径2〜7ミリメートルで、山岳地帯ではしばしば大形化し形や色にも変化が見られる。新鮮な時は黄色から橙色、乾燥すると橙赤色に暗く変化し、片面は白くなって縮み硬くなる。ゼラチン状で軟骨質の膠質、多少ぬめりがあり片面に目立たない子実層がある。褐色腐朽菌で、夏から秋にかけて主に針葉樹の枯れ木や枯れ枝、腐った倒木、建築材に発生し、散策路の木製手すりや階段、木道、木製ベンチの割れ目に沿って発生することもある。[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "国内での食経験が乏しく、食用の可否判断には専門家の助言を仰ぐことが望ましい。[1]",
+  "sources": [
+    {
+      "name": "Wikipedia ja「ツノマタタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%8E%E3%83%9E%E3%82%BF%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Dacrymyces spathularia」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Dacrymyces_spathularia_841256.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "safety=unknown のため validator V6 実装に従い cooking_preservation と poisoning_first_aid を共に null とした。季節は Wikipedia ja『夏から秋』を 6〜10 月に翻訳。similar_species は資料に具体的な識別対象の記述がないため空配列。aliases は漢字表記 2 種を採用。target 学名 spathularius と daikinrin canonical spathularia の差異は V11 warning として受容。"
+}

@@ -1,0 +1,24 @@
+{
+  "names": {
+    "aliases": ["雛杏子茸"]
+  },
+  "season": [
+    { "start_month": 6, "end_month": 10 }
+  ],
+  "habitat": ["マツ林", "各種林内の地上", "公園", "庭園"],
+  "regions": ["日本各地", "東アジア", "北アメリカ"],
+  "tree_association": ["マツ"],
+  "similar_species": [
+    { "ja": "アンズタケ", "note": "アンズ臭が強く、本種ははっきりした杏香を欠く。" }
+  ],
+  "description": "ヒナアンズタケはアンズタケの仲間の小型キノコで、全体が鮮やかな黄色をまとい、傘縁が不規則に波打つのが目印である。和名の「ヒナ（雛）」は小さいことを意味し、その名の通り傘径はおおむね数センチにとどまる。可食とされる食用キノコだが、実際の食用的価値はほとんど見出されていない。日本各地に分布し、夏から秋にマツ林や各種の林内、さらに樹木の多い公園や庭園など身近な環境にも顔を出す、観察しやすい小型種である[1]。",
+  "features": "子実体は傘と柄からなり、全体が鮮やかな黄色を帯びる。傘径は0.5〜3cm、大きいもので4cmに達し、はじめまんじゅう形、のちに扁平から漏斗状に開く。傘上面はなめらかで鮮黄色、縁部は不規則に波打って変形することが多い。裏面のヒダは黄白色で厚みがあり、疎らに並んで柄へ長く垂生する。柄は長さ1〜2cm、太さ2〜4mmの円柱状で傘と同色、肉は薄く黄色を帯びる。アンズタケ属ながら本種はアンズ臭をほとんど発しない。担子胞子は7.5〜10×4.5〜6μmの楕円形で非アミロイド性、胞子紋は帯黄色。夏から秋にマツ林をはじめ各種林内の地上、公園や庭園などに発生する[1]。",
+  "cooking_preservation": "可食とされるが食用的な価値はほとんど見出されておらず、小型で肉も薄いため、まとまった量を得にくい種である。そのため本種に特化した和食の伝統的調理法は資料上確認できない[1]。",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「ヒナアンズタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%8A%E3%82%A2%E3%83%B3%E3%82%BA%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Cantharellus minor」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Cantharellus_minor_179458.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "主情報は Wikipedia ja。学名・分類・MycoBank ID は大菌輪で裏取り。発生期は ja の「夏から秋」を6〜10月に翻訳（wikipediaEn の June–September とも整合）。類似種 C. tabernensis / Craterellus ignicolor / Gloioxanthomyces nitidus は en 由来で国内情報が乏しく省略、国内既知のアンズタケのみ similar_species に採用。cooking_preservation は ja の「食用的価値はほとんど見いだせられてはいない」に基づき最小限の記述に留めた。"
+}

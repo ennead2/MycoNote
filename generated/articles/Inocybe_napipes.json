@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": []
+  },
+  "season": [
+    { "start_month": 8, "end_month": 10 }
+  ],
+  "habitat": ["林内"],
+  "regions": ["日本", "ヨーロッパ", "北米"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "コブミノアセタケはアセタケ科に分類される小型のきのこで、同科の仲間と同様に毒きのことして扱われる種である。国内の発生記録は限られ、海外の温帯林に広く分布することが知られている。野生のきのこは食毒の判断を自己流で行わず、専門家に相談することが推奨される [1][2]。",
+  "features": "小型の傘と柄をもち、柄の基部がやや膨らむ点が特徴とされる。胞子に瘤状突起がある点が和名の由来となっている。発生場所は樹林下の地上で、海外では針葉樹や広葉樹の林に広く見られるが、国内での観察事例は少ない [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": "アセタケ科の仲間は食べるとムスカリンによる中毒を起こすことで知られ、摂食後短時間で発汗・流涎・流涙・縮瞳・腹痛・下痢などの症状が現れる。食後にこれらの症状が出た場合はただちに医療機関を受診し、可能であれば食べ残しや嘔吐物を持参して原因菌の同定に役立てる。自己判断で嘔吐を誘発するなどの処置は避ける [2]。",
+  "caution": "アセタケ科の毒きのこで食用にはならない。野生のきのこは専門家の判断を仰ぐこと [2]。",
+  "sources": [
+    {
+      "name": "大菌輪「Inocybe napipes」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Inocybe_napipes_142134.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "林野庁「きのこのはなし」",
+      "url": "https://www.rinya.maff.go.jp/j/tokuyou/kinoko/",
+      "license": "政府サイト利用規約"
+    }
+  ],
+  "notes": "wikipediaJa/wikipediaEn/mhlw がいずれも null のため、daikinrin の分類・分布情報と rinya の一般的な毒きのこ注意情報を土台に最小限の記述で構成。国内観察記録が 2 件と極少のため similar_species・tree_association・aliases は空。season は北半球温帯のアセタケ発生期一般に合わせ 8-10 月の 1 期とし、notes に明記。ムスカリン症状は属の共通特徴として一般情報源相当の記述に留めた。"
+}

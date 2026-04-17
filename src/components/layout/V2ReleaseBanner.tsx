@@ -5,12 +5,14 @@ import { Sparkles, X } from 'lucide-react';
 import Link from 'next/link';
 import { UI_TEXT } from '@/constants/ui-text';
 
-const STORAGE_KEY = 'v2-release-banner-dismissed';
+// v2.1 用に key を変更 → v2.0 を dismiss 済のユーザーにも v2.1 告知が表示される
+const STORAGE_KEY = 'v2-1-release-banner-dismissed';
 
 /**
- * Phase 13-F: v2 リリース告知バナー。layout に置いて全画面で表示。
+ * Phase 13-F (v2.0) / Phase 14 (v2.1): リリース告知バナー。layout に置いて全画面で表示。
  * - 初回マウント時に localStorage を読み、dismiss されていれば描画しない。
  * - × ボタンで dismiss → localStorage に flag を保存し再描画しない。
+ * - バージョン毎に STORAGE_KEY を切り替えて再告知。
  */
 export function V2ReleaseBanner() {
   const [mounted, setMounted] = useState(false);
@@ -31,7 +33,7 @@ export function V2ReleaseBanner() {
   return (
     <div
       role="region"
-      aria-label="v2.0 リリース告知"
+      aria-label="v2.1 リリース告知"
       className="bg-soil-elevated border-b border-moss-light/30 px-4 py-3"
     >
       <div className="max-w-lg mx-auto flex items-start gap-3">

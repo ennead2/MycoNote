@@ -1,16 +1,19 @@
 {
-  "generatedAt": "2026-04-16T12:57:19.739Z",
-  "total": 60,
+  "generatedAt": "2026-04-17T13:21:41.015Z",
+  "total": 113,
   "safetyCount": {
-    "edible": 15,
-    "toxic": 43,
-    "caution": 1,
-    "deadly": 1
+    "edible": 29,
+    "toxic": 44,
+    "caution": 4,
+    "deadly": 3,
+    "unknown": 26,
+    "inedible": 7
   },
-  "similarResolutionRate": 0.23783783783783785,
-  "similarResolved": 44,
-  "similarTotal": 185,
-  "withImages": 0,
+  "similarResolutionRate": 0.2753623188405797,
+  "similarResolved": 76,
+  "similarTotal": 276,
+  "withImages": 57,
   "skipped": [],
-  "skippedCount": 0
+  "skippedCount": 0,
+  "appendedCount": 53
 }

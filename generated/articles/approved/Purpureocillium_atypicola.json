@@ -1,0 +1,25 @@
+{
+  "names": { "aliases": ["蜘蛛茸", "イリオモテクモタケ", "アマミウスキクモタケ", "紫色野村菌"] },
+  "season": [
+    { "start_month": 6, "end_month": 8 }
+  ],
+  "habitat": ["地中営巣性クモの巣穴", "地表", "公園", "社寺境内", "庭園"],
+  "regions": ["千葉県以西の本州", "四国", "九州", "奄美大島", "沖縄本島", "台湾", "中国", "スリランカ", "北アメリカ", "コスタリカ", "ブラジル", "アルゼンチン", "パナマ", "ソロモン群島", "ガーナ"],
+  "tree_association": [],
+  "similar_species": [
+    { "ja": "ツチカメムシタケ", "note": "宿主はツチカメムシ成虫、分生子柄は主軸先端から束生し球形分生子[1]" },
+    { "ja": "イリオモテクモタケ", "note": "テレオモルフで頭部は粉状にならず黄白〜淡黄褐色、沖縄等に分布[1]" },
+    { "ja": "アマミウスキクモタケ", "note": "奄美大島産、子座の赤みが弱くクリーム色を帯びる変異[1]" }
+  ],
+  "description": "クモタケは地中に袋状の巣を作るクモ類に寄生して発生する、いわゆる冬虫夏草の一つである。日本ではキシノウエトタテグモなどを主な宿主とし、千葉以西の本州から沖縄本島までの広い範囲で比較的普通に見出される。宿主の巣穴の出入り口から地上に現れる子実体は白い柄と灰紫色の粉状の頭部を持ち、全体の高さは3〜8センチほどになる。食用には供されず、生薬・食材としての利用記録も本資料には認められない。一部自治体のレッドデータブックに情報不足種や絶滅危惧種として掲載されている[1]",
+  "features": "子実体は分生子柄叢（シンネマ）で、一宿主から通常1本、まれに2本生じる。細長い円筒状の白色・平滑な柄（径1〜4ミリ、中空で柔らかい）と、やや太いソーセージ状の頭部（長さ2〜4センチ、径1.2〜4.5ミリ、灰紫色・粉状）から成り、全体で3〜8センチ。柄基部は宿主体を包む白色菌糸塊につながる。造網性や徘徊性のクモが宿主となった場合は典型的な子実体を作らず、宿主体表背面に直接分生子柄を生じて淡灰紫色の粉塊に覆われる。日本での発生時期は主に梅雨時から8月にかけてで、キシノウエトタテグモなど地中営巣性クモの巣穴出入り口から地上に姿を現す[1]",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「クモタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A2%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Purpureocillium atypicola」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Purpureocillium_atypicola_816152.html", "license": "CC BY 4.0" },
+    { "name": "Wikipedia en「Purpureocillium atypicola」", "url": "https://en.wikipedia.org/wiki/Purpureocillium_atypicola", "license": "CC BY-SA 4.0" }
+  ],
+  "notes": "safety=inedible のため cooking_preservation / poisoning_first_aid / caution は null（validator V6 準拠、指示書と差異ある箇所は validator を優先）。発生期は ja の『主に梅雨時から8月にかけて』を 6-8 月に翻訳。aliases は漢字表記・テレオモルフ和名・変異和名・中国語呼称を含めた。宿主はクモ類で樹木共生はないため tree_association は空。"
+}

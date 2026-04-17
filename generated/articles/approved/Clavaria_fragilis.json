@@ -1,0 +1,25 @@
+{
+  "names": {
+    "aliases": ["シロソウメンタケ", "白素麺茸"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["広葉樹林内の地上", "針葉樹林内の地上", "雑木林の地上"],
+  "regions": ["日本各地", "北半球", "南アメリカ", "オーストラリア"],
+  "tree_association": ["広葉樹", "針葉樹"],
+  "similar_species": [
+    { "ja": "サヤナギナタタケ", "note": "子実体は白色ではなく肉色がかる [1]" },
+    { "ja": "シロヤリタケ", "note": "通常は単生で、担子胞子がより大型 [1]" }
+  ],
+  "description": "シロソウメンタケは、夏から秋にかけて雑木林の地上に白く細長い棒状の子実体を多数束生させる小型のキノコである。分枝しない真っ白な子実体が群がって立ち並ぶ姿が素麺を思わせることから和名が付けられた。日本各地のほか北半球を中心に南アメリカやオーストラリアにも広く分布し、身近な林の林床でよく見られる。食用とされることもあるが、肉が非常に脆く特筆すべき風味もないため、国内の食文化の中では積極的に利用される対象ではない [1]。",
+  "features": "子実体は縦に細長く伸びる丸棒状またはやや扁平な棒状で、分枝せず全体が白色を呈する。高さは 3〜12 センチメートル、幅は 5〜10 ミリメートルで、先端に向かって徐々に細くなり、やや屈曲する。表面はなめらかで粘性はなく、肉は白色でかなり脆い。柄は短くて判別しづらい。成熟して古くなったり乾いたりすると細くなり、黄色味を帯びる。菌糸隔壁にクランプを欠き、担子胞子は大きさ 5〜7 × 3〜4 マイクロメートルの楕円形で顕著な嘴状突起をもち、無色で非アミロイド性、胞子紋は白色。夏から秋にかけて広葉樹林や針葉樹林などの雑木林内の地上に多数束状または群生する [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「シロソウメンタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%BD%E3%82%A6%E3%83%A1%E3%83%B3%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Clavaria fragilis」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Clavaria_fragilis_182991.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "safety=unknown のため cooking_preservation・poisoning_first_aid・caution をいずれも null とした（validator V6 準拠）。wikipediaJa を主情報源、daikinrin を学名・分類の補助として使用。季節は wikipediaJa の「夏から秋」を 7〜10 月の 1 期に翻訳。類似種はサヤナギナタタケとシロヤリタケを wikipediaJa から採用し、学名や科名は自由文から除外。aliases は和名別表記のみ記載し、synonyms 学名は除外。"
+}
