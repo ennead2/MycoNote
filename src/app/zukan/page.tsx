@@ -22,7 +22,7 @@ const DEFAULT_TAB: Tab = 'list';
 
 const VALID_SORTS: SortOrder[] = ['safety', 'kana', 'taxonomy'];
 const VALID_TABS: Tab[] = ['list', 'bookmarks', 'calendar'];
-const VALID_SAFETY: Safety[] = ['edible', 'caution', 'inedible', 'toxic', 'deadly'];
+const VALID_SAFETY: Safety[] = ['edible', 'caution', 'inedible', 'unknown', 'toxic', 'deadly'];
 
 /** Parse URL search params into our state shape. Unknown values are ignored. */
 function paramsToState(params: URLSearchParams): {

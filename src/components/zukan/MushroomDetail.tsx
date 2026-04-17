@@ -25,16 +25,21 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
 
 export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  // Filter out empty strings so lightbox only navigates valid photos
+  // ヒーローが image_local 無しで images_remote[0] 流用のケース → ギャラリーから先頭をスキップして重複回避
+  const heroFromRemote = !mushroom.image_local && mushroom.images_remote.length > 0;
+  const heroSrc = mushroom.image_local || mushroom.images_remote[0] || null;
+  const remoteCreditsAll = mushroom.images_remote_credits || mushroom.images_remote.map(() => '');
+  const galleryPhotos = heroFromRemote ? mushroom.images_remote.slice(1) : mushroom.images_remote;
+  const galleryCredits = heroFromRemote ? remoteCreditsAll.slice(1) : remoteCreditsAll;
+  // Lightbox: [hero? + gallery] を連結（heroFromRemote のときは images_remote そのまま = hero + gallery）
   const allPhotos = [
-    ...(mushroom.image_local ? [mushroom.image_local] : []),
-    ...mushroom.images_remote,
+    ...(heroSrc ? [heroSrc] : []),
+    ...galleryPhotos,
   ];
   const allCredits = [
-    ...(mushroom.image_local ? [''] : []),
-    ...(mushroom.images_remote_credits || mushroom.images_remote.map(() => '')),
+    ...(heroSrc ? [heroFromRemote ? remoteCreditsAll[0] ?? '' : ''] : []),
+    ...galleryCredits,
   ];
-  const heroSrc = mushroom.image_local || mushroom.images_remote[0] || null;
   // 仕様上 v2 種は被り無し前提。SeasonBar は最初の range を表示。
   const primarySeason = mushroom.season[0];
 
@@ -59,17 +64,17 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       </div>
 
       {/* Additional photos from iNaturalist — 3-column grid */}
-      {mushroom.images_remote.length > 0 && (
+      {galleryPhotos.length > 0 && (
         <div>
           <h2 className="text-xs font-bold text-moss-light mb-2">{UI_TEXT.zukan.additionalPhotos}</h2>
           <div className="grid grid-cols-3 gap-2">
-            {mushroom.images_remote.map((url, i) => (
+            {galleryPhotos.map((url, i) => (
               <RemotePhoto
                 key={i}
                 url={url}
                 alt={`${mushroom.names.ja} - ${i + 1}`}
-                credit={mushroom.images_remote_credits?.[i]}
-                onClick={() => setLightboxIndex(i + (mushroom.image_local ? 1 : 0))}
+                credit={galleryCredits[i]}
+                onClick={() => setLightboxIndex(i + (heroSrc ? 1 : 0))}
               />
             ))}
           </div>

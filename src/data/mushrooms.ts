@@ -101,8 +101,9 @@ const SAFETY_SORT_ORDER: Record<Safety, number> = {
   edible: 0,
   caution: 1,
   inedible: 2,
-  toxic: 3,
-  deadly: 4,
+  unknown: 3,
+  toxic: 4,
+  deadly: 5,
 };
 
 /** Japanese name comparator using localeCompare with ja collation (handles hiragana/katakana). */
