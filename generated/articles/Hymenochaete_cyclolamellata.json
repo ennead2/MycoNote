@@ -1,0 +1,23 @@
+{
+  "names": {
+    "aliases": ["ワヒダタケ"]
+  },
+  "season": [{ "start_month": 1, "end_month": 12 }],
+  "habitat": ["広葉樹林", "倒木上"],
+  "regions": [],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "ワヒダタケはタバコウロコタケ科に位置づけられる硬質のきのこで、国内では観察例がきわめて少なく詳細な生態情報の整った種ではない [1]。食毒の評価は行われておらず、食用としての利用は想定されていない [1]。",
+  "features": "ワヒダタケの肉眼的特徴や季節・発生場所に関する詳細な一次情報は、国内で参照できるソースに確定的な記述が乏しい。本データベースで根拠として採用した情報源には、和名と学名、所属群および海外での観察が複数件確認される旨の記録が残るが、形態寸法や色合いなどの具体的な数値までは明示されていない [1]。そのため現時点では発生時期や共生樹種を断定せず、追加の一次情報が揃った段階で記述を拡充する方針としている [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    {
+      "name": "大菌輪「ワヒダタケ」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Hymenochaete_campylopora_830586.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "wikipediaJa/En/mhlw いずれも null のため daikinrin を主情報源とした。同ページは和名・学名・所属の記録のみで形態や発生季節の具体記述を欠く。season は一次情報不在のため通年扱いの仮置きとし、regions/tree_association/similar_species は空とした。safety=unknown により cooking_preservation/poisoning_first_aid/caution はすべて null。"
+}
