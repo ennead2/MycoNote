@@ -50,3 +50,8 @@ scripts/temp/
 
 # Phase 13 data ingestion cache
 .cache/
+
+# Phase 15 派生データ（fetch_species_traits.py / measure_coverage.mjs の出力）
+# hierarchy と coverage-report は再現性・人間可読性のため commit 対象
+data/phase15/species-traits-raw.json
+data/phase15/species-traits-visible.json

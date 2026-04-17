@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-04-17T17:59:23.017Z",
+  "source": {
+    "raw_json": "data/phase15/species-traits-raw.json",
+    "hierarchy_json": "data/phase15/daikinrin-hierarchy.json"
+  },
+  "schema": [
+    {
+      "element_en": "pileus",
+      "attrs": [
+        "color",
+        "shape",
+        "surface",
+        "texture"
+      ]
+    },
+    {
+      "element_en": "stipe",
+      "attrs": [
+        "color",
+        "shape",
+        "surface",
+        "texture"
+      ]
+    },
+    {
+      "element_en": "lamellae",
+      "attrs": [
+        "color",
+        "shape",
+        "development"
+      ]
+    },
+    {
+      "element_en": "hymenophore",
+      "attrs": [
+        "color",
+        "shape",
+        "surface"
+      ]
+    },
+    {
+      "element_en": "context",
+      "attrs": [
+        "color",
+        "texture"
+      ]
+    },
+    {
+      "element_en": "fruiting body",
+      "attrs": [
+        "color",
+        "shape",
+        "texture"
+      ]
+    },
+    {
+      "element_en": "spore print",
+      "attrs": [
+        "color"
+      ]
+    },
+    {
+      "element_en": "annulus",
+      "attrs": [
+        "presence",
+        "color"
+      ]
+    },
+    {
+      "element_en": "volva",
+      "attrs": [
+        "presence",
+        "color"
+      ]
+    }
+  ],
+  "visible_keys_total": 480,
+  "species": {
+    "target": 113,
+    "matched_trait_circus": 112,
+    "missing_trait_circus": 1,
+    "missing_list": [
+      {
+        "id": "entoloma_sarcopus",
+        "ja": "ウラベニホテイシメジ",
+        "scientific": "Entoloma sarcopus",
+        "synonyms": [
+          "Entoloma crassipes",
+          "Rhodophyllus crassipes"
+        ]
+      }
+    ]
+  },
+  "visible_trait_counts": {
+    "mean": 53.5,
+    "median": 49,
+    "min": 0,
+    "max": 122,
+    "zero_species": [],
+    "low_species": [
+      {
+        "id": "dacrymyces_spathularius",
+        "ja": "ツノマタタケ",
+        "scientific": "Dacrymyces spathularius",
+        "count": 6
+      },
+      {
+        "id": "trichaleurina_tenuispora",
+        "ja": "オオゴムタケ",
+        "scientific": "Trichaleurina tenuispora",
+        "count": 6
+      }
+    ],
+    "good_species_count": 105
+  },
+  "element_coverage": {
+    "pileus": {
+      "element_jp": "傘",
+      "allowed_keys": 88,
+      "species_with_any": 111,
+      "coverage_pct": 99.10714285714286
+    },
+    "stipe": {
+      "element_jp": "柄",
+      "allowed_keys": 76,
+      "species_with_any": 107,
+      "coverage_pct": 95.53571428571429
+    },
+    "lamellae": {
+      "element_jp": "襞",
+      "allowed_keys": 62,
+      "species_with_any": 89,
+      "coverage_pct": 79.46428571428571
+    },
+    "hymenophore": {
+      "element_jp": "子実層托",
+      "allowed_keys": 73,
+      "species_with_any": 101,
+      "coverage_pct": 90.17857142857143
+    },
+    "context": {
+      "element_jp": "肉",
+      "allowed_keys": 29,
+      "species_with_any": 92,
+      "coverage_pct": 82.14285714285714
+    },
+    "fruiting body": {
+      "element_jp": "子実体",
+      "allowed_keys": 106,
+      "species_with_any": 112,
+      "coverage_pct": 100
+    },
+    "spore print": {
+      "element_jp": "胞子紋",
+      "allowed_keys": 14,
+      "species_with_any": 78,
+      "coverage_pct": 69.64285714285714
+    },
+    "annulus": {
+      "element_jp": "つば",
+      "allowed_keys": 18,
+      "species_with_any": 18,
+      "coverage_pct": 16.071428571428573
+    },
+    "volva": {
+      "element_jp": "つぼ",
+      "allowed_keys": 14,
+      "species_with_any": 19,
+      "coverage_pct": 16.964285714285715
+    }
+  }
+}

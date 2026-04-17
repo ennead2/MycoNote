@@ -7,7 +7,8 @@ import { SAFETY_CONFIG } from '@/constants/safety';
 import { UI_TEXT } from '@/constants/ui-text';
 import { getFacetValues } from '@/data/mushrooms';
 
-const SAFETY_ORDER: Safety[] = ['edible', 'caution', 'inedible', 'unknown', 'toxic', 'deadly'];
+// UI 表示順（SAFETY_CONFIG.priority と一致）。
+const SAFETY_ORDER: Safety[] = ['edible', 'caution', 'deadly', 'toxic', 'unknown', 'inedible'];
 
 interface SearchFilterProps {
   filters: FilterOptions;

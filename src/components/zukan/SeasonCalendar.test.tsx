@@ -35,11 +35,11 @@ describe('SeasonCalendar', () => {
     render(<SeasonCalendar mushrooms={mushrooms} />);
     // Click "すべて" to show all
     fireEvent.click(screen.getByRole('button', { name: 'すべて' }));
-    const allRows = document.querySelectorAll('tbody tr');
+    const allRows = document.querySelectorAll('[data-season-row]');
     const allCount = allRows.length;
     // Click month 7
     fireEvent.click(screen.getByRole('button', { name: '7月' }));
-    const filteredRows = document.querySelectorAll('tbody tr');
+    const filteredRows = document.querySelectorAll('[data-season-row]');
     expect(filteredRows.length).toBeLessThanOrEqual(allCount);
   });
 

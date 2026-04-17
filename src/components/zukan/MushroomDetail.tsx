@@ -13,7 +13,7 @@ import { UI_TEXT } from '@/constants/ui-text';
 import { renderColorText } from '@/lib/color-text';
 import { useRecords } from '@/contexts/RecordsContext';
 import { useBookmarks } from '@/contexts/BookmarksContext';
-import type { Mushroom, SimilarSpecies } from '@/types/mushroom';
+import type { Mushroom, MushroomTaxonomy, SimilarSpecies } from '@/types/mushroom';
 
 interface MushroomDetailProps {
   mushroom: Mushroom;
@@ -147,6 +147,14 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <p className="text-sm text-washi-muted leading-relaxed">{renderColorText(mushroom.features)}</p>
       </div>
 
+      {/* 5b. Taxonomy — 目 / 科 / 属 */}
+      {mushroom.taxonomy && (mushroom.taxonomy.order || mushroom.taxonomy.family || mushroom.taxonomy.genus) && (
+        <div>
+          <SectionHeading>{UI_TEXT.zukan.taxonomy}</SectionHeading>
+          <TaxonomyList taxonomy={mushroom.taxonomy} />
+        </div>
+      )}
+
       {/* 6. Season bar */}
       <div>
         <SectionHeading>{UI_TEXT.zukan.season}</SectionHeading>
@@ -237,6 +245,29 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       {/* 14. My records for this species */}
       <MyRecordsSection mushroomId={mushroom.id} />
     </div>
+  );
+}
+
+/**
+ * 分類（目・科・属）。mono-data で学名ラベル風に。
+ * 各値はラテン学名（英字）なので italic は不要。
+ */
+function TaxonomyList({ taxonomy }: { taxonomy: MushroomTaxonomy }) {
+  const rows: Array<{ label: string; value: string }> = [];
+  if (taxonomy.order) rows.push({ label: UI_TEXT.zukan.taxonomyOrder, value: taxonomy.order });
+  if (taxonomy.family) rows.push({ label: UI_TEXT.zukan.taxonomyFamily, value: taxonomy.family });
+  if (taxonomy.genus) rows.push({ label: UI_TEXT.zukan.taxonomyGenus, value: taxonomy.genus });
+  return (
+    <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+      {rows.map((row) => (
+        <div key={row.label} className="contents">
+          <dt className="mono-data text-[10px] uppercase tracking-wider text-washi-dim self-center">
+            {row.label}
+          </dt>
+          <dd className="text-washi-cream">{row.value}</dd>
+        </div>
+      ))}
+    </dl>
   );
 }
 

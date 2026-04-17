@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import { Eye, EyeOff, Sparkles } from 'lucide-react';
+import { Eye, EyeOff, Sparkles, ChevronDown } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { Checkbox } from '@/components/ui/Checkbox';
@@ -8,6 +8,7 @@ import { useApp } from '@/contexts/AppContext';
 import { useRecords } from '@/contexts/RecordsContext';
 import { testApiKey } from '@/lib/claude';
 import { UI_TEXT } from '@/constants/ui-text';
+import { APP_VERSION_LABEL } from '@/constants/app-info';
 import { buildExportData, downloadExportFile, parseImportFile, importData } from '@/lib/export-import';
 import type { ImportResult } from '@/types/export';
 import type { MigrationRecord } from '@/types/migration';
@@ -256,7 +257,7 @@ export default function SettingsPage() {
             </div>
             <div className="flex justify-between">
               <dt className="text-moss-light">バージョン</dt>
-              <dd className="text-washi-cream">{UI_TEXT.settings.version}</dd>
+              <dd className="text-washi-cream mono-data text-xs">{APP_VERSION_LABEL}</dd>
             </div>
             <div>
               <dt className="mb-1 text-moss-light">概要</dt>
@@ -279,6 +280,7 @@ export default function SettingsPage() {
 
 /**
  * Phase 13-F: お知らせセクション。v2 移行の経緯と migration 結果を恒久掲載。
+ * 最新（v2.1）は常時展開、それ以外（v2.0 / 移行結果）はタップで開く details 形式。
  */
 function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
   const T = UI_TEXT.settings;
@@ -288,22 +290,19 @@ function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
         <Sparkles size={16} aria-hidden="true" />
         {T.noticeSection}
       </h2>
-      <div className="space-y-4">
-        {/* v2.1 (最新、Phase 14) */}
+      <div className="space-y-3">
+        {/* v2.1 (最新、Phase 14) — 常時展開 */}
         <div>
           <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV21Title}</h3>
           <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV21Body}</p>
         </div>
-        {/* v2.0 (Phase 13-F) */}
-        <div className="border-t border-border pt-3">
-          <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV2Title}</h3>
+        {/* v2.0 (Phase 13-F) — 折り畳み */}
+        <NoticeEntry title={T.noticeV2Title}>
           <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV2Body}</p>
-        </div>
+        </NoticeEntry>
+        {/* 移行結果 — 折り畳み */}
         {migration && (
-          <div className="border-t border-border pt-3">
-            <p className="mono-data text-[10px] uppercase tracking-wider text-washi-dim mb-1.5">
-              {T.noticeMigrationLabel}
-            </p>
+          <NoticeEntry title={T.noticeMigrationLabel}>
             {migration.bookmarksDeleted === 0 && migration.recordsReset === 0 ? (
               <p className="text-xs text-washi-muted">{T.noticeMigrationNoChange}</p>
             ) : (
@@ -319,9 +318,29 @@ function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
             <p className="mono-data text-[10px] text-washi-dim mt-1.5">
               {T.noticeMigrationRanAt} {new Date(migration.ranAt).toLocaleString('ja-JP')}
             </p>
-          </div>
+          </NoticeEntry>
         )}
       </div>
     </section>
+  );
+}
+
+/**
+ * 折り畳み可能なお知らせエントリ。<details> 要素でキーボード・スクリーンリーダ対応。
+ * 上部の border-t は同じ親 space-y-3 の中で視覚的な区切りを保つため。
+ */
+function NoticeEntry({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <details className="group border-t border-border pt-3">
+      <summary className="flex items-center justify-between cursor-pointer list-none text-sm font-bold text-washi-cream hover:text-moss-light transition-colors">
+        <span>{title}</span>
+        <ChevronDown
+          size={14}
+          aria-hidden="true"
+          className="text-washi-dim transition-transform group-open:rotate-180"
+        />
+      </summary>
+      <div className="mt-2">{children}</div>
+    </details>
   );
 }

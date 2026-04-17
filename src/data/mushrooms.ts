@@ -97,13 +97,14 @@ function isInSeason(mushroom: Mushroom, month: number): boolean {
 
 // ===== Sorting =====
 
+// 食用 → 要注意 → 猛毒 → 毒 → 不明 → 不食（SAFETY_CONFIG.priority と一致させる）。
 const SAFETY_SORT_ORDER: Record<Safety, number> = {
   edible: 0,
   caution: 1,
-  inedible: 2,
-  unknown: 3,
-  toxic: 4,
-  deadly: 5,
+  deadly: 2,
+  toxic: 3,
+  unknown: 4,
+  inedible: 5,
 };
 
 /** Japanese name comparator using localeCompare with ja collation (handles hiragana/katakana). */

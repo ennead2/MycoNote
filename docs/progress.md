@@ -765,3 +765,91 @@ Phase 13-F（v2.0 リリース）: `generated/articles/approved/` の 60 件を 
 - [x] 455/455 unit tests PASS (60 test files)
 - [x] next build 成功 (60 v2 species pages、static export)
 - [x] dev server 目視確認済
+
+---
+
+## Phase 15: v2.1 実機フィードバック反映 + 簡易識別復活準備 — 進行中 (2026-04-18〜)
+
+v2.1 リリース後のユーザー実機フィードバック (A1〜A8) を反映し、Phase 13-F で停止した簡易識別を大菌輪統制形質ベースで復活させるための調査・計画を行う。
+
+### 15-A: 軽微調整 8 項目 — 完了 (2026-04-18)
+
+- [x] **A1**: 図鑑詳細ページに生物分類 (taxonomy: 目・科・属) セクションを追加
+  - `src/components/zukan/MushroomDetail.tsx` に `TaxonomyList` コンポーネント追加
+  - 配置は「形態的特徴」→「分類」→「シーズン」の順。mono-data ラベル + 値の 2 列レイアウト
+  - `UI_TEXT.zukan.taxonomy / taxonomyOrder / taxonomyFamily / taxonomyGenus` を追加
+  - taxonomy を持つ種 111/113 (tier0/tier1 由来、GBIF Backbone ベース)
+
+- [x] **A2**: 設定 > お知らせを折り畳み式 UI に改修
+  - 最新 (v2.1) は常時展開、v2.0 / 移行結果は `<details>` 要素でタップ開閉
+  - `NoticeEntry` 新設、ChevronDown icon + `group-open:rotate-180` で開閉アニメ
+  - キーボード・スクリーンリーダ対応（`<details>` のネイティブ挙動を活用）
+
+- [x] **A3**: バージョン自動更新の仕組み
+  - `package.json` の version を 1.0.0 → **2.1.0** に bump（v2.1 リリース反映）
+  - `next.config.ts` で `NEXT_PUBLIC_APP_VERSION` / `NEXT_PUBLIC_APP_COMMIT` を build 時注入
+  - Vercel の `VERCEL_GIT_COMMIT_SHA` を優先、ローカルは `git rev-parse --short HEAD` fallback
+  - `src/constants/app-info.ts` 新設、`APP_VERSION_LABEL = "v2.1.0 (a1b2c3d)"` 形式
+  - 設定ページの固定文字列 `UI_TEXT.settings.version` を削除
+  - main push 時に commit SHA が自動的に更新される（Vercel 側で毎 build 実行されるため）
+
+- [x] **A5**: 図鑑一覧の並び順デフォルトを五十音 → 食用分類 (`safety`) に変更
+  - `src/app/zukan/page.tsx` の `DEFAULT_SORT` を `'kana'` → `'safety'`
+
+- [x] **A6**: 食用分類の順序を「食用→要注意→猛毒→毒→不明→不食」に統一
+  - 旧順: edible(0) → caution(1) → inedible(2) → unknown(3) → toxic(4) → deadly(5)
+  - 新順: edible(0) → caution(1) → **deadly(2) → toxic(3) → unknown(4) → inedible(5)**
+  - 「食用側 → 危険側 → 不明 → 不食」の直感的な並び
+  - 影響箇所を全統一: `SAFETY_CONFIG.priority` / `SAFETY_SORT_ORDER` / `SearchFilter` の `SAFETY_ORDER`
+  - `safety.test.ts` を新順序で更新
+
+- [x] **A7**: 栞タブのバッジ表示を `(3)` 方式からピル型カウンターに変更
+  - `TabButton` に `badge?: number` prop 追加、mono-data + min-w[20px] の円形ピル
+  - アクティブ時は washi-cream 背景 / moss-primary 文字、非アクティブ時は moss-primary/20 背景 / moss-light 文字
+  - aria-label でカウント読み上げ対応
+
+- [x] **A8**: 季節タブの UI 調整 — キノコ名の表示領域拡張
+  - `<table>` レイアウト → `grid-cols-[minmax(0,1fr)_repeat(12,1em)]` CSS Grid に刷新
+  - 種名列が可変幅 (1fr) になり、2 行折り返し許容 (`break-words leading-tight`)
+  - 月列は 1em 固定（数字 1 桁分）で最小限に圧縮
+  - テスト用セレクタを `[data-season-row]` に変更（tbody tr から移行）
+
+### 15-B: 簡易識別復活 (S1 データ調査フェーズ) — 完了 (2026-04-18)
+
+計画書: `docs/superpowers/plans/2026-04-18-phase15-simple-identify-revival.md`
+
+方針: 大菌輪統制形質 (Trait Circus Database, CC BY 4.0) を採用。v1 時代の自作 traits は 300 種手動だったが、v2 は RAG 思想に沿って公開データを利用する。
+
+#### S1 実測結果
+
+- Trait Circus マッチ率: **112 / 113 (99.1%)**
+- 肉眼観察可能 trait key 総数: **480** (9 要素 × 厳選属性)
+- 種あたり平均 trait key: **53.5** / 中央値 49
+- 20 key 以上: 105/112 (93.8%)
+- 0 key: 0 種
+
+#### 重要な学び
+
+- **tube (管孔)** は Trait Circus 実データで `hymenophore_*` に完全置換 → schema から削除
+- **taste (味) / odor (臭い)** は Trait Circus にほぼ実データ無し (taste 0 件, odor 1 件) → UI 候補から除外
+- **fruiting body (子実体)** は 100% カバレッジ、革質種でも識別可能
+
+#### S2 以降 (未着手)
+
+- S2: v2 スキーマに `traits?: string[]` 追加、`build_v2_mushrooms.mjs` 拡張
+- S3: 識別エンジン実装 (`identify-matcher-v2.ts`)
+- S4: UI 再実装 (`FeatureSelectorV2`, `SimpleIdentifyResultV2`)
+- S5: 検証 + e2e テスト
+
+#### S1 成果物
+
+- `scripts/phase15/fetch_species_traits.py` — Trait Circus Parquet 取得 + 113 種抽出
+- `scripts/phase15/measure_coverage.mjs` — 肉眼観察可能形質の絞り込み + カバレッジ計測
+- `data/phase15/daikinrin-hierarchy.json` — 大菌輪 API 由来の形質階層辞書 (1.6MB)
+- `data/phase15/coverage-report.json` — 計測結果
+- `.gitignore` 追加: `data/phase15/species-traits-raw.json` (9.4MB 派生データ), `species-traits-visible.json`
+
+### 検証
+- [x] 464/464 unit tests PASS（safety 順序テスト + SeasonCalendar セレクタ更新）
+- [x] next build 成功 (127 静的ページ)
+- [x] 大菌輪統制形質データ 112/113 種マッチ確認済

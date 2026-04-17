@@ -17,7 +17,7 @@ import type { FilterOptions, SortOrder, Safety, Mushroom } from '@/types/mushroo
 
 type Tab = 'list' | 'bookmarks' | 'calendar';
 
-const DEFAULT_SORT: SortOrder = 'kana';
+const DEFAULT_SORT: SortOrder = 'safety';
 const DEFAULT_TAB: Tab = 'list';
 
 const VALID_SORTS: SortOrder[] = ['safety', 'kana', 'taxonomy'];
@@ -149,7 +149,8 @@ function ZukanInner() {
           onClick={() => setTab('list')}
         />
         <TabButton
-          label={`${UI_TEXT.zukan.tabBookmarks}${bookmarkedMushrooms.length > 0 ? ` (${bookmarkedMushrooms.length})` : ''}`}
+          label={UI_TEXT.zukan.tabBookmarks}
+          badge={bookmarkedMushrooms.length > 0 ? bookmarkedMushrooms.length : undefined}
           active={tab === 'bookmarks'}
           onClick={() => setTab('bookmarks')}
         />
@@ -213,20 +214,42 @@ function ZukanInner() {
   );
 }
 
-function TabButton({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+function TabButton({
+  label,
+  badge,
+  active,
+  onClick,
+}: {
+  label: string;
+  badge?: number;
+  active: boolean;
+  onClick: () => void;
+}) {
   return (
     <button
       type="button"
       role="tab"
       aria-selected={active}
       onClick={onClick}
-      className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
+      className={`inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
         active
           ? 'bg-moss-primary text-washi-cream border-moss-light'
           : 'bg-soil-surface text-washi-muted border-border hover:border-moss-primary/50 hover:text-washi-cream'
       }`}
     >
-      {label}
+      <span>{label}</span>
+      {badge !== undefined && (
+        <span
+          aria-label={`${badge}件`}
+          className={`inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full mono-data text-[10px] font-bold leading-none ${
+            active
+              ? 'bg-washi-cream text-moss-primary'
+              : 'bg-moss-primary/20 text-moss-light'
+          }`}
+        >
+          {badge}
+        </span>
+      )}
     </button>
   );
 }

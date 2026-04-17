@@ -25,6 +25,10 @@ export const UI_TEXT = {
     cooking: '調理・保存',
     firstAid: '中毒症状・応急処置',
     sources: '出典・ライセンス',
+    taxonomy: '分類',
+    taxonomyOrder: '目',
+    taxonomyFamily: '科',
+    taxonomyGenus: '属',
     treeAssociation: '関連する樹種', seasonCalendarTitle: 'シーズンカレンダー',
     myRecords: '自分の採取記録', noRecords: 'この種の採取記録はありません',
     googleImageSearch: 'Google で画像を検索',
@@ -229,7 +233,8 @@ export const UI_TEXT = {
     appInfo: 'アプリ情報',
     appName: 'MycoNote',
     appDescription: 'キノコ採取・観察ハンドブック',
-    version: 'v1.0.0',
+    // version は build 時に package.json + commit SHA から合成される。
+    // 表示ロジック: @/constants/app-info の APP_VERSION_LABEL を参照。
     aiSection: 'AI機能（Claude API）',
     apiKeyLabel: 'APIキー',
     apiKeyPlaceholder: 'sk-ant-...',

@@ -74,75 +74,77 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
         </p>
       ) : (
         <div className="w-full overflow-hidden rounded-lg border border-border">
-          <table className="w-full table-fixed border-collapse text-xs">
-            <thead>
-              <tr className="bg-soil-surface">
-                <th className="text-left serif-display text-washi-cream font-bold px-2 py-2 w-[110px] max-w-[110px]">
-                  種名
-                </th>
+          {/*
+            grid-cols: 種名列を 12 月列の合計とほぼ同幅の flexible 列にして、
+            モバイル幅でも種名が 2 行まで確保できるようにする。
+            各月列は 1em の固定幅（数字 1 桁分）にして極力狭めている。
+          */}
+          <div className="grid grid-cols-[minmax(0,1fr)_repeat(12,1em)] text-xs">
+            {/* ヘッダー行 */}
+            <div className="bg-soil-surface serif-display text-washi-cream font-bold px-2 py-2 border-b border-border">
+              種名
+            </div>
+            {MONTHS.map((m) => {
+              const isCurrent = isHydrated && m === currentMonth;
+              const isSelected = selected === m;
+              return (
+                <div
+                  key={`h-${m}`}
+                  className={`bg-soil-surface text-center font-normal py-2 mono-data border-b border-border transition-colors ${
+                    isSelected
+                      ? 'text-moss-light font-bold'
+                      : isCurrent
+                      ? 'text-washi-cream font-bold'
+                      : 'text-washi-dim'
+                  }`}
+                >
+                  {m}
+                </div>
+              );
+            })}
+
+            {/* 各キノコ行 */}
+            {filtered.map((mushroom) => (
+              <div key={mushroom.id} data-season-row className="contents group">
+                <div className="px-2 py-1.5 border-t border-border-soft group-hover:bg-soil-surface/50 transition-colors">
+                  <Link
+                    href={`/zukan/${mushroom.id}`}
+                    className="flex items-start gap-1"
+                  >
+                    <span className="serif-display text-washi-cream group-hover:text-moss-light font-medium text-xs transition-colors break-words leading-tight flex-1 min-w-0">
+                      {mushroom.names.ja}
+                    </span>
+                    <ToxicityBadge safety={mushroom.safety} compact />
+                  </Link>
+                </div>
                 {MONTHS.map((m) => {
+                  const active = isMonthInSeasonRanges(m, mushroom.season);
                   const isCurrent = isHydrated && m === currentMonth;
                   const isSelected = selected === m;
                   return (
-                    <th
-                      key={m}
-                      className={`text-center font-normal px-0 py-2 mono-data transition-colors ${
-                        isSelected
-                          ? 'text-moss-light font-bold'
-                          : isCurrent
-                          ? 'text-washi-cream font-bold'
-                          : 'text-washi-dim'
-                      }`}
+                    <div
+                      key={`${mushroom.id}-${m}`}
+                      className="flex items-center justify-center py-1.5 border-t border-border-soft group-hover:bg-soil-surface/50 transition-colors"
                     >
-                      {m}
-                    </th>
+                      <div
+                        className={`w-full h-3.5 rounded-sm transition-colors ${
+                          active
+                            ? isSelected
+                              ? 'bg-moss-light'
+                              : isCurrent
+                              ? 'bg-moss-light/70'
+                              : 'bg-moss-primary'
+                            : isSelected
+                            ? 'bg-soil-elevated ring-1 ring-inset ring-moss-primary/30'
+                            : 'bg-soil-elevated'
+                        }`}
+                      />
+                    </div>
                   );
                 })}
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map((mushroom) => (
-                <tr
-                  key={mushroom.id}
-                  className="border-t border-border-soft hover:bg-soil-surface/50 transition-colors"
-                >
-                  <td className="px-2 py-1.5 w-[110px] max-w-[110px]">
-                    <Link
-                      href={`/zukan/${mushroom.id}`}
-                      className="flex items-center gap-1 truncate"
-                    >
-                      <span className="serif-display text-washi-cream hover:text-moss-light font-medium truncate text-xs transition-colors">
-                        {mushroom.names.ja}
-                      </span>
-                      <ToxicityBadge safety={mushroom.safety} compact />
-                    </Link>
-                  </td>
-                  {MONTHS.map((m) => {
-                    const active = isMonthInSeasonRanges(m, mushroom.season);
-                    const isCurrent = isHydrated && m === currentMonth;
-                    const isSelected = selected === m;
-                    return (
-                      <td key={m} className="px-px py-1.5">
-                        <div
-                          className={`h-3.5 rounded-sm transition-colors ${
-                            active
-                              ? isSelected
-                                ? 'bg-moss-light'
-                                : isCurrent
-                                ? 'bg-moss-light/70'
-                                : 'bg-moss-primary'
-                              : isSelected
-                              ? 'bg-soil-elevated ring-1 ring-inset ring-moss-primary/30'
-                              : 'bg-soil-elevated'
-                          }`}
-                        />
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
