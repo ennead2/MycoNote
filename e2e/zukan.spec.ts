@@ -1,11 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Zukan v2 (図鑑)', () => {
-  test('displays 60 v2 mushrooms on default tab', async ({ page }) => {
+  test('displays at least 113 v2.1 mushrooms on default tab', async ({ page }) => {
     await page.goto('/zukan');
-    await expect(page.getByText('キノコ図鑑')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'キノコ図鑑' }).first()).toBeVisible();
     const cards = page.locator('a[href^="/zukan/"]:not([href="/zukan"])');
-    await expect(cards).toHaveCount(60);
+    const count = await cards.count();
+    expect(count).toBeGreaterThanOrEqual(113);
   });
 
   test('search filters by Japanese name (ベニテング)', async ({ page }) => {
@@ -24,8 +25,8 @@ test.describe('Zukan v2 (図鑑)', () => {
   test('navigates to v2 detail page (Amanita muscaria)', async ({ page }) => {
     await page.goto('/zukan');
     await page.click('a[href="/zukan/amanita_muscaria"]');
-    await expect(page.getByText('ベニテングタケ')).toBeVisible();
-    await expect(page.getByText('Amanita muscaria')).toBeVisible();
+    await expect(page.getByText('ベニテングタケ').first()).toBeVisible();
+    await expect(page.getByText('Amanita muscaria').first()).toBeVisible();
     await expect(page.locator('span:has-text("毒")').first()).toBeVisible();
   });
 
@@ -52,15 +53,15 @@ test.describe('Zukan v2 (図鑑)', () => {
     await page.goto('/settings');
     await expect(page.getByText('アプリ情報')).toBeVisible();
     await page.goto('/zukan');
-    await expect(page.getByText('キノコ図鑑')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'キノコ図鑑' }).first()).toBeVisible();
   });
 
   test('back button on detail page returns to list', async ({ page }) => {
     await page.goto('/zukan');
     await page.click('a[href="/zukan/amanita_muscaria"]');
-    await expect(page.getByText('Amanita muscaria')).toBeVisible();
+    await expect(page.getByText('Amanita muscaria').first()).toBeVisible();
     await page.click('button[aria-label="戻る"]');
-    await expect(page.getByText('キノコ図鑑')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'キノコ図鑑' }).first()).toBeVisible();
   });
 });
 
@@ -78,9 +79,29 @@ test.describe('Identify menu (Phase 13-F: simple identify suspended)', () => {
 });
 
 test.describe('Settings お知らせ section', () => {
-  test('お知らせ section renders v2 release notice', async ({ page }) => {
+  test('お知らせ section renders v2.0 + v2.1 release notices', async ({ page }) => {
     await page.goto('/settings');
     await expect(page.getByText('お知らせ')).toBeVisible();
+    await expect(page.getByText('v2.1 — 収録種を 60 → 113 に拡充')).toBeVisible();
     await expect(page.getByText('v2.0 — データ刷新')).toBeVisible();
+  });
+});
+
+test.describe('Zukan v2.1 (tier1 新規種)', () => {
+  test('tier1 新規種 (ホンシメジ) が表示される', async ({ page }) => {
+    await page.goto('/zukan/lyophyllum_shimeji');
+    await expect(page.getByText('ホンシメジ').first()).toBeVisible();
+    await expect(page.getByText('Lyophyllum shimeji').first()).toBeVisible();
+  });
+
+  test('safety=unknown 種 (ビョウタケ) も表示される', async ({ page }) => {
+    await page.goto('/zukan/calycina_citrina');
+    await expect(page.getByText('ビョウタケ').first()).toBeVisible();
+  });
+
+  test('unknown バッジが safety フィルタに存在する', async ({ page }) => {
+    await page.goto('/zukan');
+    await page.click('button:has-text("もっと絞り込む")');
+    await expect(page.getByRole('button', { name: '不明' })).toBeVisible();
   });
 });
