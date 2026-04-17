@@ -241,7 +241,7 @@ function TabButton({
       {badge !== undefined && (
         <span
           aria-label={`${badge}件`}
-          className={`inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full mono-data text-[10px] font-bold leading-none ${
+          className={`inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 rounded-full mono-data text-[13px] font-bold leading-none ${
             active
               ? 'bg-washi-cream text-moss-primary'
               : 'bg-moss-primary/20 text-moss-light'

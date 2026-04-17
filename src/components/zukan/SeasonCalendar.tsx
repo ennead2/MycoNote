@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ToxicityBadge } from './ToxicityBadge';
 import { UI_TEXT } from '@/constants/ui-text';
 import { isMonthInSeasonRanges } from '@/lib/season-utils';
+import { sortMushrooms } from '@/data/mushrooms';
 import type { Mushroom } from '@/types/mushroom';
 
 interface SeasonCalendarProps {
@@ -29,8 +30,12 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
   }, []);
 
   const filtered = useMemo(() => {
-    if (selected === ALL) return mushrooms;
-    return mushrooms.filter((mu) => isMonthInSeasonRanges(selected, mu.season));
+    const base =
+      selected === ALL
+        ? mushrooms
+        : mushrooms.filter((mu) => isMonthInSeasonRanges(selected, mu.season));
+    // 食用分類順（食用→要注意→猛毒→毒→不明→不食、同順は五十音）
+    return sortMushrooms(base, 'safety');
   }, [mushrooms, selected]);
 
   return (
@@ -75,11 +80,10 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
       ) : (
         <div className="w-full overflow-hidden rounded-lg border border-border">
           {/*
-            grid-cols: 種名列を 12 月列の合計とほぼ同幅の flexible 列にして、
-            モバイル幅でも種名が 2 行まで確保できるようにする。
-            各月列は 1em の固定幅（数字 1 桁分）にして極力狭めている。
+            grid-cols: 種名列 8fr : 月 12 × 1fr = 8/20 = 40%。
+            種名は 2 行まで折り返し許容。食用分類バッジは icon のみの円形で最小幅。
           */}
-          <div className="grid grid-cols-[minmax(0,1fr)_repeat(12,1em)] text-xs">
+          <div className="grid grid-cols-[8fr_repeat(12,minmax(0,1fr))] gap-x-0 text-xs">
             {/* ヘッダー行 */}
             <div className="bg-soil-surface serif-display text-washi-cream font-bold px-2 py-2 border-b border-border">
               種名
@@ -109,12 +113,12 @@ export function SeasonCalendar({ mushrooms }: SeasonCalendarProps) {
                 <div className="px-2 py-1.5 border-t border-border-soft group-hover:bg-soil-surface/50 transition-colors">
                   <Link
                     href={`/zukan/${mushroom.id}`}
-                    className="flex items-start gap-1"
+                    className="flex items-start gap-1.5"
                   >
+                    <ToxicityBadge safety={mushroom.safety} iconOnly />
                     <span className="serif-display text-washi-cream group-hover:text-moss-light font-medium text-xs transition-colors break-words leading-tight flex-1 min-w-0">
                       {mushroom.names.ja}
                     </span>
-                    <ToxicityBadge safety={mushroom.safety} compact />
                   </Link>
                 </div>
                 {MONTHS.map((m) => {

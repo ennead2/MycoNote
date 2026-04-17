@@ -13,7 +13,8 @@ import { UI_TEXT } from '@/constants/ui-text';
 import { renderColorText } from '@/lib/color-text';
 import { useRecords } from '@/contexts/RecordsContext';
 import { useBookmarks } from '@/contexts/BookmarksContext';
-import type { Mushroom, MushroomTaxonomy, SimilarSpecies } from '@/types/mushroom';
+import type { Mushroom, MushroomTaxonomy, SimilarSpecies, TaxonomyRankKey } from '@/types/mushroom';
+import { TAXONOMY_RANK_ORDER } from '@/types/mushroom';
 
 interface MushroomDetailProps {
   mushroom: Mushroom;
@@ -105,7 +106,7 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         />
       )}
 
-      {/* 2. Name + safety + Bookmark + scientific name + aliases */}
+      {/* 2. Name + safety + Bookmark + scientific name + taxonomy + aliases */}
       <div>
         <div className="flex items-start gap-2 flex-wrap mb-1">
           <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
@@ -118,8 +119,13 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         {mushroom.names.scientific_synonyms && mushroom.names.scientific_synonyms.length > 0 && (
           <ScientificSynonymsList synonyms={mushroom.names.scientific_synonyms} />
         )}
+        {mushroom.taxonomy && hasAnyRank(mushroom.taxonomy) && (
+          <div className="mt-3">
+            <TaxonomyList taxonomy={mushroom.taxonomy} />
+          </div>
+        )}
         {mushroom.names.aliases && mushroom.names.aliases.length > 0 && (
-          <p className="text-xs text-washi-dim mt-1">{mushroom.names.aliases.join('、')}</p>
+          <p className="text-xs text-washi-dim mt-2">{mushroom.names.aliases.join('、')}</p>
         )}
       </div>
 
@@ -146,14 +152,6 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <SectionHeading>{UI_TEXT.zukan.features}</SectionHeading>
         <p className="text-sm text-washi-muted leading-relaxed">{renderColorText(mushroom.features)}</p>
       </div>
-
-      {/* 5b. Taxonomy — 目 / 科 / 属 */}
-      {mushroom.taxonomy && (mushroom.taxonomy.order || mushroom.taxonomy.family || mushroom.taxonomy.genus) && (
-        <div>
-          <SectionHeading>{UI_TEXT.zukan.taxonomy}</SectionHeading>
-          <TaxonomyList taxonomy={mushroom.taxonomy} />
-        </div>
-      )}
 
       {/* 6. Season bar */}
       <div>
@@ -248,26 +246,62 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
   );
 }
 
+function hasAnyRank(t: MushroomTaxonomy): boolean {
+  return TAXONOMY_RANK_ORDER.some((r) => !!t[r]);
+}
+
 /**
- * 分類（目・科・属）。mono-data で学名ラベル風に。
- * 各値はラテン学名（英字）なので italic は不要。
+ * 分類 7 階層 (門/亜門/綱/亜綱/目/科/属) を縦 breadcrumb で表示する。
+ *
+ * 表記: `Amanitaceae（テングタケ科）` 形式。
+ * 各階層には左側に depth 0〜6 の色付きバー + rank ラベル（科/属 等）、
+ * 右側に学名 + 日本語名。階層が深くなるほど色が濃くなる。
+ * 前後の段は細い縦線で視覚的に連結する。
  */
 function TaxonomyList({ taxonomy }: { taxonomy: MushroomTaxonomy }) {
-  const rows: Array<{ label: string; value: string }> = [];
-  if (taxonomy.order) rows.push({ label: UI_TEXT.zukan.taxonomyOrder, value: taxonomy.order });
-  if (taxonomy.family) rows.push({ label: UI_TEXT.zukan.taxonomyFamily, value: taxonomy.family });
-  if (taxonomy.genus) rows.push({ label: UI_TEXT.zukan.taxonomyGenus, value: taxonomy.genus });
+  const rankLabel: Record<TaxonomyRankKey, string> = {
+    phylum: UI_TEXT.zukan.taxonomyPhylum,
+    subphylum: UI_TEXT.zukan.taxonomySubphylum,
+    class: UI_TEXT.zukan.taxonomyClass,
+    subclass: UI_TEXT.zukan.taxonomySubclass,
+    order: UI_TEXT.zukan.taxonomyOrder,
+    family: UI_TEXT.zukan.taxonomyFamily,
+    genus: UI_TEXT.zukan.taxonomyGenus,
+  };
+  // Tailwind がクラス名を静的抽出するため、ループで文字列生成せず配列で保持する。
+  // 浅い階層ほど dim、深いほど light で読みやすく。
+  const rankBar: Record<TaxonomyRankKey, string> = {
+    phylum: 'bg-moss-primary/30',
+    subphylum: 'bg-moss-primary/45',
+    class: 'bg-moss-primary/60',
+    subclass: 'bg-moss-primary/75',
+    order: 'bg-moss-primary',
+    family: 'bg-moss-light/80',
+    genus: 'bg-moss-light',
+  };
+  const present = TAXONOMY_RANK_ORDER.filter((r) => !!taxonomy[r]);
+  if (present.length === 0) return null;
+
   return (
-    <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
-      {rows.map((row) => (
-        <div key={row.label} className="contents">
-          <dt className="mono-data text-[10px] uppercase tracking-wider text-washi-dim self-center">
-            {row.label}
-          </dt>
-          <dd className="text-washi-cream">{row.value}</dd>
-        </div>
-      ))}
-    </dl>
+    <ol className="flex flex-col gap-0.5 border-l border-border pl-3">
+      {present.map((rank) => {
+        const v = taxonomy[rank]!;
+        return (
+          <li key={rank} className="flex items-center gap-2 text-[13px] leading-tight">
+            <span
+              className={`mono-data text-[9px] uppercase tracking-wider shrink-0 w-10 text-center rounded-sm py-0.5 text-washi-cream ${rankBar[rank]}`}
+              aria-label={rankLabel[rank]}
+            >
+              {rankLabel[rank]}
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="text-washi-cream">{v.latin}</span>
+              {v.jp && <span className="text-washi-muted ml-1.5 text-xs">（{v.jp}）</span>}
+            </span>
+          </li>
+        );
+      })}
+    </ol>
   );
 }
 

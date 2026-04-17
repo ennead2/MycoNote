@@ -3,11 +3,40 @@
 
 export type Safety = 'edible' | 'caution' | 'inedible' | 'toxic' | 'deadly' | 'unknown';
 
-export interface MushroomTaxonomy {
-  order?: string;       // 目 (例: Agaricales)
-  family?: string;      // 科 (例: Tricholomataceae)
-  genus?: string;       // 属 (例: Tricholoma)
+/**
+ * 分類階層の 1 段階。ラテン学名と日本語名（漢字）をペアで保持。
+ * 日本語名は大菌輪由来（例: phylum "Basidiomycota" → jp "担子菌門"）。
+ */
+export interface TaxonomyRank {
+  latin: string;
+  jp?: string;
 }
+
+/**
+ * 7 階層 taxonomy (大菌輪の表記に準拠)。Phase 15 で従来の 3 階層 (order/family/genus) から拡張。
+ * 旧フィールドは廃止。いずれの階層も欠落可。
+ */
+export interface MushroomTaxonomy {
+  phylum?: TaxonomyRank;     // 門 (例: Basidiomycota 担子菌門)
+  subphylum?: TaxonomyRank;  // 亜門 (例: Agaricomycotina ハラタケ亜門)
+  class?: TaxonomyRank;      // 綱 (例: Agaricomycetes ハラタケ綱)
+  subclass?: TaxonomyRank;   // 亜綱 (例: Agaricomycetidae ハラタケ亜綱)
+  order?: TaxonomyRank;      // 目 (例: Agaricales ハラタケ目)
+  family?: TaxonomyRank;     // 科 (例: Amanitaceae テングタケ科)
+  genus?: TaxonomyRank;      // 属 (例: Amanita テングタケ属)
+}
+
+export const TAXONOMY_RANK_ORDER = [
+  'phylum',
+  'subphylum',
+  'class',
+  'subclass',
+  'order',
+  'family',
+  'genus',
+] as const satisfies ReadonlyArray<keyof MushroomTaxonomy>;
+
+export type TaxonomyRankKey = typeof TAXONOMY_RANK_ORDER[number];
 
 export interface SeasonRange {
   start_month: number;  // 1-12

@@ -94,7 +94,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/88157670/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -202,7 +229,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/409634182/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "クヌギ",
@@ -299,7 +353,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/422143247/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "トウヒ",
@@ -446,7 +527,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/623052319/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "シラカンバ",
@@ -574,7 +682,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/240453960/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "クヌギ",
@@ -681,7 +816,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/576033026/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "トウヒ属",
@@ -800,7 +962,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/2411680/medium.JPG"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -905,7 +1094,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/607346570/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "シイ",
@@ -1059,7 +1275,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/233237642/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Boletus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Boletus",
+        "jp": "ヤマドリタケ属"
+      }
     },
     "tree_association": [
       "マツ属",
@@ -1135,7 +1378,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/13079312/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Boletus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Boletus",
+        "jp": "ヤマドリタケ属"
+      }
     },
     "tree_association": [
       "オーク類",
@@ -1255,7 +1525,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/406010273/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Chlorophyllum"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Agaricaceae",
+        "jp": "ハラタケ科"
+      },
+      "genus": {
+        "latin": "Chlorophyllum",
+        "jp": "オオシロカラカサタケ属"
+      }
     },
     "notes": "wikipediaJa を主情報源とし、学名・分類・シノニムは daikinrin で裏付けた。発生期は ja の「晩春から秋（あるいは夏から秋）」を 5〜11 月に翻訳。海外分布（北米、豪州、キプロス、スコットランド、マレーシア）は wikipediaEn から補助的に追加。mhlw は null のため採用せず。tree_association は腐生性のため []。",
     "images_remote_credits": [
@@ -1336,7 +1633,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/163565829/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Chlorophyllum"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Agaricaceae",
+        "jp": "ハラタケ科"
+      },
+      "genus": {
+        "latin": "Chlorophyllum",
+        "jp": "オオシロカラカサタケ属"
+      }
     },
     "notes": "wikipediaJa を主情報源とし、分布・学名の canonical を daikinrin で確認。wikipediaEn と mhlw は null のため使用せず。season は『夏から秋』を 7-10 月として数値化。habitat は雑木林・竹藪・草地・地上を採用。tree_association はソースに明示なく空配列。応急措置は一般的な中毒対応として『残品保管・受診』のみソース範囲で記載。",
     "images_remote_credits": [
@@ -1424,7 +1748,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/442398902/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Clitocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Clitocybaceae"
+      },
+      "genus": {
+        "latin": "Clitocybe",
+        "jp": "ハイイロシメジ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -1517,7 +1867,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/128038904/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Entoloma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Entolomataceae",
+        "jp": "イッポンシメジ科"
+      },
+      "genus": {
+        "latin": "Entoloma",
+        "jp": "イッポンシメジ属"
+      }
     },
     "notes": "wikipediaJa を主情報源とし、学名・分類・synonyms は daikinrin を採用。season は ja の「初夏から秋」を 6〜10 月に翻訳。tree_association は ja に具体的樹種記載がなく [] とした。aliases は漢字表記「黄疣傘茸」のみ（ja 由来）。safety=toxic のため cooking_preservation は null。",
     "images_remote_credits": [
@@ -1613,7 +1990,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/211549500/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Entoloma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Entolomataceae",
+        "jp": "イッポンシメジ科"
+      },
+      "genus": {
+        "latin": "Entoloma",
+        "jp": "イッポンシメジ属"
+      }
     },
     "tree_association": [
       "スギ",
@@ -1728,7 +2132,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/554780700/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Entoloma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Entolomataceae",
+        "jp": "イッポンシメジ科"
+      },
+      "genus": {
+        "latin": "Entoloma",
+        "jp": "イッポンシメジ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -1857,7 +2288,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/160713058/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Entoloma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Entolomataceae",
+        "jp": "イッポンシメジ科"
+      },
+      "genus": {
+        "latin": "Entoloma",
+        "jp": "イッポンシメジ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -1996,7 +2454,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/331102996/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Flammulina"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Physalacriaceae",
+        "jp": "タマバリタケ科"
+      },
+      "genus": {
+        "latin": "Flammulina",
+        "jp": "エノキタケ属"
+      }
     },
     "tree_association": [
       "エノキ",
@@ -2113,7 +2598,34 @@
     "image_local": null,
     "images_remote": [],
     "taxonomy": {
-      "genus": "Galerina"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Galerina",
+        "jp": "ケコガサタケ属"
+      }
     },
     "tree_association": [
       "スギ",
@@ -2221,7 +2733,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/451714320/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Galerina"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Galerina",
+        "jp": "ケコガサタケ属"
+      }
     },
     "notes": "wikipediaJa と mhlw が null のため、和名・分類は daikinrin、形態・生態・類似種・分布は wikipediaEn を採用した。season は wikipediaEn の北米6〜9月の記述を数値化（国内発生期の直接記述は得られず notes に記録）。毒性の具体症状・毒成分はソースに明示がないため poisoning_first_aid では一般的対応と専門家相談のみ記述し、caution は同属に猛毒種が知られる旨に留めた。",
     "images_remote_credits": [
@@ -2343,7 +2882,29 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/234980503/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Grifola"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Grifolaceae"
+      },
+      "genus": {
+        "latin": "Grifola",
+        "jp": "マイタケ属"
+      }
     },
     "tree_association": [
       "ミズナラ",
@@ -2435,7 +2996,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/41104526/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Gymnopilus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Gymnopilus",
+        "jp": "チャツムタケ属"
+      }
     },
     "tree_association": [
       "針葉樹",
@@ -2556,7 +3144,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/249022141/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Gymnopilus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Gymnopilus",
+        "jp": "チャツムタケ属"
+      }
     },
     "tree_association": [
       "シイ",
@@ -2667,7 +3282,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/554825519/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Gymnopilus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Gymnopilus",
+        "jp": "チャツムタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -2822,7 +3464,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/327840289/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Hypholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Hypholoma",
+        "jp": "クリタケ属"
+      }
     },
     "tree_association": [
       "シイ",
@@ -2926,7 +3595,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/163697410/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Hypsizygus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Lyophyllaceae",
+        "jp": "シメジ科"
+      },
+      "genus": {
+        "latin": "Hypsizygus",
+        "jp": "シロタモギタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -3044,7 +3740,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/406477294/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Clitocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Omphalinaceae"
+      },
+      "genus": {
+        "latin": "Infundibulicybe",
+        "jp": "オオイヌシメジ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -3162,7 +3884,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/592348425/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Inocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Inocybaceae",
+        "jp": "アセタケ科"
+      },
+      "genus": {
+        "latin": "Inocybe",
+        "jp": "アセタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -3263,7 +4012,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/272652249/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Inocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Inocybaceae",
+        "jp": "アセタケ科"
+      },
+      "genus": {
+        "latin": "Inocybe",
+        "jp": "アセタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -3367,7 +4143,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/13616548/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Laccaria"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Hydnangiaceae",
+        "jp": "ヒドナンギウム科"
+      },
+      "genus": {
+        "latin": "Laccaria",
+        "jp": "キツネタケ属"
+      }
     },
     "notes": "safety=toxic 指定のため cooking_preservation は null、poisoning_first_aid を必須として記載。wikipediaJa は本種を食用と記すが、wikipediaEn はヒ素の生物濃縮リスクを明記しており、toxic 指定に整合する後者を毒性根拠として採用。発生期の『夏から秋』は 7〜11 月に翻訳。mhlw は null のため安全情報は wikipediaEn に依拠。tree_association は ja/en とも具体樹種の特定記述が乏しいため空配列とした。",
     "images_remote_credits": [
@@ -3511,7 +4314,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/585637786/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lactarius"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Lactarius",
+        "jp": "カラハツタケ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -3681,7 +4507,29 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/187671018/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Laetiporus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Laetiporaceae"
+      },
+      "genus": {
+        "latin": "Laetiporus",
+        "jp": "アイカワタケ属"
+      }
     },
     "tree_association": [
       "コナラ属",
@@ -3799,7 +4647,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/486261056/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lentinula"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Omphalotaceae",
+        "jp": "ツキヨタケ科"
+      },
+      "genus": {
+        "latin": "Lentinula",
+        "jp": "シイタケ属"
+      }
     },
     "tree_association": [
       "シイ",
@@ -3921,7 +4796,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/332657786/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Lepiota"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Agaricaceae",
+        "jp": "ハラタケ科"
+      },
+      "genus": {
+        "latin": "Lepiota",
+        "jp": "キツネノカラカサ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -4022,7 +4924,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/380357252/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Leucocoprinus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Agaricaceae",
+        "jp": "ハラタケ科"
+      },
+      "genus": {
+        "latin": "Leucocoprinus",
+        "jp": "キヌカラカサタケ属"
+      }
     },
     "notes": "safety=toxic の指定に従い poisoning_first_aid と caution を記載。wikipediaJa は食毒不明・無害説と美味説の両論を紹介しつつ食べるべきでないとし、wikipediaEn は明確に有毒（胃腸炎様症状）と記載。mhlw は null のため en 側の毒性記述を補助として採用。season は ja の「初夏から秋」を 6〜10 月と解釈。similar_species と tree_association は ja に国内情報がないため空配列とした。",
     "images_remote_credits": [
@@ -4199,7 +5128,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/580472876/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lyophyllum"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Lyophyllaceae",
+        "jp": "シメジ科"
+      },
+      "genus": {
+        "latin": "Lyophyllum",
+        "jp": "シメジ属"
+      }
     },
     "notes": "プロンプトでは和名『シャカシメジ』と指定されていたが、wikipediaJa および daikinrin の正典和名は共に『ハタケシメジ』で一致したため和名は『ハタケシメジ』を採用。aliases は wikipediaJa 記載の地方名・漢字表記のみ列挙。season は ja の『春（梅雨の前後）』を 5-6 月、『初夏から中秋』を 6-10 月として 2 要素化。tree_association は ja が腐生性で外生菌根を形成しないと明記しているため空配列。mhlw は null のため未使用。",
     "images_remote_credits": [
@@ -4388,7 +5344,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/495094429/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Morchella"
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Pezizomycetes",
+        "jp": "チャワンタケ綱"
+      },
+      "subclass": {
+        "latin": "Pezizomycetidae",
+        "jp": "チャワンタケ亜綱"
+      },
+      "order": {
+        "latin": "Pezizales",
+        "jp": "チャワンタケ目"
+      },
+      "family": {
+        "latin": "Morchellaceae",
+        "jp": "アミガサタケ科"
+      },
+      "genus": {
+        "latin": "Morchella",
+        "jp": "アミガサタケ属"
+      }
     },
     "tree_association": [
       "サクラ",
@@ -4506,7 +5489,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/330909140/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Omphalotus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Omphalotaceae",
+        "jp": "ツキヨタケ科"
+      },
+      "genus": {
+        "latin": "Omphalotus",
+        "jp": "ツキヨタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -4649,7 +5659,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/227625220/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Panaeolus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Galeropsidaceae"
+      },
+      "genus": {
+        "latin": "Panaeolus",
+        "jp": "ヒカゲタケ属"
+      }
     },
     "notes": "wikipediaJa を主情報源として採用。プロンプト指定の和名はサイギョウガサだが wikipediaJa および daikinrin は共に『ワライタケ』を和名としており、サイギョウガサ（P. retirugis）は現在 P. papilionaceus と同種と見なされる旨が wikipediaJa に明記されているため aliases に併記。season の『春〜秋』は wikipediaJa の具体的記述『6月から10月』に従い 6-10 と数値化。mhlw は null のため参照せず。tree_association は糞生・草地性で該当なしのため空配列。",
     "images_remote_credits": [
@@ -4779,7 +5815,30 @@
     "image_local": "/images/mushrooms/paralepistopsis_acromelalga.webp",
     "images_remote": [],
     "taxonomy": {
-      "genus": "Clitocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "genus": {
+        "latin": "Paralepistopsis",
+        "jp": "パラレピストプシス属"
+      }
     },
     "tree_association": [
       "タケ",
@@ -4882,7 +5941,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/59264737/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Paxillus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Paxillaceae",
+        "jp": "ヒダハタケ科"
+      },
+      "genus": {
+        "latin": "Paxillus",
+        "jp": "ヒダハタケ属"
+      }
     },
     "tree_association": [
       "針葉樹",
@@ -5008,7 +6094,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/341360461/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Pholiota"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Pholiota",
+        "jp": "スギタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -5141,7 +6254,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/53205021/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Pholiota"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Pholiota",
+        "jp": "スギタケ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -5312,7 +6452,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/612205338/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Pleurotus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Pleurotaceae",
+        "jp": "ヒラタケ科"
+      },
+      "genus": {
+        "latin": "Pleurotus",
+        "jp": "ヒラタケ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -5430,7 +6597,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/454754256/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Psathyrella"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Psathyrellaceae",
+        "jp": "ナヨタケ科"
+      },
+      "genus": {
+        "latin": "Psathyrella",
+        "jp": "ナヨタケ属"
+      }
     },
     "notes": "wikipediaJa を主情報源、daikinrin を学名・分類の canonical として使用。mhlw は null のため参照なし。季節情報はソースに明記がないが V5 検証のため近縁小型腐生菌の一般的発生期 6〜11 月を仮置きした。樹種は『枯れ木』としか記載がなく特定樹種不明のため tree_association は空配列。safety=toxic の方針に従い cooking_preservation は null、poisoning_first_aid は資料に具体的毒性記述がない旨を明記した。",
     "images_remote_credits": [
@@ -5538,7 +6732,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/413457426/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Inocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Inocybaceae",
+        "jp": "アセタケ科"
+      },
+      "genus": {
+        "latin": "Pseudosperma"
+      }
     },
     "tree_association": [
       "ミズナラ",
@@ -5654,7 +6874,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/397074654/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Psilocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Hymenogastraceae",
+        "jp": "ヒメノガステル科"
+      },
+      "genus": {
+        "latin": "Psilocybe",
+        "jp": "シビレタケ属"
+      }
     },
     "tree_association": [
       "シラカシ"
@@ -5743,7 +6990,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/169340309/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Russula"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Russula",
+        "jp": "ベニタケ属"
+      }
     },
     "tree_association": [
       "針葉樹",
@@ -5879,7 +7149,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/562225399/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Russula"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Russula",
+        "jp": "ベニタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -5972,7 +7265,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/176111760/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Russula"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Russula",
+        "jp": "ベニタケ属"
+      }
     },
     "tree_association": [
       "クヌギ",
@@ -6099,7 +7415,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/585962461/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Suillus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Suillaceae",
+        "jp": "ヌメリイグチ科"
+      },
+      "genus": {
+        "latin": "Suillus",
+        "jp": "ヌメリイグチ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -6211,7 +7554,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/184457952/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Boletus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Sutorius",
+        "jp": "ウラグロニガイグチ属"
+      }
     },
     "tree_association": [
       "エゾマツ",
@@ -6302,7 +7672,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/236269802/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "ミズナラ",
@@ -6434,7 +7831,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/601172858/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -6551,7 +7975,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/585658239/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "クヌギ",
@@ -6662,7 +8113,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/558870989/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -6740,7 +8218,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/238946425/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -6852,7 +8357,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/40994382/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "トウヒ",
@@ -6950,7 +8482,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/444348209/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "モミ",
@@ -7074,7 +8633,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/549753786/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Gomphus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Phallomycetidae",
+        "jp": "スッポンタケ亜綱"
+      },
+      "order": {
+        "latin": "Gomphales",
+        "jp": "ラッパタケ目"
+      },
+      "family": {
+        "latin": "Gomphaceae",
+        "jp": "ラッパタケ科"
+      },
+      "genus": {
+        "latin": "Turbinellus",
+        "jp": "ウスタケ属"
+      }
     },
     "tree_association": [
       "モミ",
@@ -7175,7 +8761,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/630305232/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "ブナ科",
@@ -7250,7 +8863,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/457197065/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -7322,7 +8962,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/607128793/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "notes": "一次ソースは大菌輪のみ（wikipediaJa/En/mhlw すべて null）。分類・学名・国内外観察数のみ確定情報。形態・発生季節・共生樹・毒成分などは明示記載がなく、推測補填を避けて空値・抽象的記述に留めた。季節は同科の一般的発生期である7-10月を暫定記載し notes 参照とした。",
     "images_remote_credits": [
@@ -7494,7 +9161,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/260989784/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -7629,7 +9323,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/446228354/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Amanita"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Amanitaceae",
+        "jp": "テングタケ科"
+      },
+      "genus": {
+        "latin": "Amanita",
+        "jp": "テングタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -7731,7 +9452,32 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/565443595/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Leucopaxillus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Pseudoclitocybaceae"
+      },
+      "genus": {
+        "latin": "Aspropaxillus"
+      }
     },
     "tree_association": [
       "スギ",
@@ -7819,7 +9565,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/556937033/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Pulveroboletus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Aureoboletus",
+        "jp": "ヌメリコウジタケ属"
+      }
     },
     "notes": "Wikipedia ja を主情報源、大菌輪を学名・分類の併用ソースとした。季節「夏から秋」は7〜10月に翻訳。tree_association は ja に具体的な樹種名記述が無いため空配列とした（en は oak 記載あるが国内情報優先）。safety=unknown のため cooking_preservation を null、poisoning_first_aid を汎用的な食毒不明種対応として記載。",
     "images_remote_credits": [
@@ -7934,7 +9707,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/511195784/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Auricularia"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Auriculariomycetidae",
+        "jp": "キクラゲ亜綱"
+      },
+      "order": {
+        "latin": "Auriculariales",
+        "jp": "キクラゲ目"
+      },
+      "family": {
+        "latin": "Auriculariaceae",
+        "jp": "キクラゲ科"
+      },
+      "genus": {
+        "latin": "Auricularia",
+        "jp": "キクラゲ属"
+      }
     },
     "tree_association": [
       "クヌギ",
@@ -8059,7 +9859,32 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/32156032/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Bisporella"
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Leotiomycetes",
+        "jp": "ズキンタケ綱"
+      },
+      "subclass": {
+        "latin": "Leotiomycetidae",
+        "jp": "ズキンタケ亜綱"
+      },
+      "order": {
+        "latin": "Helotiales",
+        "jp": "ビョウタケ目"
+      },
+      "family": {
+        "latin": "Pezizellaceae"
+      },
+      "genus": {
+        "latin": "Calycina"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -8187,7 +10012,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/337648956/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Psathyrella"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Psathyrellaceae",
+        "jp": "ナヨタケ科"
+      },
+      "genus": {
+        "latin": "Candolleomyces"
+      }
     },
     "tree_association": [
       "ナラ",
@@ -8273,7 +10124,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/236107577/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Cantharellus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Cantharellales",
+        "jp": "アンズタケ目"
+      },
+      "family": {
+        "latin": "Hydnaceae",
+        "jp": "ハリタケ科"
+      },
+      "genus": {
+        "latin": "Cantharellus",
+        "jp": "アンズタケ属"
+      }
     },
     "tree_association": [
       "マツ"
@@ -8371,7 +10245,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/9131644/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Catathelasma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Biannulariaceae"
+      },
+      "genus": {
+        "latin": "Catathelasma",
+        "jp": "モミタケ属"
+      }
     },
     "tree_association": [
       "モミ",
@@ -8476,7 +10376,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/476874001/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Clavaria"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Clavariaceae",
+        "jp": "シロソウメンタケ科"
+      },
+      "genus": {
+        "latin": "Clavaria",
+        "jp": "シロソウメンタケ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -8627,7 +10554,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/173900892/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Hygrocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Cuphophyllaceae"
+      },
+      "genus": {
+        "latin": "Cuphophyllus",
+        "jp": "オトメノカサ属"
+      }
     },
     "tree_association": [
       "カラマツ"
@@ -8772,7 +10725,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/106696890/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Hygrocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Cuphophyllaceae"
+      },
+      "genus": {
+        "latin": "Cuphophyllus",
+        "jp": "オトメノカサ属"
+      }
     },
     "tree_association": [
       "カラマツ",
@@ -8864,7 +10843,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/456076617/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Dacryopinax"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Dacrymycetes",
+        "jp": "アカキクラゲ綱"
+      },
+      "order": {
+        "latin": "Dacrymycetales",
+        "jp": "アカキクラゲ目"
+      },
+      "family": {
+        "latin": "Dacrymycetaceae",
+        "jp": "アカキクラゲ科"
+      },
+      "genus": {
+        "latin": "Dacrymyces",
+        "jp": "アカキクラゲ属"
+      }
     },
     "tree_association": [
       "針葉樹"
@@ -8959,7 +10961,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/98689887/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Armillaria"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Physalacriaceae",
+        "jp": "タマバリタケ科"
+      },
+      "genus": {
+        "latin": "Desarmillaria"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -9055,7 +11083,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/153887017/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Descolea"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Bolbitiaceae",
+        "jp": "オキナタケ科"
+      },
+      "genus": {
+        "latin": "Descolea",
+        "jp": "キショウゲンジ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -9190,7 +11245,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/328605985/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lepiota"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Agaricaceae",
+        "jp": "ハラタケ科"
+      },
+      "genus": {
+        "latin": "Echinoderma",
+        "jp": "オニタケ属"
+      }
     },
     "notes": "Wikipedia ja を主情報源、en を類似種・海外分布の補助、daikinrin を学名カノニカル。season は ja の「夏から秋」を 6-10 月と解釈。tree_association は ja に特定樹種の記載がなく空配列。safety=unknown のため V6 規則に従い poisoning_first_aid は null とし、警告は caution に集約。mhlw/traitCircus データなし。aliases は ja 記載の漢字表記「鬼茸」のみ。",
     "images_remote_credits": [
@@ -9270,9 +11352,6 @@
     ],
     "image_local": "/images/mushrooms/entoloma_sarcopus.webp",
     "images_remote": [],
-    "taxonomy": {
-      "genus": "Entoloma"
-    },
     "tree_association": [
       "コナラ",
       "ミズナラ",
@@ -9371,7 +11450,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/582836778/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Mycena"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Mycenaceae",
+        "jp": "クヌギタケ科"
+      },
+      "genus": {
+        "latin": "Mycena",
+        "jp": "クヌギタケ属"
+      }
     },
     "tree_association": [
       "広葉樹"
@@ -9471,7 +11577,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/506636798/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Fistulina"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Fistulinaceae",
+        "jp": "カンゾウタケ科"
+      },
+      "genus": {
+        "latin": "Fistulina",
+        "jp": "カンゾウタケ属"
+      }
     },
     "tree_association": [
       "クリ",
@@ -9575,7 +11708,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/84892846/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Phanerochaete"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Meruliaceae",
+        "jp": "シワタケ科"
+      },
+      "genus": {
+        "latin": "Hydnophlebia",
+        "jp": "ヒイロハリタケ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -9681,7 +11837,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/567722141/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Hygrocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Hygrocybaceae"
+      },
+      "genus": {
+        "latin": "Hygrocybe",
+        "jp": "アカヤマタケ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -9851,7 +12033,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/66417377/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Laccaria"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Hydnangiaceae",
+        "jp": "ヒドナンギウム科"
+      },
+      "genus": {
+        "latin": "Laccaria",
+        "jp": "キツネタケ属"
+      }
     },
     "tree_association": [
       "マツ科",
@@ -9938,7 +12147,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/594794545/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lactarius"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Lactarius",
+        "jp": "カラハツタケ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -10073,7 +12305,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/296358560/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Lactarius"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Russulales",
+        "jp": "ベニタケ目"
+      },
+      "family": {
+        "latin": "Russulaceae",
+        "jp": "ベニタケ科"
+      },
+      "genus": {
+        "latin": "Lactifluus",
+        "jp": "チチタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -10215,7 +12470,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/331661947/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Lepista"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Clitocybaceae"
+      },
+      "genus": {
+        "latin": "Collybia",
+        "jp": "ヤグラタケモドキ属"
+      }
     },
     "tree_association": [
       "コナラ",
@@ -10317,7 +12598,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/438176332/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Lyophyllum"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Lyophyllaceae",
+        "jp": "シメジ科"
+      },
+      "genus": {
+        "latin": "Leucocybe",
+        "jp": "シロヒメカヤタケ属"
+      }
     },
     "tree_association": [
       "スギ",
@@ -10433,7 +12741,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/155583122/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Lyophyllum"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Lyophyllaceae",
+        "jp": "シメジ科"
+      },
+      "genus": {
+        "latin": "Lyophyllum",
+        "jp": "シメジ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -10532,7 +12867,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/152983273/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Mutinus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Phallomycetidae",
+        "jp": "スッポンタケ亜綱"
+      },
+      "order": {
+        "latin": "Phallales",
+        "jp": "スッポンタケ目"
+      },
+      "family": {
+        "latin": "Phallaceae",
+        "jp": "スッポンタケ科"
+      },
+      "genus": {
+        "latin": "Mutinus",
+        "jp": "キツネノロウソク属"
+      }
     },
     "notes": "和名・発生環境・形態は Wikipedia ja を主情報源として採用。分布域の詳細と発生季節（夏〜晩秋）は Wikipedia en を補助として参照し、6〜11月と翻訳した。safety=edible のスキーマ要件に従い poisoning_first_aid と caution は null、cooking_preservation は食用不適の旨を記載。tree_association は朽木・落葉依存で特定樹種の記載がないため空配列とした。",
     "images_remote_credits": [
@@ -10608,7 +12970,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/83443909/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Coprinus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Psathyrellaceae",
+        "jp": "ナヨタケ科"
+      },
+      "genus": {
+        "latin": "Narcissea"
+      }
     },
     "notes": "safety=unknown のため cooking_preservation/poisoning_first_aid/caution は null（validator V6 優先）。季節「夏期〜秋季」を 7〜10 月に翻訳。Wikipedia ja に「食用にはならない」の記述あるが safety 区分は unknown のまま。類似種 Coprinopsis cordispora は和名不明のため similar_species に記載せず。",
     "images_remote_credits": [
@@ -10705,7 +13093,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/350306805/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Cordyceps"
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Sordariomycetes",
+        "jp": "フンタマカビ綱"
+      },
+      "subclass": {
+        "latin": "Hypocreomycetidae",
+        "jp": "ニクザキン亜綱"
+      },
+      "order": {
+        "latin": "Hypocreales",
+        "jp": "ニクザキン目"
+      },
+      "family": {
+        "latin": "Ophiocordycipitaceae",
+        "jp": "オフィオコルディセプス科"
+      },
+      "genus": {
+        "latin": "Ophiocordyceps",
+        "jp": "オフィオコルディセプス属"
+      }
     },
     "notes": "Wikipedia ja を主情報源、大菌輪を分類・分布の補助として使用。季節は「初夏から初秋」を6〜9月に翻訳。safety=inedible のため cooking_preservation と poisoning_first_aid は null（validator V6 仕様）。京都府レッドデータブックの絶滅寸前種指定を caution に反映。",
     "images_remote_credits": [
@@ -10818,7 +13233,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/586836048/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Phallus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Phallomycetidae",
+        "jp": "スッポンタケ亜綱"
+      },
+      "order": {
+        "latin": "Phallales",
+        "jp": "スッポンタケ目"
+      },
+      "family": {
+        "latin": "Phallaceae",
+        "jp": "スッポンタケ科"
+      },
+      "genus": {
+        "latin": "Phallus",
+        "jp": "スッポンタケ属"
+      }
     },
     "notes": "wikipediaJa を主情報源、canonical は daikinrin、分布の海外情報補足は wikipediaEn を採用。safety=inedible のため V6 に従い cooking_preservation / poisoning_first_aid は null。wikipediaJa に「グレバを取り除いた柄や幼菌は食用」との記述はあるが本種の安全区分は inedible のため積極的な調理情報は caution に要点集約。季節は wikipediaJa「初夏（梅雨）から秋」を 6-11 月として単一期で表現。similar_species は wikipediaJa で明示されているキヌガサタケのみ採用。mhlw・traitCircus は null で未参照、rinya は種別情報を含まないため未使用。aliases は和名の漢字表記「鼈茸」のみ（V9 日本語和名のみ）。",
     "images_remote_credits": [
@@ -10924,7 +13366,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/30222863/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Lopharia"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Phanerochaetaceae",
+        "jp": "マクカワタケ科"
+      },
+      "genus": {
+        "latin": "Phlebiopsis",
+        "jp": "カミカワタケ属"
+      }
     },
     "tree_association": [
       "広葉樹"
@@ -11017,7 +13482,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/604140559/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tylopilus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Pseudoaustroboletus",
+        "jp": "ホオベニシロアシイグチ属"
+      }
     },
     "tree_association": [
       "シイ",
@@ -11131,7 +13623,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/632851031/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Nomuraea"
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Sordariomycetes",
+        "jp": "フンタマカビ綱"
+      },
+      "subclass": {
+        "latin": "Hypocreomycetidae",
+        "jp": "ニクザキン亜綱"
+      },
+      "order": {
+        "latin": "Hypocreales",
+        "jp": "ニクザキン目"
+      },
+      "family": {
+        "latin": "Ophiocordycipitaceae",
+        "jp": "オフィオコルディセプス科"
+      },
+      "genus": {
+        "latin": "Purpureocillium",
+        "jp": "プルプレオシルリウム属"
+      }
     },
     "notes": "safety=inedible のため cooking_preservation / poisoning_first_aid / caution は null（validator V6 準拠、指示書と差異ある箇所は validator を優先）。発生期は ja の『主に梅雨時から8月にかけて』を 6-8 月に翻訳。aliases は漢字表記・テレオモルフ和名・変異和名・中国語呼称を含めた。宿主はクモ類で樹木共生はないため tree_association は空。",
     "images_remote_credits": [
@@ -11217,7 +13736,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/258006660/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Boletus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Boletaceae",
+        "jp": "イグチ科"
+      },
+      "genus": {
+        "latin": "Boletus",
+        "jp": "ヤマドリタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -11316,7 +13862,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/13070438/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Rhodocollybia"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Omphalotaceae",
+        "jp": "ツキヨタケ科"
+      },
+      "genus": {
+        "latin": "Rhodocollybia",
+        "jp": "アカアザタケ属"
+      }
     },
     "tree_association": [
       "モミ",
@@ -11434,7 +14007,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/323202429/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Rickenella"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Hymenochaetales",
+        "jp": "タバコウロコタケ目"
+      },
+      "family": {
+        "latin": "Rickenellaceae",
+        "jp": "ヒナノヒガサ科"
+      },
+      "genus": {
+        "latin": "Rickenella",
+        "jp": "ヒナノヒガサ属"
+      }
     },
     "notes": "Wikipedia ja を主情報源として採用。en では nonpoisonous と記述されるが、ja は毒キノコとしシロシビン類含有を明記するため ja を優先し safety=unknown に整合。season は ja の『春から秋』『夏から秋』『7月の京都発生例』を総合し 3〜11 月の 1 期で表現。食毒不明であり cooking_preservation=null、caution に麻薬原料植物該当を明記。分布は ja 明記地域に限定し海外は ja 記載の北半球各地を列挙。",
     "images_remote_credits": [
@@ -11571,7 +14167,36 @@
       "(c) balawu, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) balawu, CC BY-NC"
-    ]
+    ],
+    "taxonomy": {
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Sarcomyxaceae"
+      },
+      "genus": {
+        "latin": "Sarcomyxa",
+        "jp": "ムキタケ属"
+      }
+    }
   },
   {
     "id": "sarcomyxa_serotina",
@@ -11652,7 +14277,33 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/443900682/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Panellus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Sarcomyxaceae"
+      },
+      "genus": {
+        "latin": "Sarcomyxa",
+        "jp": "ムキタケ属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -11751,7 +14402,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/347907075/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Psilocybe"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Strophariaceae",
+        "jp": "モエギタケ科"
+      },
+      "genus": {
+        "latin": "Stropharia",
+        "jp": "モエギタケ属"
+      }
     },
     "tree_association": [
       "スギ",
@@ -11895,7 +14573,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/568097017/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Suillus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Suillaceae",
+        "jp": "ヌメリイグチ科"
+      },
+      "genus": {
+        "latin": "Suillus",
+        "jp": "ヌメリイグチ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -11995,7 +14700,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/523385077/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tapinella"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Boletales",
+        "jp": "イグチ目"
+      },
+      "family": {
+        "latin": "Tapinellaceae",
+        "jp": "イチョウタケ科"
+      },
+      "genus": {
+        "latin": "Tapinella",
+        "jp": "イチョウタケ属"
+      }
     },
     "tree_association": [
       "マツ",
@@ -12092,7 +14824,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/163530378/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Pycnoporus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Polyporaceae",
+        "jp": "タマチョレイタケ科"
+      },
+      "genus": {
+        "latin": "Pycnoporus",
+        "jp": "シュタケ属"
+      }
     },
     "tree_association": [
       "広葉樹"
@@ -12188,7 +14943,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/330174329/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Pycnoporus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Polyporaceae",
+        "jp": "タマチョレイタケ科"
+      },
+      "genus": {
+        "latin": "Pycnoporus",
+        "jp": "シュタケ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -12341,7 +15119,30 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/252612759/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Trametes"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Polyporales",
+        "jp": "タマチョレイタケ目"
+      },
+      "family": {
+        "latin": "Polyporaceae",
+        "jp": "タマチョレイタケ科"
+      },
+      "genus": {
+        "latin": "Trametes",
+        "jp": "シロアミタケ属"
+      }
     },
     "tree_association": [
       "広葉樹",
@@ -12444,7 +15245,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/353338526/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Tremella"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Tremellomycetes",
+        "jp": "シロキクラゲ綱"
+      },
+      "subclass": {
+        "latin": "Tremellomycetidae",
+        "jp": "シロキクラゲ亜綱"
+      },
+      "order": {
+        "latin": "Tremellales",
+        "jp": "シロキクラゲ目"
+      },
+      "family": {
+        "latin": "Tremellaceae",
+        "jp": "シロキクラゲ科"
+      },
+      "genus": {
+        "latin": "Tremella",
+        "jp": "シロキクラゲ属"
+      }
     },
     "tree_association": [
       "カシ",
@@ -12543,7 +15371,37 @@
       "(c) matangoo, CC BY-NC",
       "(c) hmwtr, CC BY-NC",
       "(c) jyojiirisa, CC BY-NC"
-    ]
+    ],
+    "taxonomy": {
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Pezizomycetes",
+        "jp": "チャワンタケ綱"
+      },
+      "subclass": {
+        "latin": "Pezizomycetidae",
+        "jp": "チャワンタケ亜綱"
+      },
+      "order": {
+        "latin": "Pezizales",
+        "jp": "チャワンタケ目"
+      },
+      "family": {
+        "latin": "Pyronemataceae",
+        "jp": "ピロネマキン科"
+      },
+      "genus": {
+        "latin": "Trichaleurina",
+        "jp": "トリカレウリナ属"
+      }
+    }
   },
   {
     "id": "trichoderma_cornu_damae",
@@ -12641,7 +15499,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/561329910/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Podostroma"
+      "phylum": {
+        "latin": "Ascomycota",
+        "jp": "子嚢菌門"
+      },
+      "subphylum": {
+        "latin": "Pezizomycotina",
+        "jp": "チャワンタケ亜門"
+      },
+      "class": {
+        "latin": "Sordariomycetes",
+        "jp": "フンタマカビ綱"
+      },
+      "subclass": {
+        "latin": "Hypocreomycetidae",
+        "jp": "ニクザキン亜綱"
+      },
+      "order": {
+        "latin": "Hypocreales",
+        "jp": "ニクザキン目"
+      },
+      "family": {
+        "latin": "Hypocreaceae",
+        "jp": "ニクザキン科"
+      },
+      "genus": {
+        "latin": "Trichoderma",
+        "jp": "トリコデルマキン属"
+      }
     },
     "tree_association": [
       "ブナ",
@@ -12759,7 +15644,34 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/172645474/medium.jpeg"
     ],
     "taxonomy": {
-      "genus": "Tricholoma"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "subclass": {
+        "latin": "Agaricomycetidae",
+        "jp": "ハラタケ亜綱"
+      },
+      "order": {
+        "latin": "Agaricales",
+        "jp": "ハラタケ目"
+      },
+      "family": {
+        "latin": "Tricholomataceae",
+        "jp": "キシメジ科"
+      },
+      "genus": {
+        "latin": "Tricholoma",
+        "jp": "キシメジ属"
+      }
     },
     "tree_association": [
       "アカマツ",
@@ -12846,7 +15758,29 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/6131635/medium.jpg"
     ],
     "taxonomy": {
-      "genus": "Phellinus"
+      "phylum": {
+        "latin": "Basidiomycota",
+        "jp": "担子菌門"
+      },
+      "subphylum": {
+        "latin": "Agaricomycotina",
+        "jp": "ハラタケ亜門"
+      },
+      "class": {
+        "latin": "Agaricomycetes",
+        "jp": "ハラタケ綱"
+      },
+      "order": {
+        "latin": "Hymenochaetales",
+        "jp": "タバコウロコタケ目"
+      },
+      "family": {
+        "latin": "Hymenochaetaceae",
+        "jp": "タバコウロコタケ科"
+      },
+      "genus": {
+        "latin": "Tropicoporus"
+      }
     },
     "tree_association": [
       "クワ",

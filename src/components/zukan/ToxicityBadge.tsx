@@ -4,11 +4,25 @@ import type { Safety } from '@/types/mushroom';
 interface ToxicityBadgeProps {
   safety: Safety;
   compact?: boolean;
+  /** 記号（icon）のみの円形バッジ。狭い列で使う。 */
+  iconOnly?: boolean;
 }
 
-export function ToxicityBadge({ safety, compact = false }: ToxicityBadgeProps) {
+export function ToxicityBadge({ safety, compact = false, iconOnly = false }: ToxicityBadgeProps) {
   const config = SAFETY_CONFIG[safety];
   const isDangerous = safety === 'toxic' || safety === 'deadly';
+
+  if (iconOnly) {
+    return (
+      <span
+        aria-label={config.label}
+        title={config.label}
+        className={`inline-flex items-center justify-center shrink-0 w-5 h-5 rounded-full text-[11px] font-bold text-white leading-none ${config.color}`}
+      >
+        <span aria-hidden="true">{config.icon}</span>
+      </span>
+    );
+  }
 
   if (compact) {
     return (

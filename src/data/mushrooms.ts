@@ -55,11 +55,15 @@ export function searchMushrooms(filters: FilterOptions): Mushroom[] {
   }
 
   if (filters.family && filters.family.length > 0) {
-    results = results.filter((m) => m.taxonomy?.family && filters.family!.includes(m.taxonomy.family));
+    results = results.filter(
+      (m) => m.taxonomy?.family?.latin && filters.family!.includes(m.taxonomy.family.latin),
+    );
   }
 
   if (filters.genus && filters.genus.length > 0) {
-    results = results.filter((m) => m.taxonomy?.genus && filters.genus!.includes(m.taxonomy.genus));
+    results = results.filter(
+      (m) => m.taxonomy?.genus?.latin && filters.genus!.includes(m.taxonomy.genus.latin),
+    );
   }
 
   if (filters.habitat && filters.habitat.length > 0) {
@@ -133,11 +137,11 @@ export function sortMushrooms(list: Mushroom[], order: SortOrder): Mushroom[] {
         if (aHasTax && !bHasTax) return -1;
         if (!aHasTax && bHasTax) return 1;
         if (aHasTax && bHasTax) {
-          const orderDiff = (at?.order ?? '').localeCompare(bt?.order ?? '', 'en');
+          const orderDiff = (at?.order?.latin ?? '').localeCompare(bt?.order?.latin ?? '', 'en');
           if (orderDiff !== 0) return orderDiff;
-          const familyDiff = (at?.family ?? '').localeCompare(bt?.family ?? '', 'en');
+          const familyDiff = (at?.family?.latin ?? '').localeCompare(bt?.family?.latin ?? '', 'en');
           if (familyDiff !== 0) return familyDiff;
-          const genusDiff = (at?.genus ?? '').localeCompare(bt?.genus ?? '', 'en');
+          const genusDiff = (at?.genus?.latin ?? '').localeCompare(bt?.genus?.latin ?? '', 'en');
           if (genusDiff !== 0) return genusDiff;
         }
         return kanaCompare(a.names.ja, b.names.ja);
@@ -169,8 +173,8 @@ export function getFacetValues(): FacetValues {
   const treeAssociations = new Set<string>();
 
   for (const m of mushrooms) {
-    if (m.taxonomy?.family) families.add(m.taxonomy.family);
-    if (m.taxonomy?.genus) genera.add(m.taxonomy.genus);
+    if (m.taxonomy?.family?.latin) families.add(m.taxonomy.family.latin);
+    if (m.taxonomy?.genus?.latin) genera.add(m.taxonomy.genus.latin);
     for (const h of m.habitat) habitats.add(h);
     for (const r of m.regions) regions.add(r);
     if (m.tree_association) for (const t of m.tree_association) treeAssociations.add(t);
