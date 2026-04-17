@@ -1,0 +1,24 @@
+{
+  "names": {
+    "aliases": []
+  },
+  "season": [
+    { "start_month": 7, "end_month": 11 }
+  ],
+  "habitat": ["広葉樹の枯れ木", "背着生"],
+  "regions": ["日本", "北アメリカ東部"],
+  "tree_association": ["コナラ", "シナノキ属"],
+  "similar_species": [
+    { "ja": "ヒイロハリタケモドキ", "note": "近縁種で微細形態で区別される" }
+  ],
+  "description": "ヒイロハリタケはコナラやシナ類の枯れ木などに発生する背着生のキノコで、橙赤色から黄橙色の鮮やかな色合いが特徴である。広葉樹を侵す白色腐朽菌として枯死木の分解に関与し、日本国内では観察例が比較的少ない種として知られる。食毒に関する情報は乏しく、国内で食材として扱われることはない [1][2]。",
+  "features": "枯死した広葉樹に背着生のかさぶた状の子実体を形成し、直径は最大で約5センチメートル程度に達する。色は橙赤色から黄橙色を呈し、白色腐朽を引き起こす。日本ではコナラやシナ類の枯れ木等に発生し、北アメリカ東部では7月から11月にかけて発生が確認されている [1][2]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「ヒイロハリタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%A4%E3%83%AD%E3%83%8F%E3%83%AA%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪「Hydnophlebia chrysorhiza」", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Hydnophlebia_chrysorhiza_332100.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "wikipediaJa を主情報源として採用。発生期は北米情報（7〜11月）を参考に season へ記載し、国内の月情報は資料で特定できず notes に明記。aliases は資料に和名の別名記載がないため空配列。safety=unknown のため cooking_preservation と poisoning_first_aid はいずれも null とした。"
+}

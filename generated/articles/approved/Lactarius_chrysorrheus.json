@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["黄乳茸"]
+  },
+  "season": [
+    { "start_month": 5, "end_month": 11 }
+  ],
+  "habitat": ["雑木林", "コナラ林", "アカマツ林"],
+  "regions": ["日本", "ヨーロッパ", "北アメリカ", "北アフリカ"],
+  "tree_association": ["コナラ", "アカマツ", "カシ", "ナラ"],
+  "similar_species": [],
+  "description": "北半球に広く分布する小型から中型のキノコで、日本ではコナラやアカマツの雑木林に発生する。傘は薄い鮭の身のような色合いで、欧米では Yellowdrop Milkcap の名で知られる。乳液が空気に触れるとレモン色（狐色）に変わる点が大きな特徴で、同属の中でも識別の手がかりとなる。楢の木と共生する外生菌根菌である。[1][2]",
+  "features": "傘は直径3〜8センチメートルほどで、薄い鮭色を呈し、表面には弱い粘性と荒れた環紋が見られる。幼時は饅頭型で、生長に伴い扁平となり、最終的には浅い皿状となる。縁に毛はなく、ときに裂片状の凹凸を伴う。ヒダは垂生で、クリーム色から淡茶色を帯びる。柄は中空で下部がやや膨らみ、薄い肌色から後に淡い茶色となる。肉は白く味は辛い。乳液は最初白色だが、10〜15分ほど空気に晒されるとレモン色に変化する。胞子紋は乳白色で若干鮭色を帯びる。晩春から晩秋にかけてコナラやアカマツなどの雑木林に発生する。[1][2]",
+  "cooking_preservation": "資料間で食毒の評価が分かれる種である。日本語の資料では食用としての利用情報はほとんど記載されておらず、乳液は非常に辛く、国外では胃腸系中毒の報告もあるため、実際に食用にする事例は一般的ではない。和食での調理法として確立された記録は資料内に存在しない。[1][2]",
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    {
+      "name": "Wikipedia ja「キチチタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%81%E3%83%81%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Lactarius chrysorrheus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Lactarius_chrysorrheus_233874.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "safety=edible 指定に従い poisoning_first_aid と caution は null、cooking_preservation を記載。ただし Wikipedia ja/en は毒性ありと記述しており、食用記録は Marcel Bon のみで評価が割れる。発生時期は『晩春から晩秋』を 5〜11月に翻訳。similar_species は ja ソースに国内識別点の明確な記述がないため空配列とした。"
+}

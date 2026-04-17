@@ -1,0 +1,60 @@
+{
+  "names": {
+    "aliases": [
+      "瓦茸",
+      "キノミミ",
+      "クモタケ",
+      "雲茸"
+    ]
+  },
+  "season": [
+    { "start_month": 1, "end_month": 12 }
+  ],
+  "habitat": [
+    "枯れ木",
+    "広葉樹や針葉樹の枯れ枝・倒木・切り株",
+    "シイ・カシ林",
+    "雑木林",
+    "ブナ・ミズナラ林"
+  ],
+  "regions": [
+    "日本各地",
+    "北半球を中心に世界中"
+  ],
+  "tree_association": [
+    "広葉樹",
+    "針葉樹",
+    "シイ",
+    "カシ",
+    "ブナ",
+    "ミズナラ"
+  ],
+  "similar_species": [
+    { "ja": "Stereum ostrea", "note": "傘裏が平滑で管孔を持たない点で識別" },
+    { "ja": "Trametes hirsuta", "note": "近縁の同属種で外観が類似" },
+    { "ja": "Bjerkandera adusta", "note": "近縁の多孔菌で外観が類似" }
+  ],
+  "description": "カワラタケは枯れ木に発生する極めて一般的な小型多孔菌で、扇形から腎臓形の薄い傘が屋根瓦状に重なって群生する姿から「瓦茸」の和名がある。地方によってはキノミミ（秋田県）やクモタケ（雲茸）とも呼ばれる。通年見られるありふれた白色腐朽菌で、人里近くでも群落を作る。肉は非常に硬く食用に適さない不食キノコで、近年は細胞毒性成分の存在が判明し、摂食による中毒症状の可能性が注意喚起されている[1]。",
+  "features": "子実体は半背着床で柄がなく、半円形から腎臓形の傘だけが枯れ木から伸びる。個々の傘は径1〜7cmと小型で薄く、根元はあまり融合せず、傘同士が融合することがある。傘表面は微毛状菌糸が密生したフェルト状で、黒・褐・濃青・黄・灰・茶など色彩変化に富み、同心円状の環紋が出ることが多い。縁部は白色。古くなると色褪せて白色となり、緑藻が生えて緑色を帯びる。裏面は極めて目の細かい管孔状で若い時は汚黄色から灰白色、のちに褐色を帯びる。肉は白色で薄く強靱な革質。夏から冬にかけてシイ・カシ林、雑木林、針葉樹林、ブナ・ミズナラ林などで広葉樹や針葉樹の枯れ枝・倒木・切り株に群生し、古い木製の柵にも生える[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "肉質が硬く食用不適。細胞毒性成分が含まれ薬用と称した摂取に注意喚起[1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「カワラタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AF%E3%83%A9%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Trametes versicolor」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Trametes_versicolor_281625.html",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Wikipedia en「Trametes versicolor」",
+      "url": "https://en.wikipedia.org/wiki/Trametes_versicolor",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": "wikipediaJa を主情報源、canonical は daikinrin、similar_species は wikipediaEn を採用。方針 B により大菌輪正典和名「カワラタケ」を採用（旧アイカワラタケから rename）。safety=inedible のため poisoning_first_aid=null、要点を caution に集約。wikipediaJa の「通年見られる」「夏から冬にかけて」を 1-12 月の 1 期で表現（V13 warning 想定）。similar_species の ja には日本語名が wikipediaJa にないため学名のまま記載。mhlw・traitCircus は null で未参照、rinya は種別情報を含まないため参照せず。"
+}

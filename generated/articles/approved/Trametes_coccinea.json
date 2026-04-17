@@ -1,0 +1,53 @@
+{
+  "names": {
+    "aliases": [
+      "緋色茸"
+    ]
+  },
+  "season": [
+    { "start_month": 1, "end_month": 12 }
+  ],
+  "habitat": [
+    "広葉樹の朽ちた枯れ木",
+    "広葉樹林",
+    "まれに針葉樹の枯れ木",
+    "直射日光下の材木",
+    "平地"
+  ],
+  "regions": [
+    "本州",
+    "四国",
+    "九州",
+    "中国など東アジア",
+    "東南アジア",
+    "オーストラリア",
+    "北米",
+    "南米",
+    "アフリカ"
+  ],
+  "tree_association": [
+    "広葉樹",
+    "針葉樹"
+  ],
+  "similar_species": [
+    { "ja": "シュタケ", "note": "北方系で傘下面の管孔が大きく目が粗い[1]" }
+  ],
+  "description": "ヒイロタケは名のとおり全体が鮮やかな緋色から朱紅色を呈する中型のキノコで、広葉樹の朽ちた枯れ木に発生する南方系の白色腐朽菌である。日本国内では本州・四国・九州の平地に広く見られ、一年を通して観察できる。肉はコルク質から革質で非常に硬く、無味無臭であるため食用価値はないが、赤い天然色素を持つことから、きのこ染めに利用されることがある[1]。",
+  "features": "子実体は扁平な傘型で固く、基部で材にしっかりと固着し、ときに基部が狭まって短い柄がつく。傘は半円形から円形で幅三から十センチメートル、表面は無毛で平滑かつつやがあり、風雨にさらされると鮮やかな色が退色して灰色となる。傘の下面は濃紅色の管孔状で表面より薄い色合いを呈し、老成しても色褪せず、管孔は長さ一から二ミリメートル、孔口は一ミリメートル当たり五から八個と微細。肉は淡朱色で薄く無味無臭。一年を通して広葉樹林を中心に、まれに針葉樹の朽ちた枯れ木にも重生するが、カワラタケのように密生することはない。高温・直射日光下の材木でも旺盛に生育する[1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "肉は非常に硬く無味無臭で食用価値はない[1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「ヒイロタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Pycnoporus coccineus」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Pycnoporus_coccineus_304848.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "wikipediaJa を主情報源、canonical は daikinrin を採用。wikipediaEn・mhlw・traitCircus は null のため不参照、rinya は種別情報なしで参照せず。safety=inedible のため cooking_preservation と poisoning_first_aid は null、要点を caution に集約。wikipediaJa の「一年を通して」発生を 1-12 月 1 期で表現（V13 warning 想定）。近縁種としてシュタケを挙げたが wikipediaJa 本文の学名記載は自種と同一で矛盾するため、学名は省略し和名と識別点のみ記載。daikinrin URL の canonical は Pycnoporus coccineus で target Trametes coccinea と不一致（V11 warning 想定）だが、両者は同種のシノニム関係で wikipediaJa も Pycnoporus coccineus 表記のため正当。"
+}

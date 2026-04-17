@@ -1,0 +1,30 @@
+{
+  "names": {
+    "aliases": ["赤痣茸", "アザキノゴ", "ウスニガ"]
+  },
+  "season": [
+    { "start_month": 7, "end_month": 11 }
+  ],
+  "habitat": ["針葉樹林", "広葉樹林", "落葉・腐葉土", "菌輪形成"],
+  "regions": ["日本", "北半球全域"],
+  "tree_association": ["モミ", "マツ", "ブナ科広葉樹"],
+  "similar_species": [],
+  "description": "アカアザタケは林床に白い子実体を発生させる中型のきのこで、和名は傘表面に現れる赤褐色のしみに由来する。日本では夏から秋にかけて針葉樹林や広葉樹林の腐葉土上に発生し、食用として利用される一方、人によって中毒を起こすことがあるとされる一面も持つ。歯切れが良く肉質がしっかりしており、和え物をはじめ各種和食に用いられる地域もあるが、毒成分は解明されておらず安全区分は確定していない [1][2]。",
+  "features": "傘径は7〜12cmで、初めは饅頭型、後に中高の扁平型となる。表面は平滑・無毛で白色からクリーム色の地に赤褐色のしみが現れ、成熟や傷によってしみが広がる。縁は初め内側に巻く。ヒダは柄に上生から離生し、白色で薄く非常に密。胞子は5.5〜6.5×4.5〜5μmの球形〜広楕円形。柄は中実でほぼ上下同大、しばしば捻れ基部は細く、白色で条線があり傘同様のしみが出ることもある。肉は白色で厚く硬く、苦味がある。夏から秋にモミやマツなどの針葉樹林、ブナ科広葉樹林の落葉や腐葉土の間に発生し、しばしば菌輪をつくる [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": "食用とされる一方で人によっては中毒することがあり、毒成分は未解明のため喫食は避けるのが無難 [1]。",
+  "sources": [
+    {
+      "name": "Wikipedia ja「アカアザタケ」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%82%A2%E3%82%B6%E3%82%BF%E3%82%B1",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "大菌輪「Rhodocollybia maculata」",
+      "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Rhodocollybia_maculata_253156.html",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "notes": "safety=unknown 指定に従い cooking_preservation と poisoning_first_aid を null とし、食毒に関する注意は caution に集約。wikipediaJa は食用と記載するが『人によって中毒』と明記、wikipediaEn は『inedible・non-toxic』と ja と矛盾するため ja を優先して採用せず。season は ja の『夏から秋』を 7〜11 月に翻訳。類似種は ja/daikinrin ともに言及なしのため空配列。"
+}

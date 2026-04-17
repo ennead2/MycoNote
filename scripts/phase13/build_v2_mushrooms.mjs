@@ -1,18 +1,23 @@
 /**
- * Phase 13-F: v2 mushrooms.json 構築スクリプト
+ * Phase 13-F / 14: v2 mushrooms.json 構築スクリプト
  *
  * 入力:
- *   - generated/articles/approved/<slug>.json × 60
+ *   - generated/articles/approved/<slug>.json
  *   - data/species-ranking.json (signals.toxicity / genus / synonyms の正典)
- *   - data/tier0-species.json (japaneseName / ja_wiki_source_override の正典)
+ *   - data/tier0-species.json + data/tier1-species.json (japaneseName / override の正典)
  *
  * 出力:
- *   - src/data/mushrooms.json (v2 schema 60 種)
+ *   - src/data/mushrooms.json
  *   - data/v2-build-report.json
  *
+ * モード:
+ *   - デフォルト (Phase 13-F): approved/ 全件を使って mushrooms.json を完全再構築
+ *   - --append (Phase 14): 既存 mushrooms.json を保持し、新規 id のみ追加
+ *
  * Usage:
- *   node scripts/phase13/build_v2_mushrooms.mjs
- *   node scripts/phase13/build_v2_mushrooms.mjs --dry-run
+ *   node scripts/phase13/build_v2_mushrooms.mjs            # 完全再構築
+ *   node scripts/phase13/build_v2_mushrooms.mjs --append   # 既存保持 + 新規のみ追加
+ *   node scripts/phase13/build_v2_mushrooms.mjs --dry-run  # 書き込まない
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -20,6 +25,7 @@ import { join } from 'node:path';
 const APPROVED_DIR = 'generated/articles/approved';
 const RANKING_PATH = 'data/species-ranking.json';
 const TIER0_PATH = 'data/tier0-species.json';
+const TIER1_PATH = 'data/tier1-species.json';
 const OUT_PATH = 'src/data/mushrooms.json';
 const REPORT_PATH = 'data/v2-build-report.json';
 
@@ -37,6 +43,7 @@ const SAFETY_MAP = {
   toxic: 'toxic',
   deadly_toxic: 'deadly',
   deadly: 'deadly',
+  unknown: 'unknown',
 };
 
 export function normalizeSafety(toxicity) {
@@ -56,7 +63,10 @@ export function buildMushroom({ approved, ranking, tier0 }) {
   const scientific = tier0.scientificName;
   const id = scientificToSlug(scientific);
   const ja = resolveJapaneseName(tier0);
-  const safety = normalizeSafety(ranking?.signals?.toxicity ?? ranking?.toxicity);
+  // tier0/tier1 エントリに直接 safety が書かれていれば fallback として使う
+  // (ranking.json に未登録の手動追加種向け — 例: Sarcomyxa edulis, Trichaleurina tenuispora)
+  const rawSafety = ranking?.signals?.toxicity ?? ranking?.toxicity ?? tier0.safety;
+  const safety = normalizeSafety(rawSafety);
 
   const taxonomy = {};
   if (ranking?.taxonomy?.order) taxonomy.order = ranking.taxonomy.order;
@@ -128,18 +138,28 @@ export function approvedFileToScientific(filename) {
 
 function loadAllSources() {
   const tier0 = JSON.parse(readFileSync(TIER0_PATH, 'utf8'));
+  const tier1 = existsSync(TIER1_PATH) ? JSON.parse(readFileSync(TIER1_PATH, 'utf8')) : { species: [] };
   const ranking = JSON.parse(readFileSync(RANKING_PATH, 'utf8'));
 
-  // tier=0 のみで dedupe（同一 scientificName が tier 違いで複数行ある場合への対策）
+  // tier=0 / tier=1 を拾う。同一 slug があれば tier=0 優先（先勝ち）。
+  // キーは slug に正規化（scientificName にハイフンが含まれるケースを吸収: 例 "Trichoderma cornu-damae"）
   const rankingByScientific = new Map();
   for (const s of ranking.species ?? []) {
-    if (s.tier !== 0) continue;
-    rankingByScientific.set(s.scientificName, s);
+    if (s.tier !== 0 && s.tier !== 1) continue;
+    const slug = scientificToSlug(s.scientificName);
+    if (rankingByScientific.has(slug)) continue;
+    rankingByScientific.set(slug, s);
   }
 
+  // tier0 + tier1 のキュレーションを統合。tier0 優先。
   const tier0ByScientific = new Map();
   for (const t of tier0.species ?? []) {
-    tier0ByScientific.set(t.scientificName, t);
+    tier0ByScientific.set(scientificToSlug(t.scientificName), t);
+  }
+  for (const t of tier1.species ?? []) {
+    const slug = scientificToSlug(t.scientificName);
+    if (tier0ByScientific.has(slug)) continue;
+    tier0ByScientific.set(slug, t);
   }
 
   return { rankingByScientific, tier0ByScientific };
@@ -165,16 +185,17 @@ export function buildAll({ approvedFiles, rankingByScientific, tier0ByScientific
 
   for (const filename of approvedFiles) {
     const scientific = approvedFileToScientific(filename);
+    const slug = scientificToSlug(scientific);
     const approved = loader(filename);
-    const ranking = rankingByScientific.get(scientific);
-    const tier0 = tier0ByScientific.get(scientific);
+    const ranking = rankingByScientific.get(slug);
+    const tier0 = tier0ByScientific.get(slug);
 
-    if (!ranking) {
-      skipped.push({ scientificName: scientific, reason: 'ranking-missing' });
+    if (!tier0) {
+      skipped.push({ scientificName: scientific, reason: 'tier0/tier1 entry missing' });
       continue;
     }
-    if (!tier0) {
-      skipped.push({ scientificName: scientific, reason: 'tier0-missing' });
+    if (!ranking && !tier0.safety) {
+      skipped.push({ scientificName: scientific, reason: 'ranking-missing (and no tier inline safety)' });
       continue;
     }
     try {
@@ -215,20 +236,77 @@ function buildReport({ mushrooms, skipped }) {
   };
 }
 
+/**
+ * Append モード: 既存 mushrooms.json を読み、approved/ 全件のうち新規 id のみ追加。
+ * tier0 既存エントリの画像メタデータ (image_local / images_remote) を保持するのが目的。
+ * 合成後は resolveSimilarSpeciesIds を全件に対して再実行し、tier0↔tier1 相互参照を解決。
+ */
+export function appendBuild({ existingMushrooms, approvedFiles, rankingByScientific, tier0ByScientific, loader = loadApprovedFile }) {
+  const existingIds = new Set(existingMushrooms.map((m) => m.id));
+  const newApproved = [];
+  const skipped = [];
+
+  for (const filename of approvedFiles) {
+    const scientific = approvedFileToScientific(filename);
+    const id = scientificToSlug(scientific);
+    if (existingIds.has(id)) continue; // 既存 id は触らない
+
+    const approved = loader(filename);
+    const ranking = rankingByScientific.get(id);
+    const tier0 = tier0ByScientific.get(id);
+    if (!tier0) {
+      skipped.push({ scientificName: scientific, reason: 'tier0/tier1 entry missing' });
+      continue;
+    }
+    if (!ranking && !tier0.safety) {
+      skipped.push({ scientificName: scientific, reason: 'ranking-missing (and no tier inline safety)' });
+      continue;
+    }
+    try {
+      newApproved.push(buildMushroom({ approved, ranking, tier0 }));
+    } catch (e) {
+      skipped.push({ scientificName: scientific, reason: `build-error: ${e.message}` });
+    }
+  }
+
+  const merged = [...existingMushrooms, ...newApproved];
+  return { mushrooms: resolveSimilarSpeciesIds(merged), skipped, addedCount: newApproved.length };
+}
+
 function main() {
   const dryRun = process.argv.includes('--dry-run');
+  const append = process.argv.includes('--append');
   const { rankingByScientific, tier0ByScientific } = loadAllSources();
   const approvedFiles = listApprovedFiles();
 
-  const { mushrooms, skipped } = buildAll({
-    approvedFiles,
-    rankingByScientific,
-    tier0ByScientific,
-  });
+  let mushrooms, skipped, addedCount = null;
+
+  if (append) {
+    if (!existsSync(OUT_PATH)) {
+      console.error(`--append: ${OUT_PATH} が存在しません。先に完全再構築を実行してください。`);
+      process.exit(1);
+    }
+    const existingMushrooms = JSON.parse(readFileSync(OUT_PATH, 'utf8'));
+    const result = appendBuild({
+      existingMushrooms,
+      approvedFiles,
+      rankingByScientific,
+      tier0ByScientific,
+    });
+    mushrooms = result.mushrooms;
+    skipped = result.skipped;
+    addedCount = result.addedCount;
+    console.log(`[append] existing ${existingMushrooms.length} + new ${addedCount} = ${mushrooms.length} (skipped ${skipped.length})`);
+  } else {
+    const result = buildAll({ approvedFiles, rankingByScientific, tier0ByScientific });
+    mushrooms = result.mushrooms;
+    skipped = result.skipped;
+    console.log(`built ${mushrooms.length} mushrooms (skipped ${skipped.length})`);
+  }
 
   const report = buildReport({ mushrooms, skipped });
+  if (addedCount !== null) report.appendedCount = addedCount;
 
-  console.log(`built ${mushrooms.length} mushrooms (skipped ${skipped.length})`);
   console.log(`  safety: ${JSON.stringify(report.safetyCount)}`);
   console.log(`  similar resolved: ${report.similarResolved}/${report.similarTotal}`);
 

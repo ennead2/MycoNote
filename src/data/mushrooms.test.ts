@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { mushrooms, getMushroomById, searchMushrooms, getMushroomsBySeason } from './mushrooms';
 
 describe('mushrooms data (v2)', () => {
-  it('loads exactly 60 v2 entries', () => {
-    expect(mushrooms.length).toBe(60);
+  it('loads at least 113 v2 entries (Phase 14 tier0+tier1)', () => {
+    expect(mushrooms.length).toBeGreaterThanOrEqual(113);
   });
 
   it('every entry has required v2 fields', () => {
@@ -11,7 +11,7 @@ describe('mushrooms data (v2)', () => {
       expect(m.id, `${m.id}: id must be defined`).toBeTruthy();
       expect(m.names.ja, `${m.id}: names.ja must be defined`).toBeTruthy();
       expect(m.names.scientific, `${m.id}: names.scientific must be defined`).toBeTruthy();
-      expect(['edible', 'caution', 'inedible', 'toxic', 'deadly'], `${m.id}: safety must be valid`).toContain(m.safety);
+      expect(['edible', 'caution', 'inedible', 'unknown', 'toxic', 'deadly'], `${m.id}: safety must be valid`).toContain(m.safety);
       expect(Array.isArray(m.season), `${m.id}: season must be array`).toBe(true);
       expect(m.season.length, `${m.id}: season must have at least one range`).toBeGreaterThan(0);
       for (const r of m.season) {
@@ -77,7 +77,7 @@ describe('searchMushrooms', () => {
 
   it('returns all mushrooms when no filters', () => {
     const results = searchMushrooms({});
-    expect(results.length).toBe(60);
+    expect(results.length).toBe(mushrooms.length);
   });
 
   it('filters by hiragana query (matches katakana names)', () => {

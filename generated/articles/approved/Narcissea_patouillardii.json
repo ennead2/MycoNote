@@ -1,0 +1,20 @@
+{
+  "names": { "aliases": [] },
+  "season": [
+    { "start_month": 7, "end_month": 10 }
+  ],
+  "habitat": ["木くず", "藁くず", "堆肥"],
+  "regions": ["日本", "ヨーロッパ"],
+  "tree_association": [],
+  "similar_species": [],
+  "description": "クズヒトヨタケは木くずや藁くず、堆肥の上に群生する小型のキノコで、星屑のように点々と現れる姿から「屑」の名を冠する。傘径は〇・二〜二・五センチメートル、柄の長さ三〜七センチメートルほどと小さく、表面は白から灰色の粉に覆われて半透明に見える独特の外観を持つ。日本ではヨーロッパに広く分布することが知られているが国内での確認報告は少なく、食用にはならないとされる小型のキノコである [1]。",
+  "features": "子実体は傘径〇・二〜二・五センチメートル、柄の長さ三〜七センチメートルと小さい。傘は最初卵型で、のちに傘型から水平に開き、中央部はややくぼむ。傘表面は白から灰色で中央部は黄褐色の粉被に包まれ、半透明に見える。ひだは最初白色で、のちに黒色へと変化する。胞子は丸みのある類五角形を呈する。夏期から秋季にかけて、木くずや藁くず、堆肥の上に発生し、星屑のように点々と現れる [1]。",
+  "cooking_preservation": null,
+  "poisoning_first_aid": null,
+  "caution": null,
+  "sources": [
+    { "name": "Wikipedia ja「クズヒトヨタケ」", "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%BA%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1", "license": "CC BY-SA 4.0" },
+    { "name": "大菌輪 Narcissea patouillardii", "url": "https://mycoscouter.coolblog.jp/daikinrin/Pages/Narcissea_patouillardii_831732.html", "license": "CC BY 4.0" }
+  ],
+  "notes": "safety=unknown のため cooking_preservation/poisoning_first_aid/caution は null（validator V6 優先）。季節「夏期〜秋季」を 7〜10 月に翻訳。Wikipedia ja に「食用にはならない」の記述あるが safety 区分は unknown のまま。類似種 Coprinopsis cordispora は和名不明のため similar_species に記載せず。"
+}
