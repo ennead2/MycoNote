@@ -29,14 +29,13 @@ test.describe('Phase 3: AI連携', () => {
       await expect(page.getByText('簡易識別')).toBeVisible();
     });
 
-    test('簡易識別はPhase 4表示で無効', async ({ page }) => {
-      await page.goto('/identify');
-      await expect(page.getByText('Phase 4で追加予定')).toBeVisible();
-    });
+    // Phase 15 で簡易識別が復活したため旧「Phase 4 で追加予定」テストは廃止。
+    // 新仕様の確認は e2e/phase15-simple-identify.spec.ts を参照。
 
     test('安全注意書きが表示される', async ({ page }) => {
       await page.goto('/identify');
-      await expect(page.getByText(/AIによる推定です/)).toBeVisible();
+      // Phase 9 で文言を「どちらの識別も参考情報です」に更新済み
+      await expect(page.getByText(/どちらの識別も参考情報です/)).toBeVisible();
     });
 
     test('APIキー未設定時に警告表示', async ({ page }) => {

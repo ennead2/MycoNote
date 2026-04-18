@@ -65,18 +65,8 @@ test.describe('Zukan v2 (図鑑)', () => {
   });
 });
 
-test.describe('Identify menu (Phase 13-F: simple identify suspended)', () => {
-  test('simple identify card shows 準備中 badge', async ({ page }) => {
-    await page.goto('/identify');
-    await expect(page.getByText('準備中')).toBeVisible();
-  });
-
-  test('simple identify page renders placeholder', async ({ page }) => {
-    await page.goto('/identify/simple');
-    await expect(page.getByText('準備中')).toBeVisible();
-    await expect(page.getByRole('link', { name: /AI 識別を使う/ })).toBeVisible();
-  });
-});
+// NOTE: Phase 15 で簡易識別を復活させたため、旧 Phase 13-F の「準備中」表示テストは廃止。
+// 新仕様の spot check は e2e/phase15-simple-identify.spec.ts を参照。
 
 test.describe('Settings お知らせ section', () => {
   test('お知らせ section renders v2.0 + v2.1 release notices', async ({ page }) => {
