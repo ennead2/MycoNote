@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-04-17T14:29:12.883Z",
   "total": 113,
-  "heroHits": 106,
-  "heroHitRate": 0.9380530973451328,
+  "heroHits": 107,
+  "heroHitRate": 0.9469026548672567,
   "remoteHits": 110,
   "remoteHitRate": 0.9734513274336283,
   "remote5plus": 107,
-  "totalHeroBytes": 9198236,
+  "totalHeroBytes": 9375892,
   "perSpecies": [
     {
       "id": "amanita_caesareoides",
@@ -192,11 +192,11 @@
       "id": "galerina_fasciculata",
       "ja": "コレラタケ",
       "scientific": "Galerina fasciculata",
-      "hero": null,
-      "heroSource": null,
+      "hero": "/images/mushrooms/galerina_fasciculata.webp",
+      "heroSource": "user-provided",
       "remote": 0,
       "remoteMatchedVia": null,
-      "bytesHero": 0
+      "bytesHero": 40742
     },
     {
       "id": "galerina_vittiformis",
@@ -903,10 +903,10 @@
       "ja": "ホンシメジ",
       "scientific": "Lyophyllum shimeji",
       "hero": "/images/mushrooms/lyophyllum_shimeji.webp",
-      "heroSource": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8",
+      "heroSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/348611951/large.jpeg",
       "remote": 9,
       "remoteMatchedVia": "Lyophyllum shimeji (users:17, JP:3)",
-      "bytesHero": 32846
+      "bytesHero": 169760
     },
     {
       "id": "mutinus_caninus",
