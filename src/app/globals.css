@@ -149,3 +149,30 @@ input[type="date"]:not(:focus):invalid::-webkit-datetime-edit,
 input[type="datetime-local"]:not(:focus):invalid::-webkit-datetime-edit {
   color: var(--color-washi-dim);
 }
+
+/* react-day-picker: デフォルトの blue 系 CSS 変数を DESIGN.md の moss パレットで上書き。
+   Phase 15 追加調整: 予定日ポップアップ (PlanForm の DateField) で使用。 */
+.rdp-root {
+  --rdp-accent-color: var(--color-moss-primary);
+  --rdp-accent-background-color: color-mix(in srgb, var(--color-moss-primary) 20%, transparent);
+  --rdp-today-color: var(--color-moss-light);
+  --rdp-selected-color: var(--color-washi-cream);
+  --rdp-day_button-border: transparent;
+  --rdp-day_button-border-radius: 6px;
+  --rdp-day_button-height: 36px;
+  --rdp-day_button-width: 36px;
+  --rdp-disabled-opacity: 0.3;
+  --rdp-outside-opacity: 0.35;
+  --rdp-range_middle-background-color: color-mix(in srgb, var(--color-moss-primary) 18%, transparent);
+  --rdp-range_middle-color: inherit;
+}
+
+/* chevron (月切替矢印) は currentColor を使う設計。moss-light に着色 */
+.rdp-chevron {
+  fill: var(--color-moss-light) !important;
+}
+
+/* 今日の日付: react-day-picker v9 デフォルトの blue を moss-light に上書き */
+.rdp-today > button {
+  color: var(--color-moss-light) !important;
+}

@@ -5,6 +5,7 @@ import { Calendar, MapPin, Target, Map as MapIcon } from 'lucide-react';
 import { Mushroom } from '@/components/icons/Mushroom';
 import { Button } from '@/components/ui/Button';
 import { TargetSpeciesInput } from '@/components/plan/TargetSpeciesInput';
+import { DateField } from '@/components/plan/DateField';
 import { UI_TEXT } from '@/constants/ui-text';
 import type { PlanContext, ExperienceLevel } from '@/types/chat';
 
@@ -49,7 +50,7 @@ export function PlanForm({ onSubmit }: PlanFormProps) {
           <Calendar size={14} aria-hidden="true" />
           {UI_TEXT.plan.fieldDate}
         </label>
-        <input id="plan-date" type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} />
+        <DateField id="plan-date" value={date} onChange={setDate} />
       </div>
 
       <div>
