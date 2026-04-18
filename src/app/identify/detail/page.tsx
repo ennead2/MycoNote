@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { AlertTriangle, Search, Sparkles } from 'lucide-react';
 import PageHeader from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
+import { InfoBanner } from '@/components/ui/InfoBanner';
 import { useApp } from '@/contexts/AppContext';
 import { identifyMushroom } from '@/lib/claude';
 import { mushrooms } from '@/data/mushrooms';
@@ -64,52 +66,71 @@ export default function IdentifyDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-soil-bg">
       <PageHeader title={result ? UI_TEXT.identify.resultTitle : UI_TEXT.identify.detailTitle} showBack />
 
       <div className="px-4 py-4 space-y-4">
         {!result && (
-          <div className="rounded-lg border-l-[3px] border-amber-400 bg-amber-50 p-3">
-            <p className="text-xs text-amber-800">⚠ {UI_TEXT.identify.resultSafetyWarning}</p>
-          </div>
+          <InfoBanner
+            icon={AlertTriangle}
+            severity="caution"
+            label={UI_TEXT.common.cautionLabel}
+          >
+            {UI_TEXT.identify.resultSafetyWarning}
+          </InfoBanner>
         )}
 
         {result && <IdentifyResultView result={result} onRetry={handleRetry} />}
 
         {error && (
-          <div className="rounded-lg border border-red-200 bg-red-50 p-3">
-            <p className="text-xs text-red-700 mb-2">{error}</p>
-            <Button variant="secondary" size="sm" onClick={handleIdentify} className="bg-white text-red-600 border-red-200">
+          <InfoBanner icon={AlertTriangle} severity="toxic" label={UI_TEXT.common.error} role="alert">
+            <span className="block mb-2">{error}</span>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={handleIdentify}
+              className="text-safety-toxic border-safety-toxic/50 hover:bg-safety-toxic/10"
+            >
               {UI_TEXT.common.retry}
             </Button>
-          </div>
+          </InfoBanner>
         )}
 
         {!result && !isLoading && (
           <>
-            <div className="rounded-lg border border-gray-200 bg-white p-4">
-              <h2 className="text-xs font-bold text-border mb-3">
+            <section className="rounded-lg border border-border bg-soil-surface p-4">
+              <h2 className="text-xs font-bold text-moss-light mb-3">
                 {UI_TEXT.identify.addPhoto}
               </h2>
               <PhotoUploader images={images} onImagesChange={setImages} />
-            </div>
+            </section>
 
             <Button
               variant="primary"
               size="lg"
               onClick={handleIdentify}
               disabled={images.length === 0}
-              className="w-full"
+              className="w-full inline-flex items-center justify-center gap-2"
             >
-              🔍 {UI_TEXT.identify.startIdentify}
+              <Search size={16} strokeWidth={2.5} aria-hidden="true" />
+              <span>{UI_TEXT.identify.startIdentify}</span>
             </Button>
           </>
         )}
 
         {isLoading && (
           <div className="flex flex-col items-center py-12 gap-3">
-            <LoadingSpinner />
-            <p className="text-sm text-gray-500">{UI_TEXT.identify.identifying}</p>
+            <div className="relative">
+              <LoadingSpinner />
+              <Sparkles
+                size={14}
+                className="absolute -top-1 -right-2 text-moss-light animate-pulse"
+                aria-hidden="true"
+              />
+            </div>
+            <p className="text-sm text-washi-dim mono-data tracking-wide">
+              {UI_TEXT.identify.identifying}
+            </p>
           </div>
         )}
       </div>

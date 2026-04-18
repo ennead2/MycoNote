@@ -86,6 +86,22 @@ describe('replaceEmojisWithIcons', () => {
     expect(container.querySelectorAll('svg').length).toBe(3);
     expect(container.textContent).toContain('猛毒');
   });
+
+  it('replaces color-dot emoji (🔴🟡🟢) with ColorDot components', () => {
+    const nodes = replaceEmojisWithIcons('🔴 高 🟡 中 🟢 低');
+    const iconCount = nodes.filter((n) => typeof n !== 'string').length;
+    expect(iconCount).toBe(3);
+  });
+
+  it('renders color-dot emoji as role=img spans (not svg) in DOM', () => {
+    const { container } = render(<div>{replaceEmojisWithIcons('🔴🟠🟡🟢🔵🟣🟤⚫⚪')}</div>);
+    // ColorDot は span[role="img"] として描画される (lucide svg ではない)
+    const dots = container.querySelectorAll('span[role="img"]');
+    expect(dots.length).toBe(9);
+    // 各 dot が text-species-* クラスを持つ
+    const redDot = Array.from(dots).find((el) => el.className.includes('text-species-red'));
+    expect(redDot).toBeTruthy();
+  });
 });
 
 describe('replaceEmojisInChildren', () => {

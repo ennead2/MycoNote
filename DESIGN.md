@@ -387,7 +387,7 @@ useEffect(() => {
 return (
   <div
     ref={scrollRef}
-    className="flex gap-2 overflow-x-auto pb-2 px-2 scroll-pl-2 scroll-pr-2 scrollbar-hide snap-x snap-mandatory"
+    className="flex gap-2 overflow-x-auto pb-2 px-2 scroll-pl-2 scroll-pr-2 snap-x snap-mandatory"
   >
     {items.map((item) => (
       <div
@@ -404,7 +404,8 @@ return (
 
 **ルール:**
 - カルーセルの左右 padding と snap-pl/pr は **同じ値**（例: `px-2 scroll-pl-2 scroll-pr-2`）
-- `scrollbar-hide` を入れる（utility は globals.css に定義済）
+- スクロールバーは `globals.css` でグローバル統一済み（thin / moss-primary 半透明 / hover で moss-light）。
+  カルーセル・縦スクロール共に同じ外観になる（`scrollbar-hide` のような隠蔽は使わない）
 - 自動スライドショー追加時は `prefers-reduced-motion: reduce` を尊重、ユーザー操作後は `CAROUSEL_USER_PAUSE_MS` 程度の pause
 - モバイル（max-w-lg）前提、`sizes` 属性を next/image に忘れずに
 

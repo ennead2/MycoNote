@@ -37,7 +37,23 @@ import {
 } from 'lucide-react';
 import { Mushroom } from '@/components/icons/Mushroom';
 
-type IconComponent = LucideIcon | typeof Mushroom;
+/**
+ * 色丸 (🔴🟡🟢 等) 用のカスタムアイコン。
+ * tone の text-color を bg-current で塗りつぶすことで lucide と同じ
+ * `<Icon size={N} className={tone} />` インターフェースを満たす。
+ */
+function ColorDot({ size = 14, className = '', 'aria-label': ariaLabel }: { size?: number; className?: string; 'aria-label'?: string }) {
+  return (
+    <span
+      role="img"
+      aria-label={ariaLabel}
+      className={`inline-block rounded-full align-middle bg-current ${className}`}
+      style={{ width: `${Math.round(size * 0.7)}px`, height: `${Math.round(size * 0.7)}px` }}
+    />
+  );
+}
+
+type IconComponent = LucideIcon | typeof Mushroom | typeof ColorDot;
 
 interface IconEntry {
   Icon: IconComponent;
@@ -119,6 +135,18 @@ const EMOJI_ICON_MAP: Record<string, IconEntry> = {
   '🔍': { Icon: Search, tone: 'text-washi-muted', label: '観察' },
   '📸': { Icon: Camera, tone: 'text-washi-muted', label: '撮影' },
   '🎯': { Icon: Target, tone: 'text-moss-light', label: '目標' },
+
+  // 色丸: Claude アシスタント返答の優先度・重要度マーカー (🔴 高 / 🟡 中 / 🟢 低 等)。
+  // 色は species パレット（キノコ図鑑と同じ色語彙）を流用。
+  '🔴': { Icon: ColorDot, tone: 'text-species-red', label: '赤丸' },
+  '🟠': { Icon: ColorDot, tone: 'text-species-orange', label: '橙丸' },
+  '🟡': { Icon: ColorDot, tone: 'text-species-yellow', label: '黄丸' },
+  '🟢': { Icon: ColorDot, tone: 'text-species-green', label: '緑丸' },
+  '🔵': { Icon: ColorDot, tone: 'text-species-blue', label: '青丸' },
+  '🟣': { Icon: ColorDot, tone: 'text-species-purple', label: '紫丸' },
+  '🟤': { Icon: ColorDot, tone: 'text-species-brown', label: '茶丸' },
+  '⚫': { Icon: ColorDot, tone: 'text-species-black', label: '黒丸' },
+  '⚪': { Icon: ColorDot, tone: 'text-species-white', label: '白丸' },
 };
 
 /**

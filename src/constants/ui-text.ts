@@ -92,6 +92,7 @@ export const UI_TEXT = {
     confidenceMedium: '中',
     confidenceLow: '低',
     similarToxicWarning: '類似する毒キノコ',
+    cautionsLabel: '注意事項',
     viewInZukan: '図鑑で詳しく見る',
     retryIdentify: 'もう一度識別する',
     noPhotos: '写真を1枚以上選択してください',
@@ -304,6 +305,7 @@ export const UI_TEXT = {
     apiError500: 'サーバーエラーが発生しました。再試行してください。',
     apiErrorNetwork: 'オフラインのためAI機能を使用できません。',
     retry: '再試行',
+    cautionLabel: '注意',
   },
   months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
 } as const;

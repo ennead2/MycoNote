@@ -83,7 +83,7 @@ export default function HomePage() {
         />
 
         {!isHydrated ? (
-          <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3 scrollbar-hide">
+          <div className="flex gap-2 overflow-x-auto pb-2 -mx-3 px-3">
             {Array.from({ length: 4 }).map((_, i) => (
               <div key={i} className="shrink-0 w-32 aspect-[3/4] rounded-lg bg-soil-surface animate-shimmer" />
             ))}
@@ -237,7 +237,7 @@ function SeasonalCarousel({ mushrooms }: { mushrooms: Mushroom[] }) {
       // snap algorithm that the scroll start edge is at the padding, so snapping
       // card 0 (snap-start) keeps the leading gap visible (without this,
       // snap-mandatory collapses the leading padding and scrolls to offset=8px).
-      className="flex gap-2 overflow-x-auto pb-2 px-2 scroll-pl-2 scroll-pr-2 scrollbar-hide snap-x snap-mandatory"
+      className="flex gap-2 overflow-x-auto pb-2 px-2 scroll-pl-2 scroll-pr-2 snap-x snap-mandatory"
     >
       {mushrooms.map((m) => (
         <SeasonalCard key={m.id} mushroom={m} width={cardWidth} />
