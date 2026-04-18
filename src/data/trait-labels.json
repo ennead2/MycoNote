@@ -1,0 +1,2606 @@
+{
+  "generated_at": "2026-04-17T19:24:45.107Z",
+  "source": "https://mycoscouter.coolblog.jp/daikinrin/ (CC BY 4.0)",
+  "elements": [
+    {
+      "en": "pileus",
+      "jp": "傘",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "pileus_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "pileus_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "pileus_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "pileus_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "pileus_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "pileus_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "pileus_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "pileus_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "pileus_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "pileus_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "pileus_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "pileus_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "pileus_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "pileus_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "pileus_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "pileus_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "pileus_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "shape",
+          "jp": "形状",
+          "values": [
+            {
+              "en": "convex",
+              "jp": "凸形",
+              "key": "pileus_shape_convex"
+            },
+            {
+              "en": "flat",
+              "jp": "扁平",
+              "key": "pileus_shape_flat"
+            },
+            {
+              "en": "ventricose",
+              "jp": "便腹",
+              "key": "pileus_shape_ventricose"
+            },
+            {
+              "en": "flexuous",
+              "jp": "屈曲",
+              "key": "pileus_shape_flexuous"
+            },
+            {
+              "en": "depressed",
+              "jp": "凹形",
+              "key": "pileus_shape_depressed"
+            },
+            {
+              "en": "umbonate",
+              "jp": "中高",
+              "key": "pileus_shape_umbonate"
+            },
+            {
+              "en": "conical",
+              "jp": "円錐",
+              "key": "pileus_shape_conical"
+            },
+            {
+              "en": "globose",
+              "jp": "球形",
+              "key": "pileus_shape_globose"
+            },
+            {
+              "en": "entire",
+              "jp": "全縁",
+              "key": "pileus_shape_entire"
+            },
+            {
+              "en": "sinuous",
+              "jp": "波打つ",
+              "key": "pileus_shape_sinuous"
+            },
+            {
+              "en": "obtuse",
+              "jp": "鈍頭",
+              "key": "pileus_shape_obtuse"
+            },
+            {
+              "en": "round",
+              "jp": "円形",
+              "key": "pileus_shape_round"
+            },
+            {
+              "en": "semicircular",
+              "jp": "半円",
+              "key": "pileus_shape_semicircular"
+            },
+            {
+              "en": "funnel shaped",
+              "jp": "漏斗形",
+              "key": "pileus_shape_funnel shaped"
+            },
+            {
+              "en": "acute",
+              "jp": "鋭頭",
+              "key": "pileus_shape_acute"
+            },
+            {
+              "en": "lobed",
+              "jp": "掌形",
+              "key": "pileus_shape_lobed"
+            },
+            {
+              "en": "umbilicate",
+              "jp": "臍状",
+              "key": "pileus_shape_umbilicate"
+            },
+            {
+              "en": "crenate",
+              "jp": "円鋸歯状",
+              "key": "pileus_shape_crenate"
+            },
+            {
+              "en": "papillate",
+              "jp": "乳頭状",
+              "key": "pileus_shape_papillate"
+            },
+            {
+              "en": "sessile",
+              "jp": "無柄",
+              "key": "pileus_shape_sessile"
+            },
+            {
+              "en": "oval",
+              "jp": "卵",
+              "key": "pileus_shape_oval"
+            },
+            {
+              "en": "reniform",
+              "jp": "腎臓形",
+              "key": "pileus_shape_reniform"
+            },
+            {
+              "en": "spatulate",
+              "jp": "箆状",
+              "key": "pileus_shape_spatulate"
+            },
+            {
+              "en": "ellipsoid",
+              "jp": "楕円",
+              "key": "pileus_shape_ellipsoid"
+            },
+            {
+              "en": "cup",
+              "jp": "杯状",
+              "key": "pileus_shape_cup"
+            },
+            {
+              "en": "cylindric",
+              "jp": "円筒形",
+              "key": "pileus_shape_cylindric"
+            },
+            {
+              "en": "pulvinate",
+              "jp": "クッション形",
+              "key": "pileus_shape_pulvinate"
+            },
+            {
+              "en": "triangular",
+              "jp": "三角形",
+              "key": "pileus_shape_triangular"
+            },
+            {
+              "en": "clavate",
+              "jp": "棍棒状",
+              "key": "pileus_shape_clavate"
+            },
+            {
+              "en": "discoid",
+              "jp": "盤状",
+              "key": "pileus_shape_discoid"
+            },
+            {
+              "en": "turbinate",
+              "jp": "独楽形",
+              "key": "pileus_shape_turbinate"
+            },
+            {
+              "en": "capitate",
+              "jp": "頭状",
+              "key": "pileus_shape_capitate"
+            },
+            {
+              "en": "unbranched",
+              "jp": "分枝しない",
+              "key": "pileus_shape_unbranched"
+            },
+            {
+              "en": "tortuous",
+              "jp": "ねじれ",
+              "key": "pileus_shape_tortuous"
+            },
+            {
+              "en": "tubular",
+              "jp": "管状",
+              "key": "pileus_shape_tubular"
+            },
+            {
+              "en": "fusiform",
+              "jp": "紡錘形",
+              "key": "pileus_shape_fusiform"
+            },
+            {
+              "en": "acicular",
+              "jp": "尖形",
+              "key": "pileus_shape_acicular"
+            }
+          ]
+        },
+        {
+          "en": "surface",
+          "jp": "表面性状",
+          "values": [
+            {
+              "en": "smooth",
+              "jp": "平滑",
+              "key": "pileus_surface_smooth"
+            },
+            {
+              "en": "dry",
+              "jp": "乾燥",
+              "key": "pileus_surface_dry"
+            },
+            {
+              "en": "striate",
+              "jp": "条線状",
+              "key": "pileus_surface_striate"
+            },
+            {
+              "en": "fibrillose",
+              "jp": "繊維状",
+              "key": "pileus_surface_fibrillose"
+            },
+            {
+              "en": "scaly",
+              "jp": "鱗片状",
+              "key": "pileus_surface_scaly"
+            },
+            {
+              "en": "glutinous",
+              "jp": "粘性",
+              "key": "pileus_surface_glutinous"
+            },
+            {
+              "en": "velutinous",
+              "jp": "ビロード状",
+              "key": "pileus_surface_velutinous"
+            },
+            {
+              "en": "moist",
+              "jp": "湿性",
+              "key": "pileus_surface_moist"
+            },
+            {
+              "en": "rugose",
+              "jp": "皺状",
+              "key": "pileus_surface_rugose"
+            },
+            {
+              "en": "hygrophanous",
+              "jp": "吸水性を持つ",
+              "key": "pileus_surface_hygrophanous"
+            },
+            {
+              "en": "lustrous",
+              "jp": "光沢",
+              "key": "pileus_surface_lustrous"
+            },
+            {
+              "en": "tomentose",
+              "jp": "綿毛状",
+              "key": "pileus_surface_tomentose"
+            },
+            {
+              "en": "pruinose",
+              "jp": "粉状",
+              "key": "pileus_surface_pruinose"
+            },
+            {
+              "en": "cracking",
+              "jp": "亀裂",
+              "key": "pileus_surface_cracking"
+            },
+            {
+              "en": "warty",
+              "jp": "疣状",
+              "key": "pileus_surface_warty"
+            },
+            {
+              "en": "granulose",
+              "jp": "小粒状",
+              "key": "pileus_surface_granulose"
+            },
+            {
+              "en": "floccose",
+              "jp": "羊毛",
+              "key": "pileus_surface_floccose"
+            },
+            {
+              "en": "hispid",
+              "jp": "剛毛",
+              "key": "pileus_surface_hispid"
+            },
+            {
+              "en": "punctiform",
+              "jp": "斑点",
+              "key": "pileus_surface_punctiform"
+            },
+            {
+              "en": "plicate",
+              "jp": "扇畳状",
+              "key": "pileus_surface_plicate"
+            },
+            {
+              "en": "reticulate",
+              "jp": "網目状",
+              "key": "pileus_surface_reticulate"
+            },
+            {
+              "en": "veined",
+              "jp": "脈状",
+              "key": "pileus_surface_veined"
+            }
+          ]
+        },
+        {
+          "en": "texture",
+          "jp": "質感",
+          "values": [
+            {
+              "en": "fibrous",
+              "jp": "繊維",
+              "key": "pileus_texture_fibrous"
+            },
+            {
+              "en": "hard",
+              "jp": "硬い",
+              "key": "pileus_texture_hard"
+            },
+            {
+              "en": "soft",
+              "jp": "柔らか",
+              "key": "pileus_texture_soft"
+            },
+            {
+              "en": "membraneous",
+              "jp": "膜状",
+              "key": "pileus_texture_membraneous"
+            },
+            {
+              "en": "gelatinous",
+              "jp": "ゼラチン質",
+              "key": "pileus_texture_gelatinous"
+            },
+            {
+              "en": "leather",
+              "jp": "革質",
+              "key": "pileus_texture_leather"
+            },
+            {
+              "en": "fragile",
+              "jp": "脆い",
+              "key": "pileus_texture_fragile"
+            },
+            {
+              "en": "tough",
+              "jp": "丈夫な",
+              "key": "pileus_texture_tough"
+            },
+            {
+              "en": "corky",
+              "jp": "コルク",
+              "key": "pileus_texture_corky"
+            },
+            {
+              "en": "flexible",
+              "jp": "曲げやすい",
+              "key": "pileus_texture_flexible"
+            },
+            {
+              "en": "hollow",
+              "jp": "中空",
+              "key": "pileus_texture_hollow"
+            },
+            {
+              "en": "solid",
+              "jp": "中実",
+              "key": "pileus_texture_solid"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "stipe",
+      "jp": "柄",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "stipe_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "stipe_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "stipe_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "stipe_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "stipe_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "stipe_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "stipe_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "stipe_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "stipe_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "stipe_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "stipe_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "stipe_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "stipe_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "stipe_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "stipe_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "stipe_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "stipe_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "shape",
+          "jp": "形状",
+          "values": [
+            {
+              "en": "cylindric",
+              "jp": "円筒形",
+              "key": "stipe_shape_cylindric"
+            },
+            {
+              "en": "flexuous",
+              "jp": "屈曲",
+              "key": "stipe_shape_flexuous"
+            },
+            {
+              "en": "tapering",
+              "jp": "先細",
+              "key": "stipe_shape_tapering"
+            },
+            {
+              "en": "bulbous",
+              "jp": "塊茎状",
+              "key": "stipe_shape_bulbous"
+            },
+            {
+              "en": "swollen",
+              "jp": "膨らんだ",
+              "key": "stipe_shape_swollen"
+            },
+            {
+              "en": "clavate",
+              "jp": "棍棒状",
+              "key": "stipe_shape_clavate"
+            },
+            {
+              "en": "ampuliform",
+              "jp": "アンプル形",
+              "key": "stipe_shape_ampuliform"
+            },
+            {
+              "en": "straight",
+              "jp": "直線状",
+              "key": "stipe_shape_straight"
+            },
+            {
+              "en": "flat",
+              "jp": "扁平",
+              "key": "stipe_shape_flat"
+            },
+            {
+              "en": "constricted",
+              "jp": "狭窄",
+              "key": "stipe_shape_constricted"
+            },
+            {
+              "en": "irregular",
+              "jp": "不規則",
+              "key": "stipe_shape_irregular"
+            },
+            {
+              "en": "rooting",
+              "jp": "根状",
+              "key": "stipe_shape_rooting"
+            },
+            {
+              "en": "globose",
+              "jp": "球形",
+              "key": "stipe_shape_globose"
+            },
+            {
+              "en": "branched",
+              "jp": "分枝する",
+              "key": "stipe_shape_branched"
+            },
+            {
+              "en": "tortuous",
+              "jp": "ねじれ",
+              "key": "stipe_shape_tortuous"
+            },
+            {
+              "en": "sessile",
+              "jp": "無柄",
+              "key": "stipe_shape_sessile"
+            },
+            {
+              "en": "filiform",
+              "jp": "糸状",
+              "key": "stipe_shape_filiform"
+            },
+            {
+              "en": "fusiform",
+              "jp": "紡錘形",
+              "key": "stipe_shape_fusiform"
+            },
+            {
+              "en": "acute",
+              "jp": "鋭頭",
+              "key": "stipe_shape_acute"
+            },
+            {
+              "en": "conical",
+              "jp": "円錐",
+              "key": "stipe_shape_conical"
+            },
+            {
+              "en": "pointed",
+              "jp": "針状",
+              "key": "stipe_shape_pointed"
+            },
+            {
+              "en": "subulate",
+              "jp": "錐形",
+              "key": "stipe_shape_subulate"
+            },
+            {
+              "en": "turbinate",
+              "jp": "独楽形",
+              "key": "stipe_shape_turbinate"
+            },
+            {
+              "en": "semicircular",
+              "jp": "半円",
+              "key": "stipe_shape_semicircular"
+            },
+            {
+              "en": "lanceolate",
+              "jp": "槍形",
+              "key": "stipe_shape_lanceolate"
+            },
+            {
+              "en": "urniform",
+              "jp": "壺形",
+              "key": "stipe_shape_urniform"
+            },
+            {
+              "en": "utriform",
+              "jp": "小嚢形",
+              "key": "stipe_shape_utriform"
+            }
+          ]
+        },
+        {
+          "en": "surface",
+          "jp": "表面性状",
+          "values": [
+            {
+              "en": "smooth",
+              "jp": "平滑",
+              "key": "stipe_surface_smooth"
+            },
+            {
+              "en": "fibrillose",
+              "jp": "繊維状",
+              "key": "stipe_surface_fibrillose"
+            },
+            {
+              "en": "pruinose",
+              "jp": "粉状",
+              "key": "stipe_surface_pruinose"
+            },
+            {
+              "en": "dry",
+              "jp": "乾燥",
+              "key": "stipe_surface_dry"
+            },
+            {
+              "en": "striate",
+              "jp": "条線状",
+              "key": "stipe_surface_striate"
+            },
+            {
+              "en": "velutinous",
+              "jp": "ビロード状",
+              "key": "stipe_surface_velutinous"
+            },
+            {
+              "en": "scaly",
+              "jp": "鱗片状",
+              "key": "stipe_surface_scaly"
+            },
+            {
+              "en": "lustrous",
+              "jp": "光沢",
+              "key": "stipe_surface_lustrous"
+            },
+            {
+              "en": "with basal mycelium",
+              "jp": "菌糸体",
+              "key": "stipe_surface_with basal mycelium"
+            },
+            {
+              "en": "tomentose",
+              "jp": "綿毛状",
+              "key": "stipe_surface_tomentose"
+            },
+            {
+              "en": "rugose",
+              "jp": "皺状",
+              "key": "stipe_surface_rugose"
+            },
+            {
+              "en": "warty",
+              "jp": "疣状",
+              "key": "stipe_surface_warty"
+            },
+            {
+              "en": "floccose",
+              "jp": "羊毛",
+              "key": "stipe_surface_floccose"
+            },
+            {
+              "en": "annulus",
+              "jp": "つば",
+              "key": "stipe_surface_annulus"
+            },
+            {
+              "en": "glutinous",
+              "jp": "粘性",
+              "key": "stipe_surface_glutinous"
+            },
+            {
+              "en": "granulose",
+              "jp": "小粒状",
+              "key": "stipe_surface_granulose"
+            },
+            {
+              "en": "hispid",
+              "jp": "剛毛",
+              "key": "stipe_surface_hispid"
+            },
+            {
+              "en": "reticulate",
+              "jp": "網目状",
+              "key": "stipe_surface_reticulate"
+            },
+            {
+              "en": "moist",
+              "jp": "湿性",
+              "key": "stipe_surface_moist"
+            },
+            {
+              "en": "matt",
+              "jp": "無光沢の",
+              "key": "stipe_surface_matt"
+            },
+            {
+              "en": "punctiform",
+              "jp": "斑点",
+              "key": "stipe_surface_punctiform"
+            },
+            {
+              "en": "volva",
+              "jp": "つぼ",
+              "key": "stipe_surface_volva"
+            }
+          ]
+        },
+        {
+          "en": "texture",
+          "jp": "質感",
+          "values": [
+            {
+              "en": "hollow",
+              "jp": "中空",
+              "key": "stipe_texture_hollow"
+            },
+            {
+              "en": "hard",
+              "jp": "硬い",
+              "key": "stipe_texture_hard"
+            },
+            {
+              "en": "fibrous",
+              "jp": "繊維",
+              "key": "stipe_texture_fibrous"
+            },
+            {
+              "en": "solid",
+              "jp": "中実",
+              "key": "stipe_texture_solid"
+            },
+            {
+              "en": "soft",
+              "jp": "柔らか",
+              "key": "stipe_texture_soft"
+            },
+            {
+              "en": "fragile",
+              "jp": "脆い",
+              "key": "stipe_texture_fragile"
+            },
+            {
+              "en": "tough",
+              "jp": "丈夫な",
+              "key": "stipe_texture_tough"
+            },
+            {
+              "en": "gelatinous",
+              "jp": "ゼラチン質",
+              "key": "stipe_texture_gelatinous"
+            },
+            {
+              "en": "leather",
+              "jp": "革質",
+              "key": "stipe_texture_leather"
+            },
+            {
+              "en": "flexible",
+              "jp": "曲げやすい",
+              "key": "stipe_texture_flexible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "lamellae",
+      "jp": "ひだ",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "lamellae_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "lamellae_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "lamellae_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "lamellae_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "lamellae_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "lamellae_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "lamellae_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "lamellae_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "lamellae_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "lamellae_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "lamellae_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "lamellae_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "lamellae_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "lamellae_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "lamellae_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "lamellae_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "lamellae_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "shape",
+          "jp": "形状",
+          "values": [
+            {
+              "en": "ventricose",
+              "jp": "便腹",
+              "key": "lamellae_shape_ventricose"
+            },
+            {
+              "en": "entire",
+              "jp": "全縁",
+              "key": "lamellae_shape_entire"
+            },
+            {
+              "en": "denticulate",
+              "jp": "小歯",
+              "key": "lamellae_shape_denticulate"
+            },
+            {
+              "en": "stipitate",
+              "jp": "有柄",
+              "key": "lamellae_shape_stipitate"
+            },
+            {
+              "en": "forked",
+              "jp": "叉状",
+              "key": "lamellae_shape_forked"
+            },
+            {
+              "en": "branched",
+              "jp": "分枝する",
+              "key": "lamellae_shape_branched"
+            },
+            {
+              "en": "flexuous",
+              "jp": "屈曲",
+              "key": "lamellae_shape_flexuous"
+            },
+            {
+              "en": "odontioid",
+              "jp": "薄歯状",
+              "key": "lamellae_shape_odontioid"
+            },
+            {
+              "en": "irregular",
+              "jp": "不規則",
+              "key": "lamellae_shape_irregular"
+            },
+            {
+              "en": "obtuse",
+              "jp": "鈍頭",
+              "key": "lamellae_shape_obtuse"
+            },
+            {
+              "en": "globose",
+              "jp": "球形",
+              "key": "lamellae_shape_globose"
+            },
+            {
+              "en": "tapering",
+              "jp": "先細",
+              "key": "lamellae_shape_tapering"
+            },
+            {
+              "en": "dentate",
+              "jp": "歯牙状",
+              "key": "lamellae_shape_dentate"
+            },
+            {
+              "en": "veined",
+              "jp": "脈状",
+              "key": "lamellae_shape_veined"
+            },
+            {
+              "en": "round",
+              "jp": "円形",
+              "key": "lamellae_shape_round"
+            },
+            {
+              "en": "cylindric",
+              "jp": "円筒形",
+              "key": "lamellae_shape_cylindric"
+            },
+            {
+              "en": "straight",
+              "jp": "直線状",
+              "key": "lamellae_shape_straight"
+            },
+            {
+              "en": "serrate",
+              "jp": "鋸歯",
+              "key": "lamellae_shape_serrate"
+            },
+            {
+              "en": "acute",
+              "jp": "鋭頭",
+              "key": "lamellae_shape_acute"
+            },
+            {
+              "en": "crenate",
+              "jp": "円鋸歯状",
+              "key": "lamellae_shape_crenate"
+            },
+            {
+              "en": "clavate",
+              "jp": "棍棒状",
+              "key": "lamellae_shape_clavate"
+            },
+            {
+              "en": "inflated",
+              "jp": "膨大",
+              "key": "lamellae_shape_inflated"
+            },
+            {
+              "en": "lamellate",
+              "jp": "襞状",
+              "key": "lamellae_shape_lamellate"
+            },
+            {
+              "en": "swollen",
+              "jp": "膨らんだ",
+              "key": "lamellae_shape_swollen"
+            },
+            {
+              "en": "pointed",
+              "jp": "針状",
+              "key": "lamellae_shape_pointed"
+            },
+            {
+              "en": "flat",
+              "jp": "扁平",
+              "key": "lamellae_shape_flat"
+            },
+            {
+              "en": "ellipsoid",
+              "jp": "楕円",
+              "key": "lamellae_shape_ellipsoid"
+            },
+            {
+              "en": "fusiform",
+              "jp": "紡錘形",
+              "key": "lamellae_shape_fusiform"
+            },
+            {
+              "en": "lanceolate",
+              "jp": "槍形",
+              "key": "lamellae_shape_lanceolate"
+            },
+            {
+              "en": "tube",
+              "jp": "管孔",
+              "key": "lamellae_shape_tube"
+            },
+            {
+              "en": "oval",
+              "jp": "卵",
+              "key": "lamellae_shape_oval"
+            },
+            {
+              "en": "filiform",
+              "jp": "糸状",
+              "key": "lamellae_shape_filiform"
+            },
+            {
+              "en": "lageniform",
+              "jp": "瓶形",
+              "key": "lamellae_shape_lageniform"
+            },
+            {
+              "en": "rostrate",
+              "jp": "嘴状",
+              "key": "lamellae_shape_rostrate"
+            },
+            {
+              "en": "conical",
+              "jp": "円錐",
+              "key": "lamellae_shape_conical"
+            },
+            {
+              "en": "utriform",
+              "jp": "小嚢形",
+              "key": "lamellae_shape_utriform"
+            },
+            {
+              "en": "elongate",
+              "jp": "細長い",
+              "key": "lamellae_shape_elongate"
+            },
+            {
+              "en": "constricted",
+              "jp": "狭窄",
+              "key": "lamellae_shape_constricted"
+            },
+            {
+              "en": "acicular",
+              "jp": "尖形",
+              "key": "lamellae_shape_acicular"
+            },
+            {
+              "en": "mucronate",
+              "jp": "微突形",
+              "key": "lamellae_shape_mucronate"
+            },
+            {
+              "en": "angular",
+              "jp": "角形",
+              "key": "lamellae_shape_angular"
+            },
+            {
+              "en": "capitate",
+              "jp": "頭状",
+              "key": "lamellae_shape_capitate"
+            }
+          ]
+        },
+        {
+          "en": "development",
+          "jp": "発達",
+          "values": [
+            {
+              "en": "sterile",
+              "jp": "不稔",
+              "key": "lamellae_development_sterile"
+            },
+            {
+              "en": "fertile",
+              "jp": "稔性の",
+              "key": "lamellae_development_fertile"
+            },
+            {
+              "en": "reduced",
+              "jp": "退化的",
+              "key": "lamellae_development_reduced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "annulus",
+      "jp": "つば",
+      "attributes": [
+        {
+          "en": "presence",
+          "jp": "有無",
+          "values": [
+            {
+              "en": "present",
+              "jp": "有",
+              "key": "annulus_presence_present"
+            },
+            {
+              "en": "absent",
+              "jp": "無",
+              "key": "annulus_presence_absent"
+            }
+          ]
+        },
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "annulus_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "annulus_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "annulus_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "annulus_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "annulus_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "annulus_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "annulus_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "annulus_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "annulus_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "annulus_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "annulus_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "annulus_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "annulus_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "annulus_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "annulus_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "annulus_color_color change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "hymenophore",
+      "jp": "子実層托",
+      "hint": "ひだ・管孔・針の総称",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "hymenophore_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "hymenophore_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "hymenophore_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "hymenophore_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "hymenophore_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "hymenophore_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "hymenophore_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "hymenophore_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "hymenophore_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "hymenophore_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "hymenophore_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "hymenophore_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "hymenophore_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "hymenophore_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "hymenophore_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "hymenophore_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "hymenophore_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "shape",
+          "jp": "形状",
+          "values": [
+            {
+              "en": "angular",
+              "jp": "角形",
+              "key": "hymenophore_shape_angular"
+            },
+            {
+              "en": "globose",
+              "jp": "球形",
+              "key": "hymenophore_shape_globose"
+            },
+            {
+              "en": "flexuous",
+              "jp": "屈曲",
+              "key": "hymenophore_shape_flexuous"
+            },
+            {
+              "en": "round",
+              "jp": "円形",
+              "key": "hymenophore_shape_round"
+            },
+            {
+              "en": "entire",
+              "jp": "全縁",
+              "key": "hymenophore_shape_entire"
+            },
+            {
+              "en": "tube",
+              "jp": "管孔",
+              "key": "hymenophore_shape_tube"
+            },
+            {
+              "en": "irregular",
+              "jp": "不規則",
+              "key": "hymenophore_shape_irregular"
+            },
+            {
+              "en": "elongate",
+              "jp": "細長い",
+              "key": "hymenophore_shape_elongate"
+            },
+            {
+              "en": "ellipsoid",
+              "jp": "楕円",
+              "key": "hymenophore_shape_ellipsoid"
+            },
+            {
+              "en": "stipitate",
+              "jp": "有柄",
+              "key": "hymenophore_shape_stipitate"
+            },
+            {
+              "en": "odontioid",
+              "jp": "薄歯状",
+              "key": "hymenophore_shape_odontioid"
+            },
+            {
+              "en": "cylindric",
+              "jp": "円筒形",
+              "key": "hymenophore_shape_cylindric"
+            },
+            {
+              "en": "obtuse",
+              "jp": "鈍頭",
+              "key": "hymenophore_shape_obtuse"
+            },
+            {
+              "en": "dentate",
+              "jp": "歯牙状",
+              "key": "hymenophore_shape_dentate"
+            },
+            {
+              "en": "denticulate",
+              "jp": "小歯",
+              "key": "hymenophore_shape_denticulate"
+            },
+            {
+              "en": "lamellate",
+              "jp": "襞状",
+              "key": "hymenophore_shape_lamellate"
+            },
+            {
+              "en": "conical",
+              "jp": "円錐",
+              "key": "hymenophore_shape_conical"
+            },
+            {
+              "en": "flat",
+              "jp": "扁平",
+              "key": "hymenophore_shape_flat"
+            },
+            {
+              "en": "acute",
+              "jp": "鋭頭",
+              "key": "hymenophore_shape_acute"
+            },
+            {
+              "en": "pointed",
+              "jp": "針状",
+              "key": "hymenophore_shape_pointed"
+            },
+            {
+              "en": "veined",
+              "jp": "脈状",
+              "key": "hymenophore_shape_veined"
+            },
+            {
+              "en": "branched",
+              "jp": "分枝する",
+              "key": "hymenophore_shape_branched"
+            },
+            {
+              "en": "tapering",
+              "jp": "先細",
+              "key": "hymenophore_shape_tapering"
+            },
+            {
+              "en": "forked",
+              "jp": "叉状",
+              "key": "hymenophore_shape_forked"
+            },
+            {
+              "en": "straight",
+              "jp": "直線状",
+              "key": "hymenophore_shape_straight"
+            },
+            {
+              "en": "oval",
+              "jp": "卵",
+              "key": "hymenophore_shape_oval"
+            },
+            {
+              "en": "ventricose",
+              "jp": "便腹",
+              "key": "hymenophore_shape_ventricose"
+            },
+            {
+              "en": "constricted",
+              "jp": "狭窄",
+              "key": "hymenophore_shape_constricted"
+            },
+            {
+              "en": "swollen",
+              "jp": "膨らんだ",
+              "key": "hymenophore_shape_swollen"
+            },
+            {
+              "en": "subulate",
+              "jp": "錐形",
+              "key": "hymenophore_shape_subulate"
+            },
+            {
+              "en": "serrate",
+              "jp": "鋸歯",
+              "key": "hymenophore_shape_serrate"
+            },
+            {
+              "en": "inflated",
+              "jp": "膨大",
+              "key": "hymenophore_shape_inflated"
+            },
+            {
+              "en": "acicular",
+              "jp": "尖形",
+              "key": "hymenophore_shape_acicular"
+            },
+            {
+              "en": "lobed",
+              "jp": "掌形",
+              "key": "hymenophore_shape_lobed"
+            },
+            {
+              "en": "clavate",
+              "jp": "棍棒状",
+              "key": "hymenophore_shape_clavate"
+            },
+            {
+              "en": "filiform",
+              "jp": "糸状",
+              "key": "hymenophore_shape_filiform"
+            },
+            {
+              "en": "semicircular",
+              "jp": "半円",
+              "key": "hymenophore_shape_semicircular"
+            }
+          ]
+        },
+        {
+          "en": "surface",
+          "jp": "表面性状",
+          "values": [
+            {
+              "en": "smooth",
+              "jp": "平滑",
+              "key": "hymenophore_surface_smooth"
+            },
+            {
+              "en": "dry",
+              "jp": "乾燥",
+              "key": "hymenophore_surface_dry"
+            },
+            {
+              "en": "odontioid",
+              "jp": "薄歯状",
+              "key": "hymenophore_surface_odontioid"
+            },
+            {
+              "en": "tube",
+              "jp": "管孔",
+              "key": "hymenophore_surface_tube"
+            },
+            {
+              "en": "pruinose",
+              "jp": "粉状",
+              "key": "hymenophore_surface_pruinose"
+            },
+            {
+              "en": "veined",
+              "jp": "脈状",
+              "key": "hymenophore_surface_veined"
+            },
+            {
+              "en": "lustrous",
+              "jp": "光沢",
+              "key": "hymenophore_surface_lustrous"
+            },
+            {
+              "en": "lamellate",
+              "jp": "襞状",
+              "key": "hymenophore_surface_lamellate"
+            },
+            {
+              "en": "floccose",
+              "jp": "羊毛",
+              "key": "hymenophore_surface_floccose"
+            },
+            {
+              "en": "cracking",
+              "jp": "亀裂",
+              "key": "hymenophore_surface_cracking"
+            },
+            {
+              "en": "hydnoid",
+              "jp": "針状",
+              "key": "hymenophore_surface_hydnoid"
+            },
+            {
+              "en": "velutinous",
+              "jp": "ビロード状",
+              "key": "hymenophore_surface_velutinous"
+            },
+            {
+              "en": "punctiform",
+              "jp": "斑点",
+              "key": "hymenophore_surface_punctiform"
+            },
+            {
+              "en": "fibrillose",
+              "jp": "繊維状",
+              "key": "hymenophore_surface_fibrillose"
+            },
+            {
+              "en": "granulose",
+              "jp": "小粒状",
+              "key": "hymenophore_surface_granulose"
+            },
+            {
+              "en": "hispid",
+              "jp": "剛毛",
+              "key": "hymenophore_surface_hispid"
+            },
+            {
+              "en": "glutinous",
+              "jp": "粘性",
+              "key": "hymenophore_surface_glutinous"
+            },
+            {
+              "en": "tomentose",
+              "jp": "綿毛状",
+              "key": "hymenophore_surface_tomentose"
+            },
+            {
+              "en": "crystal",
+              "jp": "結晶",
+              "key": "hymenophore_surface_crystal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "context",
+      "jp": "肉",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "context_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "context_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "context_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "context_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "context_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "context_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "context_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "context_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "context_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "context_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "context_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "context_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "context_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "context_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "context_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "context_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "context_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "texture",
+          "jp": "質感",
+          "values": [
+            {
+              "en": "hard",
+              "jp": "硬い",
+              "key": "context_texture_hard"
+            },
+            {
+              "en": "soft",
+              "jp": "柔らか",
+              "key": "context_texture_soft"
+            },
+            {
+              "en": "fibrous",
+              "jp": "繊維",
+              "key": "context_texture_fibrous"
+            },
+            {
+              "en": "corky",
+              "jp": "コルク",
+              "key": "context_texture_corky"
+            },
+            {
+              "en": "fragile",
+              "jp": "脆い",
+              "key": "context_texture_fragile"
+            },
+            {
+              "en": "tough",
+              "jp": "丈夫な",
+              "key": "context_texture_tough"
+            },
+            {
+              "en": "leather",
+              "jp": "革質",
+              "key": "context_texture_leather"
+            },
+            {
+              "en": "solid",
+              "jp": "中実",
+              "key": "context_texture_solid"
+            },
+            {
+              "en": "hollow",
+              "jp": "中空",
+              "key": "context_texture_hollow"
+            },
+            {
+              "en": "gelatinous",
+              "jp": "ゼラチン質",
+              "key": "context_texture_gelatinous"
+            },
+            {
+              "en": "flexible",
+              "jp": "曲げやすい",
+              "key": "context_texture_flexible"
+            },
+            {
+              "en": "lactiferous",
+              "jp": "乳液",
+              "key": "context_texture_lactiferous"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "fruiting body",
+      "jp": "子実体",
+      "hint": "キノコ全体の姿",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "fruiting body_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "fruiting body_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "fruiting body_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "fruiting body_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "fruiting body_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "fruiting body_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "fruiting body_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "fruiting body_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "fruiting body_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "fruiting body_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "fruiting body_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "fruiting body_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "fruiting body_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "fruiting body_color_dark"
+            },
+            {
+              "en": "concolorous",
+              "jp": "同色",
+              "key": "fruiting body_color_concolorous"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "fruiting body_color_color change"
+            },
+            {
+              "en": "opaque",
+              "jp": "不透明の",
+              "key": "fruiting body_color_opaque"
+            }
+          ]
+        },
+        {
+          "en": "shape",
+          "jp": "形状",
+          "values": [
+            {
+              "en": "globose",
+              "jp": "球形",
+              "key": "fruiting body_shape_globose"
+            },
+            {
+              "en": "round",
+              "jp": "円形",
+              "key": "fruiting body_shape_round"
+            },
+            {
+              "en": "resupinate",
+              "jp": "背着生",
+              "key": "fruiting body_shape_resupinate"
+            },
+            {
+              "en": "flat",
+              "jp": "扁平",
+              "key": "fruiting body_shape_flat"
+            },
+            {
+              "en": "flexuous",
+              "jp": "屈曲",
+              "key": "fruiting body_shape_flexuous"
+            },
+            {
+              "en": "irregular",
+              "jp": "不規則",
+              "key": "fruiting body_shape_irregular"
+            },
+            {
+              "en": "sessile",
+              "jp": "無柄",
+              "key": "fruiting body_shape_sessile"
+            },
+            {
+              "en": "angular",
+              "jp": "角形",
+              "key": "fruiting body_shape_angular"
+            },
+            {
+              "en": "ostiolar",
+              "jp": "孔口",
+              "key": "fruiting body_shape_ostiolar"
+            },
+            {
+              "en": "pileate",
+              "jp": "傘状",
+              "key": "fruiting body_shape_pileate"
+            },
+            {
+              "en": "stipitate",
+              "jp": "有柄",
+              "key": "fruiting body_shape_stipitate"
+            },
+            {
+              "en": "entire",
+              "jp": "全縁",
+              "key": "fruiting body_shape_entire"
+            },
+            {
+              "en": "ellipsoid",
+              "jp": "楕円",
+              "key": "fruiting body_shape_ellipsoid"
+            },
+            {
+              "en": "depressed",
+              "jp": "凹形",
+              "key": "fruiting body_shape_depressed"
+            },
+            {
+              "en": "oval",
+              "jp": "卵",
+              "key": "fruiting body_shape_oval"
+            },
+            {
+              "en": "convex",
+              "jp": "凸形",
+              "key": "fruiting body_shape_convex"
+            },
+            {
+              "en": "pycnidia",
+              "jp": "分生子殻",
+              "key": "fruiting body_shape_pycnidia"
+            },
+            {
+              "en": "cylindric",
+              "jp": "円筒形",
+              "key": "fruiting body_shape_cylindric"
+            },
+            {
+              "en": "pruinose",
+              "jp": "粉状",
+              "key": "fruiting body_shape_pruinose"
+            },
+            {
+              "en": "cup",
+              "jp": "杯状",
+              "key": "fruiting body_shape_cup"
+            },
+            {
+              "en": "branched",
+              "jp": "分枝する",
+              "key": "fruiting body_shape_branched"
+            },
+            {
+              "en": "conical",
+              "jp": "円錐",
+              "key": "fruiting body_shape_conical"
+            },
+            {
+              "en": "papillate",
+              "jp": "乳頭状",
+              "key": "fruiting body_shape_papillate"
+            },
+            {
+              "en": "unbranched",
+              "jp": "分枝しない",
+              "key": "fruiting body_shape_unbranched"
+            },
+            {
+              "en": "perithecia",
+              "jp": "子嚢殻",
+              "key": "fruiting body_shape_perithecia"
+            },
+            {
+              "en": "tapering",
+              "jp": "先細",
+              "key": "fruiting body_shape_tapering"
+            },
+            {
+              "en": "erect",
+              "jp": "直立",
+              "key": "fruiting body_shape_erect"
+            },
+            {
+              "en": "acute",
+              "jp": "鋭頭",
+              "key": "fruiting body_shape_acute"
+            },
+            {
+              "en": "sinuous",
+              "jp": "波打つ",
+              "key": "fruiting body_shape_sinuous"
+            },
+            {
+              "en": "semicircular",
+              "jp": "半円",
+              "key": "fruiting body_shape_semicircular"
+            },
+            {
+              "en": "lobed",
+              "jp": "掌形",
+              "key": "fruiting body_shape_lobed"
+            },
+            {
+              "en": "pointed",
+              "jp": "針状",
+              "key": "fruiting body_shape_pointed"
+            },
+            {
+              "en": "straight",
+              "jp": "直線状",
+              "key": "fruiting body_shape_straight"
+            },
+            {
+              "en": "pulvinate",
+              "jp": "クッション形",
+              "key": "fruiting body_shape_pulvinate"
+            },
+            {
+              "en": "apothecia",
+              "jp": "子器",
+              "key": "fruiting body_shape_apothecia"
+            },
+            {
+              "en": "discoid",
+              "jp": "盤状",
+              "key": "fruiting body_shape_discoid"
+            },
+            {
+              "en": "urniform",
+              "jp": "壺形",
+              "key": "fruiting body_shape_urniform"
+            },
+            {
+              "en": "effused-reflexed",
+              "jp": "半背着生",
+              "key": "fruiting body_shape_effused-reflexed"
+            },
+            {
+              "en": "clavate",
+              "jp": "棍棒状",
+              "key": "fruiting body_shape_clavate"
+            },
+            {
+              "en": "granulose",
+              "jp": "小粒状",
+              "key": "fruiting body_shape_granulose"
+            },
+            {
+              "en": "sporodochia",
+              "jp": "スポロドキア",
+              "key": "fruiting body_shape_sporodochia"
+            },
+            {
+              "en": "neck",
+              "jp": "頸部",
+              "key": "fruiting body_shape_neck"
+            },
+            {
+              "en": "acervulus",
+              "jp": "分生子層",
+              "key": "fruiting body_shape_acervulus"
+            },
+            {
+              "en": "dentate",
+              "jp": "歯牙状",
+              "key": "fruiting body_shape_dentate"
+            },
+            {
+              "en": "spiral",
+              "jp": "螺旋",
+              "key": "fruiting body_shape_spiral"
+            },
+            {
+              "en": "punctiform",
+              "jp": "斑点",
+              "key": "fruiting body_shape_punctiform"
+            },
+            {
+              "en": "flask-shaped",
+              "jp": "フラスコ形",
+              "key": "fruiting body_shape_flask-shaped"
+            },
+            {
+              "en": "swollen",
+              "jp": "膨らんだ",
+              "key": "fruiting body_shape_swollen"
+            },
+            {
+              "en": "oblate",
+              "jp": "レンズ形",
+              "key": "fruiting body_shape_oblate"
+            },
+            {
+              "en": "turbinate",
+              "jp": "独楽形",
+              "key": "fruiting body_shape_turbinate"
+            },
+            {
+              "en": "fusiform",
+              "jp": "紡錘形",
+              "key": "fruiting body_shape_fusiform"
+            },
+            {
+              "en": "stellate",
+              "jp": "星",
+              "key": "fruiting body_shape_stellate"
+            },
+            {
+              "en": "spatulate",
+              "jp": "箆状",
+              "key": "fruiting body_shape_spatulate"
+            },
+            {
+              "en": "triangular",
+              "jp": "三角形",
+              "key": "fruiting body_shape_triangular"
+            },
+            {
+              "en": "funnel shaped",
+              "jp": "漏斗形",
+              "key": "fruiting body_shape_funnel shaped"
+            },
+            {
+              "en": "tortuous",
+              "jp": "ねじれ",
+              "key": "fruiting body_shape_tortuous"
+            },
+            {
+              "en": "ampuliform",
+              "jp": "アンプル形",
+              "key": "fruiting body_shape_ampuliform"
+            },
+            {
+              "en": "pseudothecia",
+              "jp": "偽子嚢殻",
+              "key": "fruiting body_shape_pseudothecia"
+            },
+            {
+              "en": "reniform",
+              "jp": "腎臓形",
+              "key": "fruiting body_shape_reniform"
+            },
+            {
+              "en": "crustose",
+              "jp": "痂状",
+              "key": "fruiting body_shape_crustose"
+            },
+            {
+              "en": "cleistothecia",
+              "jp": "閉子嚢殻",
+              "key": "fruiting body_shape_cleistothecia"
+            },
+            {
+              "en": "synnematous",
+              "jp": "シンネマ",
+              "key": "fruiting body_shape_synnematous"
+            },
+            {
+              "en": "rostrate",
+              "jp": "嘴状",
+              "key": "fruiting body_shape_rostrate"
+            },
+            {
+              "en": "capitate",
+              "jp": "頭状",
+              "key": "fruiting body_shape_capitate"
+            },
+            {
+              "en": "truncate",
+              "jp": "截断状",
+              "key": "fruiting body_shape_truncate"
+            },
+            {
+              "en": "funnel",
+              "jp": "funnel",
+              "key": "fruiting body_shape_funnel"
+            },
+            {
+              "en": "lanceolate",
+              "jp": "槍形",
+              "key": "fruiting body_shape_lanceolate"
+            },
+            {
+              "en": "procumbent",
+              "jp": "平伏",
+              "key": "fruiting body_shape_procumbent"
+            },
+            {
+              "en": "subulate",
+              "jp": "錐形",
+              "key": "fruiting body_shape_subulate"
+            },
+            {
+              "en": "genuculate",
+              "jp": "膝折状",
+              "key": "fruiting body_shape_genuculate"
+            },
+            {
+              "en": "acicular",
+              "jp": "尖形",
+              "key": "fruiting body_shape_acicular"
+            },
+            {
+              "en": "filiform",
+              "jp": "糸状",
+              "key": "fruiting body_shape_filiform"
+            },
+            {
+              "en": "lageniform",
+              "jp": "瓶形",
+              "key": "fruiting body_shape_lageniform"
+            },
+            {
+              "en": "bulbous",
+              "jp": "塊茎状",
+              "key": "fruiting body_shape_bulbous"
+            },
+            {
+              "en": "mucronate",
+              "jp": "微突形",
+              "key": "fruiting body_shape_mucronate"
+            },
+            {
+              "en": "amygdaliform",
+              "jp": "扁桃形",
+              "key": "fruiting body_shape_amygdaliform"
+            },
+            {
+              "en": "foliose",
+              "jp": "葉状",
+              "key": "fruiting body_shape_foliose"
+            },
+            {
+              "en": "utriform",
+              "jp": "小嚢形",
+              "key": "fruiting body_shape_utriform"
+            },
+            {
+              "en": "pin-shaped",
+              "jp": "ピン形",
+              "key": "fruiting body_shape_pin-shaped"
+            }
+          ]
+        },
+        {
+          "en": "texture",
+          "jp": "質感",
+          "values": [
+            {
+              "en": "hard",
+              "jp": "硬い",
+              "key": "fruiting body_texture_hard"
+            },
+            {
+              "en": "soft",
+              "jp": "柔らか",
+              "key": "fruiting body_texture_soft"
+            },
+            {
+              "en": "fibrous",
+              "jp": "繊維",
+              "key": "fruiting body_texture_fibrous"
+            },
+            {
+              "en": "membraneous",
+              "jp": "膜状",
+              "key": "fruiting body_texture_membraneous"
+            },
+            {
+              "en": "leather",
+              "jp": "革質",
+              "key": "fruiting body_texture_leather"
+            },
+            {
+              "en": "tough",
+              "jp": "丈夫な",
+              "key": "fruiting body_texture_tough"
+            },
+            {
+              "en": "corky",
+              "jp": "コルク",
+              "key": "fruiting body_texture_corky"
+            },
+            {
+              "en": "gelatinous",
+              "jp": "ゼラチン質",
+              "key": "fruiting body_texture_gelatinous"
+            },
+            {
+              "en": "carbonaceous",
+              "jp": "炭質",
+              "key": "fruiting body_texture_carbonaceous"
+            },
+            {
+              "en": "flexible",
+              "jp": "曲げやすい",
+              "key": "fruiting body_texture_flexible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "spore print",
+      "jp": "胞子紋",
+      "attributes": [
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "spore print_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "spore print_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "spore print_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "spore print_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "spore print_color_pink"
+            },
+            {
+              "en": "purple",
+              "jp": "紫",
+              "key": "spore print_color_purple"
+            },
+            {
+              "en": "blue",
+              "jp": "青",
+              "key": "spore print_color_blue"
+            },
+            {
+              "en": "green",
+              "jp": "緑",
+              "key": "spore print_color_green"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "spore print_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "spore print_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "spore print_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "spore print_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "spore print_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "spore print_color_dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "en": "volva",
+      "jp": "つぼ",
+      "attributes": [
+        {
+          "en": "presence",
+          "jp": "有無",
+          "values": [
+            {
+              "en": "present",
+              "jp": "有",
+              "key": "volva_presence_present"
+            },
+            {
+              "en": "absent",
+              "jp": "無",
+              "key": "volva_presence_absent"
+            }
+          ]
+        },
+        {
+          "en": "color",
+          "jp": "色",
+          "values": [
+            {
+              "en": "white",
+              "jp": "白",
+              "key": "volva_color_white"
+            },
+            {
+              "en": "yellow",
+              "jp": "黄",
+              "key": "volva_color_yellow"
+            },
+            {
+              "en": "orange",
+              "jp": "橙",
+              "key": "volva_color_orange"
+            },
+            {
+              "en": "red",
+              "jp": "赤",
+              "key": "volva_color_red"
+            },
+            {
+              "en": "pink",
+              "jp": "桃",
+              "key": "volva_color_pink"
+            },
+            {
+              "en": "brown",
+              "jp": "褐",
+              "key": "volva_color_brown"
+            },
+            {
+              "en": "grey",
+              "jp": "灰",
+              "key": "volva_color_grey"
+            },
+            {
+              "en": "black",
+              "jp": "黒",
+              "key": "volva_color_black"
+            },
+            {
+              "en": "hyaline",
+              "jp": "無色",
+              "key": "volva_color_hyaline"
+            },
+            {
+              "en": "pale",
+              "jp": "淡色",
+              "key": "volva_color_pale"
+            },
+            {
+              "en": "dark",
+              "jp": "暗色",
+              "key": "volva_color_dark"
+            },
+            {
+              "en": "color change",
+              "jp": "変色する",
+              "key": "volva_color_color change"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

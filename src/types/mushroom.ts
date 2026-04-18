@@ -98,12 +98,16 @@ export interface Mushroom {
   images_remote_credits?: string[];
 
   /**
-   * 大菌輪統制形質 (Trait Circus Database, CC BY 4.0) から抽出した肉眼観察可能な形質キー。
-   * 形式: `element_attribute_value` (例: `pileus_color_brown`)。
-   * Phase 15-B S1 で収集、S3 以降の簡易識別エンジンが使用する。
+   * 大菌輪統制形質 (Trait Circus Database, CC BY 4.0) から抽出した肉眼観察可能な形質の重み辞書。
+   * キーは `element_attribute_value` (例: `pileus_color_brown`)、値は Trait Circus の
+   * 記載文出現回数 (count)。count が大きいほどその種で頻繁に記述される＝強い特徴。
+   *
+   * 例: ベニテングタケの `stipe_color_white` = 19 → 柄・白として 19 回記述 (強い)
+   *     `stipe_color_pink` = 1 → 稀に桃色と記述 (弱い)
+   *
    * 欠落しうる（ウラベニホテイシメジ等 Trait Circus 未収録種は undefined）。
    */
-  traits?: string[];
+  traits?: Record<string, number>;
 }
 
 // ===== Filter / Sort =====

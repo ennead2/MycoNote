@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 /**
- * Phase 15 S2: species-traits-visible.json の trait_keys を
- * src/data/mushrooms.json の `traits` フィールドに反映する。
+ * Phase 15 S2/S4 (改修): Trait Circus の生データから各種の visible trait_key の
+ * **出現頻度 (count)** を集計し、`src/data/mushrooms.json` の `traits` フィールドに
+ * `Record<string, number>` として反映する。
  *
- * 前提:
- *   - measure_coverage.mjs を先に実行して species-traits-visible.json を生成済み
+ * 旧: string[] (有無のみ)
+ * 新: Record<string, number> (count = 重み)
  *
- * 挙動:
- *   - 各種の visible_traits を mushrooms.json の `traits` 配列に格納
- *   - Trait Circus マッチ失敗種 (例: Entoloma sarcopus) は traits を付与しない
- *   - 既存 `traits` は上書き
+ * 重みは Trait Circus の 1 trait 1 レコード形式から同一 key の件数を数えて算出。
+ * 例: ベニテングタケの stipe_color_white は 19 レコード → 重み 19。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -18,36 +17,68 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..', '..');
 const MUSHROOMS = join(ROOT, 'src', 'data', 'mushrooms.json');
-const VISIBLE = join(ROOT, 'data', 'phase15', 'species-traits-visible.json');
+const RAW = join(ROOT, 'data', 'phase15', 'species-traits-raw.json');
+const LABELS = join(ROOT, 'src', 'data', 'trait-labels.json');
+
+function buildAllowedKeys() {
+  const labels = JSON.parse(readFileSync(LABELS, 'utf-8'));
+  const s = new Set();
+  for (const el of labels.elements) {
+    for (const attr of el.attributes) {
+      for (const v of attr.values) s.add(v.key);
+    }
+  }
+  return s;
+}
+
+function countsFromRaw(speciesRaw, allowed) {
+  const counts = {};
+  for (const t of speciesRaw.traits) {
+    if (!allowed.has(t.trait)) continue;
+    counts[t.trait] = (counts[t.trait] || 0) + 1;
+  }
+  return counts;
+}
 
 function main() {
   const rows = JSON.parse(readFileSync(MUSHROOMS, 'utf-8'));
-  const visible = JSON.parse(readFileSync(VISIBLE, 'utf-8'));
-  const byId = new Map(visible.species.map((s) => [s.id, s.visible_traits]));
+  const raw = JSON.parse(readFileSync(RAW, 'utf-8'));
+  const allowed = buildAllowedKeys();
+  const byId = new Map(raw.species.map((s) => [s.id, s]));
 
   let withTraits = 0;
   let withoutTraits = 0;
+  let totalOccurrences = 0;
+  let totalUniqKeys = 0;
   for (const m of rows) {
-    const traits = byId.get(m.id);
-    if (traits && traits.length > 0) {
-      m.traits = traits;
-      withTraits++;
-    } else {
+    const rawEntry = byId.get(m.id);
+    if (!rawEntry) {
       if ('traits' in m) delete m.traits;
       withoutTraits++;
+      continue;
     }
+    const counts = countsFromRaw(rawEntry, allowed);
+    const uniqKeys = Object.keys(counts).length;
+    if (uniqKeys === 0) {
+      if ('traits' in m) delete m.traits;
+      withoutTraits++;
+      continue;
+    }
+    m.traits = counts;
+    withTraits++;
+    totalUniqKeys += uniqKeys;
+    totalOccurrences += Object.values(counts).reduce((a, b) => a + b, 0);
   }
 
   writeFileSync(MUSHROOMS, JSON.stringify(rows, null, 2) + '\n', 'utf-8');
 
-  const totalKeys = rows.reduce((n, m) => n + (m.traits?.length || 0), 0);
-  const meanKeys = withTraits === 0 ? 0 : (totalKeys / withTraits).toFixed(1);
-
   console.log(`Wrote ${MUSHROOMS}`);
-  console.log(`  with traits:    ${withTraits}`);
-  console.log(`  without traits: ${withoutTraits}`);
-  console.log(`  total trait keys: ${totalKeys}`);
-  console.log(`  mean per species: ${meanKeys}`);
+  console.log(`  with traits:     ${withTraits}`);
+  console.log(`  without traits:  ${withoutTraits}`);
+  console.log(`  total unique keys: ${totalUniqKeys}`);
+  console.log(`  total occurrences: ${totalOccurrences}`);
+  console.log(`  mean uniq / sp:    ${(totalUniqKeys / withTraits).toFixed(1)}`);
+  console.log(`  mean occurrences:  ${(totalOccurrences / withTraits).toFixed(1)}`);
 }
 
 main();
