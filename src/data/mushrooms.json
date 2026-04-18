@@ -3659,7 +3659,7 @@
         "license": "政府著作物"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/galerina_fasciculata.webp",
     "images_remote": [],
     "taxonomy": {
       "phylum": {
@@ -17840,8 +17840,8 @@
     ],
     "image_local": "/images/mushrooms/lyophyllum_shimeji.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/348611951/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/585552415/medium.jpg",
+      "https://static.inaturalist.org/photos/232101196/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/580134198/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/584609030/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/324686961/medium.jpg",
