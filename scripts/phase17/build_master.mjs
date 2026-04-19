@@ -92,7 +92,18 @@ function loadJson(path, fallback) {
   }
 }
 
-/** article_origin に応じて本文 (description 等) を決定 */
+/** sources 配列に ref:N (index+1) を自動付与。元配列が ref 付きならそのまま、無ければ index+1 を付与 */
+function normalizeSources(sources) {
+  if (!Array.isArray(sources)) return [];
+  return sources.map((s, i) => ({
+    ref: typeof s?.ref === 'number' ? s.ref : i + 1,
+    name: s?.name ?? '',
+    url: s?.url ?? '',
+    license: s?.license ?? '',
+  }));
+}
+
+/** article_origin に応じて本文 (description 等) を決定。sources も normalize して返す */
 function mergeArticleBody(entry, approvedByJa) {
   const blank = {
     description: null,
@@ -104,6 +115,8 @@ function mergeArticleBody(entry, approvedByJa) {
     regions: [],
     tree_association: [],
     aliases: [],
+    sources: [],
+    article_notes: null,
   };
   if (entry.article_origin === 'approved') {
     const row = approvedByJa.get(entry.japaneseName);
@@ -118,6 +131,8 @@ function mergeArticleBody(entry, approvedByJa) {
         regions: row.regions ?? [],
         tree_association: row.tree_association ?? [],
         aliases: row.names?.aliases ?? [],
+        sources: normalizeSources(row.sources),
+        article_notes: row.notes ?? null,
       };
     }
   } else if (entry.article_origin === 'phase16') {
@@ -133,6 +148,8 @@ function mergeArticleBody(entry, approvedByJa) {
         regions: art.regions ?? [],
         tree_association: art.tree_association ?? [],
         aliases: art.names?.aliases ?? [],
+        sources: normalizeSources(art.sources),
+        article_notes: Array.isArray(art.notes) ? art.notes.join(' ') : (art.notes ?? null),
       };
     }
   }
@@ -333,7 +350,8 @@ async function main() {
       regions: body.regions,
       tree_association: body.tree_association,
       traits,
-      notes: [],
+      sources: body.sources,
+      notes: body.article_notes ? [body.article_notes] : [],
       override_note: override?.note ?? null,
     };
 
