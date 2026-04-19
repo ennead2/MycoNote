@@ -34,7 +34,11 @@ export function buildPageUrl(scientificName, mycoBankId) {
  *   taxonomy: object,
  *   mycoBankId: number,
  *   observations: { domestic: number, overseas: number },
- *   externalLinks: { name: string, url: string }[]
+ *   externalLinks: { name: string, url: string }[],
+ *   habitat: Record<string, string[]>,
+ *   season: { tags: string[], months: { start_month: number, end_month: number }[] },
+ *   featuresRaw: Record<string, Record<string, string[]>>,
+ *   similarSuggestion: { displayName: string, href: string }[]
  * }}
  */
 export function parseDaikinrinPage(html) {
@@ -47,8 +51,24 @@ export function parseDaikinrinPage(html) {
   const taxonomy = extractTaxonomy($);
   const observations = extractObservations($);
   const externalLinks = extractExternalLinks($);
+  const habitat = extractHabitat($);
+  const season = extractSeason($);
+  const featuresRaw = extractFeaturesRaw($);
+  const similarSuggestion = extractSimilarSuggestion($);
 
-  return { scientificName, japaneseName, synonyms, taxonomy, mycoBankId, observations, externalLinks };
+  return {
+    scientificName,
+    japaneseName,
+    synonyms,
+    taxonomy,
+    mycoBankId,
+    observations,
+    externalLinks,
+    habitat,
+    season,
+    featuresRaw,
+    similarSuggestion,
+  };
 }
 
 function extractScientificName($) {
@@ -136,6 +156,123 @@ function extractObservations($) {
     }
   });
   return { domestic, overseas };
+}
+
+/**
+ * h2/h3 タイトルで絞り込んだセクションの `.trait-attributes` を dict 化。
+ * 構造: `<h3>タイトル</h3> ... .attribute-group > .attribute-name + .value-list > .value-item > .value-text`
+ * 同じ attribute-name が複数回出現する場合は配列を merge（duplicate 除去）。
+ * @param {import('cheerio').CheerioAPI} $
+ * @param {string} title - h2 or h3 の正確なテキスト（前後空白除去済で比較）
+ * @returns {Record<string, string[]>}
+ */
+export function extractTraitSection($, title) {
+  /** @type {Record<string, string[]>} */
+  const result = {};
+  $('h2, h3').each((_, el) => {
+    if ($(el).text().trim() !== title) return;
+    $(el).nextUntil('h2, h3').find('.attribute-group').each((_, grp) => {
+      const name = $(grp).find('.attribute-name').first().text().trim();
+      if (!name) return;
+      const values = [];
+      $(grp).find('.value-item').each((_, item) => {
+        const text = $(item).find('.value-text').text().trim();
+        if (text) values.push(text);
+      });
+      if (values.length === 0) return;
+      if (result[name]) {
+        const merged = new Set([...result[name], ...values]);
+        result[name] = [...merged];
+      } else {
+        result[name] = values;
+      }
+    });
+  });
+  return result;
+}
+
+/**
+ * 生息環境セクションを統制タグ dict として返す。
+ * 例: { "位置": ["群生","単生"], "基質": ["地上",...], "場所": ["森林",...] }
+ */
+function extractHabitat($) {
+  return extractTraitSection($, '生息環境');
+}
+
+// 和名の季節タグ → 月範囲。複数タグは各々返す。
+const SEASON_TO_MONTHS = {
+  春: { start_month: 3, end_month: 5 },
+  夏: { start_month: 6, end_month: 8 },
+  秋: { start_month: 9, end_month: 11 },
+  冬: { start_month: 12, end_month: 2 },
+};
+
+/**
+ * フェノロジーセクションから季節タグと月範囲を抽出。
+ * @returns {{ tags: string[], months: { start_month: number, end_month: number }[] }}
+ */
+function extractSeason($) {
+  const section = extractTraitSection($, 'フェノロジー');
+  const tagSet = new Set();
+  for (const values of Object.values(section)) {
+    for (const v of values) tagSet.add(v);
+  }
+  const months = [];
+  for (const s of ['春', '夏', '秋', '冬']) {
+    if (tagSet.has(s)) months.push(SEASON_TO_MONTHS[s]);
+  }
+  return { tags: [...tagSet], months };
+}
+
+// 大菌輪の形態記載セクション（実ページ観察で確認済）
+const MORPHO_SECTIONS = [
+  '子実体', '傘', '肉', '襞', 'ひだ',
+  '柄', 'つば', 'つぼ',
+  '胞子', '胞子紋', '担子器',
+  'シスチジア', '縁シスチジア', '側シスチジア',
+  '菌糸', '肉菌糸', '実質菌糸',
+  '臭い', '味',
+  '子実層面', '子実層托',
+  'シスチジオール',
+];
+
+/**
+ * 形態記載セクション群を統制タグ dict にまとめる。
+ * 各セクション名が最外 key、その値が attribute-name → values[] の dict。
+ * 存在しないセクションは含めない。
+ * @returns {Record<string, Record<string, string[]>>}
+ */
+function extractFeaturesRaw($) {
+  const out = {};
+  for (const title of MORPHO_SECTIONS) {
+    const section = extractTraitSection($, title);
+    if (Object.keys(section).length > 0) out[title] = section;
+  }
+  return out;
+}
+
+/**
+ * 「比較対象としてのみ掲載」セクションから大菌輪内部の種ページリンクを抽出。
+ * _genus.html は除外（属ページ）。
+ * @returns {{ displayName: string, href: string }[]}
+ */
+function extractSimilarSuggestion($) {
+  const out = [];
+  const seen = new Set();
+  $('h2').each((_, el) => {
+    if ($(el).text().trim() !== '比較対象としてのみ掲載') return;
+    $(el).nextUntil('h2').find('a').each((_, a) => {
+      const href = $(a).attr('href') || '';
+      const text = $(a).text().trim();
+      if (!/\/daikinrin\/Pages\//.test(href)) return;
+      if (/_genus\.html$/.test(href)) return;
+      if (!text) return;
+      if (seen.has(href)) return;
+      seen.add(href);
+      out.push({ displayName: text, href });
+    });
+  });
+  return out;
 }
 
 function extractExternalLinks($) {
