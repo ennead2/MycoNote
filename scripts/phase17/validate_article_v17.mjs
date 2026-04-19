@@ -30,7 +30,7 @@ const TAXONOMY_WORDS = ['綱', '亜綱', '目', '科', '属', '亜門', '門'];
 export function validatePhase17Article(article, context) {
   const errors = [];
   const warnings = [];
-  const { tier, safety, japaneseName, scientificName, synonyms = [], similarSuggestionJas = [] } = context;
+  const { tier, safety: inputSafety, japaneseName, scientificName, synonyms = [], similarSuggestionJas = [] } = context;
 
   if (!article || typeof article !== 'object') {
     errors.push('article is not an object');
@@ -43,6 +43,19 @@ export function validatePhase17Article(article, context) {
     return { errors, warnings };
   }
 
+  // 出力 safety を取得 (AI が設定したもの or 入力継承)
+  const outputSafety = article.safety || inputSafety;
+  const validSafeties = ['edible', 'caution', 'inedible', 'toxic', 'deadly', 'unknown'];
+  if (!validSafeties.includes(outputSafety)) {
+    errors.push(`invalid safety value: "${outputSafety}"`);
+  }
+
+  // mhlw 該当種は AI が safety を覆していないか
+  const mhlw = matchMhlw({ japaneseName, scientificName, synonyms });
+  if (mhlw && inputSafety !== 'unknown' && outputSafety !== inputSafety) {
+    errors.push(`CRITICAL: mhlw 該当種で AI が safety を覆した (input=${inputSafety}, output=${outputSafety})`);
+  }
+
   // 1. 文字数上限
   checkCharLimit(article, 'description', limits.description, errors);
   checkCharLimit(article, 'features', limits.features, errors);
@@ -52,25 +65,45 @@ export function validatePhase17Article(article, context) {
   checkCharLimit(article, 'poisoning_first_aid', limits.poisoning, errors);
   checkCharLimit(article, 'caution', limits.caution, errors);
 
-  // 2. safety に応じた null/非 null 整合性
-  const canEat = safety === 'edible' || safety === 'caution';
-  const canPoison = safety === 'caution' || safety === 'toxic' || safety === 'deadly';
+  // 2. 出力 safety に応じた null/非 null 整合性
+  const canEat = outputSafety === 'edible' || outputSafety === 'caution';
+  const canPoison = outputSafety === 'caution' || outputSafety === 'toxic' || outputSafety === 'deadly';
   if (!canEat && article.cooking_preservation != null) {
-    errors.push(`cooking_preservation must be null when safety=${safety} (got non-null)`);
+    errors.push(`cooking_preservation must be null when safety=${outputSafety} (got non-null)`);
   }
-  if (!canPoison && article.poisoning_first_aid != null) {
-    errors.push(`poisoning_first_aid must be null when safety=${safety} (got non-null)`);
+  if (!canPoison && article.poisoning_first_aid != null && outputSafety !== 'inedible') {
+    errors.push(`poisoning_first_aid must be null when safety=${outputSafety} (got non-null)`);
   }
-  if (safety === 'edible' && article.caution != null) {
+  if (outputSafety === 'edible' && article.caution != null) {
     errors.push(`caution must be null when safety=edible (got non-null)`);
   }
+  // 危険種で poisoning_first_aid が null なのは incomplete (再生成対象)
+  if (canPoison && article.poisoning_first_aid == null) {
+    errors.push(`poisoning_first_aid required when safety=${outputSafety} (got null)`);
+  }
+  // 食可能種で cooking_preservation が null なのも incomplete
+  if (canEat && article.cooking_preservation == null) {
+    errors.push(`cooking_preservation required when safety=${outputSafety} (got null)`);
+  }
 
-  // 3. mhlw 致命衝突
-  const mhlw = matchMhlw({ japaneseName, scientificName, synonyms });
-  if (mhlw && safety === 'edible') {
+  // 3. mhlw 致命衝突 (出力 safety で判定)
+  if (mhlw && outputSafety === 'edible') {
     errors.push(
       `CRITICAL: safety=edible but ${japaneseName} (${scientificName}) is in mhlw 19-species list (would cause lethal misidentification)`,
     );
+  }
+
+  // 4. Wikipedia JA 参照確認 (sources に wikipedia ja が含まれるか)
+  // tier 0 (WP JA あり) で sources に Wikipedia ja が無いのは未参照 → 再生成対象
+  if (tier === 0 && Array.isArray(article.sources)) {
+    const hasWpJa = article.sources.some((s) => {
+      const name = (s?.name || '').toLowerCase();
+      const url = (s?.url || '').toLowerCase();
+      return name.includes('wikipedia') && (name.includes('ja') || name.includes('日本') || url.includes('ja.wikipedia'));
+    });
+    if (!hasWpJa) {
+      errors.push('tier 0 article missing Wikipedia JA in sources (re-synthesis required)');
+    }
   }
 
   // 4. 学名が自由文に含まれる

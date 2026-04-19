@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { validatePhase17Article } from './validate_article_v17.mjs';
 
 const validArticle = {
+  safety: 'toxic',
   description: 'テスト概要。',
   features: '形態の説明。',
   cooking_preservation: null,
@@ -48,7 +49,7 @@ describe('validatePhase17Article', () => {
 
   it('safety=edible + cooking_preservation != null は OK', () => {
     const r = validatePhase17Article(
-      { ...validArticle, cooking_preservation: '美味', caution: null, poisoning_first_aid: null },
+      { ...validArticle, safety: 'edible', cooking_preservation: '美味', caution: null, poisoning_first_aid: null },
       { tier: 0, safety: 'edible', japaneseName: 'x', scientificName: 'X y' },
     );
     expect(r.errors).toEqual([]);
@@ -56,25 +57,23 @@ describe('validatePhase17Article', () => {
 
   it('safety=edible + poisoning_first_aid != null → error', () => {
     const r = validatePhase17Article(
-      { ...validArticle, poisoning_first_aid: '毒症状', caution: null },
+      { ...validArticle, safety: 'edible', cooking_preservation: '美味', poisoning_first_aid: '毒症状', caution: null },
       { tier: 0, safety: 'edible', japaneseName: 'x', scientificName: 'X y' },
     );
     expect(r.errors.some((e) => e.includes('poisoning_first_aid must be null'))).toBe(true);
   });
 
-  it('mhlw 該当 + safety=edible は CRITICAL error', () => {
-    const r = validatePhase17Article(validArticle, {
-      tier: 0,
-      safety: 'edible',
-      japaneseName: 'カエンタケ',
-      scientificName: 'Trichoderma cornu-damae',
-    });
+  it('mhlw 該当 + AI が safety=edible に変更 は CRITICAL error', () => {
+    const r = validatePhase17Article(
+      { ...validArticle, safety: 'edible', cooking_preservation: '美味', poisoning_first_aid: null, caution: null },
+      { tier: 0, safety: 'unknown', japaneseName: 'カエンタケ', scientificName: 'Trichoderma cornu-damae' },
+    );
     expect(r.errors.some((e) => e.includes('CRITICAL'))).toBe(true);
   });
 
   it('自由文に学名が含まれるとエラー', () => {
     const r = validatePhase17Article(
-      { ...validArticle, description: 'Amanita test は毒。', caution: null, poisoning_first_aid: null },
+      { ...validArticle, safety: 'edible', cooking_preservation: '美味', description: 'Amanita test は毒。', caution: null, poisoning_first_aid: null },
       { tier: 0, safety: 'edible', japaneseName: 'x', scientificName: 'Amanita test' },
     );
     expect(r.errors.some((e) => e.includes('scientific name'))).toBe(true);
