@@ -33,7 +33,8 @@ export const RULES_BLOCK_V17 = `1. ソースに明示的に書かれていない
    - edible: poisoning_first_aid = null、caution = null
    - inedible: cooking/poisoning は null、注意事項があれば caution に書く
    - unknown (情報本当に無い場合のみ): すべて null、notes に「ソースに食毒記載なし」と明記
-9. features は提示された features_raw (統制タグ dict) を散文に置き換えるだけ。新情報の追加禁止`;
+9. features は提示された features_raw (統制タグ dict) を散文に置き換えるだけ。新情報の追加禁止
+10. **JSON 構文厳守**: 文字列内に半角ダブルクオート " を含める場合は必ず \\" でエスケープ、または全角「」や単引用符 ' に置き換える。出力 JSON が JSON.parse で valid でないと致命。英名や通称は「poor man's licorice」のように全角「」推奨`;
 
 export const SCHEMA_V17 = `{
   "safety": "edible | caution | inedible | toxic | deadly | unknown (ルール 7 に従う)",
