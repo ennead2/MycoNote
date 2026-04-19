@@ -153,15 +153,34 @@ export function validatePhase17Article(article, context) {
     warnings.push(`regions has ${article.regions.length} entries (>8), consider consolidation`);
   }
 
-  // 7. sources 必須
+  // 7. sources 必須 + ref 整合チェック
   if (!Array.isArray(article.sources) || article.sources.length === 0) {
     errors.push('sources missing or empty');
   } else {
+    const refSet = new Set();
     article.sources.forEach((s, i) => {
       if (!s?.name || !s?.url) {
         errors.push(`sources[${i}] missing name or url`);
       }
+      if (s?.ref !== i + 1) {
+        errors.push(`sources[${i}].ref must equal ${i + 1} (got ${s?.ref})`);
+      }
+      if (s?.ref !== undefined) refSet.add(s.ref);
     });
+    // 本文で使った参照番号が sources に存在するか
+    const usedRefs = new Set();
+    for (const f of FREE_TEXT_FIELDS) {
+      const v = article[f];
+      if (typeof v !== 'string') continue;
+      for (const m of (v.match(/\[(\d+)\]/g) || [])) {
+        usedRefs.add(parseInt(m.slice(1, -1), 10));
+      }
+    }
+    for (const r of usedRefs) {
+      if (!refSet.has(r)) {
+        errors.push(`本文で [${r}] が使われているが sources.ref に ${r} が存在しない`);
+      }
+    }
   }
 
   return { errors, warnings };

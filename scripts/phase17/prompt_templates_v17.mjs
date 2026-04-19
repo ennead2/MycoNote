@@ -20,7 +20,7 @@ export const RULES_BLOCK_V17 = `1. ソースに明示的に書かれていない
 2. 自由文フィールドは散文のみ。箇条書き・番号リスト・表を禁止
 3. 各自由文フィールドの文字数上限を厳守（超過時は切り詰めず、合成をやり直す）
 4. 自由文に学名・分類階層（門綱目科属）を書かない
-5. 自由文では段落末尾に [1][2] 形式で出典番号
+5. 自由文では段落末尾に [1][2] 形式で出典番号。出典番号 N は sources 配列の ref=N に対応させる (sources[0].ref=1, sources[1].ref=2, ...)
 6. 数値は資料の値をそのまま引用
 7. **safety の扱い**:
    - 入力 safety が mhlw 判定 (toxic/deadly) または approved/phase16 由来 (edible/caution/toxic/deadly/inedible) の場合は **その値を出力 safety に維持**、cooking/poisoning/caution は safety に整合させる
@@ -46,7 +46,7 @@ export const SCHEMA_V17 = `{
   "regions": ["日本国内 + 主要海外 (海外地名羅列禁止)"],
   "tree_association": ["関連樹種"],
   "aliases": ["別名・旧和名・漢字表記・方言名"],
-  "sources": [{ "name": "...", "url": "...", "license": "..." }],
+  "sources": [{ "ref": 1, "name": "...", "url": "...", "license": "..." }, { "ref": 2, ... }],
   "notes": "編集判断ログ 50-200 字。safety=unknown で AI が判定した場合は判定根拠を必ず記載"
 }`;
 

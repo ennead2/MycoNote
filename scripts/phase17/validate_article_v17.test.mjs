@@ -12,7 +12,7 @@ const validArticle = {
   regions: ['日本', 'ヨーロッパ'],
   tree_association: [],
   aliases: [],
-  sources: [{ name: 'Wikipedia ja', url: 'https://ja.wikipedia.org/wiki/foo', license: 'CC BY-SA' }],
+  sources: [{ ref: 1, name: 'Wikipedia ja', url: 'https://ja.wikipedia.org/wiki/foo', license: 'CC BY-SA' }],
   notes: 'ログ',
 };
 
