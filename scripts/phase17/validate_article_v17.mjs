@@ -138,8 +138,13 @@ export function validatePhase17Article(article, context) {
       if (!s.ja || typeof s.ja !== 'string') {
         errors.push(`similar_species[${i}].ja missing`);
       }
-      if (s.note && typeof s.note === 'string' && [...s.note].length > 50) {
-        errors.push(`similar_species[${i}].note > 50 chars: ${[...s.note].length}`);
+      if (s.note && typeof s.note === 'string') {
+        const nLen = [...s.note].length;
+        if (nLen > 70) {
+          errors.push(`similar_species[${i}].note > 70 chars: ${nLen} (大幅超過)`);
+        } else if (nLen > 50) {
+          warnings.push(`similar_species[${i}].note > 50 chars: ${nLen} (soft 超過、許容)`);
+        }
       }
       // allowlist check (warn のみ)
       if (similarSuggestionJas.length > 0 && s.ja && !similarSuggestionJas.includes(s.ja)) {

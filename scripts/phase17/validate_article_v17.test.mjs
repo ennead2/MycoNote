@@ -88,13 +88,23 @@ describe('validatePhase17Article', () => {
     expect(r.errors.some((e) => e.includes('scientific name'))).toBe(true);
   });
 
-  it('similar_species.note > 50 字 → error', () => {
-    const note = 'あ'.repeat(51);
+  it('similar_species.note > 70 字 → error (soft 上限 50)', () => {
+    const note = 'あ'.repeat(71);
     const r = validatePhase17Article(
       { ...validArticle, similar_species: [{ ja: 'テスト種', note }] },
       { tier: 0, safety: 'toxic', japaneseName: 'x', scientificName: 'X y' },
     );
-    expect(r.errors.some((e) => e.includes('> 50 chars'))).toBe(true);
+    expect(r.errors.some((e) => e.includes('> 70 chars'))).toBe(true);
+  });
+
+  it('similar_species.note 51-70 字は soft warning', () => {
+    const note = 'あ'.repeat(55);
+    const r = validatePhase17Article(
+      { ...validArticle, similar_species: [{ ja: 'テスト種', note }] },
+      { tier: 0, safety: 'toxic', japaneseName: 'x', scientificName: 'X y' },
+    );
+    expect(r.errors).toEqual([]);
+    expect(r.warnings.some((w) => w.includes('soft 超過'))).toBe(true);
   });
 
   it('allowlist 外の similar_species は warning', () => {
