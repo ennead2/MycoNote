@@ -62,4 +62,8 @@ data/phase17/fetch-failures.json
 data/phase17/fetch-report.json
 data/phase17/wikipedia-availability.json
 data/phase17/inat-observations.json
+data/phase17/trait-circus-lookup.json
+data/phase17/trait-circus-missing.json
+data/phase17/mushrooms-master.v1.json
+data/phase17/mushrooms-master-stats.json
 # commit 対象: ja-name-overrides.json / article-map.json / article-map-stats.json / phase16-artifacts/
