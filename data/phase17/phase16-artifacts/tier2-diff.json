@@ -1,0 +1,816 @@
+{
+  "summary": {
+    "oldCount": 204,
+    "newCount": 167,
+    "removed": 57,
+    "added": 20,
+    "changed": 0,
+    "resynthesisTargets": 20
+  },
+  "removed": [
+    {
+      "scientificName": "Tolypocladium capitatum",
+      "japaneseName": "タンポタケ",
+      "slug": "Tolypocladium_capitatum"
+    },
+    {
+      "scientificName": "Thaxterogaster purpurascens",
+      "japaneseName": "カワムラフウセンタケ",
+      "slug": "Thaxterogaster_purpurascens"
+    },
+    {
+      "scientificName": "Polyporus squamosus",
+      "japaneseName": "アミヒラタケ",
+      "slug": "Polyporus_squamosus"
+    },
+    {
+      "scientificName": "Psilocybe fasciata",
+      "japaneseName": "アイセンボンタケ",
+      "slug": "Psilocybe_fasciata"
+    },
+    {
+      "scientificName": "Spongiporus floriformis",
+      "japaneseName": "アワビタケ",
+      "slug": "Spongiporus_floriformis"
+    },
+    {
+      "scientificName": "Panaeolus cyanescens",
+      "japaneseName": "アイゾメヒカゲタケ",
+      "slug": "Panaeolus_cyanescens"
+    },
+    {
+      "scientificName": "Lactarius zonarius",
+      "japaneseName": "アイタケ",
+      "slug": "Lactarius_zonarius"
+    },
+    {
+      "scientificName": "Russula virescens",
+      "japaneseName": "アイタケ",
+      "slug": "Russula_virescens"
+    },
+    {
+      "scientificName": "Pseudocolus fusiformis",
+      "japaneseName": "アカサンコタケ",
+      "slug": "Pseudocolus_fusiformis"
+    },
+    {
+      "scientificName": "Amanita longistriata",
+      "japaneseName": "アカハテングタケ",
+      "slug": "Amanita_longistriata"
+    },
+    {
+      "scientificName": "Hygrocybe conica",
+      "japaneseName": "アカヤマタケ",
+      "slug": "Hygrocybe_conica"
+    },
+    {
+      "scientificName": "Leccinum",
+      "japaneseName": "アカヤマドリ",
+      "slug": "Leccinum"
+    },
+    {
+      "scientificName": "Hygrocybe flavescens",
+      "japaneseName": "アキヤマタケ",
+      "slug": "Hygrocybe_flavescens"
+    },
+    {
+      "scientificName": "Boletus speciosus",
+      "japaneseName": "アケボノヤマドリタケ",
+      "slug": "Boletus_speciosus"
+    },
+    {
+      "scientificName": "Agaricomycetes",
+      "japaneseName": "アシグロタケ",
+      "slug": "Agaricomycetes"
+    },
+    {
+      "scientificName": "Suillus bovinus",
+      "japaneseName": "アミタケ",
+      "slug": "Suillus_bovinus"
+    },
+    {
+      "scientificName": "Cantharellus cibarius",
+      "japaneseName": "アンズタケ",
+      "slug": "Cantharellus_cibarius"
+    },
+    {
+      "scientificName": "Fomitopsis officinalis",
+      "japaneseName": "エブリコ",
+      "slug": "Fomitopsis_officinalis"
+    },
+    {
+      "scientificName": "Strobilomyces confusus",
+      "japaneseName": "オニイグチモドキ",
+      "slug": "Strobilomyces_confusus"
+    },
+    {
+      "scientificName": "Austroboletus gracilis",
+      "japaneseName": "クリカワヤシャイグチ",
+      "slug": "Austroboletus_gracilis"
+    },
+    {
+      "scientificName": "Amanita cokeri",
+      "japaneseName": "ササクレシロオニタケ",
+      "slug": "Amanita_cokeri"
+    },
+    {
+      "scientificName": "Polyporus umbellatus",
+      "japaneseName": "チョレイ",
+      "slug": "Polyporus_umbellatus"
+    },
+    {
+      "scientificName": "Calocera viscosa",
+      "japaneseName": "ニカワホウキタケ",
+      "slug": "Calocera_viscosa"
+    },
+    {
+      "scientificName": "Suillus grevillei",
+      "japaneseName": "ハナイグチ",
+      "slug": "Suillus_grevillei"
+    },
+    {
+      "scientificName": "Galerina marginata",
+      "japaneseName": "ヒメアジロガサ",
+      "slug": "Galerina_marginata"
+    },
+    {
+      "scientificName": "Phallus luteus",
+      "japaneseName": "ウスキキヌガサタケ",
+      "slug": "Phallus_luteus"
+    },
+    {
+      "scientificName": "Tricholoma pardinum",
+      "japaneseName": "ヒョウモンクロシメジ",
+      "slug": "Tricholoma_pardinum"
+    },
+    {
+      "scientificName": "Clavulinopsis aurantiocinnabarina",
+      "japaneseName": "アカナギナタタケ",
+      "slug": "Clavulinopsis_aurantiocinnabarina"
+    },
+    {
+      "scientificName": "Neurospora crassa",
+      "japaneseName": "アカパンカビ",
+      "slug": "Neurospora_crassa"
+    },
+    {
+      "scientificName": "Tetrapyrgos nigripes",
+      "japaneseName": "アシグロホウライタケ",
+      "slug": "Tetrapyrgos_nigripes"
+    },
+    {
+      "scientificName": "Boletellus elatus",
+      "japaneseName": "アシナガイグチ",
+      "slug": "Boletellus_elatus"
+    },
+    {
+      "scientificName": "Caloboletus calopus",
+      "japaneseName": "アシベニイグチ",
+      "slug": "Caloboletus_calopus"
+    },
+    {
+      "scientificName": "Pleurotus cystidiosus",
+      "japaneseName": "アワビタケ",
+      "slug": "Pleurotus_cystidiosus"
+    },
+    {
+      "scientificName": "Agaricus arvensis",
+      "japaneseName": "オオハラタケ",
+      "slug": "Agaricus_arvensis"
+    },
+    {
+      "scientificName": "Gomphus",
+      "japaneseName": "オオムラサキアンズタケ",
+      "slug": "Gomphus"
+    },
+    {
+      "scientificName": "Catacauma",
+      "japaneseName": "オオモミタケ",
+      "slug": "Catacauma"
+    },
+    {
+      "scientificName": "Chorioactis geaster",
+      "japaneseName": "キリノミタケ",
+      "slug": "Chorioactis_geaster"
+    },
+    {
+      "scientificName": "Boletus auripes",
+      "japaneseName": "コガネヤマドリ",
+      "slug": "Boletus_auripes"
+    },
+    {
+      "scientificName": "Amanita kotohiraensis",
+      "japaneseName": "コトヒラシロテングタケ",
+      "slug": "Amanita_kotohiraensis"
+    },
+    {
+      "scientificName": "Galerina",
+      "japaneseName": "コフキサルノコシカケ",
+      "slug": "Galerina"
+    },
+    {
+      "scientificName": "Entoloma cyanonigrum",
+      "japaneseName": "コンイロイッポンシメジ",
+      "slug": "Entoloma_cyanonigrum"
+    },
+    {
+      "scientificName": "Amanita verna",
+      "japaneseName": "シロタマゴテングタケ",
+      "slug": "Amanita_verna"
+    },
+    {
+      "scientificName": "Pleurocybella porrigens",
+      "japaneseName": "スギヒラタケ",
+      "slug": "Pleurocybella_porrigens"
+    },
+    {
+      "scientificName": "Microstoma aggregatum",
+      "japaneseName": "センボンキツネノサカズキ",
+      "slug": "Microstoma_aggregatum"
+    },
+    {
+      "scientificName": "Amanita phalloides",
+      "japaneseName": "タマゴテングタケ",
+      "slug": "Amanita_phalloides"
+    },
+    {
+      "scientificName": "Elaphomyces granulatus",
+      "japaneseName": "ツチダンゴ",
+      "slug": "Elaphomyces_granulatus"
+    },
+    {
+      "scientificName": "Leucoagaricus meleagris",
+      "japaneseName": "ツブカラカサタケ",
+      "slug": "Leucoagaricus_meleagris"
+    },
+    {
+      "scientificName": "Trichoglossum hirsutum",
+      "japaneseName": "テングノメシガイ",
+      "slug": "Trichoglossum_hirsutum"
+    },
+    {
+      "scientificName": "Russula subnigricans",
+      "japaneseName": "ニセクロハツ",
+      "slug": "Russula_subnigricans"
+    },
+    {
+      "scientificName": "Clitocybe nebularis",
+      "japaneseName": "ハイイロシメジ",
+      "slug": "Clitocybe_nebularis"
+    },
+    {
+      "scientificName": "Amanita sinensis",
+      "japaneseName": "ハイカグラテングタケ",
+      "slug": "Amanita_sinensis"
+    },
+    {
+      "scientificName": "Agaricus campestris",
+      "japaneseName": "ハラタケ",
+      "slug": "Agaricus_campestris"
+    },
+    {
+      "scientificName": "Hygrocybe punicea",
+      "japaneseName": "ヒイロガサ",
+      "slug": "Hygrocybe_punicea"
+    },
+    {
+      "scientificName": "Panellus stipticus",
+      "japaneseName": "ヒメカワキタケ",
+      "slug": "Panellus_stipticus"
+    },
+    {
+      "scientificName": "Turbinellus fujisanensis",
+      "japaneseName": "フジウスタケ",
+      "slug": "Turbinellus_fujisanensis"
+    },
+    {
+      "scientificName": "Elmerina holophaea",
+      "japaneseName": "ムカシオオミダレタケ",
+      "slug": "Elmerina_holophaea"
+    },
+    {
+      "scientificName": "Lacrymaria lacrymabunda",
+      "japaneseName": "ムジナタケ",
+      "slug": "Lacrymaria_lacrymabunda"
+    }
+  ],
+  "added": [
+    {
+      "scientificName": "Rhodocollybia butyracea",
+      "japaneseName": "エセオリミキ",
+      "slug": "Rhodocollybia_butyracea",
+      "aliases": [
+        "オリミキ"
+      ],
+      "synonyms": [
+        "Agaricus bibulosus",
+        "Agaricus butyraceus",
+        "Agaricus butyraceus asemus",
+        "Agaricus butyraceus auroreus",
+        "Agaricus butyraceus communis",
+        "Agaricus butyraceus conformis",
+        "Agaricus butyraceus spongiosus",
+        "Agaricus butyraceus trichopus",
+        "Agaricus leiopus",
+        "Agaricus leiopus fuligineus",
+        "Agaricus leiopus vaccinus",
+        "Agaricus spongiosus",
+        "Agaricus thrichopus butyraceus",
+        "Collybia aurorea",
+        "Collybia bibulosa",
+        "Collybia butyracea",
+        "Collybia butyracea asema",
+        "Collybia butyracea bibulosa",
+        "Collybia butyracea butyracea",
+        "Marasmius butyraceus",
+        "Rhodocollybia butyracea butyracea"
+      ]
+    },
+    {
+      "scientificName": "Trichaleurina celebica",
+      "japaneseName": "オオゴムタケ",
+      "slug": "Trichaleurina_celebica",
+      "aliases": [],
+      "synonyms": [
+        "Galiella celebica",
+        "Bulgaria celebica",
+        "Sarcosoma celebicum",
+        "Sarcosoma globosum celebicum"
+      ]
+    },
+    {
+      "scientificName": "Mitrula paludosa",
+      "japaneseName": "カムリタケ",
+      "slug": "Mitrula_paludosa",
+      "aliases": [
+        "カンムリタケ"
+      ],
+      "synonyms": [
+        "Clavaria epiphylla",
+        "Clavaria phalloides",
+        "Clavaria spathula",
+        "Helvella aurantiaca",
+        "Leotia dicksonii",
+        "Leotia epiphylla",
+        "Leotia uliginosa",
+        "Leotia uliginosa aurantiaca",
+        "Mitrula dicksonii",
+        "Mitrula paludosa aurantiaca",
+        "Mitrula paludosa lilacinorosea",
+        "Mitrula phalloides",
+        "Mitrula phalloides aurantiaca",
+        "Mitrula phalloides castanea",
+        "Mitrula phalloides cylindrica",
+        "Mitrula phalloides pachyceps",
+        "Mitrula spathula",
+        "Mitrula uliginosa"
+      ]
+    },
+    {
+      "scientificName": "Cordyceps militaris",
+      "japaneseName": "キサナギタケ",
+      "slug": "Cordyceps_militaris",
+      "aliases": [
+        "クキジロサナギタケ",
+        "コナサナギタケ",
+        "コナサナギタケモドキ",
+        "サナギタケ",
+        "シロサナギタケ",
+        "タマサナギタケ"
+      ],
+      "synonyms": [
+        "Clavaria granulosa",
+        "Clavaria militaris",
+        "Clavaria squamosa",
+        "Coralloides clavata",
+        "Cordyceps militaris sphaerocephala",
+        "Cordyceps norvegica",
+        "Cordylia militaris",
+        "Corynesphaera militaris",
+        "Hypoxylon militare",
+        "Hypoxylon militaris",
+        "Kentrosporium militare",
+        "Kentrosporium militaris",
+        "Sphaeria militaris",
+        "Sphaeria militaris sphaerocephala",
+        "Torrubia militaris",
+        "Xylaria militaris"
+      ]
+    },
+    {
+      "scientificName": "Exidia glandulosa",
+      "japaneseName": "キツネノコンニャク",
+      "slug": "Exidia_glandulosa",
+      "aliases": [
+        "クロキクラゲ",
+        "ヒメキクラゲ"
+      ],
+      "synonyms": [
+        "Exidia truncata",
+        "Auricularia glandulosa",
+        "Auricularia truncata",
+        "Exidia glandulosa plicata",
+        "Exidia glandulosa strigosa",
+        "Exidia glandulosa levior",
+        "Exidia glandulosa scutelliformis",
+        "Exidia grambergii",
+        "Exidia impressa",
+        "Exidia neglecta",
+        "Exidia plicata",
+        "Exidia spiculosa",
+        "Exidia strigosa",
+        "Gyraria spiculosa",
+        "Peziza glandulosa",
+        "Spicularia glandulosa",
+        "Tremella atra",
+        "Tremella flaccida",
+        "Tremella glandulosa",
+        "Tremella glauca",
+        "Tremella grilletii neglecta",
+        "Tremella impressa",
+        "Tremella nigricans glandulosa",
+        "Tremella rubra",
+        "Tremella spiculosa",
+        "Tremella spiculosa glauca",
+        "Tremella spiculosa nigra",
+        "Tremella truncata"
+      ]
+    },
+    {
+      "scientificName": "Phaeolepiota aurea",
+      "japaneseName": "キナコタケ",
+      "slug": "Phaeolepiota_aurea",
+      "aliases": [
+        "コガネタケ"
+      ],
+      "synonyms": [
+        "Agaricus aureus",
+        "Agaricus aureus vahlii",
+        "Agaricus aureus herefordensis",
+        "Agaricus spectabilis",
+        "Agaricus vahlii",
+        "Cystoderma aureum",
+        "Dryophila aurea",
+        "Gymnopilus junonius spectabilis",
+        "Lepiota aurea",
+        "Lepiota pyrenaea",
+        "Phaeolepiota vahlii",
+        "Pholiota aurea",
+        "Pholiota aurea vahlii",
+        "Pholiota aurea herefordensis",
+        "Pholiota vahlii",
+        "Togaria aurea",
+        "Togaria aurea herefordensis",
+        "Togaria aurea vahlii"
+      ]
+    },
+    {
+      "scientificName": "Tremella fuciformis",
+      "japaneseName": "ギンジ",
+      "slug": "Tremella_fuciformis",
+      "aliases": [
+        "シロキクラゲ",
+        "シロキツネノコンニャク",
+        "トゲシロキクラゲ"
+      ],
+      "synonyms": [
+        "Nakaiomyces nipponicus",
+        "Tremella nipponica"
+      ]
+    },
+    {
+      "scientificName": "Helvella lacunosa",
+      "japaneseName": "クロアミガサタケ",
+      "slug": "Helvella_lacunosa",
+      "aliases": [
+        "クロノボリリュウ",
+        "コクロアミガサケ",
+        "コクロアミガサタケ",
+        "コクロノボリリュウ",
+        "ヤマネノボリリュウタケ"
+      ],
+      "synonyms": [
+        "Boletus leucophaeus",
+        "Costapeda lacunosa",
+        "Helvella cinerea",
+        "Helvella costata",
+        "Helvella crispa pallescens",
+        "Helvella infula nuda",
+        "Helvella lacunosa cerebriformis",
+        "Helvella lacunosa javanica",
+        "Helvella lacunosa major",
+        "Helvella lacunosa minor",
+        "Helvella lacunosa pallida",
+        "Helvella lacunosa pallidip",
+        "Helvella lacunosa sulcata",
+        "Helvella lacunosa tricuspidata",
+        "Helvella leucophaea",
+        "Helvella manacella",
+        "Helvella mitra",
+        "Helvella mitra alba",
+        "Helvella mitra albicans",
+        "Helvella mitra cinerascens",
+        "Helvella mitra communis",
+        "Helvella mitra monacella",
+        "Helvella mitra nigrescens",
+        "Helvella mitra nuda",
+        "Helvella mitra pratensis",
+        "Helvella monacella",
+        "Helvella pallescens",
+        "Helvella scutula cinerea",
+        "Helvella subcostata",
+        "Helvella sulcata",
+        "Helvella sulcata cinerea",
+        "Helvella sulcata fusca",
+        "Helvella sulcata crispata",
+        "Helvella sulcata gracilior",
+        "Helvella sulcata lachnopoda",
+        "Helvella sulcata leucopus",
+        "Helvella sulcata minor",
+        "Helvella sulcata pallens",
+        "Helvella sulcata pallescens",
+        "Helvella sulcata pallidipes",
+        "Krombholziella leucophaea",
+        "Lachnea leucophaea",
+        "Phallus brunneus"
+      ]
+    },
+    {
+      "scientificName": "Galerina australe",
+      "japaneseName": "コフキサルノコシカケ",
+      "slug": "Galerina_australe",
+      "aliases": [],
+      "synonyms": []
+    },
+    {
+      "scientificName": "Ganoderma lucidum",
+      "japaneseName": "サイワイタケ",
+      "slug": "Ganoderma_lucidum",
+      "aliases": [
+        "マンネンタケ",
+        "レイシ"
+      ],
+      "synonyms": [
+        "Agarico-igniarium trulla",
+        "Agaricus lignosus",
+        "Agaricus pseudoboletus",
+        "Boletus castaneus",
+        "Boletus crustatus",
+        "Boletus flabelliformis",
+        "Boletus laccatus",
+        "Boletus lucidus",
+        "Boletus ramulosum flabelliformis",
+        "Boletus rugosus",
+        "Boletus supinus",
+        "Boletus supinus castaneus",
+        "Boletus verniceus",
+        "Boletus vernicosus",
+        "Fomes amboinensis japonicus",
+        "Fomes japonicus",
+        "Fomes lucidus",
+        "Fomes lucidus badius",
+        "Fomes lucidus exquisitus",
+        "Fomes lucidus nicotianae",
+        "Fomes lucidus resinosus",
+        "Fomes resinaceus martellii",
+        "Ganoderma japonicum",
+        "Ganoderma laccatum",
+        "Ganoderma lucidum badium",
+        "Ganoderma lucidum japonicum",
+        "Ganoderma lucidum nicotianae",
+        "Ganoderma lucidum orbiformis",
+        "Ganoderma lucidum resinaceum",
+        "Ganoderma lucidum resinosum",
+        "Ganoderma mongolicum",
+        "Ganoderma nitens",
+        "Ganoderma ostreatum",
+        "Ganoderma ostreatum hemicycla",
+        "Ganoderma pseudoboletus",
+        "Ganoderma resinaceum martellii",
+        "Grifola lucida",
+        "Phaeoporus lucidus",
+        "Placodes lucidus",
+        "Polyporites lucidus",
+        "Polyporus japonicus",
+        "Polyporus laccatus",
+        "Polyporus laccatus laccatus",
+        "Polyporus laccatus semipatera",
+        "Polyporus lucidus",
+        "Polyporus lucidus japonicus",
+        "Polyporus lucidus exquisitus",
+        "Polyporus lucidus nicotianae",
+        "Pyrenium vernicosum",
+        "Scindalma japonicum"
+      ]
+    },
+    {
+      "scientificName": "Cortinarius caperatus",
+      "japaneseName": "ショウウンジ",
+      "slug": "Cortinarius_caperatus",
+      "aliases": [
+        "ショウゲンジ"
+      ],
+      "synonyms": [
+        "Agaricus caperatus",
+        "Dryophila caperata",
+        "Hylophila caperata",
+        "Lepiota caperata",
+        "Pholiota caperata",
+        "Rozites caperatus",
+        "Togaria caperata"
+      ]
+    },
+    {
+      "scientificName": "Helvella crispa",
+      "japaneseName": "シロノボリリュウ",
+      "slug": "Helvella_crispa",
+      "aliases": [
+        "ノボリリュウ",
+        "ノボリリョウ"
+      ],
+      "synonyms": []
+    },
+    {
+      "scientificName": "Panaeolus antillarum",
+      "japaneseName": "ジンガサタケモドキ",
+      "slug": "Panaeolus_antillarum",
+      "aliases": [
+        "ツヤマグソタケ"
+      ],
+      "synonyms": [
+        "Agaricus antillarum",
+        "Agaricus antillarum praelonga",
+        "Anellaria antillarum",
+        "Hypholoma capnolepis",
+        "Panaeolus eburneus",
+        "Panaeolus ovatus",
+        "Panaeolus sepulcralis",
+        "Panaeolus solidipes",
+        "Panaeolus teutonicus",
+        "Psilocybe antillarum",
+        "Psilocybe fortunata"
+      ]
+    },
+    {
+      "scientificName": "Catacauma ventricosum",
+      "japaneseName": "センダイサマツ",
+      "slug": "Catacauma_ventricosum",
+      "aliases": [],
+      "synonyms": []
+    },
+    {
+      "scientificName": "Neolentinus lepideus",
+      "japaneseName": "ツバマツオウジ",
+      "slug": "Neolentinus_lepideus",
+      "aliases": [
+        "マツオウジ"
+      ],
+      "synonyms": [
+        "Neolentinus suffrutescens",
+        "Agaricus cyprinus",
+        "Agaricus lepideus",
+        "Agaricus polymorphus",
+        "Agaricus polymorphus ceratoides",
+        "Agaricus polymorphus proboscideus",
+        "Agaricus polymorphus tubaeformis",
+        "Agaricus serpentiformis",
+        "Agaricus suffrutescens",
+        "Agaricus tubaeformis",
+        "Amanita crispa",
+        "Clavaria thermalis",
+        "Clitocybe lepidea",
+        "Hypophyllum radiosum",
+        "Lentinus contiguus",
+        "Lentinus cryptarum",
+        "Lentinus domesticus",
+        "Lentinus gallicus",
+        "Lentinus lepideus",
+        "Lentinus lepideus contiguus",
+        "Lentinus lepideus hibernicus",
+        "Lentinus lepideus ceratoides",
+        "Lentinus lepideus tubaeformis",
+        "Lentinus magnus",
+        "Lentinus maximus",
+        "Lentinus monnardianus",
+        "Lentinus platensis",
+        "Lentinus queletii",
+        "Lentinus sitaneus",
+        "Lentinus spretus",
+        "Lentinus suffrutescens",
+        "Panus lepideus",
+        "Pleurotus lepidus",
+        "Pocillaria contigua",
+        "Pocillaria cryptarum",
+        "Pocillaria gallica",
+        "Pocillaria lepidea",
+        "Pocillaria monnardiana",
+        "Pocillaria queletii",
+        "Pocillaria sitanea",
+        "Pocillaria suffrutescens",
+        "Ramaria ceratioides",
+        "Ramaria ceratoides"
+      ]
+    },
+    {
+      "scientificName": "Pholiota nameko",
+      "japaneseName": "ナメコ",
+      "slug": "Pholiota_nameko",
+      "aliases": [],
+      "synonyms": [
+        "Collybia nameko",
+        "Kuehneromyces nameko"
+      ]
+    },
+    {
+      "scientificName": "Boletus badius",
+      "japaneseName": "ニセイロガワリ",
+      "slug": "Boletus_badius",
+      "aliases": [],
+      "synonyms": []
+    },
+    {
+      "scientificName": "Vanderbylia fraxinea",
+      "japaneseName": "ヒメツガサルノコシカケ",
+      "slug": "Vanderbylia_fraxinea",
+      "aliases": [
+        "ベッコウタケ"
+      ],
+      "synonyms": [
+        "Perenniporia fraxinea",
+        "Boletus fraxineus",
+        "Fomes cytisinus",
+        "Fomes fraxineus",
+        "Fomes ganodermicus",
+        "Fomitella fraxinea",
+        "Fomitopsis fraxinea",
+        "Fomitopsis fraxineus",
+        "Haploporus fraxineus",
+        "Ischnoderma fraxineum",
+        "Placodes fraxineus",
+        "Polyporus fraxineus",
+        "Polyporus incanus",
+        "Polystictoides leucomelas",
+        "Polystictus leucomelas",
+        "Poria fraxinea",
+        "Scindalma fraxineum",
+        "Trametes fraxinea",
+        "Ungulina fraxinea",
+        "Ungulina fraxinea albida"
+      ]
+    },
+    {
+      "scientificName": "Cortinarius violaceus",
+      "japaneseName": "ミヤマムラサキフウセンタケ",
+      "slug": "Cortinarius_violaceus",
+      "aliases": [
+        "ムラサキフウセンタケ"
+      ],
+      "synonyms": [
+        "Agaricus araneosus violaceus",
+        "Agaricus violaceus",
+        "Agaricus violaceus violaceus",
+        "Agaricus violaceus elegans",
+        "Agaricus violaceus opacus",
+        "Amanita araneosa violaceus",
+        "Cortinarius violaceus violaceus",
+        "Gomphos violaceus",
+        "Inoloma violaceum",
+        "Naematoloma udum elegans"
+      ]
+    },
+    {
+      "scientificName": "Gliophorus psittacinus",
+      "japaneseName": "ロクショウガサ",
+      "slug": "Gliophorus_psittacinus",
+      "aliases": [
+        "ワカクサタケ"
+      ],
+      "synonyms": [
+        "Hygrocybe psittacina",
+        "Agaricus cameleon",
+        "Agaricus psittacinus",
+        "Agaricus sciophanus",
+        "Gliophorus perplexus",
+        "Gliophorus psittacinus perplexus",
+        "Gliophorus psittacinus sciophanoides",
+        "Gliophorus sciophanus",
+        "Gymnopus psittacinus",
+        "Hydrocybe psittacina",
+        "Hygrocybe perplexa",
+        "Hygrocybe psittacina psittacina",
+        "Hygrocybe psittacina abietina",
+        "Hygrocybe psittacina perplexa",
+        "Hygrocybe psittacina sciophanoides",
+        "Hygrocybe sciophana",
+        "Hygrocybe sciophanoides",
+        "Hygrophorus perplexus",
+        "Hygrophorus psittacinus",
+        "Hygrophorus psittacinus abietinus",
+        "Hygrophorus psittacinus californicus",
+        "Hygrophorus sciophanoides",
+        "Hygrophorus sciophanus"
+      ]
+    }
+  ],
+  "changed": []
+}

@@ -1,0 +1,170 @@
+{
+  "description": "Phase 16 tier2 spec 生成時の除外内訳（重複・非菌類 genus）",
+  "generatedAt": "2026-04-19T01:10:13.216Z",
+  "excluded": [
+    {
+      "scientificName": "Candolleomyces candolleanus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Entoloma sarcopus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Laccaria laccata",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Aspropaxillus giganteus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Cortinarius claricolor",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Leucocybe connata",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Amanita fulva",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Phlebiopsis crassa",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Fistulina hepatica",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Retiboletus ornatipes",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Descolea flavoannulata",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Lactarius chrysorrheus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Narcissea patouillardii",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Tricholoma terreum",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Purpureocillium atypicola",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Rhizopus stolonifer",
+      "reason": "non-fungus-genus"
+    },
+    {
+      "scientificName": "Aspergillus niger",
+      "reason": "non-fungus-genus"
+    },
+    {
+      "scientificName": "Mucor mucedo",
+      "reason": "non-fungus-genus"
+    },
+    {
+      "scientificName": "Aspergillus flavus",
+      "reason": "non-fungus-genus"
+    },
+    {
+      "scientificName": "Trametes cinnabarina",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Clavaria fragilis",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Phallus impudicus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Suillus granulatus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Lactifluus volemus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Dacrymyces spathularius",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Amanita vaginata",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Desarmillaria tabescens",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Tapinella atrotomentosa",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Aureoboletus auriflammeus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Hydnophlebia chrysorhiza",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Cantharellus minor",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Rickenella fibula",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Calycina citrina",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Pseudoaustroboletus valens",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Lyophyllum shimeji",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Sarcomyxa serotina",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Lepista nuda",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Tropicoporus linteus",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Stropharia aeruginosa",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Catathelasma ventricosum",
+      "reason": "duplicate-existing-tier"
+    },
+    {
+      "scientificName": "Hymenochaete cyclolamellata",
+      "reason": "duplicate-existing-tier"
+    }
+  ]
+}

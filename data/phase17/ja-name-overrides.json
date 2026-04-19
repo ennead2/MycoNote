@@ -1,0 +1,42 @@
+[
+  {
+    "japaneseName": "キイボカサタケ",
+    "scientificName": "Entoloma murrayi",
+    "mycoBankId": 158631,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名種のため手動追加。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "アカイボカサタケ",
+    "scientificName": "Entoloma quadratum",
+    "mycoBankId": 313803,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名種のため手動追加。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "キシメジ",
+    "scientificName": "Tricholoma equestre",
+    "mycoBankId": 176119,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名食毒種のため手動追加（ヨーロッパで死亡事故報告あり）。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "ウラベニホテイシメジ",
+    "scientificName": "Entoloma sarcopus",
+    "mycoBankId": null,
+    "daikinrinHasScientificPage": false,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページも存在しない。旧 approved の data (src/data/mushrooms.json) に依存。MycoBank で別 accepted name に再分類されている可能性あり。S4 fetch 対象外、記事は approved 流用のみ。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  }
+]
