@@ -879,3 +879,51 @@ v2.1 ユーザー FB で「目/科/属だけでなく門/亜門/綱/亜綱も表
 - [x] 464/464 unit tests PASS（safety 順序テスト + SeasonCalendar セレクタ更新）
 - [x] next build 成功 (127 静的ページ)
 - [x] 大菌輪統制形質データ 112/113 種マッチ確認済
+
+
+## Phase 17: 和名-学名-シノニム 新マスタ再構築 — 進行中 (2026-04-19〜)
+
+Phase 16 S3 で発覚した構造的バグ (HIGHERRANK collapse / 菌類集覧 primary 逆転 /
+wikipedia cache 汚染) を回避するため、旧 species-ranking / candidate-pool を
+使わず、大菌輪 pages.json 4204 件を和名正典として新 master JSON を再構築する。
+
+**旧 JSON/article は不可侵**。新ファイルに全データ生成。S15 で master を
+src/data/mushrooms.json に置換する段階までは一切触らない。
+
+### 確定方針 (議論済み)
+
+- **和名一覧**: 大菌輪 pages.json の和名付き 4204 件 (unique 保証済み)
+- **学名・シノニム**: 大菌輪 HTML 由来 (案 A: 絶対正典)
+- **追加記事 source**: 大菌輪本文 + Wikipedia JA/EN + 厚労省 mhlw
+  (iNat desc / MycoBank / GBIF descriptions は無価値で不採用)
+- **tier 定義**: Wikipedia JA あり=0 / EN のみ=1 / 両方なし=2
+- **観察数**: GBIF + iNat **国内** (place_id=6803)、全 quality grade、合算
+- **手動 override**: キイボカサタケ/アカイボカサタケ/キシメジ/ウラベニホテイシメジ
+  (大菌輪に和名欠落の旧 approved 4 種、data/phase17/ja-name-overrides.json)
+- **記事表示**: 記事生成済み種のみ (未合成は図鑑に出さない、ランキングなし)
+- **既存記事流用**: 旧 approved 113 (和名一致) / phase16 non-removed (学名一致)
+
+### 実装ステップ
+
+- [x] S1: 大菌輪 parser 拡張 — extractHabitat / extractSeason / extractFeaturesRaw /
+      extractSimilarSuggestion + extractTraitSection helper (17 tests PASS)
+- [x] S2: 学名 parser — 二名法 + f. (forma) 対応、authorship 分離 (11 tests PASS)
+- [x] S3: iNat 国内観察数 fetcher — place_id=6803, 全 grade, synonyms 合算
+- [ ] S4: 大菌輪 4204 件全 fetch — バックグラウンド実行中 (1 req/sec, ~77 分)
+- [ ] S5: Wikipedia JA/EN 存在チェック — バックグラウンド実行中 (1 req/sec, ~240 分)
+- [ ] S6: iNat 観察数 fetch — バックグラウンド実行中 (1 req/sec, ~70 分)
+- [ ] S7: Trait Circus join — S4 完了後に学名で lookup
+- [x] S8: article-map.json 生成 — 4208 エントリ (approved 113 / phase16 106 / new 3989)
+- [x] S9: safety 判定 (mhlw 優先 + validator) — 12 tests PASS、deadly 8 種 / toxic 10 種
+- [x] S10: master JSON builder 骨格 — smoke test 20 件動作確認
+- [ ] S11: tier0 バッチ AI 合成 — 設計メモ docs/superpowers/plans/2026-04-19-phase17-s11-prompt-design.md
+- [ ] S12: tier0 user レビュー
+- [ ] S13: tier1 / tier2 合成 + レビュー
+- [ ] S14: 画像取得 (記事生成済のみ)
+- [ ] S15: 図鑑統合 (src/data/mushrooms.json 置換)
+
+### 参考ドキュメント
+
+- 実装計画: docs/superpowers/plans/2026-04-19-phase17-wamei-rebuild.md
+- prompt 設計: docs/superpowers/plans/2026-04-19-phase17-s11-prompt-design.md
+
