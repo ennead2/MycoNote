@@ -279,6 +279,13 @@ async function main() {
       }
     }
 
+    // override 由来の synonyms/taxonomy (大菌輪から取れない種への fallback)
+    const overrideEntry = overrideByJa.get(e.japaneseName);
+    const synonyms = synonymsFromDaikinrin.length > 0
+      ? synonymsFromDaikinrin
+      : overrideEntry?.synonymsFromGbif || [];
+    const authorshipFromOverride = overrideEntry?.gbifAuthorship || null;
+
     // 最終 master エントリ
     const master_entry = {
       id: scientificNameToSlug(e.scientificName),
@@ -287,16 +294,16 @@ async function main() {
         ja: e.japaneseName,
         scientific: parsedSci.scientificName,
         scientific_raw: parsedSci.scientificNameRaw,
-        authorship: parsedSci.authorship,
+        authorship: parsedSci.authorship || authorshipFromOverride,
         infraspecific_rank: parsedSci.infraspecificRank,
         infraspecific_epithet: parsedSci.infraspecificEpithet,
         aliases: body.aliases,
-        scientific_synonyms: synonymsFromDaikinrin,
+        scientific_synonyms: synonyms,
       },
       myco_bank_id: e.mycoBankId,
       source: e.source || 'daikinrin',
       article_origin: e.article_origin,
-      taxonomy: daikinrin?.taxonomy || null,
+      taxonomy: daikinrin?.taxonomy || overrideEntry?.taxonomyFromGbif || null,
       habitat_tags: daikinrin?.habitat || null,
       season_tags: daikinrin?.season?.tags || null,
       season: daikinrin?.season?.months || [],

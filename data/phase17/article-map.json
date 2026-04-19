@@ -38526,6 +38526,6 @@
       "file": "src/data/mushrooms.json",
       "id": "entoloma_sarcopus"
     },
-    "notes": "大菌輪に学名ページも存在しない。旧 approved の data (src/data/mushrooms.json) に依存。MycoBank で別 accepted name に再分類されている可能性あり。S4 fetch 対象外、記事は approved 流用のみ。"
+    "notes": "大菌輪 (日本産きのこ目録 2026-5) に完全不在、GBIF では ACCEPTED (speciesKey=3346727)。旧 approved (src/data/mushrooms.json) の記事本文をそのまま流用、synonyms/taxonomy は GBIF 由来で補完。図鑑に残す判断により override で保持。"
   }
 ]
