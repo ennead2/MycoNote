@@ -29,22 +29,31 @@ describe('validatePhase17Article', () => {
     expect(r.errors).toEqual([]);
   });
 
-  it('tier 0 description > 400 字 → error', () => {
-    const long = 'あ'.repeat(401);
+  it('tier 0 description > 600 字 (= 400 + soft 200) → error', () => {
+    const long = 'あ'.repeat(601);
     const r = validatePhase17Article(
       { ...validArticle, description: long },
       { tier: 0, safety: 'toxic', japaneseName: 'x', scientificName: 'X y' },
     );
-    expect(r.errors.some((e) => e.includes('description > 400'))).toBe(true);
+    expect(r.errors.some((e) => e.includes('description > 600'))).toBe(true);
   });
 
-  it('tier 2 description > 160 字 → error', () => {
-    const long = 'あ'.repeat(161);
+  it('tier 0 description 401-600 字は soft warning (error なし)', () => {
+    const long = 'あ'.repeat(450);
     const r = validatePhase17Article(
-      { ...validArticle, description: long, cooking_preservation: null },
+      { ...validArticle, description: long },
+      { tier: 0, safety: 'toxic', japaneseName: 'x', scientificName: 'X y' },
+    );
+    expect(r.errors.some((e) => e.includes('description >'))).toBe(false);
+    expect(r.warnings.some((w) => w.includes('soft 超過'))).toBe(true);
+  });
+
+  it('description < 80 字 は情報不足 warning', () => {
+    const r = validatePhase17Article(
+      { ...validArticle, description: '短い。' },
       { tier: 2, safety: 'toxic', japaneseName: 'x', scientificName: 'X y' },
     );
-    expect(r.errors.some((e) => e.includes('description > 160'))).toBe(true);
+    expect(r.warnings.some((w) => w.includes('情報不足'))).toBe(true);
   });
 
   it('safety=edible + cooking_preservation != null は OK', () => {

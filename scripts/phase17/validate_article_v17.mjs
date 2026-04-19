@@ -56,14 +56,17 @@ export function validatePhase17Article(article, context) {
     errors.push(`CRITICAL: mhlw 該当種で AI が safety を覆した (input=${inputSafety}, output=${outputSafety})`);
   }
 
-  // 1. 文字数上限
-  checkCharLimit(article, 'description', limits.description, errors);
-  checkCharLimit(article, 'features', limits.features, errors);
+  // 1. 文字数上限 (+200 までは warning、+201 から error。少なすぎる場合は warning)
+  checkCharLimit(article, 'description', limits.description, errors, warnings);
+  checkCharLimit(article, 'features', limits.features, errors, warnings);
   if (limits.cooking !== null) {
-    checkCharLimit(article, 'cooking_preservation', limits.cooking, errors);
+    checkCharLimit(article, 'cooking_preservation', limits.cooking, errors, warnings);
   }
-  checkCharLimit(article, 'poisoning_first_aid', limits.poisoning, errors);
-  checkCharLimit(article, 'caution', limits.caution, errors);
+  checkCharLimit(article, 'poisoning_first_aid', limits.poisoning, errors, warnings);
+  checkCharLimit(article, 'caution', limits.caution, errors, warnings);
+  // 情報量が極端に少ない場合は warning (低品質=情報不足の可能性)
+  checkMinContent(article, 'description', 80, warnings);
+  checkMinContent(article, 'features', 80, warnings);
 
   // 2. 出力 safety に応じた null/非 null 整合性
   const canEat = outputSafety === 'edible' || outputSafety === 'caution';
@@ -77,8 +80,8 @@ export function validatePhase17Article(article, context) {
   if (outputSafety === 'edible' && article.caution != null) {
     errors.push(`caution must be null when safety=edible (got non-null)`);
   }
-  // 危険種で poisoning_first_aid が null なのは incomplete (再生成対象)
-  if (canPoison && article.poisoning_first_aid == null) {
+  // toxic/deadly で poisoning_first_aid が null なのは incomplete (caution は optional)
+  if ((outputSafety === 'toxic' || outputSafety === 'deadly') && article.poisoning_first_aid == null) {
     errors.push(`poisoning_first_aid required when safety=${outputSafety} (got null)`);
   }
   // 食可能種で cooking_preservation が null なのも incomplete
@@ -164,7 +167,9 @@ export function validatePhase17Article(article, context) {
   return { errors, warnings };
 }
 
-function checkCharLimit(article, field, limit, errors) {
+const SOFT_OVERFLOW = 200;
+
+function checkCharLimit(article, field, limit, errors, warnings) {
   const v = article[field];
   if (v == null) return;
   if (typeof v !== 'string') {
@@ -172,7 +177,19 @@ function checkCharLimit(article, field, limit, errors) {
     return;
   }
   const len = [...v].length;
-  if (len > limit) {
-    errors.push(`${field} > ${limit} chars: ${len}`);
+  if (len > limit + SOFT_OVERFLOW) {
+    errors.push(`${field} > ${limit + SOFT_OVERFLOW} chars: ${len} (大幅超過、user 確認要)`);
+  } else if (len > limit) {
+    warnings.push(`${field} > ${limit} chars: ${len} (soft 超過、許容)`);
+  }
+}
+
+function checkMinContent(article, field, minLen, warnings) {
+  const v = article[field];
+  if (v == null) return;
+  if (typeof v !== 'string') return;
+  const len = [...v].length;
+  if (len < minLen) {
+    warnings.push(`${field} < ${minLen} chars: ${len} (情報不足の可能性、要精査)`);
   }
 }
