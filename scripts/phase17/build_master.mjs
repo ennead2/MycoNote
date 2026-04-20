@@ -41,6 +41,8 @@ const JA_OVERRIDES = join(ROOT, 'data/phase17/ja-name-overrides.json');
 const MUSHROOMS_JSON = join(ROOT, 'src/data/mushrooms.json');
 const PHASE16_ARTICLES_DIR = join(ROOT, '../hopeful-brattain-19fc23/generated/articles');
 const TRAIT_LOOKUP = join(ROOT, 'data/phase17/trait-circus-lookup.json');
+const TIER0_PHOTOS = join(ROOT, 'data/phase17/tier0-photos.json');
+const GENERATED_DIR = join(ROOT, '.cache/phase17/generated');
 
 const OUT_MASTER = join(ROOT, 'data/phase17/mushrooms-master.v1.json');
 const OUT_STATS = join(ROOT, 'data/phase17/mushrooms-master-stats.json');
@@ -117,6 +119,10 @@ function mergeArticleBody(entry, approvedByJa) {
     aliases: [],
     sources: [],
     article_notes: null,
+    image_local: null,
+    images_remote: [],
+    images_remote_credits: [],
+    safety_from_article: null,
   };
   if (entry.article_origin === 'approved') {
     const row = approvedByJa.get(entry.japaneseName);
@@ -133,6 +139,10 @@ function mergeArticleBody(entry, approvedByJa) {
         aliases: row.names?.aliases ?? [],
         sources: normalizeSources(row.sources),
         article_notes: row.notes ?? null,
+        image_local: row.image_local ?? null,
+        images_remote: row.images_remote ?? [],
+        images_remote_credits: row.images_remote_credits ?? [],
+        safety_from_article: row.safety ?? null,
       };
     }
   } else if (entry.article_origin === 'phase16') {
@@ -150,7 +160,37 @@ function mergeArticleBody(entry, approvedByJa) {
         aliases: art.names?.aliases ?? [],
         sources: normalizeSources(art.sources),
         article_notes: Array.isArray(art.notes) ? art.notes.join(' ') : (art.notes ?? null),
+        image_local: null,
+        images_remote: art.images_remote ?? [],
+        images_remote_credits: art.images_remote_credits ?? [],
+        safety_from_article: art.safety ?? null,
       };
+    }
+  } else if (entry.article_origin === 'new') {
+    // Phase 17 で AI 合成済みの記事を取り込む
+    const slug = entry.scientificName.replace(/[^A-Za-z0-9]+/g, '_');
+    const p = join(GENERATED_DIR, `${slug}.json`);
+    if (existsSync(p)) {
+      try {
+        const art = JSON.parse(readFileSync(p, 'utf-8'));
+        return {
+          description: art.description ?? null,
+          features: art.features ?? null,
+          cooking_preservation: art.cooking_preservation ?? null,
+          poisoning_first_aid: art.poisoning_first_aid ?? null,
+          caution: art.caution ?? null,
+          similar_species: art.similar_species ?? [],
+          regions: art.regions ?? [],
+          tree_association: art.tree_association ?? [],
+          aliases: art.aliases ?? [],
+          sources: normalizeSources(art.sources),
+          article_notes: art.notes ?? null,
+          image_local: null,
+          images_remote: [],
+          images_remote_credits: [],
+          safety_from_article: art.safety ?? null,
+        };
+      } catch {}
     }
   }
   return blank;
@@ -183,6 +223,7 @@ async function main() {
   const overrideByJa = new Map(overrides.map((o) => [o.japaneseName, o]));
 
   const traitLookup = loadJson(TRAIT_LOOKUP, {});
+  const tier0Photos = loadJson(TIER0_PHOTOS, {});
 
   // strict モードで未完データがあれば exit
   if (strict) {
@@ -351,6 +392,14 @@ async function main() {
       tree_association: body.tree_association,
       traits,
       sources: body.sources,
+      image_local: body.image_local,
+      images_remote: (tier0Photos[e.scientificName]?.images_remote?.length > 0)
+        ? tier0Photos[e.scientificName].images_remote
+        : body.images_remote,
+      images_remote_credits: (tier0Photos[e.scientificName]?.images_remote_credits?.length > 0)
+        ? tier0Photos[e.scientificName].images_remote_credits
+        : body.images_remote_credits,
+      images_source: tier0Photos[e.scientificName]?.source || (body.images_remote.length > 0 ? 'approved' : null),
       notes: body.article_notes ? [body.article_notes] : [],
       override_note: override?.note ?? null,
     };

@@ -210,7 +210,7 @@ export function mergeByUserJapanFirst(jpByUser, globalByUser) {
 }
 
 /** iNaturalist Research Grade 写真。ユーザー分散最優先、Japan 観察は同順位内で先出し。 */
-async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX_PHOTOS) {
+export async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX_PHOTOS) {
   const candidates = [scientificName, ...synonyms];
 
   for (const candidate of candidates) {
