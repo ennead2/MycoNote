@@ -42,7 +42,8 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
     ...galleryCredits,
   ];
   // 仕様上 v2 種は被り無し前提。SeasonBar は最初の range を表示。
-  const primarySeason = mushroom.season[0];
+  // Phase 17 で季節データ欠落種が増えたため optional chaining でガード。
+  const primarySeason = mushroom.season?.[0];
 
   return (
     <div className="max-w-lg mx-auto px-4 py-4 space-y-6">
@@ -153,11 +154,13 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
         <p className="text-sm text-washi-muted leading-relaxed">{renderColorText(mushroom.features)}</p>
       </div>
 
-      {/* 6. Season bar */}
-      <div>
-        <SectionHeading>{UI_TEXT.zukan.season}</SectionHeading>
-        <SeasonBar startMonth={primarySeason.start_month} endMonth={primarySeason.end_month} />
-      </div>
+      {/* 6. Season bar (季節情報あり種のみ表示) */}
+      {primarySeason && (
+        <div>
+          <SectionHeading>{UI_TEXT.zukan.season}</SectionHeading>
+          <SeasonBar startMonth={primarySeason.start_month} endMonth={primarySeason.end_month} />
+        </div>
+      )}
 
       {/* 7. Habitat tags */}
       <div>
@@ -223,20 +226,28 @@ export function MushroomDetail({ mushroom }: MushroomDetailProps) {
       <div>
         <SectionHeading>{UI_TEXT.zukan.sources}</SectionHeading>
         <ul className="space-y-1.5">
-          {mushroom.sources.map((src, i) => (
-            <li key={i} className="text-xs">
-              <a
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-moss-light hover:text-washi-cream transition-colors"
+          {mushroom.sources.map((src, i) => {
+            const ref = (src as unknown as { ref?: number }).ref ?? i + 1;
+            return (
+              <li
+                key={i}
+                id={`src-${ref}`}
+                className="text-xs scroll-mt-20 target:bg-soil-elevated target:rounded-md target:px-1"
               >
-                <span>{src.name}</span>
-                <ExternalLink size={11} aria-hidden="true" />
-              </a>
-              <span className="ml-2 mono-data text-[10px] text-washi-dim">{src.license}</span>
-            </li>
-          ))}
+                <span className="mono-data text-moss-light mr-2">[{ref}]</span>
+                <a
+                  href={src.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-moss-light hover:text-washi-cream transition-colors"
+                >
+                  <span>{src.name}</span>
+                  <ExternalLink size={11} aria-hidden="true" />
+                </a>
+                <span className="ml-2 mono-data text-[10px] text-washi-dim">{src.license}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
 

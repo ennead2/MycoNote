@@ -117,7 +117,7 @@ async function fetchWithRetry(url, opts = {}, retries = 3) {
 }
 
 /** Wikipedia 代表画像: ja(和名) → ja(学名) → ja(synonym) → en(学名) の優先順位。 */
-async function getWikipediaImage(jaName, scientificName, synonyms = []) {
+export async function getWikipediaImage(jaName, scientificName, synonyms = []) {
   const sources = [
     { lang: 'ja', title: jaName },
     { lang: 'ja', title: scientificName },
@@ -245,7 +245,7 @@ export async function getInatPhotos(scientificName, synonyms = [], maxPhotos = I
   return { photos: [], matchedName: null };
 }
 
-async function downloadAndConvert(url, outputPath) {
+export async function downloadAndConvert(url, outputPath) {
   const res = await fetchWithRetry(url);
   if (!res) throw new Error('Download returned null');
 

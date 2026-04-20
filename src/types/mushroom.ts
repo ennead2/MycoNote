@@ -53,6 +53,8 @@ export interface SimilarSpecies {
 }
 
 export interface SourceCitation {
+  /** 出典参照番号 (本文中の [N] と対応)。1-based。 */
+  ref?: number;
   name: string;
   url: string;
   license: string;
