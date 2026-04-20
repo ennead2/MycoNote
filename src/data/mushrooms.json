@@ -225,7 +225,7 @@
         "Psalliota leucotricha"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [],
     "habitat": [
       "森林",
@@ -477,7 +477,7 @@
         "Psalliota hortensis var. bispora"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -744,7 +744,7 @@
         "Psalliota campestris"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -2072,7 +2072,7 @@
         "Amanita cokeri f. roseotincta"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -2425,7 +2425,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -3469,7 +3469,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -3652,7 +3652,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -3815,7 +3815,7 @@
         "Amanitopsis longistriata"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -4278,7 +4278,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -4480,7 +4480,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -5157,7 +5157,7 @@
         "Venenarius phalloides"
       ]
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -5417,7 +5417,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -6253,7 +6253,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -6448,7 +6448,7 @@
         "Amplariella spissacea"
       ]
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -7151,7 +7151,7 @@
         "Agaricus vaginatus var. albus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -7939,7 +7939,7 @@
         "Amidella volvata"
       ]
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 7,
@@ -8228,7 +8228,7 @@
         "Omphalia clavipes var. comitialis"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 9,
@@ -8794,7 +8794,7 @@
         "Armillaria mellea var. nipponica"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -9710,7 +9710,7 @@
         "Tremella caraganae"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -10376,7 +10376,7 @@
         "Tylopilus gracilis"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -11655,7 +11655,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -12224,7 +12224,7 @@
         "Suillus speciosus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [],
     "regions": [
@@ -12389,7 +12389,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -12549,7 +12549,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -12862,7 +12862,7 @@
         "Phaeobulgaria polymorpha"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -13044,7 +13044,7 @@
         "Tubiporus calopus"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -13227,7 +13227,7 @@
         "Merisma viscosum"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 9,
@@ -14161,7 +14161,7 @@
         "Cantharellus natarajanii"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [],
     "habitat": [],
     "regions": [
@@ -14529,7 +14529,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -14897,7 +14897,7 @@
         "Trametes retirugus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "針葉樹林",
@@ -15149,7 +15149,7 @@
         "Cetraria islandica subsp. orientalis"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [],
     "regions": [
@@ -16943,7 +16943,7 @@
         "Clavaria miyabeana"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -17081,7 +17081,7 @@
         "Clavaria zollingeri"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -17656,7 +17656,7 @@
         "Tricholoma sordidum"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -18243,7 +18243,7 @@
         "Pselliophora atramentaria"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -18478,7 +18478,7 @@
         "Agaricus cylindricus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -18717,7 +18717,7 @@
         "Xylaria militaris"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -19057,7 +19057,7 @@
         "Togaria caperata"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -19441,7 +19441,7 @@
         "Inoloma violaceum"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 3,
@@ -19649,7 +19649,7 @@
         "Sterbeeckia cornucopioides"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -22151,7 +22151,7 @@
         "Phallus luteus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 9,
@@ -23810,7 +23810,7 @@
         "Rhodophyllus murrayi f. albus"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -24117,7 +24117,7 @@
         "Rhodophyllus subnitidus f. cyanoniger"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -26856,7 +26856,7 @@
         "Hygrophorus psittacinus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -28544,7 +28544,7 @@
         "Physomitra esculenta"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -28936,7 +28936,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [],
     "habitat": [
       "森林",
@@ -29242,7 +29242,7 @@
         "Phallus crispus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -29437,7 +29437,7 @@
         "Costapeda lacunosa"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -29949,7 +29949,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "クリ属",
@@ -30714,7 +30714,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "広葉樹林",
@@ -31255,7 +31255,7 @@
         "Hygrophorus hyacinthus"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -31658,7 +31658,7 @@
         "Pseudohygrocybe punicea"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -31833,7 +31833,7 @@
         "Tricholoma russula"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 9,
@@ -32637,7 +32637,7 @@
         "Xerocomus badius"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "針葉樹林",
@@ -33385,7 +33385,7 @@
         "Xanthochrous obliquus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [],
     "habitat": [
       "広葉樹林",
@@ -34231,7 +34231,7 @@
         "Psathyrella velutina"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -35404,7 +35404,7 @@
         "Lactarius piperatus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -36014,7 +36014,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -36441,7 +36441,7 @@
         "Calvatia nipponica"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -36590,7 +36590,7 @@
         "Ungulina officinalis"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [],
     "habitat": [
       "針葉樹林",
@@ -36799,7 +36799,7 @@
         "Trachypus scaber"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -39846,7 +39846,7 @@
         "Mastocephalus procerus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -40113,7 +40113,7 @@
         "Psalliota bresadolae"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -41520,7 +41520,7 @@
         "Morilla conica"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -41956,7 +41956,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [],
     "habitat": [
       "広葉樹林",
@@ -42894,7 +42894,7 @@
         "Hydnum tapeinum"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 9,
@@ -43250,7 +43250,7 @@
         "Pocillaria suffrutescens"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 3,
@@ -44401,7 +44401,7 @@
         "Psilocybe antillarum"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 3,
@@ -44645,7 +44645,7 @@
         "Psilocybe vernalis"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 3,
@@ -44826,7 +44826,7 @@
         "Copelandia cyanescens"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [],
     "habitat": [
       "草地",
@@ -47169,7 +47169,7 @@
         "Togaria aurea var. vahlii"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -47616,7 +47616,7 @@
         "Ulocolla foliacea"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -48420,7 +48420,7 @@
         "Pholiota aurivella var. cerifera"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -49272,7 +49272,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -50122,7 +50122,7 @@
         "Pleurotus cornucopiae var. citrinopileatus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -50299,7 +50299,7 @@
         "Pleurotus fuscus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [],
     "regions": [
@@ -50728,7 +50728,7 @@
         "Pleurotus ostreatus var. pulmonarius"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -51309,7 +51309,7 @@
         "Polyporus ramosissimus"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -54146,7 +54146,7 @@
         "Corallium botrytis"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 9,
@@ -55335,7 +55335,7 @@
         "Leccinum extremiorientale"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -56865,7 +56865,7 @@
         "Lactarelis nigricans"
       ]
     },
-    "safety": "unknown",
+    "safety": "deadly",
     "season": [
       {
         "start_month": 6,
@@ -57119,7 +57119,7 @@
         "Tricholoma opiparum"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -57535,7 +57535,7 @@
         "Russula virescens var. albidocitrina"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -59086,7 +59086,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -60200,7 +60200,7 @@
       ],
       "scientific_synonyms": []
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -60757,7 +60757,7 @@
         "Stropharia sanguineopurpurea"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -61017,7 +61017,7 @@
         "Viscipellis bovina"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -61520,7 +61520,7 @@
         "Viscipellis flava var. flava"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -61945,7 +61945,7 @@
         "Cornicularia sulcata"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "樹皮"
@@ -62653,7 +62653,7 @@
         "Phlegmacium purpurascens"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 6,
@@ -62831,7 +62831,7 @@
         "Cortinarius tenuipes"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 9,
@@ -63504,7 +63504,7 @@
         "Tremella nipponica"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 3,
@@ -66231,7 +66231,7 @@
         "Tricholoma pardalotum"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 9,
@@ -66398,7 +66398,7 @@
         "Melanoleuca portentosa"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [
       {
         "start_month": 9,
@@ -66580,7 +66580,7 @@
         "Agaricus saponaceus var. squamosus"
       ]
     },
-    "safety": "unknown",
+    "safety": "caution",
     "season": [
       {
         "start_month": 6,
@@ -67521,7 +67521,7 @@
         "Neurophyllum fujisanense"
       ]
     },
-    "safety": "unknown",
+    "safety": "toxic",
     "season": [
       {
         "start_month": 6,
@@ -68046,7 +68046,7 @@
         "Gyrophora esculenta"
       ]
     },
-    "safety": "unknown",
+    "safety": "edible",
     "season": [],
     "habitat": [
       "沿岸部"
