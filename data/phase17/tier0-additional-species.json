@@ -1,0 +1,352 @@
+{
+  "description": "大菌輪に和名エントリが無いが重要な種を tier0 として追加するためのひな形 + 追加種本体。各 species 要素は data/phase17/mushrooms-v3.json と同一スキーマ（=メインへ統合したときの最終形態）で記述する。article_origin は 'user_added' 固定。",
+  "schema_reference": "data/phase17/mushrooms-v3.json",
+  "conventions": {
+    "id": "scientificName を小文字 snake_case に変換（例: 'Boletus reticulatus' → 'boletus_reticulatus'）",
+    "tier": "必ず 0 固定",
+    "article_origin": "'user_added' 固定（新タグ。既存の 'new'/'approved'/'phase16' と区別する）",
+    "names.ja": "推奨カタカナ和名（学名カナ読みでも、独自新称でも可）。迷ったら属の和名 + '属の一種' で暫定",
+    "names.scientific": "author を含まない純粋な学名（例: 'Boletus reticulatus'）",
+    "names.aliases": "別名・同義語・地方名。無ければ []",
+    "names.scientific_synonyms": "MycoBank / Species Fungorum 準拠の synonym。無ければ []",
+    "safety": "'edible' | 'caution' | 'inedible' | 'toxic' | 'deadly' | 'unknown' のいずれか",
+    "season.start_month/end_month": "発生期。複数期ある場合は配列で複数要素（例: 春と秋）",
+    "habitat": "生息環境の短い名詞句。例: ['広葉樹林','針葉樹林','草地']",
+    "regions": "主要分布域。例: ['日本','北半球温帯','ヨーロッパ']",
+    "description": "Wikipedia + 原著論文等から 300〜600 字程度で総説。出典番号は [1][2] 形式で末尾に付与",
+    "features": "形態的特徴（傘/柄/ひだ/胞子/発生期 など）。200〜500 字。出典番号付き",
+    "cooking_preservation": "食 or 条件付食のとき必須。それ以外は null",
+    "poisoning_first_aid": "toxic/deadly のとき必須。それ以外は null",
+    "caution": "注意点（類似毒種・加熱必須など）。無ければ null",
+    "similar_species[].ja": "和名。同属別種で既に v3 にある場合は .id を付けて slug リンク",
+    "similar_species[].note": "区別点・毒性注記",
+    "similar_species[].id": "（任意）v3 内の slug を正確に一致させること",
+    "sources[].ref": "1,2,3... と昇順で description/features 内の [n] と対応させる",
+    "sources[].license": "CC BY-SA 4.0 / CC BY 4.0 / Public Domain など。要記載",
+    "sources_daikinrin_rule": "大菌輪が和名なしでも学名ベースで記事を持つ種は sources に含めてよい（その場合 source_availability.daikinrin=true）。article-map.json 未収録なら含めず daikinrin=false。",
+    "image_local": "'/images/mushrooms/<id>.webp' を配備したら設定。無ければ null",
+    "images_remote": "iNaturalist photos/<id>/medium.<ext> URL 配列。fetch_tier0_photos.mjs で後埋め可",
+    "images_remote_credits": "images_remote と同じ順序で (c) user, CC BY-* 表記を並べる",
+    "taxonomy": "{phylum, subphylum?, class, subclass?, order, family, genus} の {latin, jp} pair。jp 不明は空文字 ''",
+    "tree_association": "外生菌根性の寄主樹種。腐生菌は []",
+    "notes": "入力 safety の判定根拠、出典選択の根拠、MHLW 19 種該当判定、daikinrin 有無の調査結果を必ず記載",
+    "myco_bank_id": "MycoBank 番号 (int)。未確認なら null でよい（後で fill）",
+    "observations.gbif.domestic": "GBIF 日本産観察件数。fetch スクリプトで後埋め可",
+    "observations.inat.domestic": "iNaturalist 日本産観察件数。fetch スクリプトで後埋め可",
+    "source_availability.daikinrin": "学名ベースで 大菌輪 記事があれば true、無ければ false",
+    "source_availability.wikipedia_ja": "Wikipedia 日本語版に記事があれば true",
+    "source_availability.wikipedia_en": "Wikipedia 英語版に記事があれば true",
+    "source_availability.mhlw": "厚労省 19 種に該当すれば true",
+    "traits": "（任意）Phase 17 traits 集計。手動追加時は省略可"
+  },
+  "editedBy": [
+    {
+      "at": "2026-04-20",
+      "who": "phase17-additional-init",
+      "note": "大菌輪に和名エントリが無い重要種を tier0 に追加するための枠組みを新規作成"
+    },
+    {
+      "at": "2026-04-20",
+      "who": "phase17-additional-v1",
+      "note": "ヤマドリタケモドキ / クリタケ を追加（article-map 未収録のため daikinrin=false）"
+    }
+  ],
+  "species": [
+    {
+      "id": "boletus_reticulatus",
+      "tier": 0,
+      "names": {
+        "ja": "ヤマドリタケモドキ",
+        "scientific": "Boletus reticulatus",
+        "aliases": [
+          "山鳥茸擬",
+          "summer cep"
+        ],
+        "scientific_synonyms": [
+          "Boletus aestivalis",
+          "Boletus edulis subsp. reticulatus"
+        ]
+      },
+      "safety": "edible",
+      "season": [
+        {
+          "start_month": 6,
+          "end_month": 10
+        }
+      ],
+      "habitat": [
+        "広葉樹林",
+        "ブナ科樹林",
+        "温暖湿潤地"
+      ],
+      "regions": [
+        "日本",
+        "ヨーロッパ",
+        "北半球温帯"
+      ],
+      "description": "ヤマドリタケモドキはイグチ目イグチ科ヤマドリタケ属の食用きのこで、ヨーロッパで珍重されるヤマドリタケ（Boletus edulis）の近縁種である。北半球の温帯に広く分布し、日本でも広葉樹林で比較的よく見られる。ブナ、コナラ、クヌギ、ミズナラなど主にブナ科樹木と外生菌根を形成し、温かく湿度の高い環境を好む。夏の初めから秋の終わりにかけて発生し、ヨーロッパでは 'summer cep' と呼ばれ市場に流通する。本家ヤマドリタケよりも肉はやや柔らかいが、イタリアのポルチーニ採集家による評価ではヤマドリタケ属内で2番目に美味とされる。日本国内にもブナ帯を中心に分布し、秋のきのこ狩り対象として親しまれる。[1][2]",
+      "features": "傘は径7〜20cm、はじめ半球形で後に平らに開き、黄褐色〜赤褐色〜暗褐色。表面は微細毛があってビロード状を呈し、湿時はわずかに粘性を帯びる。管孔層（ひだに相当）は最初白く、成熟に従い白→黄色→オリーブ褐色へと変化する。柄は長さ10〜18cm・径2〜5cmで太く円筒〜棍棒状、全面に明瞭な網目模様（reticulation、種小名の由来）がある。肉は白色で硬く、一部で山吹色を呈することもあり、切断しても顕著な変色は示さない。胞子紋はオリーブ褐色。外生菌根菌として広葉樹林床に単生〜群生する。[1][2]",
+      "cooking_preservation": "若い個体は傘が硬く肉厚で良質。加熱調理（ソテー・スープ・リゾット・乾燥）に広く用いられる。ヨーロッパではポルチーニ類の一つとして乾燥品が流通。日本でも出汁やパスタ、炊き込みご飯に利用される。虫食いが多い種のため、採取後は速やかに下処理し、縦に裂いて虫の有無を確認する。冷蔵保存は2〜3日が目安で、長期保存には乾燥またはオイル漬けが推奨される。[1]",
+      "poisoning_first_aid": null,
+      "caution": "猛毒のドクヤマドリ（Sutorius venenatus、柄に網目なし）と混同しないこと。若菌は同属内の他種との区別が難しいため、柄の網目・傘表面の質感・管孔の変色性を複合的に確認する。[1]",
+      "similar_species": [
+        {
+          "ja": "ヤマドリタケ",
+          "note": "本種の近縁種で、傘の色がやや淡く、柄の網目もより明瞭。ヨーロッパ原産の真正ポルチーニ。",
+          "id": "boletus_edulis"
+        },
+        {
+          "ja": "ムラサキヤマドリタケ",
+          "note": "傘が紫褐色〜濃紫色を帯びる同属食用種。",
+          "id": "boletus_violaceofuscus"
+        },
+        {
+          "ja": "ドクヤマドリ",
+          "note": "柄に網目模様がなく、傷つけると肉が青変する。激しい消化器症状を起こす毒きのこ。",
+          "id": "sutorius_venenatus"
+        },
+        {
+          "ja": "ウツロイイグチ",
+          "note": "成菌の柄が細く、根元が膨らまない。管孔を傷つけると変色する点で識別。"
+        }
+      ],
+      "sources": [
+        {
+          "ref": 1,
+          "name": "Wikipedia 日本語版「ヤマドリタケモドキ」",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "ref": 2,
+          "name": "Wikipedia English「Boletus reticulatus」",
+          "url": "https://en.wikipedia.org/wiki/Boletus_reticulatus",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "image_local": "/images/mushrooms/boletus_reticulatus.webp",
+      "images_remote": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/225199181/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/235033501/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/459672625/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/397700981/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/255365997/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/401006744/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/582037160/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/320449888/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/158611289/medium.jpg"
+      ],
+      "taxonomy": {
+        "phylum": {
+          "latin": "Basidiomycota",
+          "jp": "担子菌門"
+        },
+        "subphylum": {
+          "latin": "Agaricomycotina",
+          "jp": "ハラタケ亜門"
+        },
+        "class": {
+          "latin": "Agaricomycetes",
+          "jp": "ハラタケ綱"
+        },
+        "subclass": {
+          "latin": "Agaricomycetidae",
+          "jp": "ハラタケ亜綱"
+        },
+        "order": {
+          "latin": "Boletales",
+          "jp": "イグチ目"
+        },
+        "family": {
+          "latin": "Boletaceae",
+          "jp": "イグチ科"
+        },
+        "genus": {
+          "latin": "Boletus",
+          "jp": "ヤマドリタケ属"
+        }
+      },
+      "tree_association": [
+        "ブナ",
+        "コナラ",
+        "クヌギ",
+        "ミズナラ"
+      ],
+      "notes": "入力 safety=edible。Wikipedia JA/EN ともに「食用」「ヨーロッパで市場流通」「ポルチーニ類として珍重」と明記。MHLW 19 種非該当。大菌輪 article-map.json (2026-04-20 時点) に本種の記事は未収録のため source_availability.daikinrin=false とし sources からも除外。myco_bank_id / observations / images_remote は後続の fetch スクリプト（fetch_all_inat_observations.mjs, fetch_tier0_photos.mjs, MycoBank API 等）で埋める想定。",
+      "images_remote_credits": [
+        "(c) mami_t_t, CC BY",
+        "(c) takuyatamura, CC BY-NC",
+        "(c) leahbergman, CC BY-NC",
+        "(c) atsushi_nakajima_cirque, CC BY",
+        "(c) hitomi_yamashita, CC BY-NC",
+        "(c) nekoq_in, CC BY-NC",
+        "(c) damonbay, CC BY-NC",
+        "(c) matangoo, CC BY-NC",
+        "(c) shunhirota, CC BY-NC"
+      ],
+      "myco_bank_id": null,
+      "observations": {
+        "gbif": {
+          "domestic": 0
+        },
+        "inat": {
+          "domestic": 0
+        }
+      },
+      "article_origin": "user_added",
+      "source_availability": {
+        "daikinrin": false,
+        "wikipedia_ja": true,
+        "wikipedia_en": true,
+        "mhlw": false
+      }
+    },
+    {
+      "id": "hypholoma_lateritium",
+      "tier": 0,
+      "names": {
+        "ja": "クリタケ",
+        "scientific": "Hypholoma lateritium",
+        "aliases": [
+          "栗茸",
+          "アカンボウ",
+          "キジタケ",
+          "クリキノコ",
+          "ヤマドリモダシ",
+          "ザザンボ"
+        ],
+        "scientific_synonyms": [
+          "Hypholoma sublateritium",
+          "Naematoloma sublateritium",
+          "Nematoloma sublateritium",
+          "Agaricus lateritius"
+        ]
+      },
+      "safety": "caution",
+      "season": [
+        {
+          "start_month": 9,
+          "end_month": 12
+        }
+      ],
+      "habitat": [
+        "広葉樹の枯木",
+        "切り株",
+        "雑木林",
+        "針葉樹林"
+      ],
+      "regions": [
+        "日本",
+        "北半球温帯以北",
+        "ヨーロッパ",
+        "北アメリカ"
+      ],
+      "description": "クリタケはハラタケ目モエギタケ科クリタケ属の木材腐朽性きのこで、晩秋に広葉樹の枯木・切り株に群生する。日本では古くから食用として親しまれ、地方名もアカンボウ（岩手・長野）、キジタケ、クリキノコ、ヤマドリモダシ（秋田）、ザザンボ（広島）など多数ある。クリ・コナラ・ナラ・ブナ・サクラなどの広葉樹枯死木に顕著に発生するが、アカマツ・カラマツなど針葉樹からも発生する。中秋〜晩秋の低温期に最盛期を迎え、きのこ狩りの終盤を飾る種として知られる。ただし日本国外では有毒とされる地域もあり、加熱不十分時に胃腸系中毒を起こす事例がある。主に北半球の温帯以北に広く分布する。[1]",
+      "features": "傘は径3〜10cm、まんじゅう形からほぼ平らに開き、明るい茶褐色〜レンガ色で周辺部ほど淡く黄褐色を帯びる。表面は平滑で湿時わずかに粘性。ひだは柄に直生〜やや上生し密で、はじめ黄白色のち帯オリーブ暗色、成熟すると灰紫色〜紫褐色となる。柄は長さ1〜17cm・径0.5〜1.5cm、傘とほぼ同色か上部淡色で下部褐色、中実で繊維質、内被膜の名残としてクモの巣状のつばを持つことがある。肉は淡黄色で苦味はほぼなく、調理時に栗に似た風味を呈する。胞子紋は紫褐色。木材腐朽菌として広葉樹（時に針葉樹）の倒木・切り株に大型の株立ちとなって群生する。[1]",
+      "cooking_preservation": "必ず十分に加熱してから食用とする。鍋物・味噌汁・炊き込みご飯・和え物・煮物に広く利用され、歯切れの良い食感と淡い風味が好まれる。同属猛毒のニガクリタケと誤食しないよう生での味見は厳禁。ゆでこぼして水にさらせば保存性が高まり、塩蔵・冷凍・乾燥いずれも可能。日本国外では中毒報告例があるため、海外食文化では敬遠される傾向にある。過食を避け、初めて食する際は少量で体調を確認すること。[1]",
+      "poisoning_first_aid": null,
+      "caution": "猛毒のニガクリタケ（Hypholoma fasciculare）と発生環境・株立ち習性が非常によく似る。ニガクリタケは傘が鮮やかな硫黄色でひだがオリーブ緑色、生食すると強い苦味があるのが最大の区別点。生の味見は絶対に避け、必ず視覚的に同定すること。本種自体にもネマトリン、苦味物質ネマトロン、色素成分ハイフォロミンA,B 等の成分を含み、生食・加熱不足・過食により胃腸症状を起こすことがあるため、必ず十分加熱し、一度に大量摂取しない。[1]",
+      "similar_species": [
+        {
+          "ja": "ニガクリタケ",
+          "note": "傘が硫黄色〜鮮黄色でひだがオリーブ緑色、生で強い苦味。猛毒。株立ち習性と基質が本種とほぼ同じで最も誤食されやすい。",
+          "id": "hypholoma_fasciculare"
+        },
+        {
+          "ja": "クリタケモドキ",
+          "note": "本種よりやや小型で傘色が濃い紅褐色。同属の近縁種。"
+        },
+        {
+          "ja": "ナラタケ",
+          "note": "発生時期・基質（広葉樹枯死木）が重なるが、ひだが白色〜クリーム色で胞子紋も白色。つばを明瞭に持つ点も異なる。",
+          "id": "armillaria_mellea_subsp_nipponica"
+        }
+      ],
+      "sources": [
+        {
+          "ref": 1,
+          "name": "Wikipedia 日本語版「クリタケ」",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "ref": 2,
+          "name": "Wikipedia English「Hypholoma lateritium」",
+          "url": "https://en.wikipedia.org/wiki/Hypholoma_lateritium",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "image_local": "/images/mushrooms/hypholoma_lateritium.webp",
+      "images_remote": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/49473651/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/447007176/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/442287085/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/336813557/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/331663696/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/585215324/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/451347992/medium.jpeg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/589619027/medium.jpg",
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/451546197/medium.jpg"
+      ],
+      "taxonomy": {
+        "phylum": {
+          "latin": "Basidiomycota",
+          "jp": "担子菌門"
+        },
+        "subphylum": {
+          "latin": "Agaricomycotina",
+          "jp": "ハラタケ亜門"
+        },
+        "class": {
+          "latin": "Agaricomycetes",
+          "jp": "ハラタケ綱"
+        },
+        "subclass": {
+          "latin": "Agaricomycetidae",
+          "jp": "ハラタケ亜綱"
+        },
+        "order": {
+          "latin": "Agaricales",
+          "jp": "ハラタケ目"
+        },
+        "family": {
+          "latin": "Strophariaceae",
+          "jp": "モエギタケ科"
+        },
+        "genus": {
+          "latin": "Hypholoma",
+          "jp": "クリタケ属"
+        }
+      },
+      "tree_association": [],
+      "notes": "入力 safety=caution。Wikipedia JA に「古くから食用」「加熱必須」「日本国外では有毒視」「ネマトリン等の毒性成分を含む」「ニガクリタケと酷似」と明記されておりリスク無視不可のため safety=caution と判定（edible ではなく caution を採用）。木材腐朽菌のため tree_association は [] とし、寄主は habitat/description 側で記述。MHLW 19 種非該当。大菌輪 article-map.json (2026-04-20 時点) に本種の記事は未収録のため source_availability.daikinrin=false。同属 Hypholoma fasciculare(ニガクリタケ) の v3 slug が hypholoma_fasciculare で存在するかは統合時に要確認（存在しない場合は similar_species[].id を削除）。",
+      "images_remote_credits": [
+        "(c) milesnojiri, CC BY-NC",
+        "(c) matangoo, CC BY-NC",
+        "(c) masaki_hamaguchi, CC BY-NC",
+        "(c) hikasukepon, CC BY-NC",
+        "(c) hiroko_s, CC BY-NC",
+        "(c) al_terf, CC BY-NC",
+        "(c) murasime, CC BY-NC",
+        "(c) merec0, CC BY-NC",
+        "(c) atsushi_nakajima_cirque, CC BY"
+      ],
+      "myco_bank_id": null,
+      "observations": {
+        "gbif": {
+          "domestic": 0
+        },
+        "inat": {
+          "domestic": 0
+        }
+      },
+      "article_origin": "user_added",
+      "source_availability": {
+        "daikinrin": false,
+        "wikipedia_ja": true,
+        "wikipedia_en": true,
+        "mhlw": false
+      }
+    }
+  ]
+}
