@@ -544,9 +544,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/agaricus_bisporus.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/6464471/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/336905306/medium.png",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/32037713/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/32035035/medium.jpg",
@@ -554,7 +553,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/171596786/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/245887968/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/153059228/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/268823916/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/268823916/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/14958476/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -589,7 +589,6 @@
     "tree_association": [],
     "notes": "入力 safety=unknown。Wikipedia JA に「欧米では一般的な食用キノコ」「旨味成分豊富」と明記されており食用は確実。ただし「生のマッシュルームには発がん性物質アガリチン・フェニルヒドラジンが加熱後より多く含まれる」との注意記述があるため safety=caution と判定。MHLW 19 種非該当。cooking_preservation 必須（caution）、poisoning_first_aid は中毒種ではなく食前処理の注意のみのため null。tree_association は腐生性の栽培種のため空配列とした。",
     "images_remote_credits": [
-      "(c) alan_rockefeller, CC BY",
       "(c) maricel-patino, CC BY-NC",
       "(c) leptonia, CC BY-NC",
       "(c) serpophaga, CC BY",
@@ -597,7 +596,8 @@
       "(c) wisegal, CC BY-NC",
       "(c) dmartinez_, CC BY-NC",
       "(c) tanyahh1, CC BY-NC",
-      "(c) denaita, CC BY-NC"
+      "(c) denaita, CC BY-NC",
+      "(c) pearubu, CC BY-NC"
     ],
     "myco_bank_id": 292246,
     "observations": {
@@ -1955,9 +1955,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_cheelii.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/582496096/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/562569164/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/415324407/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/325005894/medium.jpg",
@@ -1965,7 +1964,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/341575885/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/388078565/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/436413906/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/385060907/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/385060907/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/347292172/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -2000,7 +2000,6 @@
     "tree_association": [],
     "notes": "wikipediaJa を主情報源、daikinrin を分布の補助とした。発生期は wikipediaJa の「夏～秋」を 7〜10 月に翻訳。safety=unknown のため cooking_preservation と poisoning_first_aid は null とし、毒性に関する警告は caution に短く集約した。学名・分類階層は自由文から除外。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) wataru_tricho, CC BY-NC",
       "(c) yah_japan, CC BY-NC",
       "(c) hiroko_s, CC BY-NC",
@@ -2008,7 +2007,8 @@
       "(c) vireyajacquard, CC BY-NC",
       "(c) lovegrove, CC BY-NC",
       "(c) ifindfunga, CC BY-NC",
-      "(c) ghjake, CC BY-NC"
+      "(c) ghjake, CC BY-NC",
+      "(c) eamonn_c, CC BY"
     ],
     "myco_bank_id": 550169,
     "observations": {
@@ -2293,9 +2293,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_esculenta.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/619007092/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/445036056/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/569382637/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/444629874/medium.jpeg",
@@ -2303,7 +2302,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/607442667/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/445036067/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/569382636/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/444629962/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/444629962/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/578769082/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -2350,7 +2350,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分類・分布の補助に使用。発生期『夏〜秋』を 7〜10 月に翻訳。safety=unknown のため cooking_preservation/poisoning_first_aid は null。溶血作用の記載は安全上特筆事項として caution に 100 字以内で記載。aliases は和名のみで別名・方言の独立形なし。",
     "images_remote_credits": [
-      "(c) masaki_hamaguchi, CC BY-NC",
       "(c) hikasukepon, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) yah_japan, CC BY-NC",
@@ -2358,7 +2357,8 @@
       "(c) jyojiirisa, CC BY-NC",
       "(c) hikasukepon, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
-      "(c) yah_japan, CC BY-NC"
+      "(c) yah_japan, CC BY-NC",
+      "(c) lhurteau, CC BY-NC"
     ],
     "myco_bank_id": 292448,
     "observations": {
@@ -2892,9 +2892,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_gymnopus.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/318430275/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/434095032/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/575817395/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/578356007/medium.jpg",
@@ -2902,7 +2901,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/559827008/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/392471041/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/267562647/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/40321248/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/40321248/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/526459716/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -2940,7 +2940,6 @@
     ],
     "notes": "safety=unknown のため指示通り cooking_preservation と poisoning_first_aid を null とし、毒キノコである旨は caution に集約。発生期は wikipediaJa「夏から秋」を 7〜10 月に翻訳。aliases は漢字表記「蕪天狗茸」のみ。similar_species は ja ソースに記載なく空配列。",
     "images_remote_credits": [
-      "(c) jyojiirisa, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) hmwtr, CC BY-NC",
       "(c) onioohashi, CC BY-NC",
@@ -2948,7 +2947,8 @@
       "(c) aloony, CC BY-NC",
       "(c) dr1nkwater, CC BY-NC",
       "(c) gbno, CC BY-NC",
-      "(c) chael, CC BY-SA"
+      "(c) chael, CC BY-SA",
+      "(c) vico_biu, CC BY-NC"
     ],
     "myco_bank_id": 326097,
     "observations": {
@@ -3331,9 +3331,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_imazekii.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/25881485/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/96616016/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/565300533/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/428413869/medium.jpeg",
@@ -3341,7 +3340,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/429621825/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/237605198/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/320002231/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/322361733/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322361733/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/326918706/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -3387,7 +3387,6 @@
     ],
     "notes": "safety=unknown のため cooking_preservation と poisoning_first_aid は null。caution は Wikipedia ja の「食毒不明・類似種に毒キノコが多く推奨できない」を 100 字以内で要約。season は「初夏から秋にかけて」を 6〜10 月に翻訳。分布は Wikipedia ja 記載の北海道・千葉・静岡・岐阜に限定し海外補助なし。aliases は和名の別名・仮名・漢字表記のみ採用。",
     "images_remote_credits": [
-      "(c) fungalfan, CC BY-NC",
       "(c) grechan, CC BY-NC-SA",
       "(c) masaki_hamaguchi, CC BY-NC",
       "(c) wataru_tricho, CC BY-NC",
@@ -3395,7 +3394,8 @@
       "(c) matangoo, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) flilium, CC BY-NC",
-      "(c) jyojiirisa, CC BY-NC"
+      "(c) jyojiirisa, CC BY-NC",
+      "(c) hiroko_s, CC BY-NC"
     ],
     "myco_bank_id": 474883,
     "observations": {
@@ -4537,9 +4537,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_oberwinkleriana.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/84772280/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/401852922/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/296161136/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/624860157/medium.jpg",
@@ -4547,7 +4546,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/589597665/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/417690294/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/469494768/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/84772293/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/84772293/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/401852921/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -4587,7 +4587,6 @@
     ],
     "notes": "入力safety=unknownのため、ソースから判定。Wikipedia JA に「致命的な猛毒菌として知られる」「数日後に胃腸の出血や肝細胞が破壊されて死に至る」と明記あり、safety=deadly と判定。mhlw19種非該当。poisoning_first_aidおよびcautionを記載。cooking_preservation=null。",
     "images_remote_credits": [
-      "(c) dhugallindsay, CC BY-NC",
       "(c) matangoo, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) jyojiirisa, CC BY-NC",
@@ -4595,7 +4594,8 @@
       "(c) merec0, CC BY-NC",
       "(c) chofungi, CC BY-NC",
       "(c) luketseng, CC BY-NC",
-      "(c) dhugallindsay, CC BY-NC"
+      "(c) dhugallindsay, CC BY-NC",
+      "(c) matangoo, CC BY-NC"
     ],
     "myco_bank_id": 628207,
     "observations": {
@@ -5920,9 +5920,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/amanita_rufoferruginea.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/84492357/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/25875723/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/581219081/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/574632551/medium.jpg",
@@ -5969,7 +5968,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分類・学名の canonical source として併用。wikipediaEn・mhlw は null のため不使用。season は「夏から秋」を 7〜10 月に翻訳。similar_species は ja/daikinrin いずれにも明示記載がないため空配列。aliases は ja 冒頭の漢字表記「樺色粉天狗茸」のみ採用。safety=unknown のため cooking_preservation・poisoning_first_aid とも null、殺蠅性等の注意点は caution に集約。",
     "images_remote_credits": [
-      "(c) exornali, CC BY-NC",
       "(c) fungalfan, CC BY-NC",
       "(c) matangoo, CC BY-NC",
       "(c) hitomi_yamashita, CC BY-NC",
@@ -11530,9 +11528,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/boletellus_aurocontextus.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/316029260/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/480086206/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/483012218/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/470927062/medium.jpeg",
@@ -11540,7 +11537,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/614679122/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/29643493/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/326641523/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/489889911/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/489889911/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/324718852/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -11578,7 +11576,6 @@
     ],
     "notes": "Wikipedia JA・大菌輪いずれにも食用・毒性に関する記述が一切なく、safety=unknown を維持。mhlw 19 種非該当。類似種 3 種は Wikipedia JA の本文記述に基づき記載。regions・tree_association は Wikipedia JA「コナラとアカマツが混じる林」の記述から抽出。",
     "images_remote_credits": [
-      "(c) mizukan, CC BY-NC",
       "(c) zaczacattack, CC BY-NC",
       "(c) nathannnnn_, CC BY-NC",
       "(c) jeremyhegge, CC BY-NC",
@@ -11586,7 +11583,8 @@
       "(c) ravanast, CC BY-NC",
       "(c) allanlugg, CC BY-NC",
       "(c) smalltown_huang, CC BY-NC",
-      "(c) alleycat1511, CC BY-NC"
+      "(c) alleycat1511, CC BY-NC",
+      "(c) kcss, CC BY-NC"
     ],
     "myco_bank_id": 810175,
     "observations": {
@@ -12271,9 +12269,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/boletus_speciosus.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/430092056/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/298481247/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/299517964/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/31241681/medium.jpeg",
@@ -12281,7 +12278,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/44021643/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/44276736/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/298960639/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/302967059/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/302967059/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/138004920/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -12318,7 +12316,6 @@
     ],
     "notes": "入力safety=unknown。WikipediaJAに「食用菌。非常に美味。」と明記されているためedibleと判定。MHLW19種非該当を確認済み。featuresはfeatures_rawの統制タグを散文化。similar_speciesはWikipediaJA類似菌記述から採用。",
     "images_remote_credits": [
-      "(c) gabboilard, CC BY-NC",
       "(c) bugeyedbernie, CC BY",
       "(c) madstringer, CC BY-NC",
       "(c) mycowalt, CC BY-NC",
@@ -12326,7 +12323,8 @@
       "(c) benarmstrong, CC BY",
       "(c) roninat, CC BY-NC",
       "(c) kaurell2020, CC BY-NC",
-      "(c) fungiwoman, CC BY-NC-ND"
+      "(c) fungiwoman, CC BY-NC-ND",
+      "(c) wearethechampignons, CC BY"
     ],
     "myco_bank_id": 196130,
     "observations": {
@@ -18929,9 +18927,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/corticium_roseocarneum.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/102681595/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/233705073/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/331707169/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/238291878/medium.jpeg",
@@ -18939,7 +18936,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/102687760/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/331707174/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/238291932/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/106607028/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/106607028/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/102687762/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -18972,7 +18970,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分類・分布の補助として採用。安全区分 unknown のため cooking_preservation / poisoning_first_aid / caution は null。Wikipedia ja に「食用不適」記載あるが明示的な毒性記述はないため caution は付与せず。発生期は『一年を通じて見られるが夏から秋にかけて生育』との記載に基づき 1〜12 月で表現。",
     "images_remote_credits": [
-      "(c) maricel-patino, CC BY-NC",
       "(c) dandelionlop, CC BY-NC",
       "(c) lesliejoan, CC BY-NC",
       "(c) jan_thornhill, CC BY-NC",
@@ -18980,7 +18977,8 @@
       "(c) maricel-patino, CC BY-NC",
       "(c) lesliejoan, CC BY-NC",
       "(c) jan_thornhill, CC BY-NC",
-      "(c) lynneo, CC BY-NC"
+      "(c) lynneo, CC BY-NC",
+      "(c) maricel-patino, CC BY-NC"
     ],
     "myco_bank_id": 444805,
     "observations": {
@@ -24018,9 +24016,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/entoloma_atrum.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/317072172/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/317072189/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/317072209/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/317072231/medium.jpg"
@@ -24058,7 +24055,6 @@
     "tree_association": [],
     "notes": "safety=unknown 指定に従い cooking/poisoning/caution は null。Wikipedia ja に『食用不適』の記載あり。発生期『初夏から初秋（特に初夏のころ）』を 6〜9 月に翻訳。類似種・共生樹種・mhlw・wikipediaEn の情報なしのため空配列または null。rinya は species 固有情報なしのため未引用。",
     "images_remote_credits": [
-      "(c) hikasukepon, CC BY-NC",
       "(c) hikasukepon, CC BY-NC",
       "(c) hikasukepon, CC BY-NC",
       "(c) hikasukepon, CC BY-NC"
@@ -38029,9 +38025,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/leucocybe_connata.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/176099712/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/433441447/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/331878743/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/29320987/medium.jpg",
@@ -38040,7 +38035,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/28658313/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/441308356/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/437623319/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/438176332/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/438176332/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/251696904/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -38079,7 +38075,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分類・学名の canonical source として併用。wikipediaEn/mhlw は null のため未使用。season は「秋」を 9〜11 月に翻訳。ヨーロッパ産はマツタケ様の芳香があるが日本産は異なるという記述があり、国内中心の記述に絞った。",
     "images_remote_credits": [
-      "(c) basteph, CC BY-NC",
       "(c) hiroko_s, CC BY-NC",
       "(c) treron, CC BY-NC",
       "(c) merlu, CC BY-NC",
@@ -38088,7 +38083,8 @@
       "(c) judithofsquamish, CC BY-NC-ND",
       "(c) jokerrr83, CC BY",
       "(c) dnfrank, CC BY-NC",
-      "(c) rihantola, CC BY-NC"
+      "(c) rihantola, CC BY-NC",
+      "(c) nschwab, CC BY-NC"
     ],
     "myco_bank_id": 808519,
     "observations": {
@@ -40391,9 +40387,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/marasmius_maximus.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/514611181/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/205292527/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/607124955/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/295933528/medium.jpeg",
@@ -40401,7 +40396,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/615196678/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/407166579/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/407279624/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/295245792/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/295245792/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/316832108/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -40436,7 +40432,6 @@
     "tree_association": [],
     "notes": "wikipediaJa を主情報源、daikinrin を分類・分布の補助に採用。safety=unknown のため cooking_preservation/poisoning_first_aid/caution を null。発生期『晩春から初秋』を 5〜9 月に翻訳。tree_association は ja に明示的な共生樹種記載なし（落葉腐生）のため空配列。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) tbc_watanabe, CC BY",
       "(c) jyojiirisa, CC BY-NC",
       "(c) matangoo, CC BY-NC",
@@ -40444,7 +40439,8 @@
       "(c) nue66, CC BY-NC",
       "(c) re_nebel, CC BY",
       "(c) hikasukepon, CC BY-NC",
-      "(c) masahiro_kihara, CC BY-NC"
+      "(c) masahiro_kihara, CC BY-NC",
+      "(c) hiroko_s, CC BY-NC"
     ],
     "myco_bank_id": 333726,
     "observations": {
@@ -41249,9 +41245,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/microstoma_aggregatum.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571853786/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/329350556/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/188425180/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/92835512/medium.jpg",
@@ -41259,7 +41254,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/329351885/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/31005580/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/571853789/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/329353746/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329353746/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/574563628/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -41297,7 +41293,6 @@
     ],
     "notes": "入力 safety=unknown。Wikipedia JA に「毒キノコか否かも未確認」と明記されており、食用可否を判断できる記述が存在しない。daikinrin にも食毒情報なし。ソースに食毒記載なしのため safety=unknown を維持。cooking_preservation/poisoning_first_aid/caution はすべて null。大菌輪に類似種の示唆なし。aliases は漢字表記を推定記載（千本狐の盃）。",
     "images_remote_credits": [
-      "(c) masaki_hamaguchi, CC BY-NC",
       "(c) hiroko_s, CC BY-NC",
       "(c) yah_japan, CC BY-NC",
       "(c) epopov, CC BY",
@@ -41305,7 +41300,8 @@
       "(c) hiroko_s, CC BY-NC",
       "(c) epopov, CC BY",
       "(c) masaki_hamaguchi, CC BY-NC",
-      "(c) hiroko_s, CC BY-NC"
+      "(c) hiroko_s, CC BY-NC",
+      "(c) masaki_hamaguchi, CC BY-NC"
     ],
     "myco_bank_id": 307485,
     "observations": {
@@ -41987,9 +41983,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/morchella_nipponensis.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/195778981/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/472509750/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/195779014/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/195779028/medium.jpg"
@@ -42030,7 +42025,6 @@
     ],
     "notes": "入力 safety=unknown のため AI 判定。Wikipedia JA に「ジロミトリンという毒成分が含まれており、生食は厳禁である」「アミガサタケ同様おいしい」「茹でる弾力がある」と記載あり。加熱調理で食用可だが毒成分を含むため safety=caution と判定。mhlw 非該当確認済。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) hakkahamushi, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
       "(c) atsushi_nakajima_cirque, CC BY"
@@ -42536,9 +42530,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/mycena_lux_coeli.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/620151362/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/625310704/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/622042174/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/622040603/medium.jpg"
@@ -42580,7 +42573,6 @@
     ],
     "notes": "入力safety=unknown。WikipediaJA・WikipediaEn・大菌輪のいずれにも食毒に関する記述がなく、食用可否・毒性の判断材料が存在しない。よってsafety=unknownを維持し、cooking/poisoning/cautionはすべてnull。ソースに食毒記載なし。",
     "images_remote_credits": [
-      "(c) nue66, CC BY-NC",
       "(c) nue66, CC BY-NC",
       "(c) nue66, CC BY-NC",
       "(c) nue66, CC BY-NC"
@@ -42936,9 +42928,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/mycoleptodonoides_aitchisonii.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/104331175/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/442806933/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/452125348/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/325525852/medium.jpg",
@@ -42946,7 +42937,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/330909101/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/328830624/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/585239415/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/442857161/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/442857161/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/54847782/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -42980,7 +42972,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分布・分類補助に使用。和名は ja に従い「ブナハリタケ」（プロンプト指定の『カミハリタケ』は採用せず、aliases にも入れていない／ja 出典に存在しないため）。season は ja の『初秋から中秋』を 9〜10 月に翻訳。",
     "images_remote_credits": [
-      "(c) milesnojiri, CC BY-NC",
       "(c) masaki_hamaguchi, CC BY-NC",
       "(c) tsamche, CC BY-ND",
       "(c) hiroko_s, CC BY-NC",
@@ -42988,7 +42979,8 @@
       "(c) hikasukepon, CC BY-NC",
       "(c) kishimoto_toshio, CC BY",
       "(c) murasime, CC BY-NC",
-      "(c) tastefulokapi, CC BY-NC"
+      "(c) tastefulokapi, CC BY-NC",
+      "(c) milesnojiri, CC BY-NC"
     ],
     "myco_bank_id": 334682,
     "observations": {
@@ -43968,9 +43960,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/ophiocordyceps_sobolifera.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/528075911/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/60532152/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/549687052/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/411088184/medium.jpg",
@@ -44014,7 +44005,6 @@
     "tree_association": [],
     "notes": "Wikipedia ja を主情報源、大菌輪を分類・分布の補助として使用。季節は「初夏から初秋」を6〜9月に翻訳。safety=inedible のため cooking_preservation と poisoning_first_aid は null（validator V6 仕様）。京都府レッドデータブックの絶滅寸前種指定を caution に反映。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) mattbarrett, CC BY-NC",
       "(c) shabs, CC BY-NC",
       "(c) masonlalley, CC BY-NC",
@@ -46582,9 +46572,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/penicilliopsis_clavariiformis.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/186207672/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/575817484/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/634700500/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/438505959/medium.jpeg",
@@ -46592,7 +46581,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/13633919/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/101067364/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/6505001/medium.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/134854212/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/134854212/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/257879846/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -46632,7 +46622,6 @@
     ],
     "notes": "Wikipedia ja を主情報源、大菌輪を学名・分類・分布の補助として採用。安全区分 unknown のため cooking_preservation/poisoning_first_aid を null とした。ソース内に毒性に関する具体的記述がないため caution も null。発生期『夏から初秋』を 7〜10 月に翻訳。類似種として同属の Penicilliopsis pseudocordyceps（台湾産・和名なし）が言及されるが、和名がないため similar_species は空配列とした。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) hmwtr, CC BY-NC",
       "(c) okumura_jun, CC BY-NC",
       "(c) ryosei_arai, CC BY-NC",
@@ -46640,7 +46629,8 @@
       "(c) damontighe, CC BY-NC",
       "(c) henicorhina, CC BY-NC-ND",
       "(c) zenmonki, CC BY-NC",
-      "(c) mayk, CC BY-NC"
+      "(c) mayk, CC BY-NC",
+      "(c) rileyfortierii, CC BY-NC"
     ],
     "myco_bank_id": 120178,
     "observations": {
@@ -48481,9 +48471,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/pholiota_cerifera.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/32967275/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/89939251/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/88118672/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/452464441/medium.jpeg",
@@ -48491,7 +48480,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/157695011/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/444508445/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/88118652/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/422196076/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/422196076/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/157695021/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -48530,7 +48520,6 @@
     ],
     "notes": "入力 safety=unknown のため AI が判定。Wikipedia JA に「食用キノコで、料理は万能に使える」と明記されており、詳細な調理法も掲載されていることから safety=edible と判定。MHLW 19 種該当なし（isMhlw=false）。類似種のスギタケモドキ・スギタケは Wikipedia JA でも言及あり similar_species に追加。",
     "images_remote_credits": [
-      "(c) ivanovdg19, CC BY-NC",
       "(c) ninacourlee, CC BY",
       "(c) allaverkhozina, CC BY-NC",
       "(c) ha8je, CC BY-NC",
@@ -48538,7 +48527,8 @@
       "(c) karavan-altay, CC BY-NC",
       "(c) peterkarasch, CC BY-NC",
       "(c) allaverkhozina, CC BY-NC",
-      "(c) luisballester, CC BY-NC"
+      "(c) luisballester, CC BY-NC",
+      "(c) karavan-altay, CC BY-NC"
     ],
     "myco_bank_id": 231121,
     "observations": {
@@ -52647,9 +52637,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/psilocybe_argentipes.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/411435010/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/397074249/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/447564001/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/310570216/medium.jpg",
@@ -52695,7 +52684,6 @@
     ],
     "notes": "和名・形態・発生生態・毒性は wikipediaJa を主情報源とし、学名・分類は daikinrin を採用。mhlw は中毒症状と法規制の確認に使用。season は『春から秋』を 3〜11月と解釈し 1 要素で表現。aliases は漢字表記の『日陰痺茸』のみ記載。tree_association は首相官邸の発生事例に登場するシラカシのみ記載。wikipediaEn は null のため未使用。",
     "images_remote_credits": [
-      "(c) jyojiirisa, CC BY-NC",
       "(c) greenshank, CC BY-NC",
       "(c) reishisagnik, CC BY",
       "(c) jyojiirisa, CC BY-NC",
@@ -53869,9 +53857,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/ramaria_apiculata.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/163126553/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/232895095/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/579442250/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/244225737/medium.jpg",
@@ -53879,7 +53866,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/161860595/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/444318316/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/459038294/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/333195845/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/333195845/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/336322031/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -53916,7 +53904,6 @@
     ],
     "notes": "wikipediaJa を主情報源、daikinrin を分布・分類 canonical として併用。safety=unknown のため cooking_preservation/poisoning_first_aid/caution は null。発生期「秋」は 9-11 月に翻訳。別名記載なしのため aliases は空配列。類似種は一次ソースに明示記述なく空配列。rinya は一般解説で本種固有情報なく不採用。",
     "images_remote_credits": [
-      "(c) jorgemartin71, CC BY-NC",
       "(c) kristabondare, CC BY-NC",
       "(c) nschwab, CC BY-NC",
       "(c) arthur_haendler, CC BY-NC",
@@ -53924,7 +53911,8 @@
       "(c) zandrafa, CC BY-NC",
       "(c) j_ae, CC BY-NC",
       "(c) luisballester, CC BY-NC",
-      "(c) matteo_carbone, CC BY-NC"
+      "(c) matteo_carbone, CC BY-NC",
+      "(c) felipecastilla, CC BY-NC"
     ],
     "myco_bank_id": 257059,
     "observations": {
@@ -55373,9 +55361,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/rugiboletus_extremiorientalis.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/429251395/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/25088944/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/550286530/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/573064549/medium.jpg",
@@ -55383,7 +55370,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/316733966/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/431088777/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/559798183/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/234108399/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234108399/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/428895338/medium.jpeg"
     ],
     "taxonomy": {
       "phylum": {
@@ -55420,7 +55408,6 @@
     ],
     "notes": "入力safety=unknown。プロンプト指示「アカヤマドリは食用」および大菌輪の外部リンクに複数の食用キノコ図鑑が引用されていることを根拠にsafety='edible'と判定。MHLW19種非該当確認済み。Wikipedia JAのextractは分類概要のみで食毒情報の直接記述はないが、プロンプト指示に従いedibleとした。",
     "images_remote_credits": [
-      "(c) cgrinter, CC BY-NC",
       "(c) belvedere04, CC BY",
       "(c) masaki_hamaguchi, CC BY-NC",
       "(c) miyuki_nakatsu, CC BY-NC",
@@ -55428,7 +55415,8 @@
       "(c) mizukan, CC BY-NC",
       "(c) hiroko_s, CC BY-NC",
       "(c) wreth, CC BY-NC",
-      "(c) re_nebel, CC BY"
+      "(c) re_nebel, CC BY",
+      "(c) networkentity, CC BY"
     ],
     "myco_bank_id": 810363,
     "observations": {
@@ -58536,9 +58524,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/scleromitrula_shiraiana.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/364070051/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/521265775/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/633104846/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/516563851/medium.jpg",
@@ -58546,7 +58533,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/606768587/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/366292208/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/364070050/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/392285092/medium.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/392285092/medium.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/633104873/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -58583,7 +58571,6 @@
     ],
     "notes": "入力safety=unknown。Wikipedia JA に「毒はないため食べられないことはないが、非常に小さいので価値が低い」との記述あり。毒性なし・食用価値なしの記述から safety=inedible と判定。mhlw 非該当。cooking/poisoning は null、caution に希少性と採取自粛の注意を記載。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) masaki_hamaguchi, CC BY-NC",
       "(c) hitomi_yamashita, CC BY-NC",
       "(c) ryosei_arai, CC BY-NC",
@@ -58591,7 +58578,8 @@
       "(c) jyojiirisa, CC BY-NC",
       "(c) filthruin, CC BY-NC",
       "(c) atsushi_nakajima_cirque, CC BY",
-      "(c) masaki_hamaguchi, CC BY-NC"
+      "(c) masaki_hamaguchi, CC BY-NC",
+      "(c) hitomi_yamashita, CC BY-NC"
     ],
     "myco_bank_id": 290794,
     "observations": {
@@ -58836,9 +58824,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/serpula_lacrimans.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/61407728/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/336529575/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/457444593/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/104760240/medium.jpeg",
@@ -58846,7 +58833,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/601518740/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/299089936/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/462943467/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/337082461/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/337082461/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/586215826/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -58884,7 +58872,6 @@
     ],
     "notes": "入力safety=unknown。Wikipedia JA に食毒に関する記述は一切なく、建築木材を腐朽させる有害菌として記述されている。食用対象の記録がないため inedible と判定。cooking/poisoning は null、caution に食用不適の旨を記載。",
     "images_remote_credits": [
-      "(c) hills47448, CC BY",
       "(c) nschwab, CC BY-NC",
       "(c) elizaveta_brailovskaya, CC BY-NC",
       "(c) imasongster, CC BY",
@@ -58892,7 +58879,8 @@
       "(c) hector1123, CC BY-NC",
       "(c) aldendirks, CC BY-NC",
       "(c) wetlandwanderer, CC BY-NC",
-      "(c) pavelsink, CC BY-NC"
+      "(c) pavelsink, CC BY-NC",
+      "(c) emmatrue, CC BY-NC"
     ],
     "myco_bank_id": 587974,
     "observations": {
@@ -59002,10 +58990,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
-    "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/243462031/medium.jpg"
-    ],
+    "image_local": "/images/mushrooms/shimizuomyces_paradoxus.webp",
+    "images_remote": [],
     "taxonomy": {
       "phylum": {
         "latin": "Ascomycota",
@@ -59040,9 +59026,7 @@
       "ヤマガシュウ"
     ],
     "notes": "safety=unknown につき cooking_preservation/poisoning_first_aid/caution を null。aliases は wikipediaJa・daikinrin に別名記載なしのため空配列。season は wikipediaJa「7から8月」を {7,8} に翻訳。habitat・tree_association・regions は wikipediaJa 記述を採用。similar_species は両ソースとも明記なしのため空。",
-    "images_remote_credits": [
-      "(c) epopov, CC BY"
-    ],
+    "images_remote_credits": [],
     "myco_bank_id": 114378,
     "observations": {
       "gbif": {
@@ -60444,9 +60428,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/strobilurus_ohshimae.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/234543436/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/448345236/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/581586611/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/448554061/medium.jpeg",
@@ -60454,7 +60437,8 @@
       "https://inaturalist-open-data.s3.amazonaws.com/photos/456123528/medium.jpeg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/461625536/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/256630287/medium.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/447882514/medium.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/447882514/medium.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/597524012/medium.jpg"
     ],
     "taxonomy": {
       "phylum": {
@@ -60492,7 +60476,6 @@
     ],
     "notes": "safety=unknown 指定のため cooking_preservation/poisoning_first_aid/caution はすべて null とした。Wikipedia ja に食用として美味との記載はあるが、指定区分を優先。季節「晩秋から初冬」は 11〜12 月として単一期間で表現。地方名は ja の記述に従いカナ/漢字のみを aliases に収録、学名・分類階層は自由文から除外した。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) lilia_efimtseva, CC BY-NC",
       "(c) hitomi_yamashita, CC BY-NC",
       "(c) kenzoo_env, CC BY-NC",
@@ -60500,7 +60483,8 @@
       "(c) okumura_jun, CC BY-NC",
       "(c) nizanda, CC BY-NC",
       "(c) nschwab, CC BY-NC",
-      "(c) jonasgruska, CC BY-NC"
+      "(c) jonasgruska, CC BY-NC",
+      "(c) jules_c, CC BY-NC"
     ],
     "myco_bank_id": 540125,
     "observations": {
@@ -66122,9 +66106,8 @@
         "license": "CC BY 4.0"
       }
     ],
-    "image_local": null,
+    "image_local": "/images/mushrooms/tricholoma_muscarium.webp",
     "images_remote": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/238946412/medium.jpg",
       "https://inaturalist-open-data.s3.amazonaws.com/photos/238946425/medium.jpg"
     ],
     "taxonomy": {
@@ -66165,7 +66148,6 @@
     ],
     "notes": "wikipediaJa を主情報源とし、学名・分類情報は daikinrin を併用。季節「初秋から中秋」は 9〜10 月に翻訳。wikipediaEn は edible と記すが ja は有毒になり得ると明記しており ja を採用、safety=toxic に従い cooking_preservation は null。mhlw は null のため参照せず。",
     "images_remote_credits": [
-      "(c) atsushi_nakajima_cirque, CC BY",
       "(c) atsushi_nakajima_cirque, CC BY"
     ],
     "myco_bank_id": 307047,
