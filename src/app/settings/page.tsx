@@ -291,11 +291,15 @@ function NoticeSection({ migration }: { migration: MigrationRecord | null }) {
         {T.noticeSection}
       </h2>
       <div className="space-y-3">
-        {/* v2.1 (最新、Phase 14) — 常時展開 */}
+        {/* v2.2 (最新、Phase 17) — 常時展開 */}
         <div>
-          <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV21Title}</h3>
-          <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV21Body}</p>
+          <h3 className="text-sm font-bold text-washi-cream mb-1">{T.noticeV22Title}</h3>
+          <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV22Body}</p>
         </div>
+        {/* v2.1 (Phase 14) — 折り畳み */}
+        <NoticeEntry title={T.noticeV21Title}>
+          <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV21Body}</p>
+        </NoticeEntry>
         {/* v2.0 (Phase 13-F) — 折り畳み */}
         <NoticeEntry title={T.noticeV2Title}>
           <p className="text-xs text-washi-muted leading-relaxed">{T.noticeV2Body}</p>
