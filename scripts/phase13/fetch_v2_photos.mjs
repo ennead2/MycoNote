@@ -117,7 +117,7 @@ async function fetchWithRetry(url, opts = {}, retries = 3) {
 }
 
 /** Wikipedia 代表画像: ja(和名) → ja(学名) → ja(synonym) → en(学名) の優先順位。 */
-async function getWikipediaImage(jaName, scientificName, synonyms = []) {
+export async function getWikipediaImage(jaName, scientificName, synonyms = []) {
   const sources = [
     { lang: 'ja', title: jaName },
     { lang: 'ja', title: scientificName },
@@ -210,7 +210,7 @@ export function mergeByUserJapanFirst(jpByUser, globalByUser) {
 }
 
 /** iNaturalist Research Grade 写真。ユーザー分散最優先、Japan 観察は同順位内で先出し。 */
-async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX_PHOTOS) {
+export async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX_PHOTOS) {
   const candidates = [scientificName, ...synonyms];
 
   for (const candidate of candidates) {
@@ -245,7 +245,7 @@ async function getInatPhotos(scientificName, synonyms = [], maxPhotos = INAT_MAX
   return { photos: [], matchedName: null };
 }
 
-async function downloadAndConvert(url, outputPath) {
+export async function downloadAndConvert(url, outputPath) {
   const res = await fetchWithRetry(url);
   if (!res) throw new Error('Download returned null');
 

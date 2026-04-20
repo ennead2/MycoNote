@@ -1,0 +1,58 @@
+[
+  {
+    "japaneseName": "キイボカサタケ",
+    "scientificName": "Entoloma murrayi",
+    "mycoBankId": 158631,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名種のため手動追加。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "アカイボカサタケ",
+    "scientificName": "Entoloma quadratum",
+    "mycoBankId": 313803,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名種のため手動追加。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "キシメジ",
+    "scientificName": "Tricholoma equestre",
+    "mycoBankId": 176119,
+    "daikinrinHasScientificPage": true,
+    "daikinrinHasJaField": false,
+    "note": "大菌輪に学名ページあり、和名フィールドは null。旧 approved 由来で有名食毒種のため手動追加（ヨーロッパで死亡事故報告あり）。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  },
+  {
+    "japaneseName": "ウラベニホテイシメジ",
+    "scientificName": "Entoloma sarcopus",
+    "mycoBankId": null,
+    "daikinrinHasScientificPage": false,
+    "daikinrinHasJaField": false,
+    "gbifVerifiedAcceptedAt": "2026-04-19",
+    "gbifUsageKey": 3346727,
+    "gbifTaxonomicStatus": "ACCEPTED",
+    "gbifAuthorship": "Nagas. & Hongo",
+    "synonymsFromGbif": [
+      "Entoloma crassipes",
+      "Rhodophyllus crassipes"
+    ],
+    "taxonomyFromGbif": {
+      "kingdom": "Fungi",
+      "phylum": "Basidiomycota",
+      "class": "Agaricomycetes",
+      "order": "Agaricales",
+      "family": "Entolomataceae",
+      "genus": "Entoloma"
+    },
+    "note": "大菌輪 (日本産きのこ目録 2026-5) に完全不在、GBIF では ACCEPTED (speciesKey=3346727)。旧 approved (src/data/mushrooms.json) の記事本文をそのまま流用、synonyms/taxonomy は GBIF 由来で補完。図鑑に残す判断により override で保持。",
+    "addedInPhase": 17,
+    "addedAt": "2026-04-19"
+  }
+]

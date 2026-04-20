@@ -55,3 +55,15 @@ scripts/temp/
 # hierarchy と coverage-report は再現性・人間可読性のため commit 対象
 data/phase15/species-traits-raw.json
 data/phase15/species-traits-visible.json
+
+# Phase 17 進行中の大きなバッチ生成物（commit 対象外、実行で再生成可能）
+data/phase17/fetch-*.log
+data/phase17/fetch-failures.json
+data/phase17/fetch-report.json
+data/phase17/wikipedia-availability.json
+data/phase17/inat-observations.json
+data/phase17/trait-circus-lookup.json
+data/phase17/trait-circus-missing.json
+data/phase17/mushrooms-master.v1.json
+data/phase17/mushrooms-master-stats.json
+# commit 対象: ja-name-overrides.json / article-map.json / article-map-stats.json / phase16-artifacts/

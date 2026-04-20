@@ -13,7 +13,7 @@ describe('mushrooms data (v2)', () => {
       expect(m.names.scientific, `${m.id}: names.scientific must be defined`).toBeTruthy();
       expect(['edible', 'caution', 'inedible', 'unknown', 'toxic', 'deadly'], `${m.id}: safety must be valid`).toContain(m.safety);
       expect(Array.isArray(m.season), `${m.id}: season must be array`).toBe(true);
-      expect(m.season.length, `${m.id}: season must have at least one range`).toBeGreaterThan(0);
+      // Phase 17: 大菌輪フェノロジー非掲載種は空配列許容 (UI 側でガード)
       for (const r of m.season) {
         expect(r.start_month, `${m.id}: start_month`).toBeGreaterThanOrEqual(1);
         expect(r.start_month, `${m.id}: start_month`).toBeLessThanOrEqual(12);

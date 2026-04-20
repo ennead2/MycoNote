@@ -1,0 +1,204 @@
+{
+  "total": 396,
+  "verified_ok": 381,
+  "demoted_to_tier1": 12,
+  "demoted_to_tier2": 3,
+  "errors": 0,
+  "demotions": [
+    {
+      "japaneseName": "ツクリタケ",
+      "scientificName": "Agaricus bisporus",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "マッシュルーム",
+      "redirectChain": [
+        {
+          "from": "ツクリタケ",
+          "to": "マッシュルーム"
+        }
+      ]
+    },
+    {
+      "japaneseName": "カンタケ",
+      "scientificName": "Agaricus spodoleucus",
+      "originalTier": 0,
+      "newTier": 2,
+      "redirectTo": "ヒラタケ",
+      "redirectChain": [
+        {
+          "from": "カンタケ",
+          "to": "ヒラタケ"
+        }
+      ]
+    },
+    {
+      "japaneseName": "ツノホコリ",
+      "scientificName": "Ceratiomyxa fruticulosa",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "ツノホコリ類",
+      "redirectChain": [
+        {
+          "from": "ツノホコリ",
+          "to": "ツノホコリ類"
+        }
+      ]
+    },
+    {
+      "japaneseName": "バッカクキン",
+      "scientificName": "Claviceps purpurea",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "麦角菌",
+      "redirectChain": [
+        {
+          "from": "バッカクキン",
+          "to": "麦角菌"
+        }
+      ]
+    },
+    {
+      "japaneseName": "キララタケ",
+      "scientificName": "Coprinellus micaceus",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "ナヨタケ科",
+      "redirectChain": [
+        {
+          "from": "キララタケ",
+          "to": "ナヨタケ科"
+        }
+      ]
+    },
+    {
+      "japaneseName": "マンネンタケ",
+      "scientificName": "Ganoderma sichuanense",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "霊芝",
+      "redirectChain": [
+        {
+          "from": "マンネンタケ",
+          "to": "霊芝"
+        }
+      ]
+    },
+    {
+      "japaneseName": "ワヒダタケ",
+      "scientificName": "Hymenochaete campylopora",
+      "originalTier": 0,
+      "newTier": 2,
+      "redirectTo": "シバフタケ",
+      "redirectChain": [
+        {
+          "from": "ワヒダタケ",
+          "to": "シバフタケ"
+        }
+      ]
+    },
+    {
+      "japaneseName": "カバノアナタケ",
+      "scientificName": "Inonotus obliquus",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "チャーガ",
+      "redirectChain": [
+        {
+          "from": "カバノアナタケ",
+          "to": "チャーガ"
+        }
+      ]
+    },
+    {
+      "japaneseName": "トウチュウカソウ",
+      "scientificName": "Ophiocordyceps sinensis",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "冬虫夏草",
+      "redirectChain": [
+        {
+          "from": "トウチュウカソウ",
+          "to": "冬虫夏草"
+        }
+      ]
+    },
+    {
+      "japaneseName": "アイゾメシバフタケ",
+      "scientificName": "Psilocybe subcaerulipes",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "ヒカゲシビレタケ",
+      "redirectChain": [
+        {
+          "from": "アイゾメシバフタケ",
+          "to": "ヒカゲシビレタケ"
+        }
+      ]
+    },
+    {
+      "japaneseName": "トムライカビ",
+      "scientificName": "Rhopalomyces strangulatus",
+      "originalTier": 0,
+      "newTier": 2,
+      "redirectTo": "ヘリコケファルム科",
+      "redirectChain": [
+        {
+          "from": "トムライカビ",
+          "to": "ヘリコケファルム科"
+        }
+      ]
+    },
+    {
+      "japaneseName": "ニセショウロ",
+      "scientificName": "Scleroderma citrinum",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "ニセショウロ科",
+      "redirectChain": [
+        {
+          "from": "ニセショウロ",
+          "to": "ニセショウロ科"
+        }
+      ]
+    },
+    {
+      "japaneseName": "オニイグチ",
+      "scientificName": "Strobilomyces strobilaceus",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "オニイグチ属",
+      "redirectChain": [
+        {
+          "from": "オニイグチ",
+          "to": "オニイグチ属"
+        }
+      ]
+    },
+    {
+      "japaneseName": "サマツ",
+      "scientificName": "Tricholoma colossus",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "モミタケ",
+      "redirectChain": [
+        {
+          "from": "サマツ",
+          "to": "モミタケ"
+        }
+      ]
+    },
+    {
+      "japaneseName": "ブクリョウ",
+      "scientificName": "Wolfiporia cocos",
+      "originalTier": 0,
+      "newTier": 1,
+      "redirectTo": "マツホド",
+      "redirectChain": [
+        {
+          "from": "ブクリョウ",
+          "to": "マツホド"
+        }
+      ]
+    }
+  ]
+}

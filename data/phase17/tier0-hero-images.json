@@ -1,0 +1,2983 @@
+{
+  "Agaricus abruptibulbus": {
+    "image_local": "/images/mushrooms/agaricus_abruptibulbus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%A2%E3%83%AA%E3%83%8E%E3%82%AB%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Agaricus_abruptibulbus_01.jpg",
+    "matched_title": "ウスキモリノカサ",
+    "from": "ja.wikipedia (ウスキモリノカサ)",
+    "bytes": 111380
+  },
+  "Agaricus arvensis": {
+    "image_local": "/images/mushrooms/agaricus_arvensis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AA%E3%82%AA%E3%83%8F%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Horse_mushroom_%28Agaricus_arvensis%29.jpg",
+    "matched_title": "シロオオハラタケ",
+    "from": "ja.wikipedia (シロオオハラタケ)",
+    "bytes": 107248
+  },
+  "Agaricus bisporus": {
+    "image_local": null,
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%BC%E3%83%A0",
+    "error": "Image too small: 192x256"
+  },
+  "Agaricus campestris": {
+    "image_local": "/images/mushrooms/agaricus_campestris.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/2012-02-13_Agaricus_campestris_L_199588.jpg",
+    "matched_title": "ハラタケ",
+    "from": "ja.wikipedia (ハラタケ)",
+    "bytes": 103026
+  },
+  "Agaricus subrutilescens": {
+    "image_local": "/images/mushrooms/agaricus_subrutilescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%A9%E3%82%A8%E3%83%8E%E3%83%8F%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Agaricus_subrutilescens_125191.jpg",
+    "matched_title": "ザラエノハラタケ",
+    "from": "ja.wikipedia (ザラエノハラタケ)",
+    "bytes": 83498
+  },
+  "Amanita caesarea": {
+    "image_local": "/images/mushrooms/amanita_caesarea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Oronges.jpg",
+    "matched_title": "セイヨウタマゴタケ",
+    "from": "ja.wikipedia (セイヨウタマゴタケ)",
+    "bytes": 93272
+  },
+  "Amanita caesareoides": {
+    "image_local": "/images/mushrooms/amanita_caesareoides.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Amanita_hemibapha_24.jpg",
+    "matched_title": "タマゴタケ",
+    "from": "ja.wikipedia (タマゴタケ)",
+    "bytes": 108238
+  },
+  "Amanita ceciliae": {
+    "image_local": "/images/mushrooms/amanita_ceciliae.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Amanita_inaurata.JPG",
+    "matched_title": "テングツルタケ",
+    "from": "ja.wikipedia (テングツルタケ)",
+    "bytes": 177726
+  },
+  "Amanita cheelii": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita eijii": {
+    "image_local": "/images/mushrooms/amanita_eijii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B5%E3%82%AF%E3%83%AC%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_cokeri_52268.jpg",
+    "matched_title": "ササクレシロオニタケ",
+    "from": "ja.wikipedia (ササクレシロオニタケ)",
+    "bytes": 79638
+  },
+  "Amanita esculenta": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita fuliginea": {
+    "image_local": "/images/mushrooms/amanita_fuliginea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Amanita_fuliginea_Hongo_803897.jpg",
+    "matched_title": "クロタマゴテングタケ",
+    "from": "ja.wikipedia (クロタマゴテングタケ)",
+    "bytes": 58408
+  },
+  "Amanita fulva": {
+    "image_local": "/images/mushrooms/amanita_fulva.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%90%E3%82%A4%E3%83%AD%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Amanita_fulva_060820w.jpg",
+    "matched_title": "カバイロツルタケ",
+    "from": "ja.wikipedia (カバイロツルタケ)",
+    "bytes": 141040
+  },
+  "Amanita gymnopus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita ibotengutake": {
+    "image_local": "/images/mushrooms/amanita_ibotengutake.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%9C%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Japanese_Ringed-Bulb_Amanita_from_iNaturalist_11453555.jpg",
+    "matched_title": "イボテングタケ",
+    "from": "ja.wikipedia (イボテングタケ)",
+    "bytes": 136444
+  },
+  "Amanita imazekii": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita kitamagotake": {
+    "image_local": "/images/mushrooms/amanita_kitamagotake.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/2016-07-25_Amanita_kitamagotake_N._Endo_%26_A._Yamada_639340.jpg",
+    "matched_title": "キタマゴタケ",
+    "from": "ja.wikipedia (キタマゴタケ)",
+    "bytes": 56312
+  },
+  "Amanita kotohiraensis": {
+    "image_local": "/images/mushrooms/amanita_kotohiraensis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%88%E3%83%92%E3%83%A9%E3%82%B7%E3%83%AD%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Amanita_kotohiraensis_%E3%82%B3%E3%83%88%E3%83%92%E3%83%A9%E3%82%B7%E3%83%AD%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1%EF%BC%88%E7%90%B4%E5%B9%B3%E7%99%BD%E5%A4%A9%E7%8B%97%E8%8C%B8_%EF%BC%89_Akiyoshi_Matsuoka_DSCF3636.jpg",
+    "matched_title": "コトヒラシロテングタケ",
+    "from": "ja.wikipedia (コトヒラシロテングタケ)",
+    "bytes": 102144
+  },
+  "Amanita longistriata": {
+    "image_local": "/images/mushrooms/amanita_longistriata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Amanita_longistriata_S._Imai_532749.jpg",
+    "matched_title": "タマゴテングタケモドキ",
+    "from": "ja.wikipedia (タマゴテングタケモドキ)",
+    "bytes": 18742
+  },
+  "Amanita muscaria": {
+    "image_local": "/images/mushrooms/amanita_muscaria.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/2006-10-25_Amanita_muscaria_crop.jpg",
+    "matched_title": "ベニテングタケ",
+    "from": "ja.wikipedia (ベニテングタケ)",
+    "bytes": 88162
+  },
+  "Amanita neo-ovoidea": {
+    "image_local": "/images/mushrooms/amanita_neo_ovoidea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Amanita_neoovoidea_03.jpg",
+    "matched_title": "シロテングタケ",
+    "from": "ja.wikipedia (シロテングタケ)",
+    "bytes": 73912
+  },
+  "Amanita oberwinkleriana": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita orientigemmata": {
+    "image_local": "/images/mushrooms/amanita_orientigemmata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ウスキテングタケ",
+    "from": "ja.wikipedia (ウスキテングタケ)",
+    "bytes": 90652
+  },
+  "Amanita pantherina": {
+    "image_local": "/images/mushrooms/amanita_pantherina.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Amanita_pantherina_20.jpg",
+    "matched_title": "テングタケ",
+    "from": "ja.wikipedia (テングタケ)",
+    "bytes": 114230
+  },
+  "Amanita phalloides": {
+    "image_local": "/images/mushrooms/amanita_phalloides.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_phalloides_1.JPG",
+    "matched_title": "タマゴテングタケ",
+    "from": "ja.wikipedia (タマゴテングタケ)",
+    "bytes": 111092
+  },
+  "Amanita pseudoporphyria": {
+    "image_local": "/images/mushrooms/amanita_pseudoporphyria.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Amanita_pseudoporphyria_08.jpg",
+    "matched_title": "コテングタケモドキ",
+    "from": "ja.wikipedia (コテングタケモドキ)",
+    "bytes": 57832
+  },
+  "Amanita rubescens": {
+    "image_local": "/images/mushrooms/amanita_rubescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Amanita_rubescens.JPG",
+    "matched_title": "ガンタケ",
+    "from": "ja.wikipedia (ガンタケ)",
+    "bytes": 69916
+  },
+  "Amanita rufoferruginea": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Amanita sinensis": {
+    "image_local": "/images/mushrooms/amanita_sinensis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%82%AB%E3%82%B0%E3%83%A9%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/2016-05-24_Amanita_sinensis_Zhu_L._Yang_620608.jpg",
+    "matched_title": "ハイカグラテングタケ",
+    "from": "ja.wikipedia (ハイカグラテングタケ)",
+    "bytes": 81810
+  },
+  "Amanita sphaerobulbosa": {
+    "image_local": "/images/mushrooms/amanita_sphaerobulbosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Amanita_abrupta_1988_0913.jpg",
+    "matched_title": "タマシロオニタケ",
+    "from": "ja.wikipedia (タマシロオニタケ)",
+    "bytes": 127454
+  },
+  "Amanita spissacea": {
+    "image_local": "/images/mushrooms/amanita_spissacea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%93%E3%82%AD%E3%83%8E%E3%82%B3%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Amanita_spissacea_01.jpg",
+    "matched_title": "ヘビキノコモドキ",
+    "from": "ja.wikipedia (ヘビキノコモドキ)",
+    "bytes": 71494
+  },
+  "Amanita subjunquillea": {
+    "image_local": "/images/mushrooms/amanita_subjunquillea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%B4%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Tamagotakemodoi.jpg",
+    "matched_title": "タマゴタケモドキ",
+    "from": "ja.wikipedia (タマゴタケモドキ)",
+    "bytes": 83930
+  },
+  "Amanita vaginata": {
+    "image_local": "/images/mushrooms/amanita_vaginata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amanita_vaginata_1533317.jpg",
+    "matched_title": "ツルタケ",
+    "from": "ja.wikipedia (ツルタケ)",
+    "bytes": 101440
+  },
+  "Amanita vaginata var. alba": {
+    "image_local": "/images/mushrooms/amanita_vaginata_var_alba.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Amanitopsis_alba0.jpg",
+    "matched_title": "シロツルタケ",
+    "from": "ja.wikipedia (シロツルタケ)",
+    "bytes": 65184
+  },
+  "Amanita verna": {
+    "image_local": "/images/mushrooms/amanita_verna.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%BF%E3%83%9E%E3%82%B4%E3%83%86%E3%83%B3%E3%82%B0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Amanita_verna_4.jpg",
+    "matched_title": "シロタマゴテングタケ",
+    "from": "ja.wikipedia (シロタマゴテングタケ)",
+    "bytes": 95130
+  },
+  "Amanita virgineoides": {
+    "image_local": "/images/mushrooms/amanita_virgineoides.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Amanita_virgineoides_Park_of_yashiro-no-mori_%E3%82%B7%E3%83%AD%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1_%E3%82%84%E3%81%97%E3%82%8D%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92_DSCF6576.jpg",
+    "matched_title": "シロオニタケ",
+    "from": "ja.wikipedia (シロオニタケ)",
+    "bytes": 117892
+  },
+  "Amanita virosa": {
+    "image_local": "/images/mushrooms/amanita_virosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Amanita_virosa_a1_%287%29.JPG",
+    "matched_title": "ドクツルタケ",
+    "from": "ja.wikipedia (ドクツルタケ)",
+    "bytes": 81408
+  },
+  "Amanita volvata": {
+    "image_local": "/images/mushrooms/amanita_volvata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%AF%E3%83%AD%E3%83%84%E3%83%AB%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/American_Amidella_from_iNaturalist_141911335.jpg",
+    "matched_title": "フクロツルタケ",
+    "from": "ja.wikipedia (フクロツルタケ)",
+    "bytes": 57212
+  },
+  "Amaurochaete atra": {
+    "image_local": "/images/mushrooms/amaurochaete_atra.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%9F%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amaurochaete_atra.jpg",
+    "matched_title": "クロスミホコリ",
+    "from": "ja.wikipedia (クロスミホコリ)",
+    "bytes": 120886
+  },
+  "Ampulloclitocybe clavipes": {
+    "image_local": "/images/mushrooms/ampulloclitocybe_clavipes.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Ampulloclitocybe%20clavipes",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/2010-10-08_Ampulloclitocybe_clavipes_cropped.jpg",
+    "matched_title": "ホテイシメジ",
+    "from": "en.wikipedia (Ampulloclitocybe clavipes)",
+    "bytes": 86982
+  },
+  "Arcyria cinerea": {
+    "image_local": "/images/mushrooms/arcyria_cinerea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Arcyria_cinerea_65186072.jpg",
+    "matched_title": "シロウツボホコリ",
+    "from": "ja.wikipedia (シロウツボホコリ)",
+    "bytes": 71802
+  },
+  "Arcyria denudata": {
+    "image_local": "/images/mushrooms/arcyria_denudata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/2013-07-06_Arcyria_denudata_Fr_345994.jpg",
+    "matched_title": "ウツボホコリ",
+    "from": "ja.wikipedia (ウツボホコリ)",
+    "bytes": 53898
+  },
+  "Arcyria incarnata": {
+    "image_local": "/images/mushrooms/arcyria_incarnata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%A2%E3%82%A4%E3%83%AD%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Arcyria_incarnata%2C_Slime_Mould%2C_UK.jpg",
+    "matched_title": "モモイロウツボホコリ",
+    "from": "ja.wikipedia (モモイロウツボホコリ)",
+    "bytes": 104072
+  },
+  "Armillaria mellea subsp. nipponica": {
+    "image_local": "/images/mushrooms/armillaria_mellea_subsp_nipponica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Armillaria_Kummer_Naratake_samodasi.jpg",
+    "matched_title": "ナラタケ",
+    "from": "ja.wikipedia (ナラタケ)",
+    "bytes": 158278
+  },
+  "Aspropaxillus giganteus": {
+    "image_local": "/images/mushrooms/aspropaxillus_giganteus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Leucopaxillus.giganteus.-.lindsey.jpg",
+    "matched_title": "オオイチョウタケ",
+    "from": "ja.wikipedia (オオイチョウタケ)",
+    "bytes": 58054
+  },
+  "Asterophora lycoperdoides": {
+    "image_local": "/images/mushrooms/asterophora_lycoperdoides.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%82%B0%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Asterophora_lycoperdoides_15966.jpg",
+    "matched_title": "ヤグラタケ",
+    "from": "ja.wikipedia (ヤグラタケ)",
+    "bytes": 36012
+  },
+  "Astraeus hygrometricus": {
+    "image_local": "/images/mushrooms/astraeus_hygrometricus.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Astraeus%20hygrometricus",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Astraeus_hygrometricus_122239.jpg",
+    "matched_title": "ツチグリ",
+    "from": "en.wikipedia (Astraeus hygrometricus)",
+    "bytes": 135034
+  },
+  "Aureoboletus auriflammeus": {
+    "image_local": "/images/mushrooms/aureoboletus_auriflammeus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%AC%E3%82%B5%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Pulveroboletus_auriflammeus_01.jpg",
+    "matched_title": "ハナガサイグチ",
+    "from": "ja.wikipedia (ハナガサイグチ)",
+    "bytes": 73794
+  },
+  "Auricularia auricula-judae": {
+    "image_local": "/images/mushrooms/auricularia_auricula_judae.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2.JPG",
+    "matched_title": "キクラゲ",
+    "from": "ja.wikipedia (キクラゲ)",
+    "bytes": 114644
+  },
+  "Auricularia cornea": {
+    "image_local": "/images/mushrooms/auricularia_cornea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A9%E3%82%B2%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Auricularia_polytricha.jpg",
+    "matched_title": "アラゲキクラゲ",
+    "from": "ja.wikipedia (アラゲキクラゲ)",
+    "bytes": 125798
+  },
+  "Auricularia mesenterica": {
+    "image_local": "/images/mushrooms/auricularia_mesenterica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%80%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Ohrlappen3.jpg",
+    "matched_title": "ヒダキクラゲ",
+    "from": "ja.wikipedia (ヒダキクラゲ)",
+    "bytes": 83910
+  },
+  "Austroboletus gracilis": {
+    "image_local": "/images/mushrooms/austroboletus_gracilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%82%AB%E3%83%AF%E3%83%A4%E3%82%B7%E3%83%A3%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Austroboletus_gracilis_01.jpg",
+    "matched_title": "クリカワヤシャイグチ",
+    "from": "ja.wikipedia (クリカワヤシャイグチ)",
+    "bytes": 56056
+  },
+  "Badhamia foliicola": {
+    "image_local": "/images/mushrooms/badhamia_foliicola.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%81%E3%83%90%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Badhamia_foliicola_Lister_605006.jpg",
+    "matched_title": "オチバフウセンホコリ",
+    "from": "ja.wikipedia (オチバフウセンホコリ)",
+    "bytes": 73008
+  },
+  "Badhamia panicea": {
+    "image_local": "/images/mushrooms/badhamia_panicea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%B3%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Badhamia_panicea_222430468.jpg",
+    "matched_title": "パンフウセンホコリ",
+    "from": "ja.wikipedia (パンフウセンホコリ)",
+    "bytes": 93264
+  },
+  "Badhamia polycephala": {
+    "image_local": "/images/mushrooms/badhamia_polycephala.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%82%B8%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Physarum_polycephalum_%283%29.jpg",
+    "matched_title": "モジホコリ",
+    "from": "ja.wikipedia (モジホコリ)",
+    "bytes": 162286
+  },
+  "Badhamia utricularis": {
+    "image_local": "/images/mushrooms/badhamia_utricularis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%89%E3%82%A6%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Badhamia_utricularis_1273844.jpg",
+    "matched_title": "ブドウフウセンホコリ",
+    "from": "ja.wikipedia (ブドウフウセンホコリ)",
+    "bytes": 96040
+  },
+  "Baeospora myosura": {
+    "image_local": "/images/mushrooms/baeospora_myosura.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%BB%E3%83%9E%E3%83%84%E3%82%AB%E3%82%B5%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Baeospora.myosura2.-.lindsey.jpg",
+    "matched_title": "ニセマツカサシメジ",
+    "from": "ja.wikipedia (ニセマツカサシメジ)",
+    "bytes": 44034
+  },
+  "Basidopus chlorophos": {
+    "image_local": "/images/mushrooms/basidopus_chlorophos.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%82%B3%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Mycena_chlorophos.jpg",
+    "matched_title": "ヤコウタケ",
+    "from": "ja.wikipedia (ヤコウタケ)",
+    "bytes": 10864
+  },
+  "Boletellopsis elata": {
+    "image_local": "/images/mushrooms/boletellopsis_elata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B7%E3%83%8A%E3%82%AC%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Boletellus_elatus_13.jpg",
+    "matched_title": "アシナガイグチ",
+    "from": "ja.wikipedia (アシナガイグチ)",
+    "bytes": 86314
+  },
+  "Boletellus aurocontextus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Boletus aurantiosplendens": {
+    "image_local": "/images/mushrooms/boletus_aurantiosplendens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Boletus_aurantiosplendens_04.jpg",
+    "matched_title": "コガネヤマドリ",
+    "from": "ja.wikipedia (コガネヤマドリ)",
+    "bytes": 102296
+  },
+  "Boletus edulis": {
+    "image_local": "/images/mushrooms/boletus_edulis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/H%C5%99ib_smrkov%C3%BD.jpg",
+    "matched_title": "ヤマドリタケ",
+    "from": "ja.wikipedia (ヤマドリタケ)",
+    "bytes": 120970
+  },
+  "Boletus ornatipes": {
+    "image_local": "/images/mushrooms/boletus_ornatipes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A2%E3%83%9F%E3%82%A2%E3%82%B7%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Retiboletus_ornatipes_01.jpg",
+    "matched_title": "キアミアシイグチ",
+    "from": "ja.wikipedia (キアミアシイグチ)",
+    "bytes": 86634
+  },
+  "Boletus speciosus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Boletus subtomentosus": {
+    "image_local": "/images/mushrooms/boletus_subtomentosus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Podgrzybek_zaj%C4%85czek_VIII_2005_2.jpg",
+    "matched_title": "アワタケ",
+    "from": "ja.wikipedia (アワタケ)",
+    "bytes": 52908
+  },
+  "Boletus violaceofuscus": {
+    "image_local": "/images/mushrooms/boletus_violaceofuscus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Boletus_violaceofuscus_1996_0922.jpg",
+    "matched_title": "ムラサキヤマドリタケ",
+    "from": "ja.wikipedia (ムラサキヤマドリタケ)",
+    "bytes": 86792
+  },
+  "Brefeldia maxima": {
+    "image_local": "/images/mushrooms/brefeldia_maxima.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AC%E3%83%95%E3%82%A7%E3%83%AB%E3%83%88%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Brefeldia_maxima_sporulating_phase.jpg",
+    "matched_title": "ブレフェルトホコリ",
+    "from": "ja.wikipedia (ブレフェルトホコリ)",
+    "bytes": 200240
+  },
+  "Bulgaria inquinans": {
+    "image_local": "/images/mushrooms/bulgaria_inquinans.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%A0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Bulgaria_inquinans_1.jpg",
+    "matched_title": "ゴムタケ",
+    "from": "ja.wikipedia (ゴムタケ)",
+    "bytes": 64032
+  },
+  "Caloboletus calopus": {
+    "image_local": "/images/mushrooms/caloboletus_calopus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B7%E3%83%99%E3%83%8B%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Schoenfussroehrling.jpg",
+    "matched_title": "アシベニイグチ",
+    "from": "ja.wikipedia (アシベニイグチ)",
+    "bytes": 53500
+  },
+  "Calocera viscosa": {
+    "image_local": "/images/mushrooms/calocera_viscosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AB%E3%83%AF%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cviscosa_wiki.jpg",
+    "matched_title": "ニカワホウキタケ",
+    "from": "ja.wikipedia (ニカワホウキタケ)",
+    "bytes": 43218
+  },
+  "Calocybe gambosa": {
+    "image_local": "/images/mushrooms/calocybe_gambosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A6%E3%82%AD%E3%83%AF%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Calocybe_gambosa_080420wa.jpg",
+    "matched_title": "ユキワリ",
+    "from": "ja.wikipedia (ユキワリ)",
+    "bytes": 68368
+  },
+  "Calvatia craniiformis": {
+    "image_local": "/images/mushrooms/calvatia_craniiformis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Calvatia_craniiformis_308991.jpg",
+    "matched_title": "ノウタケ",
+    "from": "ja.wikipedia (ノウタケ)",
+    "bytes": 123880
+  },
+  "Calycina citrina": {
+    "image_local": "/images/mushrooms/calycina_citrina.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%A7%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bisporella_citrina.JPG",
+    "matched_title": "ビョウタケ",
+    "from": "ja.wikipedia (ビョウタケ)",
+    "bytes": 92646
+  },
+  "Candolleomyces candolleanus": {
+    "image_local": "/images/mushrooms/candolleomyces_candolleanus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%81%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Psathyrella_candolleana_%28Fr.%29_Maire_106604.jpg",
+    "matched_title": "イタチタケ",
+    "from": "ja.wikipedia (イタチタケ)",
+    "bytes": 65090
+  },
+  "Cantharellus applanatus": {
+    "image_local": "/images/mushrooms/cantharellus_applanatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%82%BA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chanterelle_Cantharellus_cibarius.jpg",
+    "matched_title": "アンズタケ",
+    "from": "ja.wikipedia (アンズタケ)",
+    "bytes": 89458
+  },
+  "Cantharellus minor": {
+    "image_local": "/images/mushrooms/cantharellus_minor.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%8A%E3%82%A2%E3%83%B3%E3%82%BA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Cantharellus_minor_01.jpg",
+    "matched_title": "ヒナアンズタケ",
+    "from": "ja.wikipedia (ヒナアンズタケ)",
+    "bytes": 87486
+  },
+  "Cantharellus purpuraceus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Catathelasma ventricosum": {
+    "image_local": "/images/mushrooms/catathelasma_ventricosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%9F%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/2013-11-17_Catathelasma_ventricosum_%28Peck%29_Singer_386932.jpg",
+    "matched_title": "モミタケ",
+    "from": "ja.wikipedia (モミタケ)",
+    "bytes": 116340
+  },
+  "Cerioporus squamosus": {
+    "image_local": "/images/mushrooms/cerioporus_squamosus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Polyporus_squamosus_Molter.jpg",
+    "matched_title": "アミヒラタケ",
+    "from": "ja.wikipedia (アミヒラタケ)",
+    "bytes": 98870
+  },
+  "Cetraria islandica var. orientalis": {
+    "image_local": "/images/mushrooms/cetraria_islandica_var_orientalis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%83%A9%E3%83%B3%E3%82%BF%E3%82%A4",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cetraria_islandica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-032.jpg",
+    "matched_title": "エイランタイ",
+    "from": "ja.wikipedia (エイランタイ)",
+    "bytes": 49168
+  },
+  "Chalciporus piperatus": {
+    "image_local": "/images/mushrooms/chalciporus_piperatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chalciporus_piperatus_LC0182.jpg",
+    "matched_title": "コショウイグチ",
+    "from": "ja.wikipedia (コショウイグチ)",
+    "bytes": 102966
+  },
+  "Chlorociboria aeruginosa": {
+    "image_local": "/images/mushrooms/chlorociboria_aeruginosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%AF%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%B0%E3%82%B5%E3%83%AC%E3%82%AD%E3%83%B3",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chlorociboria_aeruginosa_181770565.jpg",
+    "matched_title": "ロクショウグサレキン",
+    "from": "ja.wikipedia (ロクショウグサレキン)",
+    "bytes": 101784
+  },
+  "Chlorophyllum molybdites": {
+    "image_local": "/images/mushrooms/chlorophyllum_molybdites.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%B7%E3%83%AD%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Chlorophyllum_molybdites_Guadalajara.jpg",
+    "matched_title": "オオシロカラカサタケ",
+    "from": "ja.wikipedia (オオシロカラカサタケ)",
+    "bytes": 90704
+  },
+  "Chlorophyllum neomastoideum": {
+    "image_local": "/images/mushrooms/chlorophyllum_neomastoideum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/%E3%83%89%E3%82%AF%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ドクカラカサタケ",
+    "from": "ja.wikipedia (ドクカラカサタケ)",
+    "bytes": 105502
+  },
+  "Chroogomphus rutilus": {
+    "image_local": "/images/mushrooms/chroogomphus_rutilus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Chroogomphus_rutilans_20091012w.JPG",
+    "matched_title": "クギタケ",
+    "from": "ja.wikipedia (クギタケ)",
+    "bytes": 85202
+  },
+  "Chroogomphus tomentosus": {
+    "image_local": "/images/mushrooms/chroogomphus_tomentosus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B5%E3%82%AF%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/2011-12-04_Chroogomphus_tomentosus_%28Murrill%29_O.K._Mill_187387.jpg",
+    "matched_title": "フサクギタケ",
+    "from": "ja.wikipedia (フサクギタケ)",
+    "bytes": 86572
+  },
+  "Clastoderma debaryanum": {
+    "image_local": "/images/mushrooms/clastoderma_debaryanum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%93%E3%83%8A%E3%82%AC%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Clastoderma_debaryanum.jpg",
+    "matched_title": "クビナガホコリ",
+    "from": "ja.wikipedia (クビナガホコリ)",
+    "bytes": 48920
+  },
+  "Clavaria fragilis": {
+    "image_local": "/images/mushrooms/clavaria_fragilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%BD%E3%82%A6%E3%83%A1%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Clavaria_fragilis_45549.jpg",
+    "matched_title": "シロソウメンタケ",
+    "from": "ja.wikipedia (シロソウメンタケ)",
+    "bytes": 36756
+  },
+  "Clavulinopsis fusiformis": {
+    "image_local": "/images/mushrooms/clavulinopsis_fusiformis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%AE%E3%83%8A%E3%82%BF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/2010-07-22_Clavulinopsis_fusiformis_%28Sowerby%29_Corner_95377_cropped.jpg",
+    "matched_title": "ナギナタタケ",
+    "from": "ja.wikipedia (ナギナタタケ)",
+    "bytes": 57892
+  },
+  "Clavulinopsis miyabeana": {
+    "image_local": "/images/mushrooms/clavulinopsis_miyabeana.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%8A%E3%82%AE%E3%83%8A%E3%82%BF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Clavulinopsis_miyabeana.jpg",
+    "matched_title": "ベニナギナタタケ",
+    "from": "ja.wikipedia (ベニナギナタタケ)",
+    "bytes": 59106
+  },
+  "Clavulinopsis zollingeri": {
+    "image_local": "/images/mushrooms/clavulinopsis_zollingeri.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Clavaria_zollingeri_57243.jpg",
+    "matched_title": "ムラサキホウキタケ",
+    "from": "ja.wikipedia (ムラサキホウキタケ)",
+    "bytes": 94990
+  },
+  "Clitocybe nebularis": {
+    "image_local": "/images/mushrooms/clitocybe_nebularis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%82%A4%E3%83%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Nevelzwam_%28nebularis%29_tussen_afgevallen_beukenblad_%28d.j.b.%29_01.jpg",
+    "matched_title": "ハイイロシメジ",
+    "from": "ja.wikipedia (ハイイロシメジ)",
+    "bytes": 69216
+  },
+  "Collybia nuda": {
+    "image_local": "/images/mushrooms/collybia_nuda.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Lepista_nuda.jpg",
+    "matched_title": "ムラサキシメジ",
+    "from": "ja.wikipedia (ムラサキシメジ)",
+    "bytes": 69982
+  },
+  "Collybia sordida": {
+    "image_local": "/images/mushrooms/collybia_sordida.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Champignon_L%C3%A9piste_Sordide.jpg",
+    "matched_title": "コムラサキシメジ",
+    "from": "ja.wikipedia (コムラサキシメジ)",
+    "bytes": 45484
+  },
+  "Comatricha nigra": {
+    "image_local": "/images/mushrooms/comatricha_nigra.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%AA%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Comatricha_nigra_256244076.jpg",
+    "matched_title": "ヤリカミノケホコリ",
+    "from": "ja.wikipedia (ヤリカミノケホコリ)",
+    "bytes": 55238
+  },
+  "Coprinellus disseminatus": {
+    "image_local": "/images/mushrooms/coprinellus_disseminatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8C%E3%82%BB%E3%83%B3%E3%83%9C%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Coprinus_disseminatus_02.jpg",
+    "matched_title": "イヌセンボンタケ",
+    "from": "ja.wikipedia (イヌセンボンタケ)",
+    "bytes": 79406
+  },
+  "Coprinopsis atramentaria": {
+    "image_local": "/images/mushrooms/coprinopsis_atramentaria.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1..JPG",
+    "matched_title": "ヒトヨタケ",
+    "from": "ja.wikipedia (ヒトヨタケ)",
+    "bytes": 138006
+  },
+  "Coprinus comatus": {
+    "image_local": "/images/mushrooms/coprinus_comatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B5%E3%82%AF%E3%83%AC%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Coprinus_comatus_-_Coprin-chevelu-20080831.jpg",
+    "matched_title": "ササクレヒトヨタケ",
+    "from": "ja.wikipedia (ササクレヒトヨタケ)",
+    "bytes": 117484
+  },
+  "Cordyceps militaris": {
+    "image_local": "/images/mushrooms/cordyceps_militaris.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%8A%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/2008-12-14_Cordyceps_militaris_3107128906.jpg",
+    "matched_title": "サナギタケ",
+    "from": "ja.wikipedia (サナギタケ)",
+    "bytes": 47492
+  },
+  "Corticium roseocarneum": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Cortinarius caperatus": {
+    "image_local": "/images/mushrooms/cortinarius_caperatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%B2%E3%83%B3%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rozites_caperatus.jpg",
+    "matched_title": "ショウゲンジ",
+    "from": "ja.wikipedia (ショウゲンジ)",
+    "bytes": 22076
+  },
+  "Cortinarius cinnamomeus": {
+    "image_local": "/images/mushrooms/cortinarius_cinnamomeus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cortinarius_cinnamomeus_-_Lindsey.jpg",
+    "matched_title": "ササタケ",
+    "from": "ja.wikipedia (ササタケ)",
+    "bytes": 42584
+  },
+  "Cortinarius violaceus": {
+    "image_local": "/images/mushrooms/cortinarius_violaceus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cortinarius_violaceus_in_situ.jpg",
+    "matched_title": "ムラサキフウセンタケ",
+    "from": "ja.wikipedia (ムラサキフウセンタケ)",
+    "bytes": 60364
+  },
+  "Craterellus cornucopioides": {
+    "image_local": "/images/mushrooms/craterellus_cornucopioides.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%A9%E3%83%83%E3%83%91%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/2011-11-20_Craterellus_cornucopioides_%28L.%29_Pers_183522_cropped.jpg",
+    "matched_title": "クロラッパタケ",
+    "from": "ja.wikipedia (クロラッパタケ)",
+    "bytes": 147292
+  },
+  "Craterium leucocephalum": {
+    "image_local": "/images/mushrooms/craterium_leucocephalum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%B5%E3%82%AB%E3%82%BA%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Craterium_leucocephalum_%28Pers._ex_J.F._Gmel.%29_Ditmar.jpg",
+    "matched_title": "シロサカズキホコリ",
+    "from": "ja.wikipedia (シロサカズキホコリ)",
+    "bytes": 53884
+  },
+  "Craterium minutum": {
+    "image_local": "/images/mushrooms/craterium_minutum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%AB%E3%82%BA%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Craterium_minutum_%28Physaraceae_sp.%29%2C_Elst_%28Gld%29%2C_the_Netherlands_-_2.jpg",
+    "matched_title": "サカズキホコリ",
+    "from": "ja.wikipedia (サカズキホコリ)",
+    "bytes": 30644
+  },
+  "Cribraria argillacea": {
+    "image_local": "/images/mushrooms/cribraria_argillacea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%82%A2%E3%83%9F%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Cribraria_argillacea.jpg",
+    "matched_title": "ツチアミホコリ",
+    "from": "ja.wikipedia (ツチアミホコリ)",
+    "bytes": 65046
+  },
+  "Cribraria aurantiaca": {
+    "image_local": "/images/mushrooms/cribraria_aurantiaca.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%80%E3%82%A4%E3%82%A2%E3%83%9F%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Cribraria_aurantiaca124.jpg",
+    "matched_title": "ダイダイアミホコリ",
+    "from": "ja.wikipedia (ダイダイアミホコリ)",
+    "bytes": 43420
+  },
+  "Cribraria cancellata": {
+    "image_local": "/images/mushrooms/cribraria_cancellata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A2%E3%83%8E%E3%82%B9%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Cribraria_cancellata_kmnsh01.JPG",
+    "matched_title": "クモノスホコリ",
+    "from": "ja.wikipedia (クモノスホコリ)",
+    "bytes": 40842
+  },
+  "Cribraria microcarpa": {
+    "image_local": "/images/mushrooms/cribraria_microcarpa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B7%E3%83%8A%E3%82%AC%E3%82%A2%E3%83%9F%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Cribraria_microcarpa_%28Schrad.%29_Pers_509742.jpg",
+    "matched_title": "アシナガアミホコリ",
+    "from": "ja.wikipedia (アシナガアミホコリ)",
+    "bytes": 44842
+  },
+  "Crocinoboletus laetissimus": {
+    "image_local": "/images/mushrooms/crocinoboletus_laetissimus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%80%E3%82%A4%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Orange_mushroom_near_the_top_of_Mount_Miroku_-_1.jpg",
+    "matched_title": "ダイダイイグチ",
+    "from": "ja.wikipedia (ダイダイイグチ)",
+    "bytes": 90818
+  },
+  "Cuphophyllus pratensis": {
+    "image_local": "/images/mushrooms/cuphophyllus_pratensis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%80%E3%82%A4%E3%83%AD%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/2010-11-20_Cuphophyllus_pratensis.jpg",
+    "matched_title": "ハダイロガサ",
+    "from": "ja.wikipedia (ハダイロガサ)",
+    "bytes": 108008
+  },
+  "Cuphophyllus virgineus": {
+    "image_local": "/images/mushrooms/cuphophyllus_virgineus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%88%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Jungfern-Ellerling_Cuphophyllus_virgineus.jpg",
+    "matched_title": "オトメノカサ",
+    "from": "ja.wikipedia (オトメノカサ)",
+    "bytes": 72902
+  },
+  "Cyptotrama asprata": {
+    "image_local": "/images/mushrooms/cyptotrama_asprata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%80%E3%82%A4%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cyptotrama_asprata_%28849766%29.jpg",
+    "matched_title": "ダイダイガサ",
+    "from": "ja.wikipedia (ダイダイガサ)",
+    "bytes": 101082
+  },
+  "Dacrymyces chrysospermus": {
+    "image_local": "/images/mushrooms/dacrymyces_chrysospermus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%83%93%E3%83%A9%E3%83%80%E3%82%AF%E3%83%AA%E3%82%AA%E3%82%AD%E3%83%B3",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dacrymyces_palmatus_on_a_log.JPG",
+    "matched_title": "ハナビラダクリオキン",
+    "from": "ja.wikipedia (ハナビラダクリオキン)",
+    "bytes": 140776
+  },
+  "Dacrymyces spathularia": {
+    "image_local": "/images/mushrooms/dacrymyces_spathularia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%8E%E3%83%9E%E3%82%BF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Dacryopinaxspathularia.jpg",
+    "matched_title": "ツノマタタケ",
+    "from": "ja.wikipedia (ツノマタタケ)",
+    "bytes": 44328
+  },
+  "Desarmillaria tabescens": {
+    "image_local": "/images/mushrooms/desarmillaria_tabescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A9%E3%82%BF%E3%82%B1%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/2015-08-07_Armillaria_tabescens_%28Scop.%29_Emel_544839.jpg",
+    "matched_title": "ナラタケモドキ",
+    "from": "ja.wikipedia (ナラタケモドキ)",
+    "bytes": 70222
+  },
+  "Descolea flavoannulata": {
+    "image_local": "/images/mushrooms/descolea_flavoannulata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%B2%E3%83%B3%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ki-shougenji.habitat.jpg",
+    "matched_title": "キショウゲンジ",
+    "from": "ja.wikipedia (キショウゲンジ)",
+    "bytes": 47270
+  },
+  "Diacheopsis synspora": {
+    "image_local": "/images/mushrooms/diacheopsis_synspora.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%83%9F%E3%83%8B%E3%82%BB%E3%82%B8%E3%82%AF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Diacheopsis_synspora%2C_Trawscoed%2C_North_Wales%2C_Jan_2011_%2816766860196%29.jpg",
+    "matched_title": "タマミニセジクホコリ",
+    "from": "ja.wikipedia (タマミニセジクホコリ)",
+    "bytes": 103584
+  },
+  "Dictyophora lutea": {
+    "image_local": "/images/mushrooms/dictyophora_lutea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%82%AD%E3%82%AD%E3%83%8C%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Phallus_indusiatus_fo._luteus_1989-0717_02.jpg",
+    "matched_title": "ウスキキヌガサタケ",
+    "from": "ja.wikipedia (ウスキキヌガサタケ)",
+    "bytes": 198694
+  },
+  "Diderma hemisphaericum": {
+    "image_local": "/images/mushrooms/diderma_hemisphaericum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%90%E3%82%AB%E3%82%BF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Didymium_clavus_58242696.jpg",
+    "matched_title": "ナバカタホコリ",
+    "from": "ja.wikipedia (ナバカタホコリ)",
+    "bytes": 37400
+  },
+  "Diderma umbilicatum": {
+    "image_local": "/images/mushrooms/diderma_umbilicatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%82%BD%E3%83%9B%E3%83%8D%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Diderma_umbilicatum_12950485.jpg",
+    "matched_title": "ヘソホネホコリ",
+    "from": "ja.wikipedia (ヘソホネホコリ)",
+    "bytes": 49454
+  },
+  "Didymium bahiense": {
+    "image_local": "/images/mushrooms/didymium_bahiense.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%A4%E3%82%A2%E3%82%AB%E3%82%BF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Didymium_bahiense_222431718.jpg",
+    "matched_title": "バイアカタホコリ",
+    "from": "ja.wikipedia (バイアカタホコリ)",
+    "bytes": 64318
+  },
+  "Didymium melanospermum": {
+    "image_local": "/images/mushrooms/didymium_melanospermum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%BF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Didymium_melanospermum_a2_%286%29.jpg",
+    "matched_title": "カタホコリ",
+    "from": "ja.wikipedia (カタホコリ)",
+    "bytes": 35142
+  },
+  "Didymium nigripes": {
+    "image_local": "/images/mushrooms/didymium_nigripes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%AB%E3%82%BF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Didymium_nigripes_184458346.jpg",
+    "matched_title": "ヒメカタホコリ",
+    "from": "ja.wikipedia (ヒメカタホコリ)",
+    "bytes": 42256
+  },
+  "Didymium spongiosum": {
+    "image_local": "/images/mushrooms/didymium_spongiosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%8B%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Mucilago_crustacea%2C_Minera%2C_North_Wales%2C_Aug_2017_2_%2836184646330%29.jpg",
+    "matched_title": "ヤニホコリ",
+    "from": "ja.wikipedia (ヤニホコリ)",
+    "bytes": 109132
+  },
+  "Echinoderma asperum": {
+    "image_local": "/images/mushrooms/echinoderma_asperum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Lepiota_acutesquamosa.jpg",
+    "matched_title": "オニタケ",
+    "from": "ja.wikipedia (オニタケ)",
+    "bytes": 31680
+  },
+  "Elaeomyxa cerifera": {
+    "image_local": "/images/mushrooms/elaeomyxa_cerifera.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%A6%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Elaeomyxa_cerifera_002.jpg",
+    "matched_title": "ロウホコリ",
+    "from": "ja.wikipedia (ロウホコリ)",
+    "bytes": 32610
+  },
+  "Elaphomyces granulatus": {
+    "image_local": "/images/mushrooms/elaphomyces_granulatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%83%80%E3%83%B3%E3%82%B4",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/ElaphomycesGranulatus.jpg",
+    "matched_title": "ツチダンゴ",
+    "from": "ja.wikipedia (ツチダンゴ)",
+    "bytes": 63112
+  },
+  "Elmerina holophaea": {
+    "image_local": "/images/mushrooms/elmerina_holophaea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%82%AB%E3%82%B7%E3%82%AA%E3%82%AA%E3%83%9F%E3%83%80%E3%83%AC%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/%E3%83%A0%E3%82%AB%E3%82%B7%E3%82%AA%E3%82%AA%E3%83%9F%E3%83%80%E3%83%AC%E3%82%BF%E3%82%B1%EF%BC%88%E3%83%96%E3%83%8A%E6%9D%90%E4%B8%8A%EF%BC%89.jpg",
+    "matched_title": "ムカシオオミダレタケ",
+    "from": "ja.wikipedia (ムカシオオミダレタケ)",
+    "bytes": 84504
+  },
+  "Enerthenema papillatum": {
+    "image_local": "/images/mushrooms/enerthenema_papillatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B5%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Enerthenema_papillatum123.jpg",
+    "matched_title": "フサホコリ",
+    "from": "ja.wikipedia (フサホコリ)",
+    "bytes": 37538
+  },
+  "Entoloma album": {
+    "image_local": "/images/mushrooms/entoloma_album.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/%E3%82%B7%E3%83%AD%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1%28Entoloma_album%29.jpg",
+    "matched_title": "シロイボカサタケ",
+    "from": "ja.wikipedia (シロイボカサタケ)",
+    "bytes": 58108
+  },
+  "Entoloma atrum": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Entoloma cyanonigrum": {
+    "image_local": "/images/mushrooms/entoloma_cyanonigrum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%82%A4%E3%83%AD%E3%82%A4%E3%83%83%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Entoloma_cyanonigrum_1595308.jpg",
+    "matched_title": "コンイロイッポンシメジ",
+    "from": "ja.wikipedia (コンイロイッポンシメジ)",
+    "bytes": 68084
+  },
+  "Entoloma rhodopolium": {
+    "image_local": "/images/mushrooms/entoloma_rhodopolium.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%B5%E3%82%A6%E3%83%A9%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Entoloma_rhodopolium_-_Lindsey.jpg",
+    "matched_title": "クサウラベニタケ",
+    "from": "ja.wikipedia (クサウラベニタケ)",
+    "bytes": 27108
+  },
+  "Entoloma sinuatum": {
+    "image_local": "/images/mushrooms/entoloma_sinuatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%83%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Entoloma_sinuatum_group.JPG",
+    "matched_title": "イッポンシメジ",
+    "from": "ja.wikipedia (イッポンシメジ)",
+    "bytes": 111904
+  },
+  "Evernia prunastri": {
+    "image_local": "/images/mushrooms/evernia_prunastri.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%8E%E3%83%9E%E3%82%BF%E3%82%B4%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Lichen_foliac%C3%A92..JPG",
+    "matched_title": "ツノマタゴケ",
+    "from": "ja.wikipedia (ツノマタゴケ)",
+    "bytes": 56142
+  },
+  "Exidia glandulosa": {
+    "image_local": "/images/mushrooms/exidia_glandulosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ascocoryne_spec._-_Lindsey.jpg",
+    "matched_title": "ヒメキクラゲ",
+    "from": "ja.wikipedia (ヒメキクラゲ)",
+    "bytes": 65114
+  },
+  "Exidia uvapassa": {
+    "image_local": "/images/mushrooms/exidia_uvapassa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%9E%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/2017-03-22_Exidia_uvapassa_Lloyd_725109.jpg",
+    "matched_title": "タマキクラゲ",
+    "from": "ja.wikipedia (タマキクラゲ)",
+    "bytes": 41204
+  },
+  "Fistulina hepatica": {
+    "image_local": "/images/mushrooms/fistulina_hepatica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%82%BE%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Fistulina_hepatica01.jpg",
+    "matched_title": "カンゾウタケ",
+    "from": "ja.wikipedia (カンゾウタケ)",
+    "bytes": 129568
+  },
+  "Flammulina velutipes": {
+    "image_local": "/images/mushrooms/flammulina_velutipes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flammulina_velutipes.JPG",
+    "matched_title": "エノキタケ",
+    "from": "ja.wikipedia (エノキタケ)",
+    "bytes": 111840
+  },
+  "Fuligo leviderma": {
+    "image_local": "/images/mushrooms/fuligo_leviderma.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A1%E3%83%A9%E3%82%B9%E3%82%B9%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Fuligo_leviderma_59566.jpg",
+    "matched_title": "ナメラススホコリ",
+    "from": "ja.wikipedia (ナメラススホコリ)",
+    "bytes": 95378
+  },
+  "Fuligo septica": {
+    "image_local": "/images/mushrooms/fuligo_septica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%B9%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/2017.07.05.-16-Springsee-Storkow_%28Mark%29--Gelbe_Lohbluete.jpg",
+    "matched_title": "ススホコリ",
+    "from": "ja.wikipedia (ススホコリ)",
+    "bytes": 111464
+  },
+  "Galerina fasciculata": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Galerina marginata": {
+    "image_local": "/images/mushrooms/galerina_marginata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%A2%E3%82%B8%E3%83%AD%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/2011-10-30_Galerina_marginata_%28Batsch%29_K%C3%BChner_178829.jpg",
+    "matched_title": "ヒメアジロガサ",
+    "from": "ja.wikipedia (ヒメアジロガサ)",
+    "bytes": 94478
+  },
+  "Ganoderma applanatum": {
+    "image_local": "/images/mushrooms/ganoderma_applanatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%95%E3%82%AD%E3%82%B5%E3%83%AB%E3%83%8E%E3%82%B3%E3%82%B7%E3%82%AB%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Ganoderma_applanatum01.jpg",
+    "matched_title": "コフキサルノコシカケ",
+    "from": "ja.wikipedia (コフキサルノコシカケ)",
+    "bytes": 91750
+  },
+  "Ganoderma sichuanense": {
+    "image_local": "/images/mushrooms/ganoderma_sichuanense.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E9%9C%8A%E8%8A%9D",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Mannentake.jpg",
+    "matched_title": "霊芝",
+    "from": "ja.wikipedia (霊芝)",
+    "bytes": 47174
+  },
+  "Geastrum triplex": {
+    "image_local": "/images/mushrooms/geastrum_triplex.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AA%E3%83%9E%E3%82%AD%E3%83%84%E3%83%81%E3%82%B0%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Geastrum_triplex_05.jpg",
+    "matched_title": "エリマキツチグリ",
+    "from": "ja.wikipedia (エリマキツチグリ)",
+    "bytes": 103362
+  },
+  "Gliophorus psittacinus": {
+    "image_local": "/images/mushrooms/gliophorus_psittacinus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AF%E3%82%AB%E3%82%AF%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Gliophorus_psittacinus.jpg",
+    "matched_title": "ワカクサタケ",
+    "from": "ja.wikipedia (ワカクサタケ)",
+    "bytes": 120908
+  },
+  "Gomphidius roseus": {
+    "image_local": "/images/mushrooms/gomphidius_roseus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A6%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gomphidius_roseus.jpg",
+    "matched_title": "オウギタケ",
+    "from": "ja.wikipedia (オウギタケ)",
+    "bytes": 56490
+  },
+  "Gomphus clavatus": {
+    "image_local": "/images/mushrooms/gomphus_clavatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%83%E3%83%91%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Gomphus_clavatus_II_Totes_Gebirge.jpg",
+    "matched_title": "ラッパタケ",
+    "from": "ja.wikipedia (ラッパタケ)",
+    "bytes": 176136
+  },
+  "Grifola frondosa": {
+    "image_local": "/images/mushrooms/grifola_frondosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Eikhaas.JPG",
+    "matched_title": "マイタケ",
+    "from": "ja.wikipedia (マイタケ)",
+    "bytes": 132558
+  },
+  "Gulielmina vermicularis": {
+    "image_local": "/images/mushrooms/gulielmina_vermicularis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%A2%E3%83%A0%E3%82%B7%E3%83%92%E3%83%A2%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Perichaena_vermicularis_184808496.jpg",
+    "matched_title": "イモムシヒモホコリ",
+    "from": "ja.wikipedia (イモムシヒモホコリ)",
+    "bytes": 58228
+  },
+  "Gymnopilus aeruginosus": {
+    "image_local": "/images/mushrooms/gymnopilus_aeruginosus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%89%E3%83%AA%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Gymnopilus_aeruginosus.jpg",
+    "matched_title": "ミドリスギタケ",
+    "from": "ja.wikipedia (ミドリスギタケ)",
+    "bytes": 48768
+  },
+  "Gymnopilus orientispectabilis": {
+    "image_local": "/images/mushrooms/gymnopilus_orientispectabilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%83%AF%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Gymnopilus_spectabilis.jpg",
+    "matched_title": "オオワライタケ",
+    "from": "ja.wikipedia (オオワライタケ)",
+    "bytes": 62604
+  },
+  "Gymnopilus picreus": {
+    "image_local": "/images/mushrooms/gymnopilus_picreus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%84%E3%83%A0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Gymnopilus_picreus.jpg",
+    "matched_title": "チャツムタケ",
+    "from": "ja.wikipedia (チャツムタケ)",
+    "bytes": 59644
+  },
+  "Gyromitra esculenta": {
+    "image_local": "/images/mushrooms/gyromitra_esculenta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A3%E3%82%B0%E3%83%9E%E3%82%A2%E3%83%9F%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Fr%C3%BChjahrslorchel.JPG",
+    "matched_title": "シャグマアミガサタケ",
+    "from": "ja.wikipedia (シャグマアミガサタケ)",
+    "bytes": 99042
+  },
+  "Gyroporus castaneus": {
+    "image_local": "/images/mushrooms/gyroporus_castaneus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%82%A4%E3%83%AD%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gyroporus_castaneus_2011_G2.jpg",
+    "matched_title": "クリイロイグチ",
+    "from": "ja.wikipedia (クリイロイグチ)",
+    "bytes": 89252
+  },
+  "Hebeloma sagarae": {
+    "image_local": "/images/mushrooms/hebeloma_sagarae.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%AC%E3%82%A8%E3%83%8E%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Hebeloma_radicosum_2.jpg",
+    "matched_title": "ナガエノスギタケ",
+    "from": "ja.wikipedia (ナガエノスギタケ)",
+    "bytes": 97442
+  },
+  "Heimioporus japonicus": {
+    "image_local": "/images/mushrooms/heimioporus_japonicus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Red_mushroom_in_Mount_Miroku_-_2.jpg",
+    "matched_title": "ベニイグチ",
+    "from": "ja.wikipedia (ベニイグチ)",
+    "bytes": 105542
+  },
+  "Helvella crispa": {
+    "image_local": "/images/mushrooms/helvella_crispa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%9C%E3%83%AA%E3%83%AA%E3%83%A5%E3%82%A6",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/0_Helvella_crispa_-_Havr%C3%A9_%281%29.JPG",
+    "matched_title": "ノボリリュウ",
+    "from": "ja.wikipedia (ノボリリュウ)",
+    "bytes": 121470
+  },
+  "Helvella lacunosa": {
+    "image_local": "/images/mushrooms/helvella_lacunosa.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Helvella%20lacunosa",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Helvella_lacunosa_%28south_BC%29.jpg",
+    "matched_title": "クロノボリリュウ",
+    "from": "en.wikipedia (Helvella lacunosa)",
+    "bytes": 86440
+  },
+  "Hemitrichia clavata": {
+    "image_local": "/images/mushrooms/hemitrichia_clavata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8C%E3%82%AB%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Hemitrichia_a2_%282%29.jpg",
+    "matched_title": "ヌカホコリ",
+    "from": "ja.wikipedia (ヌカホコリ)",
+    "bytes": 34876
+  },
+  "Hemitrichia decipiens": {
+    "image_local": "/images/mushrooms/hemitrichia_decipiens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%84%E3%82%AD%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Trichia_decipiens_5769600.jpg",
+    "matched_title": "エツキケホコリ",
+    "from": "ja.wikipedia (エツキケホコリ)",
+    "bytes": 35570
+  },
+  "Hemitrichia serpula": {
+    "image_local": "/images/mushrooms/hemitrichia_serpula.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%93%E3%83%8C%E3%82%AB%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Hemitrichia_serpula_57955.jpg",
+    "matched_title": "ヘビヌカホコリ",
+    "from": "ja.wikipedia (ヘビヌカホコリ)",
+    "bytes": 116720
+  },
+  "Hericium asiaticum": {
+    "image_local": "/images/mushrooms/hericium_asiaticum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%83%96%E3%82%B7%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Igelstachelbart_Nov_06.jpg",
+    "matched_title": "ヤマブシタケ",
+    "from": "ja.wikipedia (ヤマブシタケ)",
+    "bytes": 69306
+  },
+  "Heterobasidion parviporum": {
+    "image_local": "/images/mushrooms/heterobasidion_parviporum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%83%8E%E3%83%8D%E3%82%AF%E3%83%81%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Heterobasidion_annosum_-_Lindsey.jpg",
+    "matched_title": "マツノネクチタケ",
+    "from": "ja.wikipedia (マツノネクチタケ)",
+    "bytes": 106764
+  },
+  "Heterotrichia ferruginea": {
+    "image_local": "/images/mushrooms/heterotrichia_ferruginea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%93%E3%82%B2%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Arcyria_ferruginea_Saut_598242.jpg",
+    "matched_title": "トビゲウツボホコリ",
+    "from": "ja.wikipedia (トビゲウツボホコリ)",
+    "bytes": 101260
+  },
+  "Heterotrichia obvelata": {
+    "image_local": "/images/mushrooms/heterotrichia_obvelata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Arcyria_obvelata_29214162.jpg",
+    "matched_title": "キウツボホコリ",
+    "from": "ja.wikipedia (キウツボホコリ)",
+    "bytes": 118104
+  },
+  "Heterotrichia versicolor": {
+    "image_local": "/images/mushrooms/heterotrichia_versicolor.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%B8%E3%82%A6%E3%83%84%E3%83%9C%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Arcyria_versicolor_185152320.jpg",
+    "matched_title": "ニジウツボホコリ",
+    "from": "ja.wikipedia (ニジウツボホコリ)",
+    "bytes": 121058
+  },
+  "Hydnophlebia chrysorhiza": {
+    "image_local": "/images/mushrooms/hydnophlebia_chrysorhiza.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%A4%E3%83%AD%E3%83%8F%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Phanerochaete_chrysorhizon_81632.jpg",
+    "matched_title": "ヒイロハリタケ",
+    "from": "ja.wikipedia (ヒイロハリタケ)",
+    "bytes": 86488
+  },
+  "Hydnum cremeoalbum": {
+    "image_local": "/images/mushrooms/hydnum_cremeoalbum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AB%E3%83%8E%E3%82%B7%E3%82%BF",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hedgehog_fungi2.jpg",
+    "matched_title": "シロカノシタ",
+    "from": "ja.wikipedia (シロカノシタ)",
+    "bytes": 31894
+  },
+  "Hygrocybe chlorophana var. aurantiaca": {
+    "image_local": "/images/mushrooms/hygrocybe_chlorophana_var_aurantiaca.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AD%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Hygrocybe_flavescens%2C%E3%82%A2%E3%82%AD%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1%28%E3%83%8C%E3%83%A1%E3%83%AA%E3%82%AB%E3%82%B5%E7%A7%91%E3%80%81%E3%82%A2%E3%82%AB%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1%E5%B1%9E%29%2CPA233268.JPG",
+    "matched_title": "アキヤマタケ",
+    "from": "ja.wikipedia (アキヤマタケ)",
+    "bytes": 52616
+  },
+  "Hygrocybe coccinea": {
+    "image_local": "/images/mushrooms/hygrocybe_coccinea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Hygrocybe_coccinea_mo38986.jpg",
+    "matched_title": "ベニヤマタケ",
+    "from": "ja.wikipedia (ベニヤマタケ)",
+    "bytes": 59160
+  },
+  "Hygrocybe conica": {
+    "image_local": "/images/mushrooms/hygrocybe_conica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%A4%E3%83%9E%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hygrocybe_conica_%282005_11_07%29_1.jpg",
+    "matched_title": "アカヤマタケ",
+    "from": "ja.wikipedia (アカヤマタケ)",
+    "bytes": 140412
+  },
+  "Hygrocybe miniata": {
+    "image_local": "/images/mushrooms/hygrocybe_miniata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%8C%E3%83%9E%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hyg.min.jpg",
+    "matched_title": "アカヌマベニタケ",
+    "from": "ja.wikipedia (アカヌマベニタケ)",
+    "bytes": 38094
+  },
+  "Hygrocybe punicea": {
+    "image_local": "/images/mushrooms/hygrocybe_punicea.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Hygrocybe%20punicea",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Crimson_Waxcap._Hygrocybe_punicea_%2849055268862%29.jpg",
+    "matched_title": "ヒイロガサ",
+    "from": "en.wikipedia (Hygrocybe punicea)",
+    "bytes": 75950
+  },
+  "Hygrophorus russula": {
+    "image_local": "/images/mushrooms/hygrophorus_russula.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hygrophorus_russula%2C_Japan_3.JPG",
+    "matched_title": "サクラシメジ",
+    "from": "ja.wikipedia (サクラシメジ)",
+    "bytes": 96398
+  },
+  "Hypholoma fasciculare": {
+    "image_local": "/images/mushrooms/hypholoma_fasciculare.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AC%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E3%83%8B%E3%82%AC%E3%82%AF%E3%83%AA%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ニガクリタケ",
+    "from": "ja.wikipedia (ニガクリタケ)",
+    "bytes": 73158
+  },
+  "Hypsizygus marmoreus": {
+    "image_local": "/images/mushrooms/hypsizygus_marmoreus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%8A%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Hypsizygus_marmoreus.jpg",
+    "matched_title": "ブナシメジ",
+    "from": "ja.wikipedia (ブナシメジ)",
+    "bytes": 92964
+  },
+  "Imaia gigantea": {
+    "image_local": "/images/mushrooms/imaia_gigantea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%A2%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Desert_truffle_-_Terfezia_spp._from_Avanos%2C_Turkey.jpg",
+    "matched_title": "イモタケ",
+    "from": "ja.wikipedia (イモタケ)",
+    "bytes": 110692
+  },
+  "Imleria badia": {
+    "image_local": "/images/mushrooms/imleria_badia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%BB%E3%82%A4%E3%83%AD%E3%82%AC%E3%83%AF%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Boletus_badius_JPG1.jpg",
+    "matched_title": "ニセイロガワリ",
+    "from": "ja.wikipedia (ニセイロガワリ)",
+    "bytes": 72368
+  },
+  "Infundibulicybe gibba": {
+    "image_local": "/images/mushrooms/infundibulicybe_gibba.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Clitocybe_gibba_060820w.jpg",
+    "matched_title": "カヤタケ",
+    "from": "ja.wikipedia (カヤタケ)",
+    "bytes": 58022
+  },
+  "Inocephalus virescens": {
+    "image_local": "/images/mushrooms/inocephalus_virescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%A9%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Entoloma_hochstetteri_13958.jpg",
+    "matched_title": "ソライロタケ",
+    "from": "ja.wikipedia (ソライロタケ)",
+    "bytes": 81494
+  },
+  "Inocybe sphaerospora": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Inonotus obliquus": {
+    "image_local": "/images/mushrooms/inonotus_obliquus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%BC%E3%82%AC",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Inonotus_obliquus.jpg",
+    "matched_title": "チャーガ",
+    "from": "ja.wikipedia (チャーガ)",
+    "bytes": 121826
+  },
+  "Kuehneromyces mutabilis": {
+    "image_local": "/images/mushrooms/kuehneromyces_mutabilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%B3%E3%83%9C%E3%83%B3%E3%82%A4%E3%83%81%E3%83%A1%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stockschwaemmchen.jpg",
+    "matched_title": "センボンイチメガサ",
+    "from": "ja.wikipedia (センボンイチメガサ)",
+    "bytes": 22770
+  },
+  "Laccaria japonica": {
+    "image_local": "/images/mushrooms/laccaria_japonica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Laccaria-amethystina-Laccaria_amethystea.jpg",
+    "matched_title": "ウラムラサキ",
+    "from": "ja.wikipedia (ウラムラサキ)",
+    "bytes": 99028
+  },
+  "Laccaria laccata": {
+    "image_local": "/images/mushrooms/laccaria_laccata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%84%E3%83%8D%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Laccaria_laccata_3_-_Lindsey.jpg",
+    "matched_title": "キツネタケ",
+    "from": "ja.wikipedia (キツネタケ)",
+    "bytes": 38296
+  },
+  "Lacrymaria lacrymabunda": {
+    "image_local": "/images/mushrooms/lacrymaria_lacrymabunda.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%82%B8%E3%83%8A%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tr%C3%A4nender_Saumpilz_Lacrymaria_lacrymabunda.jpg",
+    "matched_title": "ムジナタケ",
+    "from": "ja.wikipedia (ムジナタケ)",
+    "bytes": 100136
+  },
+  "Lactarius chrysorrheus": {
+    "image_local": "/images/mushrooms/lactarius_chrysorrheus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%81%E3%83%81%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lactarius_chrysorreus_041113w.jpg",
+    "matched_title": "キチチタケ",
+    "from": "ja.wikipedia (キチチタケ)",
+    "bytes": 87502
+  },
+  "Lactarius glyciosmus": {
+    "image_local": "/images/mushrooms/lactarius_glyciosmus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9F%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2009-09-07_Lactarius_glyciosmus.jpg",
+    "matched_title": "ヤミイロタケ",
+    "from": "ja.wikipedia (ヤミイロタケ)",
+    "bytes": 51416
+  },
+  "Lactarius lividatus": {
+    "image_local": "/images/mushrooms/lactarius_lividatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ハツタケ",
+    "from": "ja.wikipedia (ハツタケ)",
+    "bytes": 85086
+  },
+  "Lactarius subindigo": {
+    "image_local": "/images/mushrooms/lactarius_subindigo.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%AA%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/%E3%83%AB%E3%83%AA%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ルリハツタケ",
+    "from": "ja.wikipedia (ルリハツタケ)",
+    "bytes": 141564
+  },
+  "Lactarius subzonarius": {
+    "image_local": "/images/mushrooms/lactarius_subzonarius.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AA%E3%82%A4%E3%83%AF%E3%83%81%E3%83%81%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Nioi-wa-chichi-take.specimens.JPG",
+    "matched_title": "ニオイワチチタケ",
+    "from": "ja.wikipedia (ニオイワチチタケ)",
+    "bytes": 145734
+  },
+  "Lactifluus piperatus": {
+    "image_local": "/images/mushrooms/lactifluus_piperatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%82%AB%E3%83%96%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Lactarius_piperatus_98569.jpg",
+    "matched_title": "ツチカブリ",
+    "from": "ja.wikipedia (ツチカブリ)",
+    "bytes": 33214
+  },
+  "Lactifluus uyedae": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Lactifluus volemus": {
+    "image_local": "/images/mushrooms/lactifluus_volemus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%81%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/LACTARIUS_VOLEMUS_%28Fr._Fr.%29_Fr._%285891728423%29.jpg",
+    "matched_title": "チチタケ",
+    "from": "ja.wikipedia (チチタケ)",
+    "bytes": 96870
+  },
+  "Laetiporus cremeiporus": {
+    "image_local": "/images/mushrooms/laetiporus_cremeiporus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Laetiporus_sulphureus_big.jpg",
+    "matched_title": "マスタケ",
+    "from": "ja.wikipedia (マスタケ)",
+    "bytes": 85786
+  },
+  "Lamproderma nigrescens": {
+    "image_local": "/images/mushrooms/lamproderma_nigrescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%93%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Brauner_Pilz_100903.jpg",
+    "matched_title": "サビムラサキホコリ",
+    "from": "ja.wikipedia (サビムラサキホコリ)",
+    "bytes": 155234
+  },
+  "Lamproderma scintillans": {
+    "image_local": "/images/mushrooms/lamproderma_scintillans.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%83%AB%E3%83%AA%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Lamproderma_scintillans124.jpg",
+    "matched_title": "キンルリホコリ",
+    "from": "ja.wikipedia (キンルリホコリ)",
+    "bytes": 27256
+  },
+  "Lanopila nipponica": {
+    "image_local": "/images/mushrooms/lanopila_nipponica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%8B%E3%83%95%E3%82%B9%E3%83%99",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Calvatia_nipponica_01.jpg",
+    "matched_title": "オニフスベ",
+    "from": "ja.wikipedia (オニフスベ)",
+    "bytes": 80564
+  },
+  "Laricifomes officinalis": {
+    "image_local": "/images/mushrooms/laricifomes_officinalis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%96%E3%83%AA%E3%82%B3",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Paul_Stamets_with_Agarikon.jpg",
+    "matched_title": "エブリコ",
+    "from": "ja.wikipedia (エブリコ)",
+    "bytes": 98482
+  },
+  "Leccinum scabrum": {
+    "image_local": "/images/mushrooms/leccinum_scabrum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Birkenpilz01.jpg",
+    "matched_title": "ヤマイグチ",
+    "from": "ja.wikipedia (ヤマイグチ)",
+    "bytes": 56942
+  },
+  "Lentinula edodes": {
+    "image_local": "/images/mushrooms/lentinula_edodes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Shiitakegrowing.jpg",
+    "matched_title": "シイタケ",
+    "from": "ja.wikipedia (シイタケ)",
+    "bytes": 78358
+  },
+  "Leocarpus fragilis": {
+    "image_local": "/images/mushrooms/leocarpus_fragilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%AA%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%C5%9Aluzoro%C5%9Bla_24.jpg",
+    "matched_title": "ウリホコリ",
+    "from": "ja.wikipedia (ウリホコリ)",
+    "bytes": 48568
+  },
+  "Leotia lubrica": {
+    "image_local": "/images/mushrooms/leotia_lubrica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BA%E3%82%AD%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Gr%C3%BCngelbes_Gallertk%C3%A4ppchen_Leotia_lubrica.JPG",
+    "matched_title": "ズキンタケ",
+    "from": "ja.wikipedia (ズキンタケ)",
+    "bytes": 62532
+  },
+  "Leucocoprinus birnbaumii": {
+    "image_local": "/images/mushrooms/leucocoprinus_birnbaumii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%82%AD%E3%83%8C%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Leucocoprinus.JPG",
+    "matched_title": "コガネキヌカラカサタケ",
+    "from": "ja.wikipedia (コガネキヌカラカサタケ)",
+    "bytes": 54330
+  },
+  "Leucocoprinus fragilissimus": {
+    "image_local": "/images/mushrooms/leucocoprinus_fragilissimus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%84%E3%83%8D%E3%83%8E%E3%83%8F%E3%83%8A%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/2012-06-02_Leucocoprinus_fragilissimus_%28Berk._%26_M.A._Curtis%29_Pat_223800_crop.jpg",
+    "matched_title": "キツネノハナガサ",
+    "from": "ja.wikipedia (キツネノハナガサ)",
+    "bytes": 81486
+  },
+  "Leucocybe connata": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Licea biforis": {
+    "image_local": "/images/mushrooms/licea_biforis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%A2%E3%83%AF%E3%83%AC%E3%82%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Licea_biforis_204405878.jpg",
+    "matched_title": "モモワレコホコリ",
+    "from": "ja.wikipedia (モモワレコホコリ)",
+    "bytes": 57612
+  },
+  "Licea floriformis var. aureospora": {
+    "image_local": "/images/mushrooms/licea_floriformis_var_aureospora.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%83%8F%E3%83%8A%E3%82%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Floriformis_Habitus_%283%29.jpg",
+    "matched_title": "コガネハナコホコリ",
+    "from": "ja.wikipedia (コガネハナコホコリ)",
+    "bytes": 25514
+  },
+  "Licea kleistobolus": {
+    "image_local": "/images/mushrooms/licea_kleistobolus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%AF%E3%83%AA%E3%83%95%E3%82%BF%E3%82%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Licea_kleistobolus_241553683.jpg",
+    "matched_title": "スワリフタコホコリ",
+    "from": "ja.wikipedia (スワリフタコホコリ)",
+    "bytes": 66440
+  },
+  "Licea operculata": {
+    "image_local": "/images/mushrooms/licea_operculata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%82%BA%E3%82%B5%E3%82%B7%E3%82%B3%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Operculata_Habitus_%282%29.jpg",
+    "matched_title": "ミズサシコホコリ",
+    "from": "ja.wikipedia (ミズサシコホコリ)",
+    "bytes": 15316
+  },
+  "Lycogala conicum": {
+    "image_local": "/images/mushrooms/lycogala_conicum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%AF%E3%83%93%E3%83%9E%E3%83%A1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sporocarps_of_slime_mold_Lycogala_conicum._jpg.jpg",
+    "matched_title": "イクビマメホコリ",
+    "from": "ja.wikipedia (イクビマメホコリ)",
+    "bytes": 60092
+  },
+  "Lycogala epidendrum": {
+    "image_local": "/images/mushrooms/lycogala_epidendrum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%A1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lycogala_epidendrum_TK_2023-06-09_2.jpg",
+    "matched_title": "マメホコリ",
+    "from": "ja.wikipedia (マメホコリ)",
+    "bytes": 53642
+  },
+  "Lycogala exiguum": {
+    "image_local": "/images/mushrooms/lycogala_exiguum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%9E%E3%83%A1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Lycogala_exiguum_Morgan_118736.jpg",
+    "matched_title": "コマメホコリ",
+    "from": "ja.wikipedia (コマメホコリ)",
+    "bytes": 58980
+  },
+  "Lycogala flavofuscum": {
+    "image_local": "/images/mushrooms/lycogala_flavofuscum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%81%E3%83%9E%E3%83%A1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Lycogala_flavofuscum_20121012a.jpg",
+    "matched_title": "チチマメホコリ",
+    "from": "ja.wikipedia (チチマメホコリ)",
+    "bytes": 120434
+  },
+  "Lycoperdon perlatum": {
+    "image_local": "/images/mushrooms/lycoperdon_perlatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%B3%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/W_hokoritake4111.jpg",
+    "matched_title": "ホコリタケ",
+    "from": "ja.wikipedia (ホコリタケ)",
+    "bytes": 65998
+  },
+  "Lyophyllum decastes": {
+    "image_local": "/images/mushrooms/lyophyllum_decastes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%BF%E3%82%B1%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lyophyllum_decastes_071012.jpg",
+    "matched_title": "ハタケシメジ",
+    "from": "ja.wikipedia (ハタケシメジ)",
+    "bytes": 68798
+  },
+  "Lyophyllum shimeji": {
+    "image_local": "/images/mushrooms/lyophyllum_shimeji.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E3%83%9B%E3%83%B3%E3%82%B7%E3%83%A1%E3%82%B8%28Lyophyllum_shimeji%29.jpg",
+    "matched_title": "ホンシメジ",
+    "from": "ja.wikipedia (ホンシメジ)",
+    "bytes": 68078
+  },
+  "Lysurus arachnoideus": {
+    "image_local": "/images/mushrooms/lysurus_arachnoideus.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Lysurus%20arachnoideus",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Aseroe_arachnoidea_gleba.jpg",
+    "matched_title": "イカタケ",
+    "from": "en.wikipedia (Lysurus arachnoideus)",
+    "bytes": 57714
+  },
+  "Macrolepiota procera": {
+    "image_local": "/images/mushrooms/macrolepiota_procera.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Macrolepiota_procera_2013_G1.jpg",
+    "matched_title": "カラカサタケ",
+    "from": "ja.wikipedia (カラカサタケ)",
+    "bytes": 92278
+  },
+  "Macropsalliota americana": {
+    "image_local": "/images/mushrooms/macropsalliota_americana.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%96%E3%82%AB%E3%83%A9%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Leucoagaricus-Americanus1.jpg",
+    "matched_title": "ツブカラカサタケ",
+    "from": "ja.wikipedia (ツブカラカサタケ)",
+    "bytes": 97478
+  },
+  "Marasmius maximus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Marasmius oreades": {
+    "image_local": "/images/mushrooms/marasmius_oreades.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%90%E3%83%95%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Marasmius_oreades_garden_050829B.JPG",
+    "matched_title": "シバフタケ",
+    "from": "ja.wikipedia (シバフタケ)",
+    "bytes": 35976
+  },
+  "Marasmius pulcherripes": {
+    "image_local": "/images/mushrooms/marasmius_pulcherripes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%AA%E3%83%81%E3%83%90%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Marasmius_pulcherripes_01.jpg",
+    "matched_title": "ハナオチバタケ",
+    "from": "ja.wikipedia (ハナオチバタケ)",
+    "bytes": 66842
+  },
+  "Megacollybia clitocyboidea": {
+    "image_local": "/images/mushrooms/megacollybia_clitocyboidea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%AD%E3%83%92%E3%83%80%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Collybia-platyphylla.jpg",
+    "matched_title": "ヒロヒダタケ",
+    "from": "ja.wikipedia (ヒロヒダタケ)",
+    "bytes": 112554
+  },
+  "Metatrichia vesparia": {
+    "image_local": "/images/mushrooms/metatrichia_vesparia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%81%E3%83%8E%E3%82%B9%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Metatrichia_vesparium_-_Flickr_-_treegrow.jpg",
+    "matched_title": "ハチノスケホコリ",
+    "from": "ja.wikipedia (ハチノスケホコリ)",
+    "bytes": 31410
+  },
+  "Microstoma aggregatum": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Mitrula paludosa": {
+    "image_local": "/images/mushrooms/mitrula_paludosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%B3%E3%83%A0%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mitrula_paludosa_02.jpg",
+    "matched_title": "カンムリタケ",
+    "from": "ja.wikipedia (カンムリタケ)",
+    "bytes": 73336
+  },
+  "Morchella conica": {
+    "image_local": "/images/mushrooms/morchella_conica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%82%AC%E3%83%AA%E3%82%A2%E3%83%9F%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Morchella_esculenta_2.jpg",
+    "matched_title": "トガリアミガサタケ",
+    "from": "ja.wikipedia (トガリアミガサタケ)",
+    "bytes": 159154
+  },
+  "Morchella esculenta": {
+    "image_local": "/images/mushrooms/morchella_esculenta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Morchella_conica_1_beentree.jpg",
+    "matched_title": "アミガサタケ",
+    "from": "ja.wikipedia (アミガサタケ)",
+    "bytes": 159410
+  },
+  "Morchella nipponensis": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Mutinus caninus": {
+    "image_local": "/images/mushrooms/mutinus_caninus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%84%E3%83%8D%E3%83%8E%E3%83%AD%E3%82%A6%E3%82%BD%E3%82%AF",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Mutinus_caninus_JPG1.jpg",
+    "matched_title": "キツネノロウソク",
+    "from": "ja.wikipedia (キツネノロウソク)",
+    "bytes": 255260
+  },
+  "Mycena haematopus": {
+    "image_local": "/images/mushrooms/mycena_haematopus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%B7%E3%82%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%9C%D1%96%D1%86%D0%B5%D0%BD%D0%B0_%D0%BA%D1%80%D0%BE%D0%B2%27%D1%8F%D0%BD%D0%BE%D0%BD%D1%96%D0%B6%D0%BA%D0%BE%D0%B2%D0%B0_%28%D0%BB%D0%B0%D1%82._Mycena_haematopus%29%2C_%D0%9A%D0%B8%D1%97%D0%B2%D1%89%D0%B8%D0%BD%D0%B0%2C_%D0%9C%D0%B5%D0%B6%D0%B8%D0%B3%D1%96%D1%80%D1%81%D1%8C%D0%BA%D0%B5_%D0%BB%D1%96%D1%81%D0%BD%D0%B8%D1%86%D1%82%D0%B2%D0%BE%2C_2020.jpg",
+    "matched_title": "チシオタケ",
+    "from": "ja.wikipedia (チシオタケ)",
+    "bytes": 76912
+  },
+  "Mycena lux-coeli": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Mycena manipularis": {
+    "image_local": "/images/mushrooms/mycena_manipularis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%83%92%E3%82%AB%E3%83%AA%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Mycena_manipularis_Wynaad2.jpg",
+    "matched_title": "アミヒカリタケ",
+    "from": "ja.wikipedia (アミヒカリタケ)",
+    "bytes": 110998
+  },
+  "Mycoleptodonoides aitchisonii": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Narcissea patouillardii": {
+    "image_local": "/images/mushrooms/narcissea_patouillardii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%BA%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%E3%82%AF%E3%82%BA%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B11.JPG",
+    "matched_title": "クズヒトヨタケ",
+    "from": "ja.wikipedia (クズヒトヨタケ)",
+    "bytes": 62612
+  },
+  "Neolentinus lepideus": {
+    "image_local": "/images/mushrooms/neolentinus_lepideus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%82%AA%E3%82%A6%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Scaly_Lentinus_-_Neolentinus_lepideus_%2835198366743%29.jpg",
+    "matched_title": "マツオウジ",
+    "from": "ja.wikipedia (マツオウジ)",
+    "bytes": 30042
+  },
+  "Oligonema favogineum": {
+    "image_local": "/images/mushrooms/oligonema_favogineum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A7%E3%82%A6%E3%82%BF%E3%83%B3%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Trichia_favoginea_58556.jpg",
+    "matched_title": "ヒョウタンケホコリ",
+    "from": "ja.wikipedia (ヒョウタンケホコリ)",
+    "bytes": 61254
+  },
+  "Oligonema verrucosum": {
+    "image_local": "/images/mushrooms/oligonema_verrucosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%AB%E3%83%A8%E3%82%B7%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Trichia_verrucosa_145741518.jpg",
+    "matched_title": "ナカヨシケホコリ",
+    "from": "ja.wikipedia (ナカヨシケホコリ)",
+    "bytes": 47444
+  },
+  "Omphalotus japonicus": {
+    "image_local": "/images/mushrooms/omphalotus_japonicus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%82%AD%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Omphalotus_guepiniformis_Berk_Neda_01.jpg",
+    "matched_title": "ツキヨタケ",
+    "from": "ja.wikipedia (ツキヨタケ)",
+    "bytes": 106710
+  },
+  "Ophiocordyceps sobolifera": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Pallidohirschioporus biformis": {
+    "image_local": "/images/mushrooms/pallidohirschioporus_biformis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%AB%E3%83%AF%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Trichaptum_biforme_117835953.jpg",
+    "matched_title": "ハカワラタケ",
+    "from": "ja.wikipedia (ハカワラタケ)",
+    "bytes": 124494
+  },
+  "Panaeolus antillarum": {
+    "image_local": "/images/mushrooms/panaeolus_antillarum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%A4%E3%83%9E%E3%82%B0%E3%82%BD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Panaeolus_antillarum_Mexico.JPG",
+    "matched_title": "ツヤマグソタケ",
+    "from": "ja.wikipedia (ツヤマグソタケ)",
+    "bytes": 125030
+  },
+  "Panaeolus cinctulus": {
+    "image_local": "/images/mushrooms/panaeolus_cinctulus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%B3%E3%83%9C%E3%83%B3%E3%82%B5%E3%82%A4%E3%82%AE%E3%83%A7%E3%82%A6%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Panaeolus.subbalteatus.3.jpg",
+    "matched_title": "センボンサイギョウガサ",
+    "from": "ja.wikipedia (センボンサイギョウガサ)",
+    "bytes": 74694
+  },
+  "Panaeolus cyanescens": {
+    "image_local": "/images/mushrooms/panaeolus_cyanescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%BE%E3%83%A1%E3%83%92%E3%82%AB%E3%82%B2%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Copelandia_cyanescens.jpg",
+    "matched_title": "アイゾメヒカゲタケ",
+    "from": "ja.wikipedia (アイゾメヒカゲタケ)",
+    "bytes": 158374
+  },
+  "Panaeolus foenisecii": {
+    "image_local": "/images/mushrooms/panaeolus_foenisecii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%B7%E3%83%90%E3%83%95%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Panaeolus_cinctulus.jpg",
+    "matched_title": "ヒメシバフタケ",
+    "from": "ja.wikipedia (ヒメシバフタケ)",
+    "bytes": 177972
+  },
+  "Panaeolus papilionaceus": {
+    "image_local": "/images/mushrooms/panaeolus_papilionaceus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AF%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Panaeolus.papilionaceus3.-.lindsey.jpg",
+    "matched_title": "ワライタケ",
+    "from": "ja.wikipedia (ワライタケ)",
+    "bytes": 57524
+  },
+  "Panellus stipticus": {
+    "image_local": "/images/mushrooms/panellus_stipticus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AF%E3%82%B5%E3%83%93%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Panellus_stipticus_%2837162668243%29.jpg",
+    "matched_title": "ワサビタケ",
+    "from": "ja.wikipedia (ワサビタケ)",
+    "bytes": 75908
+  },
+  "Paralepistopsis acromelalga": {
+    "image_local": "/images/mushrooms/paralepistopsis_acromelalga.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%82%B5%E3%82%B5%E3%82%B3",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Clitocybe_acromelalga_99_11_2_0002.jpg",
+    "matched_title": "ドクササコ",
+    "from": "ja.wikipedia (ドクササコ)",
+    "bytes": 35550
+  },
+  "Parasola plicatilis": {
+    "image_local": "/images/mushrooms/parasola_plicatilis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%83%92%E3%82%AC%E3%82%B5%E3%83%92%E3%83%88%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Parasola_spec._-_Lindsey_2a.jpg",
+    "matched_title": "ヒメヒガサヒトヨタケ",
+    "from": "ja.wikipedia (ヒメヒガサヒトヨタケ)",
+    "bytes": 69566
+  },
+  "Parmotrema tinctorum": {
+    "image_local": "/images/mushrooms/parmotrema_tinctorum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A1%E3%83%8E%E3%82%AD%E3%82%B4%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Lichen_Parmotrema_tinctorum_P4271771.jpg",
+    "matched_title": "ウメノキゴケ",
+    "from": "ja.wikipedia (ウメノキゴケ)",
+    "bytes": 131766
+  },
+  "Paxillus involutus": {
+    "image_local": "/images/mushrooms/paxillus_involutus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%80%E3%83%8F%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%C4%8Cechratka_podvinut%C3%A1_1.jpg",
+    "matched_title": "ヒダハタケ",
+    "from": "ja.wikipedia (ヒダハタケ)",
+    "bytes": 90324
+  },
+  "Penicilliopsis clavariiformis": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Perenniporia fraxinea": {
+    "image_local": "/images/mushrooms/perenniporia_fraxinea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%83%E3%82%B3%E3%82%A6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Perenniporia_Fraxinea.JPG",
+    "matched_title": "ベッコウタケ",
+    "from": "ja.wikipedia (ベッコウタケ)",
+    "bytes": 146898
+  },
+  "Perichaena corticalis": {
+    "image_local": "/images/mushrooms/perichaena_corticalis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AB%E3%83%92%E3%83%A2%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Perichaena_corticalis_%28Trichiaceae%29%2C_Elst_%28GE%29%2C_the_Netherlands.jpg",
+    "matched_title": "マルヒモホコリ",
+    "from": "ja.wikipedia (マルヒモホコリ)",
+    "bytes": 92634
+  },
+  "Perichaena depressa": {
+    "image_local": "/images/mushrooms/perichaena_depressa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%AA%E3%82%BD%E3%82%A4%E3%83%92%E3%83%A2%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Perichaena_depressa_236931075.jpg",
+    "matched_title": "ヨリソイヒモホコリ",
+    "from": "ja.wikipedia (ヨリソイヒモホコリ)",
+    "bytes": 71518
+  },
+  "Phaeolepiota aurea": {
+    "image_local": "/images/mushrooms/phaeolepiota_aurea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Phaeolepiota_aurea_10866-83fabfaacdf92ca2ba5a395f175754a4.jpg",
+    "matched_title": "コガネタケ",
+    "from": "ja.wikipedia (コガネタケ)",
+    "bytes": 105922
+  },
+  "Phaeolus schweinitzii": {
+    "image_local": "/images/mushrooms/phaeolus_schweinitzii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%A4%E3%83%A1%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Kaimen-take.110821.jpg",
+    "matched_title": "カイメンタケ",
+    "from": "ja.wikipedia (カイメンタケ)",
+    "bytes": 111332
+  },
+  "Phaeotremella foliacea": {
+    "image_local": "/images/mushrooms/phaeotremella_foliacea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%83%93%E3%83%A9%E3%83%8B%E3%82%AB%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Baumstumpf_Pilz_3274.jpg",
+    "matched_title": "ハナビラニカワタケ",
+    "from": "ja.wikipedia (ハナビラニカワタケ)",
+    "bytes": 53762
+  },
+  "Phallus impudicus": {
+    "image_local": "/images/mushrooms/phallus_impudicus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%83%E3%83%9D%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Phallus_impudicus_031005Bw.jpg",
+    "matched_title": "スッポンタケ",
+    "from": "ja.wikipedia (スッポンタケ)",
+    "bytes": 159272
+  },
+  "Phallus indusiatus": {
+    "image_local": "/images/mushrooms/phallus_indusiatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%8C%E3%82%AC%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Phallus_indusiatus_from_Kerala%2C_India_-_20090824.jpg",
+    "matched_title": "キヌガサタケ",
+    "from": "ja.wikipedia (キヌガサタケ)",
+    "bytes": 104050
+  },
+  "Phlebiopsis crassa": {
+    "image_local": "/images/mushrooms/phlebiopsis_crassa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%9F%E3%82%A6%E3%83%AD%E3%82%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/2016-05-22_Phlebiopsis_crassa_%28L%C3%A9v.%29_D._Floudas_%26_Hibbett_619308.jpg",
+    "matched_title": "カミウロコタケ",
+    "from": "ja.wikipedia (カミウロコタケ)",
+    "bytes": 57256
+  },
+  "Pholiota cerifera": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Pholiota microspora": {
+    "image_local": "/images/mushrooms/pholiota_microspora.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A1%E3%82%B3",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Pholiota_microspora_2.JPG",
+    "matched_title": "ナメコ",
+    "from": "ja.wikipedia (ナメコ)",
+    "bytes": 126868
+  },
+  "Pholiota squarrosa": {
+    "image_local": "/images/mushrooms/pholiota_squarrosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Sparrige-Sch%C3%BCppling_%28Pholiota_squarrosa%29.JPG",
+    "matched_title": "スギタケ",
+    "from": "ja.wikipedia (スギタケ)",
+    "bytes": 111350
+  },
+  "Pholiota squarrosoides": {
+    "image_local": "/images/mushrooms/pholiota_squarrosoides.webp",
+    "image_source": "https://en.wikipedia.org/wiki/Pholiota%20squarrosoides",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pholiota_squarrosoides_%284501590245%29.jpg",
+    "matched_title": "スギタケモドキ",
+    "from": "en.wikipedia (Pholiota squarrosoides)",
+    "bytes": 47082
+  },
+  "Pholiota terrestris": {
+    "image_local": "/images/mushrooms/pholiota_terrestris.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/%E3%83%84%E3%83%81%E3%82%B9%E3%82%AE%E3%82%BF%E3%82%B1.jpg",
+    "matched_title": "ツチスギタケ",
+    "from": "ja.wikipedia (ツチスギタケ)",
+    "bytes": 65374
+  },
+  "Physarum bivalve": {
+    "image_local": "/images/mushrooms/physarum_bivalve.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%9E%E3%82%B0%E3%83%81%E3%83%95%E3%82%AF%E3%83%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Physarum_bivalve_170931907.jpg",
+    "matched_title": "ガマグチフクロホコリ",
+    "from": "ja.wikipedia (ガマグチフクロホコリ)",
+    "bytes": 73736
+  },
+  "Physarum bogoriense": {
+    "image_local": "/images/mushrooms/physarum_bogoriense.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%95%E3%82%AF%E3%83%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Physarum_bogoriense_222313751.jpg",
+    "matched_title": "ボゴールフクロホコリ",
+    "from": "ja.wikipedia (ボゴールフクロホコリ)",
+    "bytes": 75084
+  },
+  "Physarum cinereum": {
+    "image_local": "/images/mushrooms/physarum_cinereum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%82%A4%E3%83%AD%E3%83%95%E3%82%AF%E3%83%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Physarum_cinereum_90004.jpg",
+    "matched_title": "ハイイロフクロホコリ",
+    "from": "ja.wikipedia (ハイイロフクロホコリ)",
+    "bytes": 24354
+  },
+  "Physarum viride var. rigidum": {
+    "image_local": "/images/mushrooms/physarum_viride_var_rigidum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%A2%E3%82%B8%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Physarum_rigidum_itamojihkr05.jpg",
+    "matched_title": "イタモジホコリ",
+    "from": "ja.wikipedia (イタモジホコリ)",
+    "bytes": 12910
+  },
+  "Pleurocybella porrigens": {
+    "image_local": "/images/mushrooms/pleurocybella_porrigens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AE%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Pleurocybella_050919low.jpg",
+    "matched_title": "スギヒラタケ",
+    "from": "ja.wikipedia (スギヒラタケ)",
+    "bytes": 51226
+  },
+  "Pleurotus citrinopileatus": {
+    "image_local": "/images/mushrooms/pleurotus_citrinopileatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%A2%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pleurotus_citrinopileatus_in_Chatama%27s_home.jpg",
+    "matched_title": "タモギタケ",
+    "from": "ja.wikipedia (タモギタケ)",
+    "bytes": 80502
+  },
+  "Pleurotus eryngii": {
+    "image_local": "/images/mushrooms/pleurotus_eryngii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AA%E3%83%B3%E3%82%AE",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Pleurotus_eryngii.jpg",
+    "matched_title": "エリンギ",
+    "from": "ja.wikipedia (エリンギ)",
+    "bytes": 30484
+  },
+  "Pleurotus ostreatus": {
+    "image_local": "/images/mushrooms/pleurotus_ostreatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Pleurotus_ostreatus%2C_Japan_1.JPG",
+    "matched_title": "ヒラタケ",
+    "from": "ja.wikipedia (ヒラタケ)",
+    "bytes": 87594
+  },
+  "Pleurotus pulmonarius": {
+    "image_local": "/images/mushrooms/pleurotus_pulmonarius.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%83%92%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/2012-08-07_Pleurotus_pulmonarius_%28Jacq.%29_P._Kumm_246232.jpg",
+    "matched_title": "ウスヒラタケ",
+    "from": "ja.wikipedia (ウスヒラタケ)",
+    "bytes": 32968
+  },
+  "Pluteus leoninus": {
+    "image_local": "/images/mushrooms/pluteus_leoninus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8B%E3%83%92%E3%83%80%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Pluteus_leoninus_%287991404911%29.jpg",
+    "matched_title": "ベニヒダタケ",
+    "from": "ja.wikipedia (ベニヒダタケ)",
+    "bytes": 92514
+  },
+  "Polyozellus multiplex": {
+    "image_local": "/images/mushrooms/polyozellus_multiplex.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%B9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Polyozellus_multiplex_-Haida_Guaii.jpg",
+    "matched_title": "カラスタケ",
+    "from": "ja.wikipedia (カラスタケ)",
+    "bytes": 166946
+  },
+  "Polyporus umbellatus": {
+    "image_local": "/images/mushrooms/polyporus_umbellatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A7%E3%83%AC%E3%82%A4%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Polyporus_umbellatus.jpg",
+    "matched_title": "チョレイマイタケ",
+    "from": "ja.wikipedia (チョレイマイタケ)",
+    "bytes": 92936
+  },
+  "Porpidia albocaerulescens": {
+    "image_local": "/images/mushrooms/porpidia_albocaerulescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%AA%E3%83%88%E3%83%AA%E3%82%B4%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Porpidia_albocaerulescens_heritori01.jpg",
+    "matched_title": "ヘリトリゴケ",
+    "from": "ja.wikipedia (ヘリトリゴケ)",
+    "bytes": 78844
+  },
+  "Psathyrella corrugis": {
+    "image_local": "/images/mushrooms/psathyrella_corrugis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%A8%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Psathyrella_spec._-_Lindsey_1a.jpg",
+    "matched_title": "ナヨタケ",
+    "from": "ja.wikipedia (ナヨタケ)",
+    "bytes": 42226
+  },
+  "Pseudoaustroboletus valens": {
+    "image_local": "/images/mushrooms/pseudoaustroboletus_valens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%AA%E3%83%99%E3%83%8B%E3%82%B7%E3%83%AD%E3%82%A2%E3%82%B7%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Tylopilus_valens_05.jpg",
+    "matched_title": "ホオベニシロアシイグチ",
+    "from": "ja.wikipedia (ホオベニシロアシイグチ)",
+    "bytes": 119400
+  },
+  "Pseudocolus fusiformis": {
+    "image_local": "/images/mushrooms/pseudocolus_fusiformis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%82%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Stinky_Squid_%2828270176920%29.jpg",
+    "matched_title": "サンコタケ",
+    "from": "ja.wikipedia (サンコタケ)",
+    "bytes": 83616
+  },
+  "Pseudoplectania nigrella": {
+    "image_local": "/images/mushrooms/pseudoplectania_nigrella.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%81%E3%83%A3%E3%83%AF%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/2008-03-28_Pseudoplectania_nigrella_cropped.jpg",
+    "matched_title": "クロチャワンタケ",
+    "from": "ja.wikipedia (クロチャワンタケ)",
+    "bytes": 111466
+  },
+  "Pseudosperma rimosum": {
+    "image_local": "/images/mushrooms/pseudosperma_rimosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%AD%E3%83%8C%E3%83%8F%E3%83%80%E3%83%88%E3%83%9E%E3%83%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Screenshot_20180929-184023.png",
+    "matched_title": "オオキヌハダトマヤタケ",
+    "from": "ja.wikipedia (オオキヌハダトマヤタケ)",
+    "bytes": 67302
+  },
+  "Psilocybe argentipes": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Psilocybe subaeruginascens": {
+    "image_local": "/images/mushrooms/psilocybe_subaeruginascens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%B7%E3%83%93%E3%83%AC%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Psilocybe.ovoideocystidiata.8.jpg",
+    "matched_title": "オオシビレタケ",
+    "from": "ja.wikipedia (オオシビレタケ)",
+    "bytes": 98224
+  },
+  "Psilocybe venenata": {
+    "image_local": "/images/mushrooms/psilocybe_venenata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%93%E3%83%AC%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Psilocybe.semilanceata.Alan.jpg",
+    "matched_title": "シビレタケ",
+    "from": "ja.wikipedia (シビレタケ)",
+    "bytes": 34808
+  },
+  "Pulveroboletus ravenelii": {
+    "image_local": "/images/mushrooms/pulveroboletus_ravenelii.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A4%E3%83%AD%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Pulveroboletus_ravenelii_%28Berk._%26_M.A._Curtis%29_Murrill_635687_2016-07-13.jpg",
+    "matched_title": "キイロイグチ",
+    "from": "ja.wikipedia (キイロイグチ)",
+    "bytes": 69096
+  },
+  "Purpureocillium atypicola": {
+    "image_local": "/images/mushrooms/purpureocillium_atypicola.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A2%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Nomuraea_atypicola_080702.jpg",
+    "matched_title": "クモタケ",
+    "from": "ja.wikipedia (クモタケ)",
+    "bytes": 122472
+  },
+  "Pycnoporus cinnabarinus": {
+    "image_local": "/images/mushrooms/pycnoporus_cinnabarinus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Pycnporus_cinnabarinus_Vermiljoenhoutzwam_DSCF0245.JPG",
+    "matched_title": "シュタケ",
+    "from": "ja.wikipedia (シュタケ)",
+    "bytes": 146288
+  },
+  "Pycnoporus coccineus": {
+    "image_local": "/images/mushrooms/pycnoporus_coccineus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Pycnoporus_coccineus_06.jpg",
+    "matched_title": "ヒイロタケ",
+    "from": "ja.wikipedia (ヒイロタケ)",
+    "bytes": 62428
+  },
+  "Ramaria apiculata": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Ramaria aurea": {
+    "image_local": "/images/mushrooms/ramaria_aurea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Ramaria_aurea1.JPG",
+    "matched_title": "コガネホウキタケ",
+    "from": "ja.wikipedia (コガネホウキタケ)",
+    "bytes": 82790
+  },
+  "Ramaria botrytis": {
+    "image_local": "/images/mushrooms/ramaria_botrytis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/2010-09-17_Ramaria_botrytis_crop.jpg",
+    "matched_title": "ホウキタケ",
+    "from": "ja.wikipedia (ホウキタケ)",
+    "bytes": 59938
+  },
+  "Ramaria flava": {
+    "image_local": "/images/mushrooms/ramaria_flava.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/%E3%83%9B%E3%82%A6%E3%82%AD%E3%82%BF%E3%82%B1%E7%A7%91%E3%81%AE%E4%B8%80%E7%A8%AE.jpg",
+    "matched_title": "キホウキタケ",
+    "from": "ja.wikipedia (キホウキタケ)",
+    "bytes": 154414
+  },
+  "Rhizina undulata": {
+    "image_local": "/images/mushrooms/rhizina_undulata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%81%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Rhizina_undulata.JPG",
+    "matched_title": "ツチクラゲ",
+    "from": "ja.wikipedia (ツチクラゲ)",
+    "bytes": 101704
+  },
+  "Rhizocarpon geographicum": {
+    "image_local": "/images/mushrooms/rhizocarpon_geographicum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%BA%E3%82%B4%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Rhizocarpon_geographicum_on_quartz.jpg",
+    "matched_title": "チズゴケ",
+    "from": "ja.wikipedia (チズゴケ)",
+    "bytes": 140460
+  },
+  "Rhodocollybia maculata": {
+    "image_local": "/images/mushrooms/rhodocollybia_maculata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%82%A2%E3%82%B6%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Rhodocollybia.maculata.-.lindsey.jpg",
+    "matched_title": "アカアザタケ",
+    "from": "ja.wikipedia (アカアザタケ)",
+    "bytes": 70546
+  },
+  "Rickenella fibula": {
+    "image_local": "/images/mushrooms/rickenella_fibula.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%8A%E3%83%8E%E3%83%92%E3%82%AC%E3%82%B5",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/2011-10-28_Rickenella_fibula_%28Bulliard-_Fries%29_Raithelhuber_178120_cropped.jpg",
+    "matched_title": "ヒナノヒガサ",
+    "from": "ja.wikipedia (ヒナノヒガサ)",
+    "bytes": 67610
+  },
+  "Roccella tinctoria": {
+    "image_local": "/images/mushrooms/roccella_tinctoria.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%88%E3%83%9E%E3%82%B9%E3%82%B4%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rocella_tinctoria_-_orseille_-_orchil_-_archil_-_F%C3%A4rberflechte_-_Fuerteventura_-_02.jpg",
+    "matched_title": "リトマスゴケ",
+    "from": "ja.wikipedia (リトマスゴケ)",
+    "bytes": 172956
+  },
+  "Rugiboletus extremiorientalis": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Russula adusta": {
+    "image_local": "/images/mushrooms/russula_adusta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B2%E3%82%A4%E3%83%AD%E3%83%8F%E3%83%84%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Russula_nigricans_-_Lindsey_3a.jpg",
+    "matched_title": "コゲイロハツタケ",
+    "from": "ja.wikipedia (コゲイロハツタケ)",
+    "bytes": 60018
+  },
+  "Russula delica": {
+    "image_local": "/images/mushrooms/russula_delica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%83%8F%E3%83%84",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Russ.del.jpg",
+    "matched_title": "シロハツ",
+    "from": "ja.wikipedia (シロハツ)",
+    "bytes": 112298
+  },
+  "Russula densifolia": {
+    "image_local": "/images/mushrooms/russula_densifolia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Russula_densifolia_go%C5%82%C4%85bek_g%C4%99stoblaszkowy_BS11.JPG",
+    "matched_title": "クロハツモドキ",
+    "from": "ja.wikipedia (クロハツモドキ)",
+    "bytes": 91234
+  },
+  "Russula emetica": {
+    "image_local": "/images/mushrooms/russula_emetica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Russula_emetica_in_Poland.jpg",
+    "matched_title": "ドクベニタケ",
+    "from": "ja.wikipedia (ドクベニタケ)",
+    "bytes": 120152
+  },
+  "Russula flavida": {
+    "image_local": "/images/mushrooms/russula_flavida.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B3%E3%83%B3%E3%83%8F%E3%83%84",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Russula_flavida_Veracruz.jpg",
+    "matched_title": "ウコンハツ",
+    "from": "ja.wikipedia (ウコンハツ)",
+    "bytes": 74378
+  },
+  "Russula foetens": {
+    "image_local": "/images/mushrooms/russula_foetens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%B5%E3%83%8F%E3%83%84",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/2009-09-15_Russula_foetens_Fr_57077.jpg",
+    "matched_title": "クサハツ",
+    "from": "ja.wikipedia (クサハツ)",
+    "bytes": 121194
+  },
+  "Russula nigricans": {
+    "image_local": "/images/mushrooms/russula_nigricans.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Russula.nigricans.-.lindsey.jpg",
+    "matched_title": "クロハツ",
+    "from": "ja.wikipedia (クロハツ)",
+    "bytes": 51238
+  },
+  "Russula rosea": {
+    "image_local": "/images/mushrooms/russula_rosea.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%96%E3%83%AC%E3%83%99%E3%83%8B%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Russula_xerampelina2_stand.jpg",
+    "matched_title": "ヤブレベニタケ",
+    "from": "ja.wikipedia (ヤブレベニタケ)",
+    "bytes": 52634
+  },
+  "Russula subnigricans": {
+    "image_local": "/images/mushrooms/russula_subnigricans.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%BB%E3%82%AF%E3%83%AD%E3%83%8F%E3%83%84",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Russula_subnigricans.jpg",
+    "matched_title": "ニセクロハツ",
+    "from": "ja.wikipedia (ニセクロハツ)",
+    "bytes": 116504
+  },
+  "Russula virescens": {
+    "image_local": "/images/mushrooms/russula_virescens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Russula_virescens4.JPG",
+    "matched_title": "アイタケ",
+    "from": "ja.wikipedia (アイタケ)",
+    "bytes": 99466
+  },
+  "Sanghuangporus sanghuang": {
+    "image_local": "/images/mushrooms/sanghuangporus_sanghuang.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%B7%E3%83%9E%E3%82%B3%E3%83%96",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/%E3%83%A1%E3%82%B7%E3%83%9E%E3%82%B3%E3%83%96%28Phellinus_linteus%29.jpg",
+    "matched_title": "メシマコブ",
+    "from": "ja.wikipedia (メシマコブ)",
+    "bytes": 94092
+  },
+  "Sarcomyxa edulis": {
+    "image_local": "/images/mushrooms/sarcomyxa_edulis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%82%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sarcomyxa_serotina_2.JPG",
+    "matched_title": "ムキタケ",
+    "from": "ja.wikipedia (ムキタケ)",
+    "bytes": 82620
+  },
+  "Schizophyllum commune": {
+    "image_local": "/images/mushrooms/schizophyllum_commune.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%A8%E3%83%92%E3%83%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Fuzzy_Fungi_%28Schizophyllum_commune%29.jpg",
+    "matched_title": "スエヒロタケ",
+    "from": "ja.wikipedia (スエヒロタケ)",
+    "bytes": 72406
+  },
+  "Scleromitrula shiraiana": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Scutellinia scutellata": {
+    "image_local": "/images/mushrooms/scutellinia_scutellata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A9%E3%82%B2%E3%82%B3%E3%83%99%E3%83%8B%E3%83%81%E3%83%A3%E3%83%AF%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Scutellinia_spec._-_Lindsey_1.jpg",
+    "matched_title": "アラゲコベニチャワンタケ",
+    "from": "ja.wikipedia (アラゲコベニチャワンタケ)",
+    "bytes": 37576
+  },
+  "Serpula lacrimans": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Shimizuomyces paradoxus": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Sparassis latifolia": {
+    "image_local": "/images/mushrooms/sparassis_latifolia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%83%93%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sparassis_crispa_2.jpg",
+    "matched_title": "ハナビラタケ",
+    "from": "ja.wikipedia (ハナビラタケ)",
+    "bytes": 70832
+  },
+  "Spinellus fusiger": {
+    "image_local": "/images/mushrooms/spinellus_fusiger.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%B1%E3%83%8F%E3%83%AA%E3%82%AB%E3%83%93",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Spinellus_fusiger_51504.jpg",
+    "matched_title": "タケハリカビ",
+    "from": "ja.wikipedia (タケハリカビ)",
+    "bytes": 74226
+  },
+  "Stemonaria longa": {
+    "image_local": "/images/mushrooms/stemonaria_longa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%AA%E3%83%9F%E3%83%80%E3%83%AC%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Stemonaria_longa_%28Peck%29_Nann.-Bremek.%2C_Y._Yamam._%26_R._Sharma_350873.jpg",
+    "matched_title": "ヤリミダレホコリ",
+    "from": "ja.wikipedia (ヤリミダレホコリ)",
+    "bytes": 95772
+  },
+  "Stemonitis fusca": {
+    "image_local": "/images/mushrooms/stemonitis_fusca.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Stemonitis_fusca_%2853129368717%29.jpg",
+    "matched_title": "ムラサキホコリ",
+    "from": "ja.wikipedia (ムラサキホコリ)",
+    "bytes": 85012
+  },
+  "Stemonitis splendens": {
+    "image_local": "/images/mushrooms/stemonitis_splendens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chocolate_Tube_Slime_2.jpg",
+    "matched_title": "オオムラサキホコリ",
+    "from": "ja.wikipedia (オオムラサキホコリ)",
+    "bytes": 127630
+  },
+  "Stemonitopsis hyperopta": {
+    "image_local": "/images/mushrooms/stemonitopsis_hyperopta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Stemonitopsis_hyperopta_%28Meyl.%29_Nann.-Bremek_607820.jpg",
+    "matched_title": "コムラサキホコリ",
+    "from": "ja.wikipedia (コムラサキホコリ)",
+    "bytes": 75570
+  },
+  "Stemonitopsis typhina": {
+    "image_local": "/images/mushrooms/stemonitopsis_typhina.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%86%E3%82%B3%E3%83%A0%E3%83%A9%E3%82%B5%E3%82%AD%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Stemonitopsis_typhina_-_Thomaz_Ricardo_Favreto_Sinani_-_470652245.jpeg",
+    "matched_title": "ダテコムラサキホコリ",
+    "from": "ja.wikipedia (ダテコムラサキホコリ)",
+    "bytes": 124348
+  },
+  "Stereum hirsutum": {
+    "image_local": "/images/mushrooms/stereum_hirsutum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A6%E3%83%AD%E3%82%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Stereum_hirsutum_-_False_Turkey_Tail.jpg",
+    "matched_title": "キウロコタケ",
+    "from": "ja.wikipedia (キウロコタケ)",
+    "bytes": 75348
+  },
+  "Strobilomyces confusus": {
+    "image_local": "/images/mushrooms/strobilomyces_confusus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%8B%E3%82%A4%E3%82%B0%E3%83%81%E3%83%A2%E3%83%89%E3%82%AD",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Strobilomyces_confusus_47283670.jpg",
+    "matched_title": "オニイグチモドキ",
+    "from": "ja.wikipedia (オニイグチモドキ)",
+    "bytes": 60418
+  },
+  "Strobilurus ohshimae": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Stropharia aeruginosa": {
+    "image_local": "/images/mushrooms/stropharia_aeruginosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%82%A8%E3%82%AE%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Stropharia_aeruginosa_J1.jpg",
+    "matched_title": "モエギタケ",
+    "from": "ja.wikipedia (モエギタケ)",
+    "bytes": 110464
+  },
+  "Stropharia rugosoannulata": {
+    "image_local": "/images/mushrooms/stropharia_rugosoannulata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B1%E3%83%84%E3%83%90%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Stropharia_Rugosoannulata_5.jpg",
+    "matched_title": "サケツバタケ",
+    "from": "ja.wikipedia (サケツバタケ)",
+    "bytes": 182474
+  },
+  "Suillus bovinus": {
+    "image_local": "/images/mushrooms/suillus_bovinus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Suillus_bovinus_Alberto_V%C3%A1zquez.jpg",
+    "matched_title": "アミタケ",
+    "from": "ja.wikipedia (アミタケ)",
+    "bytes": 96362
+  },
+  "Suillus granulatus": {
+    "image_local": "/images/mushrooms/suillus_granulatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%81%E3%82%A2%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Suillus_granulatus_38199.jpg",
+    "matched_title": "チチアワタケ",
+    "from": "ja.wikipedia (チチアワタケ)",
+    "bytes": 92190
+  },
+  "Suillus grevillei": {
+    "image_local": "/images/mushrooms/suillus_grevillei.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%8A%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Suillus_grevillei_LC0109.jpg",
+    "matched_title": "ハナイグチ",
+    "from": "ja.wikipedia (ハナイグチ)",
+    "bytes": 103666
+  },
+  "Suillus luteus": {
+    "image_local": "/images/mushrooms/suillus_luteus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8C%E3%83%A1%E3%83%AA%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Butterroehrling.jpg",
+    "matched_title": "ヌメリイグチ",
+    "from": "ja.wikipedia (ヌメリイグチ)",
+    "bytes": 24696
+  },
+  "Sulcaria sulcata": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Sutorius venenatus": {
+    "image_local": "/images/mushrooms/sutorius_venenatus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%AF%E3%83%A4%E3%83%9E%E3%83%89%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Doku_yamadori.jpg",
+    "matched_title": "ドクヤマドリ",
+    "from": "ja.wikipedia (ドクヤマドリ)",
+    "bytes": 62280
+  },
+  "Tapinella atrotomentosa": {
+    "image_local": "/images/mushrooms/tapinella_atrotomentosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Samtfusskrempling.jpg",
+    "matched_title": "ニワタケ",
+    "from": "ja.wikipedia (ニワタケ)",
+    "bytes": 40356
+  },
+  "Tetrapyrgos nigripes": {
+    "image_local": "/images/mushrooms/tetrapyrgos_nigripes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B7%E3%82%B0%E3%83%AD%E3%83%9B%E3%82%A6%E3%83%A9%E3%82%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Tetrapyrgos_nigripes_%28Schwein.%29_E._Horak_544511.jpg",
+    "matched_title": "アシグロホウライタケ",
+    "from": "ja.wikipedia (アシグロホウライタケ)",
+    "bytes": 45706
+  },
+  "Thaxterogaster purpurascens": {
+    "image_local": "/images/mushrooms/thaxterogaster_purpurascens.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Cortinarius_purpurascens_171020.jpg",
+    "matched_title": "カワムラフウセンタケ",
+    "from": "ja.wikipedia (カワムラフウセンタケ)",
+    "bytes": 71710
+  },
+  "Thaxterogaster tenuipes": {
+    "image_local": "/images/mushrooms/thaxterogaster_tenuipes.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%83%95%E3%82%A6%E3%82%BB%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Cortinarius_tenuipes_01.jpg",
+    "matched_title": "クリフウセンタケ",
+    "from": "ja.wikipedia (クリフウセンタケ)",
+    "bytes": 83142
+  },
+  "Tolypocladium capitatum": {
+    "image_local": "/images/mushrooms/tolypocladium_capitatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%B3%E3%83%9D%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cordyceps_capitata.jpg",
+    "matched_title": "タンポタケ",
+    "from": "ja.wikipedia (タンポタケ)",
+    "bytes": 70882
+  },
+  "Trametes versicolor": {
+    "image_local": "/images/mushrooms/trametes_versicolor.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AF%E3%83%A9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/W_kawaratake3121.jpg",
+    "matched_title": "カワラタケ",
+    "from": "ja.wikipedia (カワラタケ)",
+    "bytes": 90888
+  },
+  "Tremella fuciformis": {
+    "image_local": "/images/mushrooms/tremella_fuciformis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AD%E3%82%AD%E3%82%AF%E3%83%A9%E3%82%B2",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Tremella_closeup.jpg",
+    "matched_title": "シロキクラゲ",
+    "from": "ja.wikipedia (シロキクラゲ)",
+    "bytes": 78538
+  },
+  "Tremella mesenterica": {
+    "image_local": "/images/mushrooms/tremella_mesenterica.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%AC%E3%83%8D%E3%83%8B%E3%82%AB%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Tremella_mesenterica_JPG1.jpg",
+    "matched_title": "コガネニカワタケ",
+    "from": "ja.wikipedia (コガネニカワタケ)",
+    "bytes": 37810
+  },
+  "Trichaleurina tenuispora": {
+    "image_local": "/images/mushrooms/trichaleurina_tenuispora.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%82%B4%E3%83%A0%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/2008-10-09_Galiella_celebica_24616.jpg",
+    "matched_title": "オオゴムタケ",
+    "from": "ja.wikipedia (オオゴムタケ)",
+    "bytes": 71824
+  },
+  "Trichia alpina": {
+    "image_local": "/images/mushrooms/trichia_alpina.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%9E%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Trichia_alpina_186171159.jpg",
+    "matched_title": "ヤマケホコリ",
+    "from": "ja.wikipedia (ヤマケホコリ)",
+    "bytes": 138836
+  },
+  "Trichia botrytis": {
+    "image_local": "/images/mushrooms/trichia_botrytis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Trichia_botrytis_107734074.jpg",
+    "matched_title": "ケホコリ",
+    "from": "ja.wikipedia (ケホコリ)",
+    "bytes": 41522
+  },
+  "Trichia contorta": {
+    "image_local": "/images/mushrooms/trichia_contorta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%80%E3%83%AC%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Trichia_contorta_175409534.jpg",
+    "matched_title": "ミダレケホコリ",
+    "from": "ja.wikipedia (ミダレケホコリ)",
+    "bytes": 64428
+  },
+  "Trichia erecta": {
+    "image_local": "/images/mushrooms/trichia_erecta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%81%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Trichia_erecta_177902329.jpg",
+    "matched_title": "タチケホコリ",
+    "from": "ja.wikipedia (タチケホコリ)",
+    "bytes": 81112
+  },
+  "Trichia flavicoma": {
+    "image_local": "/images/mushrooms/trichia_flavicoma.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%81%E3%83%90%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Trichia_flavicoma_171879668.jpg",
+    "matched_title": "オチバケホコリ",
+    "from": "ja.wikipedia (オチバケホコリ)",
+    "bytes": 35928
+  },
+  "Trichia leucopodia": {
+    "image_local": "/images/mushrooms/trichia_leucopodia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%AF%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Diachea_leucopodia_66415900.jpg",
+    "matched_title": "ジクホコリ",
+    "from": "ja.wikipedia (ジクホコリ)",
+    "bytes": 57170
+  },
+  "Trichia scabra": {
+    "image_local": "/images/mushrooms/trichia_scabra.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%83%81%E3%83%A3%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Trichia_scabra_177934666.jpg",
+    "matched_title": "キンチャケホコリ",
+    "from": "ja.wikipedia (キンチャケホコリ)",
+    "bytes": 91174
+  },
+  "Trichia sordida": {
+    "image_local": "/images/mushrooms/trichia_sordida.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%80%E3%83%A9%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Trichia_sordida_188216892.jpg",
+    "matched_title": "マダラケホコリ",
+    "from": "ja.wikipedia (マダラケホコリ)",
+    "bytes": 41678
+  },
+  "Trichia varia": {
+    "image_local": "/images/mushrooms/trichia_varia.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%BF%E3%83%8A%E3%83%AF%E3%82%B1%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Trichia_varia_315586358.jpg",
+    "matched_title": "フタナワケホコリ",
+    "from": "ja.wikipedia (フタナワケホコリ)",
+    "bytes": 121666
+  },
+  "Trichoderma cornu-damae": {
+    "image_local": "/images/mushrooms/trichoderma_cornu_damae.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%A8%E3%83%B3%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Podostroma_cornu-damae.jpg",
+    "matched_title": "カエンタケ",
+    "from": "ja.wikipedia (カエンタケ)",
+    "bytes": 114766
+  },
+  "Trichoglossum hirsutum": {
+    "image_local": "/images/mushrooms/trichoglossum_hirsutum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%A1%E3%82%B7%E3%82%AC%E3%82%A4",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Gemeine_Haarzunge_Trichoglossum_hirsutum.JPG",
+    "matched_title": "テングノメシガイ",
+    "from": "ja.wikipedia (テングノメシガイ)",
+    "bytes": 71184
+  },
+  "Tricholoma bakamatsutake": {
+    "image_local": "/images/mushrooms/tricholoma_bakamatsutake.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%AB%E3%83%9E%E3%83%84%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Bakamatsutake.jpg",
+    "matched_title": "バカマツタケ",
+    "from": "ja.wikipedia (バカマツタケ)",
+    "bytes": 42882
+  },
+  "Tricholoma kakishimeji": {
+    "image_local": "/images/mushrooms/tricholoma_kakishimeji.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tricholoma.ustale.-.lindsey.jpg",
+    "matched_title": "カキシメジ",
+    "from": "ja.wikipedia (カキシメジ)",
+    "bytes": 70932
+  },
+  "Tricholoma matsutake": {
+    "image_local": "/images/mushrooms/tricholoma_matsutake.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Matsutake.jpg",
+    "matched_title": "マツタケ",
+    "from": "ja.wikipedia (マツタケ)",
+    "bytes": 83722
+  },
+  "Tricholoma muscarium": {
+    "image_local": null,
+    "image_source": null,
+    "matched_title": null
+  },
+  "Tricholoma pardinum": {
+    "image_local": "/images/mushrooms/tricholoma_pardinum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A7%E3%82%A6%E3%83%A2%E3%83%B3%E3%82%AF%E3%83%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Tricholoma_filamentosum_01.jpg",
+    "matched_title": "ヒョウモンクロシメジ",
+    "from": "ja.wikipedia (ヒョウモンクロシメジ)",
+    "bytes": 129196
+  },
+  "Tricholoma portentosum": {
+    "image_local": "/images/mushrooms/tricholoma_portentosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A2%E3%83%95%E3%83%AA%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tricholoma_portentosum35.JPG",
+    "matched_title": "シモフリシメジ",
+    "from": "ja.wikipedia (シモフリシメジ)",
+    "bytes": 65748
+  },
+  "Tricholoma saponaceum var. squamosum": {
+    "image_local": "/images/mushrooms/tricholoma_saponaceum_var_squamosum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%8D%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/%E3%83%9F%E3%83%8D%E3%82%B7%E3%83%A1%E3%82%B8.jpg",
+    "matched_title": "ミネシメジ",
+    "from": "ja.wikipedia (ミネシメジ)",
+    "bytes": 34432
+  },
+  "Tricholoma terreum": {
+    "image_local": "/images/mushrooms/tricholoma_terreum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%9E%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Tricholoma_terreum_20061105wa.jpg",
+    "matched_title": "クマシメジ",
+    "from": "ja.wikipedia (クマシメジ)",
+    "bytes": 94726
+  },
+  "Tricholoma virgatum": {
+    "image_local": "/images/mushrooms/tricholoma_virgatum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%BA%E3%83%9F%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Tricholoma_virgatum%2C_McCall_2_crop.jpg",
+    "matched_title": "ネズミシメジ",
+    "from": "ja.wikipedia (ネズミシメジ)",
+    "bytes": 89756
+  },
+  "Tubifera ferruginosa": {
+    "image_local": "/images/mushrooms/tubifera_ferruginosa.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%80%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Tubifera_ferruginosa_%28Batsch%29_Gmelin_342819.jpg",
+    "matched_title": "クダホコリ",
+    "from": "ja.wikipedia (クダホコリ)",
+    "bytes": 63390
+  },
+  "Turbinellus floccosus": {
+    "image_local": "/images/mushrooms/turbinellus_floccosus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gomphus_floccosus_20070805.jpg",
+    "matched_title": "ウスタケ",
+    "from": "ja.wikipedia (ウスタケ)",
+    "bytes": 119186
+  },
+  "Turbinellus fujisanensis": {
+    "image_local": "/images/mushrooms/turbinellus_fujisanensis.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%82%A6%E3%82%B9%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Turbinellus_fujisanensis_275975.jpg",
+    "matched_title": "フジウスタケ",
+    "from": "ja.wikipedia (フジウスタケ)",
+    "bytes": 179092
+  },
+  "Tylopilus felleus": {
+    "image_local": "/images/mushrooms/tylopilus_felleus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%82%AC%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2006-09-14_Tylopilus_felleus_crop.jpg",
+    "matched_title": "ニガイグチ",
+    "from": "ja.wikipedia (ニガイグチ)",
+    "bytes": 104322
+  },
+  "Tylopilus vinosobrunneus": {
+    "image_local": "/images/mushrooms/tylopilus_vinosobrunneus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%89%E3%82%A6%E3%83%8B%E3%82%AC%E3%82%A4%E3%82%B0%E3%83%81",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Tylopilus_vinosobrunneus_01.jpg",
+    "matched_title": "ブドウニガイグチ",
+    "from": "ja.wikipedia (ブドウニガイグチ)",
+    "bytes": 92468
+  },
+  "Umbilicaria esculenta": {
+    "image_local": "/images/mushrooms/umbilicaria_esculenta.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AF%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Umbilicaria_esculenta_-_National_Museum_of_Nature_and_Science%2C_Tokyo_-_DSC07573.JPG",
+    "matched_title": "イワタケ",
+    "from": "ja.wikipedia (イワタケ)",
+    "bytes": 39040
+  },
+  "Urnula geaster": {
+    "image_local": "/images/mushrooms/urnula_geaster.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%AA%E3%83%8E%E3%83%9F%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chorioactis_geaster_1.jpg",
+    "matched_title": "キリノミタケ",
+    "from": "ja.wikipedia (キリノミタケ)",
+    "bytes": 123610
+  },
+  "Willkommlangea reticulata": {
+    "image_local": "/images/mushrooms/willkommlangea_reticulata.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%8A%E3%83%9B%E3%82%B3%E3%83%AA",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Willkommlangea_reticulata_%28Alb._%26_Schwein.%29_Kuntze_575109.jpg",
+    "matched_title": "ツナホコリ",
+    "from": "ja.wikipedia (ツナホコリ)",
+    "bytes": 76280
+  },
+  "Wolfiporia cocos": {
+    "image_local": "/images/mushrooms/wolfiporia_cocos.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%83%9B%E3%83%89",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Tuckahoe.jpg",
+    "matched_title": "マツホド",
+    "from": "ja.wikipedia (マツホド)",
+    "bytes": 77550
+  },
+  "Xeromphalina campanella": {
+    "image_local": "/images/mushrooms/xeromphalina_campanella.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A1%E3%82%AB%E3%83%90%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Xeromphalina_campanella_%E3%83%92%E3%83%A1%E3%82%AB%E3%83%90%E3%82%A4%E3%83%AD%E3%82%BF%E3%82%B1_DSCF1239.jpg",
+    "matched_title": "ヒメカバイロタケ",
+    "from": "ja.wikipedia (ヒメカバイロタケ)",
+    "bytes": 57426
+  },
+  "Xylaria polymorpha": {
+    "image_local": "/images/mushrooms/xylaria_polymorpha.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%A1%E3%82%B6%E3%83%A4%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Xylaria_polymorpha_147218869.jpg",
+    "matched_title": "マメザヤタケ",
+    "from": "ja.wikipedia (マメザヤタケ)",
+    "bytes": 95318
+  },
+  "Entoloma murrayi": {
+    "image_local": "/images/mushrooms/entoloma_murrayi.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Entoloma_murrayi_06.jpg",
+    "matched_title": "キイボカサタケ",
+    "from": "ja.wikipedia (キイボカサタケ)",
+    "bytes": 92246
+  },
+  "Entoloma quadratum": {
+    "image_local": "/images/mushrooms/entoloma_quadratum.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%82%A4%E3%83%9C%E3%82%AB%E3%82%B5%E3%82%BF%E3%82%B1",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Entoloma_quadratum_439935.jpg",
+    "matched_title": "アカイボカサタケ",
+    "from": "ja.wikipedia (アカイボカサタケ)",
+    "bytes": 87466
+  },
+  "Tricholoma equestre": {
+    "image_local": "/images/mushrooms/tricholoma_equestre.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Tricholoma_equestre_5771554.jpg",
+    "matched_title": "キシメジ",
+    "from": "ja.wikipedia (キシメジ)",
+    "bytes": 138402
+  },
+  "Entoloma sarcopus": {
+    "image_local": "/images/mushrooms/entoloma_sarcopus.webp",
+    "image_source": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%99%E3%83%8B%E3%83%9B%E3%83%86%E3%82%A4%E3%82%B7%E3%83%A1%E3%82%B8",
+    "image_original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2017-10-10_Entoloma_sarcopum_Nagas._%26_Hongo_797763.jpg",
+    "matched_title": "ウラベニホテイシメジ",
+    "from": "ja.wikipedia (ウラベニホテイシメジ)",
+    "bytes": 78208
+  }
+}
